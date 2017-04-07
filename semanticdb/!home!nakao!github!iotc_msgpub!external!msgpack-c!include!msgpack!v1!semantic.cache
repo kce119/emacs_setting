@@ -1,0 +1,42 @@
+;; Object v1/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "v1/"
+  :tables
+  (list
+    (semanticdb-table "object.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("MSGPACK_V1_OBJECT_HPP" variable (:constant-flag t) nil [331 352])
+            ("msgpack/object_decl.hpp" include nil nil [354 388])
+            ("cstring" include (:system-flag t) nil [390 408])
+            ("stdexcept" include (:system-flag t) nil [409 429])
+            ("typeinfo" include (:system-flag t) nil [430 449])
+            ("limits" include (:system-flag t) nil [450 467])
+            ("ostream" include (:system-flag t) nil [468 486])
+            ("typeinfo" include (:system-flag t) nil [487 506])
+            ("iomanip" include (:system-flag t) nil [507 525])
+            ("msgpack" type
+               (:members 
+                  ( ("MSGPACK_API_VERSION_NAMESPACE" function
+                       (:arguments 
+                          ( ("" variable (:type ("v1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [588 591]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [558 22164]))                  
+                :type "namespace")
+                nil [527 22218]))          
+      :file "object.hpp"
+      :pointmax 22274
+      :fsize 22273
+      :lastmodtime '(22486 26330 40000 2000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MSGPACK_V1_OBJECT_HPP")
+          )
+)
+    (semanticdb-table "object_decl.hpp"
+      :file "object_decl.hpp"
+      :fsize 2689
+      :lastmodtime '(22486 26330 40000 2000)))
+  :file "!home!nakao!github!iotc_msgpub!external!msgpack-c!include!msgpack!v1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

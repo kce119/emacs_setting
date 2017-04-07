@@ -1,0 +1,127 @@
+;; Object back/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "back/"
+  :tables
+  (list
+    (semanticdb-table "state_machine.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MSM_BACK_STATEMACHINE_H" variable (:constant-flag t) nil [526 555])
+            ("exception" include (:system-flag t) nil [557 577])
+            ("vector" include (:system-flag t) nil [578 595])
+            ("functional" include (:system-flag t) nil [596 617])
+            ("numeric" include (:system-flag t) nil [618 636])
+            ("utility" include (:system-flag t) nil [637 655])
+            ("boost/detail/no_exceptions_support.hpp" include (:system-flag t) nil [657 706])
+            ("boost/mpl/contains.hpp" include (:system-flag t) nil [708 741])
+            ("boost/mpl/deref.hpp" include (:system-flag t) nil [742 772])
+            ("boost/mpl/assert.hpp" include (:system-flag t) nil [773 804])
+            ("boost/fusion/container/vector/convert.hpp" include (:system-flag t) nil [806 858])
+            ("boost/fusion/include/as_vector.hpp" include (:system-flag t) nil [859 904])
+            ("boost/fusion/include/as_set.hpp" include (:system-flag t) nil [905 947])
+            ("boost/fusion/container/set.hpp" include (:system-flag t) nil [948 989])
+            ("boost/fusion/include/set.hpp" include (:system-flag t) nil [990 1029])
+            ("boost/fusion/include/set_fwd.hpp" include (:system-flag t) nil [1030 1073])
+            ("boost/fusion/include/mpl.hpp" include (:system-flag t) nil [1074 1113])
+            ("boost/fusion/sequence/intrinsic/at_key.hpp" include (:system-flag t) nil [1114 1167])
+            ("boost/fusion/include/at_key.hpp" include (:system-flag t) nil [1168 1210])
+            ("boost/fusion/algorithm/iteration/for_each.hpp" include (:system-flag t) nil [1211 1267])
+            ("boost/fusion/include/for_each.hpp" include (:system-flag t) nil [1268 1312])
+            ("boost/assert.hpp" include (:system-flag t) nil [1314 1341])
+            ("boost/ref.hpp" include (:system-flag t) nil [1342 1366])
+            ("boost/type_traits.hpp" include (:system-flag t) nil [1367 1399])
+            ("boost/utility/enable_if.hpp" include (:system-flag t) nil [1400 1438])
+            ("boost/type_traits/is_convertible.hpp" include (:system-flag t) nil [1439 1486])
+            ("boost/bind.hpp" include (:system-flag t) nil [1488 1513])
+            ("boost/bind/apply.hpp" include (:system-flag t) nil [1514 1545])
+            ("boost/function.hpp" include (:system-flag t) nil [1546 1575])
+            ("boost/any.hpp" include (:system-flag t) nil [1598 1622])
+            ("boost/serialization/base_object.hpp" include (:system-flag t) nil [1631 1677])
+            ("boost/parameter.hpp" include (:system-flag t) nil [1679 1709])
+            ("boost/msm/active_state_switching_policies.hpp" include (:system-flag t) nil [1711 1767])
+            ("boost/msm/row_tags.hpp" include (:system-flag t) nil [1768 1801])
+            ("boost/msm/msm_grammar.hpp" include (:system-flag t) nil [1802 1838])
+            ("boost/msm/back/fold_to_list.hpp" include (:system-flag t) nil [1839 1881])
+            ("boost/msm/back/metafunctions.hpp" include (:system-flag t) nil [1882 1925])
+            ("boost/msm/back/history_policies.hpp" include (:system-flag t) nil [1926 1972])
+            ("boost/msm/back/common_types.hpp" include (:system-flag t) nil [1973 2015])
+            ("boost/msm/back/args.hpp" include (:system-flag t) nil [2016 2050])
+            ("boost/msm/back/default_compile_policy.hpp" include (:system-flag t) nil [2051 2103])
+            ("boost/msm/back/dispatch_table.hpp" include (:system-flag t) nil [2104 2148])
+            ("boost/msm/back/no_fsm_check.hpp" include (:system-flag t) nil [2149 2191])
+            ("boost/msm/back/queue_container_deque.hpp" include (:system-flag t) nil [2192 2243])
+            ("BOOST_MSM_CONSTRUCTOR_ARG_SIZE" variable (:constant-flag t) nil [2828 2858])
+            ("boost" type
+               (:members 
+                  ( ("msm" type
+                       (:members 
+                          ( ("back" type
+                               (:members 
+                                  ( ("direct_entry_event" type
+                                       (:template 
+                                          ( ("StateType" type (:type "class") nil nil)
+                                            ("Event" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("direct_entry" type
+                                               (:typedef ("int")
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3096 3121])
+                                            ("active_state" type
+                                               (:typedef ("StateType" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3126 3157])
+                                            ("contained_event" type
+                                               (:typedef ("Event" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3162 3192])
+                                            ("direct_entry_event" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("evt" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Event" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3217 3234]))                                                  
+                                                :type ("direct_entry_event" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [3198 3249])
+                                            ("m_event" variable (:type ("Event" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3254 3275]))                                          )
+                                        (reparse-symbol namespacesubparts) [3025 3278])
+                                    ("dispatch_table::instance" variable
+                                       (:constant-flag t
+                                        :type ("boost::msm::back::dispatch_table" type
+                                             (:template-specifier 
+                                                ( ("Fsm" type nil nil nil)
+                                                  ("Stt" type nil nil nil)
+                                                  ("Event" type nil nil nil)
+                                                  ("CompilePolicy" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [3349 3537])
+                                    ("state_machine_signature" variable (:type "int") (reparse-symbol namespacesubparts) [4552 4576])
+                                    ("make_euml_terminal" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [4677 4703])
+                                    ("public" label nil (reparse-symbol namespacesubparts) [5447 5455]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [2955 123045]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2939 123047]))                  
+                :type "namespace")
+                nil [2921 123049]))          
+      :file "state_machine.hpp"
+      :pointmax 123108
+      :fsize 123107
+      :lastmodtime '(22486 26307 530000 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MSM_CONSTRUCTOR_ARG_SIZE" . ((number "5" 2859 . 2860)))
+          ("MSM_VISITOR_ARGS_TYPEDEF_SUB" (spp-arg-list ("z" "n" "unused") 93187 . 93201) . 
+              ((TYPENAME "typename" 93202 . 93210) (symbol "StateType" 93211 . 93220) (punctuation ":" 93220 . 93221) (punctuation ":" 93221 . 93222) (symbol "accept_sig" 93222 . 93232) (punctuation ":" 93232 . 93233) (punctuation ":" 93233 . 93234) (spp-symbol-merge ((symbol "argument" 93234 . 93242) (symbol "n" 93246 . 93247)) 93234 . 93247)))
+          ("BOOST_MSM_BACK_STATEMACHINE_H")
+          )
+))
+  :file "!home!nakao!github!iotc_msgpub!broker!boost!msm!back!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

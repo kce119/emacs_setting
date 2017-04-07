@@ -1,0 +1,229 @@
+;; Object filelock/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "filelock/"
+  :tables
+  (list
+    (semanticdb-table "main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("thread" include (:system-flag t) nil [1 18])
+            ("mutex" include (:system-flag t) nil [19 35])
+            ("condition_variable" include (:system-flag t) nil [36 65])
+            ("fstream" include (:system-flag t) nil [66 84])
+            ("boost/lexical_cast.hpp" include (:system-flag t) nil [86 119])
+            ("boost/test/unit_test.hpp" include (:system-flag t) nil [119 119])
+            ("boost/process.hpp" include (:system-flag t) nil [119 119])
+            ("boost/process/wait_for_exit.hpp" include (:system-flag t) nil [120 162])
+            ("boost/interprocess/sync/file_lock.hpp" include (:system-flag t) nil [163 211])
+            ("boost/interprocess/sync/sharable_lock.hpp" include (:system-flag t) nil [212 264])
+            ("boost/interprocess/sync/scoped_lock.hpp" include (:system-flag t) nil [265 315])
+            ("boost/filesystem.hpp" include (:system-flag t) nil [316 347])
+            ("boost/asio.hpp" include (:system-flag t) nil [348 373])
+            ("port_file_path_str" variable
+               (:typemodifiers ("static")
+                :default-value "\"/tmp/port_file.txt\""
+                :type ("std::string" type (:type "class") nil nil))
+                nil [375 436])
+            ("port_file_path_char" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"/tmp/port_file.txt\""
+                :type "char")
+                nil [437 501])
+            ("port_file_path" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :constant-flag t
+                :arguments 
+                  ( ("" variable (:type ("port_file_path_str" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [554 573]))                  
+                :type ("boost::filesystem::path" type (:type "class") nil nil))
+                nil [502 574])
+            ("start_port" variable
+               (:typemodifiers ("static")
+                :default-value "9000"
+                :type ("std::uint16_t" type (:type "class") nil nil))
+                nil [575 614])
+            ("bp" type
+               (:kind alias
+                :members 
+                  ( ("boost::process" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [616 646])
+            ("bpi" type
+               (:kind alias
+                :members 
+                  ( ("bp::initializers" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [647 680])
+            ("bio" type
+               (:kind alias
+                :members 
+                  ( ("boost::iostreams" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [681 714])
+            ("ipc" type
+               (:kind alias
+                :members 
+                  ( ("boost::interprocess" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [715 751])
+            ("fs" type
+               (:kind alias
+                :members 
+                  ( ("boost::filesystem" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [752 785])
+            ("allocate_port_no" function
+               (:arguments 
+                  ( ("num_of_port" variable (:type ("std::uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [818 844]))                  
+                :type ("std::uint16_t" type (:type "class") nil nil))
+                nil [787 2947])
+            ("main" function (:type "int") nil [2949 3263]))          
+      :file "main.cpp"
+      :pointmax 3264
+      :unmatched-syntax nil)
+    (semanticdb-table "main2.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("thread" include (:system-flag t) nil [1 18])
+            ("mutex" include (:system-flag t) nil [19 35])
+            ("condition_variable" include (:system-flag t) nil [36 65])
+            ("fstream" include (:system-flag t) nil [66 84])
+            ("iostream" include (:system-flag t) nil [85 104])
+            ("boost/lexical_cast.hpp" include (:system-flag t) nil [106 139])
+            ("boost/interprocess/sync/file_lock.hpp" include (:system-flag t) nil [140 188])
+            ("boost/interprocess/sync/sharable_lock.hpp" include (:system-flag t) nil [189 241])
+            ("boost/interprocess/sync/scoped_lock.hpp" include (:system-flag t) nil [242 292])
+            ("boost/filesystem.hpp" include (:system-flag t) nil [293 324])
+            ("boost/asio.hpp" include (:system-flag t) nil [325 350])
+            ("iostream" include (:system-flag t) nil [351 370])
+            ("boost/iostreams/stream.hpp" include (:system-flag t) nil [371 408])
+            ("boost/algorithm/string/replace.hpp" include (:system-flag t) nil [409 454])
+            ("port_file_path_str" variable
+               (:typemodifiers ("static")
+                :default-value "\"/tmp/port_file.txt\""
+                :type ("std::string" type (:type "class") nil nil))
+                nil [456 517])
+            ("port_file_path_char" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"/tmp/port_file.txt\""
+                :type "char")
+                nil [518 582])
+            ("port_file_path" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :constant-flag t
+                :arguments 
+                  ( ("" variable (:type ("port_file_path_str" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [635 654]))                  
+                :type ("boost::filesystem::path" type (:type "class") nil nil))
+                nil [583 655])
+            ("start_port" variable
+               (:typemodifiers ("static")
+                :default-value "9000"
+                :type ("std::uint16_t" type (:type "class") nil nil))
+                nil [656 695])
+            ("bio" type
+               (:kind alias
+                :members 
+                  ( ("boost::iostreams" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [697 730])
+            ("ipc" type
+               (:kind alias
+                :members 
+                  ( ("boost::interprocess" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [731 767])
+            ("fs" type
+               (:kind alias
+                :members 
+                  ( ("boost::filesystem" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [768 801])
+            ("allocate_port_no" function
+               (:arguments 
+                  ( ("num_of_port" variable (:type ("std::uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [834 860]))                  
+                :type ("std::uint16_t" type (:type "class") nil nil))
+                nil [803 2957])
+            ("main" function (:type "int") nil [2959 3281]))          
+      :file "main2.cpp"
+      :pointmax 3282
+      :fsize 3281
+      :lastmodtime '(22673 43152 903333 336000)
+      :unmatched-syntax nil)
+    (semanticdb-table "main1.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("thread" include (:system-flag t) nil [1 18])
+            ("mutex" include (:system-flag t) nil [19 35])
+            ("condition_variable" include (:system-flag t) nil [36 65])
+            ("fstream" include (:system-flag t) nil [66 84])
+            ("boost/lexical_cast.hpp" include (:system-flag t) nil [86 119])
+            ("boost/interprocess/sync/file_lock.hpp" include (:system-flag t) nil [120 168])
+            ("boost/interprocess/sync/sharable_lock.hpp" include (:system-flag t) nil [169 221])
+            ("boost/interprocess/sync/scoped_lock.hpp" include (:system-flag t) nil [222 272])
+            ("boost/filesystem.hpp" include (:system-flag t) nil [273 304])
+            ("boost/asio.hpp" include (:system-flag t) nil [305 330])
+            ("iostream" include (:system-flag t) nil [331 350])
+            ("boost/iostreams/stream.hpp" include (:system-flag t) nil [351 388])
+            ("boost/algorithm/string/replace.hpp" include (:system-flag t) nil [389 434])
+            ("port_file_path_str" variable
+               (:typemodifiers ("static")
+                :default-value "\"/tmp/port_file.txt\""
+                :type ("std::string" type (:type "class") nil nil))
+                nil [436 497])
+            ("port_file_path_char" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"/tmp/port_file.txt\""
+                :type "char")
+                nil [498 562])
+            ("port_file_path" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :constant-flag t
+                :arguments 
+                  ( ("" variable (:type ("port_file_path_str" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [615 634]))                  
+                :type ("boost::filesystem::path" type (:type "class") nil nil))
+                nil [563 635])
+            ("start_port" variable
+               (:typemodifiers ("static")
+                :default-value "9000"
+                :type ("std::uint16_t" type (:type "class") nil nil))
+                nil [636 675])
+            ("bio" type
+               (:kind alias
+                :members 
+                  ( ("boost::iostreams" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [677 710])
+            ("ipc" type
+               (:kind alias
+                :members 
+                  ( ("boost::interprocess" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [711 747])
+            ("fs" type
+               (:kind alias
+                :members 
+                  ( ("boost::filesystem" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [748 781])
+            ("allocate_port_no" function
+               (:arguments 
+                  ( ("num_of_port" variable (:type ("std::uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [814 840]))                  
+                :type ("std::uint16_t" type (:type "class") nil nil))
+                nil [783 2937])
+            ("main" function (:type "int") nil [2939 3260]))          
+      :file "main1.cpp"
+      :pointmax 3261
+      :fsize 3260
+      :lastmodtime '(22673 43149 440000 2000)
+      :unmatched-syntax nil))
+  :file "!home!nakao!work!my_reference!boost!filelock!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

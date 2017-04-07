@@ -1,0 +1,116 @@
+;; Object detail/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "detail/"
+  :tables
+  (list
+    (semanticdb-table "begin_impl.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_FUSION_CONTAINER_SET_DETAIL_BEGIN_IMPL_HPP" variable (:constant-flag t) nil [470 518])
+            ("boost/fusion/support/config.hpp" include (:system-flag t) nil [520 562])
+            ("boost/fusion/iterator/basic_iterator.hpp" include (:system-flag t) nil [563 614])
+            ("boost" type
+               (:members 
+                  ( ("fusion" type
+                       (:members 
+                          ( ("extension" type
+                               (:members 
+                                  ( ("begin_impl" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [703 721])
+                                    ("begin_impl" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("apply" type
+                                               (:template 
+                                                  ( ("Seq" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("type" variable (:type "int") (reparse-symbol classsubparts) [1047 1052])
+                                                    ("call" function
+                                                       (:typemodifiers ("static")
+                                                        :arguments 
+                                                          ( ("seq" variable
+                                                               (:reference 1
+                                                                :type ("Seq" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1148 1157]))                                                          
+                                                        :type ("type" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1119 1221]))                                                  )
+                                                (reparse-symbol classsubparts) [784 1232]))                                          
+                                        :template-specifier 
+                                          ( ("set_tag" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [727 1239]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [653 1241]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [634 1242]))                  
+                :type "namespace")
+                nil [616 1243]))          
+      :file "begin_impl.hpp"
+      :pointmax 1252
+      :fsize 1251
+      :lastmodtime '(22324 21865 0 0)
+      :unmatched-syntax '((symbol 1082 . 1106) (symbol 1066 . 1081) (punctuation 1033 . 1034) (number 1015 . 1016) (punctuation 1013 . 1014) (symbol 991 . 994) (punctuation 989 . 990) (symbol 962 . 970) (punctuation 961 . 962) (punctuation 960 . 961) (symbol 957 . 960) (TYPENAME 948 . 956) (punctuation 946 . 947) (symbol 911 . 927) (punctuation 889 . 890) (symbol 875 . 889) (TYPEDEF 851 . 858) (punctuation 697 . 698) (TYPENAME 689 . 697) (punctuation 688 . 689) (TEMPLATE 679 . 687))
+      :lexical-table 
+        '(("BOOST_FUSION_CONTAINER_SET_DETAIL_BEGIN_IMPL_HPP")
+          )
+)
+    (semanticdb-table "deref_impl.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_FUSION_CONTAINER_SET_DETAIL_DEREF_IMPL_HPP" variable (:constant-flag t) nil [427 475])
+            ("boost/fusion/support/config.hpp" include (:system-flag t) nil [477 519])
+            ("boost/fusion/sequence/intrinsic/at.hpp" include (:system-flag t) nil [520 569])
+            ("boost/type_traits/is_const.hpp" include (:system-flag t) nil [570 611])
+            ("boost" type
+               (:members 
+                  ( ("fusion" type
+                       (:members 
+                          ( ("extension" type
+                               (:members 
+                                  ( ("deref_impl" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [700 718])
+                                    ("deref_impl" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("apply" type
+                                               (:template 
+                                                  ( ("It" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1211 1233])
+                                                    ("call" function
+                                                       (:typemodifiers ("static")
+                                                        :arguments 
+                                                          ( ("it" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("It" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1329 1342]))                                                          
+                                                        :type ("type" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1300 1454]))                                                  )
+                                                (reparse-symbol classsubparts) [790 1465]))                                          
+                                        :template-specifier 
+                                          ( ("set_iterator_tag" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [724 1472]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [650 1474]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [631 1475]))                  
+                :type "namespace")
+                nil [613 1476]))          
+      :file "deref_impl.hpp"
+      :pointmax 1485
+      :fsize 1484
+      :lastmodtime '(22324 21865 0 0)
+      :unmatched-syntax '((symbol 1263 . 1287) (symbol 1247 . 1262) (punctuation 1210 . 1211) (punctuation 1209 . 1210) (punctuation 1208 . 1209) (symbol 1186 . 1191) (punctuation 1185 . 1186) (punctuation 1184 . 1185) (symbol 1182 . 1184) (TYPENAME 1173 . 1181) (punctuation 1171 . 1172) (symbol 1148 . 1152) (punctuation 1147 . 1148) (punctuation 1146 . 1147) (punctuation 1145 . 1146) (symbol 1112 . 1124) (punctuation 1111 . 1112) (punctuation 1110 . 1111) (symbol 1102 . 1110) (punctuation 1101 . 1102) (punctuation 1100 . 1101) (symbol 1098 . 1100) (TYPENAME 1089 . 1097) (punctuation 1087 . 1088) (CONST 1059 . 1064) (symbol 1046 . 1058) (punctuation 1045 . 1046) (punctuation 1044 . 1045) (symbol 1036 . 1044) (punctuation 1035 . 1036) (punctuation 1034 . 1035) (symbol 1032 . 1034) (TYPENAME 1023 . 1031) (punctuation 1021 . 1022) (punctuation 997 . 998) (symbol 989 . 997) (punctuation 988 . 989) (punctuation 987 . 988) (symbol 985 . 987) (TYPENAME 976 . 984) (punctuation 975 . 976) (symbol 967 . 975) (punctuation 941 . 942) (symbol 938 . 941) (punctuation 937 . 938) (punctuation 936 . 937) (symbol 933 . 936) (TYPENAME 924 . 932) (punctuation 902 . 903) (symbol 900 . 902) (punctuation 899 . 900) (punctuation 898 . 899) (symbol 889 . 898) (TYPENAME 864 . 872) (TYPEDEF 856 . 863) (punctuation 694 . 695) (TYPENAME 686 . 694) (punctuation 685 . 686) (TEMPLATE 676 . 684))
+      :lexical-table 
+        '(("BOOST_FUSION_CONTAINER_SET_DETAIL_DEREF_IMPL_HPP")
+          )
+))
+  :file "!usr!include!boost!fusion!container!set!detail!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

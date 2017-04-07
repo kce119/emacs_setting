@@ -1,0 +1,595 @@
+;; Object pthread/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pthread/"
+  :tables
+  (list
+    (semanticdb-table "shared_mutex.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_THREAD_PTHREAD_SHARED_MUTEX_HPP" variable (:constant-flag t) nil [55 92])
+            ("boost/assert.hpp" include (:system-flag t) nil [347 374])
+            ("boost/static_assert.hpp" include (:system-flag t) nil [375 409])
+            ("boost/thread/mutex.hpp" include (:system-flag t) nil [410 443])
+            ("boost/thread/condition_variable.hpp" include (:system-flag t) nil [444 490])
+            ("boost/thread/detail/delete.hpp" include (:system-flag t) nil [715 756])
+            ("boost/assert.hpp" include (:system-flag t) nil [757 784])
+            ("boost/config/abi_prefix.hpp" include (:system-flag t) nil [786 824])
+            ("boost" type
+               (:members 
+                  ( ("shared_mutex" type
+                       (:members 
+                          ( ("private" label nil (reparse-symbol classsubparts) [877 885])
+                            ("state_data" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [929 936])
+                                    ("state_data" function
+                                       (:constructor-flag t
+                                        :type ("state_data" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [949 1119])
+                                    ("assert_free" function
+                                       (:methodconst-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1133 1322])
+                                    ("assert_locked" function
+                                       (:methodconst-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1336 1525])
+                                    ("assert_lock_shared" function
+                                       (:methodconst-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1539 1971])
+                                    ("assert_lock_upgraded" function
+                                       (:methodconst-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1985 2183])
+                                    ("assert_lock_not_upgraded" function
+                                       (:methodconst-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2197 2307])
+                                    ("can_lock" function
+                                       (:methodconst-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [2321 2425])
+                                    ("exclusive_blocked" function
+                                       (:arguments 
+                                          ( ("blocked" variable (:type "bool") (reparse-symbol arg-sub-list) [2463 2476]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2439 2557])
+                                    ("lock" function (:type "void") (reparse-symbol classsubparts) [2571 2645])
+                                    ("unlock" function (:type "void") (reparse-symbol classsubparts) [2659 2787])
+                                    ("can_lock_shared" function
+                                       (:methodconst-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [2801 2925])
+                                    ("more_shared" function
+                                       (:methodconst-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [2939 3034])
+                                    ("get_shared_count" function
+                                       (:methodconst-flag t
+                                        :type "unsigned int")
+                                        (reparse-symbol classsubparts) [3047 3147])
+                                    ("lock_shared" function (:type "unsigned int") (reparse-symbol classsubparts) [3160 3251])
+                                    ("unlock_shared" function (:type "void") (reparse-symbol classsubparts) [3266 3347])
+                                    ("unlock_shared_downgrades" function (:type "bool") (reparse-symbol classsubparts) [3361 3701])
+                                    ("lock_upgrade" function (:type "void") (reparse-symbol classsubparts) [3715 3825])
+                                    ("can_lock_upgrade" function
+                                       (:methodconst-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [3838 3974])
+                                    ("unlock_upgrade" function (:type "void") (reparse-symbol classsubparts) [3988 4101])
+                                    ("shared_count" variable (:type "unsigned int") (reparse-symbol classsubparts) [4134 4156])
+                                    ("exclusive" variable (:type "bool") (reparse-symbol classsubparts) [4169 4184])
+                                    ("upgrade" variable (:type "bool") (reparse-symbol classsubparts) [4197 4210])
+                                    ("exclusive_waiting_blocked" variable (:type "bool") (reparse-symbol classsubparts) [4223 4254]))                                  
+                                :type "class")
+                                (reparse-symbol classsubparts) [894 4265])
+                            ("state" variable (:type ("state_data" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4277 4294])
+                            ("state_change" variable (:type ("boost::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4303 4329])
+                            ("shared_cond" variable (:type ("boost::condition_variable" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4338 4376])
+                            ("exclusive_cond" variable (:type ("boost::condition_variable" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4385 4426])
+                            ("upgrade_cond" variable (:type ("boost::condition_variable" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4435 4474])
+                            ("release_waiters" function (:type "void") (reparse-symbol classsubparts) [4484 4605])
+                            ("public" label nil (reparse-symbol classsubparts) [4611 4618])
+                            ("shared_mutex" function
+                               (:constructor-flag t
+                                :type ("shared_mutex" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4676 4710])
+                            ("shared_mutex" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [4720 4755])
+                            ("lock_shared" function (:type "void") (reparse-symbol classsubparts) [4765 5133])
+                            ("try_lock_shared" function (:type "bool") (reparse-symbol classsubparts) [5143 5406])
+                            ("unlock_shared" function (:type "void") (reparse-symbol classsubparts) [7113 8008])
+                            ("lock" function (:type "void") (reparse-symbol classsubparts) [8018 8452])
+                            ("try_lock" function (:type "bool") (reparse-symbol classsubparts) [10664 10988])
+                            ("unlock" function (:type "void") (reparse-symbol classsubparts) [10998 11279])
+                            ("lock_upgrade" function (:type "void") (reparse-symbol classsubparts) [11289 11733])
+                            ("try_lock_upgrade" function (:type "bool") (reparse-symbol classsubparts) [13850 14291])
+                            ("unlock_upgrade" function (:type "void") (reparse-symbol classsubparts) [14301 14696])
+                            ("unlock_upgrade_and_lock" function (:type "void") (reparse-symbol classsubparts) [14739 15262])
+                            ("unlock_and_lock_upgrade" function (:type "void") (reparse-symbol classsubparts) [15272 15644])
+                            ("try_unlock_upgrade_and_lock" function (:type "bool") (reparse-symbol classsubparts) [15654 16173])
+                            ("unlock_and_lock_shared" function (:type "void") (reparse-symbol classsubparts) [17509 17806])
+                            ("unlock_upgrade_and_lock_shared" function (:type "void") (reparse-symbol classsubparts) [19679 19956]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [848 21861])
+                    ("upgrade_mutex" type
+                       (:typedef ("shared_mutex" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [21867 21902]))                  
+                :type "namespace")
+                nil [826 21904])
+            ("boost/config/abi_suffix.hpp" include (:system-flag t) nil [21906 21944]))          
+      :file "shared_mutex.hpp"
+      :pointmax 21953
+      :fsize 21952
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax '((semantic-list 4652 . 4666) (symbol 4628 . 4652))
+      :lexical-table 
+        '(("BOOST_THREAD_PTHREAD_SHARED_MUTEX_HPP")
+          )
+)
+    (semanticdb-table "mutex.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_THREAD_PTHREAD_MUTEX_HPP" variable (:constant-flag t) nil [48 78])
+            ("boost/thread/detail/config.hpp" include (:system-flag t) nil [334 375])
+            ("boost/assert.hpp" include (:system-flag t) nil [376 403])
+            ("pthread.h" include (:system-flag t) nil [404 424])
+            ("boost/throw_exception.hpp" include (:system-flag t) nil [425 461])
+            ("boost/core/ignore_unused.hpp" include (:system-flag t) nil [462 501])
+            ("boost/thread/exceptions.hpp" include (:system-flag t) nil [502 540])
+            ("boost/thread/thread_time.hpp" include (:system-flag t) nil [634 673])
+            ("boost/thread/xtime.hpp" include (:system-flag t) nil [674 707])
+            ("boost/assert.hpp" include (:system-flag t) nil [708 735])
+            ("errno.h" include (:system-flag t) nil [736 754])
+            ("boost/thread/pthread/timespec.hpp" include (:system-flag t) nil [755 799])
+            ("boost/thread/pthread/pthread_mutex_scoped_lock.hpp" include (:system-flag t) nil [800 861])
+            ("boost/thread/detail/delete.hpp" include (:system-flag t) nil [976 1017])
+            ("boost/config/abi_prefix.hpp" include (:system-flag t) nil [1252 1290])
+            ("BOOST_THREAD_HAS_EINTR_BUG" variable (:constant-flag t) nil [1338 1364])
+            ("boost" type
+               (:members 
+                  ( ("posix" type
+                       (:members 
+                          ( ("pthread_mutex_destroy" function
+                               (:arguments 
+                                  ( ("m" variable
+                                       (:pointer 1
+                                        :type ("pthread_mutex_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1493 1512]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [1467 1648])
+                            ("pthread_mutex_lock" function
+                               (:arguments 
+                                  ( ("m" variable
+                                       (:pointer 1
+                                        :type ("pthread_mutex_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1694 1713]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [1671 1846])
+                            ("pthread_mutex_unlock" function
+                               (:arguments 
+                                  ( ("m" variable
+                                       (:pointer 1
+                                        :type ("pthread_mutex_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1894 1913]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [1869 2048]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1393 2422])
+                    ("mutex" type
+                       (:members 
+                          ( ("private" label nil (reparse-symbol classsubparts) [2449 2457])
+                            ("m" variable (:type ("pthread_mutex_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2466 2484])
+                            ("public" label nil (reparse-symbol classsubparts) [2489 2496])
+                            ("mutex" function
+                               (:constructor-flag t
+                                :type ("mutex" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2546 2802])
+                            ("mutex" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [2811 2966])
+                            ("lock" function (:type "void") (reparse-symbol classsubparts) [2976 3215])
+                            ("unlock" function (:type "void") (reparse-symbol classsubparts) [3225 3539])
+                            ("try_lock" function (:type "bool") (reparse-symbol classsubparts) [3549 3831])
+                            ("BOOST_THREAD_DEFINES_MUTEX_NATIVE_HANDLE" variable (:constant-flag t) (reparse-symbol classsubparts) [3841 3881])
+                            ("native_handle_type" type
+                               (:typedef ("pthread_mutex_t" type (:type "class") nil nil)
+                                :pointer 1
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3890 3934])
+                            ("native_handle" function (:type ("native_handle_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3943 4020]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2427 4195])
+                    ("try_mutex" type
+                       (:typedef ("mutex" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [4201 4225])
+                    ("timed_mutex" type
+                       (:members 
+                          ( ("private" label nil (reparse-symbol classsubparts) [4259 4267])
+                            ("m" variable (:type ("pthread_mutex_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4276 4294])
+                            ("cond" variable (:type ("pthread_cond_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4339 4359])
+                            ("is_locked" variable (:type "bool") (reparse-symbol classsubparts) [4368 4383])
+                            ("public" label nil (reparse-symbol classsubparts) [4395 4402])
+                            ("timed_mutex" function
+                               (:constructor-flag t
+                                :type ("timed_mutex" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4457 5161])
+                            ("timed_mutex" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [5170 5364])
+                            ("lock" function (:type "void") (reparse-symbol classsubparts) [6872 7124])
+                            ("unlock" function (:type "void") (reparse-symbol classsubparts) [7134 7327])
+                            ("try_lock" function (:type "bool") (reparse-symbol classsubparts) [7337 7585])
+                            ("private" label nil (reparse-symbol classsubparts) [7591 7599])
+                            ("do_try_lock_until" function
+                               (:arguments 
+                                  ( ("timeout" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("timespec" type
+                                             (:prototype t
+                                              :type "struct")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [7631 7662]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7608 8097])
+                            ("public" label nil (reparse-symbol classsubparts) [8102 8109])
+                            ("BOOST_THREAD_DEFINES_TIMED_MUTEX_NATIVE_HANDLE" variable (:constant-flag t) (reparse-symbol classsubparts) [9632 9678])
+                            ("native_handle_type" type
+                               (:typedef ("pthread_mutex_t" type (:type "class") nil nil)
+                                :pointer 1
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [9687 9731])
+                            ("native_handle" function (:type ("native_handle_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9740 9817]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [4231 10057]))                  
+                :type "namespace")
+                nil [1373 10060])
+            ("boost/config/abi_suffix.hpp" include (:system-flag t) nil [10062 10100]))          
+      :file "mutex.hpp"
+      :pointmax 10110
+      :fsize 10109
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax '((semantic-list 4435 . 4448) (symbol 4411 . 4435) (semantic-list 2529 . 2536) (symbol 2505 . 2529) (symbol 1851 . 1868) (symbol 1653 . 1670) (symbol 1449 . 1466))
+      :lexical-table 
+        '(("BOOST_THREAD_PTHREAD_MUTEX_HPP")
+          ("BOOST_THREAD_HAS_EINTR_BUG")
+          ("BOOST_THREAD_DEFINES_MUTEX_NATIVE_HANDLE")
+          ("BOOST_THREAD_DEFINES_TIMED_MUTEX_NATIVE_HANDLE")
+          )
+)
+    (semanticdb-table "timespec.hpp"
+      :file "timespec.hpp"
+      :fsize 3547
+      :lastmodtime '(22452 53218 0 0))
+    (semanticdb-table "pthread_mutex_scoped_lock.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_PTHREAD_MUTEX_SCOPED_LOCK_HPP" variable (:constant-flag t) nil [53 88])
+            ("pthread.h" include (:system-flag t) nil [295 315])
+            ("boost/assert.hpp" include (:system-flag t) nil [316 343])
+            ("boost/config/abi_prefix.hpp" include (:system-flag t) nil [345 383])
+            ("boost" type
+               (:members 
+                  ( ("pthread" type
+                       (:members 
+                          ( ("pthread_mutex_scoped_lock" type
+                               (:members 
+                                  ( ("m" variable
+                                       (:pointer 1
+                                        :type ("pthread_mutex_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [493 512])
+                                    ("locked" variable (:type "bool") (reparse-symbol classsubparts) [525 537])
+                                    ("public" label nil (reparse-symbol classsubparts) [546 553])
+                                    ("pthread_mutex_scoped_lock" function
+                                       (:constructor-flag t
+                                        :typemodifiers ("explicit")
+                                        :arguments 
+                                          ( ("m_" variable
+                                               (:pointer 1
+                                                :type ("pthread_mutex_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [601 621]))                                          
+                                        :type ("pthread_mutex_scoped_lock" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [566 739])
+                                    ("unlock" function (:type "void") (reparse-symbol classsubparts) [752 879])
+                                    ("pthread_mutex_scoped_lock" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [905 1054]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [439 1078])
+                            ("pthread_mutex_scoped_unlock" type
+                               (:members 
+                                  ( ("m" variable
+                                       (:pointer 1
+                                        :type ("pthread_mutex_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1144 1163])
+                                    ("public" label nil (reparse-symbol classsubparts) [1172 1179])
+                                    ("pthread_mutex_scoped_unlock" function
+                                       (:constructor-flag t
+                                        :typemodifiers ("explicit")
+                                        :arguments 
+                                          ( ("m_" variable
+                                               (:pointer 1
+                                                :type ("pthread_mutex_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1229 1249]))                                          
+                                        :type ("pthread_mutex_scoped_unlock" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1192 1356])
+                                    ("pthread_mutex_scoped_unlock" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1369 1481]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1088 1505]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [407 1511]))                  
+                :type "namespace")
+                nil [385 1513])
+            ("boost/config/abi_suffix.hpp" include (:system-flag t) nil [1515 1553]))          
+      :file "pthread_mutex_scoped_lock.hpp"
+      :pointmax 1562
+      :fsize 1561
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_PTHREAD_MUTEX_SCOPED_LOCK_HPP")
+          )
+)
+    (semanticdb-table "condition_variable.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_THREAD_CONDITION_VARIABLE_PTHREAD_HPP" variable (:constant-flag t) nil [61 104])
+            ("boost/thread/pthread/timespec.hpp" include (:system-flag t) nil [356 400])
+            ("boost/thread/pthread/pthread_mutex_scoped_lock.hpp" include (:system-flag t) nil [401 462])
+            ("boost/thread/pthread/condition_variable_fwd.hpp" include (:system-flag t) nil [566 624])
+            ("boost/thread/detail/delete.hpp" include (:system-flag t) nil [739 780])
+            ("boost/config/abi_prefix.hpp" include (:system-flag t) nil [782 820])
+            ("boost" type
+               (:members 
+                  ( ("thread_cv_detail" type
+                       (:members 
+                          ( ("lock_on_exit" type
+                               (:template 
+                                  ( ("MutexType" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("m" variable
+                                       (:pointer 1
+                                        :type ("MutexType" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1111 1124])
+                                    ("lock_on_exit" function
+                                       (:constructor-flag t
+                                        :type ("lock_on_exit" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [1138 1189])
+                                    ("activate" function
+                                       (:arguments 
+                                          ( ("m_" variable
+                                               (:reference 1
+                                                :type ("MutexType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1217 1231]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1203 1311])
+                                    ("lock_on_exit" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1324 1455]))                                  )
+                                (reparse-symbol namespacesubparts) [1032 1466]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [991 1472])
+                    ("wait" function
+                       (:parent "condition_variable"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("m" variable
+                               (:reference 1
+                                :type ("unique_lock" type
+                                     (:template-specifier 
+                                        ( ("mutex" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1515 1537]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1478 2576])
+                    ("do_wait_until" function
+                       (:parent "condition_variable"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("m" variable
+                               (:reference 1
+                                :type ("unique_lock" type
+                                     (:template-specifier 
+                                        ( ("mutex" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2645 2667])
+                            ("timeout" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("timespec" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2684 2715]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2582 3854])
+                    ("condition_variable_any" type
+                       (:members 
+                          ( ("internal_mutex" variable (:type ("pthread_mutex_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4436 4467])
+                            ("cond" variable (:type ("pthread_cond_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4476 4496])
+                            ("public" label nil (reparse-symbol classsubparts) [4502 4509])
+                            ("condition_variable_any" function
+                               (:constructor-flag t
+                                :type ("condition_variable_any" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4575 5257])
+                            ("condition_variable_any" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [5266 5434])
+                            ("wait" function
+                               (:template 
+                                  ( ("lock_type" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("m" variable
+                                       (:reference 1
+                                        :type ("lock_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5491 5504]))                                  )
+                                (reparse-symbol classsubparts) [5444 6270])
+                            ("wait" function
+                               (:template 
+                                  ( ("lock_type" type (:type "class") nil nil)
+                                    ("predicate_type" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("m" variable
+                                       (:reference 1
+                                        :type ("lock_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6351 6364])
+                                    ("pred" variable (:type ("predicate_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6364 6384]))                                  )
+                                (reparse-symbol classsubparts) [6280 6440])
+                            ("private" label nil (reparse-symbol classsubparts) [13621 13629])
+                            ("do_wait_until" function
+                               (:template 
+                                  ( ("lock_type" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("m" variable
+                                       (:reference 1
+                                        :type ("lock_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13745 13758])
+                                    ("timeout" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("timespec" type
+                                             (:prototype t
+                                              :type "struct")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [13769 13800]))                                  )
+                                (reparse-symbol classsubparts) [13680 14672]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [4393 14679]))                  
+                :type "namespace")
+                nil [822 14682])
+            ("boost/config/abi_suffix.hpp" include (:system-flag t) nil [14684 14722]))          
+      :file "condition_variable.hpp"
+      :pointmax 14731
+      :fsize 14730
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax '((semantic-list 13461 . 13616) (symbol 13438 . 13452) (semantic-list 13435 . 13437) (symbol 13425 . 13435) (VOID 13420 . 13424) (semantic-list 13258 . 13410) (symbol 13235 . 13249) (semantic-list 13232 . 13234) (symbol 13222 . 13232) (VOID 13217 . 13221) (semantic-list 4542 . 4566) (symbol 4518 . 4542) (semantic-list 4189 . 4387) (symbol 4170 . 4184) (semantic-list 4167 . 4169) (symbol 4157 . 4167) (punctuation 4156 . 4157) (punctuation 4155 . 4156) (symbol 4137 . 4155) (VOID 4132 . 4136) (INLINE 4125 . 4131) (semantic-list 3924 . 4119) (symbol 3905 . 3919) (semantic-list 3902 . 3904) (symbol 3892 . 3902) (punctuation 3891 . 3892) (punctuation 3890 . 3891) (symbol 3872 . 3890) (VOID 3867 . 3871) (INLINE 3860 . 3866))
+      :lexical-table 
+        '(("BOOST_THREAD_CONDITION_VARIABLE_PTHREAD_HPP")
+          )
+)
+    (semanticdb-table "condition_variable_fwd.hpp"
+      :file "condition_variable_fwd.hpp"
+      :fsize 11619
+      :lastmodtime '(22452 53218 0 0))
+    (semanticdb-table "recursive_mutex.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_THREAD_PTHREAD_RECURSIVE_MUTEX_HPP" variable (:constant-flag t) nil [58 98])
+            ("pthread.h" include (:system-flag t) nil [349 369])
+            ("boost/throw_exception.hpp" include (:system-flag t) nil [370 406])
+            ("boost/thread/exceptions.hpp" include (:system-flag t) nil [407 445])
+            ("boost/thread/thread_time.hpp" include (:system-flag t) nil [539 578])
+            ("boost/assert.hpp" include (:system-flag t) nil [579 606])
+            ("unistd.h" include (:system-flag t) nil [622 641])
+            ("boost/date_time/posix_time/conversion.hpp" include (:system-flag t) nil [649 701])
+            ("errno.h" include (:system-flag t) nil [702 720])
+            ("boost/thread/pthread/timespec.hpp" include (:system-flag t) nil [721 765])
+            ("boost/thread/pthread/pthread_mutex_scoped_lock.hpp" include (:system-flag t) nil [766 827])
+            ("boost/thread/detail/delete.hpp" include (:system-flag t) nil [942 983])
+            ("boost/config/abi_prefix.hpp" include (:system-flag t) nil [1497 1535])
+            ("boost" type
+               (:members 
+                  ( ("recursive_mutex" type
+                       (:members 
+                          ( ("private" label nil (reparse-symbol classsubparts) [1591 1599])
+                            ("m" variable (:type ("pthread_mutex_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1608 1626])
+                            ("cond" variable (:type ("pthread_cond_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1686 1706])
+                            ("is_locked" variable (:type "bool") (reparse-symbol classsubparts) [1715 1730])
+                            ("owner" variable (:type ("pthread_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1739 1755])
+                            ("count" variable (:type "unsigned int") (reparse-symbol classsubparts) [1764 1779])
+                            ("public" label nil (reparse-symbol classsubparts) [1791 1798])
+                            ("recursive_mutex" function
+                               (:constructor-flag t
+                                :type ("recursive_mutex" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1857 3595])
+                            ("recursive_mutex" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [3604 3810])
+                            ("lock" function (:type "void") (reparse-symbol classsubparts) [4446 4896])
+                            ("unlock" function (:type "void") (reparse-symbol classsubparts) [4906 5156])
+                            ("try_lock" function (:type "bool") (reparse-symbol classsubparts) [5166 5509]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1559 5712])
+                    ("recursive_try_mutex" type
+                       (:typedef ("recursive_mutex" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [5718 5762])
+                    ("recursive_timed_mutex" type
+                       (:members 
+                          ( ("private" label nil (reparse-symbol classsubparts) [5806 5814])
+                            ("m" variable (:type ("pthread_mutex_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5823 5841])
+                            ("cond" variable (:type ("pthread_cond_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5896 5916])
+                            ("is_locked" variable (:type "bool") (reparse-symbol classsubparts) [5925 5940])
+                            ("owner" variable (:type ("pthread_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5949 5965])
+                            ("count" variable (:type "unsigned int") (reparse-symbol classsubparts) [5974 5989])
+                            ("public" label nil (reparse-symbol classsubparts) [6001 6008])
+                            ("recursive_timed_mutex" function
+                               (:constructor-flag t
+                                :type ("recursive_timed_mutex" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6073 7777])
+                            ("recursive_timed_mutex" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [7786 7993])
+                            ("lock" function (:type "void") (reparse-symbol classsubparts) [8890 9340])
+                            ("unlock" function (:type "void") (reparse-symbol classsubparts) [9350 9600])
+                            ("private" label nil (reparse-symbol classsubparts) [9974 9982])
+                            ("do_try_lock_until" function
+                               (:arguments 
+                                  ( ("timeout" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("timespec" type
+                                             (:prototype t
+                                              :type "struct")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [10014 10045]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [9991 10682])
+                            ("public" label nil (reparse-symbol classsubparts) [10687 10694])
+                            ("BOOST_THREAD_DEFINES_RECURSIVE_TIMED_MUTEX_NATIVE_HANDLE" variable (:constant-flag t) (reparse-symbol classsubparts) [12211 12267])
+                            ("native_handle_type" type
+                               (:typedef ("pthread_mutex_t" type (:type "class") nil nil)
+                                :pointer 1
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [12276 12320])
+                            ("native_handle" function (:type ("native_handle_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12329 12406]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [5768 12666]))                  
+                :type "namespace")
+                nil [1537 12669])
+            ("boost/config/abi_suffix.hpp" include (:system-flag t) nil [12671 12709]))          
+      :file "recursive_mutex.hpp"
+      :pointmax 12718
+      :fsize 12717
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax '((semantic-list 9649 . 9968) (symbol 9626 . 9640) (semantic-list 9623 . 9625) (symbol 9615 . 9623) (BOOL 9610 . 9614) (semantic-list 6041 . 6064) (symbol 6017 . 6041) (semantic-list 1831 . 1848) (symbol 1807 . 1831))
+      :lexical-table 
+        '(("BOOST_THREAD_DEFINES_RECURSIVE_TIMED_MUTEX_NATIVE_HANDLE")
+          ("BOOST_THREAD_PTHREAD_RECURSIVE_MUTEX_HPP")
+          )
+))
+  :file "!usr!include!boost!thread!pthread!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

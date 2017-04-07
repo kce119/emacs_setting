@@ -1,0 +1,765 @@
+;; Object generic/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "generic/"
+  :tables
+  (list
+    (semanticdb-table "basic_endpoint.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ASIO_GENERIC_BASIC_ENDPOINT_HPP" variable (:constant-flag t) nil [360 397])
+            ("boost/asio/detail/config.hpp" include (:system-flag t) nil [508 547])
+            ("boost/asio/generic/detail/endpoint.hpp" include (:system-flag t) nil [548 597])
+            ("boost/asio/detail/push_options.hpp" include (:system-flag t) nil [599 644])
+            ("boost" type
+               (:members 
+                  ( ("asio" type
+                       (:members 
+                          ( ("generic" type
+                               (:members 
+                                  ( ("basic_endpoint" type
+                                       (:template 
+                                          ( ("Protocol" type (:type "class") nil nil))                                          
+                                        :type "class"
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [1169 1176])
+                                            ("protocol_type" type
+                                               (:typedef ("Protocol" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1233 1264])
+                                            ("data_type" type
+                                               (:typedef ("boost::asio::detail::socket_addr_type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1481 1537])
+                                            ("basic_endpoint" function
+                                               (:constructor-flag t
+                                                :type ("basic_endpoint" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1575 1599])
+                                            ("basic_endpoint" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("socket_address" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type "void")
+                                                        (reparse-symbol arg-sub-list) [1681 1708])
+                                                    ("socket_address_size" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1715 1747])
+                                                    ("socket_protocol" variable
+                                                       (:default-value "0"
+                                                        :type "int")
+                                                        (reparse-symbol arg-sub-list) [1748 1772]))                                                  
+                                                :type ("basic_endpoint" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1666 1846])
+                                            ("basic_endpoint" function
+                                               (:template 
+                                                  ( ("Endpoint" type (:type "class") nil nil))                                                  
+                                                :type ("basic_endpoint" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("endpoint" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Endpoint" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1957 1982]))                                                  
+                                                :constructor-flag t)
+                                                (reparse-symbol classsubparts) [1911 2068])
+                                            ("basic_endpoint" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("other" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("basic_endpoint" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2111 2139]))                                                  
+                                                :type ("basic_endpoint" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2096 2172])
+                                            ("=" function
+                                               (:operator-flag t
+                                                :arguments 
+                                                  ( ("other" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("basic_endpoint" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2409 2437]))                                                  
+                                                :type ("basic_endpoint" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2383 2488])
+                                            ("protocol" function
+                                               (:methodconst-flag t
+                                                :type ("protocol_type" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2758 2856])
+                                            ("data" function
+                                               (:pointer 1
+                                                :type ("data_type" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2914 2964])
+                                            ("data" function
+                                               (:methodconst-flag t
+                                                :pointer 1
+                                                :constant-flag t
+                                                :type ("data_type" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3022 3084])
+                                            ("size" function
+                                               (:methodconst-flag t
+                                                :type ("std::size_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3154 3211])
+                                            ("resize" function
+                                               (:arguments 
+                                                  ( ("new_size" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3293 3314]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3281 3350])
+                                            ("capacity" function
+                                               (:methodconst-flag t
+                                                :type ("std::size_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3413 3478])
+                                            ("==" function
+                                               (:operator-flag t
+                                                :typemodifiers ("friend")
+                                                :arguments 
+                                                  ( ("e1" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("basic_endpoint" type
+                                                             (:template-specifier 
+                                                                ( ("Protocol" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [3547 3582])
+                                                    ("e2" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("basic_endpoint" type
+                                                             (:template-specifier 
+                                                                ( ("Protocol" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [3589 3624]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [3524 3665])
+                                            ("!=" function
+                                               (:operator-flag t
+                                                :typemodifiers ("friend")
+                                                :arguments 
+                                                  ( ("e1" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("basic_endpoint" type
+                                                             (:template-specifier 
+                                                                ( ("Protocol" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [3736 3771])
+                                                    ("e2" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("basic_endpoint" type
+                                                             (:template-specifier 
+                                                                ( ("Protocol" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [3778 3813]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [3713 3857])
+                                            ("<" function
+                                               (:operator-flag t
+                                                :typemodifiers ("friend")
+                                                :arguments 
+                                                  ( ("e1" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("basic_endpoint" type
+                                                             (:template-specifier 
+                                                                ( ("Protocol" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [3921 3956])
+                                                    ("e2" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("basic_endpoint" type
+                                                             (:template-specifier 
+                                                                ( ("Protocol" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [3963 3998]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [3899 4038])
+                                            (">" function
+                                               (:operator-flag t
+                                                :typemodifiers ("friend")
+                                                :arguments 
+                                                  ( ("e1" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("basic_endpoint" type
+                                                             (:template-specifier 
+                                                                ( ("Protocol" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [4102 4137])
+                                                    ("e2" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("basic_endpoint" type
+                                                             (:template-specifier 
+                                                                ( ("Protocol" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [4144 4179]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [4080 4219])
+                                            ("<=" function
+                                               (:operator-flag t
+                                                :typemodifiers ("friend")
+                                                :arguments 
+                                                  ( ("e1" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("basic_endpoint" type
+                                                             (:template-specifier 
+                                                                ( ("Protocol" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [4284 4319])
+                                                    ("e2" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("basic_endpoint" type
+                                                             (:template-specifier 
+                                                                ( ("Protocol" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [4326 4361]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [4261 4392])
+                                            (">=" function
+                                               (:operator-flag t
+                                                :typemodifiers ("friend")
+                                                :arguments 
+                                                  ( ("e1" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("basic_endpoint" type
+                                                             (:template-specifier 
+                                                                ( ("Protocol" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [4457 4492])
+                                                    ("e2" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("basic_endpoint" type
+                                                             (:template-specifier 
+                                                                ( ("Protocol" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [4499 4534]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [4434 4565])
+                                            ("private" label nil (reparse-symbol classsubparts) [4567 4575])
+                                            ("impl_" variable (:type ("boost::asio::generic::detail::endpoint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4616 4661]))                                          )
+                                        (reparse-symbol namespacesubparts) [1117 4664]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [681 4667]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [664 4690]))                  
+                :type "namespace")
+                nil [646 4710])
+            ("boost/asio/detail/pop_options.hpp" include (:system-flag t) nil [4731 4775]))          
+      :file "basic_endpoint.hpp"
+      :pointmax 4825
+      :fsize 4824
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ASIO_GENERIC_BASIC_ENDPOINT_HPP")
+          )
+)
+    (semanticdb-table "datagram_protocol.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ASIO_GENERIC_DATAGRAM_PROTOCOL_HPP" variable (:constant-flag t) nil [369 409])
+            ("boost/asio/detail/config.hpp" include (:system-flag t) nil [520 559])
+            ("typeinfo" include (:system-flag t) nil [561 580])
+            ("boost/asio/basic_datagram_socket.hpp" include (:system-flag t) nil [581 628])
+            ("boost/asio/detail/socket_types.hpp" include (:system-flag t) nil [629 674])
+            ("boost/asio/detail/throw_exception.hpp" include (:system-flag t) nil [675 723])
+            ("boost/asio/generic/basic_endpoint.hpp" include (:system-flag t) nil [724 772])
+            ("boost/asio/detail/push_options.hpp" include (:system-flag t) nil [774 819])
+            ("boost" type
+               (:members 
+                  ( ("asio" type
+                       (:members 
+                          ( ("generic" type
+                               (:members 
+                                  ( ("datagram_protocol" type
+                                       (:members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [1519 1526])
+                                            ("datagram_protocol" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("address_family" variable (:type "int") (reparse-symbol arg-sub-list) [1625 1644])
+                                                    ("socket_protocol" variable (:type "int") (reparse-symbol arg-sub-list) [1645 1665]))                                                  
+                                                :type ("datagram_protocol" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1607 1737])
+                                            ("datagram_protocol" function
+                                               (:template 
+                                                  ( ("Protocol" type (:type "class") nil nil))                                                  
+                                                :type ("datagram_protocol" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("source_protocol" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Protocol" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1951 1983]))                                                  
+                                                :constructor-flag t)
+                                                (reparse-symbol classsubparts) [1902 2202])
+                                            ("type" function
+                                               (:methodconst-flag t
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [2263 2329])
+                                            ("protocol" function
+                                               (:methodconst-flag t
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [2378 2428])
+                                            ("family" function
+                                               (:methodconst-flag t
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [2484 2530])
+                                            ("==" function
+                                               (:operator-flag t
+                                                :typemodifiers ("friend")
+                                                :arguments 
+                                                  ( ("p1" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("datagram_protocol" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2599 2627])
+                                                    ("p2" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("datagram_protocol" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2634 2662]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [2576 2739])
+                                            ("!=" function
+                                               (:operator-flag t
+                                                :typemodifiers ("friend")
+                                                :arguments 
+                                                  ( ("p1" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("datagram_protocol" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2810 2838])
+                                                    ("p2" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("datagram_protocol" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2845 2873]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [2787 2905])
+                                            ("endpoint" type
+                                               (:typedef ("basic_endpoint" type
+                                                     (:template-specifier 
+                                                        ( ("datagram_protocol" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2940 2991])
+                                            ("socket" type
+                                               (:typedef ("basic_datagram_socket" type
+                                                     (:template-specifier 
+                                                        ( ("datagram_protocol" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3026 3082])
+                                            ("private" label nil (reparse-symbol classsubparts) [3084 3092])
+                                            ("family_" variable (:type "int") (reparse-symbol classsubparts) [3095 3107])
+                                            ("protocol_" variable (:type "int") (reparse-symbol classsubparts) [3110 3124]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [1493 3127]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [856 3130]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [839 3153]))                  
+                :type "namespace")
+                nil [821 3173])
+            ("boost/asio/detail/pop_options.hpp" include (:system-flag t) nil [3194 3238]))          
+      :file "datagram_protocol.hpp"
+      :pointmax 3291
+      :fsize 3290
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ASIO_GENERIC_DATAGRAM_PROTOCOL_HPP")
+          )
+)
+    (semanticdb-table "raw_protocol.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ASIO_GENERIC_RAW_PROTOCOL_HPP" variable (:constant-flag t) nil [354 389])
+            ("boost/asio/detail/config.hpp" include (:system-flag t) nil [500 539])
+            ("typeinfo" include (:system-flag t) nil [541 560])
+            ("boost/asio/basic_raw_socket.hpp" include (:system-flag t) nil [561 603])
+            ("boost/asio/detail/socket_types.hpp" include (:system-flag t) nil [604 649])
+            ("boost/asio/detail/throw_exception.hpp" include (:system-flag t) nil [650 698])
+            ("boost/asio/generic/basic_endpoint.hpp" include (:system-flag t) nil [699 747])
+            ("boost/asio/detail/push_options.hpp" include (:system-flag t) nil [749 794])
+            ("boost" type
+               (:members 
+                  ( ("asio" type
+                       (:members 
+                          ( ("generic" type
+                               (:members 
+                                  ( ("raw_protocol" type
+                                       (:members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [1448 1455])
+                                            ("raw_protocol" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("address_family" variable (:type "int") (reparse-symbol arg-sub-list) [1549 1568])
+                                                    ("socket_protocol" variable (:type "int") (reparse-symbol arg-sub-list) [1569 1589]))                                                  
+                                                :type ("raw_protocol" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1536 1661])
+                                            ("raw_protocol" function
+                                               (:template 
+                                                  ( ("Protocol" type (:type "class") nil nil))                                                  
+                                                :type ("raw_protocol" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("source_protocol" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Protocol" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1865 1897]))                                                  
+                                                :constructor-flag t)
+                                                (reparse-symbol classsubparts) [1821 2116])
+                                            ("type" function
+                                               (:methodconst-flag t
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [2177 2241])
+                                            ("protocol" function
+                                               (:methodconst-flag t
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [2290 2340])
+                                            ("family" function
+                                               (:methodconst-flag t
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [2396 2442])
+                                            ("==" function
+                                               (:operator-flag t
+                                                :typemodifiers ("friend")
+                                                :arguments 
+                                                  ( ("p1" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("raw_protocol" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2511 2534])
+                                                    ("p2" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("raw_protocol" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2535 2558]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [2488 2635])
+                                            ("!=" function
+                                               (:operator-flag t
+                                                :typemodifiers ("friend")
+                                                :arguments 
+                                                  ( ("p1" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("raw_protocol" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2706 2729])
+                                                    ("p2" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("raw_protocol" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2730 2753]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [2683 2785])
+                                            ("endpoint" type
+                                               (:typedef ("basic_endpoint" type
+                                                     (:template-specifier 
+                                                        ( ("raw_protocol" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2820 2866])
+                                            ("socket" type
+                                               (:typedef ("basic_raw_socket" type
+                                                     (:template-specifier 
+                                                        ( ("raw_protocol" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2901 2947])
+                                            ("private" label nil (reparse-symbol classsubparts) [2949 2957])
+                                            ("family_" variable (:type "int") (reparse-symbol classsubparts) [2960 2972])
+                                            ("protocol_" variable (:type "int") (reparse-symbol classsubparts) [2975 2989]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [1427 2992]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [831 2995]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [814 3018]))                  
+                :type "namespace")
+                nil [796 3038])
+            ("boost/asio/detail/pop_options.hpp" include (:system-flag t) nil [3059 3103]))          
+      :file "raw_protocol.hpp"
+      :pointmax 3151
+      :fsize 3150
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ASIO_GENERIC_RAW_PROTOCOL_HPP")
+          )
+)
+    (semanticdb-table "seq_packet_protocol.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ASIO_GENERIC_SEQ_PACKET_PROTOCOL_HPP" variable (:constant-flag t) nil [375 417])
+            ("boost/asio/detail/config.hpp" include (:system-flag t) nil [528 567])
+            ("typeinfo" include (:system-flag t) nil [569 588])
+            ("boost/asio/basic_seq_packet_socket.hpp" include (:system-flag t) nil [589 638])
+            ("boost/asio/detail/socket_types.hpp" include (:system-flag t) nil [639 684])
+            ("boost/asio/detail/throw_exception.hpp" include (:system-flag t) nil [685 733])
+            ("boost/asio/generic/basic_endpoint.hpp" include (:system-flag t) nil [734 782])
+            ("boost/asio/detail/push_options.hpp" include (:system-flag t) nil [784 829])
+            ("boost" type
+               (:members 
+                  ( ("asio" type
+                       (:members 
+                          ( ("generic" type
+                               (:members 
+                                  ( ("seq_packet_protocol" type
+                                       (:members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [1423 1430])
+                                            ("seq_packet_protocol" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("address_family" variable (:type "int") (reparse-symbol arg-sub-list) [1531 1550])
+                                                    ("socket_protocol" variable (:type "int") (reparse-symbol arg-sub-list) [1551 1571]))                                                  
+                                                :type ("seq_packet_protocol" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1511 1643])
+                                            ("seq_packet_protocol" function
+                                               (:template 
+                                                  ( ("Protocol" type (:type "class") nil nil))                                                  
+                                                :type ("seq_packet_protocol" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("source_protocol" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Protocol" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1877 1909]))                                                  
+                                                :constructor-flag t)
+                                                (reparse-symbol classsubparts) [1826 2128])
+                                            ("type" function
+                                               (:methodconst-flag t
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [2189 2259])
+                                            ("protocol" function
+                                               (:methodconst-flag t
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [2308 2358])
+                                            ("family" function
+                                               (:methodconst-flag t
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [2414 2460])
+                                            ("==" function
+                                               (:operator-flag t
+                                                :typemodifiers ("friend")
+                                                :arguments 
+                                                  ( ("p1" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("seq_packet_protocol" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2529 2559])
+                                                    ("p2" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("seq_packet_protocol" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2566 2596]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [2506 2673])
+                                            ("!=" function
+                                               (:operator-flag t
+                                                :typemodifiers ("friend")
+                                                :arguments 
+                                                  ( ("p1" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("seq_packet_protocol" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2744 2774])
+                                                    ("p2" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("seq_packet_protocol" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2781 2811]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [2721 2843])
+                                            ("endpoint" type
+                                               (:typedef ("basic_endpoint" type
+                                                     (:template-specifier 
+                                                        ( ("seq_packet_protocol" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2878 2931])
+                                            ("socket" type
+                                               (:typedef ("basic_seq_packet_socket" type
+                                                     (:template-specifier 
+                                                        ( ("seq_packet_protocol" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2966 3026])
+                                            ("private" label nil (reparse-symbol classsubparts) [3028 3036])
+                                            ("family_" variable (:type "int") (reparse-symbol classsubparts) [3039 3051])
+                                            ("protocol_" variable (:type "int") (reparse-symbol classsubparts) [3054 3068]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [1395 3071]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [866 3074]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [849 3097]))                  
+                :type "namespace")
+                nil [831 3117])
+            ("boost/asio/detail/pop_options.hpp" include (:system-flag t) nil [3138 3182]))          
+      :file "seq_packet_protocol.hpp"
+      :pointmax 3237
+      :fsize 3236
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ASIO_GENERIC_SEQ_PACKET_PROTOCOL_HPP")
+          )
+)
+    (semanticdb-table "stream_protocol.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ASIO_GENERIC_STREAM_PROTOCOL_HPP" variable (:constant-flag t) nil [363 401])
+            ("boost/asio/detail/config.hpp" include (:system-flag t) nil [512 551])
+            ("typeinfo" include (:system-flag t) nil [553 572])
+            ("boost/asio/basic_socket_iostream.hpp" include (:system-flag t) nil [573 620])
+            ("boost/asio/basic_stream_socket.hpp" include (:system-flag t) nil [621 666])
+            ("boost/asio/detail/socket_types.hpp" include (:system-flag t) nil [667 712])
+            ("boost/asio/detail/throw_exception.hpp" include (:system-flag t) nil [713 761])
+            ("boost/asio/generic/basic_endpoint.hpp" include (:system-flag t) nil [762 810])
+            ("boost/asio/detail/push_options.hpp" include (:system-flag t) nil [812 857])
+            ("boost" type
+               (:members 
+                  ( ("asio" type
+                       (:members 
+                          ( ("generic" type
+                               (:members 
+                                  ( ("stream_protocol" type
+                                       (:members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [1545 1552])
+                                            ("stream_protocol" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("address_family" variable (:type "int") (reparse-symbol arg-sub-list) [1649 1668])
+                                                    ("socket_protocol" variable (:type "int") (reparse-symbol arg-sub-list) [1669 1689]))                                                  
+                                                :type ("stream_protocol" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1633 1761])
+                                            ("stream_protocol" function
+                                               (:template 
+                                                  ( ("Protocol" type (:type "class") nil nil))                                                  
+                                                :type ("stream_protocol" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("source_protocol" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Protocol" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1971 2003]))                                                  
+                                                :constructor-flag t)
+                                                (reparse-symbol classsubparts) [1924 2222])
+                                            ("type" function
+                                               (:methodconst-flag t
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [2283 2350])
+                                            ("protocol" function
+                                               (:methodconst-flag t
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [2399 2449])
+                                            ("family" function
+                                               (:methodconst-flag t
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [2505 2551])
+                                            ("==" function
+                                               (:operator-flag t
+                                                :typemodifiers ("friend")
+                                                :arguments 
+                                                  ( ("p1" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("stream_protocol" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2620 2646])
+                                                    ("p2" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("stream_protocol" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2647 2673]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [2597 2750])
+                                            ("!=" function
+                                               (:operator-flag t
+                                                :typemodifiers ("friend")
+                                                :arguments 
+                                                  ( ("p1" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("stream_protocol" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2821 2847])
+                                                    ("p2" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("stream_protocol" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2848 2874]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [2798 2906])
+                                            ("endpoint" type
+                                               (:typedef ("basic_endpoint" type
+                                                     (:template-specifier 
+                                                        ( ("stream_protocol" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2941 2990])
+                                            ("socket" type
+                                               (:typedef ("basic_stream_socket" type
+                                                     (:template-specifier 
+                                                        ( ("stream_protocol" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3025 3077])
+                                            ("iostream" type
+                                               (:typedef ("basic_socket_iostream" type
+                                                     (:template-specifier 
+                                                        ( ("stream_protocol" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3158 3214])
+                                            ("private" label nil (reparse-symbol classsubparts) [3259 3267])
+                                            ("family_" variable (:type "int") (reparse-symbol classsubparts) [3270 3282])
+                                            ("protocol_" variable (:type "int") (reparse-symbol classsubparts) [3285 3299]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [1521 3302]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [894 3305]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [877 3328]))                  
+                :type "namespace")
+                nil [859 3348])
+            ("boost/asio/detail/pop_options.hpp" include (:system-flag t) nil [3369 3413]))          
+      :file "stream_protocol.hpp"
+      :pointmax 3464
+      :fsize 3463
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ASIO_GENERIC_STREAM_PROTOCOL_HPP")
+          )
+))
+  :file "!usr!include!boost!asio!generic!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

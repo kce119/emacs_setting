@@ -1,0 +1,21 @@
+;; Object detail/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "detail/"
+  :tables
+  (list
+    (semanticdb-table "template_arity_spec.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_TT_AUX_TEMPLATE_ARITY_SPEC" variable (:constant-flag t) nil [489 521]))          
+      :file "template_arity_spec.hpp"
+      :pointmax 536
+      :fsize 535
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax '((semantic-list 401 . 469) (symbol 394 . 401) (string 402 . 468) (symbol 387 . 393) (string 402 . 468) (punctuation 385 . 386))
+      :lexical-table 
+        '(("BOOST_TT_AUX_TEMPLATE_ARITY_SPEC" (spp-arg-list ("i" "name") 521 . 530))
+          )
+))
+  :file "!usr!include!boost!type_traits!detail!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

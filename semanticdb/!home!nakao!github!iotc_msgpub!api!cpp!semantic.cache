@@ -1,0 +1,232 @@
+;; Object cpp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cpp/"
+  :tables
+  (list
+    (semanticdb-table "admin.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("boost/program_options.hpp" include (:system-flag t) nil [22 58])
+            ("msgpub/admin.hpp" include (:system-flag t) nil [60 87])
+            ("msgpub/log.hpp" include (:system-flag t) nil [88 113])
+            ("res_cb" type
+               (:members 
+                  ( ("()" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("msgpub::admin" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [151 166])
+                            ("s" variable (:type ("msgpub::status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [167 184]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [135 235]))                  
+                :type "struct")
+                nil [115 238])
+            ("print_menu" function (:type "void") nil [240 2399])
+            ("console_input_handler" function
+               (:arguments 
+                  ( ("ec" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("boost::system::error_code" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2433 2469])
+                    ("len" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2474 2490])
+                    ("console_input" variable
+                       (:reference 1
+                        :type ("boost::asio::posix::basic_stream_descriptor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2495 2556])
+                    ("buf" variable
+                       (:reference 1
+                        :type ("boost::asio::streambuf" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2561 2589])
+                    ("mp" variable
+                       (:reference 1
+                        :type ("msgpub::admin" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2594 2612]))                  
+                :type "void")
+                nil [2401 14895])
+            ("po" type
+               (:kind alias
+                :members 
+                  ( ("boost::program_options" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [14897 14935])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [14946 14955])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14956 14969]))                  
+                :type "int")
+                nil [14937 17148]))          
+      :file "admin.cpp"
+      :pointmax 17149
+      :fsize 17148
+      :lastmodtime '(22403 17821 603333 336000)
+      :unmatched-syntax nil)
+    (semanticdb-table "user.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("boost/program_options.hpp" include (:system-flag t) nil [22 58])
+            ("msgpub/user.hpp" include (:system-flag t) nil [60 86])
+            ("msgpub/log.hpp" include (:system-flag t) nil [87 112])
+            ("res_cb" type
+               (:members 
+                  ( ("()" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("msgpub::user" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [150 164])
+                            ("s" variable (:type ("msgpub::status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [165 182]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [134 233]))                  
+                :type "struct")
+                nil [114 236])
+            ("ress_cb" type
+               (:members 
+                  ( ("()" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("msgpub::user" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [275 289])
+                            ("s" variable (:type ("msgpub::status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [290 307])
+                            ("inds" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("msgpub::appname_topic_status" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [308 362]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [259 533]))                  
+                :type "struct")
+                nil [238 536])
+            ("print_menu" function (:type "void") nil [538 1631])
+            ("console_input_handler" function
+               (:arguments 
+                  ( ("ec" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("boost::system::error_code" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1665 1701])
+                    ("len" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1706 1722])
+                    ("console_input" variable
+                       (:reference 1
+                        :type ("boost::asio::posix::basic_stream_descriptor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1727 1788])
+                    ("buf" variable
+                       (:reference 1
+                        :type ("boost::asio::streambuf" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1793 1821])
+                    ("mp" variable
+                       (:reference 1
+                        :type ("msgpub::user" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1826 1843]))                  
+                :type "void")
+                nil [1633 8126])
+            ("po" type
+               (:kind alias
+                :members 
+                  ( ("boost::program_options" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [8128 8166])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [8177 8186])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8187 8200]))                  
+                :type "int")
+                nil [8168 11684]))          
+      :file "user.cpp"
+      :pointmax 11685
+      :fsize 11684
+      :lastmodtime '(22403 17821 606666 669000)
+      :unmatched-syntax nil)
+    (semanticdb-table "admin_mqtt.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("boost/program_options.hpp" include (:system-flag t) nil [22 58])
+            ("msgpub/admin_mqtt.hpp" include (:system-flag t) nil [60 92])
+            ("msgpub/log.hpp" include (:system-flag t) nil [93 118])
+            ("res_cb" type
+               (:members 
+                  ( ("()" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("s" variable (:type ("msgpub::status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [156 173]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [140 224]))                  
+                :type "struct")
+                nil [120 227])
+            ("print_menu" function (:type "void") nil [229 2612])
+            ("console_input_handler" function
+               (:template 
+                  ( ("Endpoint" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("ec" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("boost::system::error_code" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2675 2711])
+                    ("len" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2716 2732])
+                    ("console_input" variable
+                       (:reference 1
+                        :type ("boost::asio::posix::basic_stream_descriptor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2737 2798])
+                    ("buf" variable
+                       (:reference 1
+                        :type ("boost::asio::streambuf" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2803 2831])
+                    ("mp" variable
+                       (:reference 1
+                        :type ("msgpub::admin_mqtt" type
+                             (:template-specifier 
+                                ( ("Endpoint" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2836 2869]))                  )
+                nil [2614 14994])
+            ("po" type
+               (:kind alias
+                :members 
+                  ( ("boost::program_options" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [14996 15034])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [15045 15054])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15055 15068]))                  
+                :type "int")
+                nil [15036 20276]))          
+      :file "admin_mqtt.cpp"
+      :pointmax 20277
+      :fsize 20276
+      :lastmodtime '(22413 48391 853333 336000)
+      :unmatched-syntax nil))
+  :file "!home!nakao!github!iotc_msgpub!api!cpp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

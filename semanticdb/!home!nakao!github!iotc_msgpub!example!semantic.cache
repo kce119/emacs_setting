@@ -1,0 +1,77 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [82 101])
+            ("sstream" include (:system-flag t) nil [102 120])
+            ("boost/asio.hpp" include (:system-flag t) nil [122 147])
+            ("beast/http.hpp" include (:system-flag t) nil [149 174])
+            ("cryptopp/base64.h" include (:system-flag t) nil [176 204])
+            ("msgpack.hpp" include (:system-flag t) nil [206 228])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [239 248])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [249 261]))                  
+                :type "int")
+                nil [230 2135]))          
+      :file "rest_pub.cpp"
+      :pointmax 2136
+      :fsize 2135
+      :lastmodtime '(22756 38831 994885 542000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [82 101])
+            ("sstream" include (:system-flag t) nil [102 120])
+            ("boost/asio.hpp" include (:system-flag t) nil [122 147])
+            ("beast/http.hpp" include (:system-flag t) nil [149 174])
+            ("cryptopp/base64.h" include (:system-flag t) nil [176 204])
+            ("msgpack.hpp" include (:system-flag t) nil [206 228])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [239 248])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [249 261]))                  
+                :type "int")
+                nil [230 2138]))          
+      :file "rest_pub_label.cpp"
+      :pointmax 2139
+      :fsize 2138
+      :lastmodtime '(22756 38851 881552 208000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [82 101])
+            ("sstream" include (:system-flag t) nil [102 120])
+            ("boost/asio.hpp" include (:system-flag t) nil [122 147])
+            ("beast/http.hpp" include (:system-flag t) nil [149 174])
+            ("cryptopp/base64.h" include (:system-flag t) nil [176 204])
+            ("msgpack.hpp" include (:system-flag t) nil [206 228])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [239 248])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [249 261]))                  
+                :type "int")
+                nil [230 2188]))          
+      :file "rest_sub.cpp"
+      :pointmax 2189
+      :fsize 2188
+      :lastmodtime '(22756 38870 888218 875000)
+      :unmatched-syntax nil))
+  :file "!home!nakao!github!iotc_msgpub!example!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

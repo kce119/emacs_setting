@@ -1,0 +1,458 @@
+;; Object sample_tcp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sample_tcp/"
+  :tables
+  (list
+    (semanticdb-table "sample_tcp_client.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cstdlib" include (:system-flag t) nil [1 19])
+            ("cstring" include (:system-flag t) nil [20 38])
+            ("iostream" include (:system-flag t) nil [39 58])
+            ("boost/asio.hpp" include (:system-flag t) nil [59 84])
+            ("boost::asio::ip::tcp" using (:type ("boost::asio::ip::tcp" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [184 211])
+            ("client" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [228 235])
+                    ("client" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("io_service" variable
+                               (:reference 1
+                                :type ("boost::asio::io_service" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [247 283]))                          
+                        :type ("client" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [240 580])
+                    ("start" function (:type "void") (reparse-symbol classsubparts) [586 910])
+                    ("start_read" function (:type "void") (reparse-symbol classsubparts) [916 1365])
+                    ("handle_read" function
+                       (:arguments 
+                          ( ("ec" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("boost::system::error_code" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1388 1424])
+                            ("bytes_transferred" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1425 1455]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1371 1855])
+                    ("public" label nil (reparse-symbol classsubparts) [1857 1864])
+                    ("io_service_" variable (:type ("boost::asio::io_service" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1869 1906])
+                    ("socket_" variable (:type ("tcp::socket" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1911 1931])
+                    ("receive_buffer_" variable (:type ("boost::asio::streambuf" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1936 1975]))                  
+                :type "class")
+                nil [213 1978])
+            ("main" function (:type "int") nil [1980 2112]))          
+      :file "sample_tcp_client.cpp"
+      :pointmax 2113
+      :fsize 2112
+      :lastmodtime '(22647 6005 980000 2000)
+      :unmatched-syntax nil)
+    (semanticdb-table "test.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_TEST_MODULE" variable (:constant-flag t) nil [9 26])
+            ("boost/test/unit_test.hpp" include (:system-flag t) nil [38 73])
+            ("cstdlib" include (:system-flag t) nil [74 92])
+            ("iostream" include (:system-flag t) nil [93 112])
+            ("boost/asio.hpp" include (:system-flag t) nil [113 138])
+            ("type_erasure.hpp" include nil nil [140 167])
+            ("core.hpp" include nil nil [168 187])
+            ("as" type
+               (:kind alias
+                :members 
+                  ( ("boost::asio" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [288 315])
+            ("test_session" type
+               (:superclasses 
+                  ( ("std::enable_shared_from_this" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [390 397])
+                    ("send_list_num" function
+                       (:arguments 
+                          ( ("s" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [421 435]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [402 578]))                  
+                :type "class")
+                nil [317 581])
+            ("BOOST_AUTO_TEST_CASE" function
+               (:arguments 
+                  ( ("" variable (:type ("test" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [604 609]))                  
+                :type "int")
+                nil [583 788]))          
+      :file "test.cpp"
+      :pointmax 789
+      :fsize 788
+      :lastmodtime '(22654 54055 910000 2000)
+      :unmatched-syntax '((punctuation 612 . 613) (semantic-list 594 . 603) (symbol 583 . 594) (symbol 601 . 602))
+      :lexical-table 
+        '(("BOOST_TEST_MODULE" . ((symbol "My_Module" 27 . 36)))
+          )
+)
+    (semanticdb-table "sample_tcp_server.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cstdlib" include (:system-flag t) nil [1 19])
+            ("iostream" include (:system-flag t) nil [20 39])
+            ("boost/asio.hpp" include (:system-flag t) nil [40 65])
+            ("core.hpp" include nil nil [67 86])
+            ("session.hpp" include nil nil [87 109])
+            ("session_impl.hpp" include nil nil [110 137])
+            ("boost::asio::ip::tcp" using (:type ("boost::asio::ip::tcp" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [227 254])
+            ("server" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [271 278])
+                    ("server" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("c" variable
+                               (:reference 1
+                                :type ("core" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [290 298])
+                            ("io_service" variable
+                               (:reference 1
+                                :type ("boost::asio::io_service" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [299 335]))                          
+                        :type ("server" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [283 893])
+                    ("handle_accept" function
+                       (:arguments 
+                          ( ("session_ptr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("session" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [918 962])
+                            ("error" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("boost::system::error_code" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [986 1025]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [899 1615])
+                    ("private" label nil (reparse-symbol classsubparts) [1617 1625])
+                    ("core_" variable (:type ("core" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1630 1642])
+                    ("io_service_" variable (:type ("boost::asio::io_service" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1647 1684])
+                    ("acceptor_" variable (:type ("tcp::acceptor" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1689 1713]))                  
+                :type "class")
+                nil [256 1717])
+            ("main" function (:type "int") nil [1719 1852]))          
+      :file "sample_tcp_server.cpp"
+      :pointmax 1853
+      :fsize 1852
+      :lastmodtime '(22654 53518 496666 669000)
+      :unmatched-syntax nil)
+    (semanticdb-table "type_erasure.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("INCLUDE_GUARD_TYPE_ERASURE_HPP" variable (:constant-flag t) nil [48 78])
+            ("memory" include (:system-flag t) nil [80 97])
+            ("boost/type_erasure/any.hpp" include (:system-flag t) nil [98 135])
+            ("shared_any" type
+               (:template 
+                  ( ("Concept" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("ownership_" variable (:type ("std::shared_ptr" type
+                         (:template-specifier 
+                            ( ("void" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [364 397])
+                    ("public" label nil (reparse-symbol classsubparts) [398 405])
+                    ("shared_any" function
+                       (:template 
+                          ( ("U" type (:type "class") nil nil))                          
+                        :type ("shared_any" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("p" variable (:type ("std::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("U" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [444 465]))                          
+                        :constructor-flag t)
+                        (reparse-symbol classsubparts) [410 507])
+                    ("=" function
+                       (:template 
+                          ( ("U" type (:type "class") nil nil))                          
+                        :type ("shared_any" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("p" variable (:type ("std::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("U" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [558 579]))                          
+                        :operator-flag t)
+                        (reparse-symbol classsubparts) [513 661])
+                    ("<" function
+                       (:template 
+                          ( ("U" type (:type "class") nil nil))                          
+                        :type ("shared_any" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("p" variable (:type ("std::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("U" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [712 733]))                          
+                        :operator-flag t)
+                        (reparse-symbol classsubparts) [667 815])
+                    ("get_address" function
+                       (:methodconst-flag t
+                        :pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [821 893]))                  
+                :superclasses 
+                  ( ("boost::type_erasure::any" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [155 896])
+            ("boost/type_erasure/member.hpp" include (:system-flag t) nil [898 938])
+            ("boost/type_erasure/operators.hpp" include (:system-flag t) nil [939 982])
+            ("boost/any.hpp" include (:system-flag t) nil [983 1007])
+            ("string" include (:system-flag t) nil [1008 1025])
+            ("boost::type_erasure" using (:type ("boost::type_erasure" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1026 1062])
+            ("mpl" type
+               (:kind alias
+                :members 
+                  ( ("boost::mpl" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [1212 1239])
+            ("ns" type
+               (:members 
+                  ( ("<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("abstract_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1469 1494])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("abstract_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1495 1520]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1447 1574])
+                    ("==" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("abstract_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1599 1624])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("abstract_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1625 1650]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1576 1705]))                  
+                :type "namespace")
+                nil [1241 1708]))          
+      :file "type_erasure.hpp"
+      :pointmax 1746
+      :fsize 1917
+      :lastmodtime '(22654 48295 260000 3000)
+      :unmatched-syntax '((punctuation 1444 . 1445) (punctuation 1443 . 1444) (punctuation 1441 . 1442) (punctuation 1435 . 1436) (semantic-list 1422 . 1435) (VOID 1418 . 1422) (punctuation 1417 . 1418) (symbol 1400 . 1417) (punctuation 1374 . 1375) (punctuation 1373 . 1374) (punctuation 1372 . 1373) (symbol 1360 . 1372) (punctuation 1350 . 1351) (symbol 1344 . 1350) (punctuation 1343 . 1344) (punctuation 1342 . 1343) (symbol 1339 . 1342) (punctuation 1333 . 1334) (symbol 1323 . 1333) (punctuation 1321 . 1322) (symbol 1307 . 1320) (USING 1301 . 1306) (semantic-list 1167 . 1210) (symbol 1142 . 1167) (number 1208 . 1209) (semantic-list 1172 . 1191) (semantic-list 1168 . 1172) (punctuation 358 . 359) (punctuation 357 . 358) (punctuation 356 . 357) (symbol 351 . 356) (punctuation 350 . 351) (punctuation 349 . 350) (symbol 337 . 349) (punctuation 336 . 337) (punctuation 335 . 336) (symbol 330 . 335) (punctuation 328 . 329) (symbol 321 . 328) (punctuation 320 . 321) (symbol 317 . 320) (punctuation 316 . 317) (punctuation 315 . 316) (symbol 303 . 315) (punctuation 302 . 303) (punctuation 301 . 302) (symbol 296 . 301) (punctuation 294 . 295) (symbol 284 . 293) (USING 278 . 283) (punctuation 1444 . 1445) (punctuation 1443 . 1444) (punctuation 1441 . 1442) (punctuation 1435 . 1436) (semantic-list 1422 . 1435) (VOID 1418 . 1422) (punctuation 1417 . 1418) (symbol 1400 . 1417) (punctuation 1374 . 1375) (punctuation 1373 . 1374) (punctuation 1372 . 1373) (symbol 1360 . 1372) (punctuation 1350 . 1351) (symbol 1344 . 1350) (punctuation 1343 . 1344) (punctuation 1342 . 1343) (symbol 1339 . 1342) (punctuation 1333 . 1334) (symbol 1323 . 1333) (punctuation 1321 . 1322) (symbol 1307 . 1320) (USING 1301 . 1306))
+      :lexical-table 
+        '(("INCLUDE_GUARD_TYPE_ERASURE_HPP")
+          )
+)
+    (semanticdb-table "core.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("INCLUDE_GUARD_CORE_HPP" variable (:constant-flag t) nil [40 62])
+            ("cstdlib" include (:system-flag t) nil [64 82])
+            ("iostream" include (:system-flag t) nil [83 102])
+            ("boost/asio.hpp" include (:system-flag t) nil [103 128])
+            ("set" include (:system-flag t) nil [129 143])
+            ("type_erasure.hpp" include nil nil [144 171])
+            ("core" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [186 193])
+                    ("set_list" function
+                       (:arguments 
+                          ( ("s_sp" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ns::abstract_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [212 242]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [198 280])
+                    ("handle_delete_session" function
+                       (:arguments 
+                          ( ("s_sp" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ns::abstract_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [313 343]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [286 680])
+                    ("handle_req_list_num" function
+                       (:arguments 
+                          ( ("s_sp" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ns::abstract_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [711 741]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [686 1094])
+                    ("private" label nil (reparse-symbol classsubparts) [1096 1104])
+                    ("sp_set_" variable (:type ("std::set" type
+                         (:template-specifier 
+                            ( ("ns::abstract_type" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1109 1145]))                  
+                :type "class")
+                nil [173 1148]))          
+      :file "core.hpp"
+      :pointmax 1183
+      :fsize 1182
+      :lastmodtime '(22654 48954 253333 336000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("INCLUDE_GUARD_CORE_HPP")
+          )
+)
+    (semanticdb-table "session.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("INCLUDE_GUARD_SESSION_HPP" variable (:constant-flag t) nil [43 68])
+            ("cstdlib" include (:system-flag t) nil [70 88])
+            ("iostream" include (:system-flag t) nil [89 108])
+            ("boost/asio.hpp" include (:system-flag t) nil [109 134])
+            ("type_erasure.hpp" include nil nil [136 163])
+            ("core.hpp" include nil nil [164 183])
+            ("boost::asio::ip::tcp" using (:type ("boost::asio::ip::tcp" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [185 212])
+            ("session" type
+               (:superclasses 
+                  ( ("std::enable_shared_from_this" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [277 284])
+                    ("session" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("c" variable
+                               (:reference 1
+                                :type ("core" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [297 305])
+                            ("io_service" variable
+                               (:reference 1
+                                :type ("boost::asio::io_service" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [306 342]))                          
+                        :type ("session" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [289 410])
+                    ("socket" function (:type ("tcp::socket" type (:type "class") nil nil)) (reparse-symbol classsubparts) [416 469])
+                    ("start" function (:type "void") (reparse-symbol classsubparts) [475 533])
+                    ("start_read" function (:type "void") (reparse-symbol classsubparts) [539 891])
+                    ("send_list_num" function
+                       (:arguments 
+                          ( ("s" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [916 930]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [897 1281])
+                    ("handle_read" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("error" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("boost::system::error_code" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1304 1343])
+                            ("bytes_transferred" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1365 1395]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1287 1396])
+                    ("private" label nil (reparse-symbol classsubparts) [1398 1406])
+                    ("core_" variable (:type ("core" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1411 1423])
+                    ("socket_" variable (:type ("tcp::socket" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1428 1448])
+                    ("receive_buffer_" variable (:type ("boost::asio::streambuf" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1453 1492])
+                    ("send_data_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1497 1520]))                  
+                :type "class")
+                nil [214 1523]))          
+      :file "session.hpp"
+      :pointmax 1561
+      :fsize 1560
+      :lastmodtime '(22654 47603 513333 335000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("INCLUDE_GUARD_SESSION_HPP")
+          )
+)
+    (semanticdb-table "core_impl.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("INCLUDE_GUARD_CORE_IMPLE_HPP" variable (:constant-flag t) nil [46 74])
+            ("type_erasure.hpp" include nil nil [76 103])
+            ("core.hpp" include nil nil [104 123])
+            ("handle_req_list_num" function
+               (:parent "core"
+                :arguments 
+                  ( ("s_sp" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ns::abstract_type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [156 186]))                  
+                :type "void")
+                nil [125 497]))          
+      :file "core_impl.hpp"
+      :pointmax 537
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("INCLUDE_GUARD_CORE_IMPLE_HPP")
+          )
+)
+    (semanticdb-table "session_impl.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("INCLUDE_GUARD_SESSION_IMPL_HPP" variable (:constant-flag t) nil [48 78])
+            ("cstdlib" include (:system-flag t) nil [80 98])
+            ("iostream" include (:system-flag t) nil [99 118])
+            ("boost/asio.hpp" include (:system-flag t) nil [119 144])
+            ("session.hpp" include nil nil [176 198])
+            ("handle_read" function
+               (:parent "session"
+                :arguments 
+                  ( ("error" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("boost::system::error_code" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [226 265])
+                    ("bytes_transferred" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [292 322]))                  
+                :type "void")
+                nil [200 1097]))          
+      :file "session_impl.hpp"
+      :pointmax 1140
+      :fsize 1139
+      :lastmodtime '(22653 63244 110000 1000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("INCLUDE_GUARD_SESSION_IMPL_HPP")
+          )
+))
+  :file "!home!nakao!work!my_reference!boost!sample_tcp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

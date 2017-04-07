@@ -1,0 +1,182 @@
+;; Object core/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "core/"
+  :tables
+  (list
+    (semanticdb-table "addressof.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_CORE_ADDRESSOF_HPP" variable (:constant-flag t) nil [415 439])
+            ("boost/config.hpp" include (:system-flag t) nil [441 469])
+            ("boost/detail/workaround.hpp" include (:system-flag t) nil [470 509])
+            ("cstddef" include (:system-flag t) nil [510 529])
+            ("boost" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("addr_impl_ref" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("v_" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [615 622])
+                                    ("addr_impl_ref" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("v" variable
+                                               (:reference 1
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [661 668]))                                          
+                                        :type ("BOOST_FORCEINLINE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [628 680])
+                                    ("private" label nil (reparse-symbol classsubparts) [740 748])
+                                    ("=" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("addr_impl_ref" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [779 801]))                                          
+                                        :type ("addr_impl_ref" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [753 802]))                                  )
+                                (reparse-symbol namespacesubparts) [570 805])
+                            ("addressof_impl" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("f" function
+                                       (:pointer 1
+                                        :arguments 
+                                          ( ("v" variable
+                                               (:reference 1
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [885 891])
+                                            ("" variable (:type "long") (reparse-symbol arg-sub-list) [892 898]))                                          
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [878 1024])
+                                    ("f" function
+                                       (:pointer 1
+                                        :arguments 
+                                          ( ("v" variable
+                                               (:pointer 1
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1062 1068])
+                                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [1069 1074]))                                          
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1055 1104]))                                  )
+                                (reparse-symbol namespacesubparts) [807 1107])
+                            ("addr_nullptr_t" type
+                               (:typedef ("std::nullptr_t" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1342 1380])
+                            ("addressof_impl" type
+                               (:type "struct"
+                                :members 
+                                  ( ("T" type
+                                       (:typedef ("addr_nullptr_t" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1447 1472])
+                                    ("f" function
+                                       (:pointer 1
+                                        :arguments 
+                                          ( ("v" variable
+                                               (:reference 1
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1510 1516])
+                                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [1517 1522]))                                          
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1503 1553]))                                  
+                                :template-specifier 
+                                  ( ("addr_nullptr_t" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1390 1556])
+                            ("addressof_impl" type
+                               (:type "struct"
+                                :members 
+                                  ( ("T" type
+                                       (:typedef ("addr_nullptr_t" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1621 1652])
+                                    ("f" function
+                                       (:pointer 1
+                                        :arguments 
+                                          ( ("v" variable
+                                               (:reference 1
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1690 1696])
+                                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [1697 1702]))                                          
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1683 1733]))                                  
+                                :template-specifier 
+                                  ( ("addr_nullptr_t" type (:constant-flag t) nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1558 1736])
+                            ("addressof_impl" type
+                               (:type "struct"
+                                :members 
+                                  ( ("T" type
+                                       (:typedef ("addr_nullptr_t" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1804 1838])
+                                    ("f" function
+                                       (:pointer 1
+                                        :arguments 
+                                          ( ("v" variable
+                                               (:reference 1
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1876 1882])
+                                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [1883 1888]))                                          
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1869 1919]))                                  
+                                :template-specifier 
+                                  ( ("addr_nullptr_t" type (:typemodifiers ("volatile")) nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1738 1922])
+                            ("addressof_impl" type
+                               (:type "struct"
+                                :members 
+                                  ( ("T" type
+                                       (:typedef ("addr_nullptr_t" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1996 2036])
+                                    ("f" function
+                                       (:pointer 1
+                                        :arguments 
+                                          ( ("v" variable
+                                               (:reference 1
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2074 2080])
+                                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [2081 2086]))                                          
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2067 2117]))                                  
+                                :template-specifier 
+                                  ( ("addr_nullptr_t" type
+                                       (:typemodifiers ("volatile")
+                                        :constant-flag t)
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1924 2120]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [550 2131])
+                    ("addressof" function
+                       (:pointer 1
+                        :arguments 
+                          ( ("v" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2204 2211]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2189 2542]))                  
+                :type "namespace")
+                nil [531 3381]))          
+      :file "addressof.hpp"
+      :pointmax 3437
+      :fsize 3436
+      :lastmodtime '(22324 21860 0 0)
+      :unmatched-syntax '((symbol 2171 . 2188) (punctuation 2169 . 2170) (symbol 2168 . 2169) (CLASS 2162 . 2167) (punctuation 2161 . 2162) (TEMPLATE 2153 . 2161) (symbol 2049 . 2066) (STATIC 2042 . 2048) (symbol 1851 . 1868) (STATIC 1844 . 1850) (symbol 1665 . 1682) (STATIC 1658 . 1664) (symbol 1485 . 1502) (STATIC 1478 . 1484) (symbol 1037 . 1054) (STATIC 1030 . 1036) (symbol 860 . 877) (STATIC 853 . 859) (semantic-list 724 . 738) (CONST 718 . 723) (semantic-list 715 . 717) (punctuation 713 . 714) (symbol 712 . 713) (OPERATOR 703 . 711) (symbol 685 . 702))
+      :lexical-table 
+        '(("BOOST_CORE_ADDRESSOF_HPP")
+          )
+))
+  :file "!usr!include!boost!core!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

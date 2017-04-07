@@ -1,0 +1,348 @@
+;; Object examples/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "examples/"
+  :tables
+  (list
+    (semanticdb-table "http_async_server.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BEAST_EXAMPLE_HTTP_ASYNC_SERVER_H_INCLUDED" variable (:constant-flag t) nil [299 341])
+            ("file_body.hpp" include nil nil [343 367])
+            ("mime_type.hpp" include nil nil [368 392])
+            ("beast/http.hpp" include (:system-flag t) nil [394 419])
+            ("beast/core/placeholders.hpp" include (:system-flag t) nil [420 458])
+            ("beast/core/streambuf.hpp" include (:system-flag t) nil [459 494])
+            ("boost/asio.hpp" include (:system-flag t) nil [495 520])
+            ("cstddef" include (:system-flag t) nil [521 539])
+            ("cstdio" include (:system-flag t) nil [540 557])
+            ("iostream" include (:system-flag t) nil [558 577])
+            ("memory" include (:system-flag t) nil [578 595])
+            ("mutex" include (:system-flag t) nil [596 612])
+            ("thread" include (:system-flag t) nil [613 630])
+            ("utility" include (:system-flag t) nil [631 649])
+            ("beast" type
+               (:members 
+                  ( ("http" type
+                       (:members 
+                          ( ("http_async_server" type
+                               (:members 
+                                  ( ("boost::asio::ip::tcp::endpoint" variable (:type "int") (reparse-symbol classsubparts) [739 770])
+                                    ("boost::asio::ip::address" variable (:type "int") (reparse-symbol classsubparts) [796 821])
+                                    ("boost::asio::ip::tcp::socket" variable (:type "int") (reparse-symbol classsubparts) [846 875])
+                                    ("m_" variable (:type ("std::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [974 988])
+                                    ("log_" variable
+                                       (:default-value "true"
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [993 1010])
+                                    ("ios_" variable (:type ("boost::asio::io_service" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1015 1044])
+                                    ("acceptor_" variable (:type ("boost::asio::ip::tcp::acceptor" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1049 1090])
+                                    ("sock_" variable (:type ("socket_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1095 1113])
+                                    ("root_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1118 1136])
+                                    ("thread_" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("std::thread" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [1141 1174])
+                                    ("public" label nil (reparse-symbol classsubparts) [1176 1183])
+                                    ("http_async_server" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("ep" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("endpoint_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1206 1230])
+                                            ("threads" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1243 1263])
+                                            ("root" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1264 1288]))                                          
+                                        :type ("http_async_server" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1188 1823])
+                                    ("http_async_server" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1829 2002])
+                                    ("log" function
+                                       (:arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Args" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2049 2061])
+                                            ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2064 2069]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2036 2199])
+                                    ("private" label nil (reparse-symbol classsubparts) [2201 2209])
+                                    ("write_op" type
+                                       (:template 
+                                          ( ("Stream" type (:type "class") nil nil)
+                                            ("Handler" type (:type "class") nil nil)
+                                            ("bool" type (:typevar "isRequest") nil nil)
+                                            ("Body" type (:type "class") nil nil)
+                                            ("Headers" type (:type "class") nil nil))                                          
+                                        :type "class"
+                                        :members 
+                                          ( ("data" type
+                                               (:members 
+                                                  ( ("s" variable (:type ("Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2440 2450])
+                                                    ("m" variable (:type ("message_v1" type
+                                                         (:template-specifier 
+                                                            ( ("isRequest" type nil nil nil)
+                                                              ("Body" type nil nil nil)
+                                                              ("Headers" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [2463 2502])
+                                                    ("h" variable (:type ("Handler" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2515 2525])
+                                                    ("cont" variable (:type "bool") (reparse-symbol classsubparts) [2538 2548])
+                                                    ("data" function
+                                                       (:template 
+                                                          ( ("DeducedHandler" type (:type "class") nil nil))                                                          
+                                                        :type ("data" type (:type "struct") nil nil)
+                                                        :arguments 
+                                                          ( ("" variable
+                                                               (:reference 1
+                                                                :type ("DeducedHandler" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [2610 2626])
+                                                            ("" variable (:type ("h_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2627 2630])
+                                                            ("s_" variable
+                                                               (:reference 1
+                                                                :type ("Stream" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [2631 2642])
+                                                            ("" variable
+                                                               (:reference 1
+                                                                :type ("message_v1" type
+                                                                     (:template-specifier 
+                                                                        ( ("isRequest" type nil nil nil)
+                                                                          ("Body" type nil nil nil)
+                                                                          ("Headers" type nil nil nil))                                                                        
+                                                                      :type "class")
+                                                                      nil nil))
+                                                                (reparse-symbol arg-sub-list) [2663 2701])
+                                                            ("" variable (:type ("m_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2702 2705]))                                                          
+                                                        :constructor-flag t)
+                                                        (reparse-symbol classsubparts) [2562 2943]))                                                  
+                                                :type "struct")
+                                                (reparse-symbol classsubparts) [2406 2954])
+                                            ("d_" variable (:type ("std::shared_ptr" type
+                                                 (:template-specifier 
+                                                    ( ("data" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [2964 2989])
+                                            ("public" label nil (reparse-symbol classsubparts) [2995 3002])
+                                            ("write_op" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :type ("DeducedHandler" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3160 3176])
+                                                    ("" variable (:type ("h" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3177 3179])
+                                                    ("s" variable
+                                                       (:reference 1
+                                                        :type ("Stream" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3180 3190])
+                                                    ("" variable
+                                                       (:reference 1
+                                                        :type ("Args" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3191 3197])
+                                                    ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3201 3206]))                                                  
+                                                :type ("write_op" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3151 3429])
+                                            ("()" function
+                                               (:operator-flag t
+                                                :arguments 
+                                                  ( ("ec" variable (:type ("error_code" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3463 3477])
+                                                    ("again" variable
+                                                       (:default-value "true"
+                                                        :type "bool")
+                                                        (reparse-symbol arg-sub-list) [3478 3496]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3439 3748])
+                                            ("asio_handler_allocate" function
+                                               (:pointer 1
+                                                :typemodifiers ("friend")
+                                                :arguments 
+                                                  ( ("size" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3814 3831])
+                                                    ("op" variable
+                                                       (:pointer 1
+                                                        :type ("write_op" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3832 3845]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3758 3962])
+                                            ("asio_handler_deallocate" function
+                                               (:typemodifiers ("friend")
+                                                :arguments 
+                                                  ( ("p" variable
+                                                       (:pointer 1
+                                                        :type "void")
+                                                        (reparse-symbol arg-sub-list) [4029 4037])
+                                                    ("size" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4038 4055])
+                                                    ("op" variable
+                                                       (:pointer 1
+                                                        :type ("write_op" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4056 4069]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3972 4191])
+                                            ("asio_handler_is_continuation" function
+                                               (:typemodifiers ("friend")
+                                                :arguments 
+                                                  ( ("op" variable
+                                                       (:pointer 1
+                                                        :type ("write_op" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4250 4263]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [4201 4316])
+                                            ("asio_handler_invoke" function
+                                               (:template 
+                                                  ( ("Function" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :type ("Function" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4399 4409])
+                                                    ("" variable (:type ("f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4410 4412])
+                                                    ("op" variable
+                                                       (:pointer 1
+                                                        :type ("write_op" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4413 4426]))                                                  )
+                                                (reparse-symbol classsubparts) [4326 4539]))                                          )
+                                        (reparse-symbol classsubparts) [2214 4546])
+                                    ("async_write" function
+                                       (:template 
+                                          ( ("Stream" type (:type "class") nil nil)
+                                            ("bool" type (:typevar "isRequest") nil nil)
+                                            ("Body" type (:type "class") nil nil)
+                                            ("Headers" type (:type "class") nil nil)
+                                            ("DeducedHandler" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("stream" variable
+                                               (:reference 1
+                                                :type ("Stream" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4696 4711])
+                                            ("" variable
+                                               (:reference 1
+                                                :type ("message_v1" type
+                                                     (:template-specifier 
+                                                        ( ("isRequest" type nil nil nil)
+                                                          ("Body" type nil nil nil)
+                                                          ("Headers" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [4712 4759])
+                                            ("" variable (:type ("msg" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4760 4764])
+                                            ("" variable
+                                               (:reference 1
+                                                :type ("DeducedHandler" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4777 4793])
+                                            ("" variable (:type ("handler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4794 4802]))                                          
+                                        :typemodifiers ("static"))
+                                        (reparse-symbol classsubparts) [4552 5001])
+                                    ("peer" type
+                                       (:superclasses 
+                                          ( ("std::enable_shared_from_this" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("id_" variable (:type "int") (reparse-symbol classsubparts) [5076 5084])
+                                            ("sb_" variable (:type ("streambuf" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5093 5107])
+                                            ("sock_" variable (:type ("socket_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5116 5134])
+                                            ("server_" variable (:type ("http_async_server" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5143 5170])
+                                            ("strand_" variable (:type ("boost::asio::io_service::strand" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5179 5219])
+                                            ("req_" variable (:type ("req_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5228 5242])
+                                            ("public" label nil (reparse-symbol classsubparts) [5248 5255])
+                                            ("peer" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :type ("socket_type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5428 5441])
+                                                    ("" variable (:type ("sock" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5442 5447])
+                                                    ("server" variable
+                                                       (:reference 1
+                                                        :type ("http_async_server" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5448 5474]))                                                  
+                                                :type ("peer" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [5423 5660])
+                                            ("fail" function
+                                               (:arguments 
+                                                  ( ("ec" variable (:type ("error_code" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5688 5702])
+                                                    ("what" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5703 5720]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [5670 5876])
+                                            ("run" function (:type "void") (reparse-symbol classsubparts) [5886 5939])
+                                            ("do_read" function (:type "void") (reparse-symbol classsubparts) [5949 6150])
+                                            ("on_read" function
+                                               (:arguments 
+                                                  ( ("ec" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("error_code" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6173 6194]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [6160 8087])
+                                            ("on_write" function
+                                               (:arguments 
+                                                  ( ("ec" variable (:type ("error_code" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8111 8125]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [8097 8222]))                                          
+                                        :type "class")
+                                        (reparse-symbol classsubparts) [5007 8229])
+                                    ("log_args" function (:type "void") (reparse-symbol classsubparts) [8235 8266])
+                                    ("log_args" function
+                                       (:arguments 
+                                          ( ("arg" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Arg" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8329 8344])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Args" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8345 8357])
+                                            ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8360 8365]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8311 8430])
+                                    ("fail" function
+                                       (:arguments 
+                                          ( ("ec" variable (:type ("error_code" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8450 8464])
+                                            ("what" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8465 8482]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8436 8539])
+                                    ("on_accept" function
+                                       (:arguments 
+                                          ( ("ec" variable (:type ("error_code" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8564 8578]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8545 8947]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [687 8950]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [669 8953]))                  
+                :type "namespace")
+                nil [651 8963]))          
+      :file "http_async_server.hpp"
+      :pointmax 8981
+      :fsize 8980
+      :lastmodtime '(22486 26367 776666 669000)
+      :unmatched-syntax '((punctuation 8358 . 8359) (punctuation 8357 . 8358) (punctuation 8356 . 8357) (punctuation 8305 . 8306) (symbol 8301 . 8305) (punctuation 8299 . 8300) (punctuation 8298 . 8299) (punctuation 8297 . 8298) (CLASS 8292 . 8297) (punctuation 8290 . 8291) (symbol 8287 . 8290) (CLASS 8281 . 8286) (punctuation 8280 . 8281) (TEMPLATE 8272 . 8280) (punctuation 5440 . 5441) (punctuation 5412 . 5413) (DELETE 5406 . 5412) (punctuation 5404 . 5405) (semantic-list 5390 . 5403) (punctuation 5389 . 5390) (OPERATOR 5381 . 5389) (punctuation 5379 . 5380) (symbol 5375 . 5379) (punctuation 5365 . 5366) (DELETE 5359 . 5365) (punctuation 5357 . 5358) (semantic-list 5348 . 5356) (punctuation 5347 . 5348) (OPERATOR 5339 . 5347) (punctuation 5354 . 5355) (punctuation 5337 . 5338) (symbol 5333 . 5337) (punctuation 5354 . 5355) (punctuation 5323 . 5324) (DEFAULT 5316 . 5323) (punctuation 5314 . 5315) (semantic-list 5300 . 5313) (symbol 5296 . 5300) (punctuation 5286 . 5287) (DEFAULT 5279 . 5286) (punctuation 5277 . 5278) (semantic-list 5268 . 5276) (symbol 5264 . 5268) (punctuation 5274 . 5275) (punctuation 5440 . 5441) (punctuation 5412 . 5413) (DELETE 5406 . 5412) (punctuation 5404 . 5405) (semantic-list 5390 . 5403) (punctuation 5389 . 5390) (OPERATOR 5381 . 5389) (punctuation 5379 . 5380) (symbol 5375 . 5379) (punctuation 5365 . 5366) (DELETE 5359 . 5365) (punctuation 5357 . 5358) (semantic-list 5348 . 5356) (punctuation 5347 . 5348) (OPERATOR 5339 . 5347) (punctuation 5354 . 5355) (punctuation 5337 . 5338) (symbol 5333 . 5337) (punctuation 5354 . 5355) (punctuation 5323 . 5324) (DEFAULT 5316 . 5323) (punctuation 5314 . 5315) (semantic-list 5300 . 5313) (symbol 5296 . 5300) (punctuation 5286 . 5287) (DEFAULT 5279 . 5286) (punctuation 5277 . 5278) (semantic-list 5268 . 5276) (symbol 5264 . 5268) (punctuation 5274 . 5275) (punctuation 4792 . 4793) (punctuation 4758 . 4759) (punctuation 4408 . 4409) (punctuation 3199 . 3200) (punctuation 3198 . 3199) (punctuation 3197 . 3198) (punctuation 3196 . 3197) (punctuation 3175 . 3176) (punctuation 3141 . 3142) (symbol 3137 . 3141) (punctuation 3135 . 3136) (punctuation 3134 . 3135) (punctuation 3133 . 3134) (CLASS 3128 . 3133) (punctuation 3126 . 3127) (symbol 3112 . 3126) (CLASS 3106 . 3111) (punctuation 3105 . 3106) (TEMPLATE 3097 . 3105) (punctuation 3086 . 3087) (DEFAULT 3079 . 3086) (punctuation 3077 . 3078) (semantic-list 3059 . 3076) (symbol 3051 . 3059) (punctuation 3041 . 3042) (DEFAULT 3034 . 3041) (punctuation 3032 . 3033) (semantic-list 3019 . 3031) (symbol 3011 . 3019) (punctuation 3029 . 3030) (punctuation 2700 . 2701) (punctuation 2625 . 2626) (punctuation 2700 . 2701) (punctuation 2625 . 2626) (punctuation 2395 . 2396) (punctuation 2394 . 2395) (symbol 2387 . 2394) (punctuation 2385 . 2386) (CHAR 2381 . 2385) (punctuation 2380 . 2381) (symbol 2367 . 2380) (punctuation 2353 . 2354) (symbol 2342 . 2352) (USING 2336 . 2341) (punctuation 2062 . 2063) (punctuation 2061 . 2062) (punctuation 2060 . 2061) (punctuation 2030 . 2031) (symbol 2026 . 2030) (punctuation 2024 . 2025) (punctuation 2023 . 2024) (punctuation 2022 . 2023) (CLASS 2017 . 2022) (punctuation 2016 . 2017) (TEMPLATE 2008 . 2016) (punctuation 967 . 968) (punctuation 966 . 967) (symbol 957 . 966) (punctuation 956 . 957) (symbol 945 . 956) (punctuation 943 . 944) (symbol 933 . 942) (USING 927 . 932) (punctuation 921 . 922) (punctuation 920 . 921) (symbol 909 . 920) (punctuation 908 . 909) (symbol 898 . 908) (punctuation 896 . 897) (symbol 887 . 895) (USING 881 . 886) (punctuation 844 . 845) (symbol 832 . 843) (USING 826 . 831) (punctuation 794 . 795) (symbol 781 . 793) (USING 775 . 780) (punctuation 737 . 738) (symbol 723 . 736) (USING 717 . 722))
+      :lexical-table 
+        '(("BEAST_EXAMPLE_HTTP_ASYNC_SERVER_H_INCLUDED")
+          )
+)
+    (semanticdb-table "file_body.hpp"
+      :file "file_body.hpp"
+      :fsize 2179
+      :lastmodtime '(22486 26367 776666 669000))
+    (semanticdb-table "mime_type.hpp"
+      :file "mime_type.hpp"
+      :fsize 1674
+      :lastmodtime '(22486 26367 776666 669000)))
+  :file "!home!nakao!github!iotc_msgpub!external!Beast!examples!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

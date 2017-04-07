@@ -1,0 +1,43 @@
+;; Object msgpub_unit_test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "msgpub_unit_test/"
+  :tables
+  (list
+    (semanticdb-table "main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_TEST_MODULE" variable (:constant-flag t) nil [9 26])
+            ("boost/test/unit_test.hpp" include (:system-flag t) nil [45 80])
+            ("soci.h" include (:system-flag t) nil [81 98])
+            ("mysql/soci-mysql.h" include (:system-flag t) nil [99 128])
+            ("msgpub/log.hpp" include (:system-flag t) nil [129 154])
+            ("config" type
+               (:members 
+                  ( ("config" function
+                       (:constructor-flag t
+                        :type ("config" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [195 3437])
+                    ("config" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3468 4176]))                  
+                :type "struct")
+                nil [175 4179])
+            ("BOOST_GLOBAL_FIXTURE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("config" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4202 4209]))                  
+                :type "int")
+                nil [4181 4210]))          
+      :file "main.cpp"
+      :pointmax 4211
+      :fsize 4210
+      :lastmodtime '(22397 47777 210000 3000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_TEST_MODULE" . ((symbol "msgpub_unit_test" 27 . 43)))
+          )
+))
+  :file "!home!nakao!github!iotc_msgpub_bak!msgpub_unit_test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

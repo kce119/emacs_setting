@@ -1,0 +1,282 @@
+;; Object sample_tcp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sample_tcp/"
+  :tables
+  (list
+    (semanticdb-table "sample_tcp_client.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cstdlib" include (:system-flag t) nil [1 19])
+            ("cstring" include (:system-flag t) nil [20 38])
+            ("iostream" include (:system-flag t) nil [39 58])
+            ("boost/asio.hpp" include (:system-flag t) nil [59 84])
+            ("boost::asio::ip::tcp" using (:type ("boost::asio::ip::tcp" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [184 211])
+            ("client" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [228 235])
+                    ("client" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("io_service" variable
+                               (:reference 1
+                                :type ("boost::asio::io_service" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [247 283]))                          
+                        :type ("client" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [240 580])
+                    ("start" function (:type "void") (reparse-symbol classsubparts) [586 910])
+                    ("start_read" function (:type "void") (reparse-symbol classsubparts) [916 1365])
+                    ("handle_read" function
+                       (:arguments 
+                          ( ("ec" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("boost::system::error_code" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1388 1424])
+                            ("bytes_transferred" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1425 1455]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1371 1855])
+                    ("public" label nil (reparse-symbol classsubparts) [1857 1864])
+                    ("io_service_" variable (:type ("boost::asio::io_service" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1869 1906])
+                    ("socket_" variable (:type ("tcp::socket" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1911 1931])
+                    ("receive_buffer_" variable (:type ("boost::asio::streambuf" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1936 1975]))                  
+                :type "class")
+                nil [213 1978])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1989 1998])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1999 2012]))                  
+                :type "int")
+                nil [1980 2134]))          
+      :file "sample_tcp_client.cpp"
+      :pointmax 2135
+      :fsize 2134
+      :lastmodtime '(22647 5344 73333 335000)
+      :unmatched-syntax '((punctuation 1977 . 1978) (semantic-list 226 . 1977) (CLASS 213 . 218)))
+    (semanticdb-table "sample_tcp_server.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cstdlib" include (:system-flag t) nil [1 19])
+            ("iostream" include (:system-flag t) nil [20 39])
+            ("boost/asio.hpp" include (:system-flag t) nil [40 65])
+            ("boost::asio::ip::tcp" using (:type ("boost::asio::ip::tcp" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [155 182])
+            ("core" type
+               (:prototype t
+                :type "class")
+                nil [184 195])
+            ("session" type
+               (:superclasses 
+                  ( ("std::enable_shared_from_this" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [260 267])
+                    ("session" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("c" variable
+                               (:reference 1
+                                :type ("core" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [280 288])
+                            ("io_service" variable
+                               (:reference 1
+                                :type ("boost::asio::io_service" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [289 325]))                          
+                        :type ("session" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [272 393])
+                    ("socket" function (:type ("tcp::socket" type (:type "class") nil nil)) (reparse-symbol classsubparts) [399 452])
+                    ("start" function (:type "void") (reparse-symbol classsubparts) [458 516])
+                    ("start_read" function (:type "void") (reparse-symbol classsubparts) [522 874])
+                    ("send_list_num" function
+                       (:arguments 
+                          ( ("s" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [899 913]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [880 1264])
+                    ("handle_read" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("error" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("boost::system::error_code" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1287 1326])
+                            ("bytes_transferred" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1348 1378]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1270 1379])
+                    ("private" label nil (reparse-symbol classsubparts) [1381 1389])
+                    ("core_" variable (:type ("core" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1394 1406])
+                    ("socket_" variable (:type ("tcp::socket" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1411 1431])
+                    ("receive_buffer_" variable (:type ("boost::asio::streambuf" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1436 1475])
+                    ("send_data_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1480 1503]))                  
+                :type "class")
+                nil [197 1506])
+            ("core" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1521 1528])
+                    ("set_list" function
+                       (:arguments 
+                          ( ("s_sp" variable (:type ("std::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("session" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1547 1577]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1533 1619])
+                    ("handle_req_list_num" function
+                       (:arguments 
+                          ( ("sp" variable
+                               (:pointer 1
+                                :type ("session" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1650 1662]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1625 1992])
+                    ("handle_delete_session" function
+                       (:arguments 
+                          ( ("sp" variable
+                               (:pointer 1
+                                :type ("session" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2025 2037]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1998 2344])
+                    ("private" label nil (reparse-symbol classsubparts) [2346 2354])
+                    ("sp_v_" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::shared_ptr" type (:template-specifier 
+                                ( ("session" type nil nil nil))                                ) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2359 2403]))                  
+                :type "class")
+                nil [1508 2406])
+            ("handle_read" function
+               (:parent "session"
+                :arguments 
+                  ( ("error" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("boost::system::error_code" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2434 2473])
+                    ("bytes_transferred" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2500 2530]))                  
+                :type "void")
+                nil [2408 3277])
+            ("server" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [3294 3301])
+                    ("server" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("c" variable
+                               (:reference 1
+                                :type ("core" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3313 3321])
+                            ("io_service" variable
+                               (:reference 1
+                                :type ("boost::asio::io_service" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3322 3358]))                          
+                        :type ("server" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3306 3916])
+                    ("handle_accept" function
+                       (:arguments 
+                          ( ("session_ptr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("session" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3941 3985])
+                            ("error" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("boost::system::error_code" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4009 4048]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3922 4638])
+                    ("private" label nil (reparse-symbol classsubparts) [4640 4648])
+                    ("core_" variable (:type ("core" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4653 4665])
+                    ("io_service_" variable (:type ("boost::asio::io_service" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4670 4707])
+                    ("acceptor_" variable (:type ("tcp::acceptor" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4712 4736]))                  
+                :type "class")
+                nil [3279 4740])
+            ("main" function (:type "int") nil [4742 4875]))          
+      :file "sample_tcp_server.cpp"
+      :pointmax 4876
+      :fsize 4875
+      :lastmodtime '(22647 5232 826666 669000)
+      :unmatched-syntax nil)
+    (semanticdb-table "sample_tcp_server_example.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("boost/asio.hpp" include (:system-flag t) nil [21 46])
+            ("boost/bind.hpp" include (:system-flag t) nil [47 72])
+            ("asio" type
+               (:kind alias
+                :members 
+                  ( ("boost::asio" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [74 103])
+            ("asio::ip::tcp" using (:type ("asio::ip::tcp" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [104 124])
+            ("Server" type
+               (:members 
+                  ( ("io_service_" variable (:type ("asio::io_service" type (:type "class") nil nil)) (reparse-symbol classsubparts) [145 175])
+                    ("acceptor_" variable (:type ("tcp::acceptor" type (:type "class") nil nil)) (reparse-symbol classsubparts) [180 204])
+                    ("socket_" variable (:type ("tcp::socket" type (:type "class") nil nil)) (reparse-symbol classsubparts) [209 229])
+                    ("receive_buff_" variable (:type ("asio::streambuf" type (:type "class") nil nil)) (reparse-symbol classsubparts) [234 264])
+                    ("public" label nil (reparse-symbol classsubparts) [266 273])
+                    ("Server" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("io_service" variable
+                               (:reference 1
+                                :type ("asio::io_service" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [285 314]))                          
+                        :type ("Server" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [278 448])
+                    ("start" function (:type "void") (reparse-symbol classsubparts) [454 502])
+                    ("private" label nil (reparse-symbol classsubparts) [504 512])
+                    ("start_accept" function (:type "void") (reparse-symbol classsubparts) [529 692])
+                    ("on_accept" function
+                       (:arguments 
+                          ( ("error" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("boost::system::error_code" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [727 766]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [712 931])
+                    ("start_receive" function (:type "void") (reparse-symbol classsubparts) [952 1242])
+                    ("on_receive" function
+                       (:arguments 
+                          ( ("error" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("boost::system::error_code" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1333 1372])
+                            ("bytes_transferred" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1373 1398]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1317 1766]))                  
+                :type "class")
+                nil [126 1769])
+            ("main" function (:type "int") nil [1771 1893]))          
+      :file "sample_tcp_server_example.cpp"
+      :pointmax 1894
+      :fsize 1961
+      :lastmodtime '(22647 2433 70000 2000)
+      :unmatched-syntax nil))
+  :file "!home!nakao!work!my_conf!boost!sample_tcp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

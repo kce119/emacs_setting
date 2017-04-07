@@ -1,0 +1,127 @@
+;; Object back/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "back/"
+  :tables
+  (list
+    (semanticdb-table "state_machine.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MSM_BACK_STATEMACHINE_H" variable (:constant-flag t) nil [526 555])
+            ("exception" include (:system-flag t) nil [557 577])
+            ("vector" include (:system-flag t) nil [578 595])
+            ("functional" include (:system-flag t) nil [596 617])
+            ("numeric" include (:system-flag t) nil [618 636])
+            ("utility" include (:system-flag t) nil [637 655])
+            ("boost/detail/no_exceptions_support.hpp" include (:system-flag t) nil [657 706])
+            ("boost/mpl/contains.hpp" include (:system-flag t) nil [708 741])
+            ("boost/mpl/deref.hpp" include (:system-flag t) nil [742 772])
+            ("boost/mpl/assert.hpp" include (:system-flag t) nil [773 804])
+            ("boost/fusion/container/vector/convert.hpp" include (:system-flag t) nil [806 858])
+            ("boost/fusion/include/as_vector.hpp" include (:system-flag t) nil [859 904])
+            ("boost/fusion/include/as_set.hpp" include (:system-flag t) nil [905 947])
+            ("boost/fusion/container/set.hpp" include (:system-flag t) nil [948 989])
+            ("boost/fusion/include/set.hpp" include (:system-flag t) nil [990 1029])
+            ("boost/fusion/include/set_fwd.hpp" include (:system-flag t) nil [1030 1073])
+            ("boost/fusion/include/mpl.hpp" include (:system-flag t) nil [1074 1113])
+            ("boost/fusion/sequence/intrinsic/at_key.hpp" include (:system-flag t) nil [1114 1167])
+            ("boost/fusion/include/at_key.hpp" include (:system-flag t) nil [1168 1210])
+            ("boost/fusion/algorithm/iteration/for_each.hpp" include (:system-flag t) nil [1211 1267])
+            ("boost/fusion/include/for_each.hpp" include (:system-flag t) nil [1268 1312])
+            ("boost/assert.hpp" include (:system-flag t) nil [1314 1341])
+            ("boost/ref.hpp" include (:system-flag t) nil [1342 1366])
+            ("boost/type_traits.hpp" include (:system-flag t) nil [1367 1399])
+            ("boost/utility/enable_if.hpp" include (:system-flag t) nil [1400 1438])
+            ("boost/type_traits/is_convertible.hpp" include (:system-flag t) nil [1439 1486])
+            ("boost/bind.hpp" include (:system-flag t) nil [1488 1513])
+            ("boost/bind/apply.hpp" include (:system-flag t) nil [1514 1545])
+            ("boost/function.hpp" include (:system-flag t) nil [1546 1575])
+            ("boost/any.hpp" include (:system-flag t) nil [1598 1622])
+            ("boost/serialization/base_object.hpp" include (:system-flag t) nil [1631 1677])
+            ("boost/parameter.hpp" include (:system-flag t) nil [1679 1709])
+            ("boost/msm/active_state_switching_policies.hpp" include (:system-flag t) nil [1711 1767])
+            ("boost/msm/row_tags.hpp" include (:system-flag t) nil [1768 1801])
+            ("boost/msm/msm_grammar.hpp" include (:system-flag t) nil [1802 1838])
+            ("boost/msm/back/fold_to_list.hpp" include (:system-flag t) nil [1839 1881])
+            ("boost/msm/back/metafunctions.hpp" include (:system-flag t) nil [1882 1925])
+            ("boost/msm/back/history_policies.hpp" include (:system-flag t) nil [1926 1972])
+            ("boost/msm/back/common_types.hpp" include (:system-flag t) nil [1973 2015])
+            ("boost/msm/back/args.hpp" include (:system-flag t) nil [2016 2050])
+            ("boost/msm/back/default_compile_policy.hpp" include (:system-flag t) nil [2051 2103])
+            ("boost/msm/back/dispatch_table.hpp" include (:system-flag t) nil [2104 2148])
+            ("boost/msm/back/no_fsm_check.hpp" include (:system-flag t) nil [2149 2191])
+            ("boost/msm/back/queue_container_deque.hpp" include (:system-flag t) nil [2192 2243])
+            ("BOOST_MSM_CONSTRUCTOR_ARG_SIZE" variable (:constant-flag t) nil [2828 2858])
+            ("boost" type
+               (:members 
+                  ( ("msm" type
+                       (:members 
+                          ( ("back" type
+                               (:members 
+                                  ( ("direct_entry_event" type
+                                       (:template 
+                                          ( ("StateType" type (:type "class") nil nil)
+                                            ("Event" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("direct_entry" type
+                                               (:typedef ("int")
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3096 3121])
+                                            ("active_state" type
+                                               (:typedef ("StateType" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3126 3157])
+                                            ("contained_event" type
+                                               (:typedef ("Event" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3162 3192])
+                                            ("direct_entry_event" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("evt" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Event" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3217 3234]))                                                  
+                                                :type ("direct_entry_event" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [3198 3249])
+                                            ("m_event" variable (:type ("Event" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3254 3275]))                                          )
+                                        (reparse-symbol namespacesubparts) [3025 3278])
+                                    ("dispatch_table::instance" variable
+                                       (:constant-flag t
+                                        :type ("boost::msm::back::dispatch_table" type
+                                             (:template-specifier 
+                                                ( ("Fsm" type nil nil nil)
+                                                  ("Stt" type nil nil nil)
+                                                  ("Event" type nil nil nil)
+                                                  ("CompilePolicy" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [3349 3537])
+                                    ("state_machine_signature" variable (:type "int") (reparse-symbol namespacesubparts) [4552 4576])
+                                    ("make_euml_terminal" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [4677 4703])
+                                    ("public" label nil (reparse-symbol namespacesubparts) [5447 5455]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [2955 123045]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2939 123047]))                  
+                :type "namespace")
+                nil [2921 123049]))          
+      :file "state_machine.hpp"
+      :pointmax 123108
+      :fsize 123107
+      :lastmodtime '(22321 39201 733333 334000)
+      :unmatched-syntax '((punctuation 123041 . 123042) (semantic-list 5904 . 123041) (punctuation 5902 . 5903) (symbol 5891 . 5895) (punctuation 5890 . 5891) (punctuation 5889 . 5890) (punctuation 5888 . 5889) (symbol 5853 . 5862) (punctuation 5852 . 5853) (punctuation 5851 . 5852) (symbol 5848 . 5851) (punctuation 5847 . 5848) (punctuation 5846 . 5847) (symbol 5842 . 5846) (punctuation 5841 . 5842) (punctuation 5840 . 5841) (symbol 5837 . 5840) (punctuation 5836 . 5837) (punctuation 5835 . 5836) (symbol 5830 . 5835) (punctuation 5829 . 5830) (punctuation 5828 . 5829) (punctuation 5826 . 5827) (symbol 5822 . 5826) (punctuation 5821 . 5822) (punctuation 5820 . 5821) (punctuation 5819 . 5820) (symbol 5817 . 5819) (punctuation 5816 . 5817) (symbol 5814 . 5816) (punctuation 5813 . 5814) (symbol 5811 . 5813) (punctuation 5810 . 5811) (symbol 5808 . 5810) (punctuation 5807 . 5808) (symbol 5805 . 5807) (punctuation 5804 . 5805) (symbol 5800 . 5804) (punctuation 5799 . 5800) (punctuation 5798 . 5799) (symbol 5775 . 5798) (TYPENAME 5766 . 5774) (punctuation 5728 . 5729) (symbol 5721 . 5728) (punctuation 5720 . 5721) (punctuation 5719 . 5720) (symbol 5710 . 5719) (punctuation 5709 . 5710) (punctuation 5708 . 5709) (symbol 5703 . 5708) (punctuation 5702 . 5703) (punctuation 5701 . 5702) (TYPENAME 5692 . 5700) (punctuation 5665 . 5666) (punctuation 5664 . 5665) (symbol 5662 . 5664) (punctuation 5661 . 5662) (symbol 5659 . 5661) (punctuation 5658 . 5659) (symbol 5656 . 5658) (punctuation 5655 . 5656) (symbol 5653 . 5655) (punctuation 5652 . 5653) (symbol 5650 . 5652) (punctuation 5649 . 5650) (symbol 5636 . 5649) (punctuation 5635 . 5636) (symbol 5617 . 5635) (PUBLIC 5610 . 5616) (punctuation 5608 . 5609) (symbol 5599 . 5603) (punctuation 5598 . 5599) (punctuation 5597 . 5598) (punctuation 5596 . 5597) (symbol 5582 . 5591) (punctuation 5581 . 5582) (punctuation 5580 . 5581) (symbol 5577 . 5580) (punctuation 5576 . 5577) (punctuation 5575 . 5576) (symbol 5571 . 5575) (punctuation 5570 . 5571) (punctuation 5569 . 5570) (symbol 5566 . 5569) (punctuation 5565 . 5566) (punctuation 5564 . 5565) (symbol 5559 . 5564) (punctuation 5558 . 5559) (punctuation 5557 . 5558) (punctuation 5555 . 5556) (symbol 5551 . 5555) (punctuation 5550 . 5551) (punctuation 5549 . 5550) (punctuation 5548 . 5549) (symbol 5546 . 5548) (punctuation 5545 . 5546) (symbol 5543 . 5545) (punctuation 5542 . 5543) (symbol 5540 . 5542) (punctuation 5539 . 5540) (symbol 5537 . 5539) (punctuation 5536 . 5537) (symbol 5534 . 5536) (punctuation 5533 . 5534) (symbol 5529 . 5533) (punctuation 5528 . 5529) (punctuation 5527 . 5528) (symbol 5504 . 5527) (TYPENAME 5495 . 5503) (punctuation 5481 . 5482) (symbol 5474 . 5481) (punctuation 5473 . 5474) (punctuation 5472 . 5473) (symbol 5463 . 5472) (punctuation 5462 . 5463) (punctuation 5461 . 5462) (symbol 5456 . 5461) (punctuation 5455 . 5456) (punctuation 5424 . 5425) (symbol 5410 . 5423) (CLASS 5404 . 5409) (punctuation 5402 . 5403) (symbol 5396 . 5401) (punctuation 5395 . 5396) (punctuation 5394 . 5395) (symbol 5385 . 5394) (punctuation 5383 . 5384) (symbol 5380 . 5382) (CLASS 5374 . 5379) (punctuation 5372 . 5373) (symbol 5362 . 5367) (punctuation 5361 . 5362) (punctuation 5360 . 5361) (symbol 5351 . 5360) (punctuation 5349 . 5350) (symbol 5346 . 5348) (CLASS 5340 . 5345) (punctuation 5338 . 5339) (symbol 5328 . 5333) (punctuation 5327 . 5328) (punctuation 5326 . 5327) (symbol 5317 . 5326) (punctuation 5315 . 5316) (symbol 5312 . 5314) (CLASS 5306 . 5311) (punctuation 5304 . 5305) (symbol 5294 . 5299) (punctuation 5293 . 5294) (punctuation 5292 . 5293) (symbol 5283 . 5292) (punctuation 5281 . 5282) (symbol 5278 . 5280) (CLASS 5272 . 5277) (punctuation 5270 . 5271) (symbol 5263 . 5265) (CLASS 5257 . 5262) (punctuation 5249 . 5250) (TEMPLATE 5240 . 5248) (punctuation 5068 . 5069) (semantic-list 5066 . 5068) (punctuation 5064 . 5065) (symbol 5052 . 5064) (punctuation 5051 . 5052) (punctuation 5050 . 5051) (symbol 5047 . 5050) (punctuation 5046 . 5047) (punctuation 5045 . 5046) (symbol 5040 . 5045) (punctuation 5038 . 5039) (symbol 5037 . 5038) (punctuation 5035 . 5036) (symbol 5031 . 5035) (punctuation 5030 . 5031) (punctuation 5029 . 5030) (punctuation 5028 . 5029) (symbol 5019 . 5028) (punctuation 5018 . 5019) (punctuation 5017 . 5018) (symbol 5014 . 5017) (punctuation 5013 . 5014) (punctuation 5012 . 5013) (symbol 5007 . 5012) (punctuation 5005 . 5006) (symbol 4997 . 5005) (punctuation 4996 . 4997) (punctuation 4995 . 4996) (symbol 4990 . 4995) (TYPENAME 4981 . 4989) (punctuation 4980 . 4981) (symbol 4973 . 4980) (punctuation 4972 . 4973) (punctuation 4971 . 4972) (symbol 4966 . 4971) (PUBLIC 4959 . 4965) (punctuation 4957 . 4958) (punctuation 4951 . 4952) (symbol 4947 . 4951) (punctuation 4946 . 4947) (punctuation 4945 . 4946) (punctuation 4944 . 4945) (punctuation 4942 . 4943) (symbol 4941 . 4942) (punctuation 4940 . 4941) (symbol 4916 . 4940) (punctuation 4915 . 4916) (symbol 4906 . 4915) (punctuation 4905 . 4906) (punctuation 4904 . 4905) (symbol 4899 . 4904) (punctuation 4898 . 4899) (punctuation 4897 . 4898) (TYPENAME 4888 . 4896) (punctuation 4887 . 4888) (symbol 4886 . 4887) (punctuation 4885 . 4886) (symbol 4884 . 4885) (punctuation 4883 . 4884) (symbol 4865 . 4883) (STRUCT 4858 . 4864) (punctuation 4856 . 4857) (symbol 4855 . 4856) (CLASS 4849 . 4854) (punctuation 4848 . 4849) (symbol 4847 . 4848) (CLASS 4841 . 4846) (punctuation 4840 . 4841) (TEMPLATE 4831 . 4839) (punctuation 4829 . 4830) (semantic-list 4827 . 4829) (punctuation 4825 . 4826) (symbol 4821 . 4825) (punctuation 4820 . 4821) (punctuation 4819 . 4820) (punctuation 4818 . 4819) (punctuation 4816 . 4817) (symbol 4815 . 4816) (punctuation 4814 . 4815) (symbol 4790 . 4814) (punctuation 4789 . 4790) (symbol 4779 . 4789) (punctuation 4778 . 4779) (punctuation 4777 . 4778) (symbol 4772 . 4777) (punctuation 4771 . 4772) (punctuation 4770 . 4771) (TYPENAME 4761 . 4769) (punctuation 4760 . 4761) (symbol 4759 . 4760) (punctuation 4758 . 4759) (symbol 4757 . 4758) (punctuation 4756 . 4757) (symbol 4738 . 4756) (STRUCT 4731 . 4737) (punctuation 4729 . 4730) (symbol 4728 . 4729) (CLASS 4722 . 4727) (punctuation 4721 . 4722) (symbol 4720 . 4721) (CLASS 4714 . 4719) (punctuation 4713 . 4714) (TEMPLATE 4704 . 4712) (punctuation 4675 . 4676) (VOID 4671 . 4675) (punctuation 4670 . 4671) (symbol 4664 . 4670) (CLASS 4658 . 4663) (punctuation 4657 . 4658) (symbol 4656 . 4657) (CLASS 4650 . 4655) (punctuation 4648 . 4649) (symbol 4647 . 4648) (CLASS 4641 . 4646) (punctuation 4640 . 4641) (TEMPLATE 4631 . 4639) (punctuation 4550 . 4551) (punctuation 4548 . 4549) (punctuation 4542 . 4543) (symbol 4540 . 4541) (punctuation 4539 . 4540) (punctuation 4538 . 4539) (symbol 4535 . 4538) (punctuation 4534 . 4535) (punctuation 4533 . 4534) (symbol 4528 . 4533) (punctuation 4527 . 4528) (punctuation 4526 . 4527) (punctuation 4524 . 4525) (symbol 4498 . 4524) (punctuation 4488 . 4489) (punctuation 4487 . 4488) (symbol 4465 . 4487) (punctuation 4464 . 4465) (punctuation 4463 . 4464) (symbol 4460 . 4463) (punctuation 4459 . 4460) (punctuation 4458 . 4459) (symbol 4454 . 4458) (punctuation 4453 . 4454) (punctuation 4452 . 4453) (symbol 4449 . 4452) (punctuation 4448 . 4449) (punctuation 4447 . 4448) (symbol 4442 . 4447) (punctuation 4441 . 4442) (punctuation 4440 . 4441) (punctuation 4438 . 4439) (symbol 4431 . 4438) (punctuation 4430 . 4431) (punctuation 4429 . 4430) (symbol 4420 . 4429) (punctuation 4419 . 4420) (punctuation 4418 . 4419) (symbol 4413 . 4418) (punctuation 4412 . 4413) (punctuation 4411 . 4412) (punctuation 4401 . 4402) (symbol 4393 . 4401) (punctuation 4392 . 4393) (punctuation 4391 . 4392) (symbol 4382 . 4391) (punctuation 4381 . 4382) (punctuation 4380 . 4381) (symbol 4375 . 4380) (punctuation 4374 . 4375) (punctuation 4373 . 4374) (punctuation 4371 . 4372) (punctuation 4367 . 4368) (punctuation 4361 . 4362) (symbol 4359 . 4360) (punctuation 4358 . 4359) (punctuation 4357 . 4358) (symbol 4354 . 4357) (punctuation 4353 . 4354) (punctuation 4352 . 4353) (symbol 4347 . 4352) (punctuation 4346 . 4347) (punctuation 4345 . 4346) (punctuation 4343 . 4344) (symbol 4330 . 4343) (punctuation 4328 . 4329) (punctuation 4327 . 4328) (symbol 4311 . 4327) (punctuation 4310 . 4311) (punctuation 4309 . 4310) (symbol 4306 . 4309) (punctuation 4305 . 4306) (punctuation 4304 . 4305) (symbol 4300 . 4304) (punctuation 4299 . 4300) (punctuation 4298 . 4299) (symbol 4295 . 4298) (punctuation 4294 . 4295) (punctuation 4293 . 4294) (symbol 4288 . 4293) (punctuation 4287 . 4288) (punctuation 4286 . 4287) (punctuation 4284 . 4285) (symbol 4277 . 4284) (punctuation 4276 . 4277) (punctuation 4275 . 4276) (symbol 4266 . 4275) (punctuation 4265 . 4266) (punctuation 4264 . 4265) (symbol 4259 . 4264) (punctuation 4258 . 4259) (punctuation 4257 . 4258) (punctuation 4247 . 4248) (symbol 4239 . 4247) (punctuation 4238 . 4239) (punctuation 4237 . 4238) (symbol 4228 . 4237) (punctuation 4227 . 4228) (punctuation 4226 . 4227) (symbol 4221 . 4226) (punctuation 4220 . 4221) (punctuation 4219 . 4220) (punctuation 4217 . 4218) (punctuation 4213 . 4214) (punctuation 4207 . 4208) (symbol 4205 . 4206) (punctuation 4204 . 4205) (punctuation 4203 . 4204) (symbol 4200 . 4203) (punctuation 4199 . 4200) (punctuation 4198 . 4199) (symbol 4193 . 4198) (punctuation 4192 . 4193) (punctuation 4191 . 4192) (punctuation 4189 . 4190) (symbol 4171 . 4189) (punctuation 4169 . 4170) (punctuation 4168 . 4169) (symbol 4154 . 4168) (punctuation 4153 . 4154) (punctuation 4152 . 4153) (symbol 4149 . 4152) (punctuation 4148 . 4149) (punctuation 4147 . 4148) (symbol 4143 . 4147) (punctuation 4142 . 4143) (punctuation 4141 . 4142) (symbol 4138 . 4141) (punctuation 4137 . 4138) (punctuation 4136 . 4137) (symbol 4131 . 4136) (punctuation 4130 . 4131) (punctuation 4129 . 4130) (punctuation 4127 . 4128) (symbol 4120 . 4127) (punctuation 4119 . 4120) (punctuation 4118 . 4119) (symbol 4109 . 4118) (punctuation 4108 . 4109) (punctuation 4107 . 4108) (symbol 4102 . 4107) (punctuation 4101 . 4102) (punctuation 4100 . 4101) (punctuation 4090 . 4091) (symbol 4082 . 4090) (punctuation 4081 . 4082) (punctuation 4080 . 4081) (symbol 4071 . 4080) (punctuation 4070 . 4071) (punctuation 4069 . 4070) (symbol 4064 . 4069) (punctuation 4063 . 4064) (punctuation 4062 . 4063) (punctuation 4060 . 4061) (punctuation 4056 . 4057) (punctuation 4050 . 4051) (symbol 4048 . 4049) (punctuation 4047 . 4048) (punctuation 4046 . 4047) (symbol 4043 . 4046) (punctuation 4042 . 4043) (punctuation 4041 . 4042) (symbol 4036 . 4041) (punctuation 4035 . 4036) (punctuation 4034 . 4035) (punctuation 4032 . 4033) (symbol 4014 . 4032) (punctuation 4012 . 4013) (punctuation 4011 . 4012) (symbol 3997 . 4011) (punctuation 3996 . 3997) (punctuation 3995 . 3996) (symbol 3992 . 3995) (punctuation 3991 . 3992) (punctuation 3990 . 3991) (symbol 3986 . 3990) (punctuation 3985 . 3986) (punctuation 3984 . 3985) (symbol 3981 . 3984) (punctuation 3980 . 3981) (punctuation 3979 . 3980) (symbol 3974 . 3979) (punctuation 3973 . 3974) (punctuation 3972 . 3973) (punctuation 3970 . 3971) (symbol 3963 . 3970) (punctuation 3962 . 3963) (punctuation 3961 . 3962) (symbol 3952 . 3961) (punctuation 3951 . 3952) (punctuation 3950 . 3951) (symbol 3945 . 3950) (punctuation 3944 . 3945) (punctuation 3943 . 3944) (punctuation 3933 . 3934) (symbol 3925 . 3933) (punctuation 3924 . 3925) (punctuation 3923 . 3924) (symbol 3914 . 3923) (punctuation 3913 . 3914) (punctuation 3912 . 3913) (symbol 3907 . 3912) (punctuation 3906 . 3907) (punctuation 3905 . 3906) (punctuation 3903 . 3904) (punctuation 3899 . 3900) (symbol 3889 . 3898) (punctuation 3888 . 3889) (punctuation 3887 . 3888) (symbol 3884 . 3887) (punctuation 3883 . 3884) (punctuation 3882 . 3883) (symbol 3878 . 3882) (punctuation 3877 . 3878) (punctuation 3876 . 3877) (symbol 3873 . 3876) (punctuation 3872 . 3873) (punctuation 3871 . 3872) (symbol 3866 . 3871) (punctuation 3865 . 3866) (punctuation 3864 . 3865) (punctuation 3862 . 3863) (symbol 3854 . 3862) (punctuation 3853 . 3854) (punctuation 3852 . 3853) (symbol 3843 . 3852) (punctuation 3842 . 3843) (punctuation 3841 . 3842) (symbol 3836 . 3841) (punctuation 3835 . 3836) (punctuation 3834 . 3835) (punctuation 3828 . 3829) (symbol 3818 . 3828) (punctuation 3817 . 3818) (punctuation 3816 . 3817) (symbol 3807 . 3816) (punctuation 3806 . 3807) (punctuation 3805 . 3806) (symbol 3800 . 3805) (punctuation 3799 . 3800) (punctuation 3798 . 3799) (TYPEDEF 3790 . 3797) (semantic-list 3764 . 3788) (symbol 3732 . 3764) (semantic-list 3713 . 3731) (symbol 3681 . 3713) (semantic-list 3664 . 3680) (symbol 3632 . 3664) (semantic-list 3615 . 3631) (symbol 3583 . 3615) (semantic-list 3571 . 3582) (symbol 3539 . 3571) (semantic-list 2757 . 2779) (symbol 2730 . 2757) (semantic-list 2705 . 2729) (symbol 2678 . 2705) (semantic-list 2661 . 2677) (symbol 2634 . 2661) (semantic-list 2622 . 2633) (symbol 2595 . 2622) (semantic-list 2578 . 2594) (symbol 2551 . 2578) (semantic-list 2536 . 2550) (symbol 2509 . 2536) (semantic-list 2495 . 2508) (symbol 2468 . 2495) (semantic-list 2452 . 2467) (symbol 2425 . 2452) (semantic-list 2410 . 2424) (symbol 2383 . 2410) (semantic-list 2361 . 2382) (symbol 2334 . 2361) (semantic-list 2312 . 2333) (symbol 2285 . 2312) (semantic-list 2272 . 2284) (symbol 2245 . 2272))
+      :lexical-table 
+        '(("BOOST_MSM_CONSTRUCTOR_ARG_SIZE" . ((number "5" 2859 . 2860)))
+          ("MSM_VISITOR_ARGS_TYPEDEF_SUB" (spp-arg-list ("z" "n" "unused") 93187 . 93201) . 
+              ((TYPENAME "typename" 93202 . 93210) (symbol "StateType" 93211 . 93220) (punctuation ":" 93220 . 93221) (punctuation ":" 93221 . 93222) (symbol "accept_sig" 93222 . 93232) (punctuation ":" 93232 . 93233) (punctuation ":" 93233 . 93234) (spp-symbol-merge ((symbol "argument" 93234 . 93242) (symbol "n" 93246 . 93247)) 93234 . 93247)))
+          ("BOOST_MSM_BACK_STATEMACHINE_H")
+          )
+))
+  :file "!home!nakao!github!iotc_msgpub!server!ws!broker!boost!msm!back!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

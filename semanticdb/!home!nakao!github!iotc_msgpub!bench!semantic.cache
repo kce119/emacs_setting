@@ -1,0 +1,193 @@
+;; Object bench/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bench/"
+  :tables
+  (list
+    (semanticdb-table "admin.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("boost/program_options.hpp" include (:system-flag t) nil [22 58])
+            ("msgpub/admin_mqtt.hpp" include (:system-flag t) nil [60 92])
+            ("msgpub/log.hpp" include (:system-flag t) nil [93 118])
+            ("res_cb" type
+               (:members 
+                  ( ("()" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("s" variable (:type ("msgpub::status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [157 174]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [140 225]))                  
+                :type "struct")
+                nil [120 228])
+            ("print_menu" function (:type "void") nil [230 596])
+            ("po" type
+               (:kind alias
+                :members 
+                  ( ("boost::program_options" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [7934 7972])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [7983 7992])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7993 8006]))                  
+                :type "int")
+                nil [7974 13166]))          
+      :file "admin.cpp"
+      :pointmax 13167
+      :unmatched-syntax nil)
+    (semanticdb-table "test_admin.cpp"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "test_admin.cpp"
+      :pointmax 14319
+      :fsize 14318
+      :lastmodtime '(22380 56649 196666 665000)
+      :unmatched-syntax nil)
+    (semanticdb-table "do_test.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("msgpub/user.hpp" include (:system-flag t) nil [1 27])
+            ("msgpub/log.hpp" include (:system-flag t) nil [28 53])
+            ("sstream" include (:system-flag t) nil [54 72])
+            ("iomanip" include (:system-flag t) nil [73 91])
+            ("iostream" include (:system-flag t) nil [92 111])
+            ("boost/timer/timer.hpp" include (:system-flag t) nil [112 144])
+            ("boost/program_options.hpp" include (:system-flag t) nil [146 182])
+            ("boost/optional.hpp" include (:system-flag t) nil [183 212])
+            ("boost/optional/optional_io.hpp" include (:system-flag t) nil [213 254])
+            ("po" type
+               (:kind alias
+                :members 
+                  ( ("boost::program_options" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [256 294])
+            ("interval_handler" function
+               (:arguments 
+                  ( ("mp" variable
+                       (:reference 1
+                        :type ("msgpub::user" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [323 340])
+                    ("numstr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [345 371])
+                    ("vsend" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [376 406])
+                    ("response" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [411 432])
+                    ("store" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [437 455]))                  
+                :type "void")
+                nil [296 898])
+            ("console_input_handler" function
+               (:arguments 
+                  ( ("ec" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("boost::system::error_code" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [932 968])
+                    ("len" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [973 996])
+                    ("console_input" variable
+                       (:reference 1
+                        :type ("boost::asio::posix::basic_stream_descriptor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1001 1062])
+                    ("buf" variable
+                       (:reference 1
+                        :type ("boost::asio::streambuf" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1067 1095])
+                    ("mp" variable
+                       (:reference 1
+                        :type ("msgpub::user" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1100 1117])
+                    ("ios" variable
+                       (:reference 1
+                        :type ("boost::asio::io_service" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1122 1151])
+                    ("numstr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1156 1182])
+                    ("vsend" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1187 1217])
+                    ("count" variable
+                       (:reference 1
+                        :type ("std::size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1222 1241])
+                    ("error_code" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1246 1262])
+                    ("timer" variable
+                       (:reference 1
+                        :type ("boost::timer::cpu_timer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1267 1298])
+                    ("interval" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1303 1331])
+                    ("response" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [1336 1357])
+                    ("store" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [1362 1380])
+                    ("finish" variable
+                       (:reference 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [1385 1398]))                  
+                :type "void")
+                nil [900 5387])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [5398 5407])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5408 5420]))                  
+                :type "int")
+                nil [5389 10748]))          
+      :file "do_test.cpp"
+      :pointmax 10749
+      :fsize 10748
+      :lastmodtime '(22321 39184 923333 334000)
+      :unmatched-syntax nil))
+  :file "!home!nakao!github!iotc_msgpub!bench!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,361 @@
+;; Object aux_/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "aux_/"
+  :tables
+  (list
+    (semanticdb-table "tagged_argument.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_PARAMETER_TAGGED_ARGUMENT_050328_HPP" variable (:constant-flag t) nil [298 340])
+            ("boost/parameter/aux_/void.hpp" include (:system-flag t) nil [342 383])
+            ("boost/parameter/aux_/arg_list.hpp" include (:system-flag t) nil [384 429])
+            ("boost/parameter/aux_/result_of0.hpp" include (:system-flag t) nil [430 477])
+            ("boost/mpl/if.hpp" include (:system-flag t) nil [478 506])
+            ("boost/mpl/apply_wrap.hpp" include (:system-flag t) nil [507 543])
+            ("boost/mpl/and.hpp" include (:system-flag t) nil [544 573])
+            ("boost/mpl/not.hpp" include (:system-flag t) nil [574 603])
+            ("boost/type_traits/is_same.hpp" include (:system-flag t) nil [604 645])
+            ("boost/type_traits/is_convertible.hpp" include (:system-flag t) nil [646 694])
+            ("boost/type_traits/is_reference.hpp" include (:system-flag t) nil [695 741])
+            ("boost" type
+               (:members 
+                  ( ("parameter" type
+                       (:members 
+                          ( ("aux" type
+                               (:members 
+                                  ( ("empty_arg_list" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [800 822])
+                                    ("arg_list_tag" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [823 843])
+                                    ("tagged_argument_base" type (:type "struct") (reparse-symbol namespacesubparts) [845 876])
+                                    ("tagged_argument" type
+                                       (:template 
+                                          ( ("Keyword" type (:type "class") nil nil)
+                                            ("Arg" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("key_type" type
+                                               (:typedef ("Keyword" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1054 1079])
+                                            ("value_type" type
+                                               (:typedef ("Arg" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1084 1107])
+                                            ("reference" type
+                                               (:typedef ("Arg" type (:type "class") nil nil)
+                                                :reference 1
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1112 1135])
+                                            ("tagged_argument" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("x" variable (:type ("reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1157 1169]))                                                  
+                                                :type ("tagged_argument" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [1141 1183])
+                                            ("binding" type
+                                               (:members 
+                                                  ( ("apply" type
+                                                       (:template 
+                                                          ( ("KW" type (:type "class") nil nil)
+                                                            ("Default" type (:type "class") nil nil)
+                                                            ("Reference" type (:type "class") nil nil))                                                          
+                                                        :type "struct"
+                                                        :members 
+                                                          ( ("type" type
+                                                               (:typedef ("mpl::eval_if::type" type (:type "class") nil nil)
+                                                                :type "typedef")
+                                                                (reparse-symbol classsubparts) [1471 1668]))                                                          )
+                                                        (reparse-symbol classsubparts) [1378 1679]))                                                  
+                                                :type "struct")
+                                                (reparse-symbol classsubparts) [1349 1686])
+                                            ("," function
+                                               (:template 
+                                                  ( ("Keyword2" type (:type "class") nil nil)
+                                                    ("Arg2" type (:type "class") nil nil))                                                  
+                                                :type ("arg_list" type
+                                                     (:template-specifier 
+                                                        ( ("tagged_argument" type (:template-specifier 
+                                                            ( ("Keyword" type nil nil nil)
+                                                              ("Arg" type nil nil nil))                                                            ) nil nil)
+                                                          ("arg_list" type (:template-specifier 
+                                                            ( ("tagged_argument" type (:template-specifier 
+                                                                ( ("Keyword2" type nil nil nil)
+                                                                  ("Arg2" type nil nil nil))                                                                ) nil nil))                                                            ) nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :arguments 
+                                                  ( ("x" variable (:type ("tagged_argument" type
+                                                         (:template-specifier 
+                                                            ( ("Keyword2" type nil nil nil)
+                                                              ("Arg2" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol arg-sub-list) [1988 2022]))                                                  
+                                                :operator-flag t
+                                                :methodconst-flag t)
+                                                (reparse-symbol classsubparts) [1826 2279])
+                                            ("[]" function
+                                               (:methodconst-flag t
+                                                :operator-flag t
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("keyword" type
+                                                             (:template-specifier 
+                                                                ( ("Keyword" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [2306 2330]))                                                  
+                                                :type ("reference" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2285 2370])
+                                            ("[]" function
+                                               (:template 
+                                                  ( ("Default" type (:type "class") nil nil))                                                  
+                                                :type ("reference" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("default_" type
+                                                             (:template-specifier 
+                                                                ( ("key_type" type nil nil nil)
+                                                                  ("Default" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [3625 3660]))                                                  
+                                                :operator-flag t
+                                                :methodconst-flag t)
+                                                (reparse-symbol classsubparts) [3575 3700])
+                                            ("[]" function
+                                               (:template 
+                                                  ( ("F" type (:type "class") nil nil))                                                  
+                                                :type ("reference" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("lazy_default" type
+                                                             (:template-specifier 
+                                                                ( ("key_type" type nil nil nil)
+                                                                  ("F" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [3750 3783]))                                                  
+                                                :operator-flag t
+                                                :methodconst-flag t)
+                                                (reparse-symbol classsubparts) [3706 3823])
+                                            ("[]" function
+                                               (:template 
+                                                  ( ("KW" type (:type "class") nil nil)
+                                                    ("Default" type (:type "class") nil nil))                                                  
+                                                :type ("Default" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("x" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("default_" type
+                                                             (:template-specifier 
+                                                                ( ("KW" type nil nil nil)
+                                                                  ("Default" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [3888 3918]))                                                  
+                                                :operator-flag t
+                                                :methodconst-flag t)
+                                                (reparse-symbol classsubparts) [3829 3960])
+                                            ("[]" function
+                                               (:template 
+                                                  ( ("KW" type (:type "class") nil nil)
+                                                    ("F" type (:type "class") nil nil))                                                  
+                                                :type ("result_of0::type" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("x" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("lazy_default" type
+                                                             (:template-specifier 
+                                                                ( ("KW" type nil nil nil)
+                                                                  ("F" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [4039 4067]))                                                  
+                                                :typemodifiers ("typename")
+                                                :operator-flag t
+                                                :methodconst-flag t)
+                                                (reparse-symbol classsubparts) [3966 4121])
+                                            ("satisfies" function
+                                               (:template 
+                                                  ( ("ParameterRequirements" type (:type "class") nil nil))                                                  
+                                                :type ("ParameterRequirements::has_default" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:pointer 1
+                                                        :type ("ParameterRequirements" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4235 4258]))                                                  
+                                                :typemodifiers ("static" "typename")
+                                                :prototype-flag t)
+                                                (reparse-symbol classsubparts) [4127 4259])
+                                            ("satisfies" function
+                                               (:template 
+                                                  ( ("HasDefault" type (:type "class") nil nil)
+                                                    ("Predicate" type (:type "class") nil nil))                                                  
+                                                :type ("mpl::apply1::type" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:pointer 1
+                                                        :type ("parameter_requirements" type
+                                                             (:template-specifier 
+                                                                ( ("key_type" type nil nil nil)
+                                                                  ("Predicate" type nil nil nil)
+                                                                  ("HasDefault" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [4394 4454]))                                                  
+                                                :typemodifiers ("static" "typename")
+                                                :prototype-flag t)
+                                                (reparse-symbol classsubparts) [4265 4455])
+                                            ("value" variable (:type ("reference" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4469 4485])
+                                            ("type" type
+                                               (:typedef ("tagged_argument" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4677 4706])
+                                            ("tail_type" type
+                                               (:typedef ("empty_arg_list" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4747 4780])
+                                            ("tag" type
+                                               (:typedef ("arg_list_tag" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4824 4849]))                                          
+                                        :superclasses 
+                                          ( ("tagged_argument_base" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [966 4894])
+                                    ("is_tagged_argument_aux" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :superclasses 
+                                          ( ("is_convertible" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [5021 5124])
+                                    ("is_tagged_argument" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :superclasses 
+                                          ( ("mpl::and_" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [5126 5265]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [783 5268]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [761 5269]))                  
+                :type "namespace")
+                nil [743 5270]))          
+      :file "tagged_argument.hpp"
+      :pointmax 5361
+      :fsize 5360
+      :lastmodtime '(22324 21863 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_PARAMETER_TAGGED_ARGUMENT_050328_HPP")
+          )
+)
+    (semanticdb-table "unwrap_cv_reference.hpp"
+      :file "unwrap_cv_reference.hpp"
+      :fsize 2401
+      :lastmodtime '(22324 21863 0 0))
+    (semanticdb-table "tag.hpp"
+      :file "tag.hpp"
+      :fsize 1090
+      :lastmodtime '(22324 21863 0 0))
+    (semanticdb-table "default.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("DEFAULT_050329_HPP" variable (:constant-flag t) nil [274 292])
+            ("boost/detail/workaround.hpp" include (:system-flag t) nil [294 333])
+            ("boost" type
+               (:members 
+                  ( ("parameter" type
+                       (:members 
+                          ( ("aux" type
+                               (:members 
+                                  ( ("default_" type
+                                       (:template 
+                                          ( ("Keyword" type (:type "class") nil nil)
+                                            ("Value" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("default_" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("x" variable
+                                                       (:reference 1
+                                                        :type ("Value" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [583 592]))                                                  
+                                                :type ("default_" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [574 616])
+                                            ("value" variable (:type ("Value" type (:type "class") nil nil)) (reparse-symbol classsubparts) [622 635]))                                          )
+                                        (reparse-symbol namespacesubparts) [514 638])
+                                    ("lazy_default" type
+                                       (:template 
+                                          ( ("KW" type (:type "class") nil nil)
+                                            ("DefaultComputer" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("lazy_default" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("x" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("DefaultComputer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1618 1643]))                                                  
+                                                :type ("lazy_default" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [1605 1677])
+                                            ("compute_default" variable (:type ("DefaultComputer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1682 1721]))                                          )
+                                        (reparse-symbol namespacesubparts) [1536 1724])
+                                    ("BOOST_PARAMETER_lazy_default_fallback" variable (:constant-flag t) (reparse-symbol namespacesubparts) [1735 1772]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [375 1797]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [353 1798]))                  
+                :type "namespace")
+                nil [335 1799]))          
+      :file "default.hpp"
+      :pointmax 1866
+      :fsize 1865
+      :lastmodtime '(22324 21863 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEFAULT_050329_HPP")
+          ("BOOST_PARAMETER_lazy_default_fallback" . ((symbol "lazy_default" 1773 . 1785)))
+          )
+)
+    (semanticdb-table "void.hpp"
+      :file "void.hpp"
+      :fsize 688
+      :lastmodtime '(22324 21863 0 0))
+    (semanticdb-table "arg_list.hpp"
+      :file "arg_list.hpp"
+      :fsize 12698
+      :lastmodtime '(22324 21863 0 0))
+    (semanticdb-table "result_of0.hpp"
+      :file "result_of0.hpp"
+      :fsize 919
+      :lastmodtime '(22324 21863 0 0)))
+  :file "!usr!include!boost!parameter!aux_!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

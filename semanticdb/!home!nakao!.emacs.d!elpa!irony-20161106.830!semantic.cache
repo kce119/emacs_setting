@@ -1,0 +1,16 @@
+;; Object irony-20161106.830/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "irony-20161106.830/"
+  :tables
+  (list
+    (semanticdb-table "irony-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "irony-autoloads.el"
+      :pointmax 283
+      :fsize 3801
+      :lastmodtime '(22602 19082 280000 3000)
+      :unmatched-syntax nil))
+  :file "!home!nakao!.emacs.d!elpa!irony-20161106.830!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

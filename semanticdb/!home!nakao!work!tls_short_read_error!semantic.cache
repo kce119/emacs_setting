@@ -1,0 +1,216 @@
+;; Object tls_short_read_error/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tls_short_read_error/"
+  :tables
+  (list
+    (semanticdb-table "server.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cstdlib" include (:system-flag t) nil [274 292])
+            ("iostream" include (:system-flag t) nil [293 312])
+            ("boost/bind.hpp" include (:system-flag t) nil [313 338])
+            ("boost/asio.hpp" include (:system-flag t) nil [339 364])
+            ("boost/asio/ssl.hpp" include (:system-flag t) nil [365 394])
+            ("ssl_socket" type
+               (:typedef ("boost::asio::ssl::stream" type
+                     (:template-specifier 
+                        ( ("boost::asio::ip::tcp::socket" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [396 470])
+            ("session" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [488 495])
+                    ("session" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("io_service" variable
+                               (:reference 1
+                                :type ("boost::asio::io_service" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [506 542])
+                            ("context" variable
+                               (:reference 1
+                                :type ("boost::asio::ssl::context" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [549 584]))                          
+                        :type ("session" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [498 627])
+                    ("socket" function (:type ("ssl_socket::lowest_layer_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [631 713])
+                    ("start" function (:type "void") (reparse-symbol classsubparts) [717 904])
+                    ("handle_handshake" function
+                       (:arguments 
+                          ( ("error" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("boost::system::error_code" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [930 969]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [908 1272])
+                    ("handle_read" function
+                       (:arguments 
+                          ( ("error" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("boost::system::error_code" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1293 1332])
+                            ("bytes_transferred" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1339 1364]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1276 1637])
+                    ("handle_write" function
+                       (:arguments 
+                          ( ("error" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("boost::system::error_code" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1659 1698]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1641 2001])
+                    ("private" label nil (reparse-symbol classsubparts) [2003 2011])
+                    ("socket_" variable (:type ("ssl_socket" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2014 2033])
+                    ("" type
+                       (:members 
+                          ( ("max_length" variable
+                               (:constant-flag t
+                                :default-value (2056 2061)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2043 2062]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [2036 2063])
+                    ("data_" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [2066 2089]))                  
+                :type "class")
+                nil [472 2092])
+            ("server" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2109 2116])
+                    ("context_" function
+                       (:arguments 
+                          ( ("" variable (:type ("boost::asio::ssl::context::sslv23" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2335 2369]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2326 2836])
+                    ("get_password" function
+                       (:methodconst-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2840 2899])
+                    ("start_accept" function (:type "void") (reparse-symbol classsubparts) [2903 3152])
+                    ("handle_accept" function
+                       (:arguments 
+                          ( ("new_session" variable
+                               (:pointer 1
+                                :type ("session" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3175 3196])
+                            ("error" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("boost::system::error_code" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3203 3242]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3156 3374])
+                    ("private" label nil (reparse-symbol classsubparts) [3376 3384])
+                    ("io_service_" variable (:type ("boost::asio::io_service" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3387 3424])
+                    ("acceptor_" variable (:type ("boost::asio::ip::tcp::acceptor" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3427 3468])
+                    ("context_" variable (:type ("boost::asio::ssl::context" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3471 3506]))                  
+                :type "class")
+                nil [2094 3509])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3520 3529])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3530 3543]))                  
+                :type "int")
+                nil [3511 3898]))          
+      :file "server.cpp"
+      :pointmax 3899
+      :fsize 3898
+      :lastmodtime '(22525 39563 910000 2000)
+      :unmatched-syntax nil)
+    (semanticdb-table "client.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cstdlib" include (:system-flag t) nil [274 292])
+            ("iostream" include (:system-flag t) nil [293 312])
+            ("boost/bind.hpp" include (:system-flag t) nil [313 338])
+            ("boost/asio.hpp" include (:system-flag t) nil [339 364])
+            ("boost/asio/ssl.hpp" include (:system-flag t) nil [365 394])
+            ("" type
+               (:members 
+                  ( ("max_length" variable
+                       (:constant-flag t
+                        :default-value (416 421)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [403 422]))                  
+                :type "enum")
+                nil [396 423])
+            ("verify_certificate" function
+               (:arguments 
+                  ( ("preverified" variable (:type "bool") (reparse-symbol arg-sub-list) [1597 1614])
+                    ("ctx" variable
+                       (:reference 1
+                        :type ("boost::asio::ssl::verify_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1641 1679]))                  
+                :type "bool")
+                nil [1573 2427])
+            ("handle_connect" function
+               (:arguments 
+                  ( ("error" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("boost::system::error_code" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2451 2490]))                  
+                :type "void")
+                nil [2431 2848])
+            ("handle_handshake" function
+               (:arguments 
+                  ( ("error" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("boost::system::error_code" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2874 2913]))                  
+                :type "void")
+                nil [2852 3486])
+            ("handle_write" function
+               (:arguments 
+                  ( ("error" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("boost::system::error_code" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3508 3547])
+                    ("bytes_transferred" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3568 3593]))                  
+                :type "void")
+                nil [3490 4020])
+            ("handle_read" function
+               (:arguments 
+                  ( ("error" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("boost::system::error_code" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4041 4080])
+                    ("bytes_transferred" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4100 4125]))                  
+                :type "void")
+                nil [4024 4414])
+            ("socket_" variable (:type ("boost::asio::ssl::stream" type
+                 (:template-specifier 
+                    ( ("boost::asio::ip::tcp::socket" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [4427 4490])
+            ("request_" variable
+               (:dereference 1
+                :type "char")
+                nil [4493 4519])
+            ("reply_" variable
+               (:dereference 1
+                :type "char")
+                nil [4522 4546]))          
+      :file "client.cpp"
+      :pointmax 5225
+      :fsize 5234
+      :lastmodtime '(22525 42181 250000 2000)
+      :unmatched-syntax nil))
+  :file "!home!nakao!work!tls_short_read_error!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

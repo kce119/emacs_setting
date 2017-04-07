@@ -1,0 +1,380 @@
+;; Object ssl/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ssl/"
+  :tables
+  (list
+    (semanticdb-table "stream_base.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ASIO_SSL_STREAM_BASE_HPP" variable (:constant-flag t) nil [339 369])
+            ("boost/asio/detail/config.hpp" include (:system-flag t) nil [480 519])
+            ("boost/asio/detail/push_options.hpp" include (:system-flag t) nil [521 566])
+            ("boost" type
+               (:members 
+                  ( ("asio" type
+                       (:members 
+                          ( ("ssl" type
+                               (:members 
+                                  ( ("stream_base" type
+                                       (:members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [792 799])
+                                            ("handshake_type" type
+                                               (:members 
+                                                  ( ("client" variable
+                                                       (:constant-flag t
+                                                        :type "int")
+                                                        (reparse-symbol enumsubparts) [904 911])
+                                                    ("server" variable
+                                                       (:constant-flag t
+                                                        :type "int")
+                                                        (reparse-symbol enumsubparts) [958 968]))                                                  
+                                                :type "enum")
+                                                (reparse-symbol classsubparts) [835 969])
+                                            ("protected" label nil (reparse-symbol classsubparts) [971 981])
+                                            ("stream_base" function
+                                               (:destructor-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1050 1072]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [772 1075]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [603 1078]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [586 1097]))                  
+                :type "namespace")
+                nil [568 1117])
+            ("boost/asio/detail/pop_options.hpp" include (:system-flag t) nil [1138 1182]))          
+      :file "stream_base.hpp"
+      :pointmax 1225
+      :fsize 1224
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ASIO_SSL_STREAM_BASE_HPP")
+          )
+)
+    (semanticdb-table "stream.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ASIO_SSL_STREAM_HPP" variable (:constant-flag t) nil [324 349])
+            ("boost/asio/detail/config.hpp" include (:system-flag t) nil [460 499])
+            ("boost/asio/async_result.hpp" include (:system-flag t) nil [626 665])
+            ("boost/asio/detail/buffer_sequence_adapter.hpp" include (:system-flag t) nil [666 723])
+            ("boost/asio/detail/handler_type_requirements.hpp" include (:system-flag t) nil [724 783])
+            ("boost/asio/detail/noncopyable.hpp" include (:system-flag t) nil [784 829])
+            ("boost/asio/detail/type_traits.hpp" include (:system-flag t) nil [830 875])
+            ("boost/asio/ssl/context.hpp" include (:system-flag t) nil [876 914])
+            ("boost/asio/ssl/detail/buffered_handshake_op.hpp" include (:system-flag t) nil [915 974])
+            ("boost/asio/ssl/detail/handshake_op.hpp" include (:system-flag t) nil [975 1025])
+            ("boost/asio/ssl/detail/io.hpp" include (:system-flag t) nil [1026 1066])
+            ("boost/asio/ssl/detail/read_op.hpp" include (:system-flag t) nil [1067 1112])
+            ("boost/asio/ssl/detail/shutdown_op.hpp" include (:system-flag t) nil [1113 1162])
+            ("boost/asio/ssl/detail/stream_core.hpp" include (:system-flag t) nil [1163 1212])
+            ("boost/asio/ssl/detail/write_op.hpp" include (:system-flag t) nil [1213 1259])
+            ("boost/asio/ssl/stream_base.hpp" include (:system-flag t) nil [1260 1302])
+            ("boost/asio/detail/push_options.hpp" include (:system-flag t) nil [1349 1394])
+            ("boost" type
+               (:members 
+                  ( ("asio" type
+                       (:members 
+                          ( ("ssl" type
+                               (:members 
+                                  ( ("stream" type
+                                       (:template 
+                                          ( ("Stream" type (:type "class") nil nil))                                          
+                                        :type "class"
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [2450 2457])
+                                            ("native_handle_type" type
+                                               (:typedef ("SSL" type (:type "class") nil nil)
+                                                :pointer 1
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2508 2540])
+                                            ("impl_struct" type
+                                               (:members 
+                                                  ( ("ssl" variable
+                                                       (:pointer 1
+                                                        :type ("SSL" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [2622 2631]))                                                  
+                                                :type "struct")
+                                                (reparse-symbol classsubparts) [2595 2636])
+                                            ("impl_type" type
+                                               (:typedef ("impl_struct" type (:type "class") nil nil)
+                                                :pointer 1
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2720 2751])
+                                            ("next_layer_type" type
+                                               (:typedef ("remove_reference::type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2789 2853])
+                                            ("lowest_layer_type" type
+                                               (:typedef ("next_layer_type::lowest_layer_type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2893 2963])
+                                            ("stream" function
+                                               (:template 
+                                                  ( ("Arg" type (:type "class") nil nil))                                                  
+                                                :type ("stream" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("arg" variable
+                                                       (:reference 1
+                                                        :type ("Arg" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3276 3285])
+                                                    ("ctx" variable
+                                                       (:reference 1
+                                                        :type ("context" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3286 3299]))                                                  
+                                                :constructor-flag t)
+                                                (reparse-symbol classsubparts) [3243 3477])
+                                            ("stream" function
+                                               (:destructor-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3499 3516])
+                                            ("get_io_service" function (:type ("boost::asio::io_service" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3871 3976])
+                                            ("native_handle" function (:type ("native_handle_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4804 4888])
+                                            ("impl" function (:type ("impl_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5191 5255])
+                                            ("next_layer" function
+                                               (:methodconst-flag t
+                                                :constant-flag t
+                                                :type ("next_layer_type" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [5531 5604])
+                                            ("next_layer" function (:type ("next_layer_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5880 5941])
+                                            ("lowest_layer" function (:type ("lowest_layer_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6223 6303])
+                                            ("lowest_layer" function
+                                               (:methodconst-flag t
+                                                :constant-flag t
+                                                :type ("lowest_layer_type" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [6585 6677])
+                                            ("set_verify_mode" function
+                                               (:arguments 
+                                                  ( ("v" variable (:type ("verify_mode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7123 7137]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [7102 7268])
+                                            ("set_verify_mode" function
+                                               (:arguments 
+                                                  ( ("v" variable (:type ("verify_mode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7742 7756])
+                                                    ("ec" variable
+                                                       (:reference 1
+                                                        :type ("boost::system::error_code" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7757 7787]))                                                  
+                                                :type ("boost::system::error_code" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [7693 7844])
+                                            ("set_verify_depth" function
+                                               (:arguments 
+                                                  ( ("depth" variable (:type "int") (reparse-symbol arg-sub-list) [8240 8250]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [8218 8387])
+                                            ("set_verify_depth" function
+                                               (:arguments 
+                                                  ( ("depth" variable (:type "int") (reparse-symbol arg-sub-list) [8811 8821])
+                                                    ("ec" variable
+                                                       (:reference 1
+                                                        :type ("boost::system::error_code" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8822 8852]))                                                  
+                                                :type ("boost::system::error_code" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [8761 8914])
+                                            ("set_verify_callback" function
+                                               (:template 
+                                                  ( ("VerifyCallback" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("callback" variable (:type ("VerifyCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9751 9775]))                                                  )
+                                                (reparse-symbol classsubparts) [9689 9927])
+                                            ("set_verify_callback" function
+                                               (:template 
+                                                  ( ("VerifyCallback" type (:type "class") nil nil))                                                  
+                                                :type ("boost::system::error_code" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("callback" variable (:type ("VerifyCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10785 10809])
+                                                    ("ec" variable
+                                                       (:reference 1
+                                                        :type ("boost::system::error_code" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [10816 10846]))                                                  )
+                                                (reparse-symbol classsubparts) [10702 10968])
+                                            ("handshake" function
+                                               (:arguments 
+                                                  ( ("type" variable (:type ("handshake_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11349 11369]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [11334 11491])
+                                            ("handshake" function
+                                               (:arguments 
+                                                  ( ("type" variable (:type ("handshake_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11893 11913])
+                                                    ("ec" variable
+                                                       (:reference 1
+                                                        :type ("boost::system::error_code" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [11920 11950]))                                                  
+                                                :type ("boost::system::error_code" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [11857 12041])
+                                            ("handshake" function
+                                               (:template 
+                                                  ( ("ConstBufferSequence" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("type" variable (:type ("handshake_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12539 12559])
+                                                    ("buffers" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("ConstBufferSequence" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [12560 12595]))                                                  )
+                                                (reparse-symbol classsubparts) [12482 12726])
+                                            ("handshake" function
+                                               (:template 
+                                                  ( ("ConstBufferSequence" type (:type "class") nil nil))                                                  
+                                                :type ("boost::system::error_code" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("type" variable (:type ("handshake_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13245 13265])
+                                                    ("buffers" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("ConstBufferSequence" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [13272 13307])
+                                                    ("ec" variable
+                                                       (:reference 1
+                                                        :type ("boost::system::error_code" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [13308 13338]))                                                  )
+                                                (reparse-symbol classsubparts) [13167 13476])
+                                            ("async_handshake" function
+                                               (:arguments 
+                                                  ( ("type" variable (:type ("handshake_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14236 14256])
+                                                    ("" variable (:type ("BOOST_ASIO_MOVE_ARG" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14263 14300])
+                                                    ("" variable (:type ("handler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14301 14309]))                                                  
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [14220 14840])
+                                            ("async_handshake" function
+                                               (:arguments 
+                                                  ( ("type" variable (:type ("handshake_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16019 16039])
+                                                    ("buffers" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("ConstBufferSequence" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [16040 16075])
+                                                    ("" variable (:type ("BOOST_ASIO_MOVE_ARG" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16082 16127])
+                                                    ("" variable (:type ("handler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16128 16136]))                                                  
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [16003 16776])
+                                            ("shutdown" function (:type "void") (reparse-symbol classsubparts) [17034 17163])
+                                            ("shutdown" function
+                                               (:arguments 
+                                                  ( ("ec" variable
+                                                       (:reference 1
+                                                        :type ("boost::system::error_code" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [17456 17486]))                                                  
+                                                :type ("boost::system::error_code" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [17421 17572])
+                                            ("async_shutdown" function
+                                               (:arguments 
+                                                  ( ("" variable (:type ("BOOST_ASIO_MOVE_ARG" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18224 18260])
+                                                    ("" variable (:type ("handler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18261 18269]))                                                  
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [18209 18782])
+                                            ("write_some" function
+                                               (:template 
+                                                  ( ("ConstBufferSequence" type (:type "class") nil nil))                                                  
+                                                :type ("std::size_t" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("buffers" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("ConstBufferSequence" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [19470 19505]))                                                  )
+                                                (reparse-symbol classsubparts) [19405 19662])
+                                            ("write_some" function
+                                               (:template 
+                                                  ( ("ConstBufferSequence" type (:type "class") nil nil))                                                  
+                                                :type ("std::size_t" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("buffers" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("ConstBufferSequence" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [20396 20431])
+                                                    ("ec" variable
+                                                       (:reference 1
+                                                        :type ("boost::system::error_code" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [20438 20468]))                                                  )
+                                                (reparse-symbol classsubparts) [20331 20579])
+                                            ("async_write_some" function
+                                               (:arguments 
+                                                  ( ("buffers" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("ConstBufferSequence" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [21850 21885])
+                                                    ("" variable (:type ("BOOST_ASIO_MOVE_ARG" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21892 21925])
+                                                    ("" variable (:type ("handler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21926 21934]))                                                  
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [21833 22478])
+                                            ("read_some" function
+                                               (:template 
+                                                  ( ("MutableBufferSequence" type (:type "class") nil nil))                                                  
+                                                :type ("std::size_t" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("buffers" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("MutableBufferSequence" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [23205 23242]))                                                  )
+                                                (reparse-symbol classsubparts) [23139 23397])
+                                            ("read_some" function
+                                               (:template 
+                                                  ( ("MutableBufferSequence" type (:type "class") nil nil))                                                  
+                                                :type ("std::size_t" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("buffers" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("MutableBufferSequence" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [24156 24193])
+                                                    ("ec" variable
+                                                       (:reference 1
+                                                        :type ("boost::system::error_code" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [24200 24230]))                                                  )
+                                                (reparse-symbol classsubparts) [24090 24342])
+                                            ("async_read_some" function
+                                               (:arguments 
+                                                  ( ("buffers" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("MutableBufferSequence" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [25645 25682])
+                                                    ("" variable (:type ("BOOST_ASIO_MOVE_ARG" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25689 25721])
+                                                    ("" variable (:type ("handler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25722 25730]))                                                  
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [25629 26270])
+                                            ("private" label nil (reparse-symbol classsubparts) [26272 26280])
+                                            ("next_layer_" variable (:type ("Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [26283 26302])
+                                            ("core_" variable (:type ("detail::stream_core" type (:type "class") nil nil)) (reparse-symbol classsubparts) [26305 26331])
+                                            ("backwards_compatible_impl_" variable (:type ("impl_struct" type (:type "class") nil nil)) (reparse-symbol classsubparts) [26334 26373]))                                          
+                                        :superclasses 
+                                          ( ("stream_base" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil)
+                                            ("noncopyable" type
+                                               (:protection "private"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [2362 26376]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1431 26425]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1414 26444]))                  
+                :type "namespace")
+                nil [1396 26464])
+            ("boost/asio/detail/pop_options.hpp" include (:system-flag t) nil [26485 26529]))          
+      :file "stream.hpp"
+      :pointmax 26567
+      :fsize 26566
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax '((semantic-list 25708 . 25721) (semantic-list 25560 . 25626) (symbol 25531 . 25560) (semantic-list 25585 . 25625) (punctuation 25527 . 25528) (symbol 25516 . 25527) (TYPENAME 25507 . 25515) (punctuation 25505 . 25506) (symbol 25484 . 25505) (TYPENAME 25475 . 25483) (punctuation 25474 . 25475) (TEMPLATE 25465 . 25473) (semantic-list 25585 . 25625) (semantic-list 21911 . 21925) (semantic-list 21763 . 21830) (symbol 21734 . 21763) (semantic-list 21789 . 21829) (punctuation 21730 . 21731) (symbol 21718 . 21730) (TYPENAME 21709 . 21717) (punctuation 21707 . 21708) (symbol 21688 . 21707) (TYPENAME 21679 . 21687) (punctuation 21678 . 21679) (TEMPLATE 21669 . 21677) (semantic-list 21789 . 21829) (semantic-list 18243 . 18260) (semantic-list 18149 . 18206) (symbol 18120 . 18149) (semantic-list 18178 . 18205) (punctuation 18116 . 18117) (symbol 18101 . 18116) (TYPENAME 18092 . 18100) (punctuation 18091 . 18092) (TEMPLATE 18082 . 18090) (semantic-list 18178 . 18205) (semantic-list 16101 . 16127) (semantic-list 15921 . 16000) (symbol 15892 . 15921) (semantic-list 15959 . 15999) (punctuation 15888 . 15889) (symbol 15864 . 15888) (TYPENAME 15855 . 15863) (punctuation 15853 . 15854) (symbol 15834 . 15853) (TYPENAME 15825 . 15833) (punctuation 15824 . 15825) (TEMPLATE 15815 . 15823) (semantic-list 15959 . 15999) (semantic-list 14282 . 14300) (semantic-list 14159 . 14217) (symbol 14130 . 14159) (semantic-list 14189 . 14216) (punctuation 14126 . 14127) (symbol 14110 . 14126) (TYPENAME 14101 . 14109) (punctuation 14100 . 14101) (TEMPLATE 14091 . 14099) (semantic-list 14189 . 14216))
+      :lexical-table 
+        '(("BOOST_ASIO_SSL_STREAM_HPP")
+          )
+)
+    (semanticdb-table "context.hpp"
+      :file "context.hpp"
+      :fsize 27710
+      :lastmodtime '(22452 53218 0 0)))
+  :file "!usr!include!boost!asio!ssl!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

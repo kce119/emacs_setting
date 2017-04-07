@@ -1,0 +1,306 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("sstream" include (:system-flag t) nil [21 39])
+            ("boost/lexical_cast.hpp" include (:system-flag t) nil [40 73])
+            ("beast/http.hpp" include (:system-flag t) nil [75 100])
+            ("boost/asio.hpp" include (:system-flag t) nil [101 126])
+            ("boost/asio/ssl.hpp" include (:system-flag t) nil [127 156])
+            ("peer.hpp" include nil nil [158 177])
+            ("peer_client.hpp" include nil nil [178 204])
+            ("http_async_server" type
+               (:members 
+                  ( ("ios_" variable (:type ("boost::asio::io_service" type (:type "class") nil nil)) (reparse-symbol classsubparts) [304 333])
+                    ("acceptor_" variable (:type ("boost::asio::ip::tcp::acceptor" type (:type "class") nil nil)) (reparse-symbol classsubparts) [338 379])
+                    ("sock_" variable (:type ("std::unique_ptr" type
+                         (:template-specifier 
+                            ( ("boost::asio::ssl::stream" type (:template-specifier 
+                                ( ("boost::asio::ip::tcp::socket" type nil nil nil))                                ) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [426 504])
+                    ("sock_c_" variable (:type ("std::unique_ptr" type
+                         (:template-specifier 
+                            ( ("boost::asio::ssl::stream" type (:template-specifier 
+                                ( ("boost::asio::ip::tcp::socket" type nil nil nil))                                ) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [509 589])
+                    ("ctx_" variable (:type ("boost::asio::ssl::context" type (:type "class") nil nil)) (reparse-symbol classsubparts) [638 669])
+                    ("ctx_c_" variable (:type ("boost::asio::ssl::context" type (:type "class") nil nil)) (reparse-symbol classsubparts) [674 707])
+                    ("public" label nil (reparse-symbol classsubparts) [709 716])
+                    ("http_async_server" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("ep" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("boost::asio::ip::tcp::endpoint" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [739 780]))                          
+                        :type ("http_async_server" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [721 2527]))                  
+                :type "class")
+                nil [274 2530])
+            ("main" function (:type "int") nil [2532 2692]))          
+      :file "main.cpp"
+      :pointmax 2693
+      :fsize 2692
+      :lastmodtime '(22744 52965 205972 571000)
+      :unmatched-syntax '((punctuation 271 . 272) (punctuation 270 . 271) (symbol 259 . 270) (punctuation 258 . 259) (punctuation 257 . 258) (symbol 253 . 257) (punctuation 252 . 253) (punctuation 251 . 252) (symbol 246 . 251) (punctuation 245 . 246) (symbol 237 . 245) (punctuation 236 . 237) (punctuation 235 . 236) (symbol 231 . 235) (punctuation 230 . 231) (punctuation 229 . 230) (symbol 224 . 229) (USING 206 . 211)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("memory" include (:system-flag t) nil [21 38])
+            ("boost/asio.hpp" include (:system-flag t) nil [39 64])
+            ("beast/http.hpp" include (:system-flag t) nil [66 91])
+            ("peer" type
+               (:superclasses 
+                  ( ("std::enable_shared_from_this" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [223 230])
+                    ("peer" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("std::unique_ptr" type
+                                     (:template-specifier 
+                                        ( ("boost::asio::ssl::stream" type (:template-specifier 
+                                            ( ("boost::asio::ip::tcp::socket" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [289 362])
+                            ("" variable (:type ("sock" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [363 368])
+                            ("ios" variable
+                               (:reference 1
+                                :type ("boost::asio::io_service" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [378 407])
+                            ("ctx" variable
+                               (:reference 1
+                                :type ("boost::asio::ssl::context" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [417 448]))                          
+                        :type ("peer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [284 535])
+                    ("write" function (:type "void") (reparse-symbol classsubparts) [541 1232])
+                    ("run" function (:type "void") (reparse-symbol classsubparts) [1238 2967])
+                    ("socket_" variable (:type ("std::unique_ptr" type
+                         (:template-specifier 
+                            ( ("boost::asio::ssl::stream" type (:template-specifier 
+                                ( ("boost::asio::ip::tcp::socket" type nil nil nil))                                ) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2973 3053])
+                    ("ios_" variable (:type ("boost::asio::io_service" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3058 3088])
+                    ("ctx_" variable (:type ("boost::asio::ssl::context" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3093 3125])
+                    ("sb_" variable (:type ("beast::streambuf" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3131 3152])
+                    ("req_" variable (:type "int") (reparse-symbol classsubparts) [3204 3209]))                  
+                :type "class")
+                nil [93 3212]))          
+      :file "peer.hpp"
+      :pointmax 3213
+      :fsize 3212
+      :lastmodtime '(22744 50420 227056 480000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("peer" type
+               (:superclasses 
+                  ( ("std::enable_shared_from_this" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("id_" variable (:type "int") (reparse-symbol classsubparts) [62 70])
+                    ("sb_" variable (:type ("streambuf" type (:type "class") nil nil)) (reparse-symbol classsubparts) [75 89])
+                    ("sock_" variable (:type ("socket_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [94 112])
+                    ("server_" variable (:type ("http_async_server" type (:type "class") nil nil)) (reparse-symbol classsubparts) [117 144])
+                    ("strand_" variable (:type ("boost::asio::io_service::strand" type (:type "class") nil nil)) (reparse-symbol classsubparts) [149 189])
+                    ("req_" variable (:type ("req_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [194 208])
+                    ("public" label nil (reparse-symbol classsubparts) [210 217])
+                    ("peer" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("socket_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [228 241])
+                            ("" variable (:type ("sock" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [242 247])
+                            ("server" variable
+                               (:reference 1
+                                :type ("http_async_server" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [248 274]))                          
+                        :type ("peer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [223 387])
+                    ("run" function (:type "void") (reparse-symbol classsubparts) [393 434]))                  
+                :type "class")
+                nil [1 438]))          
+      :file "peer.cpp"
+      :pointmax 439
+      :unmatched-syntax '((punctuation 240 . 241)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("memory" include (:system-flag t) nil [21 38])
+            ("boost/asio.hpp" include (:system-flag t) nil [39 64])
+            ("beast/http.hpp" include (:system-flag t) nil [66 91])
+            ("peer_client" type
+               (:superclasses 
+                  ( ("std::enable_shared_from_this" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [165 172])
+                    ("peer_client" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("std::unique_ptr" type
+                                     (:template-specifier 
+                                        ( ("boost::asio::ssl::stream" type (:template-specifier 
+                                            ( ("boost::asio::ip::tcp::socket" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [190 263])
+                            ("" variable (:type ("sock" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [264 269])
+                            ("port" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [286 303])
+                            ("ios" variable
+                               (:reference 1
+                                :type ("boost::asio::io_service" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [320 349]))                          
+                        :type ("peer_client" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [178 440])
+                    ("do_read" function (:type "void") (reparse-symbol classsubparts) [446 2007])
+                    ("run" function (:type "void") (reparse-symbol classsubparts) [2013 3686])
+                    ("socket_" variable (:type ("std::unique_ptr" type
+                         (:template-specifier 
+                            ( ("boost::asio::ssl::stream" type (:template-specifier 
+                                ( ("boost::asio::ip::tcp::socket" type nil nil nil))                                ) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3692 3772])
+                    ("port_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3777 3795])
+                    ("ios_" variable (:type ("boost::asio::io_service" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3800 3830]))                  
+                :type "class")
+                nil [93 3833]))          
+      :file "peer_client.hpp"
+      :pointmax 3834
+      :fsize 3833
+      :lastmodtime '(22747 6663 684530 909000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("memory" include (:system-flag t) nil [21 38])
+            ("boost/asio.hpp" include (:system-flag t) nil [39 64])
+            ("beast/http.hpp" include (:system-flag t) nil [66 91])
+            ("peer_client_standalone" type
+               (:superclasses 
+                  ( ("std::enable_shared_from_this" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [259 266])
+                    ("ctx_" function
+                       (:arguments 
+                          ( ("" variable (:type ("boost::asio::ssl::context::tlsv12" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [543 577]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [538 776])
+                    ("do_read" function (:type "void") (reparse-symbol classsubparts) [782 2071])
+                    ("run" function (:type "void") (reparse-symbol classsubparts) [2077 3424])
+                    ("socket_" variable (:type ("std::unique_ptr" type
+                         (:template-specifier 
+                            ( ("boost::asio::ssl::stream" type (:template-specifier 
+                                ( ("boost::asio::ip::tcp::socket" type nil nil nil))                                ) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3430 3510])
+                    ("port_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3515 3533])
+                    ("ios_" variable (:type ("boost::asio::io_service" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3538 3568])
+                    ("ctx_" variable (:type ("boost::asio::ssl::context" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3573 3604]))                  
+                :type "class")
+                nil [93 3607])
+            ("main" function (:type "int") nil [3609 3861]))          
+      :file "peer_standalone.cpp"
+      :pointmax 3862
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("memory" include (:system-flag t) nil [21 38])
+            ("boost/asio.hpp" include (:system-flag t) nil [39 64])
+            ("beast/http.hpp" include (:system-flag t) nil [66 91])
+            ("peer_client_standalone" type
+               (:superclasses 
+                  ( ("std::enable_shared_from_this" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [259 266])
+                    ("peer_client_standalone" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("std::unique_ptr" type
+                                     (:template-specifier 
+                                        ( ("boost::asio::ssl::stream" type (:template-specifier 
+                                            ( ("boost::asio::ip::tcp::socket" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [304 377])
+                            ("" variable (:type ("sock" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [378 383])
+                            ("port" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [392 409])
+                            ("ios" variable
+                               (:reference 1
+                                :type ("boost::asio::io_service" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [418 447]))                          
+                        :type ("peer_client_standalone" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [272 776])
+                    ("do_read" function (:type "void") (reparse-symbol classsubparts) [782 2300])
+                    ("run" function (:type "void") (reparse-symbol classsubparts) [2306 3980])
+                    ("socket_" variable (:type ("std::unique_ptr" type
+                         (:template-specifier 
+                            ( ("boost::asio::ssl::stream" type (:template-specifier 
+                                ( ("boost::asio::ip::tcp::socket" type nil nil nil))                                ) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3986 4066])
+                    ("port_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4071 4089])
+                    ("ios_" variable (:type ("boost::asio::io_service" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4094 4124])
+                    ("ctx_" variable (:type ("boost::asio::ssl::context" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4129 4160]))                  
+                :type "class")
+                nil [93 4163])
+            ("main" function (:type "int") nil [4165 4417]))          
+      :file "peer_client_standalone.cpp"
+      :pointmax 4418
+      :fsize 4417
+      :lastmodtime '(22747 17154 931325 687000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("memory" include (:system-flag t) nil [21 38])
+            ("boost/asio.hpp" include (:system-flag t) nil [39 64])
+            ("beast/http.hpp" include (:system-flag t) nil [66 91])
+            ("main" function (:type "int") nil [93 2321]))          
+      :file "peer_client_standalone2.cpp"
+      :pointmax 2322
+      :fsize 2321
+      :lastmodtime '(22744 50554 893723 148000)
+      :unmatched-syntax '((close-paren 2310 . 2311) (punctuation 2308 . 2309) (number 2307 . 2308) (RETURN 2300 . 2306) (semantic-list 2222 . 2294) (semantic-list 2194 . 2221) (CATCH 2188 . 2193) (close-paren 2310 . 2311) (punctuation 2308 . 2309) (number 2307 . 2308) (RETURN 2300 . 2306) (semantic-list 2222 . 2294) (semantic-list 2194 . 2221) (CATCH 2188 . 2193))))
+  :file "!home!nakao!work!my_reference!etc!beast!tls_server_client!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

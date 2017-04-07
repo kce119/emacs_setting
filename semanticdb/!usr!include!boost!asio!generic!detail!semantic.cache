@@ -1,0 +1,176 @@
+;; Object detail/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "detail/"
+  :tables
+  (list
+    (semanticdb-table "endpoint.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ASIO_GENERIC_DETAIL_ENDPOINT_HPP" variable (:constant-flag t) nil [363 401])
+            ("boost/asio/detail/config.hpp" include (:system-flag t) nil [512 551])
+            ("cstddef" include (:system-flag t) nil [553 571])
+            ("boost/asio/detail/socket_types.hpp" include (:system-flag t) nil [572 617])
+            ("boost/asio/detail/push_options.hpp" include (:system-flag t) nil [619 664])
+            ("boost" type
+               (:members 
+                  ( ("asio" type
+                       (:members 
+                          ( ("generic" type
+                               (:members 
+                                  ( ("detail" type
+                                       (:members 
+                                          ( ("endpoint" type
+                                               (:members 
+                                                  ( ("public" label nil (reparse-symbol classsubparts) [818 825])
+                                                    ("endpoint" function
+                                                       (:prototype-flag t
+                                                        :constructor-flag t
+                                                        :type ("BOOST_ASIO_DECL" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [854 881])
+                                                    ("endpoint" function
+                                                       (:prototype-flag t
+                                                        :constructor-flag t
+                                                        :arguments 
+                                                          ( ("sock_addr" variable
+                                                               (:pointer 1
+                                                                :constant-flag t
+                                                                :type "void")
+                                                                (reparse-symbol arg-sub-list) [967 989])
+                                                            ("sock_addr_size" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [996 1023])
+                                                            ("sock_protocol" variable (:type "int") (reparse-symbol arg-sub-list) [1024 1042]))                                                          
+                                                        :type ("BOOST_ASIO_DECL" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [942 1043])
+                                                    ("endpoint" function
+                                                       (:constructor-flag t
+                                                        :arguments 
+                                                          ( ("other" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("endpoint" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1079 1101]))                                                          
+                                                        :type ("endpoint" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1070 1194])
+                                                    ("=" function
+                                                       (:operator-flag t
+                                                        :arguments 
+                                                          ( ("other" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("endpoint" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1253 1275]))                                                          
+                                                        :type ("endpoint" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1233 1384])
+                                                    ("family" function
+                                                       (:methodconst-flag t
+                                                        :type "int")
+                                                        (reparse-symbol classsubparts) [1446 1505])
+                                                    ("protocol" function
+                                                       (:methodconst-flag t
+                                                        :type "int")
+                                                        (reparse-symbol classsubparts) [1568 1618])
+                                                    ("data" function
+                                                       (:pointer 1
+                                                        :type ("boost::asio::detail::socket_addr_type" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1675 1752])
+                                                    ("data" function
+                                                       (:methodconst-flag t
+                                                        :pointer 1
+                                                        :constant-flag t
+                                                        :type ("boost::asio::detail::socket_addr_type" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1809 1898])
+                                                    ("size" function
+                                                       (:methodconst-flag t
+                                                        :type ("std::size_t" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1967 2017])
+                                                    ("resize" function
+                                                       (:prototype-flag t
+                                                        :arguments 
+                                                          ( ("size" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2114 2131]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [2102 2132])
+                                                    ("capacity" function
+                                                       (:methodconst-flag t
+                                                        :type ("std::size_t" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [2194 2293])
+                                                    ("==" function
+                                                       (:prototype-flag t
+                                                        :operator-flag t
+                                                        :typemodifiers ("friend")
+                                                        :arguments 
+                                                          ( ("e1" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("endpoint" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [2384 2403])
+                                                            ("e2" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("endpoint" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [2404 2423]))                                                          
+                                                        :type "bool")
+                                                        (reparse-symbol classsubparts) [2354 2424])
+                                                    ("<" function
+                                                       (:prototype-flag t
+                                                        :operator-flag t
+                                                        :typemodifiers ("friend")
+                                                        :arguments 
+                                                          ( ("e1" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("endpoint" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [2510 2529])
+                                                            ("e2" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("endpoint" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [2530 2549]))                                                          
+                                                        :type "bool")
+                                                        (reparse-symbol classsubparts) [2481 2550])
+                                                    ("private" label nil (reparse-symbol classsubparts) [2552 2560])
+                                                    ("data_" variable (:type ("data_union" type
+                                                         (:prototype t
+                                                          :type "union")
+                                                          nil nil)) (reparse-symbol classsubparts) [2599 2734])
+                                                    ("data_union" type
+                                                       (:members 
+                                                          ( ("base" variable (:type ("boost::asio::detail::socket_addr_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2624 2667])
+                                                            ("generic" variable (:type ("boost::asio::detail::sockaddr_storage_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2672 2723]))                                                          
+                                                        :type "union")
+                                                        (reparse-symbol classsubparts) [2599 2734])
+                                                    ("size_" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2800 2818])
+                                                    ("protocol_" variable (:type "int") (reparse-symbol classsubparts) [2877 2891])
+                                                    ("init" function
+                                                       (:prototype-flag t
+                                                        :arguments 
+                                                          ( ("sock_addr" variable
+                                                               (:pointer 1
+                                                                :constant-flag t
+                                                                :type "void")
+                                                                (reparse-symbol arg-sub-list) [2962 2984])
+                                                            ("sock_addr_size" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2991 3018])
+                                                            ("sock_protocol" variable (:type "int") (reparse-symbol arg-sub-list) [3019 3037]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [2952 3038]))                                                  
+                                                :type "class")
+                                                (reparse-symbol namespacesubparts) [801 3041]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [721 3044]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [701 3066]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [684 3089]))                  
+                :type "namespace")
+                nil [666 3109])
+            ("boost/asio/detail/pop_options.hpp" include (:system-flag t) nil [3130 3174]))          
+      :file "endpoint.hpp"
+      :pointmax 3360
+      :fsize 3359
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax '((symbol 2936 . 2951) (symbol 2465 . 2480) (symbol 2338 . 2353) (symbol 2086 . 2101))
+      :lexical-table 
+        '(("BOOST_ASIO_GENERIC_DETAIL_ENDPOINT_HPP")
+          )
+))
+  :file "!usr!include!boost!asio!generic!detail!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

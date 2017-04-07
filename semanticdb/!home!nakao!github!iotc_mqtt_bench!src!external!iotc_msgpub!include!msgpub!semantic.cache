@@ -1,0 +1,914 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("MSGPUB_USER_MQTT_HPP" variable (:constant-flag t) nil [124 144])
+            ("functional" include (:system-flag t) nil [146 167])
+            ("string" include (:system-flag t) nil [168 185])
+            ("boost/lexical_cast.hpp" include (:system-flag t) nil [187 220])
+            ("boost/system/error_code.hpp" include (:system-flag t) nil [221 259])
+            ("boost/system/system_error.hpp" include (:system-flag t) nil [260 300])
+            ("msgpack.hpp" include (:system-flag t) nil [302 324])
+            ("mqtt_client_cpp.hpp" include (:system-flag t) nil [325 355])
+            ("msgpub/log.hpp" include (:system-flag t) nil [357 382])
+            ("msgpub/appname_label.hpp" include (:system-flag t) nil [383 418])
+            ("msgpub/user_cb.hpp" include (:system-flag t) nil [419 448])
+            ("msgpub/qos.hpp" include (:system-flag t) nil [449 474])
+            ("msgpub" type
+               (:members 
+                  ( ("as" type
+                       (:kind alias
+                        :members 
+                          ( ("boost::asio" type (:type "namespace") nil nil))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [496 523])
+                    ("user_mqtt" type
+                       (:template 
+                          ( ("Endpoint" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [812 819])
+                            ("set_connect_handler" function
+                               (:arguments 
+                                  ( ("cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "user::connect_cb()"
+                                        :type ("user::connect_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15532 15580]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [15507 15614])
+                            ("set_close_handler" function
+                               (:arguments 
+                                  ( ("cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "user::close_cb()"
+                                        :type ("user::close_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16017 16061]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [15994 16093])
+                            ("set_error_handler" function
+                               (:arguments 
+                                  ( ("cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "user::error_cb()"
+                                        :type ("user::error_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16489 16533]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [16466 16565])
+                            ("set_recv_handler" function
+                               (:arguments 
+                                  ( ("cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "user::recv_cb()"
+                                        :type ("user::recv_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16959 17001]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [16937 17032])
+                            ("set_sub_error_handler" function
+                               (:arguments 
+                                  ( ("cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "user::sub_error_cb()"
+                                        :type ("user::sub_error_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17770 17822]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [17743 17858])
+                            ("publish_raw" function
+                               (:arguments 
+                                  ( ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19286 19311])
+                                    ("raw_data" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19320 19348])
+                                    ("qos" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19357 19374])
+                                    ("retain" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [19383 19403])
+                                    ("scb" variable
+                                       (:default-value "user::status_cb()"
+                                        :type ("user::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19412 19452]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [19260 19581])
+                            ("publish_raw" function
+                               (:arguments 
+                                  ( ("at" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("appname_topic" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [20999 21023])
+                                    ("raw_data" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [21032 21060])
+                                    ("qos" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21069 21086])
+                                    ("retain" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [21095 21115])
+                                    ("scb" variable
+                                       (:default-value "user::status_cb()"
+                                        :type ("user::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [21124 21164]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [20973 21301])
+                            ("publish" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [23000 23025])
+                                    ("t" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [23034 23045])
+                                    ("qos" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23054 23071])
+                                    ("retain" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [23080 23100])
+                                    ("scb" variable
+                                       (:default-value "user::status_cb()"
+                                        :type ("user::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [23109 23149]))                                  )
+                                (reparse-symbol classsubparts) [22952 23349])
+                            ("publish" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("at" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("appname_topic" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [25055 25079])
+                                    ("t" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [25088 25099])
+                                    ("qos" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25108 25125])
+                                    ("retain" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [25134 25154])
+                                    ("scb" variable
+                                       (:default-value "user::status_cb()"
+                                        :type ("user::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [25163 25203]))                                  )
+                                (reparse-symbol classsubparts) [25007 25411])
+                            ("publish_label_raw" function
+                               (:arguments 
+                                  ( ("label" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [27747 27772])
+                                    ("raw_data" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [27781 27809])
+                                    ("qos" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27818 27835])
+                                    ("retain" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [27844 27864])
+                                    ("lscb" variable
+                                       (:default-value "user::label_status_cb()"
+                                        :type ("user::label_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [27873 27926]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [27715 28083])
+                            ("publish_label_raw" function
+                               (:arguments 
+                                  ( ("al" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("appname_label" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [30600 30624])
+                                    ("raw_data" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [30633 30661])
+                                    ("qos" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30670 30687])
+                                    ("retain" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [30696 30716])
+                                    ("lscb" variable
+                                       (:default-value "user::label_status_cb()"
+                                        :type ("user::label_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [30725 30778]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [30568 30943])
+                            ("publish_label" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("label" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [33397 33422])
+                                    ("t" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [33431 33442])
+                                    ("qos" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33451 33468])
+                                    ("retain" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [33477 33497])
+                                    ("lscb" variable
+                                       (:default-value "user::label_status_cb()"
+                                        :type ("user::label_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [33506 33559]))                                  )
+                                (reparse-symbol classsubparts) [33343 33776])
+                            ("publish_label" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("al" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("appname_label" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [36493 36517])
+                                    ("t" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [36526 36537])
+                                    ("qos" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36546 36563])
+                                    ("retain" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [36572 36592])
+                                    ("lscb" variable
+                                       (:default-value "user::label_status_cb()"
+                                        :type ("user::label_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [36601 36654]))                                  )
+                                (reparse-symbol classsubparts) [36439 36879])
+                            ("update_will_raw" function
+                               (:arguments 
+                                  ( ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [38755 38780])
+                                    ("raw_data" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [38789 38817])
+                                    ("qos" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38826 38843])
+                                    ("retain" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [38852 38872])
+                                    ("scb" variable
+                                       (:default-value "user::status_cb()"
+                                        :type ("user::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [38881 38921]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [38725 39076])
+                            ("update_will_raw" function
+                               (:arguments 
+                                  ( ("at" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("appname_topic" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [40967 40991])
+                                    ("raw_data" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [41000 41028])
+                                    ("qos" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41037 41054])
+                                    ("retain" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [41063 41083])
+                                    ("scb" variable
+                                       (:default-value "user::status_cb()"
+                                        :type ("user::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [41092 41132]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [40937 41295])
+                            ("update_will" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [43283 43308])
+                                    ("t" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [43317 43328])
+                                    ("qos" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43337 43354])
+                                    ("retain" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [43363 43383])
+                                    ("scb" variable
+                                       (:default-value "user::status_cb()"
+                                        :type ("user::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [43392 43432]))                                  )
+                                (reparse-symbol classsubparts) [43231 43647])
+                            ("update_will" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("at" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("appname_topic" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [45650 45674])
+                                    ("t" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [45683 45694])
+                                    ("qos" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45703 45720])
+                                    ("retain" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [45729 45749])
+                                    ("scb" variable
+                                       (:default-value "user::status_cb()"
+                                        :type ("user::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [45758 45798]))                                  )
+                                (reparse-symbol classsubparts) [45598 46021])
+                            ("update_will_label_raw" function
+                               (:arguments 
+                                  ( ("label" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [48777 48802])
+                                    ("raw_data" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [48811 48839])
+                                    ("qos" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48848 48865])
+                                    ("retain" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [48874 48894])
+                                    ("lscb" variable
+                                       (:default-value "user::label_status_cb()"
+                                        :type ("user::label_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [48903 48956]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [48741 49118])
+                            ("update_will_label_raw" function
+                               (:arguments 
+                                  ( ("al" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("appname_label" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [51954 51978])
+                                    ("raw_data" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [51987 52015])
+                                    ("qos" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52024 52041])
+                                    ("retain" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [52050 52070])
+                                    ("lscb" variable
+                                       (:default-value "user::label_status_cb()"
+                                        :type ("user::label_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [52079 52132]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [51918 52302])
+                            ("update_will_label" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("label" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [55175 55200])
+                                    ("t" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [55209 55220])
+                                    ("qos" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55229 55246])
+                                    ("retain" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [55255 55275])
+                                    ("lscb" variable
+                                       (:default-value "user::label_status_cb()"
+                                        :type ("user::label_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [55284 55337]))                                  )
+                                (reparse-symbol classsubparts) [55117 55559])
+                            ("update_will_label" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("al" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("appname_label" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [58458 58482])
+                                    ("t" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [58491 58502])
+                                    ("qos" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58511 58528])
+                                    ("retain" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [58537 58557])
+                                    ("lscb" variable
+                                       (:default-value "user::label_status_cb()"
+                                        :type ("user::label_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [58566 58619]))                                  )
+                                (reparse-symbol classsubparts) [58400 58849])
+                            ("subscribe" function
+                               (:arguments 
+                                  ( ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [59739 59764])
+                                    ("qos" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59773 59790])
+                                    ("scb" variable
+                                       (:default-value "user::status_cb()"
+                                        :type ("user::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [59799 59839]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [59715 59968])
+                            ("subscribe" function
+                               (:arguments 
+                                  ( ("at" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("appname_topic" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [60866 60890])
+                                    ("qos" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60899 60916])
+                                    ("scb" variable
+                                       (:default-value "user::status_cb()"
+                                        :type ("user::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [60925 60965]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [60842 61102])
+                            ("subscribe" function
+                               (:arguments 
+                                  ( ("topic_qoss" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::tuple" type (:template-specifier 
+                                                    ( ("std::string" type nil nil nil)
+                                                      ("std::uint8_t" type nil nil nil))                                                    ) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [61950 62019])
+                                    ("mscb" variable
+                                       (:default-value "user::multi_status_cb()"
+                                        :type ("user::multi_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [62028 62081]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [61926 62502])
+                            ("subscribe" function
+                               (:arguments 
+                                  ( ("appname_topic_qoss" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::tuple" type (:template-specifier 
+                                                    ( ("appname_topic" type nil nil nil)
+                                                      ("std::uint8_t" type nil nil nil))                                                    ) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [63388 63467])
+                                    ("mscb" variable
+                                       (:default-value "user::multi_status_cb()"
+                                        :type ("user::multi_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [63476 63529]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [63364 64219])
+                            ("subscribe_label" function
+                               (:arguments 
+                                  ( ("label" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [65942 65967])
+                                    ("qos" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [65976 65993])
+                                    ("lscb" variable
+                                       (:default-value "user::label_status_cb()"
+                                        :type ("user::label_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [66002 66055]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [65912 66203])
+                            ("subscribe_label" function
+                               (:arguments 
+                                  ( ("al" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("appname_label" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [68007 68031])
+                                    ("qos" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [68040 68057])
+                                    ("lscb" variable
+                                       (:default-value "user::label_status_cb()"
+                                        :type ("user::label_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [68066 68119]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [67977 68275])
+                            ("subscribe_label" function
+                               (:arguments 
+                                  ( ("label_qoss" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::tuple" type (:template-specifier 
+                                                    ( ("std::string" type nil nil nil)
+                                                      ("std::uint8_t" type nil nil nil))                                                    ) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [70488 70557])
+                                    ("mlscb" variable
+                                       (:default-value "user::multi_label_status_cb()"
+                                        :type ("user::multi_label_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [70566 70632]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [70458 71308])
+                            ("subscribe_label" function
+                               (:arguments 
+                                  ( ("appname_label_qoss" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::tuple" type (:template-specifier 
+                                                    ( ("appname_label" type nil nil nil)
+                                                      ("std::uint8_t" type nil nil nil))                                                    ) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [73799 73878])
+                                    ("mlscb" variable
+                                       (:default-value "user::multi_label_status_cb()"
+                                        :type ("user::multi_label_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [73887 73953]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [73769 74662])
+                            ("unsubscribe" function
+                               (:arguments 
+                                  ( ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [75185 75210])
+                                    ("scb" variable
+                                       (:default-value "user::status_cb()"
+                                        :type ("user::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [75219 75259]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [75159 75385])
+                            ("unsubscribe" function
+                               (:arguments 
+                                  ( ("at" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("appname_topic" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [75924 75948])
+                                    ("scb" variable
+                                       (:default-value "user::status_cb()"
+                                        :type ("user::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [75957 75997]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [75898 76131])
+                            ("unsubscribe" function
+                               (:arguments 
+                                  ( ("topics" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [76680 76719])
+                                    ("mscb" variable
+                                       (:default-value "user::multi_status_cb()"
+                                        :type ("user::multi_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [76728 76781]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [76654 77071])
+                            ("unsubscribe" function
+                               (:arguments 
+                                  ( ("appname_topics" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("appname_topic" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [77665 77714])
+                                    ("mscb" variable
+                                       (:default-value "user::multi_status_cb()"
+                                        :type ("user::multi_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [77723 77776]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [77639 78093])
+                            ("unsubscribe_label" function
+                               (:arguments 
+                                  ( ("label" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [78774 78799])
+                                    ("lscb" variable
+                                       (:default-value "user::label_status_cb()"
+                                        :type ("user::label_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [78808 78861]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [78742 79006])
+                            ("unsubscribe_label" function
+                               (:arguments 
+                                  ( ("al" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("appname_label" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [79768 79792])
+                                    ("lscb" variable
+                                       (:default-value "user::label_status_cb()"
+                                        :type ("user::label_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [79801 79854]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [79736 80007])
+                            ("unsubscribe_label" function
+                               (:arguments 
+                                  ( ("labels" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [80712 80751])
+                                    ("mlscb" variable
+                                       (:default-value "user::multi_label_status_cb()"
+                                        :type ("user::multi_label_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [80760 80826]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [80680 81135])
+                            ("unsubscribe_label" function
+                               (:arguments 
+                                  ( ("appname_labels" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("appname_label" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [81960 82009])
+                                    ("mlscb" variable
+                                       (:default-value "user::multi_label_status_cb()"
+                                        :type ("user::multi_label_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [82018 82084]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [81928 82420])
+                            ("token_update" function
+                               (:arguments 
+                                  ( ("token" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [83108 83133])
+                                    ("scb" variable
+                                       (:default-value "user::status_cb()"
+                                        :type ("user::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [83134 83174]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [83090 83398])
+                            ("connect" function (:type "void") (reparse-symbol classsubparts) [83550 103861])
+                            ("reconnect" function (:type "void") (reparse-symbol classsubparts) [104211 104259])
+                            ("close" function (:type "void") (reparse-symbol classsubparts) [104854 104907])
+                            ("force_disconnect" function (:type "void") (reparse-symbol classsubparts) [105253 105317])
+                            ("appname" function
+                               (:methodconst-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [105442 105509])
+                            ("endpoint" function (:type ("Endpoint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [106088 106136])
+                            ("private" label nil (reparse-symbol classsubparts) [106138 106146])
+                            ("publish_raw_imp" function
+                               (:arguments 
+                                  ( ("mqtt_topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [106181 106211])
+                                    ("raw_data" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [106220 106248])
+                                    ("qos" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [106257 106274])
+                                    ("retain" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [106283 106303])
+                                    ("scb" variable
+                                       (:default-value "user::status_cb()"
+                                        :type ("user::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [106312 106352]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [106151 106529])
+                            ("publish_raw_imp" function
+                               (:arguments 
+                                  ( ("mqtt_topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [106565 106595])
+                                    ("raw_data" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [106604 106632])
+                                    ("qos" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [106641 106658])
+                                    ("retain" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [106667 106687])
+                                    ("lscb" variable
+                                       (:default-value "user::label_status_cb()"
+                                        :type ("user::label_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [106696 106749]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [106535 106928])
+                            ("user_mqtt" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("ep" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Endpoint" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [106952 106971])
+                                    ("appname" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [106980 107000]))                                  
+                                :type ("user_mqtt" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [106933 107059])
+                            ("private" label nil (reparse-symbol classsubparts) [107061 107069])
+                            ("ep_" variable (:type ("Endpoint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [107566 107579])
+                            ("appname_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [107584 107605])
+                            ("connect_cb_" variable (:type ("user::connect_cb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [107610 107639])
+                            ("close_cb_" variable (:type ("user::close_cb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [107644 107669])
+                            ("error_cb_" variable (:type ("user::error_cb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [107674 107699])
+                            ("recv_cb_" variable (:type ("user::recv_cb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [107704 107727])
+                            ("status_cb_" variable (:type ("user::status_cb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [107732 107759])
+                            ("label_status_cb_" variable (:type ("user::label_status_cb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [107764 107803])
+                            ("sub_error_cb_" variable (:type ("user::sub_error_cb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [107808 107841])
+                            ("pid2scb_" variable (:type ("pid2scb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [107846 107863])
+                            ("pid2mscb_" variable (:type ("pid2mscb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [107868 107887])
+                            ("pid2lscb_" variable (:type ("pid2lscb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [107892 107911])
+                            ("pid2mlscb_" variable (:type ("pid2mlscb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [107916 107937])
+                            ("pid2tucb_" variable (:type ("pid2scb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [107942 107960])
+                            ("pid2ats_" variable (:type ("pid2ats" type (:type "class") nil nil)) (reparse-symbol classsubparts) [107965 107982])
+                            ("pid2als_" variable (:type ("pid2als" type (:type "class") nil nil)) (reparse-symbol classsubparts) [107987 108004])
+                            ("pid2recv_" variable (:type ("pid2recv" type (:type "class") nil nil)) (reparse-symbol classsubparts) [108009 108028]))                          )
+                        (reparse-symbol namespacesubparts) [765 108031])
+                    ("get_msgpack_handle" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [112608 112631]))                          
+                        :type ("msgpack::object_handle" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [112559 112687])
+                    ("get_msgpack_handle_ref" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [113287 113310]))                          
+                        :type ("msgpack::object_handle" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [113234 113511]))                  
+                :type "namespace")
+                nil [476 113514]))          
+      :file "user_mqtt.hpp"
+      :pointmax 113567
+      :fsize 133288
+      :lastmodtime '(22718 34201 996980 945000)
+      :unmatched-syntax '((semantic-list 109168 . 109680) (punctuation 109166 . 109167) (semantic-list 109088 . 109166) (symbol 109080 . 109088) (semantic-list 109109 . 109165) (punctuation 109079 . 109080) (symbol 109070 . 109079) (punctuation 109068 . 109069) (punctuation 109067 . 109068) (semantic-list 108841 . 109066) (symbol 108824 . 108841) (symbol 108819 . 108823) (INLINE 108812 . 108818) (semantic-list 108338 . 108810) (punctuation 108336 . 108337) (semantic-list 108278 . 108336) (symbol 108270 . 108278) (semantic-list 108296 . 108335) (punctuation 108269 . 108270) (symbol 108260 . 108269) (punctuation 108258 . 108259) (punctuation 108257 . 108258) (semantic-list 108059 . 108256) (symbol 108045 . 108059) (symbol 108040 . 108044) (INLINE 108033 . 108039) (punctuation 107559 . 107560) (punctuation 107558 . 107559) (punctuation 107557 . 107558) (semantic-list 107555 . 107557) (VOID 107551 . 107555) (punctuation 107550 . 107551) (symbol 107542 . 107550) (punctuation 107541 . 107542) (punctuation 107540 . 107541) (symbol 107537 . 107540) (punctuation 107535 . 107536) (symbol 107527 . 107535) (punctuation 107526 . 107527) (punctuation 107525 . 107526) (symbol 107522 . 107525) (punctuation 107521 . 107522) (symbol 107518 . 107521) (punctuation 107517 . 107518) (punctuation 107516 . 107517) (symbol 107513 . 107516) (punctuation 107511 . 107512) (symbol 107502 . 107510) (USING 107496 . 107501) (punctuation 107490 . 107491) (punctuation 107489 . 107490) (punctuation 107488 . 107489) (symbol 107475 . 107488) (punctuation 107474 . 107475) (symbol 107468 . 107474) (punctuation 107467 . 107468) (punctuation 107466 . 107467) (symbol 107463 . 107466) (punctuation 107461 . 107462) (symbol 107453 . 107461) (punctuation 107452 . 107453) (punctuation 107451 . 107452) (symbol 107448 . 107451) (punctuation 107447 . 107448) (symbol 107444 . 107447) (punctuation 107443 . 107444) (punctuation 107442 . 107443) (symbol 107439 . 107442) (punctuation 107437 . 107438) (symbol 107429 . 107436) (USING 107423 . 107428) (punctuation 107417 . 107418) (punctuation 107416 . 107417) (punctuation 107415 . 107416) (symbol 107402 . 107415) (punctuation 107401 . 107402) (symbol 107395 . 107401) (punctuation 107394 . 107395) (punctuation 107393 . 107394) (symbol 107390 . 107393) (punctuation 107388 . 107389) (symbol 107380 . 107388) (punctuation 107379 . 107380) (punctuation 107378 . 107379) (symbol 107375 . 107378) (punctuation 107374 . 107375) (symbol 107371 . 107374) (punctuation 107370 . 107371) (punctuation 107369 . 107370) (symbol 107366 . 107369) (punctuation 107364 . 107365) (symbol 107356 . 107363) (USING 107350 . 107355) (punctuation 107344 . 107345) (punctuation 107343 . 107344) (symbol 107322 . 107343) (punctuation 107321 . 107322) (punctuation 107320 . 107321) (symbol 107316 . 107320) (punctuation 107314 . 107315) (symbol 107306 . 107314) (punctuation 107305 . 107306) (punctuation 107304 . 107305) (symbol 107301 . 107304) (punctuation 107300 . 107301) (symbol 107297 . 107300) (punctuation 107296 . 107297) (punctuation 107295 . 107296) (symbol 107292 . 107295) (punctuation 107290 . 107291) (symbol 107280 . 107289) (USING 107274 . 107279) (punctuation 107268 . 107269) (punctuation 107267 . 107268) (symbol 107252 . 107267) (punctuation 107251 . 107252) (punctuation 107250 . 107251) (symbol 107246 . 107250) (punctuation 107244 . 107245) (symbol 107236 . 107244) (punctuation 107235 . 107236) (punctuation 107234 . 107235) (symbol 107231 . 107234) (punctuation 107230 . 107231) (symbol 107227 . 107230) (punctuation 107226 . 107227) (punctuation 107225 . 107226) (symbol 107222 . 107225) (punctuation 107220 . 107221) (symbol 107211 . 107219) (USING 107205 . 107210) (punctuation 107199 . 107200) (punctuation 107198 . 107199) (symbol 107183 . 107198) (punctuation 107182 . 107183) (punctuation 107181 . 107182) (symbol 107177 . 107181) (punctuation 107175 . 107176) (symbol 107167 . 107175) (punctuation 107166 . 107167) (punctuation 107165 . 107166) (symbol 107162 . 107165) (punctuation 107161 . 107162) (symbol 107158 . 107161) (punctuation 107157 . 107158) (punctuation 107156 . 107157) (symbol 107153 . 107156) (punctuation 107151 . 107152) (symbol 107142 . 107150) (USING 107136 . 107141) (punctuation 107130 . 107131) (punctuation 107129 . 107130) (symbol 107120 . 107129) (punctuation 107119 . 107120) (punctuation 107118 . 107119) (symbol 107114 . 107118) (punctuation 107112 . 107113) (symbol 107104 . 107112) (punctuation 107103 . 107104) (punctuation 107102 . 107103) (symbol 107099 . 107102) (punctuation 107098 . 107099) (symbol 107095 . 107098) (punctuation 107094 . 107095) (punctuation 107093 . 107094) (symbol 107090 . 107093) (punctuation 107088 . 107089) (symbol 107080 . 107087) (USING 107074 . 107079) (punctuation 6492 . 6493) (punctuation 6491 . 6492) (semantic-list 6413 . 6491) (symbol 6405 . 6413) (semantic-list 6434 . 6490) (punctuation 6404 . 6405) (symbol 6395 . 6404) (punctuation 6393 . 6394) (punctuation 6392 . 6393) (semantic-list 6144 . 6391) (symbol 6127 . 6144) (symbol 6122 . 6126) (FRIEND 6115 . 6121) (punctuation 3546 . 3547) (punctuation 3545 . 3546) (semantic-list 3487 . 3545) (symbol 3479 . 3487) (semantic-list 3505 . 3544) (punctuation 3478 . 3479) (symbol 3469 . 3478) (punctuation 3467 . 3468) (punctuation 3466 . 3467) (semantic-list 3244 . 3465) (symbol 3230 . 3244) (symbol 3225 . 3229) (FRIEND 3218 . 3224) (punctuation 107550 . 107551) (symbol 107542 . 107550) (punctuation 107541 . 107542) (punctuation 107540 . 107541) (symbol 107537 . 107540) (punctuation 107535 . 107536) (symbol 107527 . 107535) (punctuation 107526 . 107527) (punctuation 107525 . 107526) (symbol 107522 . 107525) (punctuation 107521 . 107522) (symbol 107518 . 107521) (punctuation 107517 . 107518) (punctuation 107516 . 107517) (symbol 107513 . 107516) (punctuation 107511 . 107512) (symbol 107502 . 107510) (USING 107496 . 107501) (punctuation 107490 . 107491) (punctuation 107489 . 107490) (punctuation 107488 . 107489) (symbol 107475 . 107488) (punctuation 107474 . 107475) (symbol 107468 . 107474) (punctuation 107467 . 107468) (punctuation 107466 . 107467) (symbol 107463 . 107466) (punctuation 107461 . 107462) (symbol 107453 . 107461) (punctuation 107452 . 107453) (punctuation 107451 . 107452) (symbol 107448 . 107451) (punctuation 107447 . 107448) (symbol 107444 . 107447) (punctuation 107443 . 107444) (punctuation 107442 . 107443) (symbol 107439 . 107442) (punctuation 107437 . 107438) (symbol 107429 . 107436) (USING 107423 . 107428) (punctuation 107417 . 107418) (punctuation 107416 . 107417) (punctuation 107415 . 107416) (symbol 107402 . 107415) (punctuation 107401 . 107402) (symbol 107395 . 107401) (punctuation 107394 . 107395) (punctuation 107393 . 107394) (symbol 107390 . 107393) (punctuation 107388 . 107389) (symbol 107380 . 107388) (punctuation 107379 . 107380) (punctuation 107378 . 107379) (symbol 107375 . 107378) (punctuation 107374 . 107375) (symbol 107371 . 107374) (punctuation 107370 . 107371) (punctuation 107369 . 107370) (symbol 107366 . 107369) (punctuation 107364 . 107365) (symbol 107356 . 107363) (USING 107350 . 107355) (punctuation 107344 . 107345) (punctuation 107343 . 107344) (symbol 107322 . 107343) (punctuation 107321 . 107322) (punctuation 107320 . 107321) (symbol 107316 . 107320) (punctuation 107314 . 107315) (symbol 107306 . 107314) (punctuation 107305 . 107306) (punctuation 107304 . 107305) (symbol 107301 . 107304) (punctuation 107300 . 107301) (symbol 107297 . 107300) (punctuation 107296 . 107297) (punctuation 107295 . 107296) (symbol 107292 . 107295) (punctuation 107290 . 107291) (symbol 107280 . 107289) (USING 107274 . 107279) (punctuation 107268 . 107269) (punctuation 107267 . 107268) (symbol 107252 . 107267) (punctuation 107251 . 107252) (punctuation 107250 . 107251) (symbol 107246 . 107250) (punctuation 107244 . 107245) (symbol 107236 . 107244) (punctuation 107235 . 107236) (punctuation 107234 . 107235) (symbol 107231 . 107234) (punctuation 107230 . 107231) (symbol 107227 . 107230) (punctuation 107226 . 107227) (punctuation 107225 . 107226) (symbol 107222 . 107225) (punctuation 107220 . 107221) (symbol 107211 . 107219) (USING 107205 . 107210) (punctuation 107199 . 107200) (punctuation 107198 . 107199) (symbol 107183 . 107198) (punctuation 107182 . 107183) (punctuation 107181 . 107182) (symbol 107177 . 107181) (punctuation 107175 . 107176) (symbol 107167 . 107175) (punctuation 107166 . 107167) (punctuation 107165 . 107166) (symbol 107162 . 107165) (punctuation 107161 . 107162) (symbol 107158 . 107161) (punctuation 107157 . 107158) (punctuation 107156 . 107157) (symbol 107153 . 107156) (punctuation 107151 . 107152) (symbol 107142 . 107150) (USING 107136 . 107141) (punctuation 107130 . 107131) (punctuation 107129 . 107130) (symbol 107120 . 107129) (punctuation 107119 . 107120) (punctuation 107118 . 107119) (symbol 107114 . 107118) (punctuation 107112 . 107113) (symbol 107104 . 107112) (punctuation 107103 . 107104) (punctuation 107102 . 107103) (symbol 107099 . 107102) (punctuation 107098 . 107099) (symbol 107095 . 107098) (punctuation 107094 . 107095) (punctuation 107093 . 107094) (symbol 107090 . 107093) (punctuation 107088 . 107089) (symbol 107080 . 107087) (USING 107074 . 107079) (punctuation 6492 . 6493) (punctuation 6491 . 6492) (semantic-list 6413 . 6491) (symbol 6405 . 6413) (semantic-list 6434 . 6490) (punctuation 6404 . 6405) (symbol 6395 . 6404) (punctuation 6393 . 6394) (punctuation 6392 . 6393) (semantic-list 6144 . 6391) (symbol 6127 . 6144) (symbol 6122 . 6126) (FRIEND 6115 . 6121) (punctuation 3546 . 3547) (punctuation 3545 . 3546) (semantic-list 3487 . 3545) (symbol 3479 . 3487) (semantic-list 3505 . 3544) (punctuation 3478 . 3479) (symbol 3469 . 3478) (punctuation 3467 . 3468) (punctuation 3466 . 3467) (semantic-list 3244 . 3465) (symbol 3230 . 3244) (symbol 3225 . 3229) (FRIEND 3218 . 3224))
+      :lexical-table 
+        '(("MSGPUB_USER_MQTT_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("MSGPUB_USER_CB_HPP" variable (:constant-flag t) nil [121 139])
+            ("functional" include (:system-flag t) nil [142 163])
+            ("string" include (:system-flag t) nil [164 181])
+            ("boost/system/error_code.hpp" include (:system-flag t) nil [183 221])
+            ("msgpub/status.hpp" include (:system-flag t) nil [223 251])
+            ("msgpub/subscribe_error.hpp" include (:system-flag t) nil [252 289])
+            ("msgpub/common.hpp" include (:system-flag t) nil [290 318])
+            ("msgpub" type
+               (:members 
+                  ( ("user" type (:type "namespace") (reparse-symbol namespacesubparts) [360 4909]))                  
+                :type "namespace")
+                nil [331 4930]))          
+      :file "user_cb.hpp"
+      :pointmax 4981
+      :fsize 5962
+      :lastmodtime '(22536 30419 246666 666000)
+      :unmatched-syntax '((punctuation 4905 . 4906) (punctuation 4904 . 4905) (semantic-list 4859 . 4904) (VOID 4855 . 4859) (punctuation 4854 . 4855) (symbol 4846 . 4854) (punctuation 4845 . 4846) (punctuation 4844 . 4845) (symbol 4841 . 4844) (punctuation 4839 . 4840) (symbol 4826 . 4838) (USING 4820 . 4825) (punctuation 4462 . 4463) (punctuation 4461 . 4462) (semantic-list 4412 . 4461) (VOID 4408 . 4412) (punctuation 4407 . 4408) (symbol 4399 . 4407) (punctuation 4398 . 4399) (punctuation 4397 . 4398) (symbol 4394 . 4397) (punctuation 4392 . 4393) (symbol 4370 . 4391) (USING 4364 . 4369) (punctuation 3975 . 3976) (punctuation 3974 . 3975) (semantic-list 3946 . 3974) (VOID 3942 . 3946) (punctuation 3941 . 3942) (symbol 3933 . 3941) (punctuation 3932 . 3933) (punctuation 3931 . 3932) (symbol 3928 . 3931) (punctuation 3926 . 3927) (symbol 3910 . 3925) (USING 3904 . 3909) (punctuation 3543 . 3544) (punctuation 3542 . 3543) (semantic-list 3493 . 3542) (VOID 3489 . 3493) (punctuation 3488 . 3489) (symbol 3480 . 3488) (punctuation 3479 . 3480) (punctuation 3478 . 3479) (symbol 3475 . 3478) (punctuation 3473 . 3474) (symbol 3457 . 3472) (USING 3451 . 3456) (punctuation 3087 . 3088) (punctuation 3086 . 3087) (semantic-list 3078 . 3086) (VOID 3074 . 3078) (punctuation 3073 . 3074) (symbol 3065 . 3073) (punctuation 3064 . 3065) (punctuation 3063 . 3064) (symbol 3060 . 3063) (punctuation 3058 . 3059) (symbol 3048 . 3057) (USING 3042 . 3047) (punctuation 2771 . 2772) (punctuation 2770 . 2771) (semantic-list 2710 . 2770) (VOID 2706 . 2710) (punctuation 2705 . 2706) (symbol 2697 . 2705) (punctuation 2696 . 2697) (punctuation 2695 . 2696) (symbol 2692 . 2695) (punctuation 2690 . 2691) (symbol 2682 . 2689) (USING 2676 . 2681) (punctuation 1943 . 1944) (punctuation 1942 . 1943) (semantic-list 1905 . 1942) (VOID 1901 . 1905) (punctuation 1900 . 1901) (symbol 1892 . 1900) (punctuation 1891 . 1892) (punctuation 1890 . 1891) (symbol 1887 . 1890) (punctuation 1885 . 1886) (symbol 1876 . 1884) (USING 1870 . 1875) (punctuation 1494 . 1495) (punctuation 1493 . 1494) (semantic-list 1491 . 1493) (VOID 1487 . 1491) (punctuation 1486 . 1487) (symbol 1478 . 1486) (punctuation 1477 . 1478) (punctuation 1476 . 1477) (symbol 1473 . 1476) (punctuation 1471 . 1472) (symbol 1462 . 1470) (USING 1456 . 1461) (punctuation 1272 . 1273) (punctuation 1271 . 1272) (semantic-list 1250 . 1271) (VOID 1246 . 1250) (punctuation 1245 . 1246) (symbol 1237 . 1245) (punctuation 1236 . 1237) (punctuation 1235 . 1236) (symbol 1232 . 1235) (punctuation 1230 . 1231) (symbol 1219 . 1229) (USING 1213 . 1218))
+      :lexical-table 
+        '(("MSGPUB_USER_CB_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("MSGPUB_QOS_HPP" variable (:constant-flag t) nil [118 132])
+            ("cstdint" include (:system-flag t) nil [134 152])
+            ("msgpub" type
+               (:members 
+                  ( ("qos" type
+                       (:members 
+                          ( ("at_most_once" variable
+                               (:typemodifiers ("constexpr")
+                                :default-value "0"
+                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [376 423])
+                            ("at_least_once" variable
+                               (:typemodifiers ("constexpr")
+                                :default-value "1"
+                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [620 667])
+                            ("exactly_once" variable
+                               (:typemodifiers ("constexpr")
+                                :default-value "2"
+                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [851 898]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [174 901]))                  
+                :type "namespace")
+                nil [154 921]))          
+      :file "qos.hpp"
+      :pointmax 968
+      :fsize 1235
+      :lastmodtime '(22536 30419 246666 666000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MSGPUB_QOS_HPP")
+          )
+))
+  :file "!home!nakao!github!iotc_mqtt_bench!src!external!iotc_msgpub!include!msgpub!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

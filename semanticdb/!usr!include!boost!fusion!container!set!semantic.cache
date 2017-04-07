@@ -1,0 +1,28 @@
+;; Object set/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "set/"
+  :tables
+  (list
+    (semanticdb-table "set.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FUSION_SET_11062014_1726" variable (:constant-flag t) nil [403 427])
+            ("boost/fusion/support/config.hpp" include (:system-flag t) nil [429 471])
+            ("boost/fusion/container/set/set_fwd.hpp" include (:system-flag t) nil [472 521])
+            ("boost/fusion/container/set/detail/cpp03/set.hpp" include (:system-flag t) nil [776 835]))          
+      :file "set.hpp"
+      :pointmax 4782
+      :fsize 4781
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("FUSION_SET_11062014_1726")
+          )
+)
+    (semanticdb-table "set_fwd.hpp"
+      :file "set_fwd.hpp"
+      :fsize 1552
+      :lastmodtime '(22452 53218 0 0)))
+  :file "!usr!include!boost!fusion!container!set!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

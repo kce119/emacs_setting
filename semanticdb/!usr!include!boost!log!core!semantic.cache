@@ -1,0 +1,388 @@
+;; Object core/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "core/"
+  :tables
+  (list
+    (semanticdb-table "core.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_LOG_CORE_CORE_HPP_INCLUDED_" variable (:constant-flag t) nil [418 451])
+            ("utility" include (:system-flag t) nil [453 471])
+            ("boost/smart_ptr/shared_ptr.hpp" include (:system-flag t) nil [472 513])
+            ("boost/move/core.hpp" include (:system-flag t) nil [514 544])
+            ("boost/log/detail/config.hpp" include (:system-flag t) nil [545 583])
+            ("boost/log/detail/light_function.hpp" include (:system-flag t) nil [584 630])
+            ("boost/log/core/record.hpp" include (:system-flag t) nil [631 667])
+            ("boost/log/attributes/attribute_set.hpp" include (:system-flag t) nil [668 717])
+            ("boost/log/attributes/attribute_name.hpp" include (:system-flag t) nil [718 768])
+            ("boost/log/attributes/attribute.hpp" include (:system-flag t) nil [769 814])
+            ("boost/log/attributes/attribute_value_set.hpp" include (:system-flag t) nil [815 870])
+            ("boost/log/expressions/filter.hpp" include (:system-flag t) nil [871 914])
+            ("boost/log/detail/header.hpp" include (:system-flag t) nil [915 953])
+            ("boost" type
+               (:members 
+                  ( ("sinks" type
+                       (:members 
+                          ( ("sink" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1101 1112]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1082 1115])
+                    ("core" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1170 1181])
+                    ("core_ptr" type
+                       (:typedef ("shared_ptr" type
+                             (:template-specifier 
+                                ( ("core" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [1183 1219])
+                    ("core" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1587 1594])
+                            ("exception_handler_type" variable (:type "int") (reparse-symbol classsubparts) [1690 1713])
+                            ("private" label nil (reparse-symbol classsubparts) [1715 1723])
+                            ("implementation" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol classsubparts) [1756 1778])
+                            ("implementation" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol classsubparts) [1790 1812])
+                            ("private" label nil (reparse-symbol classsubparts) [1814 1822])
+                            ("m_impl" variable
+                               (:pointer 1
+                                :type ("implementation" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1867 1890])
+                            ("private" label nil (reparse-symbol classsubparts) [1892 1900])
+                            ("core" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("core" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1919 1926])
+                            ("public" label nil (reparse-symbol classsubparts) [1945 1952])
+                            ("core" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [2067 2075])
+                            ("get" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :type ("core_ptr" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2195 2217])
+                            ("set_logging_enabled" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("enabled" variable
+                                       (:default-value "true"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [3160 3180]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3135 3181])
+                            ("get_logging_enabled" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3318 3351])
+                            ("set_filter" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("filter" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("filter" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3586 3607]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3570 3608])
+                            ("reset_filter" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [3766 3786])
+                            ("add_sink" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("shared_ptr" type
+                                             (:template-specifier 
+                                                ( ("sinks::sink" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4135 4170]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4121 4171])
+                            ("remove_sink" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("shared_ptr" type
+                                             (:template-specifier 
+                                                ( ("sinks::sink" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4445 4480]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4428 4481])
+                            ("remove_all_sinks" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [4638 4662])
+                            ("flush" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [4985 4998])
+                            ("add_global_attribute" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("attribute_name" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5588 5615])
+                                    ("attr" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("attribute" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5616 5638]))                                  
+                                :type ("std::pair" type
+                                     (:template-specifier 
+                                        ( ("attribute_set::iterator" type nil nil nil)
+                                          ("bool" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [5524 5639])
+                            ("remove_global_attribute" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("it" variable (:type ("attribute_set::iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6040 6067]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6011 6068])
+                            ("get_global_attributes" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("attribute_set" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6200 6244])
+                            ("set_global_attributes" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("attrs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("attribute_set" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6635 6662]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6608 6663])
+                            ("add_thread_attribute" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("attribute_name" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7518 7545])
+                                    ("attr" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("attribute" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7546 7568]))                                  
+                                :type ("std::pair" type
+                                     (:template-specifier 
+                                        ( ("attribute_set::iterator" type nil nil nil)
+                                          ("bool" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [7454 7569])
+                            ("remove_thread_attribute" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("it" variable (:type ("attribute_set::iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7988 8015]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7959 8016])
+                            ("get_thread_attributes" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("attribute_set" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8157 8201])
+                            ("set_thread_attributes" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("attrs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("attribute_set" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8601 8628]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8574 8629])
+                            ("set_exception_handler" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("handler" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("exception_handler_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9403 9441]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9376 9442])
+                            ("open_record" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("source_attributes" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("attribute_set" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10555 10594]))                                  
+                                :type ("record" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10536 10595])
+                            ("open_record" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("source_attributes" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("attribute_value_set" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11713 11758]))                                  
+                                :type ("record" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11694 11759])
+                            ("open_record" function
+                               (:arguments 
+                                  ( ("" variable (:type ("BOOST_RV_REF" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12977 13010])
+                                    ("" variable (:type ("source_attributes" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13011 13029]))                                  
+                                :type ("record" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12958 13130])
+                            ("push_record" function
+                               (:arguments 
+                                  ( ("" variable (:type ("BOOST_RV_REF" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13578 13598])
+                                    ("" variable (:type ("rec" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13599 13603]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [13561 13670])
+                            ("private" label nil (reparse-symbol classsubparts) [13808 13816])
+                            ("open_record_move" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("source_attributes" variable
+                                       (:reference 1
+                                        :type ("attribute_value_set" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13964 14003]))                                  
+                                :type ("record" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13940 14004])
+                            ("push_record_move" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("rec" variable
+                                       (:reference 1
+                                        :type ("record" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14092 14104]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [14070 14105]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1574 14141]))                  
+                :type "namespace")
+                nil [1005 14188])
+            ("boost/log/detail/footer.hpp" include (:system-flag t) nil [14209 14247]))          
+      :file "core.hpp"
+      :pointmax 14293
+      :fsize 14292
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax '((symbol 14143 . 14168) (symbol 14056 . 14069) (symbol 13926 . 13939) (semantic-list 13744 . 13775) (symbol 13722 . 13744) (semantic-list 13761 . 13774) (punctuation 13759 . 13760) (OPERATOR 13751 . 13759) (semantic-list 13698 . 13717) (symbol 13676 . 13698) (semantic-list 13703 . 13716) (semantic-list 13590 . 13598) (symbol 13543 . 13560) (semantic-list 12989 . 13010) (symbol 12940 . 12957) (symbol 11680 . 11693) (symbol 10522 . 10535) (symbol 9362 . 9375) (symbol 8560 . 8573) (symbol 8143 . 8156) (symbol 7945 . 7958) (symbol 7440 . 7453) (symbol 6594 . 6607) (symbol 6186 . 6199) (symbol 5997 . 6010) (symbol 5510 . 5523) (symbol 4971 . 4984) (symbol 4624 . 4637) (symbol 4414 . 4427) (symbol 4107 . 4120) (symbol 3752 . 3765) (symbol 3556 . 3569) (symbol 3304 . 3317) (symbol 3121 . 3134) (symbol 2181 . 2194) (FRIEND 1783 . 1789) (punctuation 1688 . 1689) (semantic-list 1685 . 1687) (VOID 1680 . 1684) (punctuation 1678 . 1679) (symbol 1664 . 1678) (punctuation 1663 . 1664) (punctuation 1662 . 1663) (symbol 1659 . 1662) (punctuation 1658 . 1659) (punctuation 1657 . 1658) (symbol 1654 . 1657) (punctuation 1653 . 1654) (punctuation 1652 . 1653) (symbol 1647 . 1652) (TYPEDEF 1639 . 1646) (symbol 1024 . 1048))
+      :lexical-table 
+        '(("BOOST_LOG_CORE_CORE_HPP_INCLUDED_")
+          )
+)
+    (semanticdb-table "record.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_LOG_CORE_RECORD_HPP_INCLUDED_" variable (:constant-flag t) nil [421 456])
+            ("boost/move/core.hpp" include (:system-flag t) nil [458 488])
+            ("boost/log/detail/config.hpp" include (:system-flag t) nil [489 527])
+            ("boost/utility/explicit_operator_bool.hpp" include (:system-flag t) nil [528 579])
+            ("boost/log/attributes/attribute_value_set.hpp" include (:system-flag t) nil [580 635])
+            ("boost/log/expressions/keyword_fwd.hpp" include (:system-flag t) nil [636 684])
+            ("boost/log/core/record_view.hpp" include (:system-flag t) nil [685 726])
+            ("boost/log/detail/header.hpp" include (:system-flag t) nil [727 765])
+            ("boost" type
+               (:members 
+                  ( ("core" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [862 873])
+                    ("record" type
+                       (:members 
+                          ( ("core" friend nil (reparse-symbol classsubparts) [1226 1244])
+                            ("private" label nil (reparse-symbol classsubparts) [1277 1285])
+                            ("public_data" type
+                               (:typedef ("record_view::public_data" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1311 1356])
+                            ("private" label nil (reparse-symbol classsubparts) [1358 1366])
+                            ("m_impl" variable
+                               (:pointer 1
+                                :type ("public_data" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1422 1442])
+                            ("public" label nil (reparse-symbol classsubparts) [1478 1485])
+                            ("record" function
+                               (:constructor-flag t
+                                :type ("record" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1651 1677])
+                            ("m_impl" function
+                               (:arguments 
+                                  ( ("" variable (:type ("that" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1838 1843])
+                                    ("" variable (:type ("m_impl" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1843 1850]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [1831 1890])
+                            ("[]" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("name" variable (:type ("attribute_value_set::key_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4217 4252]))                                  
+                                :type ("attribute_value_set::mapped_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4172 4319])
+                            ("[]" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("keyword" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("expressions::attribute_keyword" type
+                                             (:template-specifier 
+                                                ( ("DescriptorT" type nil nil nil)
+                                                  ("ActorT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4740 4809]))                                  
+                                :type ("type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4719 4879])
+                            ("lock" function
+                               (:prototype-flag t
+                                :type ("record_view" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5320 5339]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1163 5342]))                  
+                :type "namespace")
+                nil [817 5541])
+            ("boost/log/detail/footer.hpp" include (:system-flag t) nil [5562 5600]))          
+      :file "record.hpp"
+      :pointmax 5648
+      :fsize 5647
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax '((symbol 5496 . 5521) (semantic-list 5469 . 5494) (symbol 5454 . 5468) (semantic-list 5424 . 5453) (symbol 5420 . 5424) (VOID 5415 . 5419) (INLINE 5408 . 5414) (symbol 5306 . 5319) (punctuation 4718 . 4719) (punctuation 4717 . 4718) (punctuation 4716 . 4717) (symbol 4704 . 4715) (punctuation 4702 . 4703) (symbol 4692 . 4702) (punctuation 4691 . 4692) (punctuation 4690 . 4691) (punctuation 4689 . 4690) (symbol 4682 . 4688) (punctuation 4680 . 4681) (symbol 4669 . 4680) (punctuation 4667 . 4668) (symbol 4650 . 4667) (punctuation 4649 . 4650) (punctuation 4648 . 4649) (symbol 4637 . 4648) (TYPENAME 4628 . 4636) (punctuation 4626 . 4627) (symbol 4619 . 4626) (punctuation 4618 . 4619) (punctuation 4617 . 4618) (symbol 4608 . 4617) (TYPENAME 4599 . 4607) (punctuation 4593 . 4594) (symbol 4586 . 4592) (CLASS 4580 . 4585) (punctuation 4578 . 4579) (TYPENAME 4569 . 4577) (punctuation 4567 . 4568) (TEMPLATE 4559 . 4567) (punctuation 4557 . 4558) (symbol 4546 . 4557) (TYPENAME 4537 . 4545) (punctuation 4535 . 4536) (TEMPLATE 4527 . 4535) (semantic-list 3880 . 3996) (symbol 3861 . 3875) (semantic-list 3858 . 3860) (symbol 3853 . 3858) (VOID 3848 . 3852) (semantic-list 3525 . 3620) (symbol 3506 . 3520) (semantic-list 3491 . 3505) (symbol 3487 . 3491) (VOID 3482 . 3486) (semantic-list 3320 . 3351) (symbol 3301 . 3315) (CONST 3295 . 3300) (semantic-list 3292 . 3294) (punctuation 3290 . 3291) (OPERATOR 3282 . 3290) (BOOL 3277 . 3281) (semantic-list 3072 . 3074) (symbol 3035 . 3072) (semantic-list 2791 . 2841) (symbol 2772 . 2786) (CONST 2766 . 2771) (semantic-list 2763 . 2765) (symbol 2747 . 2763) (punctuation 2745 . 2746) (CONST 2740 . 2745) (symbol 2720 . 2739) (semantic-list 2530 . 2580) (symbol 2511 . 2525) (semantic-list 2508 . 2510) (symbol 2492 . 2508) (punctuation 2490 . 2491) (symbol 2471 . 2490) (semantic-list 2258 . 2331) (symbol 2239 . 2253) (semantic-list 2211 . 2238) (punctuation 2209 . 2210) (OPERATOR 2201 . 2209) (semantic-list 2224 . 2232) (punctuation 2199 . 2200) (symbol 2193 . 2199) (semantic-list 2224 . 2232) (semantic-list 2067 . 2091) (symbol 2048 . 2062) (semantic-list 2045 . 2047) (symbol 2039 . 2045) (punctuation 2038 . 2039) (punctuation 1842 . 1843) (punctuation 1829 . 1830) (symbol 1814 . 1828) (semantic-list 1786 . 1813) (symbol 1780 . 1786) (semantic-list 1799 . 1807) (semantic-list 1212 . 1220) (symbol 1182 . 1212) (symbol 836 . 860))
+      :lexical-table 
+        '(("BOOST_LOG_CORE_RECORD_HPP_INCLUDED_")
+          )
+)
+    (semanticdb-table "record_view.hpp"
+      :file "record_view.hpp"
+      :fsize 7224
+      :lastmodtime '(22452 53218 0 0)))
+  :file "!usr!include!boost!log!core!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,246 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_TEST_TREE_AUTO_REGISTRATION_HPP_100211GER" variable (:constant-flag t) nil [538 585])
+            ("boost/test/detail/config.hpp" include (:system-flag t) nil [601 640])
+            ("boost/test/tree/decorator.hpp" include (:system-flag t) nil [641 681])
+            ("boost/test/tree/test_unit.hpp" include (:system-flag t) nil [682 722])
+            ("list" include (:system-flag t) nil [731 746])
+            ("boost/test/detail/suppress_warnings.hpp" include (:system-flag t) nil [748 798])
+            ("boost" type
+               (:members 
+                  ( ("unit_test" type
+                       (:members 
+                          ( ("ut_detail" type
+                               (:members 
+                                  ( ("auto_test_unit_registrar" variable (:type ("BOOST_TEST_DECL" type
+                                         (:prototype t
+                                          :type "struct")
+                                          nil nil)) (reparse-symbol namespacesubparts) [1189 1683]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [922 1686]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [900 1711]))                  
+                :type "namespace")
+                nil [882 1736])
+            ("boost/test/detail/enable_warnings.hpp" include (:system-flag t) nil [1757 1805]))          
+      :file "auto_registration.hpp"
+      :pointmax 1866
+      :fsize 1865
+      :lastmodtime '(22633 22283 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_TEST_TREE_AUTO_REGISTRATION_HPP_100211GER")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_TEST_TREE_TEST_CASE_TEMPLATE_HPP_091911GER" variable (:constant-flag t) nil [462 510])
+            ("boost/test/detail/config.hpp" include (:system-flag t) nil [526 565])
+            ("boost/test/detail/global_typedef.hpp" include (:system-flag t) nil [566 613])
+            ("boost/test/detail/fwd_decl.hpp" include (:system-flag t) nil [614 655])
+            ("boost/test/detail/workaround.hpp" include (:system-flag t) nil [656 699])
+            ("boost/test/utils/class_properties.hpp" include (:system-flag t) nil [701 749])
+            ("boost/test/tree/observer.hpp" include (:system-flag t) nil [751 790])
+            ("boost/shared_ptr.hpp" include (:system-flag t) nil [802 833])
+            ("boost/mpl/for_each.hpp" include (:system-flag t) nil [834 867])
+            ("boost/mpl/identity.hpp" include (:system-flag t) nil [868 901])
+            ("boost/type.hpp" include (:system-flag t) nil [902 927])
+            ("boost/type_traits/is_const.hpp" include (:system-flag t) nil [928 969])
+            ("boost/function/function0.hpp" include (:system-flag t) nil [970 1009])
+            ("boost/core/demangle.hpp" include (:system-flag t) nil [1112 1148])
+            ("string" include (:system-flag t) nil [1164 1181])
+            ("list" include (:system-flag t) nil [1203 1218])
+            ("boost/test/detail/suppress_warnings.hpp" include (:system-flag t) nil [1241 1291])
+            ("boost" type
+               (:members 
+                  ( ("unit_test" type
+                       (:members 
+                          ( ("ut_detail" type
+                               (:members 
+                                  ( ("test_case_template_invoker" type
+                                       (:template 
+                                          ( ("TestCaseTemplate" type (:type "class") nil nil)
+                                            ("TestType" type (:type "class") nil nil))                                          
+                                        :type "class"
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [1772 1779])
+                                            ("()" function
+                                               (:operator-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1784 1863]))                                          )
+                                        (reparse-symbol namespacesubparts) [1683 1866])
+                                    ("generate_test_case_4_type" type
+                                       (:template 
+                                          ( ("Generator" type (:type "class") nil nil)
+                                            ("TestCaseTemplate" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("generate_test_case_4_type" function
+                                               (:constructor-flag t
+                                                :typemodifiers ("explicit")
+                                                :arguments 
+                                                  ( ("tc_name" variable (:type ("const_string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2245 2266])
+                                                    ("tc_file" variable (:type ("const_string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2267 2288])
+                                                    ("tc_line" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2289 2309])
+                                                    ("G" variable
+                                                       (:reference 1
+                                                        :type ("Generator" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2310 2324]))                                                  
+                                                :type ("generate_test_case_4_type" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [2206 2453])
+                                            ("()" function
+                                               (:template 
+                                                  ( ("TestType" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("" variable (:type ("mpl::identity" type
+                                                         (:template-specifier 
+                                                            ( ("TestType" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol arg-sub-list) [2515 2540]))                                                  
+                                                :operator-flag t)
+                                                (reparse-symbol classsubparts) [2459 3359])
+                                            ("private" label nil (reparse-symbol classsubparts) [3361 3369])
+                                            ("m_test_case_name" variable (:type ("const_string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3394 3427])
+                                            ("m_test_case_file" variable (:type ("const_string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3432 3465])
+                                            ("m_test_case_line" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3470 3503])
+                                            ("m_holder" variable (:type ("Generator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3508 3533]))                                          )
+                                        (reparse-symbol namespacesubparts) [2112 3536])
+                                    ("template_test_case_gen" type
+                                       (:template 
+                                          ( ("TestCaseTemplate" type (:type "class") nil nil)
+                                            ("TestTypesList" type (:type "class") nil nil))                                          
+                                        :type "class"
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [3901 3908])
+                                            ("template_test_case_gen" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("tc_name" variable (:type ("const_string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3956 3977])
+                                                    ("tc_file" variable (:type ("const_string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3978 3999])
+                                                    ("tc_line" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4000 4021]))                                                  
+                                                :type ("template_test_case_gen" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3932 4287])
+                                            ("next" function
+                                               (:methodconst-flag t
+                                                :pointer 1
+                                                :typemodifiers ("virtual")
+                                                :type ("test_unit" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [4293 4496])
+                                            ("m_test_cases" variable
+                                               (:typemodifiers ("mutable")
+                                                :type ("std::list" type
+                                                     (:template-specifier 
+                                                        ( ("test_unit" type (:pointer 1) nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [4522 4565]))                                          
+                                        :superclasses 
+                                          ( ("test_unit_generator" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [3782 4568]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1416 4571]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1394 4596]))                  
+                :type "namespace")
+                nil [1376 4611])
+            ("boost/test/detail/enable_warnings.hpp" include (:system-flag t) nil [4632 4680]))          
+      :file "test_case_template.hpp"
+      :pointmax 4741
+      :fsize 4740
+      :lastmodtime '(22633 22283 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_TEST_TREE_TEST_CASE_TEMPLATE_HPP_091911GER")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_TEST_TREE_GLOBAL_FIXTURE_HPP_091911GER" variable (:constant-flag t) nil [450 494])
+            ("boost/test/detail/config.hpp" include (:system-flag t) nil [510 549])
+            ("boost/test/detail/global_typedef.hpp" include (:system-flag t) nil [550 597])
+            ("boost/test/tree/observer.hpp" include (:system-flag t) nil [599 638])
+            ("boost/test/detail/suppress_warnings.hpp" include (:system-flag t) nil [640 690])
+            ("boost" type
+               (:members 
+                  ( ("unit_test" type
+                       (:members 
+                          ( ("test_observer" variable (:type "int") (reparse-symbol namespacesubparts) [1106 1173])
+                            ("ut_detail" type
+                               (:members 
+                                  ( ("global_fixture_impl" type
+                                       (:template 
+                                          ( ("F" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("global_fixture_impl" function
+                                               (:constructor-flag t
+                                                :type ("global_fixture_impl" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [1377 1421])
+                                            ("test_start" function
+                                               (:typemodifiers ("virtual")
+                                                :arguments 
+                                                  ( ("" variable (:type ("counter_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1486 1497]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1458 1520])
+                                            ("test_finish" function
+                                               (:typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1525 1601])
+                                            ("test_aborted" function
+                                               (:typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1606 1682])
+                                            ("private" label nil (reparse-symbol classsubparts) [1684 1692])
+                                            ("m_fixture" variable
+                                               (:pointer 1
+                                                :type ("F" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1717 1731]))                                          
+                                        :superclasses 
+                                          ( ("global_fixture" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [1280 1734]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1257 1737]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [793 1762]))                  
+                :type "namespace")
+                nil [775 1787])
+            ("boost/test/detail/enable_warnings.hpp" include (:system-flag t) nil [1808 1856]))          
+      :file "global_fixture.hpp"
+      :pointmax 1914
+      :fsize 1913
+      :lastmodtime '(22633 22283 0 0)
+      :unmatched-syntax '((PUBLIC 1099 . 1105) (punctuation 1097 . 1098) (symbol 1082 . 1096) (symbol 1066 . 1081) (CLASS 1060 . 1065))
+      :lexical-table 
+        '(("BOOST_TEST_TREE_GLOBAL_FIXTURE_HPP_091911GER")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "decorator.hpp"
+      :fsize 9248
+      :lastmodtime '(22633 22283 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "test_unit.hpp"
+      :fsize 11224
+      :lastmodtime '(22633 22283 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "observer.hpp"
+      :fsize 4371
+      :lastmodtime '(22633 22283 0 0)))
+  :file "!usr!include!boost!test!tree!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

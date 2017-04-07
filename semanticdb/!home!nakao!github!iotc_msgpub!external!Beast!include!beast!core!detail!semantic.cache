@@ -1,0 +1,231 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BEAST_DETAIL_STREAM_CONCEPTS_HPP" variable (:constant-flag t) nil [289 321])
+            ("beast/core/buffer_concepts.hpp" include (:system-flag t) nil [323 364])
+            ("boost/asio/io_service.hpp" include (:system-flag t) nil [365 401])
+            ("boost/system/error_code.hpp" include (:system-flag t) nil [402 440])
+            ("type_traits" include (:system-flag t) nil [441 463])
+            ("utility" include (:system-flag t) nil [464 482])
+            ("beast" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("StreamHandler" type
+                               (:members 
+                                  ( ("()" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("ec" variable (:type ("boost::system::error_code" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [688 717])
+                                            ("" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [718 730]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [672 731]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [594 734])
+                            ("ReadHandler" variable
+                               (:default-value "StreamHandler"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [741 769])
+                            ("WriteHandler" variable
+                               (:default-value "StreamHandler"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [776 805])
+                            ("has_get_io_service" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("check" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1019 1023]))                                          
+                                        :type ("R" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1004 1024])
+                                    ("check" function
+                                       (:template 
+                                          ( ("" type nil nil nil))                                          
+                                        :type ("std::false_type" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1078 1082]))                                          
+                                        :typemodifiers ("static")
+                                        :prototype-flag t)
+                                        (reparse-symbol classsubparts) [1029 1083])
+                                    ("public" label nil (reparse-symbol classsubparts) [1084 1091])
+                                    ("type" variable
+                                       (:default-value "decltype(check<T>(0))"
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1102 1131]))                                  )
+                                (reparse-symbol namespacesubparts) [807 1134])
+                            ("is_AsyncReadStream" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("check" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1421 1425]))                                          
+                                        :type ("R" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1406 1426])
+                                    ("check" function
+                                       (:template 
+                                          ( ("" type nil nil nil))                                          
+                                        :type ("std::false_type" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1480 1484]))                                          
+                                        :typemodifiers ("static")
+                                        :prototype-flag t)
+                                        (reparse-symbol classsubparts) [1431 1485])
+                                    ("type1" variable
+                                       (:default-value "decltype(check<T>(0))"
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1496 1526])
+                                    ("public" label nil (reparse-symbol classsubparts) [1527 1534]))                                  )
+                                (reparse-symbol namespacesubparts) [1136 1652])
+                            ("is_AsyncWriteStream" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("check" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1940 1944]))                                          
+                                        :type ("R" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1925 1945])
+                                    ("check" function
+                                       (:template 
+                                          ( ("" type nil nil nil))                                          
+                                        :type ("std::false_type" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1999 2003]))                                          
+                                        :typemodifiers ("static")
+                                        :prototype-flag t)
+                                        (reparse-symbol classsubparts) [1950 2004])
+                                    ("type1" variable
+                                       (:default-value "decltype(check<T>(0))"
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [2015 2045])
+                                    ("public" label nil (reparse-symbol classsubparts) [2046 2053]))                                  )
+                                (reparse-symbol namespacesubparts) [1654 2171])
+                            ("is_SyncReadStream" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("boost::system::error_code" variable (:type "int") (reparse-symbol classsubparts) [2248 2274])
+                                    ("check1" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [2471 2475]))                                          
+                                        :type ("R" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2455 2476])
+                                    ("check1" function
+                                       (:template 
+                                          ( ("" type nil nil nil))                                          
+                                        :type ("std::false_type" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [2531 2535]))                                          
+                                        :typemodifiers ("static")
+                                        :prototype-flag t)
+                                        (reparse-symbol classsubparts) [2481 2536])
+                                    ("type1" variable
+                                       (:default-value "decltype(check1<T>(0))"
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [2547 2578])
+                                    ("check2" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [2804 2808]))                                          
+                                        :type ("R" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2788 2809])
+                                    ("check2" function
+                                       (:template 
+                                          ( ("" type nil nil nil))                                          
+                                        :type ("std::false_type" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [2864 2868]))                                          
+                                        :typemodifiers ("static")
+                                        :prototype-flag t)
+                                        (reparse-symbol classsubparts) [2814 2869])
+                                    ("type2" variable
+                                       (:default-value "decltype(check2<T>(0))"
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [2880 2911])
+                                    ("public" label nil (reparse-symbol classsubparts) [2913 2920]))                                  )
+                                (reparse-symbol namespacesubparts) [2173 3008])
+                            ("is_SyncWriteStream" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("boost::system::error_code" variable (:type "int") (reparse-symbol classsubparts) [3086 3112])
+                                    ("check1" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [3308 3312]))                                          
+                                        :type ("R" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3292 3313])
+                                    ("check1" function
+                                       (:template 
+                                          ( ("" type nil nil nil))                                          
+                                        :type ("std::false_type" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [3368 3372]))                                          
+                                        :typemodifiers ("static")
+                                        :prototype-flag t)
+                                        (reparse-symbol classsubparts) [3318 3373])
+                                    ("type1" variable
+                                       (:default-value "decltype(check1<T>(0))"
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [3384 3415])
+                                    ("check2" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [3640 3644]))                                          
+                                        :type ("R" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3624 3645])
+                                    ("check2" function
+                                       (:template 
+                                          ( ("" type nil nil nil))                                          
+                                        :type ("std::false_type" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [3700 3704]))                                          
+                                        :typemodifiers ("static")
+                                        :prototype-flag t)
+                                        (reparse-symbol classsubparts) [3650 3705])
+                                    ("type2" variable
+                                       (:default-value "decltype(check2<T>(0))"
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [3716 3747])
+                                    ("public" label nil (reparse-symbol classsubparts) [3749 3756]))                                  )
+                                (reparse-symbol namespacesubparts) [3010 3844]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [502 3847]))                  
+                :type "namespace")
+                nil [484 3859]))          
+      :file "stream_concepts.hpp"
+      :pointmax 3877
+      :fsize 3876
+      :lastmodtime '(22486 26367 776666 669000)
+      :unmatched-syntax '((punctuation 3840 . 3841) (punctuation 3839 . 3840) (symbol 3834 . 3839) (punctuation 3833 . 3834) (punctuation 3832 . 3833) (symbol 3827 . 3832) (punctuation 3825 . 3826) (punctuation 3824 . 3825) (symbol 3818 . 3823) (punctuation 3817 . 3818) (punctuation 3816 . 3817) (symbol 3811 . 3816) (punctuation 3801 . 3802) (BOOL 3797 . 3801) (punctuation 3796 . 3797) (symbol 3779 . 3796) (punctuation 3778 . 3779) (punctuation 3777 . 3778) (symbol 3774 . 3777) (punctuation 3772 . 3773) (symbol 3767 . 3771) (USING 3761 . 3766) (USING 3710 . 3715) (punctuation 3618 . 3619) (punctuation 3617 . 3618) (symbol 3611 . 3617) (punctuation 3610 . 3611) (punctuation 3609 . 3610) (symbol 3606 . 3609) (punctuation 3604 . 3605) (semantic-list 3470 . 3604) (symbol 3462 . 3470) (semantic-list 3508 . 3603) (punctuation 3497 . 3498) (semantic-list 3495 . 3497) (punctuation 3461 . 3462) (symbol 3454 . 3461) (punctuation 3453 . 3454) (punctuation 3452 . 3453) (symbol 3449 . 3452) (punctuation 3447 . 3448) (symbol 3445 . 3446) (CLASS 3439 . 3444) (punctuation 3437 . 3438) (symbol 3436 . 3437) (CLASS 3430 . 3435) (punctuation 3429 . 3430) (TEMPLATE 3421 . 3429) (USING 3378 . 3383) (punctuation 3286 . 3287) (punctuation 3285 . 3286) (symbol 3279 . 3285) (punctuation 3278 . 3279) (punctuation 3277 . 3278) (symbol 3274 . 3277) (punctuation 3256 . 3257) (semantic-list 3167 . 3256) (symbol 3159 . 3167) (semantic-list 3205 . 3255) (punctuation 3194 . 3195) (semantic-list 3192 . 3194) (punctuation 3158 . 3159) (symbol 3151 . 3158) (punctuation 3150 . 3151) (punctuation 3149 . 3150) (symbol 3146 . 3149) (punctuation 3144 . 3145) (symbol 3142 . 3143) (CLASS 3136 . 3141) (punctuation 3134 . 3135) (symbol 3133 . 3134) (CLASS 3127 . 3132) (punctuation 3126 . 3127) (TEMPLATE 3118 . 3126) (punctuation 3076 . 3077) (symbol 3065 . 3075) (USING 3059 . 3064) (punctuation 3004 . 3005) (punctuation 3003 . 3004) (symbol 2998 . 3003) (punctuation 2997 . 2998) (punctuation 2996 . 2997) (symbol 2991 . 2996) (punctuation 2989 . 2990) (punctuation 2988 . 2989) (symbol 2982 . 2987) (punctuation 2981 . 2982) (punctuation 2980 . 2981) (symbol 2975 . 2980) (punctuation 2965 . 2966) (BOOL 2961 . 2965) (punctuation 2960 . 2961) (symbol 2943 . 2960) (punctuation 2942 . 2943) (punctuation 2941 . 2942) (symbol 2938 . 2941) (punctuation 2936 . 2937) (symbol 2931 . 2935) (USING 2925 . 2930) (USING 2874 . 2879) (punctuation 2782 . 2783) (punctuation 2781 . 2782) (symbol 2775 . 2781) (punctuation 2774 . 2775) (punctuation 2773 . 2774) (symbol 2770 . 2773) (punctuation 2768 . 2769) (semantic-list 2633 . 2768) (symbol 2625 . 2633) (semantic-list 2670 . 2767) (punctuation 2660 . 2661) (semantic-list 2658 . 2660) (punctuation 2624 . 2625) (symbol 2617 . 2624) (punctuation 2616 . 2617) (punctuation 2615 . 2616) (symbol 2612 . 2615) (punctuation 2610 . 2611) (symbol 2608 . 2609) (CLASS 2602 . 2607) (punctuation 2600 . 2601) (symbol 2599 . 2600) (CLASS 2593 . 2598) (punctuation 2592 . 2593) (TEMPLATE 2584 . 2592) (USING 2541 . 2546) (punctuation 2449 . 2450) (punctuation 2448 . 2449) (symbol 2442 . 2448) (punctuation 2441 . 2442) (punctuation 2440 . 2441) (symbol 2437 . 2440) (punctuation 2419 . 2420) (semantic-list 2329 . 2419) (symbol 2321 . 2329) (semantic-list 2366 . 2418) (punctuation 2356 . 2357) (semantic-list 2354 . 2356) (punctuation 2320 . 2321) (symbol 2313 . 2320) (punctuation 2312 . 2313) (punctuation 2311 . 2312) (symbol 2308 . 2311) (punctuation 2306 . 2307) (symbol 2304 . 2305) (CLASS 2298 . 2303) (punctuation 2296 . 2297) (symbol 2295 . 2296) (CLASS 2289 . 2294) (punctuation 2288 . 2289) (TEMPLATE 2280 . 2288) (punctuation 2238 . 2239) (symbol 2227 . 2237) (USING 2221 . 2226) (punctuation 2167 . 2168) (punctuation 2166 . 2167) (symbol 2161 . 2166) (punctuation 2160 . 2161) (punctuation 2159 . 2160) (symbol 2155 . 2159) (punctuation 2154 . 2155) (punctuation 2153 . 2154) (punctuation 2152 . 2153) (symbol 2151 . 2152) (punctuation 2150 . 2151) (symbol 2132 . 2150) (punctuation 2122 . 2123) (punctuation 2121 . 2122) (symbol 2115 . 2120) (punctuation 2114 . 2115) (punctuation 2113 . 2114) (symbol 2108 . 2113) (punctuation 2098 . 2099) (BOOL 2094 . 2098) (punctuation 2093 . 2094) (symbol 2076 . 2093) (punctuation 2075 . 2076) (punctuation 2074 . 2075) (symbol 2071 . 2074) (punctuation 2069 . 2070) (symbol 2064 . 2068) (USING 2058 . 2063) (USING 2009 . 2014) (punctuation 1919 . 1920) (semantic-list 1740 . 1919) (symbol 1732 . 1740) (semantic-list 1916 . 1918) (semantic-list 1784 . 1880) (punctuation 1767 . 1768) (semantic-list 1765 . 1767) (punctuation 1730 . 1731) (symbol 1728 . 1729) (CLASS 1722 . 1727) (punctuation 1720 . 1721) (symbol 1719 . 1720) (CLASS 1713 . 1718) (punctuation 1712 . 1713) (TEMPLATE 1704 . 1712) (punctuation 1648 . 1649) (punctuation 1647 . 1648) (symbol 1642 . 1647) (punctuation 1641 . 1642) (punctuation 1640 . 1641) (symbol 1636 . 1640) (punctuation 1635 . 1636) (punctuation 1634 . 1635) (punctuation 1633 . 1634) (symbol 1632 . 1633) (punctuation 1631 . 1632) (symbol 1613 . 1631) (punctuation 1603 . 1604) (punctuation 1602 . 1603) (symbol 1596 . 1601) (punctuation 1595 . 1596) (punctuation 1594 . 1595) (symbol 1589 . 1594) (punctuation 1579 . 1580) (BOOL 1575 . 1579) (punctuation 1574 . 1575) (symbol 1557 . 1574) (punctuation 1556 . 1557) (punctuation 1555 . 1556) (symbol 1552 . 1555) (punctuation 1550 . 1551) (symbol 1545 . 1549) (USING 1539 . 1544) (USING 1490 . 1495) (punctuation 1400 . 1401) (semantic-list 1221 . 1400) (symbol 1213 . 1221) (semantic-list 1397 . 1399) (semantic-list 1264 . 1361) (punctuation 1248 . 1249) (semantic-list 1246 . 1248) (punctuation 1211 . 1212) (symbol 1209 . 1210) (CLASS 1203 . 1208) (punctuation 1201 . 1202) (symbol 1200 . 1201) (CLASS 1194 . 1199) (punctuation 1193 . 1194) (TEMPLATE 1185 . 1193) (USING 1096 . 1101) (punctuation 998 . 999) (punctuation 997 . 998) (punctuation 996 . 997) (symbol 986 . 996) (punctuation 985 . 986) (punctuation 984 . 985) (symbol 980 . 984) (punctuation 979 . 980) (punctuation 978 . 979) (symbol 973 . 978) (punctuation 959 . 960) (semantic-list 923 . 959) (symbol 915 . 923) (semantic-list 956 . 958) (punctuation 941 . 942) (semantic-list 939 . 941) (punctuation 905 . 906) (symbol 898 . 905) (punctuation 897 . 898) (punctuation 896 . 897) (symbol 893 . 896) (TYPENAME 884 . 892) (punctuation 882 . 883) (symbol 880 . 881) (CLASS 874 . 879) (punctuation 872 . 873) (symbol 871 . 872) (CLASS 865 . 870) (punctuation 864 . 865) (TEMPLATE 856 . 864) (USING 770 . 775) (USING 735 . 740) (punctuation 666 . 667) (DEFAULT 659 . 666) (punctuation 657 . 658) (semantic-list 634 . 656) (symbol 621 . 634))
+      :lexical-table 
+        '(("BEAST_DETAIL_STREAM_CONCEPTS_HPP")
+          )
+))
+  :file "!home!nakao!github!iotc_msgpub!external!Beast!include!beast!core!detail!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

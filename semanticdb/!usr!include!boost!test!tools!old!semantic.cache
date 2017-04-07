@@ -1,0 +1,665 @@
+;; Object old/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "old/"
+  :tables
+  (list
+    (semanticdb-table "interface.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_TEST_TOOLS_OLD_INTERFACE_HPP_111712GER" variable (:constant-flag t) nil [561 605])
+            ("boost/preprocessor/seq/for_each.hpp" include (:system-flag t) nil [616 662])
+            ("boost/preprocessor/seq/size.hpp" include (:system-flag t) nil [663 705])
+            ("boost/preprocessor/seq/to_tuple.hpp" include (:system-flag t) nil [706 752])
+            ("boost/test/detail/suppress_warnings.hpp" include (:system-flag t) nil [754 804])
+            ("BOOST_TEST_TOOL_PASS_PRED0" variable (:constant-flag t) nil [1604 1630])
+            ("BOOST_TEST_TOOL_PASS_PRED1" variable (:constant-flag t) nil [1652 1678])
+            ("BOOST_TEST_TOOL_PASS_PRED2" variable (:constant-flag t) nil [1728 1754])
+            ("BOOST_TEST_TOOL_PASS_ARG" variable (:constant-flag t) nil [1777 1801])
+            ("BOOST_TEST_TOOL_PASS_ARG_DSCR" variable (:constant-flag t) nil [1853 1882])
+            ("BOOST_TEST_TOOL_PASS_ARGS0" variable (:constant-flag t) nil [1930 1956])
+            ("BOOST_TEST_TOOL_PASS_ARGS1" variable (:constant-flag t) nil [2038 2064])
+            ("BOOST_TEST_TOOL_PASS_ARGS2" variable (:constant-flag t) nil [2177 2203])
+            ("BOOST_TEST_TOOL_IMPL" variable (:constant-flag t) nil [2231 2251])
+            ("BOOST_WARN" variable (:constant-flag t) nil [3385 3395])
+            ("BOOST_CHECK" variable (:constant-flag t) nil [3514 3525])
+            ("BOOST_REQUIRE" variable (:constant-flag t) nil [3644 3657])
+            ("BOOST_WARN_MESSAGE" variable (:constant-flag t) nil [3859 3877])
+            ("BOOST_CHECK_MESSAGE" variable (:constant-flag t) nil [3957 3976])
+            ("BOOST_REQUIRE_MESSAGE" variable (:constant-flag t) nil [4056 4077])
+            ("BOOST_ERROR" variable (:constant-flag t) nil [4240 4251])
+            ("BOOST_FAIL" variable (:constant-flag t) nil [4316 4326])
+            ("BOOST_CHECK_THROW_IMPL" variable (:constant-flag t) nil [4477 4499])
+            ("BOOST_WARN_THROW" variable (:constant-flag t) nil [5806 5822])
+            ("BOOST_CHECK_THROW" variable (:constant-flag t) nil [5897 5914])
+            ("BOOST_REQUIRE_THROW" variable (:constant-flag t) nil [5989 6008])
+            ("BOOST_WARN_EXCEPTION" variable (:constant-flag t) nil [6166 6186])
+            ("BOOST_CHECK_EXCEPTION" variable (:constant-flag t) nil [6357 6378])
+            ("BOOST_REQUIRE_EXCEPTION" variable (:constant-flag t) nil [6549 6572])
+            ("BOOST_CHECK_NO_THROW_IMPL" variable (:constant-flag t) nil [6826 6851])
+            ("BOOST_WARN_NO_THROW" variable (:constant-flag t) nil [7833 7852])
+            ("BOOST_CHECK_NO_THROW" variable (:constant-flag t) nil [7914 7934])
+            ("BOOST_REQUIRE_NO_THROW" variable (:constant-flag t) nil [7996 8018])
+            ("BOOST_WARN_EQUAL" variable (:constant-flag t) nil [8163 8179])
+            ("BOOST_CHECK_EQUAL" variable (:constant-flag t) nil [8321 8338])
+            ("BOOST_REQUIRE_EQUAL" variable (:constant-flag t) nil [8480 8499])
+            ("BOOST_WARN_NE" variable (:constant-flag t) nil [8724 8737])
+            ("BOOST_CHECK_NE" variable (:constant-flag t) nil [8871 8885])
+            ("BOOST_REQUIRE_NE" variable (:constant-flag t) nil [9019 9035])
+            ("BOOST_WARN_LT" variable (:constant-flag t) nil [9252 9265])
+            ("BOOST_CHECK_LT" variable (:constant-flag t) nil [9399 9413])
+            ("BOOST_REQUIRE_LT" variable (:constant-flag t) nil [9547 9563])
+            ("BOOST_WARN_LE" variable (:constant-flag t) nil [9780 9793])
+            ("BOOST_CHECK_LE" variable (:constant-flag t) nil [9927 9941])
+            ("BOOST_REQUIRE_LE" variable (:constant-flag t) nil [10075 10091])
+            ("BOOST_WARN_GT" variable (:constant-flag t) nil [10308 10321])
+            ("BOOST_CHECK_GT" variable (:constant-flag t) nil [10455 10469])
+            ("BOOST_REQUIRE_GT" variable (:constant-flag t) nil [10603 10619])
+            ("BOOST_WARN_GE" variable (:constant-flag t) nil [10836 10849])
+            ("BOOST_CHECK_GE" variable (:constant-flag t) nil [10983 10997])
+            ("BOOST_REQUIRE_GE" variable (:constant-flag t) nil [11131 11147])
+            ("BOOST_WARN_CLOSE" variable (:constant-flag t) nil [11364 11380])
+            ("BOOST_CHECK_CLOSE" variable (:constant-flag t) nil [11554 11571])
+            ("BOOST_REQUIRE_CLOSE" variable (:constant-flag t) nil [11745 11764])
+            ("BOOST_WARN_CLOSE_FRACTION" variable (:constant-flag t) nil [12021 12046])
+            ("BOOST_CHECK_CLOSE_FRACTION" variable (:constant-flag t) nil [12181 12207])
+            ("BOOST_REQUIRE_CLOSE_FRACTION" variable (:constant-flag t) nil [12342 12370])
+            ("BOOST_WARN_SMALL" variable (:constant-flag t) nil [12588 12604])
+            ("BOOST_CHECK_SMALL" variable (:constant-flag t) nil [12738 12755])
+            ("BOOST_REQUIRE_SMALL" variable (:constant-flag t) nil [12889 12908])
+            ("BOOST_WARN_PREDICATE" variable (:constant-flag t) nil [13125 13145])
+            ("BOOST_CHECK_PREDICATE" variable (:constant-flag t) nil [13265 13286])
+            ("BOOST_REQUIRE_PREDICATE" variable (:constant-flag t) nil [13406 13429])
+            ("BOOST_WARN_EQUAL_COLLECTIONS" variable (:constant-flag t) nil [13632 13660])
+            ("BOOST_CHECK_EQUAL_COLLECTIONS" variable (:constant-flag t) nil [13907 13936])
+            ("BOOST_REQUIRE_EQUAL_COLLECTIONS" variable (:constant-flag t) nil [14182 14213])
+            ("BOOST_WARN_BITWISE_EQUAL" variable (:constant-flag t) nil [14540 14564])
+            ("BOOST_CHECK_BITWISE_EQUAL" variable (:constant-flag t) nil [14709 14734])
+            ("BOOST_REQUIRE_BITWISE_EQUAL" variable (:constant-flag t) nil [14879 14906])
+            ("BOOST_IS_DEFINED" variable (:constant-flag t) nil [15134 15150])
+            ("boost/test/detail/enable_warnings.hpp" include (:system-flag t) nil [15693 15741]))          
+      :file "interface.hpp"
+      :pointmax 15798
+      :fsize 15797
+      :lastmodtime '(22452 53219 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_CHECK_EXCEPTION" (spp-arg-list ("S" "E" "P") 6378 . 6389) . ((symbol "BOOST_CHECK_THROW_IMPL" 6393 . 6415) (semantic-list "( S, E, P( ex ), \\
+              \": validation on the raised exception through predicate \\\"\" BOOST_STRINGIZE(P) \"\\\"\", CHECK )" 6415 . 6540)))
+          ("BOOST_REQUIRE_NE" (spp-arg-list ("L" "R") 9035 . 9043) . ((symbol "BOOST_TEST_TOOL_IMPL" 9055 . 9075) (semantic-list "( 0, \\
+    ::boost::test_tools::tt_detail::ne_impl(), \"\", REQUIRE, CHECK_NE, (L)(R) )" 9075 . 9160)))
+          ("BOOST_CHECK_LE" (spp-arg-list ("L" "R") 9941 . 9949) . ((symbol "BOOST_TEST_TOOL_IMPL" 9963 . 9983) (semantic-list "( 0, \\
+    ::boost::test_tools::tt_detail::le_impl(), \"\", CHECK, CHECK_LE, (L)(R) )" 9983 . 10066)))
+          ("BOOST_CHECK_GT" (spp-arg-list ("L" "R") 10469 . 10477) . ((symbol "BOOST_TEST_TOOL_IMPL" 10491 . 10511) (semantic-list "( 0, \\
+    ::boost::test_tools::tt_detail::gt_impl(), \"\", CHECK, CHECK_GT, (L)(R) )" 10511 . 10594)))
+          ("BOOST_REQUIRE_CLOSE" (spp-arg-list ("L" "R" "T") 11764 . 11775) . ((symbol "BOOST_TEST_TOOL_IMPL" 11781 . 11801) (semantic-list "( 0, \\
+    ::boost::test_tools::check_is_close_t(), \"\", REQUIRE, CHECK_CLOSE, (L)(R)(::boost::math::fpc::percent_tolerance(T)) )" 11801 . 11929)))
+          ("BOOST_REQUIRE_SMALL" (spp-arg-list ("FPV" "T") 12908 . 12918) . ((symbol "BOOST_TEST_TOOL_IMPL" 12925 . 12945) (semantic-list "( 0, \\
+    ::boost::test_tools::check_is_small_t(), \"\", REQUIRE, CHECK_SMALL, (FPV)(T) )" 12945 . 13033)))
+          ("BOOST_TEST_TOOL_PASS_PRED0" (spp-arg-list ("P" "ARGS") 1630 . 1641) . ((symbol "P" 1642 . 1643)))
+          ("BOOST_WARN" (spp-arg-list ("P") 3395 . 3400) . ((symbol "BOOST_TEST_TOOL_IMPL" 3421 . 3441) (semantic-list "( 2, \\
+    (P), BOOST_TEST_STRINGIZE( P ), WARN, CHECK_PRED, _ )" 3441 . 3505)))
+          ("BOOST_CHECK_NO_THROW" (spp-arg-list ("S") 7934 . 7939) . ((symbol "BOOST_CHECK_NO_THROW_IMPL" 7950 . 7975) (semantic-list "( S, CHECK )" 7975 . 7987)))
+          ("BOOST_WARN_EQUAL" (spp-arg-list ("L" "R") 8179 . 8187) . ((symbol "BOOST_TEST_TOOL_IMPL" 8199 . 8219) (semantic-list "( 0, \\
+    ::boost::test_tools::tt_detail::equal_impl_frwd(), \"\", WARN, CHECK_EQUAL, (L)(R) )" 8219 . 8312)))
+          ("BOOST_CHECK_EQUAL" (spp-arg-list ("L" "R") 8338 . 8346) . ((symbol "BOOST_TEST_TOOL_IMPL" 8357 . 8377) (semantic-list "( 0, \\
+    ::boost::test_tools::tt_detail::equal_impl_frwd(), \"\", CHECK, CHECK_EQUAL, (L)(R) )" 8377 . 8471)))
+          ("BOOST_WARN_CLOSE_FRACTION" (spp-arg-list ("L" "R" "T") 12046 . 12055) . ((symbol "BOOST_TEST_TOOL_IMPL" 12057 . 12077) (semantic-list "( 0, \\
+    ::boost::test_tools::check_is_close_t(), \"\", WARN, CHECK_CLOSE_FRACTION, (L)(R)(T) )" 12077 . 12172)))
+          ("BOOST_CHECK_EQUAL_COLLECTIONS" (spp-arg-list ("L_begin" "L_end" "R_begin" "R_end") 13936 . 13970) . ((symbol "BOOST_TEST_TOOL_IMPL" 13993 . 14013) (semantic-list "( 1, ::boost::test_tools::tt_detail::equal_coll_impl(),         \\
+        \"\", CHECK, CHECK_EQUAL_COLL, (L_begin)(L_end)(R_begin)(R_end) )" 14013 . 14150)))
+          ("BOOST_TEST_TOOL_PASS_PRED1" (spp-arg-list ("P" "ARGS") 1678 . 1689) . 
+              ((symbol "P" 1690 . 1691) (symbol "BOOST_PP_SEQ_TO_TUPLE" 1692 . 1713) (semantic-list "(ARGS)" 1713 . 1719)))
+          ("BOOST_WARN_MESSAGE" (spp-arg-list ("P" "M") 3877 . 3885) . ((symbol "BOOST_TEST_TOOL_IMPL" 3895 . 3915) (semantic-list "( 2, (P), M, WARN, CHECK_MSG, _ )" 3915 . 3948)))
+          ("BOOST_CHECK_THROW_IMPL" (spp-arg-list ("S" "E" "P" "postfix" "TL") 4499 . 4523) . 
+              ((DO "do" 4560 . 4562) (semantic-list "{                                                                                    \\
+    try {                                                                               \\
+        BOOST_TEST_PASSPOINT();                                                         \\
+        S;                                                                              \\
+        BOOST_TEST_TOOL_IMPL( 2, false, \"exception \" BOOST_STRINGIZE(E) \" expected but not raised\", \\
+                              TL, CHECK_MSG, _ );                                       \\
+    } catch( E const& ex ) {                                                            \\
+        ::boost::unit_test::ut_detail::ignore_unused_variable_warning( ex );            \\
+        BOOST_TEST_TOOL_IMPL( 2, P, \\
+                              \"exception \\\"\" BOOST_STRINGIZE( E )\"\\\" raised as expected\" postfix,           \\
+                              TL, CHECK_MSG, _  );                                      \\
+    }                                                                                   \\
+}" 4563 . 5621) (WHILE "while" 5622 . 5627) (semantic-list "( ::boost::test_tools::tt_detail::dummy_cond() )" 5627 . 5675)))
+          ("BOOST_REQUIRE_THROW" (spp-arg-list ("S" "E") 6008 . 6016) . ((symbol "BOOST_CHECK_THROW_IMPL" 6025 . 6047) (semantic-list "( S, E, true, \"\", REQUIRE )" 6047 . 6074)))
+          ("BOOST_CHECK_NO_THROW_IMPL" (spp-arg-list ("S" "TL") 6851 . 6860) . 
+              ((DO "do" 6908 . 6910) (semantic-list "{                                                                                    \\
+    try {                                                                               \\
+        S;                                                                              \\
+        BOOST_TEST_TOOL_IMPL( 2, true, \"no exceptions thrown by \" BOOST_STRINGIZE( S ), \\
+                              TL, CHECK_MSG, _ );                                       \\
+    } catch( ... ) {                                                                    \\
+        BOOST_TEST_TOOL_IMPL( 2, false, \"unexpected exception thrown by \" BOOST_STRINGIZE( S ),    \\
+                              TL, CHECK_MSG, _ );                                       \\
+    }                                                                                   \\
+}" 6911 . 7730) (WHILE "while" 7731 . 7736) (semantic-list "( ::boost::test_tools::tt_detail::dummy_cond() )" 7736 . 7784)))
+          ("BOOST_WARN_NE" (spp-arg-list ("L" "R") 8737 . 8745) . ((symbol "BOOST_TEST_TOOL_IMPL" 8760 . 8780) (semantic-list "( 0, \\
+    ::boost::test_tools::tt_detail::ne_impl(), \"\", WARN, CHECK_NE, (L)(R) )" 8780 . 8862)))
+          ("BOOST_CHECK_LT" (spp-arg-list ("L" "R") 9413 . 9421) . ((symbol "BOOST_TEST_TOOL_IMPL" 9435 . 9455) (semantic-list "( 0, \\
+    ::boost::test_tools::tt_detail::lt_impl(), \"\", CHECK, CHECK_LT, (L)(R) )" 9455 . 9538)))
+          ("BOOST_REQUIRE_PREDICATE" (spp-arg-list ("P" "ARGS") 13429 . 13440) . ((symbol "BOOST_TEST_TOOL_IMPL" 13442 . 13462) (semantic-list "( 0, \\
+    P, BOOST_TEST_STRINGIZE( P ), REQUIRE, CHECK_PRED_WITH_ARGS, ARGS )" 13462 . 13540)))
+          ("BOOST_CHECK_BITWISE_EQUAL" (spp-arg-list ("L" "R") 14734 . 14742) . ((symbol "BOOST_TEST_TOOL_IMPL" 14745 . 14765) (semantic-list "( 1, \\
+    ::boost::test_tools::tt_detail::bitwise_equal_impl(), \"\", CHECK, CHECK_BITWISE_EQUAL, (L)(R) )" 14765 . 14870)))
+          ("BOOST_TEST_TOOL_PASS_PRED2" (spp-arg-list ("P" "ARGS") 1754 . 1765) . ((symbol "P" 1766 . 1767)))
+          ("BOOST_WARN_BITWISE_EQUAL" (spp-arg-list ("L" "R") 14564 . 14572) . ((symbol "BOOST_TEST_TOOL_IMPL" 14576 . 14596) (semantic-list "( 1, \\
+    ::boost::test_tools::tt_detail::bitwise_equal_impl(), \"\", WARN, CHECK_BITWISE_EQUAL, (L)(R) )" 14596 . 14700)))
+          ("BOOST_WARN_EQUAL_COLLECTIONS" (spp-arg-list ("L_begin" "L_end" "R_begin" "R_end") 13660 . 13694) . ((symbol "BOOST_TEST_TOOL_IMPL" 13718 . 13738) (semantic-list "( 1, ::boost::test_tools::tt_detail::equal_coll_impl(),         \\
+        \"\", WARN, CHECK_EQUAL_COLL, (L_begin)(L_end)(R_begin)(R_end) )" 13738 . 13874)))
+          ("BOOST_CHECK" (spp-arg-list ("P") 3525 . 3530) . ((symbol "BOOST_TEST_TOOL_IMPL" 3550 . 3570) (semantic-list "( 2, \\
+    (P), BOOST_TEST_STRINGIZE( P ), CHECK, CHECK_PRED, _ )" 3570 . 3635)))
+          ("BOOST_REQUIRE_EQUAL" (spp-arg-list ("L" "R") 8499 . 8507) . ((symbol "BOOST_TEST_TOOL_IMPL" 8516 . 8536) (semantic-list "( 0, \\
+    ::boost::test_tools::tt_detail::equal_impl_frwd(), \"\", REQUIRE, CHECK_EQUAL, (L)(R) )" 8536 . 8632)))
+          ("BOOST_REQUIRE_GE" (spp-arg-list ("L" "R") 11147 . 11155) . ((symbol "BOOST_TEST_TOOL_IMPL" 11167 . 11187) (semantic-list "( 0, \\
+    ::boost::test_tools::tt_detail::ge_impl(), \"\", REQUIRE, CHECK_GE, (L)(R) )" 11187 . 11272)))
+          ("BOOST_WARN_PREDICATE" (spp-arg-list ("P" "ARGS") 13145 . 13156) . ((symbol "BOOST_TEST_TOOL_IMPL" 13161 . 13181) (semantic-list "( 0, \\
+    P, BOOST_TEST_STRINGIZE( P ), WARN, CHECK_PRED_WITH_ARGS, ARGS )" 13181 . 13256)))
+          ("BOOST_TEST_TOOL_PASS_ARGS0" (spp-arg-list ("ARGS") 1956 . 1964) . ((symbol "BOOST_PP_SEQ_FOR_EACH" 1971 . 1992) (semantic-list "( BOOST_TEST_TOOL_PASS_ARG, _, ARGS )" 1992 . 2029)))
+          ("BOOST_REQUIRE_EXCEPTION" (spp-arg-list ("S" "E" "P") 6572 . 6583) . ((symbol "BOOST_CHECK_THROW_IMPL" 6585 . 6607) (semantic-list "( S, E, P( ex ), \\
+              \": validation on the raised exception through predicate \\\"\" BOOST_STRINGIZE(P) \"\\\"\", REQUIRE )" 6607 . 6734)))
+          ("BOOST_CHECK_NE" (spp-arg-list ("L" "R") 8885 . 8893) . ((symbol "BOOST_TEST_TOOL_IMPL" 8907 . 8927) (semantic-list "( 0, \\
+    ::boost::test_tools::tt_detail::ne_impl(), \"\", CHECK, CHECK_NE, (L)(R) )" 8927 . 9010)))
+          ("BOOST_REQUIRE_EQUAL_COLLECTIONS" (spp-arg-list ("L_begin" "L_end" "R_begin" "R_end") 14213 . 14247) . ((symbol "BOOST_TEST_TOOL_IMPL" 14268 . 14288) (semantic-list "( 1, ::boost::test_tools::tt_detail::equal_coll_impl(),         \\
+        \"\", REQUIRE, CHECK_EQUAL_COLL, (L_begin)(L_end)(R_begin)(R_end) )" 14288 . 14427)))
+          ("BOOST_REQUIRE_BITWISE_EQUAL" (spp-arg-list ("L" "R") 14906 . 14914) . ((symbol "BOOST_TEST_TOOL_IMPL" 14915 . 14935) (semantic-list "( 1, \\
+    ::boost::test_tools::tt_detail::bitwise_equal_impl(), \"\", REQUIRE, CHECK_BITWISE_EQUAL, (L)(R) )" 14935 . 15042)))
+          ("BOOST_TEST_TOOL_PASS_ARG" (spp-arg-list ("r" "_" "arg") 1801 . 1814) . 
+              ((punctuation "," 1815 . 1816) (symbol "arg" 1817 . 1820) (punctuation "," 1820 . 1821) (symbol "BOOST_STRINGIZE" 1822 . 1837) (semantic-list "( arg )" 1837 . 1844)))
+          ("BOOST_TEST_TOOL_PASS_ARGS1" (spp-arg-list ("ARGS") 2064 . 2072) . 
+              ((punctuation "," 2079 . 2080) (symbol "BOOST_PP_SEQ_SIZE" 2081 . 2098) (semantic-list "(ARGS)" 2098 . 2104) (symbol "BOOST_PP_SEQ_FOR_EACH" 2105 . 2126) (semantic-list "( BOOST_TEST_TOOL_PASS_ARG_DSCR, _, ARGS )" 2126 . 2168)))
+          ("BOOST_REQUIRE" (spp-arg-list ("P") 3657 . 3662) . ((symbol "BOOST_TEST_TOOL_IMPL" 3680 . 3700) (semantic-list "( 2, \\
+    (P), BOOST_TEST_STRINGIZE( P ), REQUIRE, CHECK_PRED, _ )" 3700 . 3767)))
+          ("BOOST_CHECK_MESSAGE" (spp-arg-list ("P" "M") 3976 . 3984) . ((symbol "BOOST_TEST_TOOL_IMPL" 3993 . 4013) (semantic-list "( 2, (P), M, CHECK, CHECK_MSG, _ )" 4013 . 4047)))
+          ("BOOST_REQUIRE_MESSAGE" (spp-arg-list ("P" "M") 4077 . 4085) . ((symbol "BOOST_TEST_TOOL_IMPL" 4092 . 4112) (semantic-list "( 2, (P), M, REQUIRE, CHECK_MSG, _ )" 4112 . 4148)))
+          ("BOOST_FAIL" (spp-arg-list ("M") 4326 . 4331) . ((symbol "BOOST_REQUIRE_MESSAGE" 4352 . 4373) (semantic-list "( false, M )" 4373 . 4385)))
+          ("BOOST_WARN_NO_THROW" (spp-arg-list ("S") 7852 . 7857) . ((symbol "BOOST_CHECK_NO_THROW_IMPL" 7869 . 7894) (semantic-list "( S, WARN )" 7894 . 7905)))
+          ("BOOST_REQUIRE_LE" (spp-arg-list ("L" "R") 10091 . 10099) . ((symbol "BOOST_TEST_TOOL_IMPL" 10111 . 10131) (semantic-list "( 0, \\
+    ::boost::test_tools::tt_detail::le_impl(), \"\", REQUIRE, CHECK_LE, (L)(R) )" 10131 . 10216)))
+          ("BOOST_REQUIRE_GT" (spp-arg-list ("L" "R") 10619 . 10627) . ((symbol "BOOST_TEST_TOOL_IMPL" 10639 . 10659) (semantic-list "( 0, \\
+    ::boost::test_tools::tt_detail::gt_impl(), \"\", REQUIRE, CHECK_GT, (L)(R) )" 10659 . 10744)))
+          ("BOOST_WARN_GE" (spp-arg-list ("L" "R") 10849 . 10857) . ((symbol "BOOST_TEST_TOOL_IMPL" 10872 . 10892) (semantic-list "( 0, \\
+    ::boost::test_tools::tt_detail::ge_impl(), \"\", WARN, CHECK_GE, (L)(R) )" 10892 . 10974)))
+          ("BOOST_TEST_TOOL_PASS_ARGS2" (spp-arg-list ("ARGS") 2203 . 2211) . ((punctuation "," 2218 . 2219) (number "0" 2220 . 2221)))
+          ("BOOST_TEST_TOOLS_OLD_INTERFACE_HPP_111712GER")
+          ("BOOST_TEST_TOOL_PASS_ARG_DSCR" (spp-arg-list ("r" "_" "arg") 1882 . 1895) . 
+              ((punctuation "," 1896 . 1897) (symbol "BOOST_STRINGIZE" 1898 . 1913) (semantic-list "( arg )" 1913 . 1920)))
+          ("BOOST_WARN_EXCEPTION" (spp-arg-list ("S" "E" "P") 6186 . 6197) . ((symbol "BOOST_CHECK_THROW_IMPL" 6202 . 6224) (semantic-list "( S, E, P( ex ), \\
+              \": validation on the raised exception through predicate \\\"\" BOOST_STRINGIZE(P) \"\\\"\", WARN )" 6224 . 6348)))
+          ("BOOST_REQUIRE_NO_THROW" (spp-arg-list ("S") 8018 . 8023) . ((symbol "BOOST_CHECK_NO_THROW_IMPL" 8032 . 8057) (semantic-list "( S, REQUIRE )" 8057 . 8071)))
+          ("BOOST_REQUIRE_LT" (spp-arg-list ("L" "R") 9563 . 9571) . ((symbol "BOOST_TEST_TOOL_IMPL" 9583 . 9603) (semantic-list "( 0, \\
+    ::boost::test_tools::tt_detail::lt_impl(), \"\", REQUIRE, CHECK_LT, (L)(R) )" 9603 . 9688)))
+          ("BOOST_WARN_LE" (spp-arg-list ("L" "R") 9793 . 9801) . ((symbol "BOOST_TEST_TOOL_IMPL" 9816 . 9836) (semantic-list "( 0, \\
+    ::boost::test_tools::tt_detail::le_impl(), \"\", WARN, CHECK_LE, (L)(R) )" 9836 . 9918)))
+          ("BOOST_WARN_GT" (spp-arg-list ("L" "R") 10321 . 10329) . ((symbol "BOOST_TEST_TOOL_IMPL" 10344 . 10364) (semantic-list "( 0, \\
+    ::boost::test_tools::tt_detail::gt_impl(), \"\", WARN, CHECK_GT, (L)(R) )" 10364 . 10446)))
+          ("BOOST_WARN_CLOSE" (spp-arg-list ("L" "R" "T") 11380 . 11391) . ((symbol "BOOST_TEST_TOOL_IMPL" 11400 . 11420) (semantic-list "( 0, \\
+    ::boost::test_tools::check_is_close_t(), \"\", WARN, CHECK_CLOSE, (L)(R)(::boost::math::fpc::percent_tolerance(T)) )" 11420 . 11545)))
+          ("BOOST_CHECK_CLOSE" (spp-arg-list ("L" "R" "T") 11571 . 11582) . ((symbol "BOOST_TEST_TOOL_IMPL" 11590 . 11610) (semantic-list "( 0, \\
+    ::boost::test_tools::check_is_close_t(), \"\", CHECK, CHECK_CLOSE, (L)(R)(::boost::math::fpc::percent_tolerance(T)) )" 11610 . 11736)))
+          ("BOOST_CHECK_CLOSE_FRACTION" (spp-arg-list ("L" "R" "T") 12207 . 12216) . ((symbol "BOOST_TEST_TOOL_IMPL" 12217 . 12237) (semantic-list "( 0, \\
+    ::boost::test_tools::check_is_close_t(), \"\", CHECK, CHECK_CLOSE_FRACTION, (L)(R)(T) )" 12237 . 12333)))
+          ("BOOST_WARN_SMALL" (spp-arg-list ("FPV" "T") 12604 . 12614) . ((symbol "BOOST_TEST_TOOL_IMPL" 12624 . 12644) (semantic-list "( 0, \\
+    ::boost::test_tools::check_is_small_t(), \"\", WARN, CHECK_SMALL, (FPV)(T) )" 12644 . 12729)))
+          ("BOOST_CHECK_SMALL" (spp-arg-list ("FPV" "T") 12755 . 12765) . ((symbol "BOOST_TEST_TOOL_IMPL" 12774 . 12794) (semantic-list "( 0, \\
+    ::boost::test_tools::check_is_small_t(), \"\", CHECK, CHECK_SMALL, (FPV)(T) )" 12794 . 12880)))
+          ("BOOST_CHECK_PREDICATE" (spp-arg-list ("P" "ARGS") 13286 . 13297) . ((symbol "BOOST_TEST_TOOL_IMPL" 13301 . 13321) (semantic-list "( 0, \\
+    P, BOOST_TEST_STRINGIZE( P ), CHECK, CHECK_PRED_WITH_ARGS, ARGS )" 13321 . 13397)))
+          ("BOOST_IS_DEFINED" (spp-arg-list ("symb") 15150 . 15158) . 
+              ((punctuation ":" 15159 . 15160) (punctuation ":" 15160 . 15161) (symbol "boost" 15161 . 15166) (punctuation ":" 15166 . 15167) (punctuation ":" 15167 . 15168) (symbol "test_tools" 15168 . 15178) (punctuation ":" 15178 . 15179) (punctuation ":" 15179 . 15180) (symbol "tt_detail" 15180 . 15189) (punctuation ":" 15189 . 15190) (punctuation ":" 15190 . 15191) (symbol "is_defined_impl" 15191 . 15206) (semantic-list "( #symb, BOOST_STRINGIZE(= symb) )" 15206 . 15240)))
+          ("BOOST_WARN_THROW" (spp-arg-list ("S" "E") 5822 . 5830) . ((symbol "BOOST_CHECK_THROW_IMPL" 5842 . 5864) (semantic-list "( S, E, true, \"\", WARN )" 5864 . 5888)))
+          ("BOOST_CHECK_THROW" (spp-arg-list ("S" "E") 5914 . 5922) . ((symbol "BOOST_CHECK_THROW_IMPL" 5933 . 5955) (semantic-list "( S, E, true, \"\", CHECK )" 5955 . 5980)))
+          ("BOOST_WARN_LT" (spp-arg-list ("L" "R") 9265 . 9273) . ((symbol "BOOST_TEST_TOOL_IMPL" 9288 . 9308) (semantic-list "( 0, \\
+    ::boost::test_tools::tt_detail::lt_impl(), \"\", WARN, CHECK_LT, (L)(R) )" 9308 . 9390)))
+          ("BOOST_CHECK_GE" (spp-arg-list ("L" "R") 10997 . 11005) . ((symbol "BOOST_TEST_TOOL_IMPL" 11019 . 11039) (semantic-list "( 0, \\
+    ::boost::test_tools::tt_detail::ge_impl(), \"\", CHECK, CHECK_GE, (L)(R) )" 11039 . 11122)))
+          ("BOOST_TEST_TOOL_IMPL" (spp-arg-list ("frwd_type" "P" "assertion_descr" "TL" "CT" "ARGS") 2251 . 2298) . 
+              ((DO "do" 2305 . 2307) (semantic-list "{                                                                            \\
+    BOOST_TEST_PASSPOINT();                                                     \\
+    ::boost::test_tools::tt_detail::                                            \\
+    BOOST_PP_IF( frwd_type, report_assertion, check_frwd ) (                    \\
+        BOOST_JOIN( BOOST_TEST_TOOL_PASS_PRED, frwd_type )( P, ARGS ),          \\
+        BOOST_TEST_LAZY_MSG( assertion_descr ),                                 \\
+        BOOST_TEST_L(__FILE__),                                                 \\
+        static_cast<std::size_t>(__LINE__),                                     \\
+        ::boost::test_tools::tt_detail::TL,                                     \\
+        ::boost::test_tools::tt_detail::CT                                      \\
+        BOOST_JOIN( BOOST_TEST_TOOL_PASS_ARGS, frwd_type )( ARGS ) );           \\
+}" 2308 . 3208) (WHILE "while" 3209 . 3214) (semantic-list "( ::boost::test_tools::tt_detail::dummy_cond() )" 3214 . 3262)))
+          ("BOOST_ERROR" (spp-arg-list ("M") 4251 . 4256) . ((symbol "BOOST_CHECK_MESSAGE" 4276 . 4295) (semantic-list "( false, M )" 4295 . 4307)))
+          ("BOOST_REQUIRE_CLOSE_FRACTION" (spp-arg-list ("L" "R" "T") 12370 . 12377) . ((symbol "BOOST_TEST_TOOL_IMPL" 12378 . 12398) (semantic-list "( 0, \\
+    ::boost::test_tools::check_is_close_t(), \"\", REQUIRE, CHECK_CLOSE_FRACTION, (L)(R)(T) )" 12398 . 12496)))
+          )
+)
+    (semanticdb-table "impl.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_TEST_TOOLS_OLD_IMPL_HPP_012705GER" variable (:constant-flag t) nil [536 575])
+            ("boost/test/unit_test_log.hpp" include (:system-flag t) nil [591 630])
+            ("boost/test/tools/assertion_result.hpp" include (:system-flag t) nil [631 679])
+            ("boost/test/tools/floating_point_comparison.hpp" include (:system-flag t) nil [680 737])
+            ("boost/test/tools/detail/fwd.hpp" include (:system-flag t) nil [739 781])
+            ("boost/test/tools/detail/print_helper.hpp" include (:system-flag t) nil [782 833])
+            ("boost/limits.hpp" include (:system-flag t) nil [844 871])
+            ("boost/numeric/conversion/conversion_traits.hpp" include (:system-flag t) nil [872 929])
+            ("boost/type_traits/is_array.hpp" include (:system-flag t) nil [964 1005])
+            ("boost/preprocessor/repetition/repeat.hpp" include (:system-flag t) nil [1007 1058])
+            ("boost/preprocessor/arithmetic/add.hpp" include (:system-flag t) nil [1059 1107])
+            ("cstddef" include (:system-flag t) nil [1116 1134])
+            ("climits" include (:system-flag t) nil [1163 1181])
+            ("boost/test/detail/suppress_warnings.hpp" include (:system-flag t) nil [1208 1258])
+            ("boost" type
+               (:members 
+                  ( ("test_tools" type
+                       (:members 
+                          ( ("tt_detail" type
+                               (:members 
+                                  ( ("TEMPL_PARAMS" variable (:constant-flag t) (reparse-symbol namespacesubparts) [1790 1802])
+                                    ("FUNC_PARAMS" variable (:constant-flag t) (reparse-symbol namespacesubparts) [1859 1870])
+                                    ("PRED_PARAMS" variable (:constant-flag t) (reparse-symbol namespacesubparts) [2123 2134])
+                                    ("ARG_INFO" variable (:constant-flag t) (reparse-symbol namespacesubparts) [2203 2211])
+                                    ("IMPL_FRWD" variable (:constant-flag t) (reparse-symbol namespacesubparts) [2553 2562])
+                                    ("BOOST_TEST_MAX_PREDICATE_ARITY" variable (:constant-flag t) (reparse-symbol namespacesubparts) [4060 4090])
+                                    ("equal_impl" function
+                                       (:template 
+                                          ( ("Left" type (:type "class") nil nil)
+                                            ("Right" type (:type "class") nil nil))                                          
+                                        :type ("assertion_result" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("left" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Left" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4417 4434])
+                                            ("right" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Right" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4435 4455]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [4346 4485])
+                                    ("equal_impl" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("left" variable
+                                               (:pointer 1
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [4605 4616])
+                                            ("right" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [4617 4636]))                                          
+                                        :type ("assertion_result" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [4569 4726])
+                                    ("equal_impl" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("left" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [4763 4780])
+                                            ("right" variable
+                                               (:pointer 1
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [4781 4794]))                                          
+                                        :type ("assertion_result" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [4727 4884])
+                                    ("equal_impl" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("left" variable
+                                               (:pointer 1
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [4921 4932])
+                                            ("right" variable
+                                               (:pointer 1
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [4933 4946]))                                          
+                                        :type ("assertion_result" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [4885 5042])
+                                    ("equal_impl" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("left" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "wchar_t")
+                                                (reparse-symbol arg-sub-list) [5128 5148])
+                                            ("right" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "wchar_t")
+                                                (reparse-symbol arg-sub-list) [5149 5171]))                                          
+                                        :type ("BOOST_TEST_DECL" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [5100 5172])
+                                    ("equal_impl" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("left" variable
+                                               (:pointer 1
+                                                :type "wchar_t")
+                                                (reparse-symbol arg-sub-list) [5209 5223])
+                                            ("right" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "wchar_t")
+                                                (reparse-symbol arg-sub-list) [5224 5246]))                                          
+                                        :type ("assertion_result" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [5173 5342])
+                                    ("equal_impl" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("left" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "wchar_t")
+                                                (reparse-symbol arg-sub-list) [5379 5399])
+                                            ("right" variable
+                                               (:pointer 1
+                                                :type "wchar_t")
+                                                (reparse-symbol arg-sub-list) [5400 5416]))                                          
+                                        :type ("assertion_result" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [5343 5512])
+                                    ("equal_impl" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("left" variable
+                                               (:pointer 1
+                                                :type "wchar_t")
+                                                (reparse-symbol arg-sub-list) [5549 5563])
+                                            ("right" variable
+                                               (:pointer 1
+                                                :type "wchar_t")
+                                                (reparse-symbol arg-sub-list) [5564 5580]))                                          
+                                        :type ("assertion_result" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [5513 5682])
+                                    ("equal_impl_frwd" type
+                                       (:members 
+                                          ( ("call_impl" function
+                                               (:template 
+                                                  ( ("Left" type (:type "class") nil nil)
+                                                    ("Right" type (:type "class") nil nil))                                                  
+                                                :type ("assertion_result" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("left" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Left" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5886 5903])
+                                                    ("right" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Right" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5904 5923])
+                                                    ("" variable (:type ("mpl::false_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5924 5937]))                                                  
+                                                :typemodifiers ("inline")
+                                                :methodconst-flag t)
+                                                (reparse-symbol classsubparts) [5802 5997])
+                                            ("call_impl" function
+                                               (:template 
+                                                  ( ("Left" type (:type "class") nil nil)
+                                                    ("Right" type (:type "class") nil nil))                                                  
+                                                :type ("assertion_result" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("left" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Left" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6087 6104])
+                                                    ("right" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Right" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6105 6124])
+                                                    ("" variable (:type ("mpl::true_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6125 6137]))                                                  
+                                                :typemodifiers ("inline")
+                                                :methodconst-flag t)
+                                                (reparse-symbol classsubparts) [6003 6198])
+                                            ("()" function
+                                               (:template 
+                                                  ( ("Left" type (:type "class") nil nil)
+                                                    ("Right" type (:type "class") nil nil))                                                  
+                                                :type ("assertion_result" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("left" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Left" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6289 6306])
+                                                    ("right" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Right" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6307 6327]))                                                  
+                                                :typemodifiers ("inline")
+                                                :operator-flag t
+                                                :methodconst-flag t)
+                                                (reparse-symbol classsubparts) [6204 6464]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [5773 6467])
+                                    ("ne_impl" type
+                                       (:members 
+                                          ( ("()" function
+                                               (:template 
+                                                  ( ("Left" type (:type "class") nil nil)
+                                                    ("Right" type (:type "class") nil nil))                                                  
+                                                :type ("assertion_result" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("left" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Left" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6640 6657])
+                                                    ("right" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Right" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6658 6678]))                                                  
+                                                :operator-flag t)
+                                                (reparse-symbol classsubparts) [6572 6740]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [6551 6743])
+                                    ("lt_impl" type
+                                       (:members 
+                                          ( ("()" function
+                                               (:template 
+                                                  ( ("Left" type (:type "class") nil nil)
+                                                    ("Right" type (:type "class") nil nil))                                                  
+                                                :type ("assertion_result" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("left" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Left" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6916 6933])
+                                                    ("right" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Right" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6934 6954]))                                                  
+                                                :operator-flag t)
+                                                (reparse-symbol classsubparts) [6848 6995]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [6827 6998])
+                                    ("le_impl" type
+                                       (:members 
+                                          ( ("()" function
+                                               (:template 
+                                                  ( ("Left" type (:type "class") nil nil)
+                                                    ("Right" type (:type "class") nil nil))                                                  
+                                                :type ("assertion_result" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("left" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Left" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7171 7188])
+                                                    ("right" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Right" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7189 7209]))                                                  
+                                                :operator-flag t)
+                                                (reparse-symbol classsubparts) [7103 7251]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [7082 7254])
+                                    ("gt_impl" type
+                                       (:members 
+                                          ( ("()" function
+                                               (:template 
+                                                  ( ("Left" type (:type "class") nil nil)
+                                                    ("Right" type (:type "class") nil nil))                                                  
+                                                :type ("assertion_result" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("left" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Left" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7427 7444])
+                                                    ("right" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Right" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7445 7465]))                                                  
+                                                :operator-flag t)
+                                                (reparse-symbol classsubparts) [7359 7506]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [7338 7509])
+                                    ("ge_impl" type
+                                       (:members 
+                                          ( ("()" function
+                                               (:template 
+                                                  ( ("Left" type (:type "class") nil nil)
+                                                    ("Right" type (:type "class") nil nil))                                                  
+                                                :type ("assertion_result" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("left" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Left" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7682 7699])
+                                                    ("right" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Right" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7700 7720]))                                                  
+                                                :operator-flag t)
+                                                (reparse-symbol classsubparts) [7614 7762]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [7593 7765])
+                                    ("equal_coll_impl" type
+                                       (:members 
+                                          ( ("()" function
+                                               (:template 
+                                                  ( ("Left" type (:type "class") nil nil)
+                                                    ("Right" type (:type "class") nil nil))                                                  
+                                                :type ("assertion_result" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("left_begin" variable (:type ("Left" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7952 7968])
+                                                    ("left_end" variable (:type ("Left" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7969 7983])
+                                                    ("right_begin" variable (:type ("Right" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7984 8002])
+                                                    ("right_end" variable (:type ("Right" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8003 8020]))                                                  
+                                                :operator-flag t)
+                                                (reparse-symbol classsubparts) [7878 9230]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [7849 9233])
+                                    ("bitwise_equal_impl" type
+                                       (:members 
+                                          ( ("()" function
+                                               (:template 
+                                                  ( ("Left" type (:type "class") nil nil)
+                                                    ("Right" type (:type "class") nil nil))                                                  
+                                                :type ("assertion_result" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("left" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Left" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [9420 9437])
+                                                    ("right" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Right" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [9438 9458]))                                                  
+                                                :operator-flag t)
+                                                (reparse-symbol classsubparts) [9349 10315]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [9317 10318])
+                                    ("comp_supertype" type
+                                       (:template 
+                                          ( ("FPT1" type (:type "class") nil nil)
+                                            ("FPT2" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("numeric::conversion_traits::supertype" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [10787 10858])
+                                            ("BOOST_STATIC_ASSERT_MSG" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type ("is_integral::value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10889 10914]))                                                  
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [10863 10961]))                                          )
+                                        (reparse-symbol namespacesubparts) [10402 10964]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1383 10967])
+                            ("fpc" type
+                               (:kind alias
+                                :members 
+                                  ( ("math::fpc" type (:type "namespace") nil nil))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [10992 11018])
+                            ("check_is_close_t" variable (:type ("BOOST_TEST_DECL" type
+                                 (:prototype t
+                                  :type "struct")
+                                  nil nil)) (reparse-symbol namespacesubparts) [11264 11810])
+                            ("check_is_close" function
+                               (:template 
+                                  ( ("FPT1" type (:type "class") nil nil)
+                                    ("FPT2" type (:type "class") nil nil)
+                                    ("ToleranceType" type (:type "class") nil nil))                                  
+                                :type ("assertion_result" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("left" variable (:type ("FPT1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11997 12007])
+                                    ("right" variable (:type ("FPT2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12008 12019])
+                                    ("tolerance" variable (:type ("ToleranceType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12020 12045]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [11894 12106])
+                            ("check_is_small_t" variable (:type ("BOOST_TEST_DECL" type
+                                 (:prototype t
+                                  :type "struct")
+                                  nil nil)) (reparse-symbol namespacesubparts) [12434 12675])
+                            ("check_is_small" function
+                               (:template 
+                                  ( ("FPT" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("fpv" variable (:type ("FPT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12810 12818])
+                                    ("tolerance" variable (:type ("FPT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12819 12834]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [12759 12882]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1360 12967]))                  
+                :type "namespace")
+                nil [1342 12993])
+            ("boost/test/detail/enable_warnings.hpp" include (:system-flag t) nil [13014 13062]))          
+      :file "impl.hpp"
+      :pointmax 13114
+      :fsize 13113
+      :lastmodtime '(22452 53219 0 0)
+      :unmatched-syntax '((string 10915 . 10959) (punctuation 10888 . 10889) (symbol 5076 . 5092) (semantic-list 4116 . 4164) (symbol 4101 . 4116) (number "5" 4118 . 4148))
+      :lexical-table 
+        '(("PRED_PARAMS" (spp-arg-list ("z" "m" "dummy") 2134 . 2149) . 
+              ((symbol "BOOST_PP_COMMA_IF" 2150 . 2167) (semantic-list "( m )" 2167 . 2172) (symbol "BOOST_JOIN" 2173 . 2183) (semantic-list "( arg, m )" 2183 . 2193)))
+          ("BOOST_TEST_TOOLS_OLD_IMPL_HPP_012705GER")
+          ("BOOST_TEST_MAX_PREDICATE_ARITY" . ((number "5" 4091 . 4092)))
+          )
+))
+  :file "!usr!include!boost!test!tools!old!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,43 @@
+;; Object conversion/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "conversion/"
+  :tables
+  (list
+    (semanticdb-table "conversion_traits.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_NUMERIC_CONVERSION_CONVERSION_TRAITS_FLC_12NOV2002_HPP" variable (:constant-flag t) nil [468 528])
+            ("boost/numeric/conversion/detail/conversion_traits.hpp" include nil nil [530 594])
+            ("boost/detail/workaround.hpp" include nil nil [595 633])
+            ("boost/config.hpp" include nil nil [634 661])
+            ("boost" type
+               (:members 
+                  ( ("numeric" type
+                       (:members 
+                          ( ("conversion_traits" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil)
+                                    ("S" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :superclasses 
+                                  ( ("convdetail::get_conversion_traits::type" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [702 1164]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [681 1167]))                  
+                :type "namespace")
+                nil [663 1169]))          
+      :file "conversion_traits.hpp"
+      :pointmax 1307
+      :fsize 1306
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_NUMERIC_CONVERSION_CONVERSION_TRAITS_FLC_12NOV2002_HPP")
+          )
+))
+  :file "!usr!include!boost!numeric!conversion!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

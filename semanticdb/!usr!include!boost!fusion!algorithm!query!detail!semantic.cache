@@ -1,0 +1,371 @@
+;; Object detail/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "detail/"
+  :tables
+  (list
+    (semanticdb-table "find_if.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FUSION_FIND_IF_05052005_1107" variable (:constant-flag t) nil [491 519])
+            ("boost/fusion/support/config.hpp" include (:system-flag t) nil [521 563])
+            ("boost/mpl/apply.hpp" include (:system-flag t) nil [564 594])
+            ("boost/mpl/eval_if.hpp" include (:system-flag t) nil [595 627])
+            ("boost/mpl/identity.hpp" include (:system-flag t) nil [628 661])
+            ("boost/mpl/lambda.hpp" include (:system-flag t) nil [662 693])
+            ("boost/mpl/or.hpp" include (:system-flag t) nil [694 721])
+            ("boost/fusion/iterator/advance.hpp" include (:system-flag t) nil [722 766])
+            ("boost/fusion/iterator/distance.hpp" include (:system-flag t) nil [767 812])
+            ("boost/fusion/iterator/equal_to.hpp" include (:system-flag t) nil [813 858])
+            ("boost/fusion/iterator/next.hpp" include (:system-flag t) nil [859 900])
+            ("boost/fusion/sequence/intrinsic/begin.hpp" include (:system-flag t) nil [901 953])
+            ("boost/fusion/sequence/intrinsic/end.hpp" include (:system-flag t) nil [954 1004])
+            ("boost/fusion/support/category_of.hpp" include (:system-flag t) nil [1005 1052])
+            ("boost" type
+               (:members 
+                  ( ("fusion" type
+                       (:members 
+                          ( ("random_access_traversal_tag" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1096 1131])
+                            ("detail" type
+                               (:members 
+                                  ( ("apply_filter" type
+                                       (:template 
+                                          ( ("Iterator" type (:type "class") nil nil)
+                                            ("Pred" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("mpl::apply1::type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1237 1306])
+                                            ("BOOST_STATIC_CONSTANT" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1337 1341])
+                                                    ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1342 1355])
+                                                    ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1356 1362]))                                                  
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [1315 1363]))                                          )
+                                        (reparse-symbol namespacesubparts) [1155 1370])
+                                    ("main_find_if" type
+                                       (:template 
+                                          ( ("First" type (:type "class") nil nil)
+                                            ("Last" type (:type "class") nil nil)
+                                            ("Pred" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [1376 1456])
+                                    ("recursive_find_if" type
+                                       (:template 
+                                          ( ("First" type (:type "class") nil nil)
+                                            ("Last" type (:type "class") nil nil)
+                                            ("Pred" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1685 1703]))                                          )
+                                        (reparse-symbol namespacesubparts) [1462 1710])
+                                    ("main_find_if" type
+                                       (:template 
+                                          ( ("First" type (:type "class") nil nil)
+                                            ("Last" type (:type "class") nil nil)
+                                            ("Pred" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("filter" type
+                                               (:typedef ("mpl::or_" type
+                                                     (:template-specifier 
+                                                        ( ("result_of::equal_to" type (:template-specifier 
+                                                            ( ("First" type nil nil nil)
+                                                              ("Last" type nil nil nil))                                                            ) nil nil)
+                                                          ("apply_filter" type (:template-specifier 
+                                                            ( ("First" type nil nil nil)
+                                                              ("Pred" type nil nil nil))                                                            ) nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1810 1928])
+                                            ("type" type
+                                               (:typedef ("mpl::eval_if::type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1938 2127]))                                          )
+                                        (reparse-symbol namespacesubparts) [1716 2134])
+                                    ("choose_find_if" type
+                                       (:template 
+                                          ( ("First" type (:type "class") nil nil)
+                                            ("Last" type (:type "class") nil nil)
+                                            ("Pred" type (:type "class") nil nil)
+                                            ("bool" type nil nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [2140 2245])
+                                    ("choose_find_if" type
+                                       (:template 
+                                          ( ("First" type (:type "class") nil nil)
+                                            ("Last" type (:type "class") nil nil)
+                                            ("Pred" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :superclasses 
+                                          ( ("main_find_if" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :template-specifier 
+                                          ( ("First" type nil nil nil)
+                                            ("Last" type nil nil nil)
+                                            ("Pred" type nil nil nil)
+                                            ("false" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [2251 2407])
+                                    ("unroll_again" type
+                                       (:template 
+                                          ( ("Iter" type (:type "class") nil nil)
+                                            ("Pred" type (:type "class") nil nil)
+                                            ("int" type (:typevar "n") nil nil)
+                                            ("int" type (:typevar "unrolling") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [2413 2498])
+                                    ("apply_offset_filter" type
+                                       (:template 
+                                          ( ("Iter" type (:type "class") nil nil)
+                                            ("Pred" type (:type "class") nil nil)
+                                            ("int" type (:typevar "offset") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("Shifted" type
+                                               (:typedef ("result_of::advance_c::type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2601 2667])
+                                            ("type" type
+                                               (:typedef ("mpl::apply1::type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2676 2796])
+                                            ("BOOST_STATIC_CONSTANT" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [2827 2831])
+                                                    ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2832 2845])
+                                                    ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2846 2852]))                                                  
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [2805 2853]))                                          )
+                                        (reparse-symbol namespacesubparts) [2504 2860])
+                                    ("unrolled_find_if" type
+                                       (:template 
+                                          ( ("Iter" type (:type "class") nil nil)
+                                            ("Pred" type (:type "class") nil nil)
+                                            ("int" type (:typevar "n") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("mpl::eval_if::type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2954 3586]))                                          )
+                                        (reparse-symbol namespacesubparts) [2866 3593])
+                                    ("unrolled_find_if" type
+                                       (:template 
+                                          ( ("Iter" type (:type "class") nil nil)
+                                            ("Pred" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("mpl::eval_if::type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3695 4108]))                                          
+                                        :template-specifier 
+                                          ( ("Iter" type nil nil nil)
+                                            ("Pred" type nil nil nil)
+                                            ("3"))                                          )
+                                        (reparse-symbol namespacesubparts) [3599 4115])
+                                    ("unrolled_find_if" type
+                                       (:template 
+                                          ( ("Iter" type (:type "class") nil nil)
+                                            ("Pred" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("mpl::eval_if::type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4217 4499]))                                          
+                                        :template-specifier 
+                                          ( ("Iter" type nil nil nil)
+                                            ("Pred" type nil nil nil)
+                                            ("2"))                                          )
+                                        (reparse-symbol namespacesubparts) [4121 4506])
+                                    ("unrolled_find_if" type
+                                       (:template 
+                                          ( ("Iter" type (:type "class") nil nil)
+                                            ("Pred" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("mpl::eval_if::type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4608 4765]))                                          
+                                        :template-specifier 
+                                          ( ("Iter" type nil nil nil)
+                                            ("Pred" type nil nil nil)
+                                            ("1"))                                          )
+                                        (reparse-symbol namespacesubparts) [4512 4772])
+                                    ("unroll_again" type
+                                       (:template 
+                                          ( ("Iter" type (:type "class") nil nil)
+                                            ("Pred" type (:type "class") nil nil)
+                                            ("int" type (:typevar "n") nil nil)
+                                            ("int" type (:typevar "unrolling") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5022 5032]))                                          )
+                                        (reparse-symbol namespacesubparts) [4778 5039])
+                                    ("unrolled_find_if" type
+                                       (:template 
+                                          ( ("Iter" type (:type "class") nil nil)
+                                            ("Pred" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("Iter" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5141 5159]))                                          
+                                        :template-specifier 
+                                          ( ("Iter" type nil nil nil)
+                                            ("Pred" type nil nil nil)
+                                            ("0"))                                          )
+                                        (reparse-symbol namespacesubparts) [5045 5166])
+                                    ("choose_find_if" type
+                                       (:template 
+                                          ( ("First" type (:type "class") nil nil)
+                                            ("Last" type (:type "class") nil nil)
+                                            ("Pred" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("N" type
+                                               (:typedef ("result_of::distance::type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5292 5350])
+                                            ("type" type
+                                               (:typedef ("unrolled_find_if::type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5359 5427]))                                          
+                                        :template-specifier 
+                                          ( ("First" type nil nil nil)
+                                            ("Last" type nil nil nil)
+                                            ("Pred" type nil nil nil)
+                                            ("true" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [5172 5434])
+                                    ("static_find_if" type
+                                       (:template 
+                                          ( ("First" type (:type "class") nil nil)
+                                            ("Last" type (:type "class") nil nil)
+                                            ("Pred" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5794 5812])
+                                            ("recursive_call" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("iter" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Iterator" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5943 5964])
+                                                    ("" variable (:type ("mpl::true_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5965 5976]))                                                  
+                                                :type ("type" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [5908 6021])
+                                            ("recursive_call" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("iter" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Iterator" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6152 6173])
+                                                    ("" variable (:type ("mpl::false_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6174 6186]))                                                  
+                                                :type ("type" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [6117 6261])
+                                            ("recursive_call" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("iter" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Iterator" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6392 6413]))                                                  
+                                                :type ("type" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [6357 6546])
+                                            ("choose_call" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("iter" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Iterator" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6688 6709])
+                                                    ("" variable (:type ("Tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6710 6714]))                                                  
+                                                :type ("type" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [6656 6775])
+                                            ("choose_call" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("iter" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Iterator" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6903 6924])
+                                                    ("" variable (:type ("random_access_traversal_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6925 6953]))                                                  
+                                                :type ("type" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [6871 7092])
+                                            ("iter_call" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("iter" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Iterator" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7218 7239]))                                                  
+                                                :type ("type" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [7188 7345])
+                                            ("call" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("seq" variable
+                                                       (:reference 1
+                                                        :type ("Sequence" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7466 7480]))                                                  
+                                                :type ("type" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [7441 7550]))                                          )
+                                        (reparse-symbol namespacesubparts) [5440 7557])
+                                    ("result_of_find_if" type
+                                       (:template 
+                                          ( ("Sequence" type (:type "class") nil nil)
+                                            ("Pred" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("filter" variable (:type "int") (reparse-symbol classsubparts) [7843 7850])
+                                            ("type" type
+                                               (:typedef ("filter::type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [7860 7895]))                                          )
+                                        (reparse-symbol namespacesubparts) [7563 7902]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1132 7904]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1072 7905]))                  
+                :type "namespace")
+                nil [1054 7906]))          
+      :file "find_if.hpp"
+      :pointmax 7915
+      :fsize 7914
+      :lastmodtime '(22324 21865 0 0)
+      :unmatched-syntax '((punctuation 7833 . 7834) (symbol 7816 . 7820) (punctuation 7814 . 7815) (symbol 7795 . 7799) (punctuation 7794 . 7795) (punctuation 7793 . 7794) (punctuation 7792 . 7793) (symbol 7784 . 7792) (punctuation 7783 . 7784) (symbol 7780 . 7783) (punctuation 7779 . 7780) (punctuation 7778 . 7779) (symbol 7769 . 7778) (TYPENAME 7760 . 7768) (punctuation 7758 . 7759) (symbol 7739 . 7743) (punctuation 7738 . 7739) (punctuation 7737 . 7738) (punctuation 7736 . 7737) (symbol 7728 . 7736) (punctuation 7727 . 7728) (symbol 7722 . 7727) (punctuation 7721 . 7722) (punctuation 7720 . 7721) (symbol 7711 . 7720) (TYPENAME 7702 . 7710) (punctuation 7684 . 7685) (symbol 7670 . 7684) (TYPEDEF 7650 . 7657) (symbol 7408 . 7432) (symbol 7392 . 7407) (punctuation 7382 . 7383) (symbol 7374 . 7382) (TYPENAME 7365 . 7373) (punctuation 7364 . 7365) (TEMPLATE 7355 . 7363) (symbol 7155 . 7179) (symbol 7139 . 7154) (punctuation 7129 . 7130) (symbol 7121 . 7129) (TYPENAME 7112 . 7120) (punctuation 7111 . 7112) (TEMPLATE 7102 . 7110) (symbol 6838 . 6862) (symbol 6822 . 6837) (punctuation 6812 . 6813) (symbol 6804 . 6812) (TYPENAME 6795 . 6803) (punctuation 6794 . 6795) (TEMPLATE 6785 . 6793) (symbol 6623 . 6647) (symbol 6607 . 6622) (punctuation 6597 . 6598) (symbol 6594 . 6597) (TYPENAME 6585 . 6593) (punctuation 6583 . 6584) (symbol 6575 . 6583) (TYPENAME 6566 . 6574) (punctuation 6565 . 6566) (TEMPLATE 6556 . 6564) (symbol 6324 . 6348) (symbol 6308 . 6323) (punctuation 6298 . 6299) (symbol 6290 . 6298) (TYPENAME 6281 . 6289) (punctuation 6280 . 6281) (TEMPLATE 6271 . 6279) (symbol 6084 . 6108) (symbol 6068 . 6083) (punctuation 6058 . 6059) (symbol 6050 . 6058) (TYPENAME 6041 . 6049) (punctuation 6040 . 6041) (TEMPLATE 6031 . 6039) (symbol 5875 . 5899) (symbol 5859 . 5874) (punctuation 5849 . 5850) (symbol 5841 . 5849) (TYPENAME 5832 . 5840) (punctuation 5831 . 5832) (TEMPLATE 5822 . 5830) (punctuation 5793 . 5794) (punctuation 5792 . 5793) (punctuation 5791 . 5792) (symbol 5773 . 5778) (punctuation 5772 . 5773) (punctuation 5771 . 5772) (punctuation 5770 . 5771) (symbol 5766 . 5770) (punctuation 5765 . 5766) (punctuation 5764 . 5765) (punctuation 5763 . 5764) (symbol 5758 . 5763) (punctuation 5757 . 5758) (symbol 5746 . 5757) (punctuation 5745 . 5746) (punctuation 5744 . 5745) (symbol 5738 . 5744) (TYPENAME 5729 . 5737) (punctuation 5727 . 5728) (symbol 5700 . 5727) (punctuation 5699 . 5700) (symbol 5689 . 5699) (punctuation 5687 . 5688) (symbol 5668 . 5672) (punctuation 5667 . 5668) (punctuation 5666 . 5667) (punctuation 5665 . 5666) (symbol 5661 . 5665) (punctuation 5660 . 5661) (symbol 5654 . 5660) (punctuation 5653 . 5654) (punctuation 5652 . 5653) (symbol 5649 . 5652) (TYPENAME 5640 . 5648) (punctuation 5638 . 5639) (symbol 5619 . 5623) (punctuation 5617 . 5618) (symbol 5597 . 5602) (punctuation 5579 . 5580) (symbol 5565 . 5579) (TYPENAME 5544 . 5552) (TYPEDEF 5536 . 5543) (punctuation 5021 . 5022) (punctuation 5020 . 5021) (punctuation 5019 . 5020) (symbol 5010 . 5019) (punctuation 5009 . 5010) (symbol 5008 . 5009) (punctuation 4994 . 4995) (symbol 4990 . 4994) (punctuation 4976 . 4977) (symbol 4972 . 4976) (punctuation 4971 . 4972) (punctuation 4970 . 4971) (punctuation 4969 . 4970) (symbol 4960 . 4969) (punctuation 4958 . 4959) (symbol 4954 . 4958) (punctuation 4953 . 4954) (symbol 4944 . 4953) (punctuation 4943 . 4944) (punctuation 4942 . 4943) (symbol 4933 . 4942) (TYPENAME 4924 . 4932) (punctuation 4910 . 4911) (symbol 4894 . 4910) (TYPENAME 4885 . 4893) (TYPEDEF 4877 . 4884) (punctuation 2845 . 2846) (punctuation 2844 . 2845) (punctuation 1684 . 1685) (punctuation 1683 . 1684) (punctuation 1682 . 1683) (symbol 1665 . 1669) (punctuation 1663 . 1664) (symbol 1659 . 1663) (punctuation 1657 . 1658) (symbol 1653 . 1657) (punctuation 1652 . 1653) (punctuation 1651 . 1652) (punctuation 1650 . 1651) (symbol 1645 . 1650) (punctuation 1644 . 1645) (symbol 1640 . 1644) (punctuation 1639 . 1640) (punctuation 1638 . 1639) (symbol 1629 . 1638) (TYPENAME 1620 . 1628) (punctuation 1602 . 1603) (symbol 1590 . 1602) (TYPENAME 1569 . 1577) (TYPEDEF 1561 . 1568) (punctuation 1355 . 1356) (punctuation 1354 . 1355))
+      :lexical-table 
+        '(("FUSION_FIND_IF_05052005_1107")
+          )
+)
+    (semanticdb-table "segmented_find.hpp"
+      :file "segmented_find.hpp"
+      :fsize 3133
+      :lastmodtime '(22324 21865 0 0)))
+  :file "!usr!include!boost!fusion!algorithm!query!detail!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

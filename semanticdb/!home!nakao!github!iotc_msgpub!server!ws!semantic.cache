@@ -1,0 +1,671 @@
+;; Object ws/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ws/"
+  :tables
+  (list
+    (semanticdb-table "user_server.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("msgpub/command.hpp" include (:system-flag t) nil [1 30])
+            ("msgpub/log.hpp" include (:system-flag t) nil [31 56])
+            ("msgpub/user_server.hpp" include (:system-flag t) nil [57 90])
+            ("msgpub/uuid.hpp" include (:system-flag t) nil [91 117])
+            ("boost/network/protocol/http/server.hpp" include (:system-flag t) nil [119 168])
+            ("boost/bimap.hpp" include (:system-flag t) nil [169 195])
+            ("boost/xpressive/xpressive.hpp" include (:system-flag t) nil [196 236])
+            ("boost/lexical_cast.hpp" include (:system-flag t) nil [237 270])
+            ("boost/uuid/uuid_io.hpp" include (:system-flag t) nil [271 304])
+            ("msgpub" type
+               (:members 
+                  ( ("res_cb" type
+                       (:members 
+                          ( ("()" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("msgpub::user_server::connection" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [362 395])
+                                    ("s" variable (:type ("msgpub::status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [396 413]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [346 464]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [326 467])
+                    ("bnh" type
+                       (:kind alias
+                        :members 
+                          ( ("boost::network::http" type (:type "namespace") nil nil))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [469 506])
+                    ("hc_handler" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [507 525])
+                    ("hc_server" type
+                       (:typedef ("bnh::server" type
+                             (:template-specifier 
+                                ( ("hc_handler" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [526 568])
+                    ("hc_handler" type
+                       (:members 
+                          ( ("()" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("request" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("hc_server::request" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [619 653])
+                                    ("response" variable
+                                       (:reference 1
+                                        :type ("hc_server::response" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [662 692]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [594 798])
+                            ("log" function
+                               (:arguments 
+                                  ( ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [812 816]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [803 819]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [570 822]))                  
+                :type "namespace")
+                nil [306 825])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [856 865])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [866 879]))                  
+                :type "int")
+                nil [847 9906]))          
+      :file "user_server.cpp"
+      :pointmax 9907
+      :fsize 9906
+      :lastmodtime '(22397 48180 823333 336000)
+      :unmatched-syntax nil)
+    (semanticdb-table "builder.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("boost/process.hpp" include (:system-flag t) nil [1 29])
+            ("boost/process/create_pipe.hpp" include (:system-flag t) nil [30 70])
+            ("boost/process/mitigate.hpp" include (:system-flag t) nil [71 108])
+            ("boost/lexical_cast.hpp" include (:system-flag t) nil [109 142])
+            ("boost/asio.hpp" include (:system-flag t) nil [143 168])
+            ("boost/bind.hpp" include (:system-flag t) nil [169 194])
+            ("boost/iostreams/code_converter.hpp" include (:system-flag t) nil [196 241])
+            ("msgpub/master.hpp" include (:system-flag t) nil [243 271])
+            ("msgpub/log.hpp" include (:system-flag t) nil [272 297])
+            ("ws.hpp" include nil nil [299 316])
+            ("bp" type
+               (:kind alias
+                :members 
+                  ( ("boost::process" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [318 348])
+            ("bpi" type
+               (:kind alias
+                :members 
+                  ( ("bp::initializers" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [349 382])
+            ("bio" type
+               (:kind alias
+                :members 
+                  ( ("boost::iostreams" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [383 416])
+            ("nginx_conf_path" variable
+               (:default-value "\"/home/kondo/work/msgpub/server/nginx/nginx.conf\""
+                :type ("std::string" type (:type "class") nil nil))
+                nil [418 504])
+            ("nginx_base_path" variable
+               (:default-value "\"/home/kondo/local\""
+                :type ("std::string" type (:type "class") nil nil))
+                nil [505 561])
+            ("nginx_launch" function (:type "void") nil [564 774])
+            ("nginx_stop" function (:type "void") nil [776 1006])
+            ("nginx_reload" function (:type "void") nil [1008 1242])
+            ("ws_server_launch" function
+               (:arguments 
+                  ( ("port" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1266 1284])
+                    ("crtfile" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1285 1312])
+                    ("keyfile" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1313 1340]))                  
+                :type "void")
+                nil [1244 1567])
+            ("res_cb" type
+               (:members 
+                  ( ("()" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("msgpub::master" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1605 1621])
+                            ("s" variable (:type ("msgpub::status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1622 1639]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1589 3067]))                  
+                :type "struct")
+                nil [1569 3070])
+            ("MSGPACK_ADD_ENUM" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("cmd" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3310 3314]))                  
+                :type "int")
+                nil [3293 3315])
+            ("master_con" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [3336 3343])
+                    ("master_con" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("ios" variable
+                               (:reference 1
+                                :type ("boost::asio::io_service" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3368 3397])
+                            ("ws" variable
+                               (:reference 1
+                                :type ("msgpub::websocket" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3406 3428])
+                            ("uri" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3437 3460])
+                            ("masterkey" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3469 3498])
+                            ("port" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3507 3525])
+                            ("crtfile" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3534 3561])
+                            ("keyfile" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3570 3597])
+                            ("cacert_file" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3606 3637])
+                            ("" variable (:type ("std::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3646 3660])
+                            ("" variable (:type "void") (reparse-symbol arg-sub-list) [3660 3677])
+                            ("" variable (:type ("on_connect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3686 3697])
+                            ("" variable (:type ("std::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3706 3720])
+                            ("" variable (:type "void") (reparse-symbol arg-sub-list) [3720 3737])
+                            ("" variable (:type ("on_close" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3746 3755])
+                            ("" variable (:type ("std::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3764 3778])
+                            ("" variable (:type "void") (reparse-symbol arg-sub-list) [3778 3795])
+                            ("" variable (:type ("on_error" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3804 3813])
+                            ("" variable (:type ("std::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3822 3836])
+                            ("" variable (:type "void") (reparse-symbol arg-sub-list) [3836 3889])
+                            ("" variable (:type ("on_info" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3891 3899])
+                            ("" variable (:type ("std::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3908 3922])
+                            ("" variable (:type "void") (reparse-symbol arg-sub-list) [3922 3972])
+                            ("" variable (:type ("on_connection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3974 3988])
+                            ("" variable (:type ("std::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3997 4011])
+                            ("" variable (:type "void") (reparse-symbol arg-sub-list) [4011 4061])
+                            ("" variable (:type ("on_route_add" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4063 4076])
+                            ("" variable (:type ("std::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4085 4099])
+                            ("" variable (:type "void") (reparse-symbol arg-sub-list) [4099 4143])
+                            ("" variable (:type ("on_route_remove" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4145 4161]))                          
+                        :type ("master_con" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3348 5191])
+                    ("uri" function
+                       (:methodconst-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5287 5334])
+                    ("master" function
+                       (:methodconst-flag t
+                        :type ("msgpub::master" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5339 5392])
+                    ("master" function (:type ("msgpub::master" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5397 5438])
+                    ("private" label nil (reparse-symbol classsubparts) [5439 5447])
+                    ("connect_to_server" function (:type "void") (reparse-symbol classsubparts) [5452 6761])
+                    ("timer_handler" function
+                       (:arguments 
+                          ( ("error" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("boost::system::error_code" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6785 6824]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6766 6928])
+                    ("private" label nil (reparse-symbol classsubparts) [6930 6938])
+                    ("ws_" variable (:type ("msgpub::websocket" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6943 6966])
+                    ("uri_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6971 6988])
+                    ("masterkey_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6993 7016])
+                    ("cacert_file_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7021 7046])
+                    ("on_connect_" variable (:type "int") (reparse-symbol classsubparts) [7084 7096])
+                    ("on_close_" variable (:type "int") (reparse-symbol classsubparts) [7134 7144])
+                    ("on_error_" variable (:type "int") (reparse-symbol classsubparts) [7182 7192])
+                    ("on_info_" variable (:type "int") (reparse-symbol classsubparts) [7266 7275])
+                    ("on_connection_" variable (:type "int") (reparse-symbol classsubparts) [7346 7361])
+                    ("on_route_add_" variable (:type "int") (reparse-symbol classsubparts) [7432 7446])
+                    ("on_route_remove_" variable (:type "int") (reparse-symbol classsubparts) [7511 7528])
+                    ("mp_" variable (:type ("std::unique_ptr" type
+                         (:template-specifier 
+                            ( ("msgpub::master" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [7533 7569])
+                    ("tim_" variable (:type ("std::shared_ptr" type
+                         (:template-specifier 
+                            ( ("boost::asio::deadline_timer" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [7574 7624]))                  
+                :type "class")
+                nil [3317 7627])
+            ("network_builder" type
+               (:members 
+                  ( ("node" type
+                       (:members 
+                          ( ("node" function
+                               (:constructor-flag t
+                                :type ("node" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [7941 7973])
+                            ("clients" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7982 8002])
+                            ("servers" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8011 8031])
+                            ("connections" variable (:type ("std::map" type
+                                 (:template-specifier 
+                                    ( ("std::string" type nil nil nil)
+                                      ("bool" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [8040 8080])
+                            ("MSGPACK_DEFINE" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("clients" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8104 8112])
+                                    ("" variable (:type ("servers" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8113 8121])
+                                    ("" variable (:type ("connections" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8122 8134]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [8089 8135]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [7919 8142])
+                    ("server_launch_info" type
+                       (:members 
+                          ( ("uri" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8184 8200])
+                            ("port" variable (:type "int") (reparse-symbol classsubparts) [8209 8218])
+                            ("crt_file" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8227 8248])
+                            ("key_file" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8257 8278])
+                            ("cacert_file" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8287 8311]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [8148 8318])
+                    ("tree" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [8341 8348])
+                            ("tree" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("cc" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("can_connect" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8585 8607])
+                                    ("as" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("add_server" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8608 8629])
+                                    ("nu" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("next_uri" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8630 8649]))                                  
+                                :type ("tree" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8580 8906])
+                            ("private" label nil (reparse-symbol classsubparts) [8911 8919])
+                            ("elem" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [8949 8956])
+                                    ("elem" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("mc" variable
+                                               (:reference 1
+                                                :type ("master_con" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8974 8989]))                                          
+                                        :type ("elem" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8969 9020])
+                                    ("set_parent" function
+                                       (:arguments 
+                                          ( ("e" variable
+                                               (:reference 1
+                                                :type ("elem" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9049 9057]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [9033 9075])
+                                    ("set_parent" function (:type "void") (reparse-symbol classsubparts) [9088 9128])
+                                    ("parent" function
+                                       (:pointer 1
+                                        :type ("elem" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [9141 9175])
+                                    ("add_child" function
+                                       (:arguments 
+                                          ( ("e" variable
+                                               (:reference 1
+                                                :type ("elem" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9203 9211]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [9188 9303])
+                                    ("child" function
+                                       (:arguments 
+                                          ( ("uri" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9344 9367]))                                          
+                                        :type ("boost::optional" type
+                                             (:template-specifier 
+                                                ( ("elem" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [9316 9529])
+                                    ("self" function
+                                       (:methodconst-flag t
+                                        :type ("master_con" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [9542 9590])
+                                    ("self" function (:type ("master_con" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9603 9639])
+                                    ("depth" function
+                                       (:methodconst-flag t
+                                        :type ("std::size_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [9652 9924])
+                                    ("private" label nil (reparse-symbol classsubparts) [9933 9941])
+                                    ("parent_" variable
+                                       (:pointer 1
+                                        :type ("elem" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [9954 9968])
+                                    ("self_" variable (:type ("std::reference_wrapper" type
+                                         (:template-specifier 
+                                            ( ("master_con" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [9981 10022])
+                                    ("children_" variable (:type ("std::map" type
+                                         (:template-specifier 
+                                            ( ("std::string" type nil nil nil)
+                                              ("elem" type (:pointer 1) nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [10035 10074]))                                  
+                                :type "class")
+                                (reparse-symbol classsubparts) [8928 10085])
+                            ("public" label nil (reparse-symbol classsubparts) [10090 10097])
+                            ("add_leaf_elem" function (:type "void") (reparse-symbol classsubparts) [10106 10274])
+                            ("private" label nil (reparse-symbol classsubparts) [10280 10288])
+                            ("add_leaf_elem_internal" function (:type "void") (reparse-symbol classsubparts) [10297 13166])
+                            ("struct_tree" function
+                               (:arguments 
+                                  ( ("mc" variable
+                                       (:reference 1
+                                        :type ("master_con" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13193 13208]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [13176 15622])
+                            ("current_" variable
+                               (:pointer 1
+                                :type ("elem" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [15632 15647])
+                            ("connect_source_" variable
+                               (:pointer 1
+                                :type ("elem" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [15656 15678])
+                            ("connect_target_" variable
+                               (:pointer 1
+                                :type ("elem" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [15687 15709])
+                            ("can_connect_" variable (:type ("can_connect" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15718 15743])
+                            ("add_server_" variable (:type ("add_server" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15752 15775])
+                            ("next_uri_" variable (:type ("next_uri" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15784 15803])
+                            ("creating_" variable (:type "int") (reparse-symbol classsubparts) [15812 15826])
+                            ("wait_count_" variable (:type "int") (reparse-symbol classsubparts) [15835 15851])
+                            ("uri2elem_" variable (:type ("std::map" type
+                                 (:template-specifier 
+                                    ( ("std::string" type nil nil nil)
+                                      ("elem" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [15860 15898]))                          
+                        :type "class")
+                        (reparse-symbol classsubparts) [8324 15905])
+                    ("public" label nil (reparse-symbol classsubparts) [15906 15913])
+                    ("topology" type (:type "class") (reparse-symbol classsubparts) [15923 15993])
+                    ("network_builder" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("topo" variable (:type ("topology" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16023 16037])
+                            ("ios" variable
+                               (:reference 1
+                                :type ("boost::asio::io_service" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16046 16075])
+                            ("port" variable (:type "int") (reparse-symbol arg-sub-list) [16084 16093])
+                            ("masterkey" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16102 16131])
+                            ("server_crt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16140 16170])
+                            ("server_key" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16179 16209])
+                            ("cacert_file" variable (:type ("boost::optional" type
+                                 (:template-specifier 
+                                    ( ("std::string" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [16218 16259]))                          
+                        :type ("network_builder" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15998 20767])
+                    ("network_builder" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("topo" variable (:type ("topology" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20798 20812])
+                            ("ios" variable
+                               (:reference 1
+                                :type ("boost::asio::io_service" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20821 20850])
+                            ("port" variable (:type "int") (reparse-symbol arg-sub-list) [20859 20868])
+                            ("masterkey" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20877 20906])
+                            ("server_crt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20915 20945])
+                            ("server_key" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20954 20984])
+                            ("cacert_file" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20993 21024]))                          
+                        :type ("network_builder" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [20773 21139])
+                    ("network_builder" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("topo" variable (:type ("topology" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21170 21184])
+                            ("ios" variable
+                               (:reference 1
+                                :type ("boost::asio::io_service" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21193 21222])
+                            ("port" variable (:type "int") (reparse-symbol arg-sub-list) [21231 21240])
+                            ("masterkey" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21249 21278])
+                            ("server_crt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21287 21317])
+                            ("server_key" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21326 21356]))                          
+                        :type ("network_builder" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [21145 21449])
+                    ("add_server" function (:type "void") (reparse-symbol classsubparts) [21575 22026])
+                    ("add_server" function
+                       (:arguments 
+                          ( ("uri" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22057 22080])
+                            ("port" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [22089 22107])
+                            ("crt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22116 22139])
+                            ("key" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22148 22171]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [22032 22627])
+                    ("private" label nil (reparse-symbol classsubparts) [22628 22636])
+                    ("add_server_internal" function
+                       (:arguments 
+                          ( ("" variable (:type ("std::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22675 22689])
+                            ("" variable (:type "void") (reparse-symbol arg-sub-list) [22689 22706])
+                            ("" variable (:type ("on_connect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22715 22732])
+                            ("" variable (:type ("function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22733 22742])
+                            ("" variable (:type "void") (reparse-symbol arg-sub-list) [22742 22759]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [22641 22940])
+                    ("add_server_internal" function
+                       (:arguments 
+                          ( ("uri" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22980 23003])
+                            ("port" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [23012 23030])
+                            ("crt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23039 23062])
+                            ("key" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23071 23094])
+                            ("" variable (:type ("std::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23103 23117])
+                            ("" variable (:type "void") (reparse-symbol arg-sub-list) [23117 23134])
+                            ("" variable (:type ("on_connect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23143 23160])
+                            ("" variable (:type ("function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23161 23170])
+                            ("" variable (:type "void") (reparse-symbol arg-sub-list) [23170 23187]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [22946 30186])
+                    ("mesh_connect" function
+                       (:methodconst-flag t
+                        :arguments 
+                          ( ("mc" variable
+                               (:reference 1
+                                :type ("master_con" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [30210 30225]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [30192 30387])
+                    ("server_info" function (:type ("server_launch_info" type (:type "class") nil nil)) (reparse-symbol classsubparts) [30393 30748])
+                    ("server_info_next" function (:type "void") (reparse-symbol classsubparts) [30754 30808])
+                    ("can_connect" function
+                       (:methodconst-flag t
+                        :arguments 
+                          ( ("uri" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [30831 30854])
+                            ("root" variable (:type "bool") (reparse-symbol arg-sub-list) [30855 30865]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [30814 31074])
+                    ("private" label nil (reparse-symbol classsubparts) [31076 31084])
+                    ("topo_" variable (:type ("topology" type (:type "class") nil nil)) (reparse-symbol classsubparts) [31089 31104])
+                    ("ios_" variable (:type ("boost::asio::io_service" type (:type "class") nil nil)) (reparse-symbol classsubparts) [31109 31139])
+                    ("ws_" variable (:type ("msgpub::websocket" type (:type "class") nil nil)) (reparse-symbol classsubparts) [31144 31166])
+                    ("masterkey_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [31171 31194])
+                    ("cacert_file_" variable (:type ("boost::optional" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [31199 31241])
+                    ("initializing_" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil)
+                              ("std::shared_ptr" type (:template-specifier 
+                                ( ("master_con" type nil nil nil))                                ) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [31246 31311])
+                    ("connected_" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil)
+                              ("std::shared_ptr" type (:template-specifier 
+                                ( ("master_con" type nil nil nil))                                ) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [31316 31378])
+                    ("server_" variable (:type ("server" type (:type "class") nil nil)) (reparse-symbol classsubparts) [31383 31398])
+                    ("connections_" variable (:type ("connections" type (:type "class") nil nil)) (reparse-symbol classsubparts) [31403 31428])
+                    ("nodes_" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil)
+                              ("node" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [31433 31468])
+                    ("start_port_" variable (:type "int") (reparse-symbol classsubparts) [31473 31489])
+                    ("tree_" variable (:type ("tree" type (:type "class") nil nil)) (reparse-symbol classsubparts) [31494 31505]))                  
+                :type "class")
+                nil [7629 31508])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [31519 31528])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [31529 31541]))                  
+                :type "int")
+                nil [31510 32621]))          
+      :file "builder.cpp"
+      :pointmax 32622
+      :fsize 32621
+      :lastmodtime '(22397 48180 823333 336000)
+      :unmatched-syntax '((semantic-list 23188 . 23190) (punctuation 23187 . 23188) (semantic-list 23174 . 23187) (punctuation 23169 . 23170) (punctuation 23160 . 23161) (punctuation 23159 . 23160) (punctuation 23141 . 23142) (CONST 23136 . 23141) (punctuation 23134 . 23135) (semantic-list 23121 . 23134) (punctuation 23116 . 23117) (semantic-list 22760 . 22762) (punctuation 22759 . 22760) (semantic-list 22746 . 22759) (punctuation 22741 . 22742) (punctuation 22732 . 22733) (punctuation 22731 . 22732) (punctuation 22713 . 22714) (CONST 22708 . 22713) (punctuation 22706 . 22707) (semantic-list 22693 . 22706) (punctuation 22688 . 22689) (punctuation 21568 . 21569) (DELETE 21562 . 21568) (punctuation 21560 . 21561) (semantic-list 21535 . 21559) (punctuation 21534 . 21535) (OPERATOR 21526 . 21534) (punctuation 21524 . 21525) (symbol 21509 . 21524) (punctuation 21503 . 21504) (DELETE 21497 . 21503) (punctuation 21495 . 21496) (semantic-list 21470 . 21494) (symbol 21455 . 21470) (symbol 15976 . 15986) (punctuation 15966 . 15967) (symbol 15962 . 15966) (punctuation 15952 . 15953) (symbol 15948 . 15952) (symbol 15976 . 15986) (punctuation 15966 . 15967) (symbol 15962 . 15966) (punctuation 15952 . 15953) (symbol 15948 . 15952) (ENUM 15918 . 15922) (punctuation 8570 . 8571) (punctuation 8569 . 8570) (semantic-list 8567 . 8569) (symbol 8561 . 8567) (punctuation 8560 . 8561) (punctuation 8559 . 8560) (symbol 8556 . 8559) (punctuation 8555 . 8556) (symbol 8547 . 8555) (punctuation 8546 . 8547) (punctuation 8545 . 8546) (symbol 8542 . 8545) (punctuation 8540 . 8541) (symbol 8528 . 8536) (USING 8522 . 8527) (punctuation 8512 . 8513) (punctuation 8511 . 8512) (semantic-list 8470 . 8511) (VOID 8466 . 8470) (punctuation 8465 . 8466) (symbol 8457 . 8465) (punctuation 8456 . 8457) (punctuation 8455 . 8456) (symbol 8452 . 8455) (punctuation 8450 . 8451) (symbol 8438 . 8448) (USING 8432 . 8437) (punctuation 8422 . 8423) (punctuation 8421 . 8422) (semantic-list 8395 . 8421) (BOOL 8391 . 8395) (punctuation 8390 . 8391) (symbol 8382 . 8390) (punctuation 8381 . 8382) (punctuation 8380 . 8381) (symbol 8377 . 8380) (punctuation 8375 . 8376) (symbol 8363 . 8374) (USING 8357 . 8362) (punctuation 8570 . 8571) (punctuation 8569 . 8570) (semantic-list 8567 . 8569) (symbol 8561 . 8567) (punctuation 8560 . 8561) (punctuation 8559 . 8560) (symbol 8556 . 8559) (punctuation 8555 . 8556) (symbol 8547 . 8555) (punctuation 8546 . 8547) (punctuation 8545 . 8546) (symbol 8542 . 8545) (punctuation 8540 . 8541) (symbol 8528 . 8536) (USING 8522 . 8527) (punctuation 8512 . 8513) (punctuation 8511 . 8512) (semantic-list 8470 . 8511) (VOID 8466 . 8470) (punctuation 8465 . 8466) (symbol 8457 . 8465) (punctuation 8456 . 8457) (punctuation 8455 . 8456) (symbol 8452 . 8455) (punctuation 8450 . 8451) (symbol 8438 . 8448) (USING 8432 . 8437) (punctuation 8422 . 8423) (punctuation 8421 . 8422) (semantic-list 8395 . 8421) (BOOL 8391 . 8395) (punctuation 8390 . 8391) (symbol 8382 . 8390) (punctuation 8381 . 8382) (punctuation 8380 . 8381) (symbol 8377 . 8380) (punctuation 8375 . 8376) (symbol 8363 . 8374) (USING 8357 . 8362) (punctuation 7912 . 7913) (punctuation 7911 . 7912) (punctuation 7910 . 7911) (symbol 7896 . 7910) (punctuation 7895 . 7896) (punctuation 7894 . 7895) (symbol 7883 . 7894) (punctuation 7882 . 7883) (symbol 7872 . 7882) (punctuation 7871 . 7872) (punctuation 7870 . 7871) (symbol 7867 . 7870) (punctuation 7865 . 7866) (symbol 7851 . 7865) (punctuation 7850 . 7851) (punctuation 7849 . 7850) (symbol 7838 . 7849) (punctuation 7837 . 7838) (symbol 7834 . 7837) (punctuation 7833 . 7834) (punctuation 7832 . 7833) (symbol 7829 . 7832) (punctuation 7827 . 7828) (symbol 7815 . 7826) (USING 7809 . 7814) (punctuation 7803 . 7804) (punctuation 7802 . 7803) (symbol 7795 . 7802) (punctuation 7794 . 7795) (punctuation 7793 . 7794) (symbol 7790 . 7793) (punctuation 7789 . 7790) (punctuation 7788 . 7789) (symbol 7784 . 7788) (punctuation 7783 . 7784) (punctuation 7782 . 7783) (symbol 7777 . 7782) (punctuation 7776 . 7777) (symbol 7766 . 7776) (punctuation 7765 . 7766) (punctuation 7764 . 7765) (symbol 7761 . 7764) (punctuation 7760 . 7761) (punctuation 7759 . 7760) (symbol 7748 . 7759) (punctuation 7746 . 7747) (symbol 7734 . 7745) (USING 7728 . 7733) (punctuation 7722 . 7723) (punctuation 7721 . 7722) (symbol 7713 . 7721) (punctuation 7712 . 7713) (punctuation 7711 . 7712) (symbol 7705 . 7711) (punctuation 7704 . 7705) (punctuation 7703 . 7704) (symbol 7692 . 7703) (punctuation 7691 . 7692) (symbol 7685 . 7691) (punctuation 7684 . 7685) (punctuation 7683 . 7684) (symbol 7672 . 7683) (punctuation 7670 . 7671) (symbol 7663 . 7669) (USING 7657 . 7662) (punctuation 7509 . 7510) (semantic-list 7469 . 7509) (VOID 7465 . 7469) (punctuation 7464 . 7465) (symbol 7456 . 7464) (punctuation 7455 . 7456) (punctuation 7454 . 7455) (symbol 7451 . 7454) (punctuation 7430 . 7431) (semantic-list 7384 . 7430) (VOID 7380 . 7384) (punctuation 7379 . 7380) (symbol 7371 . 7379) (punctuation 7370 . 7371) (punctuation 7369 . 7370) (symbol 7366 . 7369) (punctuation 7344 . 7345) (semantic-list 7298 . 7344) (VOID 7294 . 7298) (punctuation 7293 . 7294) (symbol 7285 . 7293) (punctuation 7284 . 7285) (punctuation 7283 . 7284) (symbol 7280 . 7283) (punctuation 7264 . 7265) (semantic-list 7215 . 7264) (VOID 7211 . 7215) (punctuation 7210 . 7211) (symbol 7202 . 7210) (punctuation 7201 . 7202) (punctuation 7200 . 7201) (symbol 7197 . 7200) (punctuation 7180 . 7181) (semantic-list 7167 . 7180) (VOID 7163 . 7167) (punctuation 7162 . 7163) (symbol 7154 . 7162) (punctuation 7153 . 7154) (punctuation 7152 . 7153) (symbol 7149 . 7152) (punctuation 7132 . 7133) (semantic-list 7119 . 7132) (VOID 7115 . 7119) (punctuation 7114 . 7115) (symbol 7106 . 7114) (punctuation 7105 . 7106) (punctuation 7104 . 7105) (symbol 7101 . 7104) (punctuation 7082 . 7083) (semantic-list 7069 . 7082) (VOID 7065 . 7069) (punctuation 7064 . 7065) (symbol 7056 . 7064) (punctuation 7055 . 7056) (punctuation 7054 . 7055) (symbol 7051 . 7054) (punctuation 5281 . 5282) (DEFAULT 5274 . 5281) (punctuation 5272 . 5273) (semantic-list 5257 . 5271) (punctuation 5256 . 5257) (OPERATOR 5248 . 5256) (punctuation 5269 . 5270) (punctuation 5246 . 5247) (symbol 5236 . 5246) (punctuation 5269 . 5270) (punctuation 5230 . 5231) (DEFAULT 5223 . 5230) (punctuation 5221 . 5222) (semantic-list 5206 . 5220) (symbol 5196 . 5206) (punctuation 5218 . 5219) (punctuation 4143 . 4144) (semantic-list 4103 . 4143) (punctuation 4098 . 4099) (punctuation 4061 . 4062) (semantic-list 4015 . 4061) (punctuation 4010 . 4011) (punctuation 3972 . 3973) (semantic-list 3926 . 3972) (punctuation 3921 . 3922) (punctuation 3889 . 3890) (semantic-list 3840 . 3889) (punctuation 3835 . 3836) (punctuation 3802 . 3803) (CONST 3797 . 3802) (punctuation 3795 . 3796) (semantic-list 3782 . 3795) (punctuation 3777 . 3778) (punctuation 3744 . 3745) (CONST 3739 . 3744) (punctuation 3737 . 3738) (semantic-list 3724 . 3737) (punctuation 3719 . 3720) (punctuation 3684 . 3685) (CONST 3679 . 3684) (punctuation 3677 . 3678) (semantic-list 3664 . 3677) (punctuation 3659 . 3660) (punctuation 3291 . 3292) (semantic-list 3091 . 3291) (INT 3087 . 3090) (punctuation 3086 . 3087) (symbol 3083 . 3086) (CLASS 3077 . 3082) (ENUM 3072 . 3076) (punctuation 3291 . 3292) (semantic-list 3091 . 3291) (INT 3087 . 3090) (punctuation 3086 . 3087) (symbol 3083 . 3086) (CLASS 3077 . 3082) (ENUM 3072 . 3076)))
+    (semanticdb-table "ws.hpp"
+      :file "ws.hpp"
+      :fsize 480
+      :lastmodtime '(22397 48180 823333 336000)))
+  :file "!home!nakao!github!iotc_msgpub!server!ws!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

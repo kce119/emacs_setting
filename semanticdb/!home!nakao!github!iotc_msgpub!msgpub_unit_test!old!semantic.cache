@@ -1,0 +1,643 @@
+;; Object old/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "old/"
+  :tables
+  (list
+    (semanticdb-table "main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_TEST_MODULE" variable (:constant-flag t) nil [9 26])
+            ("boost/test/unit_test.hpp" include (:system-flag t) nil [44 79])
+            ("soci.h" include (:system-flag t) nil [80 97])
+            ("mysql/soci-mysql.h" include (:system-flag t) nil [98 127])
+            ("msgpub/log.hpp" include (:system-flag t) nil [129 154]))          
+      :file "main.cpp"
+      :pointmax 155
+      :fsize 154
+      :lastmodtime '(22370 8970 963333 332000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_TEST_MODULE" . ((symbol "msgpub_unit_test" 27 . 43)))
+          )
+)
+    (semanticdb-table "test_util.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("MSGPUB_TEST_UTIL_HPP" variable (:constant-flag t) nil [38 58])
+            ("BOOST_TEST_MODULE" variable (:constant-flag t) nil [68 85])
+            ("boost/lexical_cast.hpp" include (:system-flag t) nil [104 137])
+            ("boost/test/unit_test.hpp" include (:system-flag t) nil [138 173])
+            ("boost/process.hpp" include (:system-flag t) nil [174 202])
+            ("boost/process/wait_for_exit.hpp" include (:system-flag t) nil [203 245])
+            ("msgpub/master.hpp" include (:system-flag t) nil [246 274])
+            ("msgpub/admin_block.hpp" include (:system-flag t) nil [275 308])
+            ("mutex" include (:system-flag t) nil [309 325])
+            ("condition_variable" include (:system-flag t) nil [326 355])
+            ("broker.hpp" include (:system-flag t) nil [357 378])
+            ("broker_impl.hpp" include (:system-flag t) nil [379 405])
+            ("msgpub" type
+               (:members 
+                  ( ("test" type
+                       (:members 
+                          ( ("no_key" type
+                               (:superclasses 
+                                  ( ("std::exception" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [444 477])
+                            ("bp" type
+                               (:kind alias
+                                :members 
+                                  ( ("boost::process" type (:type "namespace") nil nil))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [479 509])
+                            ("bpi" type
+                               (:kind alias
+                                :members 
+                                  ( ("bp::initializers" type (:type "namespace") nil nil))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [510 543])
+                            ("bio" type
+                               (:kind alias
+                                :members 
+                                  ( ("boost::iostreams" type (:type "namespace") nil nil))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [544 577])
+                            ("allocate_port_no" function
+                               (:typemodifiers ("inline")
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [579 711])
+                            ("appkey" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("app" variable
+                                       (:default-value "1"
+                                        :type ("std::size_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [740 760])
+                                    ("key" variable
+                                       (:default-value "1"
+                                        :type ("std::size_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [761 781]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [714 914])
+                            ("seckey" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("app" variable
+                                       (:default-value "1"
+                                        :type ("std::size_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [942 962])
+                                    ("key" variable
+                                       (:default-value "1"
+                                        :type ("std::size_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [963 983]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [916 1116])
+                            ("log_level" function
+                               (:typemodifiers ("inline")
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1118 1365])
+                            ("appname" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("app" variable
+                                       (:default-value "1"
+                                        :type ("std::size_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1394 1414]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1367 1486])
+                            ("blocker" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1504 1511])
+                                    ("blocker" function
+                                       (:constructor-flag t
+                                        :type ("blocker" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1516 1546])
+                                    ("block" function (:type "void") (reparse-symbol classsubparts) [1551 1672])
+                                    ("unblock" function (:type "void") (reparse-symbol classsubparts) [1677 1799])
+                                    ("private" label nil (reparse-symbol classsubparts) [1800 1808])
+                                    ("unblocked_" variable (:type "bool") (reparse-symbol classsubparts) [1813 1829])
+                                    ("mtx_" variable (:type ("std::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1834 1850])
+                                    ("cv_" variable (:type ("std::condition_variable" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1855 1883]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1488 1886])
+                            ("fixture" type
+                               (:members 
+                                  ( ("wait_ms" variable
+                                       (:typemodifiers ("constexpr" "static")
+                                        :default-value "1000"
+                                        :type "unsigned int")
+                                        (reparse-symbol classsubparts) [1976 2021])
+                                    ("run_broker" friend nil (reparse-symbol classsubparts) [2026 2050])
+                                    ("run_broker" type
+                                       (:members 
+                                          ( ("run_broker" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("f" variable
+                                                       (:reference 1
+                                                        :type ("fixture" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2108 2119])
+                                                    ("broker" variable (:type ("std::vector" type
+                                                         (:template-specifier 
+                                                            ( ("std::tuple" type (:template-specifier 
+                                                                ( ("std::string" type nil nil nil)
+                                                                  ("std::string" type nil nil nil)
+                                                                  ("std::string" type nil nil nil))                                                                ) nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol arg-sub-list) [2132 2202]))                                                  
+                                                :type ("run_broker" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [2084 2294])
+                                            ("run_broker" function
+                                               (:destructor-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [2303 2539])
+                                            ("()" function
+                                               (:operator-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [2548 4145])
+                                            ("private" label nil (reparse-symbol classsubparts) [4150 4158])
+                                            ("f_" variable (:type ("fixture" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4167 4179])
+                                            ("broker_" variable (:type ("std::vector" type
+                                                 (:template-specifier 
+                                                    ( ("std::tuple" type (:template-specifier 
+                                                        ( ("std::string" type nil nil nil)
+                                                          ("std::string" type nil nil nil)
+                                                          ("std::string" type nil nil nil))                                                        ) nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [4188 4259])
+                                            ("rest_connected_" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4268 4296]))                                          
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [2056 4303])
+                                    ("fixture" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("broker" variable (:type ("std::vector" type
+                                                 (:template-specifier 
+                                                    ( ("std::tuple" type (:template-specifier 
+                                                        ( ("std::string" type nil nil nil)
+                                                          ("std::string" type nil nil nil)
+                                                          ("std::string" type nil nil nil))                                                        ) nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol arg-sub-list) [4326 4396])
+                                            ("sv_port" variable
+                                               (:default-value "\"\""
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4405 4430])
+                                            ("st_port" variable
+                                               (:default-value "\"\""
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4439 4464])
+                                            ("wi_port" variable
+                                               (:default-value "\"\""
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4473 4498])
+                                            ("sv_delay" variable
+                                               (:default-value "0"
+                                                :type ("std::size_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4507 4532])
+                                            ("st_delay" variable
+                                               (:default-value "0"
+                                                :type ("std::size_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4541 4566])
+                                            ("wi_delay" variable
+                                               (:default-value "0"
+                                                :type ("std::size_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4575 4600]))                                          
+                                        :type ("fixture" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [4309 9526])
+                                    ("broker_ws_url" function
+                                       (:methodconst-flag t
+                                        :arguments 
+                                          ( ("i" variable
+                                               (:default-value "0"
+                                                :type ("std::size_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9557 9575]))                                          
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [9531 9658])
+                                    ("broker_rest_url" function
+                                       (:methodconst-flag t
+                                        :arguments 
+                                          ( ("i" variable
+                                               (:default-value "0"
+                                                :type ("std::size_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9691 9709]))                                          
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [9663 9794])
+                                    ("add_broker" function
+                                       (:arguments 
+                                          ( ("num" variable
+                                               (:default-value "1"
+                                                :type ("std::size_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9815 9835]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [9799 10197])
+                                    ("fixture" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [10202 11295])
+                                    ("ios" function (:type ("boost::asio::io_service" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11301 11348])
+                                    ("ws" function (:type ("msgpub::websocket" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11353 11392])
+                                    ("private" label nil (reparse-symbol classsubparts) [11394 11402])
+                                    ("ios_" variable (:type ("boost::asio::io_service" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11407 11436])
+                                    ("ws_" variable (:type ("msgpub::websocket" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11441 11463])
+                                    ("cst_" variable (:type ("boost::optional" type
+                                         (:template-specifier 
+                                            ( ("bp::child" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [11468 11500])
+                                    ("csv_" variable (:type ("boost::optional" type
+                                         (:template-specifier 
+                                            ( ("bp::child" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [11505 11537])
+                                    ("cwi_" variable (:type ("boost::optional" type
+                                         (:template-specifier 
+                                            ( ("bp::child" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [11542 11574])
+                                    ("cb_" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("std::shared_ptr" type (:template-specifier 
+                                                ( ("bp::child" type nil nil nil))                                                ) nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [11579 11623])
+                                    ("ms_" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("std::shared_ptr" type (:template-specifier 
+                                                ( ("msgpub::master" type nil nil nil))                                                ) nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [11628 11677])
+                                    ("th_" variable (:type ("std::thread" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11682 11698])
+                                    ("mtx_" variable (:type ("std::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11703 11719])
+                                    ("cv_" variable (:type ("std::condition_variable" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11724 11752])
+                                    ("con_st_" variable (:type ("msgpub::websocket::connection" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11757 11795])
+                                    ("con_sv_" variable (:type ("msgpub::websocket::connection" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11800 11838])
+                                    ("con_wi_" variable (:type ("msgpub::websocket::connection" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11843 11881])
+                                    ("broker_" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("std::tuple" type (:template-specifier 
+                                                ( ("std::string" type nil nil nil)
+                                                  ("std::string" type nil nil nil)
+                                                  ("std::string" type nil nil nil))                                                ) nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [11886 11957])
+                                    ("st_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11962 11978])
+                                    ("sv_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11983 11999])
+                                    ("wi_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12004 12020])
+                                    ("unblocked_" variable (:type "bool") (reparse-symbol classsubparts) [12025 12041]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1888 12044])
+                            ("f_broker" function
+                               (:typemodifiers ("inline")
+                                :type ("fixture" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [12046 12338])
+                            ("f_broker_store" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("st_delay" variable
+                                       (:default-value "0"
+                                        :type ("std::size_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12371 12396]))                                  
+                                :type ("fixture" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [12340 12716])
+                            ("f_broker_will" function
+                               (:typemodifiers ("inline")
+                                :type ("fixture" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [12718 13053])
+                            ("f_broker_store_will" function
+                               (:typemodifiers ("inline")
+                                :type ("fixture" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [13055 13430])
+                            ("f_broker_supervisor" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("count" variable
+                                       (:default-value "1"
+                                        :type ("std::size_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13468 13490])
+                                    ("sv_delay" variable
+                                       (:default-value "0"
+                                        :type ("std::size_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13491 13516]))                                  
+                                :type ("fixture" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [13432 13898])
+                            ("f_broker_supervisor_store" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("count" variable
+                                       (:default-value "1"
+                                        :type ("std::size_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13942 13964])
+                                    ("sv_delay" variable
+                                       (:default-value "0"
+                                        :type ("std::size_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13965 13990])
+                                    ("st_delay" variable
+                                       (:default-value "0"
+                                        :type ("std::size_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13991 14016]))                                  
+                                :type ("fixture" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [13900 14442])
+                            ("add_user" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("f" variable
+                                       (:reference 1
+                                        :type ("fixture" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14537 14548])
+                                    ("user" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14549 14573]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [14516 14680])
+                            ("remove_user" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("f" variable
+                                       (:reference 1
+                                        :type ("fixture" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14778 14789])
+                                    ("user" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14790 14814]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [14754 14924])
+                            ("add_token" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("f" variable
+                                       (:reference 1
+                                        :type ("fixture" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15020 15031])
+                                    ("user" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15032 15056])
+                                    ("token" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15057 15082])
+                                    ("timeout" variable
+                                       (:default-value "0"
+                                        :type "unsigned long")
+                                        (reparse-symbol arg-sub-list) [15083 15109]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [14998 15233])
+                            ("remove_token" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("f" variable
+                                       (:reference 1
+                                        :type ("fixture" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15332 15343])
+                                    ("user" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15344 15368])
+                                    ("token" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15369 15394]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [15307 15512])
+                            ("clear_all_users" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("f" variable
+                                       (:reference 1
+                                        :type ("fixture" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15614 15625]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [15586 15897])
+                            ("add_channel" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("f" variable
+                                       (:reference 1
+                                        :type ("fixture" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15995 16006])
+                                    ("channel" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16007 16034]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [15971 16147])
+                            ("remove_channel" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("f" variable
+                                       (:reference 1
+                                        :type ("fixture" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16248 16259])
+                                    ("channel" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16260 16287]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [16221 16403])
+                            ("clear_all_channels" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("f" variable
+                                       (:reference 1
+                                        :type ("fixture" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16508 16519]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [16477 16803])
+                            ("grant_sub" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("f" variable
+                                       (:reference 1
+                                        :type ("fixture" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16904 16915])
+                                    ("user" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16920 16944])
+                                    ("channel" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16949 16976])
+                                    ("sub" variable
+                                       (:default-value "true"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [16981 16997]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [16877 17119])
+                            ("grant_pub" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("f" variable
+                                       (:reference 1
+                                        :type ("fixture" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17220 17231])
+                                    ("user" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17236 17260])
+                                    ("channel" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17265 17292])
+                                    ("pub" variable
+                                       (:default-value "true"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [17297 17313]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [17193 17435])
+                            ("grant_sub_label" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("f" variable
+                                       (:reference 1
+                                        :type ("fixture" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17542 17553])
+                                    ("user" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17558 17582])
+                                    ("label" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17587 17612])
+                                    ("sub" variable
+                                       (:default-value "true"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [17617 17633]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [17509 17759])
+                            ("grant_pub_label" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("f" variable
+                                       (:reference 1
+                                        :type ("fixture" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17866 17877])
+                                    ("user" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17882 17906])
+                                    ("label" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17911 17936])
+                                    ("pub" variable
+                                       (:default-value "true"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [17941 17957]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [17833 18083])
+                            ("clear_all_labels" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("f" variable
+                                       (:reference 1
+                                        :type ("fixture" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18186 18197]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [18157 18473])
+                            ("add_label" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("f" variable
+                                       (:reference 1
+                                        :type ("fixture" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18569 18580])
+                                    ("label" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18581 18606]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [18547 18715])
+                            ("remove_label" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("f" variable
+                                       (:reference 1
+                                        :type ("fixture" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18814 18825])
+                                    ("label" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18826 18851]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [18789 18963])
+                            ("add_channel_label" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("f" variable
+                                       (:reference 1
+                                        :type ("fixture" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19067 19078])
+                                    ("channel" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19079 19106])
+                                    ("label" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19107 19132]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [19037 19258])
+                            ("renive_channel_label" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("f" variable
+                                       (:reference 1
+                                        :type ("fixture" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19365 19376])
+                                    ("channel" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19377 19404])
+                                    ("label" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19405 19430]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [19332 19559]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [426 19562]))                  
+                :type "namespace")
+                nil [407 19582]))          
+      :file "test_util.hpp"
+      :pointmax 19635
+      :fsize 19634
+      :lastmodtime '(22378 15302 906666 666000)
+      :unmatched-syntax '((punctuation 1970 . 1971) (punctuation 1969 . 1970) (symbol 1965 . 1969) (punctuation 1964 . 1965) (punctuation 1963 . 1964) (symbol 1957 . 1963) (punctuation 1956 . 1957) (punctuation 1955 . 1956) (symbol 1944 . 1955) (punctuation 1943 . 1944) (symbol 1937 . 1943) (punctuation 1936 . 1937) (punctuation 1935 . 1936) (symbol 1924 . 1935) (punctuation 1922 . 1923) (symbol 1915 . 1921) (USING 1909 . 1914) (punctuation 1970 . 1971) (punctuation 1969 . 1970) (symbol 1965 . 1969) (punctuation 1964 . 1965) (punctuation 1963 . 1964) (symbol 1957 . 1963) (punctuation 1956 . 1957) (punctuation 1955 . 1956) (symbol 1944 . 1955) (punctuation 1943 . 1944) (symbol 1937 . 1943) (punctuation 1936 . 1937) (punctuation 1935 . 1936) (symbol 1924 . 1935) (punctuation 1922 . 1923) (symbol 1915 . 1921) (USING 1909 . 1914) (punctuation 1970 . 1971) (punctuation 1969 . 1970) (symbol 1965 . 1969) (punctuation 1964 . 1965) (punctuation 1963 . 1964) (symbol 1957 . 1963) (punctuation 1956 . 1957) (punctuation 1955 . 1956) (symbol 1944 . 1955) (punctuation 1943 . 1944) (symbol 1937 . 1943) (punctuation 1936 . 1937) (punctuation 1935 . 1936) (symbol 1924 . 1935) (punctuation 1922 . 1923) (symbol 1915 . 1921) (USING 1909 . 1914) (punctuation 1970 . 1971) (punctuation 1969 . 1970) (symbol 1965 . 1969) (punctuation 1964 . 1965) (punctuation 1963 . 1964) (symbol 1957 . 1963) (punctuation 1956 . 1957) (punctuation 1955 . 1956) (symbol 1944 . 1955) (punctuation 1943 . 1944) (symbol 1937 . 1943) (punctuation 1936 . 1937) (punctuation 1935 . 1936) (symbol 1924 . 1935) (punctuation 1922 . 1923) (symbol 1915 . 1921) (USING 1909 . 1914) (symbol 38 . 58) (punctuation 1967 . 1968) (punctuation 1966 . 1967) (symbol 1962 . 1966) (punctuation 1961 . 1962) (punctuation 1960 . 1961) (symbol 1954 . 1960) (punctuation 1953 . 1954) (punctuation 1952 . 1953) (symbol 1941 . 1952) (punctuation 1940 . 1941) (symbol 1934 . 1940) (punctuation 1933 . 1934) (punctuation 1932 . 1933) (symbol 1921 . 1932) (punctuation 1919 . 1920) (symbol 1912 . 1918) (USING 1906 . 1911) (symbol 38 . 55))
+      :lexical-table 
+        '(("BOOST_TEST_MODULE" . ((symbol "msgpub_unit_test" 86 . 102)))
+          ("MSGPUB_TEST_UTIL_HPP")
+          )
+))
+  :file "!home!nakao!github!iotc_msgpub!msgpub_unit_test!old!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

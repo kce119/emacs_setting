@@ -1,0 +1,86 @@
+;; Object detail/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "detail/"
+  :tables
+  (list
+    (semanticdb-table "common_states.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MSM_FRONT_DETAILS_COMMON_STATES_H" variable (:constant-flag t) nil [536 575])
+            ("boost/mpl/int.hpp" include (:system-flag t) nil [577 605])
+            ("boost/mpl/vector.hpp" include (:system-flag t) nil [607 638])
+            ("boost/fusion/container/map.hpp" include (:system-flag t) nil [639 680])
+            ("boost/fusion/include/at_key.hpp" include (:system-flag t) nil [681 723])
+            ("boost/type_traits/add_const.hpp" include (:system-flag t) nil [724 766])
+            ("boost" type
+               (:members 
+                  ( ("msm" type
+                       (:members 
+                          ( ("front" type
+                               (:members 
+                                  ( ("detail" type
+                                       (:members 
+                                          ( ("inherit_attributes" type
+                                               (:members 
+                                                  ( ("inherit_attributes" function
+                                                       (:constructor-flag t
+                                                        :type ("inherit_attributes" type (:type "struct") nil nil))
+                                                        (reparse-symbol classsubparts) [923 960])
+                                                    ("inherit_attributes" function
+                                                       (:constructor-flag t
+                                                        :arguments 
+                                                          ( ("the_attributes" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("Attributes" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [984 1017]))                                                          
+                                                        :type ("inherit_attributes" type (:type "struct") nil nil))
+                                                        (reparse-symbol classsubparts) [965 1048])
+                                                    ("attributes_type" type
+                                                       (:typedef ("Attributes" type (:type "class") nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [1101 1141])
+                                                    ("get_attribute" function
+                                                       (:arguments 
+                                                          ( ("" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("Index" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1314 1327]))                                                          
+                                                        :type ("boost::fusion::result_of::at_key::type" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1184 1401])
+                                                    ("get_attribute" function
+                                                       (:methodconst-flag t
+                                                        :arguments 
+                                                          ( ("" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("Index" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1626 1639]))                                                          
+                                                        :type ("type" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1603 1968])
+                                                    ("private" label nil (reparse-symbol classsubparts) [1970 1978])
+                                                    ("m_attributes" variable (:type ("Attributes" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2001 2025]))                                                  
+                                                :type "struct")
+                                                (reparse-symbol namespacesubparts) [891 2028])
+                                            ("USERBASE" variable (:type "int") (reparse-symbol namespacesubparts) [2272 2815]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [819 2818]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [802 2819]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [786 2820]))                  
+                :type "namespace")
+                nil [768 2821]))          
+      :file "common_states.hpp"
+      :pointmax 2873
+      :fsize 2872
+      :lastmodtime '(22452 53219 0 0)
+      :unmatched-syntax '((punctuation 2270 . 2271) (punctuation 2269 . 2270) (symbol 2259 . 2269) (punctuation 2258 . 2259) (symbol 2240 . 2258) (PUBLIC 2233 . 2239) (punctuation 2231 . 2232) (symbol 2220 . 2230) (STRUCT 2213 . 2219) (punctuation 2211 . 2212) (punctuation 2209 . 2210) (punctuation 2208 . 2209) (symbol 2205 . 2208) (punctuation 2204 . 2205) (punctuation 2203 . 2204) (symbol 2197 . 2203) (punctuation 2196 . 2197) (punctuation 2195 . 2196) (symbol 2190 . 2195) (punctuation 2189 . 2190) (punctuation 2188 . 2189) (punctuation 2186 . 2187) (symbol 2176 . 2186) (CLASS 2170 . 2175) (punctuation 2169 . 2170) (symbol 2161 . 2169) (CLASS 2155 . 2160) (punctuation 2154 . 2155) (TEMPLATE 2146 . 2154) (punctuation 1602 . 1603) (punctuation 1601 . 1602) (punctuation 1600 . 1601) (symbol 1596 . 1600) (punctuation 1595 . 1596) (punctuation 1594 . 1595) (punctuation 1593 . 1594) (symbol 1588 . 1593) (punctuation 1534 . 1535) (symbol 1519 . 1534) (punctuation 1518 . 1519) (symbol 1512 . 1518) (punctuation 1511 . 1512) (punctuation 1510 . 1511) (symbol 1501 . 1510) (punctuation 1500 . 1501) (punctuation 1499 . 1500) (symbol 1493 . 1499) (punctuation 1492 . 1493) (punctuation 1491 . 1492) (symbol 1486 . 1491) (punctuation 1485 . 1486) (punctuation 1484 . 1485) (TYPENAME 1475 . 1483) (punctuation 1465 . 1466) (symbol 1456 . 1465) (punctuation 1455 . 1456) (punctuation 1454 . 1455) (symbol 1449 . 1454) (punctuation 1448 . 1449) (punctuation 1447 . 1448) (TYPENAME 1438 . 1446) (punctuation 1432 . 1433) (symbol 1427 . 1432) (CLASS 1421 . 1426) (punctuation 1420 . 1421) (TEMPLATE 1411 . 1419) (punctuation 1183 . 1184) (punctuation 1182 . 1183) (TYPENAME 1173 . 1181) (punctuation 1167 . 1168) (symbol 1162 . 1167) (CLASS 1156 . 1161) (punctuation 1155 . 1156) (TEMPLATE 1146 . 1154) (punctuation 889 . 890) (punctuation 887 . 888) (punctuation 886 . 887) (symbol 883 . 886) (punctuation 882 . 883) (punctuation 881 . 882) (symbol 875 . 881) (punctuation 874 . 875) (punctuation 873 . 874) (symbol 868 . 873) (punctuation 867 . 868) (punctuation 866 . 867) (punctuation 864 . 865) (symbol 854 . 864) (CLASS 848 . 853) (punctuation 847 . 848) (TEMPLATE 838 . 846))
+      :lexical-table 
+        '(("BOOST_MSM_FRONT_DETAILS_COMMON_STATES_H")
+          )
+))
+  :file "!usr!include!boost!msm!front!detail!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

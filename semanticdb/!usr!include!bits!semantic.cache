@@ -1,0 +1,144 @@
+;; Object bits/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bits/"
+  :tables
+  (list
+    (semanticdb-table "wordsize.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("__WORDSIZE" variable (:constant-flag t) nil [117 127])
+            ("__WORDSIZE_TIME64_COMPAT32" variable (:constant-flag t) nil [195 221])
+            ("__SYSCALL_WORDSIZE" variable (:constant-flag t) nil [298 316]))          
+      :file "wordsize.h"
+      :pointmax 328
+      :fsize 327
+      :lastmodtime '(22352 51867 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__WORDSIZE_TIME64_COMPAT32" . ((number "1" 222 . 223)))
+          ("__SYSCALL_WORDSIZE" . ((number "64" 318 . 320)))
+          ("__WORDSIZE" . ((number "64" 128 . 130)))
+          )
+)
+    (semanticdb-table "siginfo.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("bits/wordsize.h" include (:system-flag t) nil [1015 1041]))          
+      :file "siginfo.h"
+      :pointmax 10782
+      :fsize 10781
+      :lastmodtime '(22352 51867 0 0)
+      :unmatched-syntax '((string 947 . 1006) (symbol 941 . 946) (punctuation 939 . 940) (symbol 921 . 938) (symbol 913 . 920) (punctuation 912 . 913) (punctuation 910 . 911) (punctuation 909 . 910)))
+    (semanticdb-table "netdb.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("netent" type
+               (:members 
+                  ( ("n_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1086 1099])
+                    ("n_aliases" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol classsubparts) [1137 1154])
+                    ("n_addrtype" variable (:type "int") (reparse-symbol classsubparts) [1177 1192])
+                    ("n_net" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1221 1236]))                  
+                :type "struct")
+                nil [1068 1263]))          
+      :file "netdb.h"
+      :pointmax 1264
+      :fsize 1263
+      :lastmodtime '(22352 51899 0 0)
+      :unmatched-syntax '((string 815 . 878) (symbol 809 . 814) (punctuation 807 . 808)))
+    (semanticdb-table "errno.h"
+      :file "errno.h"
+      :fsize 2145
+      :lastmodtime '(22352 51867 0 0))
+    (semanticdb-table "types.h"
+      :file "types.h"
+      :fsize 7563
+      :lastmodtime '(22352 51870 0 0))
+    (semanticdb-table "byteswap.h"
+      :file "byteswap.h"
+      :fsize 5664
+      :lastmodtime '(22352 51868 0 0))
+    (semanticdb-table "in.h"
+      :file "in.h"
+      :fsize 8764
+      :lastmodtime '(22352 51898 0 0))
+    (semanticdb-table "wchar.h"
+      :file "wchar.h"
+      :fsize 1905
+      :lastmodtime '(22352 51869 0 0))
+    (semanticdb-table "time.h"
+      :file "time.h"
+      :fsize 3465
+      :lastmodtime '(22352 51869 0 0))
+    (semanticdb-table "ioctl-types.h"
+      :file "ioctl-types.h"
+      :fsize 2455
+      :lastmodtime '(22352 51870 0 0))
+    (semanticdb-table "ioctls.h"
+      :file "ioctls.h"
+      :fsize 4477
+      :lastmodtime '(22352 51870 0 0))
+    (semanticdb-table "poll.h"
+      :file "poll.h"
+      :fsize 2075
+      :lastmodtime '(22352 51870 0 0))
+    (semanticdb-table "sigset.h"
+      :file "sigset.h"
+      :fsize 4553
+      :lastmodtime '(22352 51867 0 0))
+    (semanticdb-table "pthreadtypes.h"
+      :file "pthreadtypes.h"
+      :fsize 6741
+      :lastmodtime '(22352 51870 0 0))
+    (semanticdb-table "stat.h"
+      :file "stat.h"
+      :fsize 7619
+      :lastmodtime '(22352 51870 0 0))
+    (semanticdb-table "fcntl.h"
+      :file "fcntl.h"
+      :fsize 2245
+      :lastmodtime '(22352 51870 0 0))
+    (semanticdb-table "select.h"
+      :file "select.h"
+      :fsize 2105
+      :lastmodtime '(22352 51870 0 0))
+    (semanticdb-table "socket.h"
+      :file "socket.h"
+      :fsize 12797
+      :lastmodtime '(22352 51870 0 0))
+    (semanticdb-table "uio.h"
+      :file "uio.h"
+      :fsize 2461
+      :lastmodtime '(22352 51870 0 0))
+    (semanticdb-table "sockaddr.h"
+      :file "sockaddr.h"
+      :fsize 1513
+      :lastmodtime '(22352 51870 0 0))
+    (semanticdb-table "sigthread.h"
+      :file "sigthread.h"
+      :fsize 1657
+      :lastmodtime '(22352 51867 0 0))
+    (semanticdb-table "sigstack.h"
+      :file "sigstack.h"
+      :fsize 1527
+      :lastmodtime '(22352 51867 0 0))
+    (semanticdb-table "sigcontext.h"
+      :file "sigcontext.h"
+      :fsize 4174
+      :lastmodtime '(22352 51867 0 0))
+    (semanticdb-table "sigaction.h"
+      :file "sigaction.h"
+      :fsize 2818
+      :lastmodtime '(22352 51867 0 0))
+    (semanticdb-table "signum.h"
+      :file "signum.h"
+      :fsize 3397
+      :lastmodtime '(22352 51867 0 0)))
+  :file "!usr!include!bits!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

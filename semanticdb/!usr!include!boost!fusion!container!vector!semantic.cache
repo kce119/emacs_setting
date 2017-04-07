@@ -1,0 +1,34 @@
+;; Object vector/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "vector/"
+  :tables
+  (list
+    (semanticdb-table "convert.hpp"
+      :file "convert.hpp"
+      :fsize 1751
+      :lastmodtime '(22452 53218 0 0))
+    (semanticdb-table "vector.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FUSION_VECTOR_11052014_1625" variable (:constant-flag t) nil [406 433])
+            ("boost/config.hpp" include (:system-flag t) nil [435 462])
+            ("boost/fusion/support/config.hpp" include (:system-flag t) nil [463 505])
+            ("boost/fusion/container/vector/detail/config.hpp" include (:system-flag t) nil [506 564])
+            ("boost/fusion/container/vector/vector_fwd.hpp" include (:system-flag t) nil [565 620])
+            ("boost/fusion/container/vector/detail/cpp03/vector.hpp" include (:system-flag t) nil [878 943]))          
+      :file "vector.hpp"
+      :pointmax 11832
+      :fsize 11831
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("FUSION_VECTOR_11052014_1625")
+          )
+)
+    (semanticdb-table "vector_fwd.hpp"
+      :file "vector_fwd.hpp"
+      :fsize 1583
+      :lastmodtime '(22452 53218 0 0)))
+  :file "!usr!include!boost!fusion!container!vector!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,74 @@
+;; Object aux_/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "aux_/"
+  :tables
+  (list
+    (semanticdb-table "unwrap.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MPL_AUX_UNWRAP_HPP_INCLUDED" variable (:constant-flag t) nil [52 85])
+            ("boost/ref.hpp" include (:system-flag t) nil [430 454])
+            ("boost/mpl/aux_/config/gpu.hpp" include (:system-flag t) nil [455 495])
+            ("boost" type
+               (:members 
+                  ( ("mpl" type
+                       (:members 
+                          ( ("aux" type
+                               (:members 
+                                  ( ("unwrap" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("f" variable
+                                               (:reference 1
+                                                :type ("F" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [614 619])
+                                            ("" variable (:type "long") (reparse-symbol arg-sub-list) [620 625]))                                          
+                                        :type ("F" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [597 643])
+                                    ("unwrap" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("f" variable
+                                               (:reference 1
+                                                :type ("reference_wrapper" type
+                                                     (:template-specifier 
+                                                        ( ("F" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [711 735])
+                                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [736 740]))                                          
+                                        :type ("F" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [694 758])
+                                    ("unwrap" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("f" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("reference_wrapper" type
+                                                     (:template-specifier 
+                                                        ( ("F" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [826 856])
+                                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [857 861]))                                          
+                                        :type ("F" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [809 879]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [531 882]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [515 883]))                  
+                :type "namespace")
+                nil [497 884]))          
+      :file "unwrap.hpp"
+      :pointmax 930
+      :fsize 929
+      :lastmodtime '(22452 53217 0 0)
+      :unmatched-syntax '((symbol 783 . 808) (punctuation 781 . 782) (symbol 779 . 780) (TYPENAME 770 . 778) (punctuation 768 . 769) (TEMPLATE 760 . 768) (symbol 668 . 693) (punctuation 666 . 667) (symbol 664 . 665) (TYPENAME 655 . 663) (punctuation 653 . 654) (TEMPLATE 645 . 653) (symbol 571 . 596) (punctuation 569 . 570) (symbol 567 . 568) (TYPENAME 558 . 566) (punctuation 556 . 557) (TEMPLATE 548 . 556))
+      :lexical-table 
+        '(("BOOST_MPL_AUX_UNWRAP_HPP_INCLUDED")
+          )
+))
+  :file "!usr!include!boost!mpl!aux_!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

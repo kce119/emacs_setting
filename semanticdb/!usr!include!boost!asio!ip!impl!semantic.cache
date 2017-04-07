@@ -1,0 +1,233 @@
+;; Object impl/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "impl/"
+  :tables
+  (list
+    (semanticdb-table "address.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ASIO_IP_IMPL_ADDRESS_HPP" variable (:constant-flag t) nil [339 369])
+            ("boost/asio/detail/throw_error.hpp" include (:system-flag t) nil [518 562])
+            ("boost/asio/detail/push_options.hpp" include (:system-flag t) nil [564 609])
+            ("boost" type
+               (:members 
+                  ( ("asio" type
+                       (:members 
+                          ( ("ip" type
+                               (:members 
+                                  ( ("<<" function
+                                       (:template 
+                                          ( ("Elem" type (:type "class") nil nil)
+                                            ("Traits" type (:type "class") nil nil))                                          
+                                        :type ("std::basic_ostream" type
+                                             (:template-specifier 
+                                                ( ("Elem" type nil nil nil)
+                                                  ("Traits" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :arguments 
+                                          ( ("os" variable
+                                               (:reference 1
+                                                :type ("std::basic_ostream" type
+                                                     (:template-specifier 
+                                                        ( ("Elem" type nil nil nil)
+                                                          ("Traits" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [754 791])
+                                            ("addr" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("address" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [792 812]))                                          
+                                        :operator-flag t)
+                                        (reparse-symbol namespacesubparts) [662 1199]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [646 1202]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [629 1220]))                  
+                :type "namespace")
+                nil [611 1240])
+            ("boost/asio/detail/pop_options.hpp" include (:system-flag t) nil [1261 1305]))          
+      :file "address.hpp"
+      :pointmax 1392
+      :fsize 1391
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ASIO_IP_IMPL_ADDRESS_HPP")
+          )
+)
+    (semanticdb-table "address_v4.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ASIO_IP_IMPL_ADDRESS_V4_HPP" variable (:constant-flag t) nil [348 381])
+            ("boost/asio/detail/throw_error.hpp" include (:system-flag t) nil [530 574])
+            ("boost/asio/detail/push_options.hpp" include (:system-flag t) nil [576 621])
+            ("boost" type
+               (:members 
+                  ( ("asio" type
+                       (:members 
+                          ( ("ip" type
+                               (:members 
+                                  ( ("<<" function
+                                       (:template 
+                                          ( ("Elem" type (:type "class") nil nil)
+                                            ("Traits" type (:type "class") nil nil))                                          
+                                        :type ("std::basic_ostream" type
+                                             (:template-specifier 
+                                                ( ("Elem" type nil nil nil)
+                                                  ("Traits" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :arguments 
+                                          ( ("os" variable
+                                               (:reference 1
+                                                :type ("std::basic_ostream" type
+                                                     (:template-specifier 
+                                                        ( ("Elem" type nil nil nil)
+                                                          ("Traits" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [766 803])
+                                            ("addr" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("address_v4" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [804 827]))                                          
+                                        :operator-flag t)
+                                        (reparse-symbol namespacesubparts) [674 1214]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [658 1217]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [641 1235]))                  
+                :type "namespace")
+                nil [623 1255])
+            ("boost/asio/detail/pop_options.hpp" include (:system-flag t) nil [1276 1320]))          
+      :file "address_v4.hpp"
+      :pointmax 1410
+      :fsize 1409
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ASIO_IP_IMPL_ADDRESS_V4_HPP")
+          )
+)
+    (semanticdb-table "address_v6.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ASIO_IP_IMPL_ADDRESS_V6_HPP" variable (:constant-flag t) nil [348 381])
+            ("boost/asio/detail/throw_error.hpp" include (:system-flag t) nil [530 574])
+            ("boost/asio/detail/push_options.hpp" include (:system-flag t) nil [576 621])
+            ("boost" type
+               (:members 
+                  ( ("asio" type
+                       (:members 
+                          ( ("ip" type
+                               (:members 
+                                  ( ("<<" function
+                                       (:template 
+                                          ( ("Elem" type (:type "class") nil nil)
+                                            ("Traits" type (:type "class") nil nil))                                          
+                                        :type ("std::basic_ostream" type
+                                             (:template-specifier 
+                                                ( ("Elem" type nil nil nil)
+                                                  ("Traits" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :arguments 
+                                          ( ("os" variable
+                                               (:reference 1
+                                                :type ("std::basic_ostream" type
+                                                     (:template-specifier 
+                                                        ( ("Elem" type nil nil nil)
+                                                          ("Traits" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [766 803])
+                                            ("addr" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("address_v6" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [804 827]))                                          
+                                        :operator-flag t)
+                                        (reparse-symbol namespacesubparts) [674 1214]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [658 1217]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [641 1235]))                  
+                :type "namespace")
+                nil [623 1255])
+            ("boost/asio/detail/pop_options.hpp" include (:system-flag t) nil [1276 1320]))          
+      :file "address_v6.hpp"
+      :pointmax 1410
+      :fsize 1409
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ASIO_IP_IMPL_ADDRESS_V6_HPP")
+          )
+)
+    (semanticdb-table "basic_endpoint.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ASIO_IP_IMPL_BASIC_ENDPOINT_HPP" variable (:constant-flag t) nil [360 397])
+            ("boost/asio/detail/throw_error.hpp" include (:system-flag t) nil [546 590])
+            ("boost/asio/detail/push_options.hpp" include (:system-flag t) nil [592 637])
+            ("boost" type
+               (:members 
+                  ( ("asio" type
+                       (:members 
+                          ( ("ip" type
+                               (:members 
+                                  ( ("<<" function
+                                       (:template 
+                                          ( ("Elem" type (:type "class") nil nil)
+                                            ("Traits" type (:type "class") nil nil)
+                                            ("InternetProtocol" type (:type "class") nil nil))                                          
+                                        :type ("std::basic_ostream" type
+                                             (:template-specifier 
+                                                ( ("Elem" type nil nil nil)
+                                                  ("Traits" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :arguments 
+                                          ( ("os" variable
+                                               (:reference 1
+                                                :type ("std::basic_ostream" type
+                                                     (:template-specifier 
+                                                        ( ("Elem" type nil nil nil)
+                                                          ("Traits" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [809 846])
+                                            ("endpoint" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("basic_endpoint" type
+                                                     (:template-specifier 
+                                                        ( ("InternetProtocol" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [851 900]))                                          
+                                        :operator-flag t)
+                                        (reparse-symbol namespacesubparts) [690 1370]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [674 1373]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [657 1391]))                  
+                :type "namespace")
+                nil [639 1411])
+            ("boost/asio/detail/pop_options.hpp" include (:system-flag t) nil [1432 1476]))          
+      :file "basic_endpoint.hpp"
+      :pointmax 1570
+      :fsize 1569
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ASIO_IP_IMPL_BASIC_ENDPOINT_HPP")
+          )
+))
+  :file "!usr!include!boost!asio!ip!impl!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

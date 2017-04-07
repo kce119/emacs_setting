@@ -1,0 +1,541 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("setq-default" code nil nil [71 102])
+            ("setq" code nil nil [103 126])
+            ("setq" code nil nil [127 163])
+            ("c-set-offset" code nil nil [164 199])
+            ("c-set-offset" code nil nil [200 229])
+            ("c-set-offset" code nil nil [230 262])
+            ("c-set-offset" code nil nil [263 294])
+            ("auto-complete-c-headers" include nil nil [296 330])
+            ("my:ac-c-headers-init" function nil nil [331 448])
+            ("add-hook" code nil nil [449 496])
+            ("add-hook" code nil nil [497 542])
+            ("auto-complete-clang-async" include nil nil [544 580])
+            ("ac-cc-mode-setup" function nil nil [582 783])
+            ("my-ac-config" function nil nil [785 946])
+            ("my-ac-config" code nil nil [948 962])
+            ("flycheck" include nil nil [1031 1050])
+            ("add-hook" code nil nil [1051 1096])
+            ("add-hook" code nil nil [1201 1312])
+            ("add-hook" code nil nil [1314 2617])
+            ("add-hook" code nil nil [2619 2739])
+            ("c++-template-args-cont" function (:arguments ("langelem")) nil [3761 4141])
+            ("add-hook" code nil nil [4143 4314]))          
+      :file "72-cpp-mode.el"
+      :pointmax 4408
+      :fsize 4417
+      :lastmodtime '(22599 46639 346666 669000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "05-auto-sync-byte-compile.el"
+      :pointmax 184
+      :fsize 203
+      :lastmodtime '(22071 3067 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("define-key" code nil nil [16 66])
+            ("define-key" code nil nil [67 116])
+            ("define-key" code nil nil [132 189])
+            ("define-key" code nil nil [202 262])
+            ("global-set-key" code nil nil [277 325])
+            ("define-key" code nil nil [339 387])
+            ("define-key" code nil nil [388 438])
+            ("define-key" code nil nil [455 505])
+            ("define-key" code nil nil [506 555])
+            ("define-key" code nil nil [583 647])
+            ("define-key" code nil nil [648 714])
+            ("global-set-key" code nil nil [740 793])
+            ("global-set-key" code nil nil [794 843])
+            ("global-set-key" code nil nil [844 893])
+            ("define-key" code nil nil [910 964])
+            ("define-key" code nil nil [965 1029])
+            ("define-key" code nil nil [1042 1090])
+            ("global-set-key" code nil nil [1102 1146])
+            ("global-set-key" code nil nil [1155 1189])
+            ("global-set-key" code nil nil [1198 1234])
+            ("global-set-key" code nil nil [1248 1297])
+            ("global-set-key" code nil nil [1311 1354])
+            ("global-set-key" code nil nil [1372 1419])
+            ("global-set-key" code nil nil [1421 1471])
+            ("global-set-key" code nil nil [1482 1523])
+            ("global-set-key" code nil nil [1524 1569])
+            ("global-set-key" code nil nil [1570 1611])
+            ("global-set-key" code nil nil [1637 1690])
+            ("global-set-key" code nil nil [1692 1741])
+            ("global-set-key" code nil nil [1742 1791])
+            ("global-set-key" code nil nil [1803 1853])
+            ("global-set-key" code nil nil [1854 1904]))          
+      :file "90-key-customize.el"
+      :pointmax 1905
+      :fsize 2186
+      :lastmodtime '(22758 996 534741 390000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("function-args" include nil nil [1 25])
+            ("fa-config-default" code nil nil [26 45])
+            ("add-to-list" code nil nil [46 100])
+            ("semantic-add-system-include" code nil nil [101 183]))          
+      :file "80-function-args.el"
+      :pointmax 184
+      :fsize 183
+      :lastmodtime '(22071 3067 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("exec-path-from-shell" include nil nil [1 32])
+            ("let" code nil nil [33 122]))          
+      :file "01-get-shell.el"
+      :pointmax 123
+      :fsize 122
+      :lastmodtime '(22071 3067 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("el-get-bundle" code nil nil [1 25])
+            ("el-get-bundle" code nil nil [101 128])
+            ("el-get-bundle" code nil nil [129 156])
+            ("el-get-bundle" code nil nil [157 183])
+            ("el-get-bundle" code nil nil [184 202])
+            ("el-get-bundle" code nil nil [203 227])
+            ("el-get-bundle" code nil nil [228 249])
+            ("el-get-bundle" code nil nil [250 284])
+            ("el-get-bundle" code nil nil [285 326])
+            ("el-get-bundle" code nil nil [327 353])
+            ("el-get-bundle" code nil nil [354 383])
+            ("el-get-bundle" code nil nil [384 408])
+            ("el-get-bundle" code nil nil [432 456])
+            ("el-get-bundle" code nil nil [457 486])
+            ("el-get-bundle" code nil nil [487 526])
+            ("el-get-bundle" code nil nil [570 606])
+            ("el-get-bundle" code nil nil [607 629])
+            ("el-get-bundle" code nil nil [630 659])
+            ("el-get-bundle" code nil nil [660 682]))          
+      :file "00-el-get-bundle.el"
+      :pointmax 683
+      :fsize 682
+      :lastmodtime '(22366 31904 980000 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("anything" include nil nil [1 20]))          
+      :file "10-anything.el"
+      :pointmax 21
+      :fsize 20
+      :lastmodtime '(22071 3067 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("uniquify" include nil nil [20 39])
+            ("setq" code nil nil [40 102])
+            ("setq" code nil nil [103 145]))          
+      :file "82-uniquify.el"
+      :pointmax 146
+      :fsize 177
+      :lastmodtime '(22071 3067 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("sequential-command" include nil nil [15 44])
+            ("sequential-command-config" include nil nil [45 81])
+            ("sequential-command-setup-keys" code nil nil [82 113]))          
+      :file "83-sequential-command-config.el"
+      :pointmax 114
+      :fsize 135
+      :lastmodtime '(22071 3067 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("setq" code nil nil [11 43])
+            ("set-language-environment" code nil nil [45 79])
+            ("prefer-coding-system" code nil nil [80 109])
+            ("setq" code nil nil [124 150])
+            ("setq-default" code nil nil [151 186])
+            ("setq" code nil nil [209 250])
+            ("toggle-truncate-lines" function (:user-visible-flag t) nil [276 452])
+            ("global-set-key" code nil nil [454 507])
+            ("global-set-key" code nil nil [509 558])
+            ("global-set-key" code nil nil [559 608])
+            ("global-linum-mode" code nil nil [610 629])
+            ("my-linum-min-width" variable (:default-value 4) nil [630 659])
+            ("setq" code nil nil [660 945])
+            ("when" code nil nil [1040 2127])
+            ("saveplace" include nil nil [2188 2208])
+            ("setq-default" code nil nil [2209 2236])
+            ("global-hl-line-mode" code nil nil [2238 2261])
+            ("savehist-mode" code nil nil [2262 2279])
+            ("display-time" code nil nil [2280 2294])
+            ("line-number-mode" code nil nil [2296 2316])
+            ("column-number-mode" code nil nil [2317 2339])
+            ("transient-mark-mode" code nil nil [2340 2363])
+            ("setq" code nil nil [2364 2413])
+            ("setq" code nil nil [2414 2442])
+            ("setq" code nil nil [2443 2480])
+            ("setq" code nil nil [2481 2506])
+            ("setq" code nil nil [2507 2533])
+            ("setq" code nil nil [2534 2586])
+            ("setq" code nil nil [2596 2890])
+            ("defalias" code nil nil [2909 2942])
+            ("setq" code nil nil [2949 2982])
+            ("ffap-bindings" code nil nil [3003 3018]))          
+      :file "85-edit-config.el"
+      :pointmax 3019
+      :fsize 3188
+      :lastmodtime '(22071 3067 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("auto-complete-clang-async" include nil nil [1 37])
+            ("ac-cc-mode-setup" function nil nil [39 269])
+            ("my-ac-config" function nil nil [271 432])
+            ("my-ac-config" code nil nil [435 449])
+            ("auto-complete-c-headers" include nil nil [451 485])
+            ("add-hook" code nil nil [486 573])
+            ("add-hook" code nil nil [574 659]))          
+      :file "07-clang-complete-async.el"
+      :pointmax 660
+      :fsize 630
+      :lastmodtime '(22602 21614 396666 669000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("tabbar-version" variable
+               (:constant-flag t
+                :default-value "2.0")
+                nil [349 380])
+            ("tabbar" customgroup (:user-visible-flag t) nil [8488 8573])
+            ("tabbar-cycle-scope" variable (:user-visible-flag t) nil [8575 9105])
+            ("tabbar-auto-scroll-flag" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [9107 9377])
+            ("tabbar-inhibit-functions" variable (:default-value (quote (tabbar-default-inhibit-function))) nil [9379 9657])
+            ("tabbar-current-tabset-function" variable nil nil [9659 9816])
+            ("tabbar-tab-label-function" variable nil nil [9818 9977])
+            ("tabbar-select-tab-function" variable nil nil [9979 10135])
+            ("tabbar-help-on-tab-function" variable nil nil [10137 10370])
+            ("tabbar-button-label-function" variable nil nil [10372 10564])
+            ("tabbar-home-function" variable nil nil [10566 10710])
+            ("tabbar-home-help-function" variable nil nil [10712 10922])
+            ("tabbar-scroll-left-function" variable (:default-value (quote tabbar-scroll-left)) nil [10924 11148])
+            ("tabbar-scroll-left-help-function" variable (:default-value (quote tabbar-scroll-left-help)) nil [11150 11387])
+            ("tabbar-scroll-right-function" variable (:default-value (quote tabbar-scroll-right)) nil [11389 11617])
+            ("tabbar-scroll-right-help-function" variable (:default-value (quote tabbar-scroll-right-help)) nil [11619 11859])
+            ("defalias" code nil nil [11895 12060])
+            ("tabbar-click-p" function (:arguments ("event")) nil [12063 12188])
+            ("tabbar-shorten" function (:arguments ("str" "width")) nil [12190 13745])
+            ("tabbar-make-tab" function (:arguments ("object" "tabset")) nil [13771 13918])
+            ("tabbar-tab-value" function (:arguments ("tab")) nil [13920 13998])
+            ("tabbar-tab-tabset" function (:arguments ("tab")) nil [14000 14085])
+            ("tabbar-tabsets" variable nil nil [14087 14138])
+            ("tabbar-tabsets-tabset" variable nil nil [14140 14220])
+            ("tabbar-current-tabset" variable nil nil [14222 14308])
+            ("make-variable-buffer-local" code nil nil [14309 14360])
+            ("tabbar-init-hook" variable nil nil [14362 14500])
+            ("tabbar-init-tabsets-store" function nil nil [14502 14757])
+            ("tabbar-quit-hook" variable nil nil [14759 14886])
+            ("tabbar-free-tabsets-store" function nil nil [14888 15049])
+            ("defalias" code nil nil [15180 15702])
+            ("tabbar-make-tabset" function (:arguments ("name" "objects")) nil [15705 16145])
+            ("tabbar-get-tabset" function (:arguments ("name")) nil [16147 16297])
+            ("tabbar-delete-tabset" function (:arguments ("tabset")) nil [16299 16449])
+            ("tabbar-tabs" function (:arguments ("tabset")) nil [16451 16545])
+            ("tabbar-tab-values" function (:arguments ("tabset")) nil [16547 16679])
+            ("tabbar-get-tab" function (:arguments ("object" "tabset")) nil [16681 16853])
+            ("tabbar-member" function (:arguments ("tab" "tabset")) nil [16855 17013])
+            ("tabbar-template" function (:arguments ("tabset")) nil [17015 17202])
+            ("tabbar-set-template" function (:arguments ("tabset" "template")) nil [17204 17435])
+            ("tabbar-selected-tab" function (:arguments ("tabset")) nil [17437 17538])
+            ("tabbar-selected-value" function (:arguments ("tabset")) nil [17540 17683])
+            ("tabbar-selected-p" function (:arguments ("tab" "tabset")) nil [17685 17823])
+            ("tabbar--track-selected" variable nil nil [17825 17860])
+            ("tabbar-select-tab" function (:arguments ("tab" "tabset")) nil [17862 18232])
+            ("tabbar-select-tab-value" function (:arguments ("object" "tabset")) nil [18234 18529])
+            ("tabbar-start" function (:arguments ("tabset")) nil [18531 18642])
+            ("tabbar-view" function (:arguments ("tabset")) nil [18644 18841])
+            ("tabbar-add-tab" function (:arguments ("tabset" "object" "append")) nil [18843 19427])
+            ("tabbar-delete-tab" function (:arguments ("tab")) nil [19429 19952])
+            ("tabbar-scroll" function (:arguments ("tabset" "count")) nil [19954 20369])
+            ("tabbar-tab-next" function (:arguments ("tabset" "tab" "before")) nil [20371 20775])
+            ("tabbar-current-tabset" function (:arguments ("update")) nil [20777 21205])
+            ("tabbar-get-tabsets-tabset" function nil nil [21207 21493])
+            ("tabbar-default" variable
+               (:default-value (quote ((((class color grayscale) (background dark)) :inherit variable-pitch :height 0.8 :foreground "grey75" :background "gray50") (((class mono) (background light)) :inherit variable-pitch :height 0.8 :foreground "black" :background "white") (((class mono) (background dark)) :inherit variable-pitch :height 0.8 :foreground "white" :background "black") (t :inherit variable-pitch :height 0.8 :foreground "gray50" :background "gray75")))
+                :type "face")
+                nil [21509 22310])
+            ("tabbar-unselected" variable
+               (:default-value (quote ((t :inherit tabbar-default :box (:line-width 1 :color "white" :style released-button))))
+                :type "face")
+                nil [22312 22499])
+            ("tabbar-selected" variable
+               (:default-value (quote ((t :inherit tabbar-default :box (:line-width 1 :color "white" :style pressed-button) :foreground "blue")))
+                :type "face")
+                nil [22501 22710])
+            ("tabbar-highlight" variable
+               (:default-value (quote ((t :underline t)))
+                :type "face")
+                nil [22712 22841])
+            ("tabbar-separator" variable
+               (:default-value (quote ((t :inherit tabbar-default :height 0.1)))
+                :type "face")
+                nil [22843 22990])
+            ("tabbar-button" variable
+               (:default-value (quote ((t :inherit tabbar-default :box (:line-width 1 :color "white" :style released-button))))
+                :type "face")
+                nil [22992 23175])
+            ("tabbar-button-highlight" variable
+               (:default-value (quote ((t :inherit tabbar-default)))
+                :type "face")
+                nil [23177 23327])
+            ("tabbar-background-color" variable (:user-visible-flag t) nil [23329 23661])
+            ("tabbar-background-color" function nil nil [23663 24051])
+            ("tabbar-button-widget" variable
+               (:constant-flag t
+                :default-value (quote (cons (cons :tag "Enabled" (string) (repeat :tag "Image" :extra-offset 2 (restricted-sexp :tag "Spec" :match-alternatives (listp)))) (cons :tag "Disabled" (string) (repeat :tag "Image" :extra-offset 2 (restricted-sexp :tag "Spec" :match-alternatives (listp)))))))
+                nil [24097 25086])
+            ("tabbar-home-button-value" variable nil nil [25107 25174])
+            ("tabbar-home-button-enabled-image" variable
+               (:constant-flag t
+                :default-value (quote ((:type pbm :data "P2 13 13 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255
+255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 0
+6 0 255 255 255 255 255 255 255 255 255 255 9 130 9 255 255 255 255
+255 255 255 255 255 255 26 130 26 255 255 255 255 255 255 255 0 9 26
+41 130 41 26 9 0 255 255 255 255 5 145 140 135 130 125 120 115 5 255
+255 255 255 0 9 26 41 130 41 26 9 0 255 255 255 255 255 255 255 26 130
+26 255 255 255 255 255 255 255 255 255 255 9 130 9 255 255 255 255 255
+255 255 255 255 255 0 6 0 255 255 255 255 255 255 255 255 255 255 255
+255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255
+255 255 255
+"))))
+                nil [25176 25931])
+            ("tabbar-home-button-disabled-image" variable
+               (:constant-flag t
+                :default-value (quote ((:type pbm :data "P2 13 13 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255
+255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255
+255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255
+255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255
+255 255 0 0 1 2 3 2 1 0 0 255 255 255 255 0 132 128 123 119 114 110
+106 0 255 255 255 255 0 0 1 2 3 2 1 0 0 255 255 255 255 255 255 255
+255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255
+255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255
+255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255
+255 255 255 255 255 255 255 255 255
+"))))
+                nil [25933 26702])
+            ("tabbar-home-button" variable (:default-value (cons (cons "[o]" tabbar-home-button-enabled-image) (cons "[x]" tabbar-home-button-disabled-image))) nil [26704 27150])
+            ("tabbar-scroll-left-button-value" variable nil nil [27178 27259])
+            ("tabbar-scroll-left-button-enabled-image" variable
+               (:constant-flag t
+                :default-value (quote ((:type pbm :data "P2 13 13 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255
+255 255 255 255 255 255 255 255 128 16 48 255 255 255 255 255 255 255
+255 144 28 86 128 0 255 255 255 255 255 255 160 44 92 159 135 113 0
+255 255 255 255 160 44 97 165 144 129 120 117 0 255 255 176 44 98 175
+174 146 127 126 127 128 0 255 255 0 160 184 156 143 136 134 135 137
+138 0 255 255 176 32 67 144 146 144 145 146 148 149 0 255 255 255 255
+160 42 75 140 154 158 159 160 0 255 255 255 255 255 255 160 40 74 154
+170 171 0 255 255 255 255 255 255 255 255 160 41 82 163 0 255 255 255
+255 255 255 255 255 255 255 160 32 48 255 255 255 255 255 255 255 255
+255 255 255 255 255 255
+"))))
+                nil [27261 28103])
+            ("tabbar-scroll-left-button" variable (:default-value (cons (cons " <" tabbar-scroll-left-button-enabled-image) (cons " =" nil))) nil [28105 28547])
+            ("tabbar-scroll-right-button-value" variable nil nil [28576 28659])
+            ("tabbar-scroll-right-button-enabled-image" variable
+               (:constant-flag t
+                :default-value (quote ((:type pbm :data "P2 13 13 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255
+48 32 160 255 255 255 255 255 255 255 255 255 255 44 161 71 32 160 255
+255 255 255 255 255 255 255 36 157 163 145 62 32 160 255 255 255 255
+255 255 30 128 133 137 142 124 50 32 160 255 255 255 255 29 120 121
+124 126 126 124 105 42 32 176 255 255 31 126 127 128 128 128 128 126
+124 89 32 255 255 33 134 135 136 137 137 138 119 49 32 176 255 255 34
+143 144 145 146 128 54 32 160 255 255 255 255 36 152 153 134 57 32 160
+255 255 255 255 255 255 38 141 60 32 160 255 255 255 255 255 255 255
+255 48 32 160 255 255 255 255 255 255 255 255 255 255 255 255 255 255
+255 255 255 255 255 255 255 255
+"))))
+                nil [28661 29514])
+            ("tabbar-scroll-right-button" variable (:default-value (cons (cons " >" tabbar-scroll-right-button-enabled-image) (cons " =" nil))) nil [29516 29962])
+            ("tabbar-separator-widget" variable
+               (:constant-flag t
+                :default-value (quote (cons (choice (string) (number :tag "Space width" 0.2)) (repeat :tag "Image" :extra-offset 2 (restricted-sexp :tag "Spec" :match-alternatives (listp))))))
+                nil [29981 30582])
+            ("tabbar-separator-value" variable nil nil [30584 30665])
+            ("tabbar-separator" variable (:default-value (list 0.2)) nil [30667 31031])
+            ("tabbar-use-images" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [31047 31541])
+            ("tabbar-cached-image" variable nil nil [31672 31704])
+            ("tabbar-cached-spec" variable nil nil [31705 31736])
+            ("tabbar-find-image" function (:arguments ("specs")) nil [31737 32163])
+            ("tabbar-disable-image" function (:arguments ("image")) nil [32165 32369])
+            ("tabbar-normalize-image" function (:arguments ("image" "margin")) nil [32371 32928])
+            ("tabbar-make-mouse-keymap" function (:arguments ("callback")) nil [32967 33565])
+            ("tabbar-make-mouse-event" function (:arguments ("type")) nil [33567 33980])
+            ("tabbar-default-button-keymap" variable
+               (:constant-flag t
+                :default-value (tabbar-make-mouse-keymap (quote tabbar-select-button-callback)))
+                nil [33997 34128])
+            ("tabbar-help-on-button" function (:arguments ("window" "object" "position")) nil [34130 34776])
+            ("tabbar-click-on-button" function (:arguments ("name" "type")) nil [34778 35275])
+            ("tabbar-select-button-callback" function
+               (:user-visible-flag t
+                :arguments ("event"))
+                nil [35277 35645])
+            ("tabbar-make-button-keymap" function (:arguments ("name")) nil [35647 36041])
+            ("tabbar-scroll-left" function (:arguments ("event")) nil [36067 36248])
+            ("tabbar-scroll-left-help" function nil nil [36250 36380])
+            ("tabbar-scroll-right" function (:arguments ("event")) nil [36382 36564])
+            ("tabbar-scroll-right-help" function nil nil [36566 36699])
+            ("tabbar-default-tab-keymap" variable
+               (:constant-flag t
+                :default-value (tabbar-make-mouse-keymap (quote tabbar-select-tab-callback)))
+                nil [36713 36835])
+            ("tabbar-help-on-tab" function (:arguments ("window" "object" "position")) nil [36837 37310])
+            ("tabbar-click-on-tab" function (:arguments ("tab" "type")) nil [37312 37762])
+            ("tabbar-select-tab-callback" function
+               (:user-visible-flag t
+                :arguments ("event"))
+                nil [37764 38114])
+            ("tabbar-make-tab-keymap" function (:arguments ("tab")) nil [38116 38491])
+            ("tabbar-button-label" function (:arguments ("name")) nil [38522 39397])
+            ("tabbar-line-button" function (:arguments ("name")) nil [39399 40355])
+            ("tabbar-line-separator" function nil nil [40357 41359])
+            ("tabbar-line-buttons" function (:arguments ("tabset")) nil [41361 41955])
+            ("tabbar-line-tab" function (:arguments ("tab")) nil [41957 42683])
+            ("tabbar-line-format" function (:arguments ("tabset")) nil [42685 45163])
+            ("tabbar-line" function nil nil [45165 45699])
+            ("tabbar-header-line-format" variable
+               (:constant-flag t
+                :default-value (quote (:eval (tabbar-line))))
+                nil [45701 45796])
+            ("tabbar-default-inhibit-function" function nil nil [45798 46209])
+            ("tabbar-cycle" function (:arguments ("backward" "type")) nil [46250 48693])
+            ("tabbar-backward" function (:user-visible-flag t) nil [48710 48868])
+            ("tabbar-forward" function (:user-visible-flag t) nil [48885 49036])
+            ("tabbar-backward-group" function (:user-visible-flag t) nil [49053 49217])
+            ("tabbar-forward-group" function (:user-visible-flag t) nil [49234 49391])
+            ("tabbar-backward-tab" function (:user-visible-flag t) nil [49408 49549])
+            ("tabbar-forward-tab" function (:user-visible-flag t) nil [49566 49700])
+            ("tabbar--mouse" function (:arguments ("number")) nil [49732 49988])
+            ("tabbar-press-home" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [50005 50326])
+            ("tabbar-press-scroll-left" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [50343 50685])
+            ("tabbar-press-scroll-right" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [50702 51047])
+            ("mwheel" include nil nil [51077 51094])
+            ("tabbar--mwheel-up-event" variable
+               (:constant-flag t
+                :default-value (symbol-value (if (boundp (quote mouse-wheel-up-event)) (quote mouse-wheel-up-event) (quote mouse-wheel-up-button))))
+                nil [51117 51287])
+            ("tabbar--mwheel-down-event" variable
+               (:constant-flag t
+                :default-value (symbol-value (if (boundp (quote mouse-wheel-down-event)) (quote mouse-wheel-down-event) (quote mouse-wheel-down-button))))
+                nil [51289 51467])
+            ("tabbar--mwheel-key" function (:arguments ("event-type")) nil [51469 51756])
+            ("tabbar--mwheel-up-p" function (:arguments ("event")) nil [51758 52032])
+            ("tabbar-mwheel-backward" function
+               (:user-visible-flag t
+                :arguments ("event"))
+                nil [52071 52307])
+            ("tabbar-mwheel-forward" function
+               (:user-visible-flag t
+                :arguments ("event"))
+                nil [52324 52556])
+            ("tabbar-mwheel-backward-group" function
+               (:user-visible-flag t
+                :arguments ("event"))
+                nil [52573 52940])
+            ("tabbar-mwheel-forward-group" function
+               (:user-visible-flag t
+                :arguments ("event"))
+                nil [52957 53316])
+            ("tabbar-mwheel-backward-tab" function
+               (:user-visible-flag t
+                :arguments ("event"))
+                nil [53333 53614])
+            ("tabbar-mwheel-forward-tab" function
+               (:user-visible-flag t
+                :arguments ("event"))
+                nil [53631 53908])
+            ("tabbar-mwheel-switch-tab" function
+               (:user-visible-flag t
+                :arguments ("event"))
+                nil [53990 54221])
+            ("tabbar-mwheel-switch-group" function
+               (:user-visible-flag t
+                :arguments ("event"))
+                nil [54238 54485])
+            ("tabbar-mode-on-p" function nil nil [54507 54653])
+            ("tabbar--local-hlf" variable nil nil [54680 54710])
+            ("define-minor-mode" code nil nil [54727 56312])
+            ("tabbar-prefix-key" variable (:default-value [(control 99)]) nil [56334 56422])
+            ("tabbar-prefix-map" variable (:default-value (let ((km (make-sparse-keymap))) (define-key km [(control home)] (quote tabbar-press-home)) (define-key km [(control left)] (quote tabbar-backward)) (define-key km [(control right)] (quote tabbar-forward)) (define-key km [(control up)] (quote tabbar-backward-group)) (define-key km [(control down)] (quote tabbar-forward-group)) (define-key km [(control prior)] (quote tabbar-press-scroll-left)) (define-key km [(control next)] (quote tabbar-press-scroll-right)) (define-key km [(control f10)] (quote tabbar-local-mode)) km)) nil [56424 57012])
+            ("tabbar-mode-map" variable (:default-value (let ((km (make-sparse-keymap))) (define-key km tabbar-prefix-key tabbar-prefix-map) km)) nil [57014 57172])
+            ("tabbar--global-hlf" variable nil nil [57174 57205])
+            ("define-minor-mode" code nil nil [57222 58366])
+            ("tabbar-mwheel-mode-map" variable (:default-value (let ((km (make-sparse-keymap))) (if (get (quote mouse-wheel) (quote event-symbol-elements)) (define-key km [A-mouse-wheel] (quote tabbar-mwheel-switch-group)) (let ((up (tabbar--mwheel-key tabbar--mwheel-up-event)) (down (tabbar--mwheel-key tabbar--mwheel-down-event))) (define-key km (\` [header-line (\, down)]) (quote tabbar-mwheel-backward-group)) (define-key km (\` [header-line (\, up)]) (quote tabbar-mwheel-forward-group)) (define-key km (\` [header-line (control (\, down))]) (quote tabbar-mwheel-backward-tab)) (define-key km (\` [header-line (control (\, up))]) (quote tabbar-mwheel-forward-tab)) (define-key km (\` [header-line (shift (\, down))]) (quote tabbar-mwheel-backward)) (define-key km (\` [header-line (shift (\, up))]) (quote tabbar-mwheel-forward)))) km)) nil [58394 59394])
+            ("define-minor-mode" code nil nil [59411 59841])
+            ("tabbar-mwheel-follow" function nil nil [59843 60045])
+            ("add-hook" code nil nil [60047 60102])
+            ("add-hook" code nil nil [60103 60158])
+            ("tabbar-buffer" customgroup (:user-visible-flag t) nil [60180 60261])
+            ("tabbar-buffer-home-button" variable (:default-value (cons (cons "[+]" tabbar-home-button-enabled-image) (cons "[-]" tabbar-home-button-disabled-image))) nil [60263 60906])
+            ("tabbar-buffer-list-function" variable (:default-value (quote tabbar-buffer-list)) nil [60908 61104])
+            ("tabbar-buffer-groups-function" variable (:default-value (quote tabbar-buffer-groups)) nil [61106 61372])
+            ("tabbar-buffer-list" function nil nil [61374 61942])
+            ("tabbar-buffer-mode-derived-p" function (:arguments ("mode" "parents")) nil [61944 62231])
+            ("tabbar-buffer-groups" function nil nil [62233 63579])
+            ("tabbar--buffers" variable nil nil [63615 63643])
+            ("tabbar-buffer-update-groups" function nil nil [63645 66673])
+            ("tabbar--buffer-show-groups" variable nil nil [66701 66740])
+            ("tabbar-buffer-show-groups" function (:arguments ("flag")) nil [66742 66956])
+            ("tabbar-buffer-tabs" function nil nil [66958 67327])
+            ("tabbar-buffer-button-label" function (:arguments ("name")) nil [67329 68605])
+            ("tabbar-buffer-tab-label" function (:arguments ("tab")) nil [68607 69283])
+            ("tabbar-buffer-help-on-tab" function (:arguments ("tab")) nil [69285 69788])
+            ("tabbar-buffer-select-tab" function (:arguments ("event" "tab")) nil [69790 70203])
+            ("tabbar-buffer-click-on-home" function (:arguments ("event")) nil [70205 70627])
+            ("tabbar-buffer-help-on-home" function nil nil [70629 70908])
+            ("tabbar-buffer-track-killed" function nil nil [70910 72001])
+            ("tabbar-buffer-init" function nil nil [72032 72687])
+            ("tabbar-buffer-quit" function nil nil [72689 73181])
+            ("add-hook" code nil nil [73183 73231])
+            ("add-hook" code nil nil [73232 73280])
+            ("tabbar" package nil nil [73282 73299])
+            ("run-hooks" code nil nil [73301 73330]))          
+      :file "02-tabbar.el"
+      :pointmax 73357
+      :fsize 73356
+      :lastmodtime '(22758 527 199526 391000)
+      :unmatched-syntax '((close-paren 15702 . 15703) (symbol 15161 . 15177) (open-paren 15160 . 15161) (close-paren 12060 . 12061) (symbol 11876 . 11892) (open-paren 11875 . 11876))))
+  :file "!home!nakao!.emacs.d!init.d!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

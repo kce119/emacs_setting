@@ -1,0 +1,945 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("sstream" include (:system-flag t) nil [1 19])
+            ("iomanip" include (:system-flag t) nil [20 38])
+            ("iostream" include (:system-flag t) nil [39 58])
+            ("boost/timer/timer.hpp" include (:system-flag t) nil [59 91])
+            ("boost/program_options.hpp" include (:system-flag t) nil [92 128])
+            ("map" include (:system-flag t) nil [130 144])
+            ("msgpub/user_mqtt.hpp" include (:system-flag t) nil [145 176])
+            ("test_util.hpp" include nil nil [177 201])
+            ("console_input_handler" function
+               (:template 
+                  ( ("User" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("ec" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("boost::system::error_code" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [260 296])
+                    ("len" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [301 317])
+                    ("console_input" variable
+                       (:reference 1
+                        :type ("boost::asio::posix::basic_stream_descriptor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [322 383])
+                    ("buf" variable
+                       (:reference 1
+                        :type ("boost::asio::streambuf" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [388 416])
+                    ("u" variable
+                       (:reference 1
+                        :type ("User" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [421 429])
+                    ("ios" variable
+                       (:reference 1
+                        :type ("boost::asio::io_service" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [434 463])
+                    ("numstr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [468 494])
+                    ("qos" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [499 523])
+                    ("timer" variable
+                       (:reference 1
+                        :type ("boost::timer::cpu_timer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [528 559]))                  )
+                nil [203 1304])
+            ("test" function
+               (:arguments 
+                  ( ("ios" variable
+                       (:reference 1
+                        :type ("boost::asio::io_service" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1321 1350])
+                    ("host_name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1355 1377])
+                    ("port" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1382 1399])
+                    ("appname" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1404 1424])
+                    ("numstr" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1429 1448])
+                    ("qos" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1453 1470])
+                    ("is_retain" variable (:type "bool") (reparse-symbol arg-sub-list) [1475 1490])
+                    ("is_clean_session" variable (:type "bool") (reparse-symbol arg-sub-list) [1495 1517])
+                    ("cacert" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1522 1541]))                  
+                :type "void")
+                nil [1306 5365])
+            ("po" type
+               (:kind alias
+                :members 
+                  ( ("boost::program_options" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [5367 5405])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [5416 5425])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5426 5439]))                  
+                :type "int")
+                nil [5407 8131]))          
+      :file "echo.cpp"
+      :pointmax 8132
+      :fsize 8187
+      :lastmodtime '(22544 3356 980000 1000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("TEST_UTIL_HPP" variable (:constant-flag t) nil [31 44])
+            ("thread" include (:system-flag t) nil [46 63])
+            ("mutex" include (:system-flag t) nil [64 80])
+            ("condition_variable" include (:system-flag t) nil [81 110])
+            ("boost/lexical_cast.hpp" include (:system-flag t) nil [112 145])
+            ("boost/process.hpp" include (:system-flag t) nil [146 174])
+            ("boost/process/wait_for_exit.hpp" include (:system-flag t) nil [175 217])
+            ("msgpub/log.hpp" include (:system-flag t) nil [219 244])
+            ("iostream" include (:system-flag t) nil [245 264])
+            ("msgpub" type
+               (:members 
+                  ( ("bench_test" type (:type "namespace") (reparse-symbol namespacesubparts) [285 312]))                  
+                :type "namespace")
+                nil [266 332]))          
+      :file "test_util.hpp"
+      :pointmax 377
+      :fsize 376
+      :lastmodtime '(22541 38364 319999 998000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TEST_UTIL_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("boost/process.hpp" include (:system-flag t) nil [1 29])
+            ("boost/process/create_pipe.hpp" include (:system-flag t) nil [30 70])
+            ("boost/process/mitigate.hpp" include (:system-flag t) nil [71 108])
+            ("boost/lexical_cast.hpp" include (:system-flag t) nil [109 142])
+            ("boost/asio.hpp" include (:system-flag t) nil [143 168])
+            ("boost/iostreams/stream.hpp" include (:system-flag t) nil [169 206])
+            ("boost/iostreams/stream_buffer.hpp" include (:system-flag t) nil [207 251])
+            ("boost/program_options.hpp" include (:system-flag t) nil [252 288])
+            ("boost/filesystem.hpp" include (:system-flag t) nil [289 320])
+            ("string" include (:system-flag t) nil [322 339])
+            ("vector" include (:system-flag t) nil [340 357])
+            ("iostream" include (:system-flag t) nil [358 377])
+            ("sstream" include (:system-flag t) nil [378 396])
+            ("iomanip" include (:system-flag t) nil [397 415])
+            ("bp" type
+               (:kind alias
+                :members 
+                  ( ("boost::process" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [418 448])
+            ("bpi" type
+               (:kind alias
+                :members 
+                  ( ("bp::initializers" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [449 482])
+            ("bio" type
+               (:kind alias
+                :members 
+                  ( ("boost::iostreams" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [483 516])
+            ("scan_handle" function
+               (:arguments 
+                  ( ("error" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("boost::system::error_code" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [540 579])
+                    ("size" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [584 601])
+                    ("ios" variable
+                       (:reference 1
+                        :type ("boost::asio::io_service" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [606 635])
+                    ("b" variable (:type ("std::shared_ptr" type
+                         (:template-specifier 
+                            ( ("boost::asio::streambuf" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [640 682])
+                    ("pend" variable (:type ("std::shared_ptr" type
+                         (:template-specifier 
+                            ( ("bp::pipe_end" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [687 722])
+                    ("rest_connect" variable
+                       (:reference 1
+                        :type ("std::size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [727 753])
+                    ("rest_subscribe" variable
+                       (:reference 1
+                        :type ("std::size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [758 786])
+                    ("vos" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::shared_ptr" type (:template-specifier 
+                                    ( ("bio::stream" type (:template-specifier 
+                                        ( ("bio::file_descriptor_sink" type nil nil nil))                                        ) nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [791 865]))                  
+                :type "void")
+                nil [518 2382])
+            ("echo_launch" function
+               (:arguments 
+                  ( ("appname" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2406 2433])
+                    ("ios" variable
+                       (:reference 1
+                        :type ("boost::asio::io_service" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2438 2467])
+                    ("num" variable (:type "int") (reparse-symbol arg-sub-list) [2472 2480])
+                    ("uri" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2485 2508])
+                    ("port" variable (:type "int") (reparse-symbol arg-sub-list) [2513 2522])
+                    ("qos" variable (:type "int") (reparse-symbol arg-sub-list) [2527 2535])
+                    ("retain" variable (:type "bool") (reparse-symbol arg-sub-list) [2540 2552])
+                    ("clean_session" variable (:type "bool") (reparse-symbol arg-sub-list) [2557 2576])
+                    ("log_level" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2581 2603])
+                    ("cacert" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2608 2634])
+                    ("delay" variable (:type "bool") (reparse-symbol arg-sub-list) [2639 2650])
+                    ("rest_connect" variable
+                       (:reference 1
+                        :type ("std::size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2655 2681])
+                    ("rest_subscribe" variable
+                       (:reference 1
+                        :type ("std::size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2686 2714])
+                    ("vos" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::shared_ptr" type (:template-specifier 
+                                    ( ("bio::stream" type (:template-specifier 
+                                        ( ("bio::file_descriptor_sink" type nil nil nil))                                        ) nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2719 2793]))                  
+                :type "void")
+                nil [2384 4657])
+            ("po" type
+               (:kind alias
+                :members 
+                  ( ("boost::program_options" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [4659 4697])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4708 4717])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4718 4731]))                  
+                :type "int")
+                nil [4699 8934]))          
+      :file "multi_echo.cpp"
+      :pointmax 8935
+      :fsize 8934
+      :lastmodtime '(22544 4492 380000 1000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("sstream" include (:system-flag t) nil [1 19])
+            ("iomanip" include (:system-flag t) nil [20 38])
+            ("iostream" include (:system-flag t) nil [39 58])
+            ("boost/timer/timer.hpp" include (:system-flag t) nil [59 91])
+            ("boost/program_options.hpp" include (:system-flag t) nil [92 128])
+            ("map" include (:system-flag t) nil [130 144])
+            ("msgpub/user_mqtt.hpp" include (:system-flag t) nil [145 176])
+            ("test_util.hpp" include nil nil [177 201])
+            ("interval_handler" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("error" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("boost::system::error_code" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [252 291])
+                    ("u" variable
+                       (:reference 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [296 301])
+                    ("ios" variable
+                       (:reference 1
+                        :type ("boost::asio::io_service" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [306 335])
+                    ("numstr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [340 366])
+                    ("vsend" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [371 401])
+                    ("contents" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [406 434])
+                    ("qos" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [439 463])
+                    ("is_retain" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [468 490])
+                    ("t" variable (:type ("std::shared_ptr" type
+                         (:template-specifier 
+                            ( ("boost::asio::deadline_timer" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [495 542])
+                    ("interval" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [547 568]))                  )
+                nil [203 758])
+            ("console_input_handler" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("ec" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("boost::system::error_code" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [814 850])
+                    ("len" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [855 871])
+                    ("console_input" variable
+                       (:reference 1
+                        :type ("boost::asio::posix::basic_stream_descriptor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [876 937])
+                    ("buf" variable
+                       (:reference 1
+                        :type ("boost::asio::streambuf" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [942 970])
+                    ("u" variable
+                       (:reference 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [975 980])
+                    ("ios" variable
+                       (:reference 1
+                        :type ("boost::asio::io_service" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [985 1014])
+                    ("numstr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1019 1045])
+                    ("vsend" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1050 1080])
+                    ("contents" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1085 1113])
+                    ("count" variable
+                       (:reference 1
+                        :type ("std::size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1118 1137])
+                    ("qos" variable
+                       (:reference 1
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1142 1160])
+                    ("is_retain" variable
+                       (:reference 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [1165 1181])
+                    ("error_code" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1186 1202])
+                    ("timer" variable
+                       (:reference 1
+                        :type ("boost::timer::cpu_timer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1207 1238])
+                    ("interval" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1243 1264])
+                    ("finish" variable
+                       (:reference 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [1269 1282]))                  )
+                nil [760 2616])
+            ("test" function
+               (:arguments 
+                  ( ("ios" variable
+                       (:reference 1
+                        :type ("boost::asio::io_service" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2633 2662])
+                    ("host_name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2667 2689])
+                    ("port" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2694 2711])
+                    ("appname" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2716 2743])
+                    ("vsend" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [2748 2771])
+                    ("contents" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2776 2797])
+                    ("count" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2802 2820])
+                    ("interval" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2825 2846])
+                    ("numstr" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2851 2870])
+                    ("qos" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2875 2892])
+                    ("is_retain" variable (:type "bool") (reparse-symbol arg-sub-list) [2897 2912])
+                    ("is_clean_session" variable (:type "bool") (reparse-symbol arg-sub-list) [2917 2939])
+                    ("cacert" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2944 2963])
+                    ("delay" variable (:type "bool") (reparse-symbol arg-sub-list) [2968 2979]))                  
+                :type "void")
+                nil [2618 8235])
+            ("po" type
+               (:kind alias
+                :members 
+                  ( ("boost::program_options" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [8237 8275])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [8286 8295])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8296 8309]))                  
+                :type "int")
+                nil [8277 12102]))          
+      :file "do_test.cpp"
+      :pointmax 12103
+      :fsize 12166
+      :lastmodtime '(22541 43572 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("sstream" include (:system-flag t) nil [1 19])
+            ("iomanip" include (:system-flag t) nil [20 38])
+            ("iostream" include (:system-flag t) nil [39 58])
+            ("boost/timer/timer.hpp" include (:system-flag t) nil [59 91])
+            ("log.hpp" include (:system-flag t) nil [93 111])
+            ("mqtt_client_cpp.hpp" include (:system-flag t) nil [112 142])
+            ("interval_handler" function
+               (:arguments 
+                  ( ("error" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("boost::system::error_code" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [171 210])
+                    ("c" variable
+                       (:reference 1
+                        :type ("auto" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [215 223])
+                    ("ios" variable
+                       (:reference 1
+                        :type ("boost::asio::io_service" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [228 257])
+                    ("numstr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [262 288])
+                    ("vsend" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [293 323])
+                    ("contents" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [328 356])
+                    ("t" variable (:type ("std::shared_ptr" type
+                         (:template-specifier 
+                            ( ("boost::asio::deadline_timer" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [361 408])
+                    ("interval" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [413 434]))                  
+                :type "void")
+                nil [144 506])
+            ("console_input_handler" function
+               (:arguments 
+                  ( ("ec" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("boost::system::error_code" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [540 576])
+                    ("len" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [581 597])
+                    ("console_input" variable
+                       (:reference 1
+                        :type ("boost::asio::posix::basic_stream_descriptor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [602 663])
+                    ("buf" variable
+                       (:reference 1
+                        :type ("boost::asio::streambuf" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [668 696])
+                    ("c" variable
+                       (:reference 1
+                        :type ("auto" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [701 709])
+                    ("ios" variable
+                       (:reference 1
+                        :type ("boost::asio::io_service" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [714 743])
+                    ("numstr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [748 774])
+                    ("vsend" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [779 809])
+                    ("contents" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [814 842])
+                    ("count" variable
+                       (:reference 1
+                        :type ("std::size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [847 866])
+                    ("error_code" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [871 887])
+                    ("timer" variable
+                       (:reference 1
+                        :type ("boost::timer::cpu_timer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [892 923])
+                    ("interval" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [928 949])
+                    ("finish" variable
+                       (:reference 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [954 967]))                  
+                :type "void")
+                nil [508 1955])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1966 1975])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1976 1988]))                  
+                :type "int")
+                nil [1957 8057]))          
+      :file "do_test_tls.cpp"
+      :pointmax 8058
+      :fsize 8105
+      :lastmodtime '(22542 46074 683333 332000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "log.hpp"
+      :fsize 1264
+      :lastmodtime '(22541 38364 319999 998000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("msgpub/user.hpp" include (:system-flag t) nil [1 27])
+            ("msgpub/log.hpp" include (:system-flag t) nil [28 53])
+            ("sstream" include (:system-flag t) nil [54 72])
+            ("iomanip" include (:system-flag t) nil [73 91])
+            ("iostream" include (:system-flag t) nil [92 111])
+            ("boost/timer/timer.hpp" include (:system-flag t) nil [112 144])
+            ("map" include (:system-flag t) nil [146 160])
+            ("mqtt_client_cpp.hpp" include (:system-flag t) nil [161 191])
+            ("console_input_handler" function
+               (:arguments 
+                  ( ("ec" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("boost::system::error_code" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [225 261])
+                    ("len" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [266 282])
+                    ("console_input" variable
+                       (:reference 1
+                        :type ("boost::asio::posix::basic_stream_descriptor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [287 348])
+                    ("buf" variable
+                       (:reference 1
+                        :type ("boost::asio::streambuf" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [353 381])
+                    ("c" variable
+                       (:reference 1
+                        :type ("auto" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [386 394])
+                    ("ios" variable
+                       (:reference 1
+                        :type ("boost::asio::io_service" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [399 428])
+                    ("numstr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [433 459])
+                    ("timer" variable
+                       (:reference 1
+                        :type ("boost::timer::cpu_timer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [464 495]))                  
+                :type "void")
+                nil [193 1125])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1136 1145])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1146 1158]))                  
+                :type "int")
+                nil [1127 5675]))          
+      :file "echo_tls.cpp"
+      :pointmax 5676
+      :fsize 5743
+      :lastmodtime '(22542 46074 683333 332000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("boost/process.hpp" include (:system-flag t) nil [1 29])
+            ("boost/process/create_pipe.hpp" include (:system-flag t) nil [30 70])
+            ("boost/process/mitigate.hpp" include (:system-flag t) nil [71 108])
+            ("boost/lexical_cast.hpp" include (:system-flag t) nil [109 142])
+            ("boost/asio.hpp" include (:system-flag t) nil [143 168])
+            ("boost/iostreams/stream.hpp" include (:system-flag t) nil [169 206])
+            ("boost/iostreams/stream_buffer.hpp" include (:system-flag t) nil [207 251])
+            ("string" include (:system-flag t) nil [253 270])
+            ("vector" include (:system-flag t) nil [271 288])
+            ("iostream" include (:system-flag t) nil [289 308])
+            ("bp" type
+               (:kind alias
+                :members 
+                  ( ("boost::process" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [311 341])
+            ("bpi" type
+               (:kind alias
+                :members 
+                  ( ("bp::initializers" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [342 375])
+            ("bio" type
+               (:kind alias
+                :members 
+                  ( ("boost::iostreams" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [376 409])
+            ("scan_handle" function
+               (:arguments 
+                  ( ("error" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("boost::system::error_code" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [433 472])
+                    ("size" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [477 494])
+                    ("ios" variable
+                       (:reference 1
+                        :type ("boost::asio::io_service" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [499 528])
+                    ("b" variable (:type ("std::shared_ptr" type
+                         (:template-specifier 
+                            ( ("boost::asio::streambuf" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [533 575])
+                    ("pend" variable (:type ("std::shared_ptr" type
+                         (:template-specifier 
+                            ( ("bp::pipe_end" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [580 615])
+                    ("rest_connect" variable
+                       (:reference 1
+                        :type ("std::size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [620 646])
+                    ("rest_subscribe" variable
+                       (:reference 1
+                        :type ("std::size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [651 679])
+                    ("vos" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::shared_ptr" type (:template-specifier 
+                                    ( ("bio::stream" type (:template-specifier 
+                                        ( ("bio::file_descriptor_sink" type nil nil nil))                                        ) nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [684 758]))                  
+                :type "void")
+                nil [411 1912])
+            ("echo_launch" function
+               (:arguments 
+                  ( ("ios" variable
+                       (:reference 1
+                        :type ("boost::asio::io_service" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1936 1965])
+                    ("num" variable (:type "int") (reparse-symbol arg-sub-list) [1970 1978])
+                    ("uri" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1983 2006])
+                    ("cacert" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2011 2037])
+                    ("rest_connect" variable
+                       (:reference 1
+                        :type ("std::size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2042 2068])
+                    ("rest_subscribe" variable
+                       (:reference 1
+                        :type ("std::size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2073 2101])
+                    ("vos" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::shared_ptr" type (:template-specifier 
+                                    ( ("bio::stream" type (:template-specifier 
+                                        ( ("bio::file_descriptor_sink" type nil nil nil))                                        ) nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2106 2180]))                  
+                :type "void")
+                nil [1914 3539])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3550 3559])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3560 3572]))                  
+                :type "int")
+                nil [3541 4622]))          
+      :file "multi_echo_tls.cpp"
+      :pointmax 4623
+      :fsize 4622
+      :lastmodtime '(22542 46074 683333 332000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("boost/process.hpp" include (:system-flag t) nil [1 29])
+            ("boost/process/create_pipe.hpp" include (:system-flag t) nil [30 70])
+            ("boost/process/mitigate.hpp" include (:system-flag t) nil [71 108])
+            ("boost/lexical_cast.hpp" include (:system-flag t) nil [109 142])
+            ("boost/asio.hpp" include (:system-flag t) nil [143 168])
+            ("boost/bind.hpp" include (:system-flag t) nil [169 194])
+            ("boost/iostreams/stream.hpp" include (:system-flag t) nil [195 232])
+            ("boost/iostreams/stream_buffer.hpp" include (:system-flag t) nil [233 277])
+            ("boost/program_options.hpp" include (:system-flag t) nil [278 314])
+            ("string" include (:system-flag t) nil [316 333])
+            ("vector" include (:system-flag t) nil [334 351])
+            ("iostream" include (:system-flag t) nil [352 371])
+            ("bp" type
+               (:kind alias
+                :members 
+                  ( ("boost::process" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [373 403])
+            ("bpi" type
+               (:kind alias
+                :members 
+                  ( ("bp::initializers" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [404 437])
+            ("bio" type
+               (:kind alias
+                :members 
+                  ( ("boost::iostreams" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [438 471])
+            ("scan_handle" function
+               (:arguments 
+                  ( ("error" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("boost::system::error_code" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [495 534])
+                    ("size" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [539 556])
+                    ("ios" variable
+                       (:reference 1
+                        :type ("boost::asio::io_service" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [561 590])
+                    ("b" variable (:type ("std::shared_ptr" type
+                         (:template-specifier 
+                            ( ("boost::asio::streambuf" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [595 637])
+                    ("pend" variable (:type ("std::shared_ptr" type
+                         (:template-specifier 
+                            ( ("bp::pipe_end" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [642 677])
+                    ("rest_connect" variable
+                       (:reference 1
+                        :type ("std::size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [682 708])
+                    ("rest_subscribe" variable
+                       (:reference 1
+                        :type ("std::size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [713 741])
+                    ("rest_finish" variable
+                       (:reference 1
+                        :type ("std::size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [746 771])
+                    ("vos" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::shared_ptr" type (:template-specifier 
+                                    ( ("bio::stream" type (:template-specifier 
+                                        ( ("bio::file_descriptor_sink" type nil nil nil))                                        ) nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [776 850])
+                    ("wait" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [855 872])
+                    ("cs" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("bp::child" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [877 904]))                  
+                :type "void")
+                nil [473 3037])
+            ("test_launch" function
+               (:arguments 
+                  ( ("appname" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3066 3093])
+                    ("ios" variable
+                       (:reference 1
+                        :type ("boost::asio::io_service" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3098 3127])
+                    ("num" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3132 3148])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [3153 3163])
+                    ("data_size" variable (:type "int") (reparse-symbol arg-sub-list) [3168 3182])
+                    ("interval" variable (:type "int") (reparse-symbol arg-sub-list) [3187 3200])
+                    ("uri" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3205 3228])
+                    ("port" variable (:type "int") (reparse-symbol arg-sub-list) [3233 3242])
+                    ("qos" variable (:type "int") (reparse-symbol arg-sub-list) [3247 3255])
+                    ("is_retain" variable (:type "bool") (reparse-symbol arg-sub-list) [3260 3275])
+                    ("is_clean_session" variable (:type "bool") (reparse-symbol arg-sub-list) [3280 3302])
+                    ("log_level" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3307 3329])
+                    ("cacert" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3334 3360])
+                    ("delay" variable (:type "bool") (reparse-symbol arg-sub-list) [3365 3376])
+                    ("rest_connect" variable
+                       (:reference 1
+                        :type ("std::size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3381 3407])
+                    ("rest_subscribe" variable
+                       (:reference 1
+                        :type ("std::size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3412 3440])
+                    ("rest_finish" variable
+                       (:reference 1
+                        :type ("std::size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3445 3470])
+                    ("vos" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::shared_ptr" type (:template-specifier 
+                                    ( ("bio::stream" type (:template-specifier 
+                                        ( ("bio::file_descriptor_sink" type nil nil nil))                                        ) nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3475 3549])
+                    ("wait" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3554 3571])
+                    ("cs" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("bp::child" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3576 3603]))                  
+                :type ("bp::child" type (:type "class") nil nil))
+                nil [3039 5613])
+            ("po" type
+               (:kind alias
+                :members 
+                  ( ("boost::program_options" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [5615 5653])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [5664 5673])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5674 5687]))                  
+                :type "int")
+                nil [5655 10230]))          
+      :file "multi_test.cpp"
+      :pointmax 10231
+      :fsize 10230
+      :lastmodtime '(22541 38364 319999 998000)
+      :unmatched-syntax nil))
+  :file "!home!nakao!github!iotc_mqtt_bench!src!notuse_user_mqtt!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

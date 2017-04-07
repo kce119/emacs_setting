@@ -1,0 +1,16 @@
+;; Object auto-complete-c-headers-20150911.2023/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "auto-complete-c-headers-20150911.2023/"
+  :tables
+  (list
+    (semanticdb-table "auto-complete-c-headers-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "auto-complete-c-headers-autoloads.el"
+      :pointmax 319
+      :fsize 422
+      :lastmodtime '(22602 20829 946666 669000)
+      :unmatched-syntax nil))
+  :file "!home!nakao!.emacs.d!elpa!auto-complete-c-headers-20150911.2023!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

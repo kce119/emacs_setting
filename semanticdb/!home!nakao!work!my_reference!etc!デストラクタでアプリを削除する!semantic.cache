@@ -1,0 +1,81 @@
+;; Object デストラクタでアプリを削除する/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "デストラクタでアプリを削除する/"
+  :tables
+  (list
+    (semanticdb-table "main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("vector" include (:system-flag t) nil [21 38])
+            ("algorithm" include (:system-flag t) nil [39 59])
+            ("string" include (:system-flag t) nil [60 77])
+            ("app_remover" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [99 106])
+                    ("app_remover" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("Args" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [152 158])
+                            ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [162 167]))                          
+                        :type ("app_remover" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [140 425])
+                    ("app_remover" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [431 756])
+                    ("private" label nil (reparse-symbol classsubparts) [758 766])
+                    ("app_v_" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [771 803]))                  
+                :type "class")
+                nil [79 843])
+            ("main" function (:type "int") nil [845 1050]))          
+      :file "main.cpp"
+      :pointmax 1051
+      :fsize 1304
+      :lastmodtime '(22674 38475 556666 668000)
+      :unmatched-syntax nil)
+    (semanticdb-table "test.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("string" include (:system-flag t) nil [1 18])
+            ("vector" include (:system-flag t) nil [19 36])
+            ("iostream" include (:system-flag t) nil [37 56])
+            ("foo" type
+               (:members 
+                  ( ("foo" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("Args" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [111 117])
+                            ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [121 126]))                          
+                        :type ("foo" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [107 178])
+                    ("foo" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [183 270])
+                    ("v" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [275 302]))                  
+                :type "struct")
+                nil [58 305])
+            ("main" function (:type "int") nil [307 342]))          
+      :file "test.cpp"
+      :pointmax 343
+      :fsize 342
+      :lastmodtime '(22674 37858 426666 668000)
+      :unmatched-syntax '((punctuation 119 . 120) (punctuation 118 . 119) (punctuation 117 . 118) (punctuation 116 . 117) (punctuation 101 . 102) (symbol 97 . 101) (punctuation 95 . 96) (punctuation 94 . 95) (punctuation 93 . 94) (TYPENAME 85 . 93) (punctuation 84 . 85) (TEMPLATE 75 . 83) (punctuation 119 . 120) (punctuation 118 . 119) (punctuation 117 . 118) (punctuation 116 . 117) (punctuation 101 . 102) (symbol 97 . 101) (punctuation 95 . 96) (punctuation 94 . 95) (punctuation 93 . 94) (TYPENAME 85 . 93) (punctuation 84 . 85) (TEMPLATE 75 . 83))))
+  :file "!home!nakao!work!my_reference!etc!デストラクタでアプリを削除する!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,174 @@
+;; Object parameter/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "parameter/"
+  :tables
+  (list
+    (semanticdb-table "keyword.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("KEYWORD_050328_HPP" variable (:constant-flag t) nil [273 291])
+            ("boost/parameter/aux_/unwrap_cv_reference.hpp" include (:system-flag t) nil [293 348])
+            ("boost/parameter/aux_/tag.hpp" include (:system-flag t) nil [349 388])
+            ("boost/parameter/aux_/default.hpp" include (:system-flag t) nil [389 432])
+            ("boost" type
+               (:members 
+                  ( ("parameter" type
+                       (:members 
+                          ( ("keyword" type
+                               (:template 
+                                  ( ("Tag" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("=" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type ("aux::tag::type" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("x" variable
+                                               (:reference 1
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [940 945]))                                          
+                                        :typemodifiers ("typename")
+                                        :operator-flag t
+                                        :methodconst-flag t)
+                                        (reparse-symbol classsubparts) [865 1045])
+                                    ("|" function
+                                       (:template 
+                                          ( ("Default" type (:type "class") nil nil))                                          
+                                        :type ("aux::default_" type
+                                             (:template-specifier 
+                                                ( ("Tag" type nil nil nil)
+                                                  ("Default" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :arguments 
+                                          ( ("default_" variable
+                                               (:reference 1
+                                                :type ("Default" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1122 1140]))                                          
+                                        :operator-flag t
+                                        :methodconst-flag t)
+                                        (reparse-symbol classsubparts) [1051 1212])
+                                    ("||" function
+                                       (:template 
+                                          ( ("Default" type (:type "class") nil nil))                                          
+                                        :type ("aux::lazy_default" type
+                                             (:template-specifier 
+                                                ( ("Tag" type nil nil nil)
+                                                  ("Default" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :arguments 
+                                          ( ("default_" variable
+                                               (:reference 1
+                                                :type ("Default" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1294 1312]))                                          
+                                        :operator-flag t
+                                        :methodconst-flag t)
+                                        (reparse-symbol classsubparts) [1218 1388])
+                                    ("=" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type ("aux::tag::type" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("x" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1475 1486]))                                          
+                                        :typemodifiers ("typename")
+                                        :operator-flag t
+                                        :methodconst-flag t)
+                                        (reparse-symbol classsubparts) [1394 1592])
+                                    ("|" function
+                                       (:template 
+                                          ( ("Default" type (:type "class") nil nil))                                          
+                                        :type ("aux::default_" type
+                                             (:template-specifier 
+                                                ( ("Tag" type nil nil nil)
+                                                  ("Default" type (:constant-flag t) nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :arguments 
+                                          ( ("default_" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Default" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1675 1699]))                                          
+                                        :operator-flag t
+                                        :methodconst-flag t)
+                                        (reparse-symbol classsubparts) [1598 1777])
+                                    ("||" function
+                                       (:template 
+                                          ( ("Default" type (:type "class") nil nil))                                          
+                                        :type ("aux::lazy_default" type
+                                             (:template-specifier 
+                                                ( ("Tag" type nil nil nil)
+                                                  ("Default" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :arguments 
+                                          ( ("default_" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Default" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1859 1883]))                                          
+                                        :operator-flag t
+                                        :methodconst-flag t)
+                                        (reparse-symbol classsubparts) [1783 1959])
+                                    ("public" label nil (reparse-symbol classsubparts) [1962 1969])
+                                    ("instance" variable
+                                       (:typemodifiers ("static")
+                                        :type ("keyword" type
+                                             (:template-specifier 
+                                                ( ("Tag" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [2342 2377])
+                                    ("get" function
+                                       (:typemodifiers ("static")
+                                        :type ("keyword" type
+                                             (:template-specifier 
+                                                ( ("Tag" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [2419 2509]))                                  )
+                                (reparse-symbol namespacesubparts) [823 2512])
+                            ("keyword::instance" variable
+                               (:default-value "{}"
+                                :type ("keyword" type
+                                     (:template-specifier 
+                                        ( ("Tag" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [2514 2582])
+                            ("BOOST_PARAMETER_KEYWORD" variable (:constant-flag t) (reparse-symbol namespacesubparts) [2877 2900]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [452 3927]))                  
+                :type "namespace")
+                nil [434 3928]))          
+      :file "keyword.hpp"
+      :pointmax 3990
+      :fsize 3989
+      :lastmodtime '(22324 21861 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("KEYWORD_050328_HPP")
+          ("BOOST_PARAMETER_KEYWORD" (spp-arg-list ("tag_namespace" "name") 2900 . 2920) . 
+              ((NAMESPACE "namespace" 2943 . 2952) (symbol "tag_namespace" 2953 . 2966) (semantic-list "{                                                               \\
+      struct name                                                   \\
+      {                                                             \\
+          static char const* keyword_name()                         \\
+          {                                                         \\
+              return #name;                                         \\
+          }                                                         \\
+      };                                                            \\
+    }" 3013 . 3574) (NAMESPACE "namespace" 3643 . 3652) (semantic-list "{                                                               \\
+       ::boost::parameter::keyword<tag_namespace::name> const& name \\
+       = ::boost::parameter::keyword<tag_namespace::name>::instance;\\
+    }" 3713 . 3924)))
+          )
+))
+  :file "!usr!include!boost!parameter!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

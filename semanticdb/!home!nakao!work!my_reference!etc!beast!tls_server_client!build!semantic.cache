@@ -1,0 +1,65 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("default_target" function (:arguments ("all")) nil [163 183])
+            (".PHONY" function (:arguments ("default_target")) nil [184 208])
+            (".NOTPARALLEL" function nil nil [279 293])
+            (".SUFFIXES" function nil nil [469 480])
+            ("SUFFIXES" variable nil nil [545 556])
+            (".SUFFIXES" function (:arguments (".hpux_make_needs_suffix_list")) nil [557 597])
+            ("$(VERBOSE)" function nil nil [640 659])
+            ("cmake_force" function nil nil [700 713])
+            (".PHONY" function (:arguments ("cmake_force")) nil [714 735])
+            ("SHELL" variable (:default-value ("/bin/sh")) nil [903 919])
+            ("CMAKE_COMMAND" variable (:default-value ("/usr/bin/cmake")) nil [944 975])
+            ("RM" variable (:default-value ("/usr/bin/cmake" "-E" "remove" "-f")) nil [1008 1041])
+            ("EQUALS" variable (:default-value ("=")) nil [1077 1088])
+            ("CMAKE_SOURCE_DIR" variable (:default-value ("/home/nakao/work/my_reference/etc/beast/tls_server_client")) nil [1146 1223])
+            ("CMAKE_BINARY_DIR" variable (:default-value ("/home/nakao/work/my_reference/etc/beast/tls_server_client/build")) nil [1280 1363])
+            ("rebuild_cache" function nil nil [1526 1711])
+            (".PHONY" function (:arguments ("rebuild_cache")) nil [1711 1734])
+            ("rebuild_cache/fast" function (:arguments ("rebuild_cache")) nil [1779 1813])
+            (".PHONY" function (:arguments ("rebuild_cache/fast")) nil [1814 1842])
+            ("edit_cache" function nil nil [1884 2053])
+            (".PHONY" function (:arguments ("edit_cache")) nil [2053 2073])
+            ("edit_cache/fast" function (:arguments ("edit_cache")) nil [2115 2143])
+            (".PHONY" function (:arguments ("edit_cache/fast")) nil [2144 2169])
+            ("all" function (:arguments ("cmake_check_build_system")) nil [2192 2585])
+            (".PHONY" function (:arguments ("all")) nil [2585 2598])
+            ("clean" function nil nil [2623 2669])
+            (".PHONY" function (:arguments ("clean")) nil [2669 2684])
+            ("clean/fast" function (:arguments ("clean")) nil [2709 2727])
+            (".PHONY" function (:arguments ("clean/fast")) nil [2728 2748])
+            ("preinstall" function (:arguments ("all")) nil [2785 2845])
+            (".PHONY" function (:arguments ("preinstall")) nil [2845 2865])
+            ("preinstall/fast" function nil nil [2902 2963])
+            (".PHONY" function (:arguments ("preinstall/fast")) nil [2963 2988])
+            ("depend" function nil nil [3005 3124])
+            (".PHONY" function (:arguments ("depend")) nil [3124 3140])
+            ("main" function (:arguments ("cmake_check_build_system")) nil [3284 3353])
+            (".PHONY" function (:arguments ("main")) nil [3353 3367])
+            ("main/fast" function nil nil [3398 3478])
+            (".PHONY" function (:arguments ("main/fast")) nil [3478 3497])
+            ("main.o" function nil nil [3531 3609])
+            (".PHONY" function (:arguments ("main.o")) nil [3609 3625])
+            ("main.i" function nil nil [3663 3741])
+            (".PHONY" function (:arguments ("main.i")) nil [3741 3757])
+            ("main.s" function nil nil [3799 3877])
+            (".PHONY" function (:arguments ("main.s")) nil [3877 3893])
+            ("help" function nil nil [3908 4210])
+            (".PHONY" function (:arguments ("help")) nil [4210 4224])
+            ("cmake_check_build_system" function nil nil [4531 4668])
+            (".PHONY" function (:arguments ("cmake_check_build_system")) nil [4668 4702]))          
+      :file "Makefile"
+      :pointmax 4703
+      :fsize 4702
+      :lastmodtime '(22730 4865 905184 17000)
+      :unmatched-syntax nil))
+  :file "!home!nakao!work!my_reference!etc!beast!tls_server_client!build!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

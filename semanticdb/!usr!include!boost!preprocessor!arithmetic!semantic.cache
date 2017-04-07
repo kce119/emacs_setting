@@ -1,0 +1,48 @@
+;; Object arithmetic/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "arithmetic/"
+  :tables
+  (list
+    (semanticdb-table "dec.hpp"
+      :file "dec.hpp"
+      :fsize 8323
+      :lastmodtime '(22452 53218 0 0))
+    (semanticdb-table "add.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_PREPROCESSOR_ARITHMETIC_ADD_HPP" variable (:constant-flag t) nil [412 449])
+            ("boost/preprocessor/arithmetic/dec.hpp" include (:system-flag t) nil [452 501])
+            ("boost/preprocessor/arithmetic/inc.hpp" include (:system-flag t) nil [502 551])
+            ("boost/preprocessor/config/config.hpp" include (:system-flag t) nil [552 600])
+            ("boost/preprocessor/control/while.hpp" include (:system-flag t) nil [601 649])
+            ("boost/preprocessor/tuple/elem.hpp" include (:system-flag t) nil [650 695])
+            ("BOOST_PP_ADD" variable (:constant-flag t) nil [907 919])
+            ("BOOST_PP_ADD_I" variable (:constant-flag t) nil [959 973])
+            ("BOOST_PP_ADD_P" variable (:constant-flag t) nil [1081 1095])
+            ("BOOST_PP_ADD_O" variable (:constant-flag t) nil [1263 1277])
+            ("BOOST_PP_ADD_O_I" variable (:constant-flag t) nil [1383 1399])
+            ("BOOST_PP_ADD_D" variable (:constant-flag t) nil [1665 1679])
+            ("BOOST_PP_ADD_D_I" variable (:constant-flag t) nil [1727 1743]))          
+      :file "add.hpp"
+      :pointmax 1859
+      :fsize 1858
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax '((punctuation 1849 . 1850) (punctuation 1466 . 1467) (punctuation 1443 . 1444) (punctuation 1441 . 1442) (punctuation 1372 . 1373) (punctuation 1133 . 1134) (punctuation 1070 . 1071) (punctuation 719 . 720) (punctuation 698 . 699) (punctuation 696 . 697) (punctuation 450 . 451) (punctuation 354 . 355) (punctuation 296 . 297) (punctuation 294 . 295) (punctuation 252 . 253) (punctuation 250 . 251) (punctuation 1 . 2))
+      :lexical-table 
+        '(("BOOST_PP_ADD_D_I" (spp-arg-list ("d" "x" "y") 1743 . 1752) . ((symbol "BOOST_PP_TUPLE_ELEM" 1753 . 1772) (semantic-list "(2, 0, BOOST_PP_WHILE_ ## d(BOOST_PP_ADD_P, BOOST_PP_ADD_O, (x, y)))" 1772 . 1840)))
+          ("BOOST_PP_ADD_O" (spp-arg-list ("d" "xy") 1277 . 1284) . ((symbol "BOOST_PP_ADD_O_I" 1285 . 1301) (semantic-list "(BOOST_PP_TUPLE_ELEM(2, 0, xy), BOOST_PP_TUPLE_ELEM(2, 1, xy))" 1301 . 1363)))
+          ("BOOST_PP_ADD_P" (spp-arg-list ("d" "xy") 1095 . 1102) . ((symbol "BOOST_PP_TUPLE_ELEM" 1103 . 1122) (semantic-list "(2, 1, xy)" 1122 . 1132)))
+          ("BOOST_PP_ADD" (spp-arg-list ("x" "y") 919 . 925) . ((symbol "BOOST_PP_ADD_I" 926 . 940) (semantic-list "(x, y)" 940 . 946)))
+          ("BOOST_PP_ADD_D" (spp-arg-list ("d" "x" "y") 1679 . 1688) . ((symbol "BOOST_PP_ADD_D_I" 1689 . 1705) (semantic-list "(d, x, y)" 1705 . 1714)))
+          ("BOOST_PP_ADD_I" (spp-arg-list ("x" "y") 973 . 979) . ((symbol "BOOST_PP_TUPLE_ELEM" 980 . 999) (semantic-list "(2, 0, BOOST_PP_WHILE(BOOST_PP_ADD_P, BOOST_PP_ADD_O, (x, y)))" 999 . 1061)))
+          ("BOOST_PP_ADD_O_I" (spp-arg-list ("x" "y") 1399 . 1405) . ((semantic-list "(BOOST_PP_INC(x), BOOST_PP_DEC(y))" 1406 . 1440)))
+          ("BOOST_PREPROCESSOR_ARITHMETIC_ADD_HPP")
+          )
+)
+    (semanticdb-table "inc.hpp"
+      :file "inc.hpp"
+      :fsize 8297
+      :lastmodtime '(22452 53218 0 0)))
+  :file "!usr!include!boost!preprocessor!arithmetic!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

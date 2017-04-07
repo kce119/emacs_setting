@@ -1,0 +1,159 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BEAST_HTTP_DETAIL_RFC7230_HPP" variable (:constant-flag t) nil [286 315])
+            ("boost/utility/string_ref.hpp" include (:system-flag t) nil [317 356])
+            ("array" include (:system-flag t) nil [357 373])
+            ("iterator" include (:system-flag t) nil [374 393])
+            ("utility" include (:system-flag t) nil [394 412])
+            ("beast" type
+               (:members 
+                  ( ("http" type
+                       (:members 
+                          ( ("detail" type
+                               (:members 
+                                  ( ("is_digit" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("c" variable (:type "char") (reparse-symbol arg-sub-list) [490 497]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [469 534])
+                                    ("is_alpha" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("c" variable (:type "char") (reparse-symbol arg-sub-list) [557 564]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [536 1199])
+                                    ("is_text" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("c" variable (:type "char") (reparse-symbol arg-sub-list) [1221 1228]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [1201 2448])
+                                    ("is_tchar" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("c" variable (:type "char") (reparse-symbol arg-sub-list) [2471 2478]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [2450 3295])
+                                    ("is_qdchar" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("c" variable (:type "char") (reparse-symbol arg-sub-list) [3319 3326]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [3297 4582])
+                                    ("is_qpchar" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("c" variable (:type "char") (reparse-symbol arg-sub-list) [4606 4613]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [4584 5871])
+                                    ("to_field_char" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("c" variable (:type "char") (reparse-symbol arg-sub-list) [5968 5975]))                                          
+                                        :type "char")
+                                        (reparse-symbol namespacesubparts) [5942 7079])
+                                    ("to_value_char" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("c" variable (:type "char") (reparse-symbol arg-sub-list) [7175 7182]))                                          
+                                        :type "char")
+                                        (reparse-symbol namespacesubparts) [7149 8888])
+                                    ("unhex" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("c" variable (:type "char") (reparse-symbol arg-sub-list) [8915 8922]))                                          
+                                        :type ("std::int8_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [8890 9663])
+                                    ("skip_ows" function
+                                       (:template 
+                                          ( ("FwdIt" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("it" variable
+                                               (:reference 1
+                                                :type ("FwdIt" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9701 9711])
+                                            ("end" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("FwdIt" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9712 9729]))                                          )
+                                        (reparse-symbol namespacesubparts) [9665 9861])
+                                    ("skip_token" function
+                                       (:template 
+                                          ( ("FwdIt" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("it" variable
+                                               (:reference 1
+                                                :type ("FwdIt" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9901 9911])
+                                            ("last" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("FwdIt" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9912 9930]))                                          )
+                                        (reparse-symbol namespacesubparts) [9863 9987])
+                                    ("trim" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("boost::string_ref" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [10019 10046]))                                          
+                                        :type ("boost::string_ref" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [9989 10388])
+                                    ("param_iter" type
+                                       (:members 
+                                          ( ("boost::string_ref::const_iterator" variable (:type "int") (reparse-symbol classsubparts) [10432 10466])
+                                            ("it" variable (:type ("iter_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10472 10485])
+                                            ("first" variable (:type ("iter_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10490 10506])
+                                            ("last" variable (:type ("iter_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10511 10526])
+                                            ("v" variable (:type ("std::pair" type
+                                                 (:template-specifier 
+                                                    ( ("boost::string_ref" type nil nil nil)
+                                                      ("boost::string_ref" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [10531 10581])
+                                            ("empty" function
+                                               (:methodconst-flag t
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [10587 10649])
+                                            ("increment" function
+                                               (:prototype-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [10682 10703]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [10390 10706])
+                                    ("increment" function
+                                       (:template 
+                                          ( ("" type nil nil nil))                                          
+                                        :type "void"
+                                        :parent "param_iter")
+                                        (reparse-symbol namespacesubparts) [10708 12697]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [449 12700]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [432 12712]))                  
+                :type "namespace")
+                nil [414 12722]))          
+      :file "rfc7230.hpp"
+      :pointmax 12741
+      :fsize 12740
+      :lastmodtime '(22708 54047 994093 892000)
+      :unmatched-syntax '((punctuation 10676 . 10677) (VOID 10672 . 10676) (punctuation 10670 . 10671) (CLASS 10664 . 10669) (punctuation 10663 . 10664) (TEMPLATE 10655 . 10663) (punctuation 10430 . 10431) (symbol 10420 . 10429) (USING 10414 . 10419))
+      :lexical-table 
+        '(("BEAST_HTTP_DETAIL_RFC7230_HPP")
+          )
+))
+  :file "!home!nakao!github!iotc_msgpub!external!mqtt_client_cpp!external!Beast!include!beast!http!detail!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

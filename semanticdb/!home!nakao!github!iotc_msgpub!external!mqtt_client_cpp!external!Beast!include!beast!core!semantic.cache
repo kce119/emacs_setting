@@ -1,0 +1,184 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BEAST_HANDLER_HELPERS_HPP" variable (:constant-flag t) nil [282 307])
+            ("boost/asio/handler_alloc_hook.hpp" include (:system-flag t) nil [309 353])
+            ("boost/asio/handler_continuation_hook.hpp" include (:system-flag t) nil [354 405])
+            ("boost/asio/handler_invoke_hook.hpp" include (:system-flag t) nil [406 451])
+            ("memory" include (:system-flag t) nil [452 469])
+            ("beast_asio_helpers" type
+               (:members 
+                  ( ("allocate" function
+                       (:template 
+                          ( ("Handler" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("s" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [886 900])
+                            ("handler" variable
+                               (:reference 1
+                                :type ("Handler" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [901 918]))                          
+                        :typemodifiers ("inline")
+                        :pointer 1)
+                        (reparse-symbol namespacesubparts) [839 1116])
+                    ("deallocate" function
+                       (:template 
+                          ( ("Handler" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("p" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [1205 1213])
+                            ("s" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1214 1228])
+                            ("handler" variable
+                               (:reference 1
+                                :type ("Handler" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1229 1246]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [1158 1440])
+                    ("invoke" function
+                       (:template 
+                          ( ("Function" type (:type "class") nil nil)
+                            ("Handler" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("function" variable
+                               (:reference 1
+                                :type ("Function" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1535 1554])
+                            ("handler" variable
+                               (:reference 1
+                                :type ("Handler" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1555 1572]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [1476 1775])
+                    ("invoke" function
+                       (:template 
+                          ( ("Function" type (:type "class") nil nil)
+                            ("Handler" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("function" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Function" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1870 1895])
+                            ("handler" variable
+                               (:reference 1
+                                :type ("Handler" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1896 1913]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [1811 2116])
+                    ("is_continuation" function
+                       (:template 
+                          ( ("Handler" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("handler" variable
+                               (:reference 1
+                                :type ("Handler" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2254 2271]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [2202 2468]))                  
+                :type "namespace")
+                nil [769 2471]))          
+      :file "handler_helpers.hpp"
+      :pointmax 2502
+      :fsize 2501
+      :lastmodtime '(22708 54047 990762 225000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BEAST_HANDLER_HELPERS_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BEAST_ERROR_HPP" variable (:constant-flag t) nil [272 287])
+            ("boost/system/error_code.hpp" include (:system-flag t) nil [289 327])
+            ("boost/system/system_error.hpp" include (:system-flag t) nil [328 368])
+            ("beast" type
+               (:members 
+                  ( ("boost::system::error_code" variable (:type "int") (reparse-symbol namespacesubparts) [455 481])
+                    ("boost::system::system_error" variable (:type "int") (reparse-symbol namespacesubparts) [555 583])
+                    ("boost::system::error_category" variable (:type "int") (reparse-symbol namespacesubparts) [659 689])
+                    ("boost::system::error_condition" variable (:type "int") (reparse-symbol namespacesubparts) [767 798])
+                    ("errc" type
+                       (:kind alias
+                        :members 
+                          ( ("boost::system::errc" type (:type "namespace") nil nil))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [900 937]))                  
+                :type "namespace")
+                nil [370 946]))          
+      :file "error.hpp"
+      :pointmax 964
+      :fsize 963
+      :lastmodtime '(22708 54047 990762 225000)
+      :unmatched-syntax '((punctuation 765 . 766) (symbol 749 . 764) (USING 743 . 748) (punctuation 657 . 658) (symbol 642 . 656) (USING 636 . 641) (punctuation 553 . 554) (symbol 540 . 552) (USING 534 . 539) (punctuation 453 . 454) (symbol 442 . 452) (USING 436 . 441))
+      :lexical-table 
+        '(("BEAST_ERROR_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BEAST_ASYNC_COMPLETION_HPP" variable (:constant-flag t) nil [283 309])
+            ("beast/core/handler_concepts.hpp" include (:system-flag t) nil [311 353])
+            ("boost/asio/async_result.hpp" include (:system-flag t) nil [354 392])
+            ("boost/asio/handler_type.hpp" include (:system-flag t) nil [393 431])
+            ("type_traits" include (:system-flag t) nil [432 454])
+            ("utility" include (:system-flag t) nil [455 473])
+            ("beast" type
+               (:members 
+                  ( ("async_completion" type
+                       (:template 
+                          ( ("CompletionHandler" type (:type "class") nil nil)
+                            ("Signature" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("boost::asio::handler_type::type" variable
+                               (:typemodifiers ("typename")
+                                :type "int")
+                                (reparse-symbol classsubparts) [1958 2042])
+                            ("boost::asio::async_result::type" variable
+                               (:typemodifiers ("typename")
+                                :type "int")
+                                (reparse-symbol classsubparts) [2148 2211])
+                            ("async_completion" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("token" variable
+                                       (:reference 1
+                                        :typemodifiers ("typename")
+                                        :type ("std::remove_reference::type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2415 2478]))                                  
+                                :type ("async_completion" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [2398 2695])
+                            ("handler" variable (:type ("handler_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2778 2799])
+                            ("result" variable (:type ("boost::asio::async_result" type
+                                 (:template-specifier 
+                                    ( ("handler_type" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2871 2918]))                          )
+                        (reparse-symbol namespacesubparts) [1678 2921]))                  
+                :type "namespace")
+                nil [475 2924]))          
+      :file "async_completion.hpp"
+      :pointmax 2942
+      :fsize 2941
+      :lastmodtime '(22708 54047 990762 225000)
+      :unmatched-syntax '((punctuation 2146 . 2147) (symbol 2134 . 2145) (USING 2128 . 2133) (punctuation 1948 . 1949) (symbol 1935 . 1947) (USING 1929 . 1934))
+      :lexical-table 
+        '(("BEAST_ASYNC_COMPLETION_HPP")
+          )
+))
+  :file "!home!nakao!github!iotc_msgpub!external!mqtt_client_cpp!external!Beast!include!beast!core!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

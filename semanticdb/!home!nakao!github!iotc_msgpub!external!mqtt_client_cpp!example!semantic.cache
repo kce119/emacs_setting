@@ -1,0 +1,34 @@
+;; Object example/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "example/"
+  :tables
+  (list
+    (semanticdb-table "no_tls.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [195 214])
+            ("iomanip" include (:system-flag t) nil [215 233])
+            ("map" include (:system-flag t) nil [234 248])
+            ("mqtt_client_cpp.hpp" include (:system-flag t) nil [250 280])
+            ("main" function (:type "int") nil [282 4091]))          
+      :file "no_tls.cpp"
+      :pointmax 4092
+      :fsize 4091
+      :lastmodtime '(22498 10111 766666 666000)
+      :unmatched-syntax nil)
+    (semanticdb-table "tls.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [195 214])
+            ("iomanip" include (:system-flag t) nil [215 233])
+            ("map" include (:system-flag t) nil [234 248])
+            ("mqtt_client_cpp.hpp" include (:system-flag t) nil [250 280])
+            ("main" function (:type "int") nil [282 4138]))          
+      :file "tls.cpp"
+      :pointmax 4139
+      :fsize 4138
+      :lastmodtime '(22498 10111 766666 666000)
+      :unmatched-syntax nil))
+  :file "!home!nakao!github!iotc_msgpub!external!mqtt_client_cpp!example!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

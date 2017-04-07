@@ -1,0 +1,895 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BEAST_HTTP_BASIC_PARSER_v1_HPP" variable (:constant-flag t) nil [287 317])
+            ("beast/http/message.hpp" include (:system-flag t) nil [319 352])
+            ("beast/http/parse_error.hpp" include (:system-flag t) nil [353 390])
+            ("beast/http/rfc7230.hpp" include (:system-flag t) nil [391 424])
+            ("beast/http/detail/basic_parser_v1.hpp" include (:system-flag t) nil [425 473])
+            ("boost/asio/buffer.hpp" include (:system-flag t) nil [474 506])
+            ("boost/assert.hpp" include (:system-flag t) nil [507 534])
+            ("array" include (:system-flag t) nil [535 551])
+            ("climits" include (:system-flag t) nil [552 570])
+            ("cstdint" include (:system-flag t) nil [571 589])
+            ("type_traits" include (:system-flag t) nil [590 612])
+            ("beast" type
+               (:members 
+                  ( ("http" type
+                       (:members 
+                          ( ("parse_flag" type
+                               (:members 
+                                  ( ("chunked" variable
+                                       (:constant-flag t
+                                        :default-value (795 796)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [769 797])
+                                    ("connection_keep_alive" variable
+                                       (:constant-flag t
+                                        :default-value (828 829)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [802 830])
+                                    ("connection_close" variable
+                                       (:constant-flag t
+                                        :default-value (861 862)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [835 863])
+                                    ("connection_upgrade" variable
+                                       (:constant-flag t
+                                        :default-value (894 895)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [868 896])
+                                    ("trailing" variable
+                                       (:constant-flag t
+                                        :default-value (926 928)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [901 929])
+                                    ("upgrade" variable
+                                       (:constant-flag t
+                                        :default-value (959 961)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [934 962])
+                                    ("skipbody" variable
+                                       (:constant-flag t
+                                        :default-value (992 994)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [967 995])
+                                    ("contentlength" variable
+                                       (:constant-flag t
+                                        :default-value (1024 1027)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1000 1028])
+                                    ("paused" variable
+                                       (:constant-flag t
+                                        :default-value (1057 1061)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1033 1062]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [747 1063])
+                            ("body_max_size" type
+                               (:members 
+                                  ( ("value" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1549 1567])
+                                    ("body_max_size" function
+                                       (:constructor-flag t
+                                        :typemodifiers ("explicit")
+                                        :arguments 
+                                          ( ("v" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1600 1614]))                                          
+                                        :type ("body_max_size" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [1573 1645]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1522 1648])
+                            ("header_max_size" type
+                               (:members 
+                                  ( ("value" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2016 2034])
+                                    ("header_max_size" function
+                                       (:constructor-flag t
+                                        :typemodifiers ("explicit")
+                                        :arguments 
+                                          ( ("v" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2069 2083]))                                          
+                                        :type ("header_max_size" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [2040 2114]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1987 2117])
+                            ("body_what" type (:type "class") (reparse-symbol namespacesubparts) [2344 3436])
+                            ("no_content_length" variable
+                               (:typemodifiers ("static")
+                                :default-value "(std::numeric_limits<std::uint64_t>::max)()"
+                                :type ("std::uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3508 3607])
+                            ("basic_parser_v1" type
+                               (:template 
+                                  ( ("bool" type (:typevar "isRequest") nil nil)
+                                    ("Derived" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("private" label nil (reparse-symbol classsubparts) [7171 7179])
+                                    ("basic_parser_v1" type
+                                       (:template 
+                                          ( ("bool" type nil nil nil)
+                                            ("" type nil nil nil))                                          
+                                        :type "class"
+                                        :prototype t)
+                                        (reparse-symbol classsubparts) [7184 7239])
+                                    ("self" variable
+                                       (:default-value "basic_parser_v1"
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [7251 7274])
+                                    ("field_state" type
+                                       (:enum-type "std::uint8_t"
+                                        :members 
+                                          ( ("h_general" variable
+                                               (:type "std::uint8_t"
+                                                :default-value (7409 7410)
+                                                :constant-flag t)
+                                                (reparse-symbol enumsubparts) [7397 7411])
+                                            ("h_C" variable
+                                               (:type "std::uint8_t"
+                                                :constant-flag t)
+                                                (reparse-symbol enumsubparts) [7420 7424])
+                                            ("h_CO" variable
+                                               (:type "std::uint8_t"
+                                                :constant-flag t)
+                                                (reparse-symbol enumsubparts) [7433 7438])
+                                            ("h_CON" variable
+                                               (:type "std::uint8_t"
+                                                :constant-flag t)
+                                                (reparse-symbol enumsubparts) [7447 7453])
+                                            ("h_matching_connection" variable
+                                               (:type "std::uint8_t"
+                                                :constant-flag t)
+                                                (reparse-symbol enumsubparts) [7463 7485])
+                                            ("h_matching_proxy_connection" variable
+                                               (:type "std::uint8_t"
+                                                :constant-flag t)
+                                                (reparse-symbol enumsubparts) [7494 7522])
+                                            ("h_matching_content_length" variable
+                                               (:type "std::uint8_t"
+                                                :constant-flag t)
+                                                (reparse-symbol enumsubparts) [7531 7557])
+                                            ("h_matching_transfer_encoding" variable
+                                               (:type "std::uint8_t"
+                                                :constant-flag t)
+                                                (reparse-symbol enumsubparts) [7566 7595])
+                                            ("h_matching_upgrade" variable
+                                               (:type "std::uint8_t"
+                                                :constant-flag t)
+                                                (reparse-symbol enumsubparts) [7604 7623])
+                                            ("h_connection" variable
+                                               (:type "std::uint8_t"
+                                                :constant-flag t)
+                                                (reparse-symbol enumsubparts) [7633 7646])
+                                            ("h_content_length0" variable
+                                               (:type "std::uint8_t"
+                                                :constant-flag t)
+                                                (reparse-symbol enumsubparts) [7655 7673])
+                                            ("h_content_length" variable
+                                               (:type "std::uint8_t"
+                                                :constant-flag t)
+                                                (reparse-symbol enumsubparts) [7682 7699])
+                                            ("h_content_length_ows" variable
+                                               (:type "std::uint8_t"
+                                                :constant-flag t)
+                                                (reparse-symbol enumsubparts) [7708 7729])
+                                            ("h_transfer_encoding" variable
+                                               (:type "std::uint8_t"
+                                                :constant-flag t)
+                                                (reparse-symbol enumsubparts) [7738 7758])
+                                            ("h_upgrade" variable
+                                               (:type "std::uint8_t"
+                                                :constant-flag t)
+                                                (reparse-symbol enumsubparts) [7767 7777])
+                                            ("h_matching_transfer_encoding_chunked" variable
+                                               (:type "std::uint8_t"
+                                                :constant-flag t)
+                                                (reparse-symbol enumsubparts) [7787 7824])
+                                            ("h_matching_transfer_encoding_general" variable
+                                               (:type "std::uint8_t"
+                                                :constant-flag t)
+                                                (reparse-symbol enumsubparts) [7833 7870])
+                                            ("h_matching_connection_keep_alive" variable
+                                               (:type "std::uint8_t"
+                                                :constant-flag t)
+                                                (reparse-symbol enumsubparts) [7879 7912])
+                                            ("h_matching_connection_close" variable
+                                               (:type "std::uint8_t"
+                                                :constant-flag t)
+                                                (reparse-symbol enumsubparts) [7921 7949])
+                                            ("h_matching_connection_upgrade" variable
+                                               (:type "std::uint8_t"
+                                                :constant-flag t)
+                                                (reparse-symbol enumsubparts) [7958 7988])
+                                            ("h_transfer_encoding_chunked" variable
+                                               (:type "std::uint8_t"
+                                                :constant-flag t)
+                                                (reparse-symbol enumsubparts) [7998 8026])
+                                            ("h_transfer_encoding_chunked_ows" variable
+                                               (:type "std::uint8_t"
+                                                :constant-flag t)
+                                                (reparse-symbol enumsubparts) [8035 8067])
+                                            ("h_connection_keep_alive" variable
+                                               (:type "std::uint8_t"
+                                                :constant-flag t)
+                                                (reparse-symbol enumsubparts) [8077 8101])
+                                            ("h_connection_keep_alive_ows" variable
+                                               (:type "std::uint8_t"
+                                                :constant-flag t)
+                                                (reparse-symbol enumsubparts) [8110 8138])
+                                            ("h_connection_close" variable
+                                               (:type "std::uint8_t"
+                                                :constant-flag t)
+                                                (reparse-symbol enumsubparts) [8147 8166])
+                                            ("h_connection_close_ows" variable
+                                               (:type "std::uint8_t"
+                                                :constant-flag t)
+                                                (reparse-symbol enumsubparts) [8175 8198])
+                                            ("h_connection_upgrade" variable
+                                               (:type "std::uint8_t"
+                                                :constant-flag t)
+                                                (reparse-symbol enumsubparts) [8207 8228])
+                                            ("h_connection_upgrade_ows" variable
+                                               (:type "std::uint8_t"
+                                                :constant-flag t)
+                                                (reparse-symbol enumsubparts) [8237 8262])
+                                            ("h_connection_token" variable
+                                               (:type "std::uint8_t"
+                                                :constant-flag t)
+                                                (reparse-symbol enumsubparts) [8271 8290])
+                                            ("h_connection_token_ows" variable
+                                               (:type "std::uint8_t"
+                                                :constant-flag t)
+                                                (reparse-symbol enumsubparts) [8299 8327]))                                          
+                                        :type "enum")
+                                        (reparse-symbol classsubparts) [7351 8328])
+                                    ("h_max_" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8334 8353])
+                                    ("h_left_" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8358 8378])
+                                    ("b_max_" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8383 8402])
+                                    ("b_left_" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8407 8427])
+                                    ("content_length_" variable (:type ("std::uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8432 8462])
+                                    ("cb_" variable (:type ("pmf_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8467 8477])
+                                    ("s_" variable
+                                       (:suffix ":8"
+                                        :type ("state" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8482 8508])
+                                    ("fs_" variable
+                                       (:suffix ":8"
+                                        :type "unsigned int")
+                                        (reparse-symbol classsubparts) [8513 8539])
+                                    ("pos_" variable
+                                       (:suffix ":8"
+                                        :type "unsigned int")
+                                        (reparse-symbol classsubparts) [8544 8570])
+                                    ("http_major_" variable
+                                       (:suffix ":16"
+                                        :type "unsigned int")
+                                        (reparse-symbol classsubparts) [8602 8629])
+                                    ("http_minor_" variable
+                                       (:suffix ":16"
+                                        :type "unsigned int")
+                                        (reparse-symbol classsubparts) [8634 8661])
+                                    ("status_code_" variable
+                                       (:suffix ":16"
+                                        :type "unsigned int")
+                                        (reparse-symbol classsubparts) [8666 8693])
+                                    ("flags_" variable
+                                       (:suffix ":9"
+                                        :type "unsigned int")
+                                        (reparse-symbol classsubparts) [8698 8724])
+                                    ("upgrade_" variable
+                                       (:suffix ":1"
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [8729 8755])
+                                    ("public" label nil (reparse-symbol classsubparts) [8794 8801])
+                                    ("basic_parser_v1" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :type ("basic_parser_v1" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [8834 8852])
+                                    ("basic_parser_v1" function
+                                       (:template 
+                                          ( ("OtherDerived" type (:type "class") nil nil))                                          
+                                        :type ("basic_parser_v1" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("basic_parser_v1" type
+                                                     (:template-specifier 
+                                                        ( ("isRequest" type nil nil nil)
+                                                          ("OtherDerived" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [8933 8996]))                                          
+                                        :constructor-flag t
+                                        :prototype-flag t)
+                                        (reparse-symbol classsubparts) [8884 8997])
+                                    ("=" function
+                                       (:template 
+                                          ( ("OtherDerived" type (:type "class") nil nil))                                          
+                                        :type ("basic_parser_v1" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("basic_parser_v1" type
+                                                     (:template-specifier 
+                                                        ( ("isRequest" type nil nil nil)
+                                                          ("OtherDerived" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [9088 9151]))                                          
+                                        :operator-flag t
+                                        :prototype-flag t)
+                                        (reparse-symbol classsubparts) [9028 9152])
+                                    ("set_option" function
+                                       (:arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :type ("A1" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9416 9420])
+                                            ("" variable (:type ("a1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9421 9424])
+                                            ("" variable
+                                               (:reference 1
+                                                :type ("A2" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9425 9429])
+                                            ("" variable (:type ("a2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9430 9433])
+                                            ("" variable
+                                               (:reference 1
+                                                :type ("An" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9434 9438])
+                                            ("" variable (:type ("an" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9442 9445]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [9396 9585])
+                                    ("set_option" function
+                                       (:arguments 
+                                          ( ("o" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("header_max_size" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9654 9679]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [9634 9743])
+                                    ("set_option" function
+                                       (:arguments 
+                                          ( ("o" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("body_max_size" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9810 9833]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [9790 9897])
+                                    ("flags" function
+                                       (:methodconst-flag t
+                                        :type "unsigned int")
+                                        (reparse-symbol classsubparts) [9962 10023])
+                                    ("needs_eof" function
+                                       (:methodconst-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [10481 10601])
+                                    ("http_major" function
+                                       (:methodconst-flag t
+                                        :type "unsigned int")
+                                        (reparse-symbol classsubparts) [10802 10873])
+                                    ("http_minor" function
+                                       (:methodconst-flag t
+                                        :type "unsigned int")
+                                        (reparse-symbol classsubparts) [11074 11145])
+                                    ("upgrade" function
+                                       (:methodconst-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [11401 11462])
+                                    ("status_code" function
+                                       (:methodconst-flag t
+                                        :type "unsigned int")
+                                        (reparse-symbol classsubparts) [11569 11642])
+                                    ("keep_alive" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [11805 11833])
+                                    ("complete" function
+                                       (:methodconst-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [12201 12397])
+                                    ("write" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("buffers" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ConstBufferSequence" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [12973 13008])
+                                            ("ec" variable
+                                               (:reference 1
+                                                :type ("error_code" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [13009 13024]))                                          
+                                        :type ("type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [12951 13025])
+                                    ("write" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("buffer" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("boost::asio::const_buffer" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [13277 13317])
+                                            ("ec" variable
+                                               (:reference 1
+                                                :type ("error_code" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [13318 13333]))                                          
+                                        :type ("std::size_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [13255 13334])
+                                    ("write_eof" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("ec" variable
+                                               (:reference 1
+                                                :type ("error_code" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [13755 13770]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [13736 13771])
+                                    ("protected" label nil (reparse-symbol classsubparts) [13773 13783])
+                                    ("reset" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [13960 13977])
+                                    ("private" label nil (reparse-symbol classsubparts) [13979 13987])
+                                    ("impl" function (:type ("Derived" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13992 14068])
+                                    ("reset" function
+                                       (:arguments 
+                                          ( ("" variable (:type ("std::true_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14089 14104]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [14074 14142])
+                                    ("reset" function
+                                       (:arguments 
+                                          ( ("" variable (:type ("std::false_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14163 14179]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [14148 14217])
+                                    ("init" function
+                                       (:arguments 
+                                          ( ("" variable (:type ("std::true_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14237 14252]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [14223 14376])
+                                    ("init" function
+                                       (:arguments 
+                                          ( ("" variable (:type ("std::false_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14396 14412]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [14382 14525])
+                                    ("init" function (:type "void") (reparse-symbol classsubparts) [14531 14632])
+                                    ("needs_eof" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("std::true_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14657 14672]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [14638 14679])
+                                    ("needs_eof" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("std::false_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14704 14720]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [14685 14727])
+                                    ("check_on_start" type
+                                       (:superclasses 
+                                          ( ("std::false_type" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [14788 14831])
+                                    ("std::true_type" variable (:type "int") (reparse-symbol classsubparts) [15015 15034])
+                                    ("check_on_method" type
+                                       (:superclasses 
+                                          ( ("std::false_type" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [15095 15139])
+                                    ("std::true_type" variable (:type "int") (reparse-symbol classsubparts) [15372 15390])
+                                    ("check_on_uri" type
+                                       (:superclasses 
+                                          ( ("std::false_type" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [15451 15492])
+                                    ("std::true_type" variable (:type "int") (reparse-symbol classsubparts) [15719 15737])
+                                    ("check_on_reason" type
+                                       (:superclasses 
+                                          ( ("std::false_type" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [15798 15842])
+                                    ("std::true_type" variable (:type "int") (reparse-symbol classsubparts) [16075 16093])
+                                    ("check_on_request" type
+                                       (:superclasses 
+                                          ( ("std::false_type" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [16154 16199])
+                                    ("std::true_type" variable (:type "int") (reparse-symbol classsubparts) [16387 16405])
+                                    ("check_on_response" type
+                                       (:superclasses 
+                                          ( ("std::false_type" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [16466 16512])
+                                    ("std::true_type" variable (:type "int") (reparse-symbol classsubparts) [16702 16720])
+                                    ("check_on_field" type
+                                       (:superclasses 
+                                          ( ("std::false_type" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [16781 16824])
+                                    ("std::true_type" variable (:type "int") (reparse-symbol classsubparts) [17055 17073])
+                                    ("check_on_value" type
+                                       (:superclasses 
+                                          ( ("std::false_type" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [17134 17177])
+                                    ("std::true_type" variable (:type "int") (reparse-symbol classsubparts) [17408 17426])
+                                    ("check_on_headers" type
+                                       (:superclasses 
+                                          ( ("std::false_type" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [17487 17532])
+                                    ("std::true_type" variable (:type "int") (reparse-symbol classsubparts) [17762 17780])
+                                    ("check_on_body_what_t" type
+                                       (:template 
+                                          ( ("C" type (:type "class") nil nil))                                          
+                                        :type "class"
+                                        :members 
+                                          ( ("check" function
+                                               (:prototype-flag t
+                                                :typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [18161 18165]))                                                  
+                                                :type ("R" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [18146 18166])
+                                            ("check" function
+                                               (:template 
+                                                  ( ("" type nil nil nil))                                                  
+                                                :type ("std::false_type" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [18228 18232]))                                                  
+                                                :typemodifiers ("static")
+                                                :prototype-flag t)
+                                                (reparse-symbol classsubparts) [18175 18233])
+                                            ("type" variable
+                                               (:default-value "decltype(check<C>(0))"
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [18248 18277])
+                                            ("public" label nil (reparse-symbol classsubparts) [18282 18289])
+                                            ("type::value" variable (:type "int") (reparse-symbol classsubparts) [18324 18336]))                                          )
+                                        (reparse-symbol classsubparts) [17847 18343])
+                                    ("check_on_body" type
+                                       (:superclasses 
+                                          ( ("std::false_type" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [18527 18569])
+                                    ("std::true_type" variable (:type "int") (reparse-symbol classsubparts) [18798 18816])
+                                    ("check_on_complete" type
+                                       (:superclasses 
+                                          ( ("std::false_type" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [18877 18923])
+                                    ("std::true_type" variable (:type "int") (reparse-symbol classsubparts) [19113 19131])
+                                    ("call_on_start" function
+                                       (:arguments 
+                                          ( ("ec" variable
+                                               (:reference 1
+                                                :type ("error_code" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [19156 19171]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [19137 19312])
+                                    ("call_on_method" function
+                                       (:arguments 
+                                          ( ("ec" variable
+                                               (:reference 1
+                                                :type ("error_code" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [19338 19353])
+                                            ("s" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("boost::string_ref" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [19362 19389])
+                                            ("" variable (:type ("std::true_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19390 19405]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [19318 19708])
+                                    ("call_on_method" function
+                                       (:arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :type ("error_code" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [19734 19746])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("boost::string_ref" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [19755 19780])
+                                            ("" variable (:type ("std::false_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19781 19797]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [19714 19809])
+                                    ("call_on_method" function
+                                       (:arguments 
+                                          ( ("ec" variable
+                                               (:reference 1
+                                                :type ("error_code" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [19835 19850])
+                                            ("s" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("boost::string_ref" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [19859 19886]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [19815 19984])
+                                    ("call_on_uri" function
+                                       (:arguments 
+                                          ( ("ec" variable
+                                               (:reference 1
+                                                :type ("error_code" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [20007 20022])
+                                            ("s" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("boost::string_ref" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [20031 20058])
+                                            ("" variable (:type ("std::true_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20059 20074]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [19990 20368])
+                                    ("call_on_uri" function
+                                       (:arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :type ("error_code" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [20391 20403])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("boost::string_ref" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [20412 20437])
+                                            ("" variable (:type ("std::false_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20438 20454]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [20374 20466])
+                                    ("call_on_uri" function
+                                       (:arguments 
+                                          ( ("ec" variable
+                                               (:reference 1
+                                                :type ("error_code" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [20489 20504])
+                                            ("s" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("boost::string_ref" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [20513 20540]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [20472 20635])
+                                    ("call_on_reason" function
+                                       (:arguments 
+                                          ( ("ec" variable
+                                               (:reference 1
+                                                :type ("error_code" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [20661 20676])
+                                            ("s" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("boost::string_ref" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [20685 20712])
+                                            ("" variable (:type ("std::true_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20713 20728]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [20641 21031])
+                                    ("call_on_reason" function
+                                       (:arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :type ("error_code" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [21057 21069])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("boost::string_ref" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [21078 21103])
+                                            ("" variable (:type ("std::false_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21104 21120]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [21037 21132])
+                                    ("call_on_reason" function
+                                       (:arguments 
+                                          ( ("ec" variable
+                                               (:reference 1
+                                                :type ("error_code" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [21158 21173])
+                                            ("s" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("boost::string_ref" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [21174 21201]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [21138 21301])
+                                    ("call_on_request" function
+                                       (:arguments 
+                                          ( ("ec" variable
+                                               (:reference 1
+                                                :type ("error_code" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [21328 21343])
+                                            ("" variable (:type ("std::true_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21344 21359]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [21307 21506])
+                                    ("call_on_request" function
+                                       (:arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :type ("error_code" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [21533 21545])
+                                            ("" variable (:type ("std::false_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21546 21562]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [21512 21574])
+                                    ("call_on_request" function
+                                       (:arguments 
+                                          ( ("ec" variable
+                                               (:reference 1
+                                                :type ("error_code" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [21601 21616]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [21580 21712])
+                                    ("call_on_response" function
+                                       (:arguments 
+                                          ( ("ec" variable
+                                               (:reference 1
+                                                :type ("error_code" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [21740 21755])
+                                            ("" variable (:type ("std::true_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21756 21771]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [21718 21921])
+                                    ("call_on_response" function
+                                       (:arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :type ("error_code" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [21949 21961])
+                                            ("" variable (:type ("std::false_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21962 21978]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [21927 21990])
+                                    ("call_on_response" function
+                                       (:arguments 
+                                          ( ("ec" variable
+                                               (:reference 1
+                                                :type ("error_code" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [22018 22033]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [21996 22132])
+                                    ("call_on_field" function
+                                       (:arguments 
+                                          ( ("ec" variable
+                                               (:reference 1
+                                                :type ("error_code" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [22157 22172])
+                                            ("s" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("boost::string_ref" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [22181 22208]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [22138 22508])
+                                    ("call_on_value" function
+                                       (:arguments 
+                                          ( ("ec" variable
+                                               (:reference 1
+                                                :type ("error_code" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [22533 22548])
+                                            ("s" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("boost::string_ref" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [22557 22584]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [22514 22884])
+                                    ("call_on_headers" function
+                                       (:arguments 
+                                          ( ("ec" variable
+                                               (:reference 1
+                                                :type ("error_code" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [22915 22930]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [22890 23092])
+                                    ("call_on_body_what" function
+                                       (:arguments 
+                                          ( ("ec" variable
+                                               (:reference 1
+                                                :type ("error_code" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [23130 23145]))                                          
+                                        :type ("body_what" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [23098 23322])
+                                    ("call_on_body" function
+                                       (:arguments 
+                                          ( ("ec" variable
+                                               (:reference 1
+                                                :type ("error_code" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [23346 23361])
+                                            ("s" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("boost::string_ref" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [23370 23397]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [23328 23692])
+                                    ("call_on_complete" function
+                                       (:arguments 
+                                          ( ("ec" variable
+                                               (:reference 1
+                                                :type ("error_code" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [23720 23735]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [23698 23885]))                                  
+                                :superclasses 
+                                  ( ("detail::parser_base" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [7078 23888]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [632 23891]))                  
+                :type "namespace")
+                nil [614 23901])
+            ("beast/http/impl/basic_parser_v1.ipp" include (:system-flag t) nil [23912 23958]))          
+      :file "basic_parser_v1.hpp"
+      :pointmax 23967
+      :fsize 23966
+      :lastmodtime '(22722 5027 996680 442000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BEAST_HTTP_BASIC_PARSER_v1_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BEAST_HTTP_PARSE_ERROR_HPP" variable (:constant-flag t) nil [283 309])
+            ("beast/core/error.hpp" include (:system-flag t) nil [311 342])
+            ("beast" type
+               (:members 
+                  ( ("http" type
+                       (:members 
+                          ( ("parse_error" type (:type "class") (reparse-symbol namespacesubparts) [385 733]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [362 736]))                  
+                :type "namespace")
+                nil [344 746])
+            ("beast/http/impl/parse_error.ipp" include (:system-flag t) nil [757 799]))          
+      :file "parse_error.hpp"
+      :pointmax 808
+      :fsize 807
+      :lastmodtime '(22708 54047 994093 892000)
+      :unmatched-syntax '((symbol 720 . 730) (punctuation 714 . 715) (symbol 702 . 714) (punctuation 696 . 697) (symbol 682 . 696) (punctuation 675 . 676) (symbol 660 . 675) (punctuation 654 . 655) (symbol 638 . 654) (punctuation 632 . 633) (symbol 614 . 632) (punctuation 607 . 608) (symbol 585 . 607) (punctuation 579 . 580) (symbol 561 . 579) (punctuation 555 . 556) (symbol 546 . 555) (punctuation 540 . 541) (symbol 531 . 540) (punctuation 524 . 525) (symbol 514 . 524) (punctuation 508 . 509) (symbol 498 . 508) (punctuation 491 . 492) (symbol 483 . 491) (punctuation 477 . 478) (symbol 466 . 477) (punctuation 460 . 461) (symbol 453 . 460) (punctuation 447 . 448) (symbol 437 . 447) (punctuation 430 . 431) (number 429 . 430) (punctuation 427 . 428) (symbol 409 . 426) (ENUM 380 . 384))
+      :lexical-table 
+        '(("BEAST_HTTP_PARSE_ERROR_HPP")
+          )
+))
+  :file "!home!nakao!github!iotc_msgpub!external!mqtt_client_cpp!external!Beast!include!beast!http!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

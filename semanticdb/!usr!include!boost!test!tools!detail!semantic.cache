@@ -1,0 +1,794 @@
+;; Object detail/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "detail/"
+  :tables
+  (list
+    (semanticdb-table "print_helper.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_TEST_TOOLS_IMPL_COMMON_HPP_012705GER" variable (:constant-flag t) nil [577 619])
+            ("boost/test/detail/config.hpp" include (:system-flag t) nil [635 674])
+            ("boost/test/detail/global_typedef.hpp" include (:system-flag t) nil [675 722])
+            ("boost/test/detail/workaround.hpp" include (:system-flag t) nil [723 766])
+            ("boost/mpl/or.hpp" include (:system-flag t) nil [777 804])
+            ("boost/static_assert.hpp" include (:system-flag t) nil [805 839])
+            ("boost/type_traits/is_array.hpp" include (:system-flag t) nil [840 881])
+            ("boost/type_traits/is_function.hpp" include (:system-flag t) nil [882 926])
+            ("boost/type_traits/is_abstract.hpp" include (:system-flag t) nil [927 971])
+            ("boost/type_traits/has_left_shift.hpp" include (:system-flag t) nil [972 1019])
+            ("limits" include (:system-flag t) nil [1021 1038])
+            ("boost/test/detail/suppress_warnings.hpp" include (:system-flag t) nil [1040 1090])
+            ("boost" type
+               (:members 
+                  ( ("test_tools" type
+                       (:members 
+                          ( ("tt_detail" type
+                               (:members 
+                                  ( ("print_log_value" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("BOOST_STATIC_ASSERT_MSG" function
+                                               (:prototype-flag t
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [1532 1686])
+                                            ("()" function
+                                               (:operator-flag t
+                                                :arguments 
+                                                  ( ("ostr" variable
+                                                       (:reference 1
+                                                        :type ("std::ostream" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1712 1731])
+                                                    ("t" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("T" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1732 1744]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1692 2049])
+                                            ("set_precision" function
+                                               (:arguments 
+                                                  ( ("ostr" variable
+                                                       (:reference 1
+                                                        :type ("std::ostream" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2086 2105])
+                                                    ("" variable (:type ("mpl::false_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2106 2119]))                                                  
+                                                :type ("std::streamsize" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2055 3207])
+                                            ("set_precision" function
+                                               (:arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :type ("std::ostream" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3244 3258])
+                                                    ("" variable (:type ("mpl::true_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3259 3271]))                                                  
+                                                :type ("std::streamsize" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3213 3303]))                                          )
+                                        (reparse-symbol namespacesubparts) [1482 3306])
+                                    ("print_helper_t" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("print_helper_t" function
+                                               (:constructor-flag t
+                                                :typemodifiers ("explicit")
+                                                :arguments 
+                                                  ( ("t" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("T" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5272 5284]))                                                  
+                                                :type ("print_helper_t" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [5244 5298])
+                                            ("m_t" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5304 5320]))                                          )
+                                        (reparse-symbol namespacesubparts) [5195 5323])
+                                    ("print_helper" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type ("print_helper_t" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :arguments 
+                                          ( ("t" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5841 5853]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [5781 5892])
+                                    ("<<" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type ("std::ostream" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("ostr" variable
+                                               (:reference 1
+                                                :type ("std::ostream" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6030 6049])
+                                            ("ph" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("print_helper_t" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [6050 6079]))                                          
+                                        :typemodifiers ("inline")
+                                        :operator-flag t)
+                                        (reparse-symbol namespacesubparts) [5976 6143]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1215 6228])
+                            ("BOOST_TEST_DONT_PRINT_LOG_VALUE" variable (:constant-flag t) (reparse-symbol namespacesubparts) [6505 6536]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1192 6938]))                  
+                :type "namespace")
+                nil [1174 6964])
+            ("boost/test/detail/enable_warnings.hpp" include (:system-flag t) nil [6985 7033]))          
+      :file "print_helper.hpp"
+      :pointmax 7088
+      :fsize 7087
+      :lastmodtime '(22452 53219 0 0)
+      :unmatched-syntax '((punctuation 4706 . 4707) (semantic-list 4639 . 4706) (punctuation 4637 . 4638) (punctuation 4636 . 4637) (CONST 4631 . 4636) (WCHAR 4623 . 4630) (punctuation 4622 . 4623) (symbol 4607 . 4622) (symbol 4591 . 4606) (STRUCT 4584 . 4590) (punctuation 4582 . 4583) (punctuation 4581 . 4582) (TEMPLATE 4573 . 4581) (punctuation 4488 . 4489) (semantic-list 4424 . 4488) (punctuation 4422 . 4423) (punctuation 4421 . 4422) (CONST 4416 . 4421) (CHAR 4411 . 4415) (punctuation 4410 . 4411) (symbol 4395 . 4410) (symbol 4379 . 4394) (STRUCT 4372 . 4378) (punctuation 4370 . 4371) (punctuation 4369 . 4370) (TEMPLATE 4361 . 4369) (punctuation 4276 . 4277) (semantic-list 4210 . 4276) (punctuation 4208 . 4209) (CHAR 4204 . 4208) (UNSIGNED 4195 . 4203) (punctuation 4194 . 4195) (symbol 4179 . 4194) (symbol 4163 . 4178) (STRUCT 4156 . 4162) (punctuation 4154 . 4155) (punctuation 4153 . 4154) (TEMPLATE 4145 . 4153) (punctuation 4060 . 4061) (semantic-list 4003 . 4060) (punctuation 4001 . 4002) (CHAR 3997 . 4001) (punctuation 3996 . 3997) (symbol 3981 . 3996) (symbol 3965 . 3980) (STRUCT 3958 . 3964) (punctuation 3956 . 3957) (punctuation 3955 . 3956) (TEMPLATE 3947 . 3955) (punctuation 3862 . 3863) (semantic-list 3756 . 3862) (punctuation 3754 . 3755) (BOOL 3750 . 3754) (punctuation 3749 . 3750) (symbol 3734 . 3749) (symbol 3718 . 3733) (STRUCT 3711 . 3717) (punctuation 3709 . 3710) (punctuation 3708 . 3709) (TEMPLATE 3700 . 3708) (string 1634 . 1684) (semantic-list 1557 . 1603))
+      :lexical-table 
+        '(("BOOST_TEST_DONT_PRINT_LOG_VALUE" (spp-arg-list ("the_type") 6536 . 6548) . 
+              ((NAMESPACE "namespace" 6559 . 6568) (symbol "boost" 6569 . 6574) (semantic-list "{ namespace test_tools{ namespace tt_detail{ \\
+template<>                                                  \\
+struct print_log_value<the_type > {                         \\
+    void    operator()( std::ostream&, the_type const& ) {} \\
+};                                                          \\
+}}}" 6574 . 6872)))
+          ("BOOST_TEST_TOOLS_IMPL_COMMON_HPP_012705GER")
+          )
+)
+    (semanticdb-table "fwd.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_TEST_TOOLS_DETAIL_FWD_HPP_012705GER" variable (:constant-flag t) nil [553 594])
+            ("boost/test/detail/config.hpp" include (:system-flag t) nil [610 649])
+            ("boost/test/utils/basic_cstring/io.hpp" include (:system-flag t) nil [650 698])
+            ("cstddef" include (:system-flag t) nil [707 725])
+            ("boost/test/detail/suppress_warnings.hpp" include (:system-flag t) nil [755 805])
+            ("boost" type
+               (:members 
+                  ( ("unit_test" type
+                       (:members 
+                          ( ("lazy_ostream" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [930 949]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [907 952])
+                    ("test_tools" type
+                       (:members 
+                          ( ("unit_test::const_string" using (:type ("unit_test::const_string" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [1001 1031])
+                            ("assertion_result" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1032 1055])
+                            ("tt_detail" type
+                               (:members 
+                                  ( ("dummy_cond" function
+                                       (:typemodifiers ("inline")
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [1162 1204])
+                                    ("check_type" type
+                                       (:members 
+                                          ( ("CHECK_PRED" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [1554 1565])
+                                            ("CHECK_MSG" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [1570 1580])
+                                            ("CHECK_EQUAL" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [1585 1597])
+                                            ("CHECK_NE" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [1602 1611])
+                                            ("CHECK_LT" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [1616 1625])
+                                            ("CHECK_LE" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [1630 1639])
+                                            ("CHECK_GT" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [1644 1653])
+                                            ("CHECK_GE" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [1658 1667])
+                                            ("CHECK_CLOSE" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [1672 1684])
+                                            ("CHECK_CLOSE_FRACTION" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [1689 1710])
+                                            ("CHECK_SMALL" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [1715 1727])
+                                            ("CHECK_BITWISE_EQUAL" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [1732 1752])
+                                            ("CHECK_PRED_WITH_ARGS" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [1757 1778])
+                                            ("CHECK_EQUAL_COLL" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [1783 1800])
+                                            ("CHECK_BUILT_ASSERTION" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [1805 1828]))                                          
+                                        :type "enum")
+                                        (reparse-symbol namespacesubparts) [1532 1829])
+                                    ("tool_level" type
+                                       (:members 
+                                          ( ("WARN" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2179 2184])
+                                            ("CHECK" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2185 2191])
+                                            ("REQUIRE" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2192 2200])
+                                            ("PASS" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2201 2207]))                                          
+                                        :type "enum")
+                                        (reparse-symbol namespacesubparts) [2157 2208])
+                                    ("report_assertion" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("pr" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("assertion_result" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2575 2602])
+                                            ("assertion_descr" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("unit_test::lazy_ostream" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2603 2650])
+                                            ("file_name" variable (:type ("const_string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2669 2692])
+                                            ("line_num" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2693 2714])
+                                            ("tl" variable (:type ("tool_level" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2733 2747])
+                                            ("ct" variable (:type ("check_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2748 2762])
+                                            ("num_args" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2781 2802])
+                                            ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [2803 2808]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [2552 2809])
+                                    ("format_assertion_result" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("expr_val" variable (:type ("const_string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2951 2973])
+                                            ("details" variable (:type ("const_string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2974 2996]))                                          
+                                        :type ("assertion_result" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [2909 2997])
+                                    ("format_fpc_report" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("expr_val" variable (:type ("const_string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3133 3155])
+                                            ("details" variable (:type ("const_string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3156 3178]))                                          
+                                        :type ("assertion_result" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [3097 3179])
+                                    ("is_defined_impl" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("symbol_name" variable (:type ("const_string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3301 3326])
+                                            ("symbol_value" variable (:type ("const_string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3327 3354]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [3279 3355])
+                                    ("equal_impl" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("left" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [3484 3501])
+                                            ("right" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [3502 3521]))                                          
+                                        :type ("assertion_result" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [3455 3522]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1139 3607]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [977 3632]))                  
+                :type "namespace")
+                nil [889 3658])
+            ("boost/test/detail/enable_warnings.hpp" include (:system-flag t) nil [3679 3727]))          
+      :file "fwd.hpp"
+      :pointmax 3781
+      :fsize 3780
+      :lastmodtime '(22452 53219 0 0)
+      :unmatched-syntax '((symbol 3439 . 3454) (symbol 3263 . 3278) (symbol 3081 . 3096) (symbol 2893 . 2908) (symbol 2536 . 2551))
+      :lexical-table 
+        '(("BOOST_TEST_TOOLS_DETAIL_FWD_HPP_012705GER")
+          )
+)
+    (semanticdb-table "it_pair.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_TEST_TOOLS_DETAIL_IT_PAIR_HPP_112812GER" variable (:constant-flag t) nil [567 612]))          
+      :file "it_pair.hpp"
+      :pointmax 2269
+      :fsize 2268
+      :lastmodtime '(22452 53219 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_TEST_TOOLS_DETAIL_IT_PAIR_HPP_112812GER")
+          )
+)
+    (semanticdb-table "bitwise_manip.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_TEST_TOOLS_DETAIL_BITWISE_MANIP_HPP_012705GER" variable (:constant-flag t) nil [480 531])
+            ("boost/test/tools/detail/fwd.hpp" include (:system-flag t) nil [547 589])
+            ("boost/test/tools/detail/indirections.hpp" include (:system-flag t) nil [590 641])
+            ("boost/test/tools/assertion_result.hpp" include (:system-flag t) nil [643 691])
+            ("boost/test/tools/assertion.hpp" include (:system-flag t) nil [692 733])
+            ("climits" include (:system-flag t) nil [742 760])
+            ("boost/test/detail/suppress_warnings.hpp" include (:system-flag t) nil [787 837])
+            ("boost" type
+               (:members 
+                  ( ("test_tools" type
+                       (:members 
+                          ( ("bitwise" type (:type "struct") (reparse-symbol namespacesubparts) [1242 1260])
+                            ("<<" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("unit_test::lazy_ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1367 1398])
+                                    ("" variable (:type ("bitwise" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1399 1408]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [1344 1424])
+                            ("tt_detail" type
+                               (:members 
+                                  ( ("bitwise_compare" function
+                                       (:template 
+                                          ( ("Lhs" type (:type "class") nil nil)
+                                            ("Rhs" type (:type "class") nil nil)
+                                            ("E" type (:type "class") nil nil))                                          
+                                        :type ("assertion_result" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("lhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Lhs" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1867 1882])
+                                            ("rhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Rhs" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1883 1898])
+                                            ("expr" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("E" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1899 1914]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [1778 3054])
+                                    ("<<" function
+                                       (:template 
+                                          ( ("T1" type (:type "class") nil nil)
+                                            ("T2" type (:type "class") nil nil)
+                                            ("T3" type (:type "class") nil nil)
+                                            ("T4" type (:type "class") nil nil))                                          
+                                        :type ("assertion_result" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("ae" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("assertion_evaluate_t" type
+                                                     (:template-specifier 
+                                                        ( ("assertion::binary_expr" type (:template-specifier 
+                                                            ( ("T1" type nil nil nil)
+                                                              ("T2" type nil nil nil)
+                                                              ("assertion::op::EQ" type (:template-specifier 
+                                                                ( ("T3" type nil nil nil)
+                                                                  ("T4" type nil nil nil))                                                                ) nil nil))                                                            ) nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [3506 3595])
+                                            ("" variable (:type ("bitwise" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3596 3605]))                                          
+                                        :typemodifiers ("inline")
+                                        :operator-flag t)
+                                        (reparse-symbol namespacesubparts) [3410 3683])
+                                    ("<<" function
+                                       (:operator-flag t
+                                        :typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("assertion_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3797 3820])
+                                            ("" variable (:type ("bitwise" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3821 3830]))                                          
+                                        :type ("check_type" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [3767 3868]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1508 3953]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [939 3978]))                  
+                :type "namespace")
+                nil [921 4004])
+            ("boost/test/detail/enable_warnings.hpp" include (:system-flag t) nil [4025 4073]))          
+      :file "bitwise_manip.hpp"
+      :pointmax 4137
+      :fsize 4136
+      :lastmodtime '(22452 53219 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_TEST_TOOLS_DETAIL_BITWISE_MANIP_HPP_012705GER")
+          )
+)
+    (semanticdb-table "tolerance_manip.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_TEST_TOOLS_DETAIL_TOLERANCE_MANIP_HPP_012705GER" variable (:constant-flag t) nil [635 688])
+            ("boost/test/tools/detail/fwd.hpp" include (:system-flag t) nil [704 746])
+            ("boost/test/tools/detail/indirections.hpp" include (:system-flag t) nil [747 798])
+            ("boost/test/tools/fpc_tolerance.hpp" include (:system-flag t) nil [800 845])
+            ("boost/test/tools/floating_point_comparison.hpp" include (:system-flag t) nil [846 903])
+            ("boost/test/detail/suppress_warnings.hpp" include (:system-flag t) nil [905 955])
+            ("boost" type
+               (:members 
+                  ( ("test_tools" type
+                       (:members 
+                          ( ("tt_detail" type
+                               (:members 
+                                  ( ("tolerance_manip" type
+                                       (:template 
+                                          ( ("FPT" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("tolerance_manip" function
+                                               (:constructor-flag t
+                                                :typemodifiers ("explicit")
+                                                :arguments 
+                                                  ( ("tol" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("FPT" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1425 1442]))                                                  
+                                                :type ("tolerance_manip" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [1399 1462])
+                                            ("m_value" variable (:type ("FPT" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1468 1480]))                                          )
+                                        (reparse-symbol namespacesubparts) [1347 1483])
+                                    ("tolerance_manip_delay" type (:type "struct") (reparse-symbol namespacesubparts) [1567 1599])
+                                    ("%" function
+                                       (:template 
+                                          ( ("FPT" type (:type "class") nil nil))                                          
+                                        :type ("tolerance_manip" type
+                                             (:template-specifier 
+                                                ( ("FPT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :arguments 
+                                          ( ("v" variable (:type ("FPT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1663 1669])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("tolerance_manip_delay" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1670 1700]))                                          
+                                        :typemodifiers ("inline")
+                                        :operator-flag t)
+                                        (reparse-symbol namespacesubparts) [1601 1913])
+                                    ("<<" function
+                                       (:template 
+                                          ( ("E" type (:type "class") nil nil)
+                                            ("FPT" type (:type "class") nil nil))                                          
+                                        :type ("assertion_result" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("ae" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("assertion_evaluate_t" type
+                                                     (:template-specifier 
+                                                        ( ("E" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [2067 2101])
+                                            ("tol" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("tolerance_manip" type
+                                                     (:template-specifier 
+                                                        ( ("FPT" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [2102 2134]))                                          
+                                        :typemodifiers ("inline")
+                                        :operator-flag t)
+                                        (reparse-symbol namespacesubparts) [1997 2217])
+                                    ("<<" function
+                                       (:template 
+                                          ( ("FPT" type (:type "class") nil nil))                                          
+                                        :type "int"
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("unit_test::lazy_ostream" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2347 2378])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("tolerance_manip" type
+                                                     (:template-specifier 
+                                                        ( ("FPT" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [2379 2408]))                                          
+                                        :typemodifiers ("inline")
+                                        :operator-flag t)
+                                        (reparse-symbol namespacesubparts) [2301 2424])
+                                    ("<<" function
+                                       (:template 
+                                          ( ("FPT" type (:type "class") nil nil))                                          
+                                        :type ("check_type" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("assertion_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2561 2590])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("tolerance_manip" type
+                                                     (:template-specifier 
+                                                        ( ("FPT" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [2591 2620]))                                          
+                                        :typemodifiers ("inline")
+                                        :operator-flag t)
+                                        (reparse-symbol namespacesubparts) [2508 2662]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1080 2747])
+                            ("tolerance" function
+                               (:template 
+                                  ( ("FPT" type (:type "class") nil nil))                                  
+                                :type ("tt_detail::tolerance_manip" type
+                                     (:template-specifier 
+                                        ( ("FPT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("v" variable (:type ("FPT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3052 3059]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [2979 3248])
+                            ("tolerance" function
+                               (:template 
+                                  ( ("FPT" type (:type "class") nil nil))                                  
+                                :type ("tt_detail::tolerance_manip" type
+                                     (:template-specifier 
+                                        ( ("FPT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("v" variable (:type ("fpc::percent_tolerance_t" type
+                                         (:template-specifier 
+                                            ( ("FPT" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [3438 3471]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [3365 3692])
+                            ("tolerance" function
+                               (:typemodifiers ("inline")
+                                :type ("tt_detail::tolerance_manip_delay" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3809 3911]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1057 3996]))                  
+                :type "namespace")
+                nil [1039 4022])
+            ("boost/test/detail/enable_warnings.hpp" include (:system-flag t) nil [4043 4091]))          
+      :file "tolerance_manip.hpp"
+      :pointmax 4157
+      :fsize 4156
+      :lastmodtime '(22452 53219 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_TEST_TOOLS_DETAIL_TOLERANCE_MANIP_HPP_012705GER")
+          )
+)
+    (semanticdb-table "per_element_manip.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_TEST_TOOLS_DETAIL_PER_ELEMENT_MANIP_HPP_050815GER" variable (:constant-flag t) nil [488 543])
+            ("boost/test/tools/detail/fwd.hpp" include (:system-flag t) nil [559 601])
+            ("boost/test/tools/detail/indirections.hpp" include (:system-flag t) nil [602 653])
+            ("boost/test/tools/assertion.hpp" include (:system-flag t) nil [655 696])
+            ("boost/test/tools/collection_comparison_op.hpp" include (:system-flag t) nil [697 753])
+            ("boost/test/detail/suppress_warnings.hpp" include (:system-flag t) nil [755 805])
+            ("boost" type
+               (:members 
+                  ( ("test_tools" type
+                       (:members 
+                          ( ("per_element" type (:type "struct") (reparse-symbol namespacesubparts) [1230 1252])
+                            ("<<" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("unit_test::lazy_ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1359 1390])
+                                    ("" variable (:type ("per_element" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1391 1404]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [1336 1420])
+                            ("tt_detail" type
+                               (:members 
+                                  ( ("<<" function
+                                       (:template 
+                                          ( ("T1" type (:type "class") nil nil)
+                                            ("T2" type (:type "class") nil nil)
+                                            ("OP" type (:type "class") nil nil))                                          
+                                        :type ("assertion_result" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("ae" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("assertion_evaluate_t" type
+                                                     (:template-specifier 
+                                                        ( ("assertion::binary_expr" type (:template-specifier 
+                                                            ( ("T1" type nil nil nil)
+                                                              ("T2" type nil nil nil)
+                                                              ("OP" type nil nil nil))                                                            ) nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [1610 1676])
+                                            ("" variable (:type ("per_element" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1677 1690]))                                          
+                                        :typemodifiers ("inline")
+                                        :operator-flag t)
+                                        (reparse-symbol namespacesubparts) [1527 1826])
+                                    ("<<" function
+                                       (:operator-flag t
+                                        :typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("assertion_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1940 1962])
+                                            ("" variable (:type ("per_element" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1963 1976]))                                          
+                                        :type ("check_type" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [1910 2014]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1504 2099]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [907 2124]))                  
+                :type "namespace")
+                nil [889 2150])
+            ("boost/test/detail/enable_warnings.hpp" include (:system-flag t) nil [2171 2219]))          
+      :file "per_element_manip.hpp"
+      :pointmax 2287
+      :fsize 2286
+      :lastmodtime '(22452 53219 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_TEST_TOOLS_DETAIL_PER_ELEMENT_MANIP_HPP_050815GER")
+          )
+)
+    (semanticdb-table "lexicographic_manip.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_TEST_TOOLS_DETAIL_LEXICOGRAPHIC_MANIP_HPP_050815GER" variable (:constant-flag t) nil [492 549])
+            ("boost/test/tools/detail/fwd.hpp" include (:system-flag t) nil [565 607])
+            ("boost/test/tools/detail/indirections.hpp" include (:system-flag t) nil [608 659])
+            ("boost/test/tools/assertion.hpp" include (:system-flag t) nil [661 702])
+            ("boost/test/tools/collection_comparison_op.hpp" include (:system-flag t) nil [703 759])
+            ("boost/test/detail/suppress_warnings.hpp" include (:system-flag t) nil [761 811])
+            ("boost" type
+               (:members 
+                  ( ("test_tools" type
+                       (:members 
+                          ( ("lexicographic" type (:type "struct") (reparse-symbol namespacesubparts) [1238 1262])
+                            ("<<" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("unit_test::lazy_ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1369 1400])
+                                    ("" variable (:type ("lexicographic" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1401 1416]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [1346 1432])
+                            ("tt_detail" type
+                               (:members 
+                                  ( ("<<" function
+                                       (:template 
+                                          ( ("T1" type (:type "class") nil nil)
+                                            ("T2" type (:type "class") nil nil)
+                                            ("OP" type (:type "class") nil nil))                                          
+                                        :type ("assertion_result" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("ae" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("assertion_evaluate_t" type
+                                                     (:template-specifier 
+                                                        ( ("assertion::binary_expr" type (:template-specifier 
+                                                            ( ("T1" type nil nil nil)
+                                                              ("T2" type nil nil nil)
+                                                              ("OP" type nil nil nil))                                                            ) nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [1622 1688])
+                                            ("" variable (:type ("lexicographic" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1689 1704]))                                          
+                                        :typemodifiers ("inline")
+                                        :operator-flag t)
+                                        (reparse-symbol namespacesubparts) [1539 1846])
+                                    ("<<" function
+                                       (:operator-flag t
+                                        :typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("assertion_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1960 1982])
+                                            ("" variable (:type ("lexicographic" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1983 1998]))                                          
+                                        :type ("check_type" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [1930 2036]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1516 2121]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [913 2146]))                  
+                :type "namespace")
+                nil [895 2172])
+            ("boost/test/detail/enable_warnings.hpp" include (:system-flag t) nil [2193 2241]))          
+      :file "lexicographic_manip.hpp"
+      :pointmax 2311
+      :fsize 2310
+      :lastmodtime '(22452 53219 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_TEST_TOOLS_DETAIL_LEXICOGRAPHIC_MANIP_HPP_050815GER")
+          )
+)
+    (semanticdb-table "indirections.hpp"
+      :file "indirections.hpp"
+      :fsize 3315
+      :lastmodtime '(22452 53219 0 0)))
+  :file "!usr!include!boost!test!tools!detail!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

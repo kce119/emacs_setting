@@ -1,0 +1,756 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("msgpack.hpp" include (:system-flag t) nil [1 23])
+            ("string" include (:system-flag t) nil [24 41])
+            ("cmath" include (:system-flag t) nil [42 58])
+            ("gtest/gtest.h" include (:system-flag t) nil [60 84])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [137 157])
+            ("kLoop" variable
+               (:constant-flag t
+                :default-value "1000"
+                :type "unsigned int")
+                nil [159 191])
+            ("kElements" variable
+               (:constant-flag t
+                :default-value "100"
+                :type "unsigned int")
+                nil [192 227])
+            ("kEPS" variable
+               (:constant-flag t
+                :default-value "1e-10"
+                :type "double")
+                nil [228 254])
+            ("TestEnumMemberClass" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [312 319])
+                    ("TestEnumMemberClass" function
+                       (:constructor-flag t
+                        :type ("TestEnumMemberClass" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [324 396])
+                    ("TestEnumType" type
+                       (:members 
+                          ( ("STATE_INVALID" variable
+                               (:constant-flag t
+                                :default-value (446 447)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [430 448])
+                            ("STATE_A" variable
+                               (:constant-flag t
+                                :default-value (467 468)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [457 469])
+                            ("STATE_B" variable
+                               (:constant-flag t
+                                :default-value (488 489)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [478 490])
+                            ("STATE_C" variable
+                               (:constant-flag t
+                                :default-value (509 515)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [499 516]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [402 517])
+                    ("t1" variable (:type ("TestEnumType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [522 538])
+                    ("t2" variable (:type ("TestEnumType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [543 559])
+                    ("t3" variable (:type ("TestEnumType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [564 580])
+                    ("MSGPACK_DEFINE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("t1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [601 604])
+                            ("" variable (:type ("t2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [605 608])
+                            ("" variable (:type ("t3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [609 612]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [586 613]))                  
+                :type "class")
+                nil [284 616])
+            ("MSGPACK_ADD_ENUM" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("TestEnumMemberClass::TestEnumType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [635 669]))                  
+                :type "int")
+                nil [618 670])
+            ("TestClass" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [690 697])
+                    ("TestClass" function
+                       (:constructor-flag t
+                        :type ("TestClass" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [702 733])
+                    ("i" variable (:type "int") (reparse-symbol classsubparts) [738 744])
+                    ("s" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [749 758])
+                    ("MSGPACK_DEFINE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("i" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [778 780])
+                            ("" variable (:type ("s" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [781 783]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [763 784]))                  
+                :type "class")
+                nil [672 787])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("MSGPACK_USER_DEFINED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [794 815])
+                    ("" variable (:type ("simple_buffer_class" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [816 836]))                  
+                :type "int")
+                nil [789 1195])
+            ("TestClass2" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1216 1223])
+                    ("TestClass2" function
+                       (:constructor-flag t
+                        :type ("TestClass2" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1228 1351])
+                    ("i" variable (:type "int") (reparse-symbol classsubparts) [1356 1362])
+                    ("s" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1367 1376])
+                    ("v" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1381 1395])
+                    ("MSGPACK_DEFINE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("i" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1415 1417])
+                            ("" variable (:type ("s" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1418 1420])
+                            ("" variable (:type ("v" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1421 1423]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1400 1424]))                  
+                :type "class")
+                nil [1197 1427])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("MSGPACK_USER_DEFINED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1434 1455])
+                    ("" variable (:type ("simple_buffer_class_old_to_new" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1456 1487]))                  
+                :type "int")
+                nil [1429 1886])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("MSGPACK_USER_DEFINED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1893 1914])
+                    ("" variable (:type ("simple_buffer_class_new_to_old" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1915 1946]))                  
+                :type "int")
+                nil [1888 2344])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("MSGPACK_USER_DEFINED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2351 2372])
+                    ("" variable (:type ("simple_buffer_enum_member" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2373 2399]))                  
+                :type "int")
+                nil [2346 2740])
+            ("TestUnionMemberClass" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2771 2778])
+                    ("TestUnionMemberClass" function
+                       (:constructor-flag t
+                        :type ("TestUnionMemberClass" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2783 2808])
+                    ("TestUnionMemberClass" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("f" variable (:type "double") (reparse-symbol arg-sub-list) [2834 2843]))                          
+                        :type ("TestUnionMemberClass" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2813 2898])
+                    ("TestUnionMemberClass" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [2924 2930]))                          
+                        :type ("TestUnionMemberClass" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2903 2986])
+                    ("value" variable (:type ("" type
+                         (:members 
+                            ( ("f" variable (:type "double") (reparse-symbol classsubparts) [3008 3017])
+                              ("i" variable (:type "int") (reparse-symbol classsubparts) [3026 3032]))                            
+                          :type "union")
+                          nil nil)) (reparse-symbol classsubparts) [2992 3045])
+                    ("is_double" variable (:type "bool") (reparse-symbol classsubparts) [3050 3065])
+                    ("msgpack_pack" function
+                       (:template 
+                          ( ("Packer" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("pk" variable
+                               (:reference 1
+                                :type ("Packer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3120 3131]))                          
+                        :methodconst-flag t)
+                        (reparse-symbol classsubparts) [3071 3327])
+                    ("msgpack_unpack" function
+                       (:arguments 
+                          ( ("o" variable (:type ("msgpack::object" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3353 3371]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3333 4089]))                  
+                :type "class")
+                nil [2742 4092])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("MSGPACK_USER_DEFINED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4099 4120])
+                    ("" variable (:type ("simple_buffer_union_member" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4121 4148]))                  
+                :type "int")
+                nil [4094 5453])
+            ("d_top" type
+               (:members 
+                  ( ("t" variable (:type "int") (reparse-symbol classsubparts) [5501 5507])
+                    ("MSGPACK_DEFINE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5527 5529]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5512 5530]))                  
+                :type "struct")
+                nil [5482 5533])
+            ("d_mid1" type
+               (:superclasses 
+                  ( ("d_top" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("m1" variable (:type "int") (reparse-symbol classsubparts) [5563 5570])
+                    ("MSGPACK_DEFINE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("MSGPACK_BASE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5590 5609])
+                            ("" variable (:type ("m1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5611 5614]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5575 5615]))                  
+                :type "struct")
+                nil [5535 5618])
+            ("d_mid2" type
+               (:superclasses 
+                  ( ("d_top" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("m2" variable (:type "int") (reparse-symbol classsubparts) [5648 5655])
+                    ("MSGPACK_DEFINE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("m2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5675 5678])
+                            ("" variable (:type ("MSGPACK_BASE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5679 5698]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5660 5700]))                  
+                :type "struct")
+                nil [5620 5703])
+            ("d_bottom" type
+               (:superclasses 
+                  ( ("d_mid1" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil)
+                    ("d_mid2" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("b" variable (:type "int") (reparse-symbol classsubparts) [5744 5750])
+                    ("MSGPACK_DEFINE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("MSGPACK_BASE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5770 5790])
+                            ("" variable (:type ("MSGPACK_BASE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5792 5812])
+                            ("" variable (:type ("b" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5814 5816]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5755 5817]))                  
+                :type "struct")
+                nil [5705 5820])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("MSGPACK_INHERIT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5827 5843])
+                    ("" variable (:type ("define_non_virtual" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5844 5863]))                  
+                :type "int")
+                nil [5822 6313])
+            ("v_d_top" type
+               (:members 
+                  ( ("t" variable (:type "int") (reparse-symbol classsubparts) [6336 6342])
+                    ("MSGPACK_DEFINE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6362 6364]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6347 6365]))                  
+                :type "struct")
+                nil [6315 6368])
+            ("v_d_mid1" type
+               (:superclasses 
+                  ( ("v_d_top" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("m1" variable (:type "int") (reparse-symbol classsubparts) [6410 6417])
+                    ("MSGPACK_DEFINE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("m1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6437 6440]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6422 6441]))                  
+                :type "struct")
+                nil [6370 6444])
+            ("v_d_mid2" type
+               (:superclasses 
+                  ( ("v_d_top" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("m2" variable (:type "int") (reparse-symbol classsubparts) [6486 6493])
+                    ("MSGPACK_DEFINE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("m2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6513 6516]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6498 6517]))                  
+                :type "struct")
+                nil [6446 6520])
+            ("v_d_bottom" type
+               (:superclasses 
+                  ( ("v_d_mid1" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil)
+                    ("v_d_mid2" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("b" variable (:type "int") (reparse-symbol classsubparts) [6567 6573])
+                    ("MSGPACK_DEFINE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("MSGPACK_BASE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6593 6615])
+                            ("" variable (:type ("MSGPACK_BASE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6617 6639])
+                            ("" variable (:type ("MSGPACK_BASE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6641 6662])
+                            ("" variable (:type ("b" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6664 6666]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6578 6667]))                  
+                :type "struct")
+                nil [6522 6670])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("MSGPACK_INHERIT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6677 6693])
+                    ("" variable (:type ("define_virtual" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6694 6709]))                  
+                :type "int")
+                nil [6672 7078])
+            ("da_top" type
+               (:members 
+                  ( ("t" variable (:type "int") (reparse-symbol classsubparts) [7117 7123])
+                    ("MSGPACK_DEFINE_ARRAY" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7149 7151]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [7128 7152]))                  
+                :type "struct")
+                nil [7097 7155])
+            ("da_mid1" type
+               (:superclasses 
+                  ( ("da_top" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("m1" variable (:type "int") (reparse-symbol classsubparts) [7187 7194])
+                    ("MSGPACK_DEFINE_ARRAY" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("MSGPACK_BASE_ARRAY" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7220 7246])
+                            ("" variable (:type ("m1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7248 7251]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [7199 7252]))                  
+                :type "struct")
+                nil [7157 7255])
+            ("da_mid2" type
+               (:superclasses 
+                  ( ("da_top" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("m2" variable (:type "int") (reparse-symbol classsubparts) [7287 7294])
+                    ("MSGPACK_DEFINE_ARRAY" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("m2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7320 7323])
+                            ("" variable (:type ("MSGPACK_BASE_ARRAY" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7324 7350]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [7299 7352]))                  
+                :type "struct")
+                nil [7257 7355])
+            ("da_bottom" type
+               (:superclasses 
+                  ( ("da_mid1" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil)
+                    ("da_mid2" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("b" variable (:type "int") (reparse-symbol classsubparts) [7399 7405])
+                    ("MSGPACK_DEFINE_ARRAY" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("MSGPACK_BASE_ARRAY" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7431 7458])
+                            ("" variable (:type ("MSGPACK_BASE_ARRAY" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7460 7487])
+                            ("" variable (:type ("b" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7489 7491]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [7410 7492]))                  
+                :type "struct")
+                nil [7357 7495])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("MSGPACK_INHERIT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7502 7518])
+                    ("" variable (:type ("define_array_non_virtual" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7519 7544]))                  
+                :type "int")
+                nil [7497 8003])
+            ("v_da_top" type
+               (:members 
+                  ( ("t" variable (:type "int") (reparse-symbol classsubparts) [8027 8033])
+                    ("MSGPACK_DEFINE_ARRAY" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8059 8061]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [8038 8062]))                  
+                :type "struct")
+                nil [8005 8065])
+            ("v_da_mid1" type
+               (:superclasses 
+                  ( ("v_da_top" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("m1" variable (:type "int") (reparse-symbol classsubparts) [8109 8116])
+                    ("MSGPACK_DEFINE_ARRAY" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("m1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8142 8145]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [8121 8146]))                  
+                :type "struct")
+                nil [8067 8149])
+            ("v_da_mid2" type
+               (:superclasses 
+                  ( ("v_da_top" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("m2" variable (:type "int") (reparse-symbol classsubparts) [8193 8200])
+                    ("MSGPACK_DEFINE_ARRAY" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("m2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8226 8229]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [8205 8230]))                  
+                :type "struct")
+                nil [8151 8233])
+            ("v_da_bottom" type
+               (:superclasses 
+                  ( ("v_da_mid1" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil)
+                    ("v_da_mid2" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("b" variable (:type "int") (reparse-symbol classsubparts) [8283 8289])
+                    ("MSGPACK_DEFINE_ARRAY" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("MSGPACK_BASE_ARRAY" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8315 8344])
+                            ("" variable (:type ("MSGPACK_BASE_ARRAY" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8346 8375])
+                            ("" variable (:type ("MSGPACK_BASE_ARRAY" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8377 8405])
+                            ("" variable (:type ("b" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8407 8409]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [8294 8410]))                  
+                :type "struct")
+                nil [8235 8413])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("MSGPACK_INHERIT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8420 8436])
+                    ("" variable (:type ("define_array_virtual" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8437 8458]))                  
+                :type "int")
+                nil [8415 8830])
+            ("dm_top" type
+               (:members 
+                  ( ("t" variable (:type "int") (reparse-symbol classsubparts) [8867 8873])
+                    ("MSGPACK_DEFINE_MAP" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8897 8899]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [8878 8900]))                  
+                :type "struct")
+                nil [8847 8903])
+            ("dm_mid1" type
+               (:superclasses 
+                  ( ("dm_top" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("m1" variable (:type "int") (reparse-symbol classsubparts) [8935 8942])
+                    ("MSGPACK_DEFINE_MAP" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("MSGPACK_BASE_MAP" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8966 8990])
+                            ("" variable (:type ("m1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8992 8995]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [8947 8996]))                  
+                :type "struct")
+                nil [8905 8999])
+            ("dm_mid2" type
+               (:superclasses 
+                  ( ("dm_top" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("m2" variable (:type "int") (reparse-symbol classsubparts) [9031 9038])
+                    ("MSGPACK_DEFINE_MAP" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("m2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9062 9065])
+                            ("" variable (:type ("MSGPACK_BASE_MAP" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9066 9090]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [9043 9092]))                  
+                :type "struct")
+                nil [9001 9095])
+            ("dm_bottom" type
+               (:superclasses 
+                  ( ("dm_mid1" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil)
+                    ("dm_mid2" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("b" variable (:type "int") (reparse-symbol classsubparts) [9139 9145])
+                    ("MSGPACK_DEFINE_MAP" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("MSGPACK_BASE_MAP" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9169 9194])
+                            ("" variable (:type ("MSGPACK_BASE_MAP" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9196 9221])
+                            ("" variable (:type ("b" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9223 9225]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [9150 9226]))                  
+                :type "struct")
+                nil [9097 9229])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("MSGPACK_INHERIT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9236 9252])
+                    ("" variable (:type ("define_map_non_virtual" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9253 9276]))                  
+                :type "int")
+                nil [9231 10193])
+            ("v_dm_top" type
+               (:members 
+                  ( ("t" variable (:type "int") (reparse-symbol classsubparts) [10217 10223])
+                    ("MSGPACK_DEFINE_MAP" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10247 10249]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [10228 10250]))                  
+                :type "struct")
+                nil [10195 10253])
+            ("v_dm_mid1" type
+               (:superclasses 
+                  ( ("v_dm_top" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("m1" variable (:type "int") (reparse-symbol classsubparts) [10297 10304])
+                    ("MSGPACK_DEFINE_MAP" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("m1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10328 10331]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [10309 10332]))                  
+                :type "struct")
+                nil [10255 10335])
+            ("v_dm_mid2" type
+               (:superclasses 
+                  ( ("v_dm_top" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("m2" variable (:type "int") (reparse-symbol classsubparts) [10379 10386])
+                    ("MSGPACK_DEFINE_MAP" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("m2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10410 10413]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [10391 10414]))                  
+                :type "struct")
+                nil [10337 10417])
+            ("v_dm_bottom" type
+               (:superclasses 
+                  ( ("v_dm_mid1" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil)
+                    ("v_dm_mid2" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("b" variable (:type "int") (reparse-symbol classsubparts) [10467 10473])
+                    ("MSGPACK_DEFINE_MAP" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("MSGPACK_BASE_MAP" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10497 10524])
+                            ("" variable (:type ("MSGPACK_BASE_MAP" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10526 10553])
+                            ("" variable (:type ("MSGPACK_BASE_MAP" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10555 10581])
+                            ("" variable (:type ("b" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10583 10585]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [10478 10586]))                  
+                :type "struct")
+                nil [10419 10589])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("MSGPACK_INHERIT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10596 10612])
+                    ("" variable (:type ("define_map_virtual" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10613 10632]))                  
+                :type "int")
+                nil [10591 11004])
+            ("s_v1" type
+               (:members 
+                  ( ("i" variable (:type "int") (reparse-symbol classsubparts) [11042 11048])
+                    ("s" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11053 11067])
+                    ("s_v1" function
+                       (:constructor-flag t
+                        :type ("s_v1" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [11072 11097])
+                    ("MSGPACK_DEFINE_MAP" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("i" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11121 11123])
+                            ("" variable (:type ("s" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11124 11126]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [11102 11127]))                  
+                :type "struct")
+                nil [11024 11130])
+            ("s_v2" type
+               (:members 
+                  ( ("c" variable (:type "char") (reparse-symbol classsubparts) [11150 11157])
+                    ("s" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11185 11199])
+                    ("i" variable (:type "int") (reparse-symbol classsubparts) [11204 11210])
+                    ("s_v2" function
+                       (:constructor-flag t
+                        :type ("s_v2" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [11215 11248])
+                    ("MSGPACK_DEFINE_MAP" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("c" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11272 11274])
+                            ("" variable (:type ("s" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11275 11277])
+                            ("" variable (:type ("i" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11278 11280]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [11253 11281]))                  
+                :type "struct")
+                nil [11132 11317])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("MSGPACK_MIGRATION" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11324 11342])
+                    ("" variable (:type ("order_number_changed" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11343 11364]))                  
+                :type "int")
+                nil [11319 11661])
+            ("test_non_intrusive" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [11725 11732])
+                    ("name" function
+                       (:methodconst-flag t
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11737 11787])
+                    ("set_name" function
+                       (:arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11806 11830]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11792 11849])
+                    ("private" label nil (reparse-symbol classsubparts) [11850 11858])
+                    ("m_name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11863 11882]))                  
+                :type "class")
+                nil [11698 11885])
+            ("msgpack" type
+               (:members 
+                  ( ("MSGPACK_API_VERSION_NAMESPACE" function
+                       (:arguments 
+                          ( ("" variable (:type ("MSGPACK_DEFAULT_API_NS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11937 11960]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [11907 12685]))                  
+                :type "namespace")
+                nil [11887 12744])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("MSGPACK_USER_DEFINED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12772 12793])
+                    ("" variable (:type ("test_non_intrusive" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12794 12813]))                  
+                :type "int")
+                nil [12767 13085])
+            ("nvp_base" type
+               (:members 
+                  ( ("a" variable (:type "int") (reparse-symbol classsubparts) [13109 13115])
+                    ("b" variable (:type "int") (reparse-symbol classsubparts) [13120 13126])
+                    ("MSGPACK_DEFINE_MAP" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("MSGPACK_NVP" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13150 13171])
+                            ("" variable (:type ("b" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13173 13175]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [13131 13176]))                  
+                :type "struct")
+                nil [13087 13179])
+            ("nvp_derived" type
+               (:superclasses 
+                  ( ("nvp_base" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("c" variable (:type "int") (reparse-symbol classsubparts) [13217 13223])
+                    ("d" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13228 13242])
+                    ("MSGPACK_DEFINE_MAP" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("MSGPACK_NVP" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13266 13287])
+                            ("" variable (:type ("MSGPACK_NVP" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13289 13332])
+                            ("" variable (:type ("MSGPACK_NVP" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13334 13355]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [13247 13357]))                  
+                :type "struct")
+                nil [13181 13360])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("MSGPACK_NVP" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13367 13379])
+                    ("" variable (:type ("combination" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13380 13392]))                  
+                :type "int")
+                nil [13362 14931]))          
+      :file "user_class.cpp"
+      :pointmax 14932
+      :fsize 14931
+      :lastmodtime '(22708 54048 114033 892000)
+      :unmatched-syntax '((semantic-list 13345 . 13355) (semantic-list 13300 . 13332) (semantic-list 13277 . 13287) (semantic-list 13161 . 13171) (semantic-list 10571 . 10581) (semantic-list 10542 . 10553) (semantic-list 10513 . 10524) (semantic-list 9212 . 9221) (semantic-list 9185 . 9194) (semantic-list 9082 . 9090) (semantic-list 8982 . 8990) (semantic-list 8395 . 8405) (semantic-list 8364 . 8375) (semantic-list 8333 . 8344) (semantic-list 7478 . 7487) (semantic-list 7449 . 7458) (semantic-list 7342 . 7350) (semantic-list 7238 . 7246) (semantic-list 6653 . 6662) (semantic-list 6629 . 6639) (semantic-list 6605 . 6615) (semantic-list 5804 . 5812) (semantic-list 5782 . 5790) (semantic-list 5691 . 5698) (semantic-list 5602 . 5609))))
+  :file "!home!nakao!github!iotc_msgpub!external!msgpack-c!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

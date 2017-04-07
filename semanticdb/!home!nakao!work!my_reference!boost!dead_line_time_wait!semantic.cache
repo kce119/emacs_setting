@@ -1,0 +1,22 @@
+;; Object dead_line_time_wait/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "dead_line_time_wait/"
+  :tables
+  (list
+    (semanticdb-table "main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("boost/asio.hpp" include (:system-flag t) nil [21 46])
+            ("boost/format.hpp" include (:system-flag t) nil [47 74])
+            ("boost/current_function.hpp" include (:system-flag t) nil [75 112])
+            ("sstream" include (:system-flag t) nil [113 131])
+            ("main" function (:type "int") nil [133 2716]))          
+      :file "main.cpp"
+      :pointmax 2717
+      :fsize 2758
+      :lastmodtime '(22673 31231 443333 336000)
+      :unmatched-syntax nil))
+  :file "!home!nakao!work!my_reference!boost!dead_line_time_wait!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

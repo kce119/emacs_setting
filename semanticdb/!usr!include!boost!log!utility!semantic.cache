@@ -1,0 +1,1467 @@
+;; Object utility/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "utility/"
+  :tables
+  (list
+    (semanticdb-table "strictest_lock.hpp"
+      :file "strictest_lock.hpp"
+      :fsize 6404
+      :lastmodtime '(22452 53218 0 0))
+    (semanticdb-table "unique_identifier_name.hpp"
+      :file "unique_identifier_name.hpp"
+      :fsize 1675
+      :lastmodtime '(22452 53218 0 0))
+    (semanticdb-table "formatting_ostream.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_LOG_UTILITY_FORMATTING_OSTREAM_HPP_INCLUDED_" variable (:constant-flag t) nil [478 528])
+            ("ostream" include (:system-flag t) nil [530 548])
+            ("string" include (:system-flag t) nil [549 566])
+            ("memory" include (:system-flag t) nil [567 584])
+            ("locale" include (:system-flag t) nil [585 602])
+            ("boost/core/explicit_operator_bool.hpp" include (:system-flag t) nil [603 651])
+            ("boost/utility/string_ref_fwd.hpp" include (:system-flag t) nil [652 695])
+            ("boost/utility/string_view_fwd.hpp" include (:system-flag t) nil [696 740])
+            ("boost/type_traits/remove_cv.hpp" include (:system-flag t) nil [741 783])
+            ("boost/log/detail/config.hpp" include (:system-flag t) nil [784 822])
+            ("boost/log/detail/attachable_sstream_buf.hpp" include (:system-flag t) nil [823 877])
+            ("boost/log/detail/code_conversion.hpp" include (:system-flag t) nil [878 925])
+            ("boost/log/utility/string_literal_fwd.hpp" include (:system-flag t) nil [926 977])
+            ("boost/log/utility/formatting_ostream_fwd.hpp" include (:system-flag t) nil [978 1033])
+            ("boost/log/detail/header.hpp" include (:system-flag t) nil [1034 1072])
+            ("boost" type
+               (:members 
+                  ( ("aux" type
+                       (:members 
+                          ( ("enable_if_streamable_char_type" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil)
+                                    ("R" type (:type "class") nil nil))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1186 1262])
+                            ("enable_if_streamable_char_type" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("R" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1337 1352]))                                  
+                                :template-specifier 
+                                  ( ("char" type nil nil nil)
+                                    ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1263 1355])
+                            ("enable_if_streamable_char_type" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("R" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1433 1448]))                                  
+                                :template-specifier 
+                                  ( ("wchar_t" type nil nil nil)
+                                    ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1356 1451])
+                            ("enable_if_streamable_char_type" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("R" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1616 1631]))                                  
+                                :template-specifier 
+                                  ( ("char16_t" type nil nil nil)
+                                    ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1538 1634])
+                            ("enable_if_streamable_char_type" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("R" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1758 1773]))                                  
+                                :template-specifier 
+                                  ( ("char32_t" type nil nil nil)
+                                    ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1680 1776])
+                            ("enable_if_formatting_ostream" type
+                               (:template 
+                                  ( ("StreamT" type (:type "class") nil nil)
+                                    ("R" type (:type "class") nil nil))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1792 1872])
+                            ("enable_if_formatting_ostream" type
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("TraitsT" type (:type "class") nil nil)
+                                    ("AllocatorT" type (:type "class") nil nil)
+                                    ("R" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("R" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2050 2065]))                                  
+                                :template-specifier 
+                                  ( ("basic_formatting_ostream" type (:template-specifier 
+                                      ( ("CharT" type nil nil nil)
+                                        ("TraitsT" type nil nil nil)
+                                        ("AllocatorT" type nil nil nil))                                      ) nil nil)
+                                    ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1873 2068]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1169 2071])
+                    ("basic_formatting_ostream" type
+                       (:template 
+                          ( ("CharT" type (:type "class") nil nil)
+                            ("TraitsT" type (:type "class") nil nil)
+                            ("AllocatorT" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [3731 3738])
+                            ("char_type" type
+                               (:typedef ("CharT" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3766 3790])
+                            ("traits_type" type
+                               (:typedef ("TraitsT" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3820 3848])
+                            ("allocator_type" type
+                               (:typedef ("AllocatorT" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3878 3912])
+                            ("streambuf_type" type
+                               (:typedef ("boost::log::aux::basic_ostringstreambuf" type
+                                     (:template-specifier 
+                                        ( ("char_type" type nil nil nil)
+                                          ("traits_type" type nil nil nil)
+                                          ("allocator_type" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3944 4049])
+                            ("string_type" type
+                               (:typedef ("streambuf_type::string_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4081 4138])
+                            ("ostream_type" type
+                               (:typedef ("std::basic_ostream" type
+                                     (:template-specifier 
+                                        ( ("char_type" type nil nil nil)
+                                          ("traits_type" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4164 4230])
+                            ("pos_type" type
+                               (:typedef ("ostream_type::pos_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4264 4313])
+                            ("off_type" type
+                               (:typedef ("ostream_type::off_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4345 4394])
+                            ("int_type" type
+                               (:typedef ("ostream_type::int_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4435 4484])
+                            ("failure" type
+                               (:typedef ("ostream_type::failure" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4490 4537])
+                            ("fmtflags" type
+                               (:typedef ("ostream_type::fmtflags" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4542 4591])
+                            ("iostate" type
+                               (:typedef ("ostream_type::iostate" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4596 4643])
+                            ("openmode" type
+                               (:typedef ("ostream_type::openmode" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4648 4697])
+                            ("seekdir" type
+                               (:typedef ("ostream_type::seekdir" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4702 4749])
+                            ("Init" type
+                               (:typedef ("ostream_type::Init" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4754 4795])
+                            ("event" type
+                               (:typedef ("ostream_type::event" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4801 4844])
+                            ("event_callback" type
+                               (:typedef ("ostream_type::event_callback" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4849 4910])
+                            ("sentry" type
+                               (:superclasses 
+                                  ( ("ostream_type::sentry" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("base_type" type
+                                       (:typedef ("ostream_type::sentry" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4981 5029])
+                                    ("public" label nil (reparse-symbol classsubparts) [5035 5042])
+                                    ("sentry" function
+                                       (:constructor-flag t
+                                        :typemodifiers ("explicit")
+                                        :arguments 
+                                          ( ("strm" variable
+                                               (:reference 1
+                                                :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5067 5098]))                                          
+                                        :type ("sentry" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5051 5145])
+                                    ("!" function
+                                       (:methodconst-flag t
+                                        :operator-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [5303 5378]))                                  
+                                :type "class")
+                                (reparse-symbol classsubparts) [4916 5506])
+                            ("private" label nil (reparse-symbol classsubparts) [5508 5516])
+                            ("ios_base_manip" function
+                               (:prototype-flag t
+                                :function-pointer t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("std::ios_base" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5585 5600]))                                  
+                                :type ("std::ios_base" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5552 5601])
+                            ("basic_ios_manip" function
+                               (:prototype-flag t
+                                :function-pointer t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("std::basic_ios" type
+                                             (:template-specifier 
+                                                ( ("char_type" type nil nil nil)
+                                                  ("traits_type" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5675 5717]))                                  
+                                :type ("std::basic_ios" type
+                                     (:template-specifier 
+                                        ( ("char_type" type nil nil nil)
+                                          ("traits_type" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [5614 5718])
+                            ("stream_manip" function
+                               (:prototype-flag t
+                                :function-pointer t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("ostream_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5761 5775]))                                  
+                                :type ("ostream_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5731 5776])
+                            ("public" label nil (reparse-symbol classsubparts) [5778 5785])
+                            ("ostream_type::boolalpha" variable (:type "int") (reparse-symbol classsubparts) [5843 5867])
+                            ("ostream_type::dec" variable (:type "int") (reparse-symbol classsubparts) [5919 5937])
+                            ("ostream_type::fixed" variable (:type "int") (reparse-symbol classsubparts) [5991 6011])
+                            ("ostream_type::hex" variable (:type "int") (reparse-symbol classsubparts) [6063 6081])
+                            ("ostream_type::internal" variable (:type "int") (reparse-symbol classsubparts) [6138 6161])
+                            ("ostream_type::left" variable (:type "int") (reparse-symbol classsubparts) [6214 6233])
+                            ("ostream_type::oct" variable (:type "int") (reparse-symbol classsubparts) [6285 6303])
+                            ("ostream_type::right" variable (:type "int") (reparse-symbol classsubparts) [6357 6377])
+                            ("ostream_type::scientific" variable (:type "int") (reparse-symbol classsubparts) [6436 6461])
+                            ("ostream_type::showbase" variable (:type "int") (reparse-symbol classsubparts) [6518 6541])
+                            ("ostream_type::showpoint" variable (:type "int") (reparse-symbol classsubparts) [6599 6623])
+                            ("ostream_type::skipws" variable (:type "int") (reparse-symbol classsubparts) [6678 6699])
+                            ("ostream_type::unitbuf" variable (:type "int") (reparse-symbol classsubparts) [6755 6777])
+                            ("ostream_type::uppercase" variable (:type "int") (reparse-symbol classsubparts) [6835 6859])
+                            ("ostream_type::adjustfield" variable (:type "int") (reparse-symbol classsubparts) [6919 6945])
+                            ("ostream_type::basefield" variable (:type "int") (reparse-symbol classsubparts) [7003 7027])
+                            ("ostream_type::floatfield" variable (:type "int") (reparse-symbol classsubparts) [7086 7111])
+                            ("ostream_type::badbit" variable (:type "int") (reparse-symbol classsubparts) [7166 7187])
+                            ("ostream_type::eofbit" variable (:type "int") (reparse-symbol classsubparts) [7241 7262])
+                            ("ostream_type::failbit" variable (:type "int") (reparse-symbol classsubparts) [7317 7339])
+                            ("ostream_type::goodbit" variable (:type "int") (reparse-symbol classsubparts) [7394 7416])
+                            ("ostream_type::app" variable (:type "int") (reparse-symbol classsubparts) [7469 7487])
+                            ("ostream_type::ate" variable (:type "int") (reparse-symbol classsubparts) [7539 7557])
+                            ("ostream_type::binary" variable (:type "int") (reparse-symbol classsubparts) [7612 7633])
+                            ("ostream_type::in" variable (:type "int") (reparse-symbol classsubparts) [7684 7701])
+                            ("ostream_type::out" variable (:type "int") (reparse-symbol classsubparts) [7753 7771])
+                            ("ostream_type::trunc" variable (:type "int") (reparse-symbol classsubparts) [7825 7845])
+                            ("ostream_type::beg" variable (:type "int") (reparse-symbol classsubparts) [7897 7915])
+                            ("ostream_type::cur" variable (:type "int") (reparse-symbol classsubparts) [7966 7984])
+                            ("ostream_type::end" variable (:type "int") (reparse-symbol classsubparts) [8035 8053])
+                            ("ostream_type::erase_event" variable (:type "int") (reparse-symbol classsubparts) [8111 8137])
+                            ("ostream_type::imbue_event" variable (:type "int") (reparse-symbol classsubparts) [8194 8220])
+                            ("ostream_type::copyfmt_event" variable (:type "int") (reparse-symbol classsubparts) [8279 8307])
+                            ("private" label nil (reparse-symbol classsubparts) [8309 8317])
+                            ("m_streambuf" variable
+                               (:typemodifiers ("mutable")
+                                :type ("streambuf_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8322 8357])
+                            ("m_stream" variable (:type ("ostream_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8362 8384])
+                            ("public" label nil (reparse-symbol classsubparts) [8386 8393])
+                            ("basic_formatting_ostream" function
+                               (:constructor-flag t
+                                :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8625 8711])
+                            ("basic_formatting_ostream" function
+                               (:constructor-flag t
+                                :typemodifiers ("explicit")
+                                :arguments 
+                                  ( ("str" variable
+                                       (:reference 1
+                                        :type ("string_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9005 9022]))                                  
+                                :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8971 9116])
+                            ("basic_formatting_ostream" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [9264 9359])
+                            ("attach" function
+                               (:arguments 
+                                  ( ("str" variable
+                                       (:reference 1
+                                        :type ("string_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9548 9565]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9536 9657])
+                            ("detach" function (:type "void") (reparse-symbol classsubparts) [9766 9867])
+                            ("str" function
+                               (:methodconst-flag t
+                                :type ("string_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9995 10188])
+                            ("stream" function (:type ("ostream_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10258 10301])
+                            ("stream" function
+                               (:methodconst-flag t
+                                :type ("ostream_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10371 10426])
+                            ("flags" function
+                               (:methodconst-flag t
+                                :type ("fmtflags" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10471 10522])
+                            ("flags" function
+                               (:arguments 
+                                  ( ("f" variable (:type ("fmtflags" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10542 10553]))                                  
+                                :type ("fmtflags" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10527 10583])
+                            ("setf" function
+                               (:arguments 
+                                  ( ("f" variable (:type ("fmtflags" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10602 10613]))                                  
+                                :type ("fmtflags" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10588 10642])
+                            ("setf" function
+                               (:arguments 
+                                  ( ("f" variable (:type ("fmtflags" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10661 10672])
+                                    ("mask" variable (:type ("fmtflags" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10673 10687]))                                  
+                                :type ("fmtflags" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10647 10722])
+                            ("unsetf" function
+                               (:arguments 
+                                  ( ("f" variable (:type ("fmtflags" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10739 10750]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [10727 10774])
+                            ("precision" function
+                               (:methodconst-flag t
+                                :type ("std::streamsize" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10780 10846])
+                            ("precision" function
+                               (:arguments 
+                                  ( ("p" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10877 10895]))                                  
+                                :type ("std::streamsize" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10851 10929])
+                            ("width" function
+                               (:methodconst-flag t
+                                :type ("std::streamsize" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10935 10993])
+                            ("width" function
+                               (:arguments 
+                                  ( ("w" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11020 11038]))                                  
+                                :type ("std::streamsize" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10998 11068])
+                            ("getloc" function
+                               (:methodconst-flag t
+                                :type ("std::locale" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11074 11130])
+                            ("imbue" function
+                               (:arguments 
+                                  ( ("loc" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::locale" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11153 11176]))                                  
+                                :type ("std::locale" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11135 11208])
+                            ("xalloc" function
+                               (:typemodifiers ("static")
+                                :type "int")
+                                (reparse-symbol classsubparts) [11214 11268])
+                            ("iword" function
+                               (:arguments 
+                                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [11285 11295]))                                  
+                                :type "long")
+                                (reparse-symbol classsubparts) [11273 11329])
+                            ("pword" function
+                               (:arguments 
+                                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [11347 11357]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [11341 11391])
+                            ("register_callback" function
+                               (:arguments 
+                                  ( ("fn" variable (:type ("event_callback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11420 11438])
+                                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [11439 11449]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [11397 11492])
+                            ("sync_with_stdio" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("sync" variable
+                                       (:default-value "true"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [11526 11543]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [11498 11591])
+                            ("!" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [11672 11717])
+                            ("rdstate" function
+                               (:methodconst-flag t
+                                :type ("iostate" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11723 11777])
+                            ("clear" function
+                               (:arguments 
+                                  ( ("state" variable
+                                       (:default-value "goodbit"
+                                        :type ("iostate" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11793 11817]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [11782 11844])
+                            ("setstate" function
+                               (:arguments 
+                                  ( ("state" variable (:type ("iostate" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11863 11877]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [11849 11907])
+                            ("good" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [11912 11957])
+                            ("eof" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [11962 12005])
+                            ("fail" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [12010 12055])
+                            ("bad" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [12060 12103])
+                            ("exceptions" function
+                               (:methodconst-flag t
+                                :type ("iostate" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12109 12169])
+                            ("exceptions" function
+                               (:arguments 
+                                  ( ("s" variable (:type ("iostate" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12190 12200]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12174 12228])
+                            ("tie" function
+                               (:methodconst-flag t
+                                :pointer 1
+                                :type ("ostream_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12234 12286])
+                            ("tie" function
+                               (:pointer 1
+                                :arguments 
+                                  ( ("strm" variable
+                                       (:pointer 1
+                                        :type ("ostream_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12309 12328]))                                  
+                                :type ("ostream_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12291 12359])
+                            ("rdbuf" function
+                               (:methodconst-flag t
+                                :pointer 1
+                                :type ("streambuf_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12365 12419])
+                            ("copyfmt" function
+                               (:arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :type ("std::basic_ios" type
+                                             (:template-specifier 
+                                                ( ("char_type" type nil nil nil)
+                                                  ("traits_type" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [12459 12505]))                                  
+                                :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12425 12570])
+                            ("copyfmt" function
+                               (:arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12609 12639]))                                  
+                                :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12575 12713])
+                            ("fill" function
+                               (:methodconst-flag t
+                                :type ("char_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12719 12769])
+                            ("fill" function
+                               (:arguments 
+                                  ( ("ch" variable (:type ("char_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12789 12802]))                                  
+                                :type ("char_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12774 12832])
+                            ("narrow" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("ch" variable (:type ("char_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12850 12863])
+                                    ("def" variable (:type "char") (reparse-symbol arg-sub-list) [12864 12873]))                                  
+                                :type "char")
+                                (reparse-symbol classsubparts) [12838 12916])
+                            ("widen" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("ch" variable (:type "char") (reparse-symbol arg-sub-list) [12937 12945]))                                  
+                                :type ("char_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12921 12982])
+                            ("flush" function (:type ("basic_formatting_ostream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13032 13125])
+                            ("tellp" function (:type ("pos_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13131 13176])
+                            ("seekp" function
+                               (:arguments 
+                                  ( ("pos" variable (:type ("pos_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13213 13226]))                                  
+                                :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13181 13289])
+                            ("seekp" function
+                               (:arguments 
+                                  ( ("off" variable (:type ("off_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13326 13339])
+                                    ("dir" variable (:type ("std::ios_base::seekdir" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13340 13367]))                                  
+                                :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13294 13435])
+                            ("put" function
+                               (:arguments 
+                                  ( ("c" variable (:type ("char_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13471 13483]))                                  
+                                :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13441 13542])
+                            ("put" function
+                               (:template 
+                                  ( ("OtherCharT" type (:type "class") nil nil))                                  
+                                :type ("aux::enable_if_streamable_char_type::type" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("c" variable (:type ("OtherCharT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13684 13697]))                                  
+                                :typemodifiers ("typename"))
+                                (reparse-symbol classsubparts) [13548 13753])
+                            ("write" function
+                               (:arguments 
+                                  ( ("p" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("char_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13791 13810])
+                                    ("size" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13811 13832]))                                  
+                                :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13759 13899])
+                            ("write" function
+                               (:template 
+                                  ( ("OtherCharT" type (:type "class") nil nil))                                  
+                                :type ("aux::enable_if_streamable_char_type::type" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("p" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("OtherCharT" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14043 14063])
+                                    ("size" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14064 14085]))                                  
+                                :typemodifiers ("typename"))
+                                (reparse-symbol classsubparts) [13905 14376])
+                            ("<<" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("manip" variable (:type ("ios_base_manip" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14420 14441]))                                  
+                                :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14382 14502])
+                            ("<<" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("manip" variable (:type ("basic_ios_manip" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14545 14567]))                                  
+                                :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14507 14628])
+                            ("<<" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("manip" variable (:type ("stream_manip" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14671 14690]))                                  
+                                :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14633 14751])
+                            ("<<" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("c" variable (:type "char") (reparse-symbol arg-sub-list) [14795 14802]))                                  
+                                :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14757 14859])
+                            ("<<" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("p" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [14902 14916]))                                  
+                                :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14864 15038])
+                            ("<<" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("c" variable (:type "wchar_t") (reparse-symbol arg-sub-list) [15338 15348]))                                  
+                                :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [15300 15405])
+                            ("<<" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("p" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "wchar_t")
+                                        (reparse-symbol arg-sub-list) [15448 15465]))                                  
+                                :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [15410 15590])
+                            ("<<" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("c" variable (:type ("char16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15726 15737]))                                  
+                                :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [15688 15794])
+                            ("<<" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("p" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("char16_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15837 15855]))                                  
+                                :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [15799 15981])
+                            ("<<" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("c" variable (:type ("char32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16069 16080]))                                  
+                                :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [16031 16137])
+                            ("<<" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("p" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("char32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16180 16198]))                                  
+                                :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [16142 16324])
+                            ("<<" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("value" variable (:type "bool") (reparse-symbol arg-sub-list) [16382 16393]))                                  
+                                :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [16344 16454])
+                            ("<<" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("value" variable (:type "signed char") (reparse-symbol arg-sub-list) [16497 16515]))                                  
+                                :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [16459 16576])
+                            ("<<" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("value" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [16619 16639]))                                  
+                                :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [16581 16700])
+                            ("<<" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("value" variable (:type "short") (reparse-symbol arg-sub-list) [16743 16755]))                                  
+                                :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [16705 16816])
+                            ("<<" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("value" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [16859 16880]))                                  
+                                :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [16821 16941])
+                            ("<<" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("value" variable (:type "int") (reparse-symbol arg-sub-list) [16984 16994]))                                  
+                                :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [16946 17055])
+                            ("<<" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("value" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [17098 17117]))                                  
+                                :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [17060 17178])
+                            ("<<" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("value" variable (:type "long") (reparse-symbol arg-sub-list) [17221 17232]))                                  
+                                :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [17183 17293])
+                            ("<<" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("value" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [17336 17356]))                                  
+                                :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [17298 17417])
+                            ("<<" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("value" variable (:type "long long") (reparse-symbol arg-sub-list) [17493 17509]))                                  
+                                :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [17455 17570])
+                            ("<<" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("value" variable (:type "unsigned long long") (reparse-symbol arg-sub-list) [17613 17638]))                                  
+                                :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [17575 17699])
+                            ("<<" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("value" variable (:type "float") (reparse-symbol arg-sub-list) [17750 17762]))                                  
+                                :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [17712 17823])
+                            ("<<" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("value" variable (:type "double") (reparse-symbol arg-sub-list) [17866 17879]))                                  
+                                :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [17828 17940])
+                            ("<<" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("value" variable (:type "long double") (reparse-symbol arg-sub-list) [17983 18001]))                                  
+                                :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [17945 18062])
+                            ("<<" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("value" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [18106 18124]))                                  
+                                :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [18068 18185])
+                            ("<<" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("buf" variable
+                                       (:pointer 1
+                                        :type ("std::basic_streambuf" type
+                                             (:template-specifier 
+                                                ( ("char_type" type nil nil nil)
+                                                  ("traits_type" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [18229 18281]))                                  
+                                :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [18191 18340])
+                            ("<<" function
+                               (:template 
+                                  ( ("OtherCharT" type (:type "class") nil nil)
+                                    ("OtherTraitsT" type (:type "class") nil nil)
+                                    ("OtherAllocatorT" type (:type "class") nil nil))                                  
+                                :type ("aux::enable_if_streamable_char_type::type" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("strm" variable
+                                       (:reference 1
+                                        :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18546 18577])
+                                    ("str" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::basic_string" type
+                                             (:template-specifier 
+                                                ( ("OtherCharT" type nil nil nil)
+                                                  ("OtherTraitsT" type nil nil nil)
+                                                  ("OtherAllocatorT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [18578 18652]))                                  
+                                :typemodifiers ("typename")
+                                :operator-flag t)
+                                (reparse-symbol classsubparts) [18346 18758])
+                            ("<<" function
+                               (:template 
+                                  ( ("OtherCharT" type (:type "class") nil nil)
+                                    ("OtherTraitsT" type (:type "class") nil nil))                                  
+                                :type ("aux::enable_if_streamable_char_type::type" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("strm" variable
+                                       (:reference 1
+                                        :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18938 18969])
+                                    ("str" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("basic_string_literal" type
+                                             (:template-specifier 
+                                                ( ("OtherCharT" type nil nil nil)
+                                                  ("OtherTraitsT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [18970 19030]))                                  
+                                :typemodifiers ("typename")
+                                :operator-flag t)
+                                (reparse-symbol classsubparts) [18764 19136])
+                            ("<<" function
+                               (:template 
+                                  ( ("OtherCharT" type (:type "class") nil nil)
+                                    ("OtherTraitsT" type (:type "class") nil nil))                                  
+                                :type ("aux::enable_if_streamable_char_type::type" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("strm" variable
+                                       (:reference 1
+                                        :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19316 19347])
+                                    ("str" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("basic_string_view" type
+                                             (:template-specifier 
+                                                ( ("OtherCharT" type nil nil nil)
+                                                  ("OtherTraitsT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [19348 19405]))                                  
+                                :typemodifiers ("typename")
+                                :operator-flag t)
+                                (reparse-symbol classsubparts) [19142 19510])
+                            ("<<" function
+                               (:template 
+                                  ( ("OtherCharT" type (:type "class") nil nil)
+                                    ("OtherTraitsT" type (:type "class") nil nil))                                  
+                                :type ("aux::enable_if_streamable_char_type::type" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("strm" variable
+                                       (:reference 1
+                                        :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19717 19748])
+                                    ("str" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("basic_string_ref" type
+                                             (:template-specifier 
+                                                ( ("OtherCharT" type nil nil nil)
+                                                  ("OtherTraitsT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [19749 19805]))                                  
+                                :typemodifiers ("typename")
+                                :operator-flag t)
+                                (reparse-symbol classsubparts) [19543 19910])
+                            ("<<" function
+                               (:template 
+                                  ( ("OtherCharT" type (:type "class") nil nil)
+                                    ("OtherTraitsT" type (:type "class") nil nil)
+                                    ("OtherAllocatorT" type (:type "class") nil nil))                                  
+                                :type ("aux::enable_if_streamable_char_type::type" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("strm" variable
+                                       (:reference 1
+                                        :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [20116 20147])
+                                    ("str" variable
+                                       (:reference 1
+                                        :type ("std::basic_string" type
+                                             (:template-specifier 
+                                                ( ("OtherCharT" type nil nil nil)
+                                                  ("OtherTraitsT" type nil nil nil)
+                                                  ("OtherAllocatorT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [20148 20216]))                                  
+                                :typemodifiers ("typename")
+                                :operator-flag t)
+                                (reparse-symbol classsubparts) [19916 20322])
+                            ("<<" function
+                               (:template 
+                                  ( ("OtherCharT" type (:type "class") nil nil)
+                                    ("OtherTraitsT" type (:type "class") nil nil))                                  
+                                :type ("aux::enable_if_streamable_char_type::type" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("strm" variable
+                                       (:reference 1
+                                        :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [20502 20533])
+                                    ("str" variable
+                                       (:reference 1
+                                        :type ("basic_string_literal" type
+                                             (:template-specifier 
+                                                ( ("OtherCharT" type nil nil nil)
+                                                  ("OtherTraitsT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [20534 20588]))                                  
+                                :typemodifiers ("typename")
+                                :operator-flag t)
+                                (reparse-symbol classsubparts) [20328 20694])
+                            ("<<" function
+                               (:template 
+                                  ( ("OtherCharT" type (:type "class") nil nil)
+                                    ("OtherTraitsT" type (:type "class") nil nil))                                  
+                                :type ("aux::enable_if_streamable_char_type::type" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("strm" variable
+                                       (:reference 1
+                                        :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [20874 20905])
+                                    ("str" variable
+                                       (:reference 1
+                                        :type ("basic_string_view" type
+                                             (:template-specifier 
+                                                ( ("OtherCharT" type nil nil nil)
+                                                  ("OtherTraitsT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [20906 20957]))                                  
+                                :typemodifiers ("typename")
+                                :operator-flag t)
+                                (reparse-symbol classsubparts) [20700 21062])
+                            ("<<" function
+                               (:template 
+                                  ( ("OtherCharT" type (:type "class") nil nil)
+                                    ("OtherTraitsT" type (:type "class") nil nil))                                  
+                                :type ("aux::enable_if_streamable_char_type::type" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("strm" variable
+                                       (:reference 1
+                                        :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [21269 21300])
+                                    ("str" variable
+                                       (:reference 1
+                                        :type ("basic_string_ref" type
+                                             (:template-specifier 
+                                                ( ("OtherCharT" type nil nil nil)
+                                                  ("OtherTraitsT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [21301 21351]))                                  
+                                :typemodifiers ("typename")
+                                :operator-flag t)
+                                (reparse-symbol classsubparts) [21095 21456])
+                            ("<<" function
+                               (:template 
+                                  ( ("OtherCharT" type (:type "class") nil nil)
+                                    ("OtherTraitsT" type (:type "class") nil nil)
+                                    ("OtherAllocatorT" type (:type "class") nil nil))                                  
+                                :type ("aux::enable_if_streamable_char_type::type" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [21709 21735])
+                                    ("" variable (:type ("strm" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21736 21741])
+                                    ("str" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::basic_string" type
+                                             (:template-specifier 
+                                                ( ("OtherCharT" type nil nil nil)
+                                                  ("OtherTraitsT" type nil nil nil)
+                                                  ("OtherAllocatorT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [21742 21816]))                                  
+                                :typemodifiers ("typename")
+                                :operator-flag t)
+                                (reparse-symbol classsubparts) [21509 21922])
+                            ("<<" function
+                               (:template 
+                                  ( ("OtherCharT" type (:type "class") nil nil)
+                                    ("OtherTraitsT" type (:type "class") nil nil))                                  
+                                :type ("aux::enable_if_streamable_char_type::type" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [22102 22128])
+                                    ("" variable (:type ("strm" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22129 22134])
+                                    ("str" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("basic_string_literal" type
+                                             (:template-specifier 
+                                                ( ("OtherCharT" type nil nil nil)
+                                                  ("OtherTraitsT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [22135 22195]))                                  
+                                :typemodifiers ("typename")
+                                :operator-flag t)
+                                (reparse-symbol classsubparts) [21928 22301])
+                            ("<<" function
+                               (:template 
+                                  ( ("OtherCharT" type (:type "class") nil nil)
+                                    ("OtherTraitsT" type (:type "class") nil nil))                                  
+                                :type ("aux::enable_if_streamable_char_type::type" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [22481 22507])
+                                    ("" variable (:type ("strm" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22508 22513])
+                                    ("str" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("basic_string_view" type
+                                             (:template-specifier 
+                                                ( ("OtherCharT" type nil nil nil)
+                                                  ("OtherTraitsT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [22514 22571]))                                  
+                                :typemodifiers ("typename")
+                                :operator-flag t)
+                                (reparse-symbol classsubparts) [22307 22676])
+                            ("<<" function
+                               (:template 
+                                  ( ("OtherCharT" type (:type "class") nil nil)
+                                    ("OtherTraitsT" type (:type "class") nil nil))                                  
+                                :type ("aux::enable_if_streamable_char_type::type" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [22883 22909])
+                                    ("" variable (:type ("strm" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22910 22915])
+                                    ("str" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("basic_string_ref" type
+                                             (:template-specifier 
+                                                ( ("OtherCharT" type nil nil nil)
+                                                  ("OtherTraitsT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [22916 22972]))                                  
+                                :typemodifiers ("typename")
+                                :operator-flag t)
+                                (reparse-symbol classsubparts) [22709 23077])
+                            ("<<" function
+                               (:template 
+                                  ( ("OtherCharT" type (:type "class") nil nil)
+                                    ("OtherTraitsT" type (:type "class") nil nil)
+                                    ("OtherAllocatorT" type (:type "class") nil nil))                                  
+                                :type ("aux::enable_if_streamable_char_type::type" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [23283 23309])
+                                    ("" variable (:type ("strm" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23310 23315])
+                                    ("str" variable
+                                       (:reference 1
+                                        :type ("std::basic_string" type
+                                             (:template-specifier 
+                                                ( ("OtherCharT" type nil nil nil)
+                                                  ("OtherTraitsT" type nil nil nil)
+                                                  ("OtherAllocatorT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [23316 23384]))                                  
+                                :typemodifiers ("typename")
+                                :operator-flag t)
+                                (reparse-symbol classsubparts) [23083 23490])
+                            ("<<" function
+                               (:template 
+                                  ( ("OtherCharT" type (:type "class") nil nil)
+                                    ("OtherTraitsT" type (:type "class") nil nil))                                  
+                                :type ("aux::enable_if_streamable_char_type::type" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [23670 23696])
+                                    ("" variable (:type ("strm" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23697 23702])
+                                    ("str" variable
+                                       (:reference 1
+                                        :type ("basic_string_literal" type
+                                             (:template-specifier 
+                                                ( ("OtherCharT" type nil nil nil)
+                                                  ("OtherTraitsT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [23703 23757]))                                  
+                                :typemodifiers ("typename")
+                                :operator-flag t)
+                                (reparse-symbol classsubparts) [23496 23863])
+                            ("<<" function
+                               (:template 
+                                  ( ("OtherCharT" type (:type "class") nil nil)
+                                    ("OtherTraitsT" type (:type "class") nil nil))                                  
+                                :type ("aux::enable_if_streamable_char_type::type" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [24043 24069])
+                                    ("" variable (:type ("strm" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24070 24075])
+                                    ("str" variable
+                                       (:reference 1
+                                        :type ("basic_string_view" type
+                                             (:template-specifier 
+                                                ( ("OtherCharT" type nil nil nil)
+                                                  ("OtherTraitsT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [24076 24127]))                                  
+                                :typemodifiers ("typename")
+                                :operator-flag t)
+                                (reparse-symbol classsubparts) [23869 24232])
+                            ("<<" function
+                               (:template 
+                                  ( ("OtherCharT" type (:type "class") nil nil)
+                                    ("OtherTraitsT" type (:type "class") nil nil))                                  
+                                :type ("aux::enable_if_streamable_char_type::type" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [24439 24465])
+                                    ("" variable (:type ("strm" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24466 24471])
+                                    ("str" variable
+                                       (:reference 1
+                                        :type ("basic_string_ref" type
+                                             (:template-specifier 
+                                                ( ("OtherCharT" type nil nil nil)
+                                                  ("OtherTraitsT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [24472 24522]))                                  
+                                :typemodifiers ("typename")
+                                :operator-flag t)
+                                (reparse-symbol classsubparts) [24265 24627])
+                            ("private" label nil (reparse-symbol classsubparts) [24636 24644])
+                            ("init_stream" function (:type "void") (reparse-symbol classsubparts) [24649 25105])
+                            ("formatted_write" function
+                               (:arguments 
+                                  ( ("p" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("char_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [25153 25172])
+                                    ("size" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25173 25194]))                                  
+                                :type ("basic_formatting_ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [25111 25551])
+                            ("formatted_write" function
+                               (:template 
+                                  ( ("OtherCharT" type (:type "class") nil nil))                                  
+                                :type ("basic_formatting_ostream" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("p" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("OtherCharT" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [25635 25655])
+                                    ("size" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25656 25677]))                                  )
+                                (reparse-symbol classsubparts) [25557 26065])
+                            ("aligned_write" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("p" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("char_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [26090 26109])
+                                    ("size" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26110 26131]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [26071 26132])
+                            ("aligned_write" function
+                               (:template 
+                                  ( ("OtherCharT" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("p" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("OtherCharT" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [26193 26213])
+                                    ("size" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26214 26235]))                                  
+                                :prototype-flag t)
+                                (reparse-symbol classsubparts) [26138 26236]))                          )
+                        (reparse-symbol namespacesubparts) [3632 26496])
+                    ("basic_formatting_ostream::boolalpha" variable
+                       (:typemodifiers ("typename")
+                        :type ("basic_formatting_ostream::fmtflags" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [26589 26729])
+                    ("basic_formatting_ostream::dec" variable
+                       (:typemodifiers ("typename")
+                        :type ("basic_formatting_ostream::fmtflags" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [26821 26955])
+                    ("basic_formatting_ostream::fixed" variable
+                       (:typemodifiers ("typename")
+                        :type ("basic_formatting_ostream::fmtflags" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [27047 27183])
+                    ("basic_formatting_ostream::hex" variable
+                       (:typemodifiers ("typename")
+                        :type ("basic_formatting_ostream::fmtflags" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [27275 27409])
+                    ("basic_formatting_ostream::internal" variable
+                       (:typemodifiers ("typename")
+                        :type ("basic_formatting_ostream::fmtflags" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [27501 27640])
+                    ("basic_formatting_ostream::left" variable
+                       (:typemodifiers ("typename")
+                        :type ("basic_formatting_ostream::fmtflags" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [27732 27867])
+                    ("basic_formatting_ostream::oct" variable
+                       (:typemodifiers ("typename")
+                        :type ("basic_formatting_ostream::fmtflags" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [27959 28093])
+                    ("basic_formatting_ostream::right" variable
+                       (:typemodifiers ("typename")
+                        :type ("basic_formatting_ostream::fmtflags" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [28185 28321])
+                    ("basic_formatting_ostream::scientific" variable
+                       (:typemodifiers ("typename")
+                        :type ("basic_formatting_ostream::fmtflags" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [28413 28554])
+                    ("basic_formatting_ostream::showbase" variable
+                       (:typemodifiers ("typename")
+                        :type ("basic_formatting_ostream::fmtflags" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [28646 28785])
+                    ("basic_formatting_ostream::showpoint" variable
+                       (:typemodifiers ("typename")
+                        :type ("basic_formatting_ostream::fmtflags" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [28877 29017])
+                    ("basic_formatting_ostream::skipws" variable
+                       (:typemodifiers ("typename")
+                        :type ("basic_formatting_ostream::fmtflags" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [29109 29246])
+                    ("basic_formatting_ostream::unitbuf" variable
+                       (:typemodifiers ("typename")
+                        :type ("basic_formatting_ostream::fmtflags" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [29338 29476])
+                    ("basic_formatting_ostream::uppercase" variable
+                       (:typemodifiers ("typename")
+                        :type ("basic_formatting_ostream::fmtflags" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [29568 29708])
+                    ("basic_formatting_ostream::adjustfield" variable
+                       (:typemodifiers ("typename")
+                        :type ("basic_formatting_ostream::fmtflags" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [29800 29942])
+                    ("basic_formatting_ostream::basefield" variable
+                       (:typemodifiers ("typename")
+                        :type ("basic_formatting_ostream::fmtflags" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [30034 30174])
+                    ("basic_formatting_ostream::floatfield" variable
+                       (:typemodifiers ("typename")
+                        :type ("basic_formatting_ostream::fmtflags" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [30266 30407])
+                    ("basic_formatting_ostream::badbit" variable
+                       (:typemodifiers ("typename")
+                        :type ("basic_formatting_ostream::iostate" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [30500 30636])
+                    ("basic_formatting_ostream::eofbit" variable
+                       (:typemodifiers ("typename")
+                        :type ("basic_formatting_ostream::iostate" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [30728 30864])
+                    ("basic_formatting_ostream::failbit" variable
+                       (:typemodifiers ("typename")
+                        :type ("basic_formatting_ostream::iostate" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [30956 31093])
+                    ("basic_formatting_ostream::goodbit" variable
+                       (:typemodifiers ("typename")
+                        :type ("basic_formatting_ostream::iostate" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [31185 31322])
+                    ("basic_formatting_ostream::app" variable
+                       (:typemodifiers ("typename")
+                        :type ("basic_formatting_ostream::openmode" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [31415 31549])
+                    ("basic_formatting_ostream::ate" variable
+                       (:typemodifiers ("typename")
+                        :type ("basic_formatting_ostream::openmode" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [31641 31775])
+                    ("basic_formatting_ostream::binary" variable
+                       (:typemodifiers ("typename")
+                        :type ("basic_formatting_ostream::openmode" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [31867 32004])
+                    ("basic_formatting_ostream::in" variable
+                       (:typemodifiers ("typename")
+                        :type ("basic_formatting_ostream::openmode" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [32096 32229])
+                    ("basic_formatting_ostream::out" variable
+                       (:typemodifiers ("typename")
+                        :type ("basic_formatting_ostream::openmode" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [32321 32455])
+                    ("basic_formatting_ostream::trunc" variable
+                       (:typemodifiers ("typename")
+                        :type ("basic_formatting_ostream::openmode" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [32547 32683])
+                    ("basic_formatting_ostream::beg" variable
+                       (:typemodifiers ("typename")
+                        :type ("basic_formatting_ostream::seekdir" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [32776 32909])
+                    ("basic_formatting_ostream::cur" variable
+                       (:typemodifiers ("typename")
+                        :type ("basic_formatting_ostream::seekdir" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [33001 33134])
+                    ("basic_formatting_ostream::end" variable
+                       (:typemodifiers ("typename")
+                        :type ("basic_formatting_ostream::seekdir" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [33226 33359])
+                    ("basic_formatting_ostream::erase_event" variable
+                       (:typemodifiers ("typename")
+                        :type ("basic_formatting_ostream::event" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [33452 33591])
+                    ("basic_formatting_ostream::imbue_event" variable
+                       (:typemodifiers ("typename")
+                        :type ("basic_formatting_ostream::event" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [33683 33822])
+                    ("basic_formatting_ostream::copyfmt_event" variable
+                       (:typemodifiers ("typename")
+                        :type ("basic_formatting_ostream::event" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [33914 34055])
+                    ("aligned_write" function
+                       (:template 
+                          ( ("CharT" type (:type "class") nil nil)
+                            ("TraitsT" type (:type "class") nil nil)
+                            ("AllocatorT" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("p" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("char_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [34198 34217])
+                            ("size" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34218 34239]))                          
+                        :parent "basic_formatting_ostream")
+                        (reparse-symbol namespacesubparts) [34057 34830])
+                    ("aligned_write" function
+                       (:template 
+                          ( ("OtherCharT" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("p" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("OtherCharT" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [35005 35025])
+                            ("size" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35026 35047]))                          
+                        :parent "basic_formatting_ostream")
+                        (reparse-symbol namespacesubparts) [34898 35700])
+                    ("<<" function
+                       (:template 
+                          ( ("StreamT" type (:type "class") nil nil)
+                            ("T" type (:type "class") nil nil))                          
+                        :type ("boost::log::aux::enable_if_formatting_ostream::type" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("strm" variable
+                               (:reference 1
+                                :type ("StreamT" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [36480 36494])
+                            ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [36495 36510]))                          
+                        :typemodifiers ("inline" "typename")
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [36338 36559])
+                    ("<<" function
+                       (:template 
+                          ( ("StreamT" type (:type "class") nil nil)
+                            ("T" type (:type "class") nil nil))                          
+                        :type ("boost::log::aux::enable_if_formatting_ostream::type" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("strm" variable
+                               (:reference 1
+                                :type ("StreamT" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [36703 36717])
+                            ("value" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [36718 36727]))                          
+                        :typemodifiers ("inline" "typename")
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [36561 36776])
+                    ("<<" function
+                       (:template 
+                          ( ("StreamT" type (:type "class") nil nil)
+                            ("T" type (:type "class") nil nil))                          
+                        :type ("boost::log::aux::enable_if_formatting_ostream::type" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("StreamT" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [36968 36977])
+                            ("" variable (:type ("strm" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36978 36983])
+                            ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [36984 36999]))                          
+                        :typemodifiers ("inline" "typename")
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [36826 37048])
+                    ("<<" function
+                       (:template 
+                          ( ("StreamT" type (:type "class") nil nil)
+                            ("T" type (:type "class") nil nil))                          
+                        :type ("boost::log::aux::enable_if_formatting_ostream::type" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("StreamT" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [37192 37201])
+                            ("" variable (:type ("strm" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37202 37207])
+                            ("value" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [37208 37217]))                          
+                        :typemodifiers ("inline" "typename")
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [37050 37266]))                  
+                :type "namespace")
+                nil [1124 37367])
+            ("boost/log/detail/footer.hpp" include (:system-flag t) nil [37388 37426]))          
+      :file "formatting_ostream.hpp"
+      :pointmax 37489
+      :fsize 37488
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax '((symbol 37322 . 37347) (punctuation 37200 . 37201) (punctuation 36976 . 36977) (punctuation 34896 . 34897) (symbol 34885 . 34895) (TYPENAME 34876 . 34884) (punctuation 34874 . 34875) (symbol 34867 . 34874) (TYPENAME 34858 . 34866) (punctuation 34856 . 34857) (symbol 34851 . 34856) (TYPENAME 34842 . 34850) (punctuation 34840 . 34841) (TEMPLATE 34832 . 34840) (symbol 33889 . 33913) (punctuation 33887 . 33888) (symbol 33876 . 33886) (TYPENAME 33867 . 33875) (punctuation 33865 . 33866) (symbol 33858 . 33865) (TYPENAME 33849 . 33857) (punctuation 33847 . 33848) (symbol 33842 . 33847) (TYPENAME 33833 . 33841) (punctuation 33831 . 33832) (TEMPLATE 33823 . 33831) (symbol 33658 . 33682) (punctuation 33656 . 33657) (symbol 33645 . 33655) (TYPENAME 33636 . 33644) (punctuation 33634 . 33635) (symbol 33627 . 33634) (TYPENAME 33618 . 33626) (punctuation 33616 . 33617) (symbol 33611 . 33616) (TYPENAME 33602 . 33610) (punctuation 33600 . 33601) (TEMPLATE 33592 . 33600) (symbol 33427 . 33451) (punctuation 33425 . 33426) (symbol 33414 . 33424) (TYPENAME 33405 . 33413) (punctuation 33403 . 33404) (symbol 33396 . 33403) (TYPENAME 33387 . 33395) (punctuation 33385 . 33386) (symbol 33380 . 33385) (TYPENAME 33371 . 33379) (punctuation 33369 . 33370) (TEMPLATE 33361 . 33369) (symbol 33201 . 33225) (punctuation 33199 . 33200) (symbol 33188 . 33198) (TYPENAME 33179 . 33187) (punctuation 33177 . 33178) (symbol 33170 . 33177) (TYPENAME 33161 . 33169) (punctuation 33159 . 33160) (symbol 33154 . 33159) (TYPENAME 33145 . 33153) (punctuation 33143 . 33144) (TEMPLATE 33135 . 33143) (symbol 32976 . 33000) (punctuation 32974 . 32975) (symbol 32963 . 32973) (TYPENAME 32954 . 32962) (punctuation 32952 . 32953) (symbol 32945 . 32952) (TYPENAME 32936 . 32944) (punctuation 32934 . 32935) (symbol 32929 . 32934) (TYPENAME 32920 . 32928) (punctuation 32918 . 32919) (TEMPLATE 32910 . 32918) (symbol 32751 . 32775) (punctuation 32749 . 32750) (symbol 32738 . 32748) (TYPENAME 32729 . 32737) (punctuation 32727 . 32728) (symbol 32720 . 32727) (TYPENAME 32711 . 32719) (punctuation 32709 . 32710) (symbol 32704 . 32709) (TYPENAME 32695 . 32703) (punctuation 32693 . 32694) (TEMPLATE 32685 . 32693) (symbol 32522 . 32546) (punctuation 32520 . 32521) (symbol 32509 . 32519) (TYPENAME 32500 . 32508) (punctuation 32498 . 32499) (symbol 32491 . 32498) (TYPENAME 32482 . 32490) (punctuation 32480 . 32481) (symbol 32475 . 32480) (TYPENAME 32466 . 32474) (punctuation 32464 . 32465) (TEMPLATE 32456 . 32464) (symbol 32296 . 32320) (punctuation 32294 . 32295) (symbol 32283 . 32293) (TYPENAME 32274 . 32282) (punctuation 32272 . 32273) (symbol 32265 . 32272) (TYPENAME 32256 . 32264) (punctuation 32254 . 32255) (symbol 32249 . 32254) (TYPENAME 32240 . 32248) (punctuation 32238 . 32239) (TEMPLATE 32230 . 32238) (symbol 32071 . 32095) (punctuation 32069 . 32070) (symbol 32058 . 32068) (TYPENAME 32049 . 32057) (punctuation 32047 . 32048) (symbol 32040 . 32047) (TYPENAME 32031 . 32039) (punctuation 32029 . 32030) (symbol 32024 . 32029) (TYPENAME 32015 . 32023) (punctuation 32013 . 32014) (TEMPLATE 32005 . 32013) (symbol 31842 . 31866) (punctuation 31840 . 31841) (symbol 31829 . 31839) (TYPENAME 31820 . 31828) (punctuation 31818 . 31819) (symbol 31811 . 31818) (TYPENAME 31802 . 31810) (punctuation 31800 . 31801) (symbol 31795 . 31800) (TYPENAME 31786 . 31794) (punctuation 31784 . 31785) (TEMPLATE 31776 . 31784) (symbol 31616 . 31640) (punctuation 31614 . 31615) (symbol 31603 . 31613) (TYPENAME 31594 . 31602) (punctuation 31592 . 31593) (symbol 31585 . 31592) (TYPENAME 31576 . 31584) (punctuation 31574 . 31575) (symbol 31569 . 31574) (TYPENAME 31560 . 31568) (punctuation 31558 . 31559) (TEMPLATE 31550 . 31558) (symbol 31390 . 31414) (punctuation 31388 . 31389) (symbol 31377 . 31387) (TYPENAME 31368 . 31376) (punctuation 31366 . 31367) (symbol 31359 . 31366) (TYPENAME 31350 . 31358) (punctuation 31348 . 31349) (symbol 31343 . 31348) (TYPENAME 31334 . 31342) (punctuation 31332 . 31333) (TEMPLATE 31324 . 31332) (symbol 31160 . 31184) (punctuation 31158 . 31159) (symbol 31147 . 31157) (TYPENAME 31138 . 31146) (punctuation 31136 . 31137) (symbol 31129 . 31136) (TYPENAME 31120 . 31128) (punctuation 31118 . 31119) (symbol 31113 . 31118) (TYPENAME 31104 . 31112) (punctuation 31102 . 31103) (TEMPLATE 31094 . 31102) (symbol 30931 . 30955) (punctuation 30929 . 30930) (symbol 30918 . 30928) (TYPENAME 30909 . 30917) (punctuation 30907 . 30908) (symbol 30900 . 30907) (TYPENAME 30891 . 30899) (punctuation 30889 . 30890) (symbol 30884 . 30889) (TYPENAME 30875 . 30883) (punctuation 30873 . 30874) (TEMPLATE 30865 . 30873) (symbol 30703 . 30727) (punctuation 30701 . 30702) (symbol 30690 . 30700) (TYPENAME 30681 . 30689) (punctuation 30679 . 30680) (symbol 30672 . 30679) (TYPENAME 30663 . 30671) (punctuation 30661 . 30662) (symbol 30656 . 30661) (TYPENAME 30647 . 30655) (punctuation 30645 . 30646) (TEMPLATE 30637 . 30645) (symbol 30475 . 30499) (punctuation 30473 . 30474) (symbol 30462 . 30472) (TYPENAME 30453 . 30461) (punctuation 30451 . 30452) (symbol 30444 . 30451) (TYPENAME 30435 . 30443) (punctuation 30433 . 30434) (symbol 30428 . 30433) (TYPENAME 30419 . 30427) (punctuation 30417 . 30418) (TEMPLATE 30409 . 30417) (symbol 30241 . 30265) (punctuation 30239 . 30240) (symbol 30228 . 30238) (TYPENAME 30219 . 30227) (punctuation 30217 . 30218) (symbol 30210 . 30217) (TYPENAME 30201 . 30209) (punctuation 30199 . 30200) (symbol 30194 . 30199) (TYPENAME 30185 . 30193) (punctuation 30183 . 30184) (TEMPLATE 30175 . 30183) (symbol 30009 . 30033) (punctuation 30007 . 30008) (symbol 29996 . 30006) (TYPENAME 29987 . 29995) (punctuation 29985 . 29986) (symbol 29978 . 29985) (TYPENAME 29969 . 29977) (punctuation 29967 . 29968) (symbol 29962 . 29967) (TYPENAME 29953 . 29961) (punctuation 29951 . 29952) (TEMPLATE 29943 . 29951) (symbol 29775 . 29799) (punctuation 29773 . 29774) (symbol 29762 . 29772) (TYPENAME 29753 . 29761) (punctuation 29751 . 29752) (symbol 29744 . 29751) (TYPENAME 29735 . 29743) (punctuation 29733 . 29734) (symbol 29728 . 29733) (TYPENAME 29719 . 29727) (punctuation 29717 . 29718) (TEMPLATE 29709 . 29717) (symbol 29543 . 29567) (punctuation 29541 . 29542) (symbol 29530 . 29540) (TYPENAME 29521 . 29529) (punctuation 29519 . 29520) (symbol 29512 . 29519) (TYPENAME 29503 . 29511) (punctuation 29501 . 29502) (symbol 29496 . 29501) (TYPENAME 29487 . 29495) (punctuation 29485 . 29486) (TEMPLATE 29477 . 29485) (symbol 29313 . 29337) (punctuation 29311 . 29312) (symbol 29300 . 29310) (TYPENAME 29291 . 29299) (punctuation 29289 . 29290) (symbol 29282 . 29289) (TYPENAME 29273 . 29281) (punctuation 29271 . 29272) (symbol 29266 . 29271) (TYPENAME 29257 . 29265) (punctuation 29255 . 29256) (TEMPLATE 29247 . 29255) (symbol 29084 . 29108) (punctuation 29082 . 29083) (symbol 29071 . 29081) (TYPENAME 29062 . 29070) (punctuation 29060 . 29061) (symbol 29053 . 29060) (TYPENAME 29044 . 29052) (punctuation 29042 . 29043) (symbol 29037 . 29042) (TYPENAME 29028 . 29036) (punctuation 29026 . 29027) (TEMPLATE 29018 . 29026) (symbol 28852 . 28876) (punctuation 28850 . 28851) (symbol 28839 . 28849) (TYPENAME 28830 . 28838) (punctuation 28828 . 28829) (symbol 28821 . 28828) (TYPENAME 28812 . 28820) (punctuation 28810 . 28811) (symbol 28805 . 28810) (TYPENAME 28796 . 28804) (punctuation 28794 . 28795) (TEMPLATE 28786 . 28794) (symbol 28621 . 28645) (punctuation 28619 . 28620) (symbol 28608 . 28618) (TYPENAME 28599 . 28607) (punctuation 28597 . 28598) (symbol 28590 . 28597) (TYPENAME 28581 . 28589) (punctuation 28579 . 28580) (symbol 28574 . 28579) (TYPENAME 28565 . 28573) (punctuation 28563 . 28564) (TEMPLATE 28555 . 28563) (symbol 28388 . 28412) (punctuation 28386 . 28387) (symbol 28375 . 28385) (TYPENAME 28366 . 28374) (punctuation 28364 . 28365) (symbol 28357 . 28364) (TYPENAME 28348 . 28356) (punctuation 28346 . 28347) (symbol 28341 . 28346) (TYPENAME 28332 . 28340) (punctuation 28330 . 28331) (TEMPLATE 28322 . 28330) (symbol 28160 . 28184) (punctuation 28158 . 28159) (symbol 28147 . 28157) (TYPENAME 28138 . 28146) (punctuation 28136 . 28137) (symbol 28129 . 28136) (TYPENAME 28120 . 28128) (punctuation 28118 . 28119) (symbol 28113 . 28118) (TYPENAME 28104 . 28112) (punctuation 28102 . 28103) (TEMPLATE 28094 . 28102) (symbol 27934 . 27958) (punctuation 27932 . 27933) (symbol 27921 . 27931) (TYPENAME 27912 . 27920) (punctuation 27910 . 27911) (symbol 27903 . 27910) (TYPENAME 27894 . 27902) (punctuation 27892 . 27893) (symbol 27887 . 27892) (TYPENAME 27878 . 27886) (punctuation 27876 . 27877) (TEMPLATE 27868 . 27876) (symbol 27707 . 27731) (punctuation 27705 . 27706) (symbol 27694 . 27704) (TYPENAME 27685 . 27693) (punctuation 27683 . 27684) (symbol 27676 . 27683) (TYPENAME 27667 . 27675) (punctuation 27665 . 27666) (symbol 27660 . 27665) (TYPENAME 27651 . 27659) (punctuation 27649 . 27650) (TEMPLATE 27641 . 27649) (symbol 27476 . 27500) (punctuation 27474 . 27475) (symbol 27463 . 27473) (TYPENAME 27454 . 27462) (punctuation 27452 . 27453) (symbol 27445 . 27452) (TYPENAME 27436 . 27444) (punctuation 27434 . 27435) (symbol 27429 . 27434) (TYPENAME 27420 . 27428) (punctuation 27418 . 27419) (TEMPLATE 27410 . 27418) (symbol 27250 . 27274) (punctuation 27248 . 27249) (symbol 27237 . 27247) (TYPENAME 27228 . 27236) (punctuation 27226 . 27227) (symbol 27219 . 27226) (TYPENAME 27210 . 27218) (punctuation 27208 . 27209) (symbol 27203 . 27208) (TYPENAME 27194 . 27202) (punctuation 27192 . 27193) (TEMPLATE 27184 . 27192) (symbol 27022 . 27046) (punctuation 27020 . 27021) (symbol 27009 . 27019) (TYPENAME 27000 . 27008) (punctuation 26998 . 26999) (symbol 26991 . 26998) (TYPENAME 26982 . 26990) (punctuation 26980 . 26981) (symbol 26975 . 26980) (TYPENAME 26966 . 26974) (punctuation 26964 . 26965) (TEMPLATE 26956 . 26964) (symbol 26796 . 26820) (punctuation 26794 . 26795) (symbol 26783 . 26793) (TYPENAME 26774 . 26782) (punctuation 26772 . 26773) (symbol 26765 . 26772) (TYPENAME 26756 . 26764) (punctuation 26754 . 26755) (symbol 26749 . 26754) (TYPENAME 26740 . 26748) (punctuation 26738 . 26739) (TEMPLATE 26730 . 26738) (symbol 26564 . 26588) (punctuation 26562 . 26563) (symbol 26551 . 26561) (TYPENAME 26542 . 26550) (punctuation 26540 . 26541) (symbol 26533 . 26540) (TYPENAME 26524 . 26532) (punctuation 26522 . 26523) (symbol 26517 . 26522) (TYPENAME 26508 . 26516) (punctuation 26506 . 26507) (TEMPLATE 26498 . 26506) (semantic-list 26417 . 26493) (symbol 26395 . 26417) (semantic-list 26454 . 26492) (punctuation 26452 . 26453) (OPERATOR 26444 . 26452) (semantic-list 26298 . 26362) (symbol 26276 . 26298) (semantic-list 26323 . 26361) (punctuation 24464 . 24465) (punctuation 24068 . 24069) (punctuation 23695 . 23696) (punctuation 23308 . 23309) (punctuation 22908 . 22909) (punctuation 22506 . 22507) (punctuation 22127 . 22128) (punctuation 21734 . 21735) (semantic-list 11665 . 11667) (symbol 11637 . 11665) (punctuation 11339 . 11340) (punctuation 11338 . 11339) (VOID 11334 . 11338) (punctuation 8277 . 8278) (symbol 8263 . 8276) (symbol 8257 . 8262) (symbol 8232 . 8256) (STATIC 8225 . 8231) (punctuation 8192 . 8193) (symbol 8180 . 8191) (symbol 8174 . 8179) (symbol 8149 . 8173) (STATIC 8142 . 8148) (punctuation 8109 . 8110) (symbol 8097 . 8108) (symbol 8091 . 8096) (symbol 8066 . 8090) (STATIC 8059 . 8065) (punctuation 8033 . 8034) (symbol 8029 . 8032) (symbol 8021 . 8028) (symbol 7996 . 8020) (STATIC 7989 . 7995) (punctuation 7964 . 7965) (symbol 7960 . 7963) (symbol 7952 . 7959) (symbol 7927 . 7951) (STATIC 7920 . 7926) (punctuation 7895 . 7896) (symbol 7891 . 7894) (symbol 7883 . 7890) (symbol 7858 . 7882) (STATIC 7851 . 7857) (punctuation 7823 . 7824) (symbol 7817 . 7822) (symbol 7808 . 7816) (symbol 7783 . 7807) (STATIC 7776 . 7782) (punctuation 7751 . 7752) (symbol 7747 . 7750) (symbol 7738 . 7746) (symbol 7713 . 7737) (STATIC 7706 . 7712) (punctuation 7682 . 7683) (symbol 7679 . 7681) (symbol 7670 . 7678) (symbol 7645 . 7669) (STATIC 7638 . 7644) (punctuation 7610 . 7611) (symbol 7603 . 7609) (symbol 7594 . 7602) (symbol 7569 . 7593) (STATIC 7562 . 7568) (punctuation 7537 . 7538) (symbol 7533 . 7536) (symbol 7524 . 7532) (symbol 7499 . 7523) (STATIC 7492 . 7498) (punctuation 7467 . 7468) (symbol 7463 . 7466) (symbol 7454 . 7462) (symbol 7429 . 7453) (STATIC 7422 . 7428) (punctuation 7392 . 7393) (symbol 7384 . 7391) (symbol 7376 . 7383) (symbol 7351 . 7375) (STATIC 7344 . 7350) (punctuation 7315 . 7316) (symbol 7307 . 7314) (symbol 7299 . 7306) (symbol 7274 . 7298) (STATIC 7267 . 7273) (punctuation 7239 . 7240) (symbol 7232 . 7238) (symbol 7224 . 7231) (symbol 7199 . 7223) (STATIC 7192 . 7198) (punctuation 7164 . 7165) (symbol 7157 . 7163) (symbol 7149 . 7156) (symbol 7124 . 7148) (STATIC 7117 . 7123) (punctuation 7084 . 7085) (symbol 7073 . 7083) (symbol 7064 . 7072) (symbol 7039 . 7063) (STATIC 7032 . 7038) (punctuation 7001 . 7002) (symbol 6991 . 7000) (symbol 6982 . 6990) (symbol 6957 . 6981) (STATIC 6950 . 6956) (punctuation 6917 . 6918) (symbol 6905 . 6916) (symbol 6896 . 6904) (symbol 6871 . 6895) (STATIC 6864 . 6870) (punctuation 6833 . 6834) (symbol 6823 . 6832) (symbol 6814 . 6822) (symbol 6789 . 6813) (STATIC 6782 . 6788) (punctuation 6753 . 6754) (symbol 6745 . 6752) (symbol 6736 . 6744) (symbol 6711 . 6735) (STATIC 6704 . 6710) (punctuation 6676 . 6677) (symbol 6669 . 6675) (symbol 6660 . 6668) (symbol 6635 . 6659) (STATIC 6628 . 6634) (punctuation 6597 . 6598) (symbol 6587 . 6596) (symbol 6578 . 6586) (symbol 6553 . 6577) (STATIC 6546 . 6552) (punctuation 6516 . 6517) (symbol 6507 . 6515) (symbol 6498 . 6506) (symbol 6473 . 6497) (STATIC 6466 . 6472) (punctuation 6434 . 6435) (symbol 6423 . 6433) (symbol 6414 . 6422) (symbol 6389 . 6413) (STATIC 6382 . 6388) (punctuation 6355 . 6356) (symbol 6349 . 6354) (symbol 6340 . 6348) (symbol 6315 . 6339) (STATIC 6308 . 6314) (punctuation 6283 . 6284) (symbol 6279 . 6282) (symbol 6270 . 6278) (symbol 6245 . 6269) (STATIC 6238 . 6244) (punctuation 6212 . 6213) (symbol 6207 . 6211) (symbol 6198 . 6206) (symbol 6173 . 6197) (STATIC 6166 . 6172) (punctuation 6136 . 6137) (symbol 6127 . 6135) (symbol 6118 . 6126) (symbol 6093 . 6117) (STATIC 6086 . 6092) (punctuation 6061 . 6062) (symbol 6057 . 6060) (symbol 6048 . 6056) (symbol 6023 . 6047) (STATIC 6016 . 6022) (punctuation 5989 . 5990) (symbol 5983 . 5988) (symbol 5974 . 5982) (symbol 5949 . 5973) (STATIC 5942 . 5948) (punctuation 5917 . 5918) (symbol 5913 . 5916) (symbol 5904 . 5912) (symbol 5879 . 5903) (STATIC 5872 . 5878) (punctuation 5841 . 5842) (symbol 5831 . 5840) (symbol 5822 . 5830) (symbol 5797 . 5821) (STATIC 5790 . 5796) (TYPEDEF 5723 . 5730) (TYPEDEF 5606 . 5613) (TYPEDEF 5544 . 5551) (semantic-list 5464 . 5499) (symbol 5442 . 5464) (semantic-list 5483 . 5498) (punctuation 5481 . 5482) (OPERATOR 5473 . 5481) (semantic-list 5410 . 5433) (symbol 5388 . 5410) (semantic-list 5417 . 5432) (semantic-list 5292 . 5294) (symbol 5264 . 5292) (semantic-list 5464 . 5499) (symbol 5442 . 5464) (semantic-list 5483 . 5498) (punctuation 5481 . 5482) (OPERATOR 5473 . 5481) (semantic-list 5410 . 5433) (symbol 5388 . 5410) (semantic-list 5417 . 5432) (semantic-list 5292 . 5294) (symbol 5264 . 5292) (symbol 1143 . 1167) (symbol 1143 . 1167) (symbol 1143 . 1167))
+      :lexical-table 
+        '(("BOOST_LOG_UTILITY_FORMATTING_OSTREAM_HPP_INCLUDED_")
+          )
+)
+    (semanticdb-table "string_literal_fwd.hpp"
+      :file "string_literal_fwd.hpp"
+      :fsize 1729
+      :lastmodtime '(22452 53218 0 0))
+    (semanticdb-table "formatting_ostream_fwd.hpp"
+      :file "formatting_ostream_fwd.hpp"
+      :fsize 1261
+      :lastmodtime '(22452 53218 0 0)))
+  :file "!usr!include!boost!log!utility!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

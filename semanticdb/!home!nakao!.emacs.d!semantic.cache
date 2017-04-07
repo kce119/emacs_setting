@@ -1,0 +1,45 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("package-initialize" code nil nil [254 274])
+            ("setq" code nil nil [276 444])
+            ("setq" code nil nil [446 494])
+            ("if" code nil nil [495 604])
+            ("add-to-list" code nil nil [698 751])
+            ("when" code nil nil [845 933])
+            ("add-to-list" code nil nil [935 1000])
+            ("unless" code nil nil [1001 1237])
+            ("let*" code nil nil [1342 1623])
+            ("show-paren-mode" code nil nil [1633 1652]))          
+      :file "init.el"
+      :pointmax 1653
+      :fsize 1652
+      :lastmodtime '(22758 159 230269 724000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "ede-projects.el"
+      :pointmax 86
+      :fsize 85
+      :lastmodtime '(22602 19188 943333 335000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("setq" code nil nil [1 45])
+            ("setq" code nil nil [46 173])
+            ("setq" code nil nil [174 344]))          
+      :file "proxy.el"
+      :pointmax 345
+      :fsize 344
+      :lastmodtime '(22362 18858 713333 334000)
+      :unmatched-syntax nil))
+  :file "!home!nakao!.emacs.d!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

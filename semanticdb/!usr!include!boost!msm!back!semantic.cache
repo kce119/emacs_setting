@@ -1,0 +1,110 @@
+;; Object back/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "back/"
+  :tables
+  (list
+    (semanticdb-table "common_types.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MSM_COMMON_TYPES_H" variable (:constant-flag t) nil [521 545])
+            ("boost/tuple/tuple.hpp" include (:system-flag t) nil [547 579])
+            ("boost/msm/common.hpp" include (:system-flag t) nil [580 611])
+            ("boost" type
+               (:members 
+                  ( ("msm" type
+                       (:members 
+                          ( ("back" type
+                               (:members 
+                                  ( ("dummy" type
+                                       (:template 
+                                          ( ("int" type nil nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("dummy" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [723 727]))                                                  
+                                                :type ("dummy" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [717 730]))                                          )
+                                        (reparse-symbol namespacesubparts) [687 733])
+                                    ("HandledEnum" type
+                                       (:typedef ("" type
+                                             (:members 
+                                                ( ("HANDLED_FALSE" variable
+                                                     (:constant-flag t
+                                                      :default-value (807 808)
+                                                      :type "int")
+                                                      (reparse-symbol enumsubparts) [793 809])
+                                                  ("HANDLED_TRUE" variable
+                                                     (:constant-flag t
+                                                      :default-value (828 829)
+                                                      :type "int")
+                                                      (reparse-symbol enumsubparts) [814 830])
+                                                  ("HANDLED_GUARD_REJECT" variable
+                                                     (:constant-flag t
+                                                      :default-value (856 857)
+                                                      :type "int")
+                                                      (reparse-symbol enumsubparts) [835 858])
+                                                  ("HANDLED_DEFERRED" variable
+                                                     (:constant-flag t
+                                                      :default-value (880 882)
+                                                      :type "int")
+                                                      (reparse-symbol enumsubparts) [863 883]))                                                
+                                              :type "enum")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol namespacesubparts) [774 896])
+                                    ("execute_return" type
+                                       (:typedef ("HandledEnum" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol namespacesubparts) [898 933]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [647 936]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [631 937]))                  
+                :type "namespace")
+                nil [613 938]))          
+      :file "common_types.hpp"
+      :pointmax 975
+      :fsize 974
+      :lastmodtime '(22324 21863 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MSM_COMMON_TYPES_H")
+          )
+)
+    (semanticdb-table "fold_to_list.hpp"
+      :file "fold_to_list.hpp"
+      :fsize 2436
+      :lastmodtime '(22324 21863 0 0))
+    (semanticdb-table "metafunctions.hpp"
+      :file "metafunctions.hpp"
+      :fsize 35607
+      :lastmodtime '(22324 21863 0 0))
+    (semanticdb-table "history_policies.hpp"
+      :file "history_policies.hpp"
+      :fsize 5678
+      :lastmodtime '(22324 21863 0 0))
+    (semanticdb-table "args.hpp"
+      :file "args.hpp"
+      :fsize 3579
+      :lastmodtime '(22324 21863 0 0))
+    (semanticdb-table "default_compile_policy.hpp"
+      :file "default_compile_policy.hpp"
+      :fsize 856
+      :lastmodtime '(22324 21863 0 0))
+    (semanticdb-table "dispatch_table.hpp"
+      :file "dispatch_table.hpp"
+      :fsize 19328
+      :lastmodtime '(22324 21863 0 0))
+    (semanticdb-table "no_fsm_check.hpp"
+      :file "no_fsm_check.hpp"
+      :fsize 1043
+      :lastmodtime '(22324 21863 0 0))
+    (semanticdb-table "queue_container_deque.hpp"
+      :file "queue_container_deque.hpp"
+      :fsize 937
+      :lastmodtime '(22324 21863 0 0)))
+  :file "!usr!include!boost!msm!back!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

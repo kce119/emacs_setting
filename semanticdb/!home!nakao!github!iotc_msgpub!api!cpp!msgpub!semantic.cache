@@ -1,0 +1,2590 @@
+;; Object msgpub/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "msgpub/"
+  :tables
+  (list
+    (semanticdb-table "status.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("MSGPUB_STATUS_HPP" variable (:constant-flag t) nil [35 52])
+            ("msgpack.hpp" include (:system-flag t) nil [54 76])
+            ("msgpub" type
+               (:members 
+                  ( ("MSGPUB_CASE" variable (:constant-flag t) (reparse-symbol namespacesubparts) [924 935])
+                    ("<<" function
+                       (:template 
+                          ( ("Ostream" type (:type "class") nil nil))                          
+                        :type ("Ostream" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("os" variable
+                               (:reference 1
+                                :type ("Ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1066 1078])
+                            ("s" variable (:type ("status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1079 1088]))                          
+                        :typemodifiers ("inline")
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [1011 1518]))                  
+                :type "namespace")
+                nil [78 1541])
+            ("MSGPACK_ADD_ENUM" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("msgpub::status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1580 1595]))                  
+                :type "int")
+                nil [1563 1596]))          
+      :file "status.hpp"
+      :pointmax 1626
+      :fsize 1710
+      :lastmodtime '(22424 33772 573333 333000)
+      :unmatched-syntax '((punctuation 913 . 914) (semantic-list 269 . 913) (INT 265 . 268) (punctuation 264 . 265) (symbol 258 . 264) (CLASS 252 . 257) (ENUM 247 . 251))
+      :lexical-table 
+        '(("MSGPUB_STATUS_HPP")
+          )
+)
+    (semanticdb-table "common.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("MSGPUB_COMMON_HPP" variable (:constant-flag t) nil [120 137])
+            ("msgpub/appname_user.hpp" include (:system-flag t) nil [139 173])
+            ("msgpub/appname_topic.hpp" include (:system-flag t) nil [174 209])
+            ("msgpack.hpp" include (:system-flag t) nil [210 232])
+            ("msgpub" type
+               (:members 
+                  ( ("topic_user" type
+                       (:members 
+                          ( ("topic" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [518 536])
+                            ("au" variable (:type ("appname_user" type (:type "class") nil nil)) (reparse-symbol classsubparts) [562 578])
+                            ("MSGPACK_DEFINE" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("topic" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [598 604])
+                                    ("" variable (:type ("au" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [605 608]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [583 609]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [480 612])
+                    ("grant_info" type
+                       (:members 
+                          ( ("sub" variable (:type ("topic_user_info" type (:type "class") nil nil)) (reparse-symbol classsubparts) [737 757])
+                            ("pub" variable (:type ("topic_user_info" type (:type "class") nil nil)) (reparse-symbol classsubparts) [762 782])
+                            ("MSGPACK_DEFINE" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("sub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [802 806])
+                                    ("" variable (:type ("pub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [807 811]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [787 812]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [713 815])
+                    ("topic_label_record" type
+                       (:members 
+                          ( ("topic_label_record" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("topic_appname" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [932 958])
+                                    ("topic" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [959 977])
+                                    ("label" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [978 996]))                                  
+                                :type ("topic_label_record" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [913 1114])
+                            ("topic_appname" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1144 1170])
+                            ("topic" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1189 1207])
+                            ("label" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1226 1244])
+                            ("MSGPACK_DEFINE" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("topic_appname" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1264 1278])
+                                    ("" variable (:type ("topic" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1279 1285])
+                                    ("" variable (:type ("label" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1286 1292]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [1249 1293]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [845 1296])
+                    ("appname_topic_status" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1476 1483])
+                            ("appname_topic_status" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("at" variable (:type ("appname_topic" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1547 1564])
+                                    ("s" variable (:type ("msgpub::status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1565 1582]))                                  
+                                :type ("appname_topic_status" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [1526 1614])
+                            ("at" variable (:type ("appname_topic" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1641 1658])
+                            ("status" variable (:type ("msgpub::status" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1678 1700])
+                            ("MSGPACK_DEFINE" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("at" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1720 1723])
+                                    ("" variable (:type ("status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1724 1731]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [1705 1732]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1446 1735])
+                    ("label_result" type
+                       (:members 
+                          ( ("status" variable (:type ("msgpub::status" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1763 1785])
+                            ("each_status" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("appname_topic_status" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1790 1836])
+                            ("MSGPACK_DEFINE" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1856 1863])
+                                    ("" variable (:type ("each_status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1864 1876]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [1841 1877]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1737 1880]))                  
+                :type "namespace")
+                nil [255 1933]))          
+      :file "common.hpp"
+      :pointmax 1983
+      :fsize 1982
+      :lastmodtime '(22424 33772 573333 333000)
+      :unmatched-syntax '((punctuation 1929 . 1930) (punctuation 1928 . 1929) (symbol 1916 . 1928) (punctuation 1915 . 1916) (symbol 1909 . 1915) (punctuation 1908 . 1909) (punctuation 1907 . 1908) (symbol 1904 . 1907) (punctuation 1902 . 1903) (symbol 1888 . 1901) (USING 1882 . 1887) (punctuation 1520 . 1521) (DEFAULT 1513 . 1520) (punctuation 1511 . 1512) (semantic-list 1508 . 1510) (symbol 1488 . 1508) (punctuation 1418 . 1419) (INT 1415 . 1418) (punctuation 1414 . 1415) (symbol 1408 . 1414) (CLASS 1402 . 1407) (ENUM 1397 . 1401) (punctuation 1394 . 1395) (punctuation 1393 . 1394) (symbol 1375 . 1393) (punctuation 1374 . 1375) (symbol 1368 . 1374) (punctuation 1367 . 1368) (punctuation 1366 . 1367) (symbol 1363 . 1366) (punctuation 1361 . 1362) (symbol 1343 . 1359) (USING 1337 . 1342) (punctuation 907 . 908) (DEFAULT 900 . 907) (punctuation 898 . 899) (semantic-list 895 . 897) (symbol 877 . 895) (punctuation 688 . 689) (punctuation 687 . 688) (symbol 677 . 687) (punctuation 676 . 677) (symbol 670 . 676) (punctuation 669 . 670) (punctuation 668 . 669) (symbol 665 . 668) (punctuation 663 . 664) (symbol 647 . 662) (USING 641 . 646) (punctuation 477 . 478) (punctuation 476 . 477) (symbol 470 . 476) (punctuation 469 . 470) (punctuation 468 . 469) (symbol 465 . 468) (punctuation 464 . 465) (symbol 458 . 464) (punctuation 457 . 458) (punctuation 456 . 457) (symbol 453 . 456) (punctuation 451 . 452) (symbol 439 . 449) (USING 433 . 438) (punctuation 408 . 409) (punctuation 407 . 408) (symbol 401 . 407) (punctuation 400 . 401) (punctuation 399 . 400) (symbol 396 . 399) (punctuation 395 . 396) (symbol 389 . 395) (punctuation 388 . 389) (punctuation 387 . 388) (symbol 384 . 387) (punctuation 382 . 383) (symbol 370 . 380) (USING 364 . 369) (punctuation 339 . 340) (punctuation 338 . 339) (symbol 332 . 338) (punctuation 331 . 332) (punctuation 330 . 331) (symbol 327 . 330) (punctuation 326 . 327) (symbol 320 . 326) (punctuation 319 . 320) (punctuation 318 . 319) (symbol 315 . 318) (punctuation 313 . 314) (symbol 302 . 311) (USING 296 . 301))
+      :lexical-table 
+        '(("MSGPUB_COMMON_HPP")
+          )
+)
+    (semanticdb-table "appname_topic.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("MSGPUB_APPNAME_TOPIC_HPP" variable (:constant-flag t) nil [127 151])
+            ("msgpack.hpp" include (:system-flag t) nil [153 175])
+            ("ostream" include (:system-flag t) nil [176 194])
+            ("msgpub" type
+               (:members 
+                  ( ("appname_topic" type
+                       (:members 
+                          ( ("appname" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [286 306])
+                            ("topic" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [330 348])
+                            ("appname_topic" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("appname" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [407 427])
+                                    ("topic" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [436 454]))                                  
+                                :type ("appname_topic" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [384 520])
+                            ("MSGPACK_DEFINE" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("appname" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [540 548])
+                                    ("" variable (:type ("topic" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [549 555]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [525 556]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [234 559])
+                    ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("s" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [593 609])
+                            ("ac" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("appname_topic" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [610 634]))                          
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [561 692])
+                    ("<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("appname_topic" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [716 741])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("appname_topic" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [742 767]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [694 930])
+                    ("==" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("appname_topic" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [955 980])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("appname_topic" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [981 1006]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [932 1079]))                  
+                :type "namespace")
+                nil [196 1082]))          
+      :file "appname_topic.hpp"
+      :pointmax 1139
+      :fsize 1138
+      :lastmodtime '(22424 33772 573333 333000)
+      :unmatched-syntax '((punctuation 378 . 379) (DEFAULT 371 . 378) (punctuation 369 . 370) (semantic-list 366 . 368) (symbol 353 . 366))
+      :lexical-table 
+        '(("MSGPUB_APPNAME_TOPIC_HPP")
+          )
+)
+    (semanticdb-table "appname_user_topic.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("MSGPUB_APPNAME_USER_TOPIC_HPP" variable (:constant-flag t) nil [47 76])
+            ("msgpub/appname_user.hpp" include (:system-flag t) nil [78 112])
+            ("msgpub/appname_topic.hpp" include (:system-flag t) nil [113 148])
+            ("msgpub" type
+               (:members 
+                  ( ("appname_user_topic" type
+                       (:members 
+                          ( ("au" variable (:type ("appname_user" type (:type "class") nil nil)) (reparse-symbol classsubparts) [219 235])
+                            ("at" variable (:type ("appname_topic" type (:type "class") nil nil)) (reparse-symbol classsubparts) [240 257])
+                            ("appname_user_topic" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("au" variable (:type ("appname_user" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [326 342])
+                                    ("at" variable (:type ("appname_topic" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [351 368]))                                  
+                                :type ("appname_user_topic" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [298 418])
+                            ("MSGPACK_DEFINE" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("au" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [438 441])
+                                    ("" variable (:type ("at" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [442 445]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [423 446]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [187 449])
+                    ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("s" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [483 499])
+                            ("aut" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("appname_user_topic" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [500 530]))                          
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [451 583])
+                    ("<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("appname_user_topic" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [607 637])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("appname_user_topic" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [638 668]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [585 805])
+                    ("==" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("appname_user_topic" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [830 860])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("appname_user_topic" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [861 891]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [807 948]))                  
+                :type "namespace")
+                nil [150 951]))          
+      :file "appname_user_topic.hpp"
+      :pointmax 1013
+      :fsize 1097
+      :lastmodtime '(22424 33772 573333 333000)
+      :unmatched-syntax '((punctuation 292 . 293) (DEFAULT 285 . 292) (punctuation 283 . 284) (semantic-list 280 . 282) (symbol 262 . 280))
+      :lexical-table 
+        '(("MSGPUB_APPNAME_USER_TOPIC_HPP")
+          )
+)
+    (semanticdb-table "log.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("MSGPUB_LOG_HPP" variable (:constant-flag t) nil [32 46])
+            ("boost/log/trivial.hpp" include (:system-flag t) nil [48 80])
+            ("boost/log/expressions.hpp" include (:system-flag t) nil [81 117])
+            ("boost/log/utility/setup/console.hpp" include (:system-flag t) nil [118 164])
+            ("boost/log/utility/setup/common_attributes.hpp" include (:system-flag t) nil [165 221])
+            ("boost/log/sources/severity_logger.hpp" include (:system-flag t) nil [222 270])
+            ("boost/log/support/date_time.hpp" include (:system-flag t) nil [271 313])
+            ("iomanip" include (:system-flag t) nil [314 332])
+            ("msgpub" type
+               (:members 
+                  ( ("set_log_level" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("lv" variable (:type ("boost::log::trivial::severity_level" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [380 419]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [354 515])
+                    ("log_init" function
+                       (:typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [517 1148])
+                    ("log_flush" function
+                       (:typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1150 1215])
+                    ("MSGPUB_FILENAME" variable (:constant-flag t) (reparse-symbol namespacesubparts) [1225 1240])
+                    ("MSGPUB_LOG" variable (:constant-flag t) (reparse-symbol namespacesubparts) [1788 1798]))                  
+                :type "namespace")
+                nil [334 1978]))          
+      :file "log.hpp"
+      :pointmax 2025
+      :fsize 2109
+      :lastmodtime '(22424 33772 573333 333000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MSGPUB_FILENAME" . 
+              ((symbol "std" 1279 . 1282) (punctuation ":" 1282 . 1283) (punctuation ":" 1283 . 1284) (symbol "string" 1284 . 1290) (semantic-list "(__FILE__)" 1290 . 1300) (punctuation "." 1300 . 1301) (symbol "substr" 1301 . 1307) (semantic-list "(                       \\
+        std::string(__FILE__).find_last_of(\"/\\\\\") ?     \\
+        std::string(__FILE__).find_last_of(\"/\\\\\") + 1 : \\
+        0)" 1307 . 1459)))
+          ("MSGPUB_LOG_HPP")
+          ("MSGPUB_LOG" (spp-arg-list ("level" "prefix" "id") 1798 . 1817) . 
+              ((symbol "BOOST_LOG_TRIVIAL" 1824 . 1841) (semantic-list "(level)" 1841 . 1848) (punctuation "<" 1849 . 1850) (punctuation "<" 1850 . 1851) (symbol "prefix" 1852 . 1858) (punctuation "<" 1859 . 1860) (punctuation "<" 1860 . 1861) (string "\"(\"" 1862 . 1865) (punctuation "<" 1866 . 1867) (punctuation "<" 1867 . 1868) (symbol "id" 1869 . 1871) (punctuation "<" 1872 . 1873) (punctuation "<" 1873 . 1874) (string "\")\"" 1875 . 1878) (punctuation "<" 1879 . 1880) (punctuation "<" 1880 . 1881) (string "\":\"" 1882 . 1885) (punctuation "<" 1886 . 1887) (punctuation "<" 1887 . 1888) (symbol "MSGPUB_FILENAME" 1889 . 1904) (punctuation "<" 1905 . 1906) (punctuation "<" 1906 . 1907) (string "\"(\"" 1908 . 1911) (punctuation "<" 1912 . 1913) (punctuation "<" 1913 . 1914) (symbol "__LINE__" 1915 . 1923) (punctuation "<" 1924 . 1925) (punctuation "<" 1925 . 1926) (string "\"):\"" 1927 . 1931)))
+          )
+)
+    (semanticdb-table "admin.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("MSGPUB_ADMIN_HPP" variable (:constant-flag t) nil [119 135])
+            ("msgpub/ws_common.hpp" include nil nil [137 168])
+            ("boost/log/trivial.hpp" include (:system-flag t) nil [170 202])
+            ("functional" include (:system-flag t) nil [204 225])
+            ("string" include (:system-flag t) nil [226 243])
+            ("queue" include (:system-flag t) nil [244 260])
+            ("msgpub/common.hpp" include (:system-flag t) nil [262 290])
+            ("msgpub/command.hpp" include (:system-flag t) nil [291 320])
+            ("msgpub/status.hpp" include (:system-flag t) nil [321 349])
+            ("msgpub/websocket.hpp" include (:system-flag t) nil [350 381])
+            ("msgpack.hpp" include (:system-flag t) nil [382 404])
+            ("msgpub" type
+               (:members 
+                  ( ("admin" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [539 546])
+                            ("admin" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("ws" variable
+                                       (:reference 1
+                                        :type ("websocket" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5261 5275])
+                                    ("uri" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5284 5307])
+                                    ("appkey" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5316 5342])
+                                    ("seckey" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5351 5377])
+                                    ("cacert" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "\"\""
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5386 5417])
+                                    ("ping_time" variable
+                                       (:default-value "0"
+                                        :type "unsigned int")
+                                        (reparse-symbol arg-sub-list) [5426 5453])
+                                    ("con_cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "connect_cb()"
+                                        :type ("connect_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5462 5503])
+                                    ("clo_cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "close_cb()"
+                                        :type ("close_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5512 5551])
+                                    ("err_cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "error_cb()"
+                                        :type ("error_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5560 5599]))                                  
+                                :type ("admin" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5246 6110])
+                            ("admin" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [6200 6233])
+                            ("user_add" function
+                               (:arguments 
+                                  ( ("user" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6762 6786])
+                                    ("rcb" variable
+                                       (:default-value "response_cb()"
+                                        :type ("response_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6795 6827]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6739 7175])
+                            ("user_remove" function
+                               (:arguments 
+                                  ( ("user" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7873 7897])
+                                    ("rcb" variable
+                                       (:default-value "response_cb()"
+                                        :type ("response_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7906 7938]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7847 8289])
+                            ("user_list" function
+                               (:arguments 
+                                  ( ("cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("user_info_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8979 9002])
+                                    ("rcb" variable
+                                       (:default-value "response_cb()"
+                                        :type ("response_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9011 9043]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8955 9418])
+                            ("token_add" function
+                               (:arguments 
+                                  ( ("user" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9983 10007])
+                                    ("token" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10016 10041])
+                                    ("rcb" variable
+                                       (:default-value "response_cb()"
+                                        :type ("response_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10050 10082]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9959 10165])
+                            ("token_add" function
+                               (:arguments 
+                                  ( ("user" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11121 11145])
+                                    ("token" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11154 11179])
+                                    ("duration" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [11188 11211])
+                                    ("rcb" variable
+                                       (:default-value "response_cb()"
+                                        :type ("response_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11220 11252]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [11097 11618])
+                            ("token_remove" function
+                               (:arguments 
+                                  ( ("user" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12354 12378])
+                                    ("token" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12387 12412])
+                                    ("rcb" variable
+                                       (:default-value "response_cb()"
+                                        :type ("response_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12421 12453]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12327 12812])
+                            ("topic_add" function
+                               (:arguments 
+                                  ( ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13348 13373])
+                                    ("rcb" variable
+                                       (:default-value "response_cb()"
+                                        :type ("response_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13382 13414]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [13324 13764])
+                            ("topic_remove" function
+                               (:arguments 
+                                  ( ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14435 14460])
+                                    ("rcb" variable
+                                       (:default-value "response_cb()"
+                                        :type ("response_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14469 14501]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [14408 14854])
+                            ("topic_list" function
+                               (:arguments 
+                                  ( ("cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("topic_info_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15551 15575])
+                                    ("rcb" variable
+                                       (:default-value "response_cb()"
+                                        :type ("response_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15584 15616]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [15526 15993])
+                            ("grant_sub" function
+                               (:arguments 
+                                  ( ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16884 16909])
+                                    ("user" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16918 16942])
+                                    ("sub" variable
+                                       (:default-value "true"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [16951 16967])
+                                    ("rcb" variable
+                                       (:default-value "response_cb()"
+                                        :type ("response_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16976 17008]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [16860 17369])
+                            ("grant_sub_ext" function
+                               (:arguments 
+                                  ( ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18327 18352])
+                                    ("user_appname" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18361 18393])
+                                    ("user" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18402 18426])
+                                    ("sub" variable
+                                       (:default-value "true"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [18435 18451])
+                                    ("rcb" variable
+                                       (:default-value "response_cb()"
+                                        :type ("response_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18460 18492]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [18299 18867])
+                            ("grant_sub_label" function
+                               (:arguments 
+                                  ( ("label" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19836 19861])
+                                    ("user" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19870 19894])
+                                    ("sub" variable
+                                       (:default-value "true"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [19903 19919])
+                                    ("rcb" variable
+                                       (:default-value "responses_cb()"
+                                        :type ("responses_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19928 19962]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [19806 20330])
+                            ("grant_sub_label_ext" function
+                               (:arguments 
+                                  ( ("label" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [21366 21391])
+                                    ("user_appname" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [21400 21432])
+                                    ("user" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [21441 21465])
+                                    ("sub" variable
+                                       (:default-value "true"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [21474 21490])
+                                    ("rcb" variable
+                                       (:default-value "responses_cb()"
+                                        :type ("responses_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [21499 21533]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [21332 21915])
+                            ("grant_pub" function
+                               (:arguments 
+                                  ( ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [22807 22832])
+                                    ("user" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [22841 22865])
+                                    ("pub" variable
+                                       (:default-value "true"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [22874 22890])
+                                    ("rcb" variable
+                                       (:default-value "response_cb()"
+                                        :type ("response_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [22899 22931]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [22783 23292])
+                            ("grant_pub_ext" function
+                               (:arguments 
+                                  ( ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [24250 24275])
+                                    ("user_appname" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [24284 24316])
+                                    ("user" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [24325 24349])
+                                    ("pub" variable
+                                       (:default-value "true"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [24358 24374])
+                                    ("rcb" variable
+                                       (:default-value "response_cb()"
+                                        :type ("response_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [24383 24415]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [24222 24790])
+                            ("grant_pub_label" function
+                               (:arguments 
+                                  ( ("label" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [25759 25784])
+                                    ("user" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [25793 25817])
+                                    ("pub" variable
+                                       (:default-value "true"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [25826 25842])
+                                    ("rcb" variable
+                                       (:default-value "responses_cb()"
+                                        :type ("responses_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [25851 25885]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [25729 26253])
+                            ("grant_pub_label_ext" function
+                               (:arguments 
+                                  ( ("label" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [27289 27314])
+                                    ("user_appname" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [27323 27355])
+                                    ("user" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [27364 27388])
+                                    ("pub" variable
+                                       (:default-value "true"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [27397 27413])
+                                    ("rcb" variable
+                                       (:default-value "responses_cb()"
+                                        :type ("responses_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [27422 27456]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [27255 27838])
+                            ("grant_list" function
+                               (:arguments 
+                                  ( ("cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("grant_info_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [28568 28592])
+                                    ("rcb" variable
+                                       (:default-value "response_cb()"
+                                        :type ("response_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [28601 28633]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [28543 29023])
+                            ("grant_list_by_user" function
+                               (:arguments 
+                                  ( ("user" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [29839 29863])
+                                    ("cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("grant_info_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [29872 29896])
+                                    ("rcb" variable
+                                       (:default-value "response_cb()"
+                                        :type ("response_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [29905 29937]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [29806 30329])
+                            ("grant_list_by_user" function
+                               (:arguments 
+                                  ( ("user_appname" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [31199 31231])
+                                    ("user" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [31240 31264])
+                                    ("cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("grant_info_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [31273 31297])
+                                    ("rcb" variable
+                                       (:default-value "response_cb()"
+                                        :type ("response_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [31306 31338]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [31166 31740])
+                            ("grant_list_by_topic" function
+                               (:arguments 
+                                  ( ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [32521 32546])
+                                    ("cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("grant_info_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [32555 32579])
+                                    ("rcb" variable
+                                       (:default-value "response_cb()"
+                                        :type ("response_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [32588 32620]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [32487 33013])
+                            ("grant_list_by_topic_user" function
+                               (:arguments 
+                                  ( ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [33944 33969])
+                                    ("user" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [33978 34002])
+                                    ("cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("grant_info_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [34011 34035])
+                                    ("rcb" variable
+                                       (:default-value "response_cb()"
+                                        :type ("response_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [34044 34076]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [33905 34471])
+                            ("grant_list_by_topic_user" function
+                               (:arguments 
+                                  ( ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [35456 35481])
+                                    ("user_appname" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [35490 35522])
+                                    ("user" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [35531 35555])
+                                    ("cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("grant_info_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [35564 35588])
+                                    ("rcb" variable
+                                       (:default-value "response_cb()"
+                                        :type ("response_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [35597 35629]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [35417 36034])
+                            ("label_add" function
+                               (:arguments 
+                                  ( ("label" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [36570 36595])
+                                    ("rcb" variable
+                                       (:default-value "response_cb()"
+                                        :type ("response_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [36604 36636]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [36546 36986])
+                            ("label_remove" function
+                               (:arguments 
+                                  ( ("label" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [37489 37514])
+                                    ("rcb" variable
+                                       (:default-value "response_cb()"
+                                        :type ("response_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [37523 37555]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [37462 37908])
+                            ("label_list" function
+                               (:arguments 
+                                  ( ("cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("label_info_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [38605 38629])
+                                    ("rcb" variable
+                                       (:default-value "response_cb()"
+                                        :type ("response_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [38638 38670]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [38580 39047])
+                            ("topic_label_add" function
+                               (:arguments 
+                                  ( ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [39714 39739])
+                                    ("label" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [39748 39773])
+                                    ("rcb" variable
+                                       (:default-value "response_cb()"
+                                        :type ("response_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [39782 39814]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [39684 40177])
+                            ("topic_label_add_ext" function
+                               (:arguments 
+                                  ( ("topic_appname" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [40901 40934])
+                                    ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [40943 40968])
+                                    ("label" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [40977 41002])
+                                    ("rcb" variable
+                                       (:default-value "response_cb()"
+                                        :type ("response_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [41011 41043]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [40867 41421])
+                            ("topic_label_remove" function
+                               (:arguments 
+                                  ( ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [42026 42051])
+                                    ("label" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [42060 42085])
+                                    ("rcb" variable
+                                       (:default-value "response_cb()"
+                                        :type ("response_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [42094 42126]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [41993 42492])
+                            ("topic_label_remove_ext" function
+                               (:arguments 
+                                  ( ("topic_appname" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [43154 43187])
+                                    ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [43196 43221])
+                                    ("label" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [43230 43255])
+                                    ("rcb" variable
+                                       (:default-value "response_cb()"
+                                        :type ("response_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [43264 43296]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [43117 43677])
+                            ("topic_label_list" function
+                               (:arguments 
+                                  ( ("cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("topic_label_info_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [44431 44461])
+                                    ("rcb" variable
+                                       (:default-value "response_cb()"
+                                        :type ("response_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [44470 44502]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [44400 44903])
+                            ("topic_label_list_by_topic" function
+                               (:arguments 
+                                  ( ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [45714 45739])
+                                    ("cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("topic_label_info_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [45748 45778])
+                                    ("rcb" variable
+                                       (:default-value "response_cb()"
+                                        :type ("response_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [45787 45819]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [45674 46223])
+                            ("topic_label_list_by_topic" function
+                               (:arguments 
+                                  ( ("topic_appname" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [47078 47111])
+                                    ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [47120 47145])
+                                    ("cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("topic_label_info_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [47154 47184])
+                                    ("rcb" variable
+                                       (:default-value "response_cb()"
+                                        :type ("response_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [47193 47225]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [47038 47640])
+                            ("topic_label_list_by_label" function
+                               (:arguments 
+                                  ( ("label" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [48451 48476])
+                                    ("cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("topic_label_info_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [48485 48515])
+                                    ("rcb" variable
+                                       (:default-value "response_cb()"
+                                        :type ("response_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [48524 48556]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [48411 48960])
+                            ("reconnect" function (:type "void") (reparse-symbol classsubparts) [49092 49139])
+                            ("close" function (:type "void") (reparse-symbol classsubparts) [49313 49533])
+                            ("private" label nil (reparse-symbol classsubparts) [49535 49543])
+                            ("new_req_id" function
+                               (:typemodifiers ("static")
+                                :type ("uint16_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [49548 49635])
+                            ("ping_sender" function
+                               (:arguments 
+                                  ( ("e" variable
+                                       (:constant-flag t
+                                        :type ("boost::system::error_code" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [49657 49691]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [49640 49933])
+                            ("set_timer" function (:type "void") (reparse-symbol classsubparts) [49938 50182])
+                            ("reset_timer" function (:type "void") (reparse-symbol classsubparts) [50187 50258])
+                            ("cancel_timer" function (:type "void") (reparse-symbol classsubparts) [50263 50359])
+                            ("connect_imp" function (:type "void") (reparse-symbol classsubparts) [50364 57671])
+                            ("private" label nil (reparse-symbol classsubparts) [57672 57680])
+                            ("ws_" variable (:type ("websocket" type (:type "class") nil nil)) (reparse-symbol classsubparts) [58037 58052])
+                            ("cacert_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [58057 58077])
+                            ("ping_time_" variable (:type "unsigned int") (reparse-symbol classsubparts) [58082 58106])
+                            ("tim_" variable (:type ("std::unique_ptr" type
+                                 (:template-specifier 
+                                    ( ("boost::asio::deadline_timer" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [58111 58161])
+                            ("connect_cb_" variable (:type ("connect_cb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [58166 58189])
+                            ("close_cb_" variable (:type ("close_cb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [58194 58213])
+                            ("error_cb_" variable (:type ("error_cb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [58218 58237])
+                            ("user_info_cb_" variable (:type ("std::queue" type
+                                 (:template-specifier 
+                                    ( ("user_info_cb" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [58242 58281])
+                            ("topic_info_cb_" variable (:type ("std::queue" type
+                                 (:template-specifier 
+                                    ( ("topic_info_cb" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [58286 58327])
+                            ("grant_info_cb_" variable (:type ("std::queue" type
+                                 (:template-specifier 
+                                    ( ("grant_info_cb" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [58332 58373])
+                            ("label_info_cb_" variable (:type ("std::queue" type
+                                 (:template-specifier 
+                                    ( ("label_info_cb" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [58378 58419])
+                            ("topic_label_info_cb_" variable (:type ("std::queue" type
+                                 (:template-specifier 
+                                    ( ("topic_label_info_cb" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [58424 58477])
+                            ("con_" variable (:type ("websocket::connection" type (:type "class") nil nil)) (reparse-symbol classsubparts) [58482 58509])
+                            ("reqid2rcb_" variable (:type ("reqid2rcb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [58514 58535])
+                            ("reqid2rscb_" variable (:type ("reqid2rscb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [58540 58563])
+                            ("complete_uri_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [58568 58594])
+                            ("opened_" variable (:type "bool") (reparse-symbol classsubparts) [58599 58612])
+                            ("appname_" variable (:type ("boost::optional" type
+                                 (:template-specifier 
+                                    ( ("std::string" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [58617 58655]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [525 58658]))                  
+                :type "namespace")
+                nil [406 58661]))          
+      :file "admin.hpp"
+      :pointmax 58710
+      :fsize 58709
+      :lastmodtime '(22424 33772 570000 0)
+      :unmatched-syntax '((punctuation 58031 . 58032) (punctuation 58030 . 58031) (symbol 58018 . 58030) (punctuation 58016 . 58017) (symbol 58008 . 58016) (punctuation 58007 . 58008) (punctuation 58006 . 58007) (symbol 58003 . 58006) (punctuation 58002 . 58003) (symbol 57999 . 58002) (punctuation 57998 . 57999) (punctuation 57997 . 57998) (symbol 57994 . 57997) (punctuation 57992 . 57993) (symbol 57981 . 57991) (USING 57975 . 57980) (punctuation 57969 . 57970) (punctuation 57968 . 57969) (symbol 57957 . 57968) (punctuation 57955 . 57956) (symbol 57947 . 57955) (punctuation 57946 . 57947) (punctuation 57945 . 57946) (symbol 57942 . 57945) (punctuation 57941 . 57942) (symbol 57938 . 57941) (punctuation 57937 . 57938) (punctuation 57936 . 57937) (symbol 57933 . 57936) (punctuation 57931 . 57932) (symbol 57921 . 57930) (USING 57915 . 57920) (punctuation 57909 . 57910) (punctuation 57908 . 57909) (symbol 57902 . 57908) (punctuation 57901 . 57902) (punctuation 57900 . 57901) (symbol 57897 . 57900) (punctuation 57895 . 57896) (symbol 57889 . 57895) (punctuation 57888 . 57889) (punctuation 57887 . 57888) (symbol 57884 . 57887) (punctuation 57882 . 57883) (symbol 57876 . 57882) (punctuation 57875 . 57876) (punctuation 57874 . 57875) (symbol 57871 . 57874) (punctuation 57869 . 57870) (symbol 57861 . 57869) (punctuation 57860 . 57861) (punctuation 57859 . 57860) (symbol 57856 . 57859) (punctuation 57855 . 57856) (symbol 57850 . 57855) (punctuation 57849 . 57850) (punctuation 57848 . 57849) (symbol 57845 . 57848) (punctuation 57843 . 57844) (symbol 57826 . 57842) (USING 57820 . 57825) (punctuation 4220 . 4221) (punctuation 4219 . 4220) (semantic-list 4156 . 4219) (VOID 4152 . 4156) (punctuation 4151 . 4152) (symbol 4143 . 4151) (punctuation 4142 . 4143) (punctuation 4141 . 4142) (symbol 4138 . 4141) (punctuation 4136 . 4137) (symbol 4123 . 4135) (USING 4117 . 4122) (punctuation 3780 . 3781) (punctuation 3779 . 3780) (semantic-list 3763 . 3779) (VOID 3759 . 3763) (punctuation 3758 . 3759) (symbol 3750 . 3758) (punctuation 3749 . 3750) (punctuation 3748 . 3749) (symbol 3745 . 3748) (punctuation 3743 . 3744) (symbol 3731 . 3742) (USING 3725 . 3730) (punctuation 3513 . 3514) (punctuation 3512 . 3513) (semantic-list 3479 . 3512) (VOID 3475 . 3479) (punctuation 3474 . 3475) (symbol 3466 . 3474) (punctuation 3465 . 3466) (punctuation 3464 . 3465) (symbol 3461 . 3464) (punctuation 3459 . 3460) (symbol 3439 . 3458) (USING 3433 . 3438) (punctuation 3130 . 3131) (punctuation 3129 . 3130) (semantic-list 3102 . 3129) (VOID 3098 . 3102) (punctuation 3097 . 3098) (symbol 3089 . 3097) (punctuation 3088 . 3089) (punctuation 3087 . 3088) (symbol 3084 . 3087) (punctuation 3082 . 3083) (symbol 3068 . 3081) (USING 3062 . 3067) (punctuation 2688 . 2689) (punctuation 2687 . 2688) (semantic-list 2660 . 2687) (VOID 2656 . 2660) (punctuation 2655 . 2656) (symbol 2647 . 2655) (punctuation 2646 . 2647) (punctuation 2645 . 2646) (symbol 2642 . 2645) (punctuation 2640 . 2641) (symbol 2626 . 2639) (USING 2620 . 2625) (punctuation 2341 . 2342) (punctuation 2340 . 2341) (semantic-list 2313 . 2340) (VOID 2309 . 2313) (punctuation 2308 . 2309) (symbol 2300 . 2308) (punctuation 2299 . 2300) (punctuation 2298 . 2299) (symbol 2295 . 2298) (punctuation 2293 . 2294) (symbol 2279 . 2292) (USING 2273 . 2278) (punctuation 1994 . 1995) (punctuation 1993 . 1994) (semantic-list 1967 . 1993) (VOID 1963 . 1967) (punctuation 1962 . 1963) (symbol 1954 . 1962) (punctuation 1953 . 1954) (punctuation 1952 . 1953) (symbol 1949 . 1952) (punctuation 1947 . 1948) (symbol 1934 . 1946) (USING 1928 . 1933) (punctuation 1653 . 1654) (punctuation 1652 . 1653) (semantic-list 1644 . 1652) (VOID 1640 . 1644) (punctuation 1639 . 1640) (symbol 1631 . 1639) (punctuation 1630 . 1631) (punctuation 1629 . 1630) (symbol 1626 . 1629) (punctuation 1624 . 1625) (symbol 1615 . 1623) (USING 1609 . 1614) (punctuation 1452 . 1453) (punctuation 1451 . 1452) (semantic-list 1257 . 1451) (VOID 1253 . 1257) (punctuation 1252 . 1253) (symbol 1244 . 1252) (punctuation 1243 . 1244) (punctuation 1242 . 1243) (symbol 1239 . 1242) (punctuation 1237 . 1238) (symbol 1228 . 1236) (USING 1222 . 1227) (punctuation 815 . 816) (punctuation 814 . 815) (semantic-list 778 . 814) (VOID 774 . 778) (punctuation 773 . 774) (symbol 765 . 773) (punctuation 764 . 765) (punctuation 763 . 764) (symbol 760 . 763) (punctuation 758 . 759) (symbol 747 . 757) (USING 741 . 746))
+      :lexical-table 
+        '(("MSGPUB_ADMIN_HPP")
+          )
+)
+    (semanticdb-table "ws_common.hpp"
+      :file "ws_common.hpp"
+      :fsize 1170
+      :lastmodtime '(22424 33772 576666 667000))
+    (semanticdb-table "appname_ch_user.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("MSGPUB_APPNAME_CH_USER_HPP" variable (:constant-flag t) nil [44 70])
+            ("msgpub/appname_user.hpp" include (:system-flag t) nil [72 106])
+            ("msgpub/appname_ch.hpp" include (:system-flag t) nil [107 139])
+            ("msgpub" type
+               (:members 
+                  ( ("appname_ch_user" type
+                       (:members 
+                          ( ("ac" variable (:type ("appname_ch" type (:type "class") nil nil)) (reparse-symbol classsubparts) [207 221])
+                            ("au" variable (:type ("appname_user" type (:type "class") nil nil)) (reparse-symbol classsubparts) [226 242])
+                            ("appname_ch_user" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("ac" variable (:type ("appname_ch" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [305 319])
+                                    ("au" variable (:type ("appname_user" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [328 344]))                                  
+                                :type ("appname_ch_user" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [280 394])
+                            ("MSGPACK_DEFINE" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("ac" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [414 417])
+                                    ("" variable (:type ("au" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [418 421]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [399 422]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [178 425])
+                    ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("s" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [459 475])
+                            ("acu" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("appname_ch_user" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [476 503]))                          
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [427 556])
+                    ("<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("appname_ch_user" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [580 607])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("appname_ch_user" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [608 635]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [558 772])
+                    ("==" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("appname_ch_user" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [797 824])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("appname_ch_user" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [825 852]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [774 909]))                  
+                :type "namespace")
+                nil [141 912]))          
+      :file "appname_ch_user.hpp"
+      :pointmax 971
+      :fsize 1055
+      :lastmodtime '(22424 33772 573333 333000)
+      :unmatched-syntax '((punctuation 274 . 275) (DEFAULT 267 . 274) (punctuation 265 . 266) (semantic-list 262 . 264) (symbol 247 . 262))
+      :lexical-table 
+        '(("MSGPUB_APPNAME_CH_USER_HPP")
+          )
+)
+    (semanticdb-table "appname_user.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("MSGPUB_APPNAME_USER_HPP" variable (:constant-flag t) nil [126 149])
+            ("msgpack.hpp" include (:system-flag t) nil [151 173])
+            ("ostream" include (:system-flag t) nil [174 192])
+            ("msgpub" type
+               (:members 
+                  ( ("appname_user" type
+                       (:members 
+                          ( ("appname" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [281 301])
+                            ("user" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [324 341])
+                            ("appname_user" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("appname" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [398 418])
+                                    ("user" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [427 444]))                                  
+                                :type ("appname_user" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [376 508])
+                            ("MSGPACK_DEFINE" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("appname" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [528 536])
+                                    ("" variable (:type ("user" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [537 542]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [513 543]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [231 546])
+                    ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("s" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [580 596])
+                            ("au" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("appname_user" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [597 620]))                          
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [548 677])
+                    ("<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("appname_user" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [701 725])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("appname_user" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [726 750]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [679 911])
+                    ("==" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("appname_user" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [936 960])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("appname_user" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [961 985]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [913 1056])
+                    ("!=" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("appname_user" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1081 1105])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("appname_user" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1106 1130]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1058 1160]))                  
+                :type "namespace")
+                nil [194 1163]))          
+      :file "appname_user.hpp"
+      :pointmax 1219
+      :fsize 1218
+      :lastmodtime '(22442 9151 973333 335000)
+      :unmatched-syntax '((punctuation 370 . 371) (DEFAULT 363 . 370) (punctuation 361 . 362) (semantic-list 358 . 360) (symbol 346 . 358))
+      :lexical-table 
+        '(("MSGPUB_APPNAME_USER_HPP")
+          )
+)
+    (semanticdb-table "user.hpp"
+      :file "user.hpp"
+      :fsize 17457
+      :lastmodtime '(22424 33772 573333 333000))
+    (semanticdb-table "admin_mqtt.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("MSGPUB_ADMIN_MQTT_HPP" variable (:constant-flag t) nil [125 146])
+            ("functional" include (:system-flag t) nil [149 170])
+            ("string" include (:system-flag t) nil [171 188])
+            ("queue" include (:system-flag t) nil [189 205])
+            ("boost/log/trivial.hpp" include (:system-flag t) nil [207 239])
+            ("mqtt_client_cpp.hpp" include (:system-flag t) nil [241 271])
+            ("msgpub/common.hpp" include (:system-flag t) nil [273 301])
+            ("msgpub/command.hpp" include (:system-flag t) nil [302 331])
+            ("msgpub/status.hpp" include (:system-flag t) nil [332 360])
+            ("msgpack.hpp" include (:system-flag t) nil [361 383])
+            ("admin_cb.hpp" include nil nil [385 408])
+            ("msgpub" type
+               (:members 
+                  ( ("as" type
+                       (:kind alias
+                        :members 
+                          ( ("boost::asio" type (:type "namespace") nil nil))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [430 457])
+                    ("admin_mqtt" type
+                       (:template 
+                          ( ("Endpoint" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [606 613])
+                            ("set_connect_handler" function
+                               (:arguments 
+                                  ( ("cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "admin::connect_cb()"
+                                        :type ("admin::connect_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1490 1540]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1465 1574])
+                            ("set_close_handler" function
+                               (:arguments 
+                                  ( ("cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "admin::close_cb()"
+                                        :type ("admin::close_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1602 1648]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1579 1680])
+                            ("set_error_handler" function
+                               (:arguments 
+                                  ( ("cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "admin::error_cb()"
+                                        :type ("admin::error_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1708 1754]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1685 1786])
+                            ("set_topic_info_handler" function
+                               (:arguments 
+                                  ( ("cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "admin::topic_info_cb()"
+                                        :type ("admin::topic_info_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1819 1875]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1791 1912])
+                            ("set_user_info_handler" function
+                               (:arguments 
+                                  ( ("cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "admin::user_info_cb()"
+                                        :type ("admin::user_info_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1944 1998]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1917 2034])
+                            ("set_pub_info_handler" function
+                               (:arguments 
+                                  ( ("cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "admin::topic_user_info_cb()"
+                                        :type ("admin::topic_user_info_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2065 2131]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2039 2177])
+                            ("set_sub_info_handler" function
+                               (:arguments 
+                                  ( ("cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "admin::topic_user_info_cb()"
+                                        :type ("admin::topic_user_info_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2208 2274]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2182 2320])
+                            ("set_label_info_handler" function
+                               (:arguments 
+                                  ( ("cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "admin::label_info_cb()"
+                                        :type ("admin::label_info_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2353 2409]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2325 2446])
+                            ("set_topic_label_info_handler" function
+                               (:arguments 
+                                  ( ("cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "admin::topic_label_info_cb()"
+                                        :type ("admin::topic_label_info_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2485 2553]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2451 2596])
+                            ("user_add" function
+                               (:arguments 
+                                  ( ("user" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3123 3147])
+                                    ("scb" variable
+                                       (:default-value "admin::status_cb()"
+                                        :type ("admin::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3156 3198]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3100 3417])
+                            ("user_add" function
+                               (:arguments 
+                                  ( ("user" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3948 3985])
+                                    ("mscb" variable
+                                       (:default-value "admin::multi_status_cb()"
+                                        :type ("admin::multi_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3994 4049]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3925 4271])
+                            ("user_remove" function
+                               (:arguments 
+                                  ( ("user" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4810 4834])
+                                    ("scb" variable
+                                       (:default-value "admin::status_cb()"
+                                        :type ("admin::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4843 4885]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4784 5107])
+                            ("user_remove" function
+                               (:arguments 
+                                  ( ("user" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5650 5687])
+                                    ("mscb" variable
+                                       (:default-value "admin::multi_status_cb()"
+                                        :type ("admin::multi_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5696 5751]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5624 5976])
+                            ("user_list" function
+                               (:arguments 
+                                  ( ("scb" variable
+                                       (:default-value "admin::status_cb()"
+                                        :type ("admin::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6657 6699]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6642 6837])
+                            ("token_add" function
+                               (:arguments 
+                                  ( ("user" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7402 7426])
+                                    ("token" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7435 7460])
+                                    ("scb" variable
+                                       (:default-value "admin::status_cb()"
+                                        :type ("admin::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7469 7511]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7378 7571])
+                            ("token_add" function
+                               (:arguments 
+                                  ( ("user" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8518 8542])
+                                    ("token" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8551 8576])
+                                    ("duration" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8585 8608])
+                                    ("scb" variable
+                                       (:default-value "admin::status_cb()"
+                                        :type ("admin::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8617 8659]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8494 8913])
+                            ("token_add" function
+                               (:arguments 
+                                  ( ("param" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::tuple" type (:template-specifier 
+                                                    ( ("std::string" type nil nil nil)
+                                                      ("std::string" type nil nil nil))                                                    ) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [9479 9628])
+                                    ("mscb" variable
+                                       (:default-value "admin::multi_status_cb()"
+                                        :type ("admin::multi_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9637 9692]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9455 10118])
+                            ("token_add" function
+                               (:arguments 
+                                  ( ("param" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::tuple" type (:template-specifier 
+                                                    ( ("std::string" type nil nil nil)
+                                                      ("std::string" type nil nil nil)
+                                                      ("std::uint32_t" type nil nil nil))                                                    ) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [11064 11257])
+                                    ("mscb" variable
+                                       (:default-value "admin::multi_status_cb()"
+                                        :type ("admin::multi_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11266 11321]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [11040 11544])
+                            ("token_remove" function
+                               (:arguments 
+                                  ( ("user" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12278 12302])
+                                    ("token" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12311 12336])
+                                    ("scb" variable
+                                       (:default-value "admin::status_cb()"
+                                        :type ("admin::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12345 12387]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12251 12634])
+                            ("token_remove" function
+                               (:arguments 
+                                  ( ("param" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::tuple" type (:template-specifier 
+                                                    ( ("std::string" type nil nil nil)
+                                                      ("std::string" type nil nil nil))                                                    ) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [13377 13525])
+                                    ("mscb" variable
+                                       (:default-value "admin::multi_status_cb()"
+                                        :type ("admin::multi_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13534 13589]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [13350 13816])
+                            ("topic_add" function
+                               (:arguments 
+                                  ( ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14350 14375])
+                                    ("scb" variable
+                                       (:default-value "admin::status_cb()"
+                                        :type ("admin::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14384 14426]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [14326 14744])
+                            ("topic_add" function
+                               (:arguments 
+                                  ( ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [15289 15327])
+                                    ("mscb" variable
+                                       (:default-value "admin::multi_status_cb()"
+                                        :type ("admin::multi_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15336 15391]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [15265 15615])
+                            ("topic_remove" function
+                               (:arguments 
+                                  ( ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16283 16308])
+                                    ("scb" variable
+                                       (:default-value "admin::status_cb()"
+                                        :type ("admin::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16317 16359]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [16256 16583])
+                            ("topic_remove" function
+                               (:arguments 
+                                  ( ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [17261 17299])
+                                    ("mscb" variable
+                                       (:default-value "admin::multi_status_cb()"
+                                        :type ("admin::multi_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17308 17363]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [17234 17590])
+                            ("topic_list" function
+                               (:arguments 
+                                  ( ("scb" variable
+                                       (:default-value "admin::status_cb()"
+                                        :type ("admin::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18142 18184]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [18126 18323])
+                            ("sub_add" function
+                               (:arguments 
+                                  ( ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19121 19146])
+                                    ("user" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19155 19179])
+                                    ("scb" variable
+                                       (:default-value "admin::status_cb()"
+                                        :type ("admin::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19188 19230]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [19099 19569])
+                            ("sub_add" function
+                               (:arguments 
+                                  ( ("param" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::tuple" type (:template-specifier 
+                                                    ( ("std::string" type nil nil nil)
+                                                      ("std::string" type nil nil nil))                                                    ) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [20251 20314])
+                                    ("mscb" variable
+                                       (:default-value "admin::multi_status_cb()"
+                                        :type ("admin::multi_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [20323 20378]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [20229 20697])
+                            ("sub_add" function
+                               (:arguments 
+                                  ( ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [21513 21538])
+                                    ("au" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("appname_user" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [21547 21570])
+                                    ("scb" variable
+                                       (:default-value "admin::status_cb()"
+                                        :type ("admin::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [21579 21621]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [21491 21962])
+                            ("sub_add" function
+                               (:arguments 
+                                  ( ("param" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::tuple" type (:template-specifier 
+                                                    ( ("std::string" type nil nil nil)
+                                                      ("appname_user" type nil nil nil))                                                    ) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [22773 22837])
+                                    ("mscb" variable
+                                       (:default-value "admin::multi_status_cb()"
+                                        :type ("admin::multi_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [22846 22901]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [22751 23224])
+                            ("sub_remove" function
+                               (:arguments 
+                                  ( ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [24026 24051])
+                                    ("user" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [24060 24084])
+                                    ("scb" variable
+                                       (:default-value "admin::status_cb()"
+                                        :type ("admin::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [24093 24135]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [24001 24477])
+                            ("sub_remove" function
+                               (:arguments 
+                                  ( ("param" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::tuple" type (:template-specifier 
+                                                    ( ("std::string" type nil nil nil)
+                                                      ("std::string" type nil nil nil))                                                    ) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [25162 25225])
+                                    ("mscb" variable
+                                       (:default-value "admin::multi_status_cb()"
+                                        :type ("admin::multi_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [25234 25289]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [25137 25611])
+                            ("sub_remove" function
+                               (:arguments 
+                                  ( ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [26430 26455])
+                                    ("au" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("appname_user" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [26464 26487])
+                                    ("scb" variable
+                                       (:default-value "admin::status_cb()"
+                                        :type ("admin::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [26496 26538]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [26405 26882])
+                            ("sub_remove" function
+                               (:arguments 
+                                  ( ("param" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::tuple" type (:template-specifier 
+                                                    ( ("std::string" type nil nil nil)
+                                                      ("appname_user" type nil nil nil))                                                    ) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [27696 27760])
+                                    ("mscb" variable
+                                       (:default-value "admin::multi_status_cb()"
+                                        :type ("admin::multi_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [27769 27824]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [27671 28150])
+                            ("sub_list" function
+                               (:arguments 
+                                  ( ("scb" variable
+                                       (:default-value "admin::status_cb()"
+                                        :type ("admin::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [28688 28730]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [28674 28867])
+                            ("pub_add" function
+                               (:arguments 
+                                  ( ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [29664 29689])
+                                    ("user" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [29698 29722])
+                                    ("scb" variable
+                                       (:default-value "admin::status_cb()"
+                                        :type ("admin::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [29731 29773]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [29642 30112])
+                            ("pub_add" function
+                               (:arguments 
+                                  ( ("param" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::tuple" type (:template-specifier 
+                                                    ( ("std::string" type nil nil nil)
+                                                      ("std::string" type nil nil nil))                                                    ) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [30793 30856])
+                                    ("mscb" variable
+                                       (:default-value "admin::multi_status_cb()"
+                                        :type ("admin::multi_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [30865 30920]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [30771 31239])
+                            ("pub_add" function
+                               (:arguments 
+                                  ( ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [32054 32079])
+                                    ("au" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("appname_user" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [32088 32111])
+                                    ("scb" variable
+                                       (:default-value "admin::status_cb()"
+                                        :type ("admin::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [32120 32162]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [32032 32503])
+                            ("pub_add" function
+                               (:arguments 
+                                  ( ("param" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::tuple" type (:template-specifier 
+                                                    ( ("std::string" type nil nil nil)
+                                                      ("appname_user" type nil nil nil))                                                    ) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [33313 33377])
+                                    ("mscb" variable
+                                       (:default-value "admin::multi_status_cb()"
+                                        :type ("admin::multi_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [33386 33441]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [33291 33764])
+                            ("pub_remove" function
+                               (:arguments 
+                                  ( ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [34565 34590])
+                                    ("user" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [34599 34623])
+                                    ("scb" variable
+                                       (:default-value "admin::status_cb()"
+                                        :type ("admin::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [34632 34674]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [34540 35016])
+                            ("pub_remove" function
+                               (:arguments 
+                                  ( ("param" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::tuple" type (:template-specifier 
+                                                    ( ("std::string" type nil nil nil)
+                                                      ("std::string" type nil nil nil))                                                    ) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [35700 35763])
+                                    ("mscb" variable
+                                       (:default-value "admin::multi_status_cb()"
+                                        :type ("admin::multi_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [35772 35827]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [35675 36149])
+                            ("pub_remove" function
+                               (:arguments 
+                                  ( ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [36967 36992])
+                                    ("au" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("appname_user" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [37001 37024])
+                                    ("scb" variable
+                                       (:default-value "admin::status_cb()"
+                                        :type ("admin::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [37033 37075]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [36942 37419])
+                            ("pub_remove" function
+                               (:arguments 
+                                  ( ("param" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::tuple" type (:template-specifier 
+                                                    ( ("std::string" type nil nil nil)
+                                                      ("appname_user" type nil nil nil))                                                    ) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [38232 38296])
+                                    ("mscb" variable
+                                       (:default-value "admin::multi_status_cb()"
+                                        :type ("admin::multi_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [38305 38360]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [38207 38686])
+                            ("pub_list" function
+                               (:arguments 
+                                  ( ("scb" variable
+                                       (:default-value "admin::status_cb()"
+                                        :type ("admin::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [39224 39266]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [39210 39403])
+                            ("label_add" function
+                               (:arguments 
+                                  ( ("label" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [58434 58459])
+                                    ("scb" variable
+                                       (:default-value "admin::status_cb()"
+                                        :type ("admin::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [58468 58510]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [58410 58731])
+                            ("label_add" function
+                               (:arguments 
+                                  ( ("label" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [59276 59314])
+                                    ("mscb" variable
+                                       (:default-value "admin::multi_status_cb()"
+                                        :type ("admin::multi_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [59323 59378]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [59252 59602])
+                            ("label_remove" function
+                               (:arguments 
+                                  ( ("label" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [60103 60128])
+                                    ("scb" variable
+                                       (:default-value "admin::status_cb()"
+                                        :type ("admin::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [60137 60179]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [60076 60403])
+                            ("label_remove" function
+                               (:arguments 
+                                  ( ("label" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [60915 60953])
+                                    ("mscb" variable
+                                       (:default-value "admin::multi_status_cb()"
+                                        :type ("admin::multi_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [60962 61017]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [60888 61243])
+                            ("label_list" function
+                               (:arguments 
+                                  ( ("scb" variable
+                                       (:default-value "admin::status_cb()"
+                                        :type ("admin::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [61931 61973]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [61915 62112])
+                            ("topic_label_add" function
+                               (:arguments 
+                                  ( ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [62777 62802])
+                                    ("label" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [62811 62836])
+                                    ("scb" variable
+                                       (:default-value "admin::status_cb()"
+                                        :type ("admin::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [62845 62887]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [62747 63138])
+                            ("topic_label_add" function
+                               (:arguments 
+                                  ( ("param" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::tuple" type (:template-specifier 
+                                                    ( ("std::string" type nil nil nil)
+                                                      ("std::string" type nil nil nil))                                                    ) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [63818 63881])
+                                    ("mscb" variable
+                                       (:default-value "admin::multi_status_cb()"
+                                        :type ("admin::multi_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [63890 63945]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [63788 64175])
+                            ("topic_label_add" function
+                               (:arguments 
+                                  ( ("at" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("appname_topic" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [64893 64917])
+                                    ("label" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [64926 64951])
+                                    ("scb" variable
+                                       (:default-value "admin::status_cb()"
+                                        :type ("admin::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [64960 65002]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [64863 65254])
+                            ("topic_label_add" function
+                               (:arguments 
+                                  ( ("param" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("appname_topic" type nil nil nil)
+                                                  ("std::string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [65957 66010])
+                                    ("mscb" variable
+                                       (:default-value "admin::multi_status_cb()"
+                                        :type ("admin::multi_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [66019 66074]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [65927 66308])
+                            ("topic_label_remove" function
+                               (:arguments 
+                                  ( ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [66985 67010])
+                                    ("label" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [67019 67044])
+                                    ("scb" variable
+                                       (:default-value "admin::status_cb()"
+                                        :type ("admin::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [67053 67095]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [66952 67349])
+                            ("topic_label_remove" function
+                               (:arguments 
+                                  ( ("param" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::tuple" type (:template-specifier 
+                                                    ( ("std::string" type nil nil nil)
+                                                      ("std::string" type nil nil nil))                                                    ) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [68041 68104])
+                                    ("mscb" variable
+                                       (:default-value "admin::multi_status_cb()"
+                                        :type ("admin::multi_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [68113 68168]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [68008 68401])
+                            ("topic_label_remove" function
+                               (:arguments 
+                                  ( ("at" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("appname_topic" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [69131 69155])
+                                    ("label" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [69164 69189])
+                                    ("scb" variable
+                                       (:default-value "admin::status_cb()"
+                                        :type ("admin::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [69198 69240]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [69098 69495])
+                            ("topic_label_remove" function
+                               (:arguments 
+                                  ( ("param" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("appname_topic" type nil nil nil)
+                                                  ("std::string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [70210 70263])
+                                    ("mscb" variable
+                                       (:default-value "admin::multi_status_cb()"
+                                        :type ("admin::multi_status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [70272 70327]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [70177 70564])
+                            ("topic_label_list" function
+                               (:arguments 
+                                  ( ("scb" variable
+                                       (:default-value "admin::status_cb()"
+                                        :type ("admin::status_cb" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [71252 71294]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [71230 71439])
+                            ("connect" function (:type "void") (reparse-symbol classsubparts) [75580 85326])
+                            ("reconnect" function (:type "void") (reparse-symbol classsubparts) [85458 85505])
+                            ("close" function (:type "void") (reparse-symbol classsubparts) [85679 85725])
+                            ("private" label nil (reparse-symbol classsubparts) [85727 85735])
+                            ("admin_mqtt" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("Endpoint" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [86012 86022])
+                                    ("" variable (:type ("ep" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [86023 86026]))                                  
+                                :type ("admin_mqtt" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [85992 86058])
+                            ("private" label nil (reparse-symbol classsubparts) [86059 86067])
+                            ("public" label nil (reparse-symbol classsubparts) [86068 86075])
+                            ("ep_" variable (:type ("Endpoint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [86080 86093])
+                            ("private" label nil (reparse-symbol classsubparts) [86094 86102])
+                            ("tim_" variable (:type ("std::unique_ptr" type
+                                 (:template-specifier 
+                                    ( ("boost::asio::deadline_timer" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [86402 86452])
+                            ("connect_cb_" variable (:type ("admin::connect_cb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [86457 86487])
+                            ("close_cb_" variable (:type ("admin::close_cb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [86492 86518])
+                            ("error_cb_" variable (:type ("admin::error_cb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [86523 86549])
+                            ("user_info_cb_" variable (:type ("admin::user_info_cb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [86554 86588])
+                            ("topic_info_cb_" variable (:type ("admin::topic_info_cb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [86593 86629])
+                            ("pub_topic_user_info_cb_" variable (:type ("admin::topic_user_info_cb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [86634 86684])
+                            ("sub_topic_user_info_cb_" variable (:type ("admin::topic_user_info_cb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [86689 86739])
+                            ("label_info_cb_" variable (:type ("admin::label_info_cb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [86744 86780])
+                            ("topic_label_info_cb_" variable (:type ("admin::topic_label_info_cb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [86785 86833])
+                            ("pid2scb_" variable (:type ("pid2scb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [86838 86855])
+                            ("pid2mscb_" variable (:type ("pid2mscb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [86860 86879])
+                            ("pid2rscb_" variable (:type ("pid2rscb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [86884 86903])
+                            ("complete_uri_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [86908 86934]))                          )
+                        (reparse-symbol namespacesubparts) [558 86937]))                  
+                :type "namespace")
+                nil [410 88479]))          
+      :file "admin_mqtt.hpp"
+      :pointmax 88533
+      :fsize 88605
+      :lastmodtime '(22442 9151 973333 335000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MSGPUB_ADMIN_MQTT_HPP")
+          )
+)
+    (semanticdb-table "admin_cb.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("MSGPUB_ADMIN_CB_HPP" variable (:constant-flag t) nil [123 142])
+            ("functional" include (:system-flag t) nil [144 165])
+            ("boost/system/error_code.hpp" include (:system-flag t) nil [167 205])
+            ("msgpub/common.hpp" include (:system-flag t) nil [207 235])
+            ("msgpub/status.hpp" include (:system-flag t) nil [236 264])
+            ("msgpub" type
+               (:members 
+                  ( ("admin" type (:type "namespace") (reparse-symbol namespacesubparts) [286 3056]))                  
+                :type "namespace")
+                nil [266 3078]))          
+      :file "admin_cb.hpp"
+      :pointmax 3130
+      :fsize 3129
+      :lastmodtime '(22403 17821 603333 336000)
+      :unmatched-syntax '((punctuation 3052 . 3053) (punctuation 3051 . 3052) (semantic-list 3004 . 3051) (VOID 3000 . 3004) (punctuation 2999 . 3000) (symbol 2991 . 2999) (punctuation 2990 . 2991) (punctuation 2989 . 2990) (symbol 2986 . 2989) (punctuation 2984 . 2985) (symbol 2971 . 2983) (USING 2965 . 2970) (punctuation 2710 . 2711) (punctuation 2709 . 2710) (semantic-list 2681 . 2709) (VOID 2677 . 2681) (punctuation 2676 . 2677) (symbol 2668 . 2676) (punctuation 2667 . 2668) (punctuation 2666 . 2667) (symbol 2663 . 2666) (punctuation 2661 . 2662) (symbol 2645 . 2660) (USING 2639 . 2644) (punctuation 2505 . 2506) (punctuation 2504 . 2505) (semantic-list 2496 . 2504) (VOID 2492 . 2496) (punctuation 2491 . 2492) (symbol 2483 . 2491) (punctuation 2482 . 2483) (punctuation 2481 . 2482) (symbol 2478 . 2481) (punctuation 2476 . 2477) (symbol 2466 . 2475) (USING 2460 . 2465) (punctuation 2326 . 2327) (punctuation 2325 . 2326) (semantic-list 2300 . 2325) (VOID 2296 . 2300) (punctuation 2295 . 2296) (symbol 2287 . 2295) (punctuation 2286 . 2287) (punctuation 2285 . 2286) (symbol 2282 . 2285) (punctuation 2280 . 2281) (symbol 2260 . 2279) (USING 2254 . 2259) (punctuation 2037 . 2038) (punctuation 2036 . 2037) (semantic-list 2017 . 2036) (VOID 2013 . 2017) (punctuation 2012 . 2013) (symbol 2004 . 2012) (punctuation 2003 . 2004) (punctuation 2002 . 2003) (symbol 1999 . 2002) (punctuation 1997 . 1998) (symbol 1983 . 1996) (USING 1977 . 1982) (punctuation 1693 . 1694) (punctuation 1692 . 1693) (semantic-list 1668 . 1692) (VOID 1664 . 1668) (punctuation 1663 . 1664) (symbol 1655 . 1663) (punctuation 1654 . 1655) (punctuation 1653 . 1654) (symbol 1650 . 1653) (punctuation 1648 . 1649) (symbol 1629 . 1647) (USING 1623 . 1628) (punctuation 1460 . 1461) (punctuation 1459 . 1460) (semantic-list 1440 . 1459) (VOID 1436 . 1440) (punctuation 1435 . 1436) (symbol 1427 . 1435) (punctuation 1426 . 1427) (punctuation 1425 . 1426) (symbol 1422 . 1425) (punctuation 1420 . 1421) (symbol 1406 . 1419) (USING 1400 . 1405) (punctuation 1207 . 1208) (punctuation 1206 . 1207) (semantic-list 1187 . 1206) (VOID 1183 . 1187) (punctuation 1182 . 1183) (symbol 1174 . 1182) (punctuation 1173 . 1174) (punctuation 1172 . 1173) (symbol 1169 . 1172) (punctuation 1167 . 1168) (symbol 1153 . 1166) (USING 1147 . 1152) (punctuation 954 . 955) (punctuation 953 . 954) (semantic-list 935 . 953) (VOID 931 . 935) (punctuation 930 . 931) (symbol 922 . 930) (punctuation 921 . 922) (punctuation 920 . 921) (symbol 917 . 920) (punctuation 915 . 916) (symbol 902 . 914) (USING 896 . 901) (punctuation 707 . 708) (punctuation 706 . 707) (semantic-list 669 . 706) (VOID 665 . 669) (punctuation 664 . 665) (symbol 656 . 664) (punctuation 655 . 656) (punctuation 654 . 655) (symbol 651 . 654) (punctuation 649 . 650) (symbol 640 . 648) (USING 634 . 639) (punctuation 526 . 527) (punctuation 525 . 526) (semantic-list 523 . 525) (VOID 519 . 523) (punctuation 518 . 519) (symbol 510 . 518) (punctuation 509 . 510) (punctuation 508 . 509) (symbol 505 . 508) (punctuation 503 . 504) (symbol 494 . 502) (USING 488 . 493) (punctuation 416 . 417) (punctuation 415 . 416) (semantic-list 413 . 415) (VOID 409 . 413) (punctuation 408 . 409) (symbol 400 . 408) (punctuation 399 . 400) (punctuation 398 . 399) (symbol 395 . 398) (punctuation 393 . 394) (symbol 382 . 392) (USING 376 . 381))
+      :lexical-table 
+        '(("MSGPUB_ADMIN_CB_HPP")
+          )
+)
+    (semanticdb-table "command.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("MSGPUB_COMMAND_HPP" variable (:constant-flag t) nil [36 54])
+            ("msgpack.hpp" include (:system-flag t) nil [56 78])
+            ("msgpub" type (:type "namespace") nil [80 5662])
+            ("MSGPACK_ADD_ENUM" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("msgpub::cmd" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5701 5713]))                  
+                :type "int")
+                nil [5684 5714]))          
+      :file "command.hpp"
+      :pointmax 5745
+      :fsize 5829
+      :lastmodtime '(22424 33772 573333 333000)
+      :unmatched-syntax '((punctuation 5658 . 5659) (semantic-list 335 . 5658) (INT 331 . 334) (punctuation 330 . 331) (symbol 327 . 330) (CLASS 321 . 326) (ENUM 316 . 320))
+      :lexical-table 
+        '(("MSGPUB_COMMAND_HPP")
+          )
+)
+    (semanticdb-table "appname_label.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("MSGPUB_APPNAME_LABEL_HPP" variable (:constant-flag t) nil [127 151])
+            ("msgpack.hpp" include (:system-flag t) nil [153 175])
+            ("ostream" include (:system-flag t) nil [176 194])
+            ("msgpub" type
+               (:members 
+                  ( ("appname_label" type
+                       (:members 
+                          ( ("appname" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [286 306])
+                            ("label" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [330 348])
+                            ("appname_label" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("appname" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [407 427])
+                                    ("label" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [436 454]))                                  
+                                :type ("appname_label" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [384 520])
+                            ("MSGPACK_DEFINE" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("appname" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [540 548])
+                                    ("" variable (:type ("label" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [549 555]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [525 556]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [234 559])
+                    ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("s" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [593 609])
+                            ("al" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("appname_label" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [610 634]))                          
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [561 693])
+                    ("<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("appname_label" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [717 742])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("appname_label" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [743 768]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [695 931])
+                    ("==" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("appname_label" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [956 981])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("appname_label" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [982 1007]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [933 1080]))                  
+                :type "namespace")
+                nil [196 1083]))          
+      :file "appname_label.hpp"
+      :pointmax 1140
+      :fsize 1139
+      :lastmodtime '(22424 33772 573333 333000)
+      :unmatched-syntax '((punctuation 378 . 379) (DEFAULT 371 . 378) (punctuation 369 . 370) (semantic-list 366 . 368) (symbol 353 . 366))
+      :lexical-table 
+        '(("MSGPUB_APPNAME_LABEL_HPP")
+          )
+)
+    (semanticdb-table "websocket.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("MSGPUB_WEBSOCKET_HPP" variable (:constant-flag t) nil [38 58])
+            ("msgpub/ws_common.hpp" include nil nil [60 91])
+            ("boost/log/trivial.hpp" include (:system-flag t) nil [93 125])
+            ("boost/optional.hpp" include (:system-flag t) nil [126 155])
+            ("functional" include (:system-flag t) nil [157 178])
+            ("string" include (:system-flag t) nil [179 196])
+            ("msgpub" type
+               (:members 
+                  ( ("websocket" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [262 269])
+                            ("close_code" type (:type "class") (reparse-symbol classsubparts) [395 963])
+                            ("client::connection_ptr" variable (:type "int") (reparse-symbol classsubparts) [2690 2713])
+                            ("public" label nil (reparse-symbol classsubparts) [2714 2721])
+                            ("websocket" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("ios" variable
+                                       (:reference 1
+                                        :type ("boost::asio::io_service" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2857 2886]))                                  
+                                :type ("websocket" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2847 5161])
+                            ("connect" function
+                               (:arguments 
+                                  ( ("uri" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5611 5636])
+                                    ("open_handler" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "func_open()"
+                                        :type ("func_open" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5645 5697])
+                                    ("message_handler" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "func_message()"
+                                        :type ("func_message" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5706 5761])
+                                    ("close_handler" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "func_close()"
+                                        :type ("func_close" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5770 5823])
+                                    ("fail_handler" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "func_fail()
+#if defined(MSGPUB_USE_TLS)
+        ,
+        func_tls_init const& tls_init_handler = func_tls_init()
+#endif // MSGPUB_USE_TLS
+        "
+                                        :type ("func_fail" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5832 6020]))                                  
+                                :type ("connection" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5583 7028])
+                            ("ios" function (:type ("boost::asio::io_service" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7034 7114])
+                            ("private" label nil (reparse-symbol classsubparts) [7116 7124])
+                            ("handlers" type
+                               (:members 
+                                  ( ("open_handler" variable (:type ("func_open" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7155 7178])
+                                    ("message_handler" variable (:type ("func_message" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7187 7217])
+                                    ("close_handler" variable (:type ("func_close" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7226 7251])
+                                    ("fail_handler" variable (:type ("func_fail" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7260 7283]))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [7129 7290])
+                            ("hdl2handlers_" variable (:type ("hdl2handlers" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7440 7467])
+                            ("client_" variable (:type ("std::unique_ptr" type
+                                 (:template-specifier 
+                                    ( ("client" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [7472 7504]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [244 7507])
+                    ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("os" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7597 7614])
+                            ("cc" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("websocket::close_code" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7615 7647]))                          
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [7565 7698]))                  
+                :type "namespace")
+                nil [198 7701]))          
+      :file "websocket.hpp"
+      :pointmax 7754
+      :fsize 7838
+      :lastmodtime '(22424 33772 576666 667000)
+      :unmatched-syntax '((punctuation 7434 . 7435) (punctuation 7433 . 7434) (punctuation 7432 . 7433) (symbol 7418 . 7432) (punctuation 7417 . 7418) (punctuation 7416 . 7417) (symbol 7405 . 7416) (punctuation 7404 . 7405) (symbol 7394 . 7404) (punctuation 7393 . 7394) (punctuation 7392 . 7393) (symbol 7389 . 7392) (punctuation 7379 . 7380) (symbol 7371 . 7379) (punctuation 7361 . 7362) (symbol 7347 . 7361) (punctuation 7346 . 7347) (punctuation 7345 . 7346) (symbol 7334 . 7345) (punctuation 7324 . 7325) (symbol 7321 . 7324) (punctuation 7320 . 7321) (punctuation 7319 . 7320) (symbol 7316 . 7319) (punctuation 7314 . 7315) (symbol 7301 . 7313) (USING 7295 . 7300) (punctuation 2688 . 2689) (symbol 2677 . 2687) (USING 2671 . 2676) (punctuation 2385 . 2386) (punctuation 2384 . 2385) (semantic-list 2382 . 2384) (VOID 2378 . 2382) (punctuation 2377 . 2378) (symbol 2369 . 2377) (punctuation 2368 . 2369) (punctuation 2367 . 2368) (symbol 2364 . 2367) (punctuation 2362 . 2363) (symbol 2352 . 2361) (USING 2346 . 2351) (punctuation 2257 . 2258) (punctuation 2256 . 2257) (semantic-list 2100 . 2256) (VOID 2096 . 2100) (punctuation 2095 . 2096) (symbol 2087 . 2095) (punctuation 2086 . 2087) (punctuation 2085 . 2086) (symbol 2082 . 2085) (punctuation 2080 . 2081) (symbol 2069 . 2079) (USING 2063 . 2068) (punctuation 1303 . 1304) (punctuation 1302 . 1303) (semantic-list 1278 . 1302) (VOID 1274 . 1278) (punctuation 1273 . 1274) (symbol 1265 . 1273) (punctuation 1264 . 1265) (punctuation 1263 . 1264) (symbol 1260 . 1263) (punctuation 1258 . 1259) (symbol 1245 . 1257) (USING 1239 . 1244) (punctuation 1090 . 1091) (punctuation 1089 . 1090) (semantic-list 1087 . 1089) (VOID 1083 . 1087) (punctuation 1082 . 1083) (symbol 1074 . 1082) (punctuation 1073 . 1074) (punctuation 1072 . 1073) (symbol 1069 . 1072) (punctuation 1067 . 1068) (symbol 1057 . 1066) (USING 1051 . 1056) (punctuation 955 . 956) (number 951 . 955) (punctuation 949 . 950) (symbol 941 . 948) (punctuation 931 . 932) (number 927 . 931) (punctuation 925 . 926) (symbol 915 . 924) (punctuation 905 . 906) (number 901 . 905) (punctuation 899 . 900) (symbol 885 . 898) (punctuation 875 . 876) (number 871 . 875) (punctuation 869 . 870) (symbol 853 . 868) (punctuation 843 . 844) (number 839 . 843) (punctuation 837 . 838) (symbol 821 . 836) (punctuation 811 . 812) (number 807 . 811) (punctuation 805 . 806) (symbol 781 . 804) (punctuation 771 . 772) (number 767 . 771) (punctuation 765 . 766) (symbol 746 . 764) (punctuation 736 . 737) (number 732 . 736) (punctuation 730 . 731) (symbol 714 . 729) (punctuation 704 . 705) (number 700 . 704) (punctuation 698 . 699) (symbol 681 . 697) (punctuation 671 . 672) (number 667 . 671) (punctuation 665 . 666) (symbol 649 . 664) (punctuation 639 . 640) (number 635 . 639) (punctuation 633 . 634) (symbol 618 . 632) (punctuation 608 . 609) (number 604 . 608) (punctuation 602 . 603) (symbol 592 . 601) (punctuation 582 . 583) (number 578 . 582) (punctuation 576 . 577) (symbol 559 . 575) (punctuation 549 . 550) (number 545 . 549) (punctuation 543 . 544) (symbol 528 . 542) (punctuation 518 . 519) (number 514 . 518) (punctuation 512 . 513) (symbol 501 . 511) (punctuation 491 . 492) (number 487 . 491) (punctuation 485 . 486) (symbol 478 . 484) (punctuation 468 . 469) (number 467 . 468) (punctuation 465 . 466) (symbol 450 . 464) (punctuation 440 . 441) (number 439 . 440) (punctuation 437 . 438) (symbol 422 . 436) (punctuation 955 . 956) (number 951 . 955) (punctuation 949 . 950) (symbol 941 . 948) (punctuation 931 . 932) (number 927 . 931) (punctuation 925 . 926) (symbol 915 . 924) (punctuation 905 . 906) (number 901 . 905) (punctuation 899 . 900) (symbol 885 . 898) (punctuation 875 . 876) (number 871 . 875) (punctuation 869 . 870) (symbol 853 . 868) (punctuation 843 . 844) (number 839 . 843) (punctuation 837 . 838) (symbol 821 . 836) (punctuation 811 . 812) (number 807 . 811) (punctuation 805 . 806) (symbol 781 . 804) (punctuation 771 . 772) (number 767 . 771) (punctuation 765 . 766) (symbol 746 . 764) (punctuation 736 . 737) (number 732 . 736) (punctuation 730 . 731) (symbol 714 . 729) (punctuation 704 . 705) (number 700 . 704) (punctuation 698 . 699) (symbol 681 . 697) (punctuation 671 . 672) (number 667 . 671) (punctuation 665 . 666) (symbol 649 . 664) (punctuation 639 . 640) (number 635 . 639) (punctuation 633 . 634) (symbol 618 . 632) (punctuation 608 . 609) (number 604 . 608) (punctuation 602 . 603) (symbol 592 . 601) (punctuation 582 . 583) (number 578 . 582) (punctuation 576 . 577) (symbol 559 . 575) (punctuation 549 . 550) (number 545 . 549) (punctuation 543 . 544) (symbol 528 . 542) (punctuation 518 . 519) (number 514 . 518) (punctuation 512 . 513) (symbol 501 . 511) (punctuation 491 . 492) (number 487 . 491) (punctuation 485 . 486) (symbol 478 . 484) (punctuation 468 . 469) (number 467 . 468) (punctuation 465 . 466) (symbol 450 . 464) (punctuation 440 . 441) (number 439 . 440) (punctuation 437 . 438) (symbol 422 . 436) (ENUM 390 . 394))
+      :lexical-table 
+        '(("MSGPUB_WEBSOCKET_HPP")
+          )
+)
+    (semanticdb-table "qos.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("MSGPUB_QOS_HPP" variable (:constant-flag t) nil [118 132])
+            ("cstdint" include (:system-flag t) nil [134 152])
+            ("msgpub" type
+               (:members 
+                  ( ("qos" type
+                       (:members 
+                          ( ("at_most_once" variable
+                               (:typemodifiers ("constexpr")
+                                :default-value "0"
+                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [191 238])
+                            ("at_least_once" variable
+                               (:typemodifiers ("constexpr")
+                                :default-value "1"
+                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [239 286])
+                            ("exactly_once" variable
+                               (:typemodifiers ("constexpr")
+                                :default-value "2"
+                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [287 334]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [174 337]))                  
+                :type "namespace")
+                nil [154 357]))          
+      :file "qos.hpp"
+      :pointmax 404
+      :fsize 403
+      :lastmodtime '(22403 17821 606666 669000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MSGPUB_QOS_HPP")
+          )
+))
+  :file "!home!nakao!github!iotc_msgpub!api!cpp!msgpub!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

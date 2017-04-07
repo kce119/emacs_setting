@@ -1,0 +1,33 @@
+;; Object Downloads/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Downloads/"
+  :tables
+  (list
+    (semanticdb-table "brokers_connect.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("utility.hpp" include nil nil [1 23])
+            ("utility_user.hpp" include nil nil [24 51])
+            ("utility_admin.hpp" include nil nil [52 80])
+            ("utility_broker.hpp" include nil nil [81 110])
+            ("mqtt_server_impl.hpp" include nil nil [112 143])
+            ("boost/asio.hpp" include (:system-flag t) nil [144 169])
+            ("as" type
+               (:kind alias
+                :members 
+                  ( ("boost::asio" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [171 198])
+            ("BOOST_AUTO_TEST_CASE" function
+               (:arguments 
+                  ( ("" variable (:type ("sub_after_b_con" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19723 19739]))                  
+                :type "int")
+                nil [19702 27972]))          
+      :file "brokers_connect.cpp"
+      :pointmax 28002
+      :fsize 28001
+      :lastmodtime '(22491 20978 570000 2000)
+      :unmatched-syntax nil))
+  :file "!home!nakao!Downloads!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

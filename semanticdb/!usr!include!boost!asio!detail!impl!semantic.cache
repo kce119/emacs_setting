@@ -1,0 +1,149 @@
+;; Object impl/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "impl/"
+  :tables
+  (list
+    (semanticdb-table "strand_service.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ASIO_DETAIL_IMPL_STRAND_SERVICE_HPP" variable (:constant-flag t) nil [372 413])
+            ("boost/asio/detail/addressof.hpp" include (:system-flag t) nil [524 566])
+            ("boost/asio/detail/call_stack.hpp" include (:system-flag t) nil [567 610])
+            ("boost/asio/detail/completion_handler.hpp" include (:system-flag t) nil [611 662])
+            ("boost/asio/detail/fenced_block.hpp" include (:system-flag t) nil [663 708])
+            ("boost/asio/detail/handler_alloc_helpers.hpp" include (:system-flag t) nil [709 763])
+            ("boost/asio/detail/handler_invoke_helpers.hpp" include (:system-flag t) nil [764 819])
+            ("boost/asio/detail/push_options.hpp" include (:system-flag t) nil [821 866])
+            ("boost" type
+               (:members 
+                  ( ("asio" type
+                       (:members 
+                          ( ("detail" type
+                               (:members 
+                                  ( ("strand_impl" function
+                                       (:constructor-flag t
+                                        :parent "strand_service::strand_impl"
+                                        :typemodifiers ("inline")
+                                        :type ("strand_impl" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [923 1040])
+                                    ("on_dispatch_exit" type
+                                       (:parent "strand_service"
+                                        :members 
+                                          ( ("io_service_" variable
+                                               (:pointer 1
+                                                :type ("io_service_impl" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1086 1115])
+                                            ("impl_" variable
+                                               (:pointer 1
+                                                :type ("strand_impl" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1118 1137])
+                                            ("on_dispatch_exit" function
+                                               (:destructor-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1141 1431]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [1042 1434])
+                                    ("dispatch" function
+                                       (:template 
+                                          ( ("Handler" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("impl" variable
+                                               (:reference 1
+                                                :type ("strand_service::implementation_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1494 1536])
+                                            ("handler" variable
+                                               (:reference 1
+                                                :type ("Handler" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1541 1558]))                                          
+                                        :parent "strand_service")
+                                        (reparse-symbol namespacesubparts) [1436 2655])
+                                    ("post" function
+                                       (:template 
+                                          ( ("Handler" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("impl" variable
+                                               (:reference 1
+                                                :type ("strand_service::implementation_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2789 2831])
+                                            ("handler" variable
+                                               (:reference 1
+                                                :type ("Handler" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2836 2853]))                                          
+                                        :parent "strand_service")
+                                        (reparse-symbol namespacesubparts) [2735 3348]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [903 3351]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [886 3373]))                  
+                :type "namespace")
+                nil [868 3393])
+            ("boost/asio/detail/pop_options.hpp" include (:system-flag t) nil [3414 3458]))          
+      :file "strand_service.hpp"
+      :pointmax 3512
+      :fsize 3511
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ASIO_DETAIL_IMPL_STRAND_SERVICE_HPP")
+          )
+)
+    (semanticdb-table "task_io_service.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ASIO_DETAIL_IMPL_TASK_IO_SERVICE_HPP" variable (:constant-flag t) nil [375 417])
+            ("boost/asio/detail/addressof.hpp" include (:system-flag t) nil [528 570])
+            ("boost/asio/detail/completion_handler.hpp" include (:system-flag t) nil [571 622])
+            ("boost/asio/detail/fenced_block.hpp" include (:system-flag t) nil [623 668])
+            ("boost/asio/detail/handler_alloc_helpers.hpp" include (:system-flag t) nil [669 723])
+            ("boost/asio/detail/handler_cont_helpers.hpp" include (:system-flag t) nil [724 777])
+            ("boost/asio/detail/handler_invoke_helpers.hpp" include (:system-flag t) nil [778 833])
+            ("boost/asio/detail/push_options.hpp" include (:system-flag t) nil [835 880])
+            ("boost" type
+               (:members 
+                  ( ("asio" type
+                       (:members 
+                          ( ("detail" type
+                               (:members 
+                                  ( ("dispatch" function
+                                       (:template 
+                                          ( ("Handler" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("handler" variable
+                                               (:reference 1
+                                                :type ("Handler" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [996 1013]))                                          
+                                        :parent "task_io_service")
+                                        (reparse-symbol namespacesubparts) [937 1595])
+                                    ("post" function
+                                       (:template 
+                                          ( ("Handler" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("handler" variable
+                                               (:reference 1
+                                                :type ("Handler" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1652 1669]))                                          
+                                        :parent "task_io_service")
+                                        (reparse-symbol namespacesubparts) [1597 2180]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [917 2183]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [900 2205]))                  
+                :type "namespace")
+                nil [882 2225])
+            ("boost/asio/detail/pop_options.hpp" include (:system-flag t) nil [2246 2290]))          
+      :file "task_io_service.hpp"
+      :pointmax 2345
+      :fsize 2344
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ASIO_DETAIL_IMPL_TASK_IO_SERVICE_HPP")
+          )
+))
+  :file "!usr!include!boost!asio!detail!impl!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

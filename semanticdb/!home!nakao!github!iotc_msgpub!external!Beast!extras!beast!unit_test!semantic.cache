@@ -1,0 +1,155 @@
+;; Object unit_test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "unit_test/"
+  :tables
+  (list
+    (semanticdb-table "match.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BEAST_UNIT_TEST_MATCH_HPP" variable (:constant-flag t) nil [282 307])
+            ("beast/unit_test/suite_info.hpp" include (:system-flag t) nil [309 350])
+            ("string" include (:system-flag t) nil [351 368])
+            ("beast" type
+               (:members 
+                  ( ("unit_test" type
+                       (:members 
+                          ( ("selector" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [466 473])
+                                    ("mode_t" type
+                                       (:members 
+                                          ( ("all" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [548 552])
+                                            ("automatch" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [607 617])
+                                            ("suite" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [653 659])
+                                            ("library" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [697 705])
+                                            ("module" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [760 767])
+                                            ("none" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [820 830]))                                          
+                                        :type "enum")
+                                        (reparse-symbol classsubparts) [478 831])
+                                    ("private" label nil (reparse-symbol classsubparts) [833 841])
+                                    ("mode_" variable (:type ("mode_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [846 859])
+                                    ("pat_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [864 881])
+                                    ("library_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [886 907])
+                                    ("public" label nil (reparse-symbol classsubparts) [909 916])
+                                    ("selector" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :typemodifiers ("explicit")
+                                        :arguments 
+                                          ( ("mode" variable (:type ("mode_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [970 982])
+                                            ("pattern" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :default-value "\"\""
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [983 1015]))                                          
+                                        :type ("selector" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [948 1016])
+                                    ("()" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("suite_info" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1069 1089]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1049 1090]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [449 1093])
+                            ("selector" function
+                               (:template 
+                                  ( ("" type nil nil nil))                                  
+                                :type ("selector" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("mode" variable (:type ("mode_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1212 1224])
+                                    ("pattern" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1225 1252]))                                  
+                                :parent "selector"
+                                :constructor-flag t)
+                                (reparse-symbol namespacesubparts) [1177 1361])
+                            ("()" function
+                               (:template 
+                                  ( ("" type nil nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("suite_info" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1405 1425]))                                  
+                                :parent "selector"
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [1363 2292])
+                            ("match_auto" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3085 3109]))                                  
+                                :type ("selector" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3058 3161])
+                            ("match_all" function
+                               (:typemodifiers ("inline")
+                                :type ("selector" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3232 3299])
+                            ("match_suite" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3387 3411]))                                  
+                                :type ("selector" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3359 3459])
+                            ("match_library" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3556 3580]))                                  
+                                :type ("selector" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3526 3630]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [388 3633]))                  
+                :type "namespace")
+                nil [370 3648]))          
+      :file "match.hpp"
+      :pointmax 3666
+      :fsize 3665
+      :lastmodtime '(22486 26367 776666 669000)
+      :unmatched-syntax '((punctuation 1043 . 1044) (VOID 1039 . 1043) (punctuation 1037 . 1038) (CLASS 1031 . 1036) (punctuation 1030 . 1031) (TEMPLATE 1022 . 1030) (punctuation 942 . 943) (VOID 938 . 942) (punctuation 936 . 937) (CLASS 930 . 935) (punctuation 929 . 930) (TEMPLATE 921 . 929))
+      :lexical-table 
+        '(("BEAST_UNIT_TEST_MATCH_HPP")
+          )
+))
+  :file "!home!nakao!github!iotc_msgpub!external!Beast!extras!beast!unit_test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,107 @@
+;; Object detail/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "detail/"
+  :tables
+  (list
+    (semanticdb-table "at_impl.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FUSION_AT_IMPL_05042005_0741" variable (:constant-flag t) nil [412 440])
+            ("boost/fusion/support/config.hpp" include (:system-flag t) nil [442 484])
+            ("boost/fusion/support/detail/access.hpp" include (:system-flag t) nil [485 534])
+            ("boost/fusion/container/vector/detail/value_at_impl.hpp" include (:system-flag t) nil [535 600])
+            ("boost/static_assert.hpp" include (:system-flag t) nil [601 635])
+            ("boost" type
+               (:members 
+                  ( ("fusion" type
+                       (:members 
+                          ( ("vector_tag" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [678 696])
+                            ("extension" type
+                               (:members 
+                                  ( ("at_impl" type
+                                       (:template 
+                                          ( ("Tag" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [736 783])
+                                    ("at_impl" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("apply" type
+                                               (:template 
+                                                  ( ("Sequence" type (:type "class") nil nil)
+                                                    ("N" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("element" variable (:type ("apply::type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1011 1044])
+                                                    ("type" type
+                                                       (:typedef ("detail::ref_result::type" type (:type "class") nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [1061 1117])
+                                                    ("call" function
+                                                       (:typemodifiers ("static")
+                                                        :arguments 
+                                                          ( ("v" variable
+                                                               (:reference 1
+                                                                :type ("Sequence" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1225 1237]))                                                          
+                                                        :type ("type" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1192 1393]))                                                  )
+                                                (reparse-symbol classsubparts) [862 1408])
+                                            ("apply" type
+                                               (:template 
+                                                  ( ("Sequence" type (:type "class") nil nil)
+                                                    ("N" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("element" variable (:type ("apply::type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1591 1624])
+                                                    ("type" type
+                                                       (:typedef ("detail::cref_result::type" type (:type "class") nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [1641 1698])
+                                                    ("call" function
+                                                       (:typemodifiers ("static")
+                                                        :arguments 
+                                                          ( ("v" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("Sequence" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1806 1824]))                                                          
+                                                        :type ("type" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1773 1980]))                                                  
+                                                :template-specifier 
+                                                  ( ("Sequence" type (:constant-flag t) nil nil)
+                                                    ("N" type nil nil nil))                                                  )
+                                                (reparse-symbol classsubparts) [1422 1995]))                                          
+                                        :template-specifier 
+                                          ( ("vector_tag" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [793 2006]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [702 2012]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [655 2014]))                  
+                :type "namespace")
+                nil [637 2015]))          
+      :file "at_impl.hpp"
+      :pointmax 2024
+      :fsize 2023
+      :lastmodtime '(22324 21865 0 0)
+      :unmatched-syntax '((symbol 1732 . 1756) (symbol 1716 . 1731) (TEMPLATE 1582 . 1590) (punctuation 1581 . 1582) (punctuation 1580 . 1581) (punctuation 1579 . 1580) (symbol 1569 . 1579) (punctuation 1568 . 1569) (symbol 1555 . 1568) (TYPENAME 1546 . 1554) (TYPEDEF 1538 . 1545) (symbol 1151 . 1175) (symbol 1135 . 1150) (TEMPLATE 1002 . 1010) (punctuation 1001 . 1002) (punctuation 1000 . 1001) (punctuation 999 . 1000) (symbol 989 . 999) (punctuation 988 . 989) (symbol 975 . 988) (TYPENAME 966 . 974) (TYPEDEF 958 . 965))
+      :lexical-table 
+        '(("FUSION_AT_IMPL_05042005_0741")
+          )
+)
+    (semanticdb-table "value_at_impl.hpp"
+      :file "value_at_impl.hpp"
+      :fsize 1921
+      :lastmodtime '(22324 21865 0 0))
+    (semanticdb-table "config.hpp"
+      :file "config.hpp"
+      :fsize 1288
+      :lastmodtime '(22324 21865 0 0)))
+  :file "!usr!include!boost!fusion!container!vector!detail!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,43 @@
+;; Object mqtt/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mqtt/"
+  :tables
+  (list
+    (semanticdb-table "hexdump.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("MQTT_HEXDUMP_HPP" variable (:constant-flag t) nil [234 250])
+            ("ostream" include (:system-flag t) nil [252 270])
+            ("iomanip" include (:system-flag t) nil [271 289])
+            ("mqtt" type
+               (:members 
+                  ( ("hexdump" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("os" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [351 368])
+                            ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [369 380]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [309 525]))                  
+                :type "namespace")
+                nil [291 528]))          
+      :file "hexdump.hpp"
+      :pointmax 575
+      :fsize 574
+      :lastmodtime '(22417 53451 796666 669000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MQTT_HEXDUMP_HPP")
+          )
+))
+  :file "!home!nakao!github!iotc_mqtt_bench!src!external!mqtt_client_cpp!include!mqtt!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

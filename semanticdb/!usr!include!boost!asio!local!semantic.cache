@@ -1,0 +1,64 @@
+;; Object local/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "local/"
+  :tables
+  (list
+    (semanticdb-table "basic_endpoint.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ASIO_LOCAL_BASIC_ENDPOINT_HPP" variable (:constant-flag t) nil [429 464])
+            ("boost/asio/detail/config.hpp" include (:system-flag t) nil [575 614]))          
+      :file "basic_endpoint.hpp"
+      :pointmax 5717
+      :fsize 5716
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ASIO_LOCAL_BASIC_ENDPOINT_HPP")
+          )
+)
+    (semanticdb-table "connect_pair.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ASIO_LOCAL_CONNECT_PAIR_HPP" variable (:constant-flag t) nil [348 381])
+            ("boost/asio/detail/config.hpp" include (:system-flag t) nil [492 531]))          
+      :file "connect_pair.hpp"
+      :pointmax 3392
+      :fsize 3391
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ASIO_LOCAL_CONNECT_PAIR_HPP")
+          )
+)
+    (semanticdb-table "datagram_protocol.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ASIO_LOCAL_DATAGRAM_PROTOCOL_HPP" variable (:constant-flag t) nil [363 401])
+            ("boost/asio/detail/config.hpp" include (:system-flag t) nil [512 551]))          
+      :file "datagram_protocol.hpp"
+      :pointmax 1991
+      :fsize 1990
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ASIO_LOCAL_DATAGRAM_PROTOCOL_HPP")
+          )
+)
+    (semanticdb-table "stream_protocol.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ASIO_LOCAL_STREAM_PROTOCOL_HPP" variable (:constant-flag t) nil [357 393])
+            ("boost/asio/detail/config.hpp" include (:system-flag t) nil [504 543]))          
+      :file "stream_protocol.hpp"
+      :pointmax 2336
+      :fsize 2335
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ASIO_LOCAL_STREAM_PROTOCOL_HPP")
+          )
+))
+  :file "!usr!include!boost!asio!local!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

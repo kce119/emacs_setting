@@ -1,0 +1,18 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("main" function (:type "int") nil [22 195]))          
+      :file "main.cpp"
+      :pointmax 196
+      :fsize 195
+      :lastmodtime '(22701 14520 500169 412000)
+      :unmatched-syntax nil))
+  :file "!home!nakao!work!my_reference!etc!decltype!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

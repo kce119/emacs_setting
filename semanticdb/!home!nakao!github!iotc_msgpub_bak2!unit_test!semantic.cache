@@ -1,0 +1,33 @@
+;; Object unit_test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "unit_test/"
+  :tables
+  (list
+    (semanticdb-table "brokers_connect.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("utility.hpp" include nil nil [1 23])
+            ("mqtt_server_impl.hpp" include nil nil [25 56])
+            ("as" type
+               (:kind alias
+                :members 
+                  ( ("boost::asio" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [58 85])
+            ("BOOST_AUTO_TEST_CASE" function
+               (:arguments 
+                  ( ("" variable (:type ("connect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [146 154]))                  
+                :type "int")
+                nil [125 2111]))          
+      :file "brokers_connect.cpp"
+      :pointmax 2141
+      :fsize 2140
+      :lastmodtime '(22454 53026 29999 999000)
+      :unmatched-syntax '((semantic-list 2138 . 2140) (symbol 2113 . 2138) (semantic-list 108 . 123) (symbol 87 . 108)))
+    (semanticdb-table "utility.hpp"
+      :file "utility.hpp"
+      :fsize 36598
+      :lastmodtime '(22458 29653 393333 336000)))
+  :file "!home!nakao!github!iotc_msgpub_bak2!unit_test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

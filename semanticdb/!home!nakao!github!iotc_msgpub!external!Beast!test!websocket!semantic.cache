@@ -1,0 +1,430 @@
+;; Object websocket/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "websocket/"
+  :tables
+  (list
+    (semanticdb-table "websocket_async_echo_server.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BEAST_WEBSOCKET_ASYNC_ECHO_PEER_H_INCLUDED" variable (:constant-flag t) nil [299 341])
+            ("beast/core/placeholders.hpp" include (:system-flag t) nil [343 381])
+            ("beast/core/streambuf.hpp" include (:system-flag t) nil [382 417])
+            ("beast/websocket.hpp" include (:system-flag t) nil [418 448])
+            ("boost/optional.hpp" include (:system-flag t) nil [449 478])
+            ("functional" include (:system-flag t) nil [479 500])
+            ("iostream" include (:system-flag t) nil [501 520])
+            ("memory" include (:system-flag t) nil [521 538])
+            ("thread" include (:system-flag t) nil [539 556])
+            ("beast" type
+               (:members 
+                  ( ("websocket" type
+                       (:members 
+                          ( ("async_echo_server" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [673 680])
+                                    ("boost::asio::ip::tcp::endpoint" variable (:type "int") (reparse-symbol classsubparts) [707 738])
+                                    ("boost::asio::ip::address" variable (:type "int") (reparse-symbol classsubparts) [764 789])
+                                    ("boost::asio::ip::tcp::socket" variable (:type "int") (reparse-symbol classsubparts) [814 843])
+                                    ("private" label nil (reparse-symbol classsubparts) [845 853])
+                                    ("log_" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [858 876])
+                                    ("ios_" variable (:type ("boost::asio::io_service" type (:type "class") nil nil)) (reparse-symbol classsubparts) [881 910])
+                                    ("sock_" variable (:type ("socket_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [915 933])
+                                    ("acceptor_" variable (:type ("boost::asio::ip::tcp::acceptor" type (:type "class") nil nil)) (reparse-symbol classsubparts) [938 979])
+                                    ("thread_" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("std::thread" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [984 1017])
+                                    ("public" label nil (reparse-symbol classsubparts) [1019 1026])
+                                    ("async_echo_server" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("server" variable (:type "bool") (reparse-symbol arg-sub-list) [1049 1061])
+                                            ("ep" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("endpoint_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1074 1098])
+                                            ("threads" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1099 1119]))                                          
+                                        :type ("async_echo_server" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1031 2027])
+                                    ("async_echo_server" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2033 2206])
+                                    ("local_endpoint" function
+                                       (:methodconst-flag t
+                                        :type ("endpoint_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2212 2307])
+                                    ("private" label nil (reparse-symbol classsubparts) [2309 2317])
+                                    ("Peer" type
+                                       (:members 
+                                          ( ("data" type
+                                               (:members 
+                                                  ( ("log" variable (:type "bool") (reparse-symbol classsubparts) [2381 2390])
+                                                    ("state" variable
+                                                       (:default-value "0"
+                                                        :type "int")
+                                                        (reparse-symbol classsubparts) [2403 2417])
+                                                    ("ep" variable (:type ("boost::optional" type
+                                                         (:template-specifier 
+                                                            ( ("endpoint_type" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [2430 2464])
+                                                    ("ws" variable (:type ("stream" type
+                                                         (:template-specifier 
+                                                            ( ("socket_type" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [2477 2500])
+                                                    ("strand" variable (:type ("boost::asio::io_service::strand" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2513 2552])
+                                                    ("op" variable (:type ("opcode" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2565 2575])
+                                                    ("db" variable (:type ("beast::streambuf" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2588 2608])
+                                                    ("id" variable (:type "int") (reparse-symbol classsubparts) [2621 2628])
+                                                    ("data" function
+                                                       (:constructor-flag t
+                                                        :arguments 
+                                                          ( ("log_" variable (:type "bool") (reparse-symbol arg-sub-list) [2647 2657])
+                                                            ("" variable
+                                                               (:reference 1
+                                                                :type ("socket_type" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [2658 2671])
+                                                            ("" variable (:type ("sock_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2672 2678]))                                                          
+                                                        :type ("data" type (:type "struct") nil nil))
+                                                        (reparse-symbol classsubparts) [2642 2968])
+                                                    ("data" function
+                                                       (:constructor-flag t
+                                                        :arguments 
+                                                          ( ("log_" variable (:type "bool") (reparse-symbol arg-sub-list) [2987 2997])
+                                                            ("" variable
+                                                               (:reference 1
+                                                                :type ("socket_type" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [2998 3011])
+                                                            ("" variable (:type ("sock_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3012 3018])
+                                                            ("ep_" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("endpoint_type" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [3039 3064]))                                                          
+                                                        :type ("data" type (:type "struct") nil nil))
+                                                        (reparse-symbol classsubparts) [2982 3380]))                                                  
+                                                :type "struct")
+                                                (reparse-symbol classsubparts) [2347 3391])
+                                            ("d_" variable (:type ("std::shared_ptr" type
+                                                 (:template-specifier 
+                                                    ( ("data" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [3401 3426])
+                                            ("public" label nil (reparse-symbol classsubparts) [3432 3439])
+                                            ("identity" type
+                                               (:members 
+                                                  ( ("()" function
+                                                       (:template 
+                                                          ( ("Body" type (:type "class") nil nil)
+                                                            ("Headers" type (:type "class") nil nil))                                                          
+                                                        :type "void"
+                                                        :arguments 
+                                                          ( ("req" variable
+                                                               (:reference 1
+                                                                :type ("http::message" type
+                                                                     (:template-specifier 
+                                                                        ( ("true" type nil nil nil)
+                                                                          ("Body" type nil nil nil)
+                                                                          ("Headers" type nil nil nil))                                                                        
+                                                                      :type "class")
+                                                                      nil nil))
+                                                                (reparse-symbol arg-sub-list) [3721 3761]))                                                          
+                                                        :operator-flag t)
+                                                        (reparse-symbol classsubparts) [3645 3861])
+                                                    ("()" function
+                                                       (:template 
+                                                          ( ("Body" type (:type "class") nil nil)
+                                                            ("Headers" type (:type "class") nil nil))                                                          
+                                                        :type "void"
+                                                        :arguments 
+                                                          ( ("resp" variable
+                                                               (:reference 1
+                                                                :type ("http::message" type
+                                                                     (:template-specifier 
+                                                                        ( ("false" type nil nil nil)
+                                                                          ("Body" type nil nil nil)
+                                                                          ("Headers" type nil nil nil))                                                                        
+                                                                      :type "class")
+                                                                      nil nil))
+                                                                (reparse-symbol arg-sub-list) [3951 3993]))                                                          
+                                                        :operator-flag t)
+                                                        (reparse-symbol classsubparts) [3875 4090]))                                                  
+                                                :type "struct")
+                                                (reparse-symbol classsubparts) [3607 4101])
+                                            ("Peer" function
+                                               (:constructor-flag t
+                                                :typemodifiers ("explicit")
+                                                :arguments 
+                                                  ( ("log" variable (:type "bool") (reparse-symbol arg-sub-list) [4165 4174])
+                                                    ("" variable
+                                                       (:reference 1
+                                                        :type ("socket_type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4175 4188])
+                                                    ("" variable (:type ("sock" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4189 4194])
+                                                    ("" variable
+                                                       (:reference 1
+                                                        :type ("Args" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4195 4201])
+                                                    ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4205 4210]))                                                  
+                                                :type ("Peer" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [4143 4536])
+                                            ("run" function (:type "void") (reparse-symbol classsubparts) [4546 4876])
+                                            ("match" function
+                                               (:template 
+                                                  ( ("DynamicBuffer" type (:type "class") nil nil)
+                                                    ("std::size_t" type (:typevar "N") nil nil))                                                  
+                                                :type "bool"
+                                                :arguments 
+                                                  ( ("db" variable
+                                                       (:reference 1
+                                                        :type ("DynamicBuffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4973 4991])
+                                                    ("" variable
+                                                       (:constant-flag t
+                                                        :type "char")
+                                                        (reparse-symbol arg-sub-list) [4992 5006]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [4886 5423])
+                                            ("()" function
+                                               (:operator-flag t
+                                                :arguments 
+                                                  ( ("ec" variable (:type ("error_code" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5449 5463])
+                                                    ("" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5464 5476]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [5433 5521])
+                                            ("()" function
+                                               (:operator-flag t
+                                                :arguments 
+                                                  ( ("ec" variable (:type ("error_code" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5547 5561]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [5531 8302])
+                                            ("private" label nil (reparse-symbol classsubparts) [8308 8316])
+                                            ("fail" function
+                                               (:arguments 
+                                                  ( ("ec" variable (:type ("error_code" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8343 8357])
+                                                    ("what" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8358 8375]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [8325 8636]))                                          
+                                        :type "class")
+                                        (reparse-symbol classsubparts) [2322 8643])
+                                    ("fail" function
+                                       (:arguments 
+                                          ( ("ec" variable (:type ("error_code" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8663 8677])
+                                            ("what" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8678 8695]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8649 8808])
+                                    ("maybe_throw" function
+                                       (:arguments 
+                                          ( ("ec" variable (:type ("error_code" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8835 8849])
+                                            ("what" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8850 8867]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8814 8964])
+                                    ("on_accept" function
+                                       (:arguments 
+                                          ( ("ec" variable (:type ("error_code" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8989 9003]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8970 9411]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [647 9414]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [576 9417]))                  
+                :type "namespace")
+                nil [558 9432]))          
+      :file "websocket_async_echo_server.hpp"
+      :pointmax 9450
+      :fsize 9449
+      :lastmodtime '(22486 26367 786666 668000)
+      :unmatched-syntax '((semantic-list 5006 . 5009) (semantic-list 5002 . 5006) (punctuation 4203 . 4204) (punctuation 4202 . 4203) (punctuation 4201 . 4202) (punctuation 4200 . 4201) (punctuation 4187 . 4188) (punctuation 4133 . 4134) (symbol 4129 . 4133) (punctuation 4127 . 4128) (punctuation 4126 . 4127) (punctuation 4125 . 4126) (CLASS 4120 . 4125) (punctuation 4119 . 4120) (TEMPLATE 4111 . 4119) (punctuation 3596 . 3597) (DELETE 3590 . 3596) (punctuation 3588 . 3589) (semantic-list 3574 . 3587) (punctuation 3573 . 3574) (OPERATOR 3565 . 3573) (punctuation 3563 . 3564) (symbol 3559 . 3563) (punctuation 3549 . 3550) (DELETE 3543 . 3549) (punctuation 3541 . 3542) (semantic-list 3532 . 3540) (punctuation 3531 . 3532) (OPERATOR 3523 . 3531) (punctuation 3538 . 3539) (punctuation 3521 . 3522) (symbol 3517 . 3521) (punctuation 3538 . 3539) (punctuation 3507 . 3508) (DEFAULT 3500 . 3507) (punctuation 3498 . 3499) (semantic-list 3484 . 3497) (symbol 3480 . 3484) (punctuation 3470 . 3471) (DEFAULT 3463 . 3470) (punctuation 3461 . 3462) (semantic-list 3452 . 3460) (symbol 3448 . 3452) (punctuation 3458 . 3459) (punctuation 3010 . 3011) (punctuation 2670 . 2671) (punctuation 3010 . 3011) (punctuation 2670 . 2671) (semantic-list 5006 . 5009) (semantic-list 5002 . 5006) (punctuation 4203 . 4204) (punctuation 4202 . 4203) (punctuation 4201 . 4202) (punctuation 4200 . 4201) (punctuation 4187 . 4188) (punctuation 4133 . 4134) (symbol 4129 . 4133) (punctuation 4127 . 4128) (punctuation 4126 . 4127) (punctuation 4125 . 4126) (CLASS 4120 . 4125) (punctuation 4119 . 4120) (TEMPLATE 4111 . 4119) (punctuation 3596 . 3597) (DELETE 3590 . 3596) (punctuation 3588 . 3589) (semantic-list 3574 . 3587) (punctuation 3573 . 3574) (OPERATOR 3565 . 3573) (punctuation 3563 . 3564) (symbol 3559 . 3563) (punctuation 3549 . 3550) (DELETE 3543 . 3549) (punctuation 3541 . 3542) (semantic-list 3532 . 3540) (punctuation 3531 . 3532) (OPERATOR 3523 . 3531) (punctuation 3538 . 3539) (punctuation 3521 . 3522) (symbol 3517 . 3521) (punctuation 3538 . 3539) (punctuation 3507 . 3508) (DEFAULT 3500 . 3507) (punctuation 3498 . 3499) (semantic-list 3484 . 3497) (symbol 3480 . 3484) (punctuation 3470 . 3471) (DEFAULT 3463 . 3470) (punctuation 3461 . 3462) (semantic-list 3452 . 3460) (symbol 3448 . 3452) (punctuation 3458 . 3459) (punctuation 3010 . 3011) (punctuation 2670 . 2671) (punctuation 3010 . 3011) (punctuation 2670 . 2671) (punctuation 812 . 813) (symbol 800 . 811) (USING 794 . 799) (punctuation 762 . 763) (symbol 749 . 761) (USING 743 . 748) (punctuation 705 . 706) (symbol 691 . 704) (USING 685 . 690))
+      :lexical-table 
+        '(("BEAST_WEBSOCKET_ASYNC_ECHO_PEER_H_INCLUDED")
+          )
+)
+    (semanticdb-table "websocket_sync_echo_server.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BEAST_WEBSOCKET_SYNC_ECHO_PEER_H_INCLUDED" variable (:constant-flag t) nil [298 339])
+            ("beast/core/streambuf.hpp" include (:system-flag t) nil [341 376])
+            ("beast/websocket.hpp" include (:system-flag t) nil [377 407])
+            ("boost/optional.hpp" include (:system-flag t) nil [408 437])
+            ("functional" include (:system-flag t) nil [438 459])
+            ("iostream" include (:system-flag t) nil [460 479])
+            ("memory" include (:system-flag t) nil [480 497])
+            ("thread" include (:system-flag t) nil [498 515])
+            ("beast" type
+               (:members 
+                  ( ("websocket" type
+                       (:members 
+                          ( ("sync_echo_server" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [630 637])
+                                    ("boost::asio::ip::tcp::endpoint" variable (:type "int") (reparse-symbol classsubparts) [664 695])
+                                    ("boost::asio::ip::address" variable (:type "int") (reparse-symbol classsubparts) [721 746])
+                                    ("boost::asio::ip::tcp::socket" variable (:type "int") (reparse-symbol classsubparts) [771 800])
+                                    ("private" label nil (reparse-symbol classsubparts) [802 810])
+                                    ("log_" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [815 833])
+                                    ("ios_" variable (:type ("boost::asio::io_service" type (:type "class") nil nil)) (reparse-symbol classsubparts) [838 867])
+                                    ("sock_" variable (:type ("socket_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [872 890])
+                                    ("acceptor_" variable (:type ("boost::asio::ip::tcp::acceptor" type (:type "class") nil nil)) (reparse-symbol classsubparts) [895 936])
+                                    ("thread_" variable (:type ("std::thread" type (:type "class") nil nil)) (reparse-symbol classsubparts) [941 961])
+                                    ("public" label nil (reparse-symbol classsubparts) [963 970])
+                                    ("sync_echo_server" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("server" variable (:type "bool") (reparse-symbol arg-sub-list) [992 1004])
+                                            ("ep" variable (:type ("endpoint_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1005 1022]))                                          
+                                        :type ("sync_echo_server" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [975 1656])
+                                    ("sync_echo_server" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1662 1805])
+                                    ("local_endpoint" function
+                                       (:methodconst-flag t
+                                        :type ("endpoint_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1811 1906])
+                                    ("private" label nil (reparse-symbol classsubparts) [1908 1916])
+                                    ("fail" function
+                                       (:arguments 
+                                          ( ("ec" variable (:type ("error_code" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1935 1949])
+                                            ("what" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1950 1967]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1921 2080])
+                                    ("fail" function
+                                       (:arguments 
+                                          ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [2100 2107])
+                                            ("ec" variable (:type ("error_code" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2108 2122])
+                                            ("what" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2123 2140]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2086 2289])
+                                    ("maybe_throw" function
+                                       (:arguments 
+                                          ( ("ec" variable (:type ("error_code" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2316 2330])
+                                            ("what" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2331 2348]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2295 2445])
+                                    ("lambda" type
+                                       (:members 
+                                          ( ("id" variable (:type "int") (reparse-symbol classsubparts) [2479 2486])
+                                            ("self" variable (:type ("sync_echo_server" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2495 2518])
+                                            ("work" variable (:type ("boost::asio::io_service::work" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2527 2562])
+                                            ("sock" variable (:type ("socket_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2686 2703])
+                                            ("lambda" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("id_" variable (:type "int") (reparse-symbol arg-sub-list) [2720 2728])
+                                                    ("self_" variable
+                                                       (:reference 1
+                                                        :type ("sync_echo_server" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2729 2753])
+                                                    ("" variable
+                                                       (:reference 1
+                                                        :type ("socket_type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2770 2783])
+                                                    ("" variable (:type ("sock_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2784 2790]))                                                  
+                                                :type ("lambda" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [2713 2938])
+                                            ("()" function
+                                               (:operator-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [2948 3032]))                                          
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [2451 3039])
+                                    ("on_accept" function
+                                       (:arguments 
+                                          ( ("ec" variable (:type ("error_code" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3064 3078]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3045 3447])
+                                    ("identity" type
+                                       (:members 
+                                          ( ("()" function
+                                               (:template 
+                                                  ( ("Body" type (:type "class") nil nil)
+                                                    ("Headers" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("req" variable
+                                                       (:reference 1
+                                                        :type ("http::message" type
+                                                             (:template-specifier 
+                                                                ( ("true" type nil nil nil)
+                                                                  ("Body" type nil nil nil)
+                                                                  ("Headers" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [3551 3591]))                                                  
+                                                :operator-flag t)
+                                                (reparse-symbol classsubparts) [3483 3678])
+                                            ("()" function
+                                               (:template 
+                                                  ( ("Body" type (:type "class") nil nil)
+                                                    ("Headers" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("resp" variable
+                                                       (:reference 1
+                                                        :type ("http::message" type
+                                                             (:template-specifier 
+                                                                ( ("false" type nil nil nil)
+                                                                  ("Body" type nil nil nil)
+                                                                  ("Headers" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [3756 3798]))                                                  
+                                                :operator-flag t)
+                                                (reparse-symbol classsubparts) [3688 3882]))                                          
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [3453 3889])
+                                    ("match" function
+                                       (:template 
+                                          ( ("DynamicBuffer" type (:type "class") nil nil)
+                                            ("std::size_t" type (:typevar "N") nil nil))                                          
+                                        :type "bool"
+                                        :arguments 
+                                          ( ("db" variable
+                                               (:reference 1
+                                                :type ("DynamicBuffer" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3970 3988])
+                                            ("" variable
+                                               (:constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [3989 4003]))                                          
+                                        :typemodifiers ("static"))
+                                        (reparse-symbol classsubparts) [3895 4364])
+                                    ("do_peer" function
+                                       (:arguments 
+                                          ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [4387 4394])
+                                            ("" variable
+                                               (:reference 1
+                                                :type ("socket_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4395 4408])
+                                            ("" variable (:type ("sock" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4409 4414]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4370 5992]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [605 5995]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [535 5998]))                  
+                :type "namespace")
+                nil [517 6013]))          
+      :file "websocket_sync_echo_server.hpp"
+      :pointmax 6031
+      :fsize 6030
+      :lastmodtime '(22486 26367 786666 668000)
+      :unmatched-syntax '((punctuation 4407 . 4408) (semantic-list 4003 . 4006) (semantic-list 3999 . 4003) (punctuation 2782 . 2783) (punctuation 2782 . 2783) (punctuation 769 . 770) (symbol 757 . 768) (USING 751 . 756) (punctuation 719 . 720) (symbol 706 . 718) (USING 700 . 705) (punctuation 662 . 663) (symbol 648 . 661) (USING 642 . 647) (punctuation 769 . 770) (symbol 757 . 768) (USING 751 . 756) (punctuation 719 . 720) (symbol 706 . 718) (USING 700 . 705) (punctuation 662 . 663) (symbol 648 . 661) (USING 642 . 647))
+      :lexical-table 
+        '(("BEAST_WEBSOCKET_SYNC_ECHO_PEER_H_INCLUDED")
+          )
+))
+  :file "!home!nakao!github!iotc_msgpub!external!Beast!test!websocket!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

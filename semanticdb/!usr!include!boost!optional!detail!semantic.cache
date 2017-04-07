@@ -1,0 +1,101 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_OPTIONAL_OPTIONAL_DETAIL_OPTIONAL_ALIGNED_STORAGE_AJK_12FEB2016_HPP" variable (:constant-flag t) nil [557 630])
+            ("boost" type
+               (:members 
+                  ( ("optional_detail" type
+                       (:members 
+                          ( ("aligned_storage" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("dummy_" variable (:type ("dummy_u" type
+                                         (:prototype t
+                                          :type "union")
+                                          nil nil)) (reparse-symbol classsubparts) [1019 1412])
+                                    ("dummy_u" type
+                                       (:members 
+                                          ( ("data" variable
+                                               (:dereference 1
+                                                :type "char")
+                                                (reparse-symbol classsubparts) [1262 1285])
+                                            ("aligner_" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1383 1397]))                                          
+                                        :type "union")
+                                        (reparse-symbol classsubparts) [1019 1412])
+                                    ("public" label nil (reparse-symbol classsubparts) [1416 1423])
+                                    ("address" function
+                                       (:methodconst-flag t
+                                        :pointer 1
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1598 1649])
+                                    ("address" function
+                                       (:pointer 1
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1654 1705])
+                                    ("ptr_ref" function
+                                       (:methodconst-flag t
+                                        :pointer 1
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2123 2192])
+                                    ("ptr_ref" function
+                                       (:pointer 1
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2194 2263])
+                                    ("ref" function
+                                       (:methodconst-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2273 2316])
+                                    ("ref" function (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2318 2361]))                                  )
+                                (reparse-symbol namespacesubparts) [915 2368]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [651 2371]))                  
+                :type "namespace")
+                nil [632 2402]))          
+      :file "optional_aligned_storage.hpp"
+      :pointmax 2446
+      :fsize 2445
+      :lastmodtime '(22633 22284 0 0)
+      :unmatched-syntax '((punctuation 1382 . 1383) (punctuation 1381 . 1382) (punctuation 1380 . 1381) (symbol 1374 . 1379) (punctuation 1373 . 1374) (punctuation 1372 . 1373) (punctuation 1371 . 1372) (symbol 1370 . 1371) (punctuation 1369 . 1370) (symbol 1357 . 1369) (punctuation 1356 . 1357) (punctuation 1355 . 1356) (symbol 1350 . 1355) (punctuation 1349 . 1350) (punctuation 1348 . 1349) (punctuation 1336 . 1337) (symbol 1317 . 1336) (symbol 1294 . 1316))
+      :lexical-table 
+        '(("BOOST_OPTIONAL_OPTIONAL_DETAIL_OPTIONAL_ALIGNED_STORAGE_AJK_12FEB2016_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "optional_config.hpp"
+      :fsize 4718
+      :lastmodtime '(22633 22284 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "optional_factory_support.hpp"
+      :fsize 1193
+      :lastmodtime '(22633 22284 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_OPTIONAL_DETAIL_OPTIONAL_REFERENCE_SPEC_AJK_03OCT2015_HPP" variable (:constant-flag t) nil [456 519]))          
+      :file "optional_reference_spec.hpp"
+      :pointmax 9642
+      :fsize 9641
+      :lastmodtime '(22633 22284 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_OPTIONAL_DETAIL_OPTIONAL_REFERENCE_SPEC_AJK_03OCT2015_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "optional_relops.hpp"
+      :fsize 4300
+      :lastmodtime '(22633 22284 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "optional_swap.hpp"
+      :fsize 3017
+      :lastmodtime '(22633 22284 0 0)))
+  :file "!usr!include!boost!optional!detail!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

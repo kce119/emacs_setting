@@ -1,0 +1,55 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("MSGPUB_LOG_HPP" variable (:constant-flag t) nil [117 131])
+            ("boost/log/trivial.hpp" include (:system-flag t) nil [133 165])
+            ("boost/log/expressions.hpp" include (:system-flag t) nil [166 202])
+            ("boost/log/utility/setup/console.hpp" include (:system-flag t) nil [203 249])
+            ("boost/log/utility/setup/common_attributes.hpp" include (:system-flag t) nil [250 306])
+            ("boost/log/sources/severity_logger.hpp" include (:system-flag t) nil [307 355])
+            ("boost/log/support/date_time.hpp" include (:system-flag t) nil [356 398])
+            ("iomanip" include (:system-flag t) nil [399 417])
+            ("msgpub" type
+               (:members 
+                  ( ("set_log_level" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("lv" variable (:type ("boost::log::trivial::severity_level" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1115 1154]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1089 1250])
+                    ("log_init" function
+                       (:typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1555 2235])
+                    ("log_flush" function
+                       (:typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2826 2891])
+                    ("MSGPUB_FILENAME" variable (:constant-flag t) (reparse-symbol namespacesubparts) [2901 2916])
+                    ("MSGPUB_LOG" variable (:constant-flag t) (reparse-symbol namespacesubparts) [4694 4704]))                  
+                :type "namespace")
+                nil [419 4884]))          
+      :file "log.hpp"
+      :pointmax 4931
+      :fsize 5692
+      :lastmodtime '(22680 11186 150639 103000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MSGPUB_FILENAME" . 
+              ((symbol "std" 2907 . 2910) (punctuation ":" 2910 . 2911) (punctuation ":" 2911 . 2912) (symbol "string" 2912 . 2918) (semantic-list "(__FILE__)" 2918 . 2928) (punctuation "." 2928 . 2929) (symbol "substr" 2929 . 2935) (semantic-list "(                       \\
+        std::string(__FILE__).find_last_of(\"/\\\\\") ?     \\
+        std::string(__FILE__).find_last_of(\"/\\\\\") + 1 : \\
+        0)" 2935 . 3087)))
+          ("MSGPUB_LOG_HPP")
+          ("MSGPUB_LOG" (spp-arg-list ("level" "prefix" "id") 4656 . 4675) . 
+              ((symbol "BOOST_LOG_TRIVIAL" 4682 . 4699) (semantic-list "(level)" 4699 . 4706) (punctuation "<" 4707 . 4708) (punctuation "<" 4708 . 4709) (symbol "prefix" 4710 . 4716) (punctuation "<" 4717 . 4718) (punctuation "<" 4718 . 4719) (string "\"(\"" 4720 . 4723) (punctuation "<" 4724 . 4725) (punctuation "<" 4725 . 4726) (symbol "id" 4727 . 4729) (punctuation "<" 4730 . 4731) (punctuation "<" 4731 . 4732) (string "\")\"" 4733 . 4736) (punctuation "<" 4737 . 4738) (punctuation "<" 4738 . 4739) (string "\":\"" 4740 . 4743) (punctuation "<" 4744 . 4745) (punctuation "<" 4745 . 4746) (symbol "MSGPUB_FILENAME" 4747 . 4762) (punctuation "<" 4763 . 4764) (punctuation "<" 4764 . 4765) (string "\"(\"" 4766 . 4769) (punctuation "<" 4770 . 4771) (punctuation "<" 4771 . 4772) (symbol "__LINE__" 4773 . 4781) (punctuation "<" 4782 . 4783) (punctuation "<" 4783 . 4784) (string "\"):\"" 4785 . 4789)))
+          )
+))
+  :file "!home!nakao!work!ntt_se!ntt_se_broker!iotc_msgpub!include!msgpub!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

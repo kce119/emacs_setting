@@ -1,0 +1,77 @@
+;; Object msgpub_unit_test.dir/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "msgpub_unit_test.dir/"
+  :tables
+  (list
+    (semanticdb-table "build.make"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( (".DELETE_ON_ERROR" function nil nil [140 158])
+            (".SUFFIXES" function nil nil [334 345])
+            ("SUFFIXES" variable nil nil [410 421])
+            (".SUFFIXES" function (:arguments (".hpux_make_needs_suffix_list")) nil [422 462])
+            ("$(VERBOSE)" function nil nil [505 524])
+            ("cmake_force" function nil nil [565 578])
+            (".PHONY" function (:arguments ("cmake_force")) nil [579 600])
+            ("SHELL" variable (:default-value ("/bin/sh")) nil [768 784])
+            ("CMAKE_COMMAND" variable (:default-value ("/usr/bin/cmake")) nil [809 840])
+            ("RM" variable (:default-value ("/usr/bin/cmake" "-E" "remove" "-f")) nil [873 906])
+            ("EQUALS" variable (:default-value ("=")) nil [942 953])
+            ("CMAKE_SOURCE_DIR" variable (:default-value ("/home/nakao/github/iotc_msgpub")) nil [1011 1061])
+            ("CMAKE_BINARY_DIR" variable (:default-value ("/home/nakao/github/iotc_msgpub/build")) nil [1118 1174])
+            ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/depend.make" include nil nil [1229 1298])
+            ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/progress.make" include nil nil [1349 1420])
+            ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/flags.make" include nil nil [1476 1544])
+            ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/user_pubsub.cpp.o" function (:arguments ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/flags.make")) nil [1545 1673])
+            ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/user_pubsub.cpp.o" function (:arguments ("../msgpub_unit_test/user_pubsub.cpp")) nil [1673 2269])
+            ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/user_pubsub.cpp.i" function (:arguments ("cmake_force")) nil [2270 2733])
+            ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/user_pubsub.cpp.s" function (:arguments ("cmake_force")) nil [2734 3203])
+            ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/user_pubsub.cpp.o.requires" function nil nil [3204 3281])
+            (".PHONY" function (:arguments ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/user_pubsub.cpp.o.requires")) nil [3282 3367])
+            ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/user_pubsub.cpp.o.provides" function (:arguments ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/user_pubsub.cpp.o.requires")) nil [3368 3675])
+            (".PHONY" function (:arguments ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/user_pubsub.cpp.o.provides")) nil [3675 3760])
+            ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/user_pubsub.cpp.o.provides.build" function (:arguments ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/user_pubsub.cpp.o")) nil [3761 3911])
+            ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/user_sub.cpp.o" function (:arguments ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/flags.make")) nil [3913 4038])
+            ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/user_sub.cpp.o" function (:arguments ("../msgpub_unit_test/user_sub.cpp")) nil [4038 4619])
+            ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/user_sub.cpp.i" function (:arguments ("cmake_force")) nil [4620 5071])
+            ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/user_sub.cpp.s" function (:arguments ("cmake_force")) nil [5072 5529])
+            ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/user_sub.cpp.o.requires" function nil nil [5530 5604])
+            (".PHONY" function (:arguments ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/user_sub.cpp.o.requires")) nil [5605 5687])
+            ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/user_sub.cpp.o.provides" function (:arguments ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/user_sub.cpp.o.requires")) nil [5688 5986])
+            (".PHONY" function (:arguments ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/user_sub.cpp.o.provides")) nil [5986 6068])
+            ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/user_sub.cpp.o.provides.build" function (:arguments ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/user_sub.cpp.o")) nil [6069 6213])
+            ("msgpub_unit_test_OBJECTS" variable (:default-value ("\"CMakeFiles/msgpub_unit_test.dir/user_pubsub.cpp.o\"" "\"CMakeFiles/msgpub_unit_test.dir/user_sub.cpp.o\"")) nil [6258 6390])
+            ("msgpub_unit_test_EXTERNAL_OBJECTS" variable nil nil [6443 6479])
+            ("msgpub_unit_test/msgpub_unit_test" function (:arguments ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/user_pubsub.cpp.o")) nil [6480 6582])
+            ("msgpub_unit_test/msgpub_unit_test" function (:arguments ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/user_sub.cpp.o")) nil [6582 6681])
+            ("msgpub_unit_test/msgpub_unit_test" function (:arguments ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/build.make")) nil [6681 6776])
+            ("msgpub_unit_test/msgpub_unit_test" function (:arguments ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/link.txt")) nil [6776 7242])
+            ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/build" function (:arguments ("msgpub_unit_test/msgpub_unit_test")) nil [7295 7385])
+            (".PHONY" function (:arguments ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/build")) nil [7386 7450])
+            ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/requires" function (:arguments ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/user_pubsub.cpp.o.requires")) nil [7451 7586])
+            ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/requires" function (:arguments ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/user_sub.cpp.o.requires")) nil [7586 7718])
+            (".PHONY" function (:arguments ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/requires")) nil [7719 7786])
+            ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/clean" function nil nil [7787 7974])
+            (".PHONY" function (:arguments ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/clean")) nil [7974 8038])
+            ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/depend" function nil nil [8039 8481])
+            (".PHONY" function (:arguments ("msgpub_unit_test/CMakeFiles/msgpub_unit_test.dir/depend")) nil [8481 8546]))          
+      :file "build.make"
+      :pointmax 8547
+      :fsize 5887
+      :lastmodtime '(22370 36892 579999 999000)
+      :unmatched-syntax nil)
+    (semanticdb-table "depend.make"
+      :file "depend.make"
+      :fsize 78542
+      :lastmodtime '(22370 37207 379999 999000))
+    (semanticdb-table "progress.make"
+      :file "progress.make"
+      :fsize 45
+      :lastmodtime '(22370 36892 586666 666000))
+    (semanticdb-table "flags.make"
+      :file "flags.make"
+      :fsize 608
+      :lastmodtime '(22370 29756 859999 999000)))
+  :file "!home!nakao!github!iotc_msgpub!build!msgpub_unit_test!CMakeFiles!msgpub_unit_test.dir!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

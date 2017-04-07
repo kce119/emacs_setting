@@ -1,0 +1,174 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("CRYPTOPP_CONFIG_H" variable (:constant-flag t) nil [159 176])
+            ("IS_LITTLE_ENDIAN" variable (:constant-flag t) nil [745 761])
+            ("USE_MS_CRYPTOAPI" variable (:constant-flag t) nil [1831 1847])
+            ("CRYPTOPP_NO_UNALIGNED_DATA_ACCESS" variable (:constant-flag t) nil [2150 2183])
+            ("CRYPTOPP_VERSION" variable (:constant-flag t) nil [2281 2297])
+            ("CRYPTOPP_RIJNDAEL_NAME" variable (:constant-flag t) nil [3964 3986])
+            ("CRYPTOPP_INIT_PRIORITY" variable (:constant-flag t) nil [4284 4306])
+            ("CRYPTOPP_USER_PRIORITY" variable (:constant-flag t) nil [4688 4710])
+            ("WORKAROUND_MS_BUG_Q258000" variable (:constant-flag t) nil [5149 5174])
+            ("NAMESPACE_BEGIN" variable (:constant-flag t) nil [6277 6292])
+            ("NAMESPACE_END" variable (:constant-flag t) nil [6325 6338])
+            ("DOCUMENTED_TYPEDEF" variable (:constant-flag t) nil [6356 6374])
+            ("ANONYMOUS_NAMESPACE_BEGIN" variable (:constant-flag t) nil [6409 6434])
+            ("ANONYMOUS_NAMESPACE_END" variable (:constant-flag t) nil [6455 6478])
+            ("USING_NAMESPACE" variable (:constant-flag t) nil [6489 6504])
+            ("DOCUMENTED_NAMESPACE_BEGIN" variable (:constant-flag t) nil [6535 6561])
+            ("DOCUMENTED_NAMESPACE_END" variable (:constant-flag t) nil [6587 6611])
+            ("TYPE_OF_SOCKLEN_T" variable (:constant-flag t) nil [7062 7079])
+            ("byte" type
+               (:typedef ("unsigned char")
+                :type "typedef")
+                nil [7208 7235])
+            ("CryptoPP" type
+               (:members 
+                  ( ("word16" type
+                       (:typedef ("unsigned short")
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [7336 7366])
+                    ("word32" type
+                       (:typedef ("unsigned int")
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [7367 7395])
+                    ("word64" type
+                       (:typedef ("unsigned long long")
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [7512 7546])
+                    ("W64LIT" variable (:constant-flag t) (reparse-symbol namespacesubparts) [7556 7562])
+                    ("lword" type
+                       (:typedef ("word64" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [7639 7660])
+                    ("LWORD_MAX" variable
+                       (:constant-flag t
+                        :default-value "W64LIT(0xffffffffffffffff)"
+                        :type ("lword" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [7661 7712])
+                    ("CRYPTOPP_GCC_VERSION" variable (:constant-flag t) (reparse-symbol namespacesubparts) [7739 7759])
+                    ("CRYPTOPP_NATIVE_DWORD_AVAILABLE" variable (:constant-flag t) (reparse-symbol namespacesubparts) [9604 9635])
+                    ("CRYPTOPP_BOOL_SLOW_WORD64" variable (:constant-flag t) (reparse-symbol namespacesubparts) [11152 11177])
+                    ("hword" type
+                       (:typedef ("word16" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [11182 11203])
+                    ("word" type
+                       (:typedef ("word32" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [11206 11226])
+                    ("dword" type
+                       (:typedef ("word64" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [11229 11250])
+                    ("WORD_BITS" variable
+                       (:constant-flag t
+                        :default-value "WORD_SIZE * "
+                        :type "unsigned int")
+                        (reparse-symbol namespacesubparts) [11701 11746]))                  
+                :type "namespace")
+                nil [7309 11762])
+            ("CRYPTOPP_L1_CACHE_LINE_SIZE" variable (:constant-flag t) nil [12181 12208])
+            ("CRYPTOPP_ALIGN_DATA" variable (:constant-flag t) nil [12725 12744])
+            ("CRYPTOPP_SECTION_ALIGN16" variable (:constant-flag t) nil [13055 13079])
+            ("CRYPTOPP_FASTCALL" variable (:constant-flag t) nil [13194 13211])
+            ("CPP_TYPENAME" variable (:constant-flag t) nil [13359 13371])
+            ("CRYPTOPP_VC6_INT64" variable (:constant-flag t) nil [13568 13586])
+            ("CRYPTOPP_NO_VTABLE" variable (:constant-flag t) nil [13673 13691])
+            ("CRYPTOPP_UNCAUGHT_EXCEPTION_AVAILABLE" variable (:constant-flag t) nil [15295 15332])
+            ("CRYPTOPP_BOOL_SSE2_INTRINSICS_AVAILABLE" variable (:constant-flag t) nil [17246 17285])
+            ("CRYPTOPP_BOOL_AESNI_INTRINSICS_AVAILABLE" variable (:constant-flag t) nil [17592 17632])
+            ("CRYPTOPP_BOOL_ALIGN16" variable (:constant-flag t) nil [17811 17832])
+            ("CRYPTOPP_NO_ALIGNED_ALLOC" variable (:constant-flag t) nil [18274 18299])
+            ("CRYPTOPP_NOINLINE_DOTDOTDOT" variable (:constant-flag t) nil [18782 18809])
+            ("CRYPTOPP_NOINLINE" variable (:constant-flag t) nil [18823 18840])
+            ("CRYPTOPP_CONSTANT" variable (:constant-flag t) nil [19012 19029])
+            ("CRYPTOPP_BOOL_X32" variable (:constant-flag t) nil [19369 19386])
+            ("CRYPTOPP_BOOL_X86" variable (:constant-flag t) nil [19636 19653])
+            ("CRYPTOPP_BOOL_X64" variable (:constant-flag t) nil [19776 19793])
+            ("USE_BERKELEY_STYLE_SOCKETS" variable (:constant-flag t) nil [21288 21314])
+            ("CRYPTOPP_DLL" variable (:constant-flag t) nil [22397 22409])
+            ("CRYPTOPP_API" variable (:constant-flag t) nil [22418 22430])
+            ("CRYPTOPP_EXTERN_DLL_TEMPLATE_CLASS" variable (:constant-flag t) nil [22698 22732])
+            ("CRYPTOPP_DLL_TEMPLATE_CLASS" variable (:constant-flag t) nil [22937 22964])
+            ("CRYPTOPP_EXTERN_STATIC_TEMPLATE_CLASS" variable (:constant-flag t) nil [23218 23255])
+            ("CRYPTOPP_STATIC_TEMPLATE_CLASS" variable (:constant-flag t) nil [23437 23467])
+            ("CRYPTOPP_UNUSED" variable (:constant-flag t) nil [23665 23680])
+            ("CRYPTOPP_THROW" variable (:constant-flag t) nil [26687 26701])
+            ("CRYPTOPP_NO_THROW" variable (:constant-flag t) nil [26712 26729]))          
+      :file "config.h"
+      :pointmax 27051
+      :fsize 27758
+      :lastmodtime '(22486 26329 0 0)
+      :unmatched-syntax '((punctuation 11699 . 11700) (semantic-list 11693 . 11699) (SIZEOF 11687 . 11693) (punctuation 11685 . 11686) (symbol 11675 . 11684) (INT 11671 . 11674) (UNSIGNED 11662 . 11670) (CONST 11656 . 11661))
+      :lexical-table 
+        '(("IS_LITTLE_ENDIAN")
+          ("CRYPTOPP_INIT_PRIORITY" . ((number "250" 4307 . 4310)))
+          ("CRYPTOPP_THROW")
+          ("NAMESPACE_BEGIN" (spp-arg-list ("x") 6292 . 6295) . 
+              ((NAMESPACE "namespace" 6296 . 6305) (symbol "x" 6306 . 6307) (open-paren "{" 6308 . 6309)))
+          ("USING_NAMESPACE" (spp-arg-list ("x") 6504 . 6507) . 
+              ((USING "using" 6508 . 6513) (NAMESPACE "namespace" 6514 . 6523) (symbol "x" 6524 . 6525) (punctuation ";" 6525 . 6526)))
+          ("DOCUMENTED_TYPEDEF" (spp-arg-list ("x" "y") 6374 . 6380) . 
+              ((TYPEDEF "typedef" 6381 . 6388) (symbol "x" 6389 . 6390) (symbol "y" 6391 . 6392) (punctuation ";" 6392 . 6393)))
+          ("CRYPTOPP_UNCAUGHT_EXCEPTION_AVAILABLE")
+          ("CRYPTOPP_BOOL_AESNI_INTRINSICS_AVAILABLE" . ((number "0" 17633 . 17634)))
+          ("CRYPTOPP_NOINLINE_DOTDOTDOT" . 
+              ((punctuation "." 18810 . 18811) (punctuation "." 18811 . 18812) (punctuation "." 18812 . 18813)))
+          ("CRYPTOPP_BOOL_X86" . ((number "0" 19654 . 19655)))
+          ("CRYPTOPP_UNUSED" (spp-arg-list ("x") 23680 . 23683) . ((semantic-list "((void)x)" 23684 . 23693)))
+          ("CRYPTOPP_NATIVE_DWORD_AVAILABLE")
+          ("CRYPTOPP_CONFIG_H")
+          ("DOCUMENTED_NAMESPACE_END" . ((close-paren "}" 6612 . 6613)))
+          ("CRYPTOPP_VC6_INT64")
+          ("CRYPTOPP_API")
+          ("USE_MS_CRYPTOAPI")
+          ("CRYPTOPP_VERSION" . ((number "563" 2298 . 2301)))
+          ("CRYPTOPP_USER_PRIORITY" . ((number "250" 4711 . 4714)))
+          ("TYPE_OF_SOCKLEN_T" . 
+              ((punctuation ":" 7080 . 7081) (punctuation ":" 7081 . 7082) (symbol "socklen_t" 7082 . 7091)))
+          ("CRYPTOPP_EXTERN_STATIC_TEMPLATE_CLASS" . 
+              ((EXTERN "extern" 23256 . 23262) (TEMPLATE "template" 23263 . 23271) (CLASS "class" 23272 . 23277)))
+          ("CPP_TYPENAME" . ((TYPENAME "typename" 13372 . 13380)))
+          ("CRYPTOPP_DLL_TEMPLATE_CLASS" . ((symbol "CRYPTOPP_EXTERN_DLL_TEMPLATE_CLASS" 22965 . 22999)))
+          ("ANONYMOUS_NAMESPACE_END" . ((close-paren "}" 6479 . 6480)))
+          ("CRYPTOPP_BOOL_X64" . ((number "0" 19794 . 19795)))
+          ("USE_BERKELEY_STYLE_SOCKETS")
+          ("CRYPTOPP_BOOL_SLOW_WORD64" . ((number "1" 11178 . 11179)))
+          ("CRYPTOPP_NO_UNALIGNED_DATA_ACCESS")
+          ("CRYPTOPP_RIJNDAEL_NAME" . ((string "\"AES\"" 3987 . 3992)))
+          ("NAMESPACE_END" . ((close-paren "}" 6339 . 6340)))
+          ("CRYPTOPP_NOINLINE")
+          ("CRYPTOPP_DLL")
+          ("W64LIT" (spp-arg-list ("x") 7562 . 7565) . ((spp-symbol-merge ((symbol "x" 7566 . 7567) (symbol "ULL" 7569 . 7572)) 7566 . 7572)))
+          ("ANONYMOUS_NAMESPACE_BEGIN" . ((NAMESPACE "namespace" 6435 . 6444) (open-paren "{" 6445 . 6446)))
+          ("CRYPTOPP_BOOL_ALIGN16" . ((number "0" 17833 . 17834)))
+          ("CRYPTOPP_NO_ALIGNED_ALLOC")
+          ("CRYPTOPP_BOOL_X32" . ((number "0" 19387 . 19388)))
+          ("CRYPTOPP_EXTERN_DLL_TEMPLATE_CLASS" . 
+              ((EXTERN "extern" 22733 . 22739) (TEMPLATE "template" 22740 . 22748) (CLASS "class" 22749 . 22754) (symbol "CRYPTOPP_DLL" 22755 . 22767)))
+          ("CRYPTOPP_GCC_VERSION" . ((semantic-list "(__GNUC__ * 10000 + __GNUC_MINOR__ * 100 + __GNUC_PATCHLEVEL__)" 7760 . 7823)))
+          ("CRYPTOPP_NO_THROW")
+          ("WORKAROUND_MS_BUG_Q258000")
+          ("CRYPTOPP_L1_CACHE_LINE_SIZE" . ((number "32" 12209 . 12211)))
+          ("CRYPTOPP_ALIGN_DATA" (spp-arg-list ("x") 12744 . 12747))
+          ("CRYPTOPP_FASTCALL")
+          ("CRYPTOPP_NO_VTABLE")
+          ("CRYPTOPP_BOOL_SSE2_INTRINSICS_AVAILABLE" . ((number "0" 17286 . 17287)))
+          ("DOCUMENTED_NAMESPACE_BEGIN" (spp-arg-list ("x") 6561 . 6564) . 
+              ((NAMESPACE "namespace" 6565 . 6574) (symbol "x" 6575 . 6576) (open-paren "{" 6577 . 6578)))
+          ("CRYPTOPP_SECTION_ALIGN16")
+          ("CRYPTOPP_CONSTANT" (spp-arg-list ("x") 19029 . 19032) . 
+              ((STATIC "static" 19033 . 19039) (CONST "const" 19040 . 19045) (INT "int" 19046 . 19049) (symbol "x" 19050 . 19051) (punctuation ";" 19051 . 19052)))
+          ("CRYPTOPP_STATIC_TEMPLATE_CLASS" . ((symbol "CRYPTOPP_EXTERN_STATIC_TEMPLATE_CLASS" 23468 . 23505)))
+          )
+))
+  :file "!home!nakao!github!iotc_msgpub!build_107!cryptopp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

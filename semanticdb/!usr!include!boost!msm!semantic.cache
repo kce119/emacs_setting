@@ -1,0 +1,169 @@
+;; Object msm/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "msm/"
+  :tables
+  (list
+    (semanticdb-table "row_tags.hpp"
+      :file "row_tags.hpp"
+      :fsize 1367
+      :lastmodtime '(22324 21861 0 0))
+    (semanticdb-table "common.hpp"
+      :file "common.hpp"
+      :fsize 824
+      :lastmodtime '(22324 21861 0 0))
+    (semanticdb-table "active_state_switching_policies.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MSM_ACTIVE_STATE_SWITCHING_POLICIES_H" variable (:constant-flag t) nil [540 583])
+            ("boost" type
+               (:members 
+                  ( ("msm" type
+                       (:members 
+                          ( ("active_state_switch_after_entry" type
+                               (:members 
+                                  ( ("after_guard" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("current_state" variable (:type "int") (reparse-symbol arg-sub-list) [775 793])
+                                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [793 797]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [752 820])
+                                    ("after_exit" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("current_state" variable (:type "int") (reparse-symbol arg-sub-list) [847 865])
+                                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [865 869]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [825 892])
+                                    ("after_action" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("current_state" variable (:type "int") (reparse-symbol arg-sub-list) [921 939])
+                                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [939 943]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [897 966])
+                                    ("after_entry" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [994 998])
+                                            ("next_state" variable (:type "int") (reparse-symbol arg-sub-list) [998 1013]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [971 1033]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [706 1036])
+                            ("active_state_switch_before_transition" type
+                               (:members 
+                                  ( ("after_guard" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1159 1163])
+                                            ("next_state" variable (:type "int") (reparse-symbol arg-sub-list) [1163 1178]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1136 1198])
+                                    ("after_exit" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1225 1229])
+                                            ("next_state" variable (:type "int") (reparse-symbol arg-sub-list) [1229 1244]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1203 1264])
+                                    ("after_action" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1293 1297])
+                                            ("next_state" variable (:type "int") (reparse-symbol arg-sub-list) [1297 1312]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1269 1332])
+                                    ("after_entry" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1360 1364])
+                                            ("next_state" variable (:type "int") (reparse-symbol arg-sub-list) [1364 1379]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1337 1399]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1084 1402])
+                            ("active_state_switch_after_exit" type
+                               (:members 
+                                  ( ("after_guard" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("current_state" variable (:type "int") (reparse-symbol arg-sub-list) [1517 1535])
+                                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [1535 1539]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1494 1562])
+                                    ("after_exit" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1589 1593])
+                                            ("next_state" variable (:type "int") (reparse-symbol arg-sub-list) [1593 1608]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1567 1628])
+                                    ("after_action" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1657 1661])
+                                            ("next_state" variable (:type "int") (reparse-symbol arg-sub-list) [1661 1676]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1633 1696])
+                                    ("after_entry" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1724 1728])
+                                            ("next_state" variable (:type "int") (reparse-symbol arg-sub-list) [1728 1743]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1701 1763]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1449 1766])
+                            ("active_state_switch_after_transition_action" type
+                               (:members 
+                                  ( ("after_guard" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("current_state" variable (:type "int") (reparse-symbol arg-sub-list) [1900 1918])
+                                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [1918 1922]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1877 1945])
+                                    ("after_exit" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("current_state" variable (:type "int") (reparse-symbol arg-sub-list) [1972 1990])
+                                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [1990 1994]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1950 2017])
+                                    ("after_action" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [2046 2050])
+                                            ("next_state" variable (:type "int") (reparse-symbol arg-sub-list) [2050 2065]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [2022 2085])
+                                    ("after_entry" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [2113 2117])
+                                            ("next_state" variable (:type "int") (reparse-symbol arg-sub-list) [2117 2132]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [2090 2152]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1819 2155]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [603 2158]))                  
+                :type "namespace")
+                nil [585 2160]))          
+      :file "active_state_switching_policies.hpp"
+      :pointmax 2226
+      :fsize 2225
+      :lastmodtime '(22324 21861 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MSM_ACTIVE_STATE_SWITCHING_POLICIES_H")
+          )
+)
+    (semanticdb-table "msm_grammar.hpp"
+      :file "msm_grammar.hpp"
+      :fsize 2402
+      :lastmodtime '(22324 21861 0 0)))
+  :file "!usr!include!boost!msm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

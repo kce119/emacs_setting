@@ -1,0 +1,40 @@
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
+(setq my-emacs-proxy-file "~/.emacs.d/proxy.el")
+(if (file-exists-p (expand-file-name my-emacs-proxy-file))
+    (load (expand-file-name my-emacs-proxy-file)))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; manual install
+(add-to-list 'load-path "~/.emacs.d/manual-install/")
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Install el-get
+(when load-file-name
+  (setq user-emacs-directory (file-name-directory load-file-name)))
+
+(add-to-list 'load-path (locate-user-emacs-file "el-get/el-get"))
+(unless (require 'el-get nil 'noerror)
+  (with-current-buffer
+      (url-retrieve-synchronously
+       "https://raw.githubusercontent.com/dimitri/el-get/master/el-get-install.el")
+    (goto-char (point-max))
+    (eval-print-last-sexp)))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Sequential load in init.d
+(let* ((dir "~/.emacs.d/init.d")
+       (el-suffix "\\.el\\'")
+       (files (mapcar
+               (lambda (path) (replace-regexp-in-string el-suffix "" path))
+               (directory-files dir t el-suffix))))
+  (while files
+    (load (car files))
+    (setq files (cdr files))))
+
+;;;;;;;
+(show-paren-mode t)

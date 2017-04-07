@@ -1,0 +1,570 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_TEST_UNIT_TEST_HPP_071894GER" variable (:constant-flag t) nil [561 595])
+            ("boost/test/test_tools.hpp" include (:system-flag t) nil [611 647])
+            ("boost/test/unit_test_suite.hpp" include (:system-flag t) nil [648 689])
+            ("BOOST_LIB_NAME" variable (:constant-flag t) nil [1159 1173])
+            ("boost/config/auto_link.hpp" include (:system-flag t) nil [1304 1343])
+            ("boost" type
+               (:members 
+                  ( ("unit_test" type
+                       (:members 
+                          ( ("unit_test_main" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("init_func" variable (:type ("init_unit_test_func" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1700 1730])
+                                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1731 1740])
+                                    ("argv" variable
+                                       (:pointer 1
+                                        :dereference 1
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [1741 1755]))                                  
+                                :type ("BOOST_TEST_DECL" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1668 1756]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1641 1759])
+                    ("unit_test_framework" type
+                       (:kind alias
+                        :members 
+                          ( ("unit_test" type (:type "namespace") nil nil))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1780 1820]))                  
+                :type "namespace")
+                nil [1623 1823]))          
+      :file "unit_test.hpp"
+      :pointmax 2502
+      :fsize 2501
+      :lastmodtime '(22633 22282 0 0)
+      :unmatched-syntax '((INT 1664 . 1667) (semantic-list 1127 . 1148) (symbol 1120 . 1127) (punctuation 1119 . 1120) (punctuation 1117 . 1118) (punctuation 1116 . 1117) (semantic-list 1096 . 1115) (symbol 1089 . 1096) (punctuation 1088 . 1089))
+      :lexical-table 
+        '(("BOOST_TEST_UNIT_TEST_HPP_071894GER")
+          ("BOOST_LIB_NAME" . ((symbol "boost_unit_test_framework" 1174 . 1199)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_TEST_UNIT_TEST_SUITE_HPP_071894GER" variable (:constant-flag t) nil [469 509])
+            ("boost/test/framework.hpp" include (:system-flag t) nil [525 560])
+            ("boost/test/tree/auto_registration.hpp" include (:system-flag t) nil [561 609])
+            ("boost/test/tree/test_case_template.hpp" include (:system-flag t) nil [610 659])
+            ("boost/test/tree/global_fixture.hpp" include (:system-flag t) nil [660 705])
+            ("boost/test/detail/suppress_warnings.hpp" include (:system-flag t) nil [708 758])
+            ("boost/test/detail/pp_variadic.hpp" include (:system-flag t) nil [761 805])
+            ("BOOST_TEST_CASE" variable (:constant-flag t) nil [1143 1158])
+            ("BOOST_CLASS_TEST_CASE" variable (:constant-flag t) nil [1429 1450])
+            ("BOOST_TEST_SUITE" variable (:constant-flag t) nil [1973 1989])
+            ("BOOST_AUTO_TEST_SUITE_WITH_DECOR" variable (:constant-flag t) nil [2338 2370])
+            ("BOOST_AUTO_TEST_SUITE_NO_DECOR" variable (:constant-flag t) nil [2788 2818])
+            ("BOOST_AUTO_TEST_SUITE" variable (:constant-flag t) nil [3521 3542])
+            ("BOOST_FIXTURE_TEST_SUITE_WITH_DECOR" variable (:constant-flag t) nil [3953 3988])
+            ("BOOST_FIXTURE_TEST_SUITE_NO_DECOR" variable (:constant-flag t) nil [4181 4214])
+            ("BOOST_FIXTURE_TEST_SUITE" variable (:constant-flag t) nil [4841 4865])
+            ("BOOST_AUTO_TEST_SUITE_END" variable (:constant-flag t) nil [5274 5299])
+            ("BOOST_AUTO_TEST_CASE_EXPECTED_FAILURES" variable (:constant-flag t) nil [5784 5822])
+            ("BOOST_FIXTURE_TEST_CASE_WITH_DECOR" variable (:constant-flag t) nil [6182 6216])
+            ("BOOST_FIXTURE_TEST_CASE_NO_DECOR" variable (:constant-flag t) nil [7742 7774])
+            ("BOOST_FIXTURE_TEST_CASE" variable (:constant-flag t) nil [8402 8425])
+            ("BOOST_AUTO_TEST_CASE_NO_DECOR" variable (:constant-flag t) nil [8834 8863])
+            ("BOOST_AUTO_TEST_CASE_WITH_DECOR" variable (:constant-flag t) nil [9062 9093])
+            ("BOOST_AUTO_TEST_CASE" variable (:constant-flag t) nil [9722 9742])
+            ("BOOST_FIXTURE_TEST_CASE_TEMPLATE" variable (:constant-flag t) nil [10154 10186])
+            ("BOOST_AUTO_TEST_CASE_TEMPLATE" variable (:constant-flag t) nil [12254 12283])
+            ("BOOST_TEST_CASE_TEMPLATE" variable (:constant-flag t) nil [12726 12750])
+            ("BOOST_TEST_CASE_TEMPLATE_FUNCTION" variable (:constant-flag t) nil [13198 13231])
+            ("BOOST_GLOBAL_FIXTURE" variable (:constant-flag t) nil [14484 14504])
+            ("BOOST_TEST_DECORATOR" variable (:constant-flag t) nil [14852 14872])
+            ("boost" type
+               (:members 
+                  ( ("unit_test" type
+                       (:members 
+                          ( ("ut_detail" type
+                               (:members 
+                                  ( ("nil_t" type (:type "struct") (reparse-symbol namespacesubparts) [15379 15395]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [15356 15398]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [15334 15423]))                  
+                :type "namespace")
+                nil [15316 15438])
+            ("BOOST_AUTO_TEST_CASE_FIXTURE" variable (:type ("boost::unit_test::ut_detail::nil_t" type (:type "class") nil nil)) nil [15564 15628])
+            ("BOOST_AUTO_TU_REGISTRAR" variable (:constant-flag t) nil [15882 15905])
+            ("BOOST_AUTO_TC_INVOKER" variable (:constant-flag t) nil [16085 16106])
+            ("BOOST_AUTO_TC_UNIQUE_ID" variable (:constant-flag t) nil [16167 16190])
+            ("boost/test/detail/enable_warnings.hpp" include (:system-flag t) nil [17053 17101]))          
+      :file "unit_test_suite.hpp"
+      :pointmax 17156
+      :fsize 17155
+      :lastmodtime '(22633 22282 0 0)
+      :unmatched-syntax '((punctuation 15563 . 15564) (punctuation 15562 . 15563) (TYPEDEF 15554 . 15561))
+      :lexical-table 
+        '(("BOOST_CLASS_TEST_CASE" (spp-arg-list ("test_function" "tc_instance") 1450 . 1480) . 
+              ((symbol "boost" 1498 . 1503) (punctuation ":" 1503 . 1504) (punctuation ":" 1504 . 1505) (symbol "unit_test" 1505 . 1514) (punctuation ":" 1514 . 1515) (punctuation ":" 1515 . 1516) (symbol "make_test_case" 1516 . 1530) (semantic-list "( (test_function),                         \\
+                                  BOOST_TEST_STRINGIZE( test_function ),   \\
+                                  __FILE__, __LINE__, tc_instance )" 1530 . 1719)))
+          ("BOOST_AUTO_TEST_SUITE_NO_DECOR" (spp-arg-list ("suite_name") 2818 . 2832) . ((symbol "BOOST_AUTO_TEST_SUITE_WITH_DECOR" 2858 . 2890) (semantic-list "(                                   \\
+        suite_name,                                                     \\
+        boost::unit_test::decorator::collector::instance() )" 2890 . 3062)))
+          ("BOOST_AUTO_TEST_SUITE_WITH_DECOR" (spp-arg-list ("suite_name" "decorators") 2370 . 2396) . 
+              ((NAMESPACE "namespace" 2404 . 2413) (symbol "suite_name" 2414 . 2424) (open-paren "{" 2425 . 2426) (symbol "BOOST_AUTO_TU_REGISTRAR" 2478 . 2501) (semantic-list "( suite_name )" 2501 . 2515) (semantic-list "(                                  \\
+    BOOST_STRINGIZE( suite_name ),                                      \\
+    __FILE__, __LINE__,                                                 \\
+    decorators )" 2515 . 2716) (punctuation ";" 2716 . 2717)))
+          ("BOOST_AUTO_TEST_CASE_NO_DECOR" (spp-arg-list ("test_name") 8863 . 8876) . ((symbol "BOOST_FIXTURE_TEST_CASE_NO_DECOR" 8904 . 8936) (semantic-list "( test_name,                        \\
+        BOOST_AUTO_TEST_CASE_FIXTURE )" 8936 . 9012)))
+          ("BOOST_FIXTURE_TEST_CASE_WITH_DECOR" (spp-arg-list ("test_name" "F" "decorators") 6216 . 6244) . 
+              ((STRUCT "struct" 6248 . 6254) (symbol "test_name" 6255 . 6264) (punctuation ":" 6265 . 6266) (PUBLIC "public" 6267 . 6273) (symbol "F" 6274 . 6275) (semantic-list "{ void test_method(); }" 6276 . 6299) (punctuation ";" 6299 . 6300) (STATIC "static" 6396 . 6402) (VOID "void" 6403 . 6407) (symbol "BOOST_AUTO_TC_INVOKER" 6408 . 6429) (semantic-list "( test_name )" 6429 . 6442) (semantic-list "()" 6442 . 6444) (semantic-list "{                                                                       \\
+    BOOST_TEST_CHECKPOINT('\"' << #test_name << \"\\\" fixture entry.\");    \\
+    test_name t;                                                        \\
+    BOOST_TEST_CHECKPOINT('\"' << #test_name << \"\\\" entry.\");            \\
+    t.test_method();                                                    \\
+    BOOST_TEST_CHECKPOINT('\"' << #test_name << \"\\\" exit.\");             \\
+}" 6470 . 6915) (STRUCT "struct" 7062 . 7068) (symbol "BOOST_AUTO_TC_UNIQUE_ID" 7069 . 7092) (semantic-list "( test_name )" 7092 . 7105) (semantic-list "{}" 7106 . 7108) (punctuation ";" 7108 . 7109) (symbol "BOOST_AUTO_TU_REGISTRAR" 7210 . 7233) (semantic-list "( test_name )" 7233 . 7246) (semantic-list "(                                   \\
+    boost::unit_test::make_test_case(                                   \\
+        &BOOST_AUTO_TC_INVOKER( test_name ),                            \\
+        #test_name, __FILE__, __LINE__ ),                               \\
+        decorators )" 7246 . 7526) (punctuation ";" 7526 . 7527) (VOID "void" 7654 . 7658) (symbol "test_name" 7659 . 7668) (punctuation ":" 7668 . 7669) (punctuation ":" 7669 . 7670) (symbol "test_method" 7670 . 7681) (semantic-list "()" 7681 . 7683)))
+          ("BOOST_FIXTURE_TEST_CASE_TEMPLATE" (spp-arg-list ("test_name" "type_name" "TL" "F") 10186 . 10217) . 
+              ((TEMPLATE "template" 10220 . 10228) (punctuation "<" 10228 . 10229) (TYPENAME "typename" 10229 . 10237) (symbol "type_name" 10238 . 10247) (punctuation ">" 10247 . 10248) (STRUCT "struct" 10294 . 10300) (symbol "test_name" 10301 . 10310) (punctuation ":" 10311 . 10312) (PUBLIC "public" 10313 . 10319) (symbol "F" 10320 . 10321) (semantic-list "{ void test_method(); }" 10368 . 10391) (punctuation ";" 10391 . 10392) (STRUCT "struct" 10516 . 10522) (symbol "BOOST_AUTO_TC_INVOKER" 10523 . 10544) (semantic-list "( test_name )" 10544 . 10557) (semantic-list "{                             \\
+    template<typename TestType>                                         \\
+    static void run( boost::type<TestType>* = 0 )                       \\
+    {                                                                   \\
+        BOOST_TEST_CHECKPOINT('\"' << #test_name <<\"\\\" fixture entry.\"); \\
+        test_name<TestType> t;                                          \\
+        BOOST_TEST_CHECKPOINT('\"' << #test_name << \"\\\" entry.\");        \\
+        t.test_method();                                                \\
+        BOOST_TEST_CHECKPOINT('\"' << #test_name << \"\\\" exit.\");         \\
+    }                                                                   \\
+}" 10558 . 11257) (punctuation ";" 11257 . 11258) (symbol "BOOST_AUTO_TU_REGISTRAR" 11404 . 11427) (semantic-list "( test_name )" 11427 . 11440) (semantic-list "(                                   \\
+    boost::unit_test::ut_detail::template_test_case_gen<                \\
+        BOOST_AUTO_TC_INVOKER( test_name ),TL >(                        \\
+          BOOST_STRINGIZE( test_name ), __FILE__, __LINE__ ),           \\
+    boost::unit_test::decorator::collector::instance() )" 11440 . 11756) (punctuation ";" 11756 . 11757) (TEMPLATE "template" 11848 . 11856) (punctuation "<" 11856 . 11857) (TYPENAME "typename" 11857 . 11865) (symbol "type_name" 11866 . 11875) (punctuation ">" 11875 . 11876) (VOID "void" 11922 . 11926) (symbol "test_name" 11927 . 11936) (punctuation "<" 11936 . 11937) (symbol "type_name" 11937 . 11946) (punctuation ">" 11946 . 11947) (punctuation ":" 11947 . 11948) (punctuation ":" 11948 . 11949) (symbol "test_method" 11949 . 11960) (semantic-list "()" 11960 . 11962)))
+          ("BOOST_TEST_CASE_TEMPLATE" (spp-arg-list ("name" "typelist") 12750 . 12768) . 
+              ((symbol "boost" 12796 . 12801) (punctuation ":" 12801 . 12802) (punctuation ":" 12802 . 12803) (symbol "unit_test" 12803 . 12812) (punctuation ":" 12812 . 12813) (punctuation ":" 12813 . 12814) (symbol "ut_detail" 12814 . 12823) (punctuation ":" 12823 . 12824) (punctuation ":" 12824 . 12825) (symbol "template_test_case_gen" 12825 . 12847) (punctuation "<" 12847 . 12848) (symbol "name" 12848 . 12852) (punctuation "," 12852 . 12853) (symbol "typelist" 12853 . 12861) (punctuation ">" 12861 . 12862) (semantic-list "( \\
+        BOOST_TEST_STRINGIZE( name ), __FILE__, __LINE__ )" 12862 . 12924)))
+          ("BOOST_TEST_DECORATOR" (spp-arg-list ("D") 14872 . 14877) . 
+              ((STATIC "static" 14918 . 14924) (symbol "boost" 14925 . 14930) (punctuation ":" 14930 . 14931) (punctuation ":" 14931 . 14932) (symbol "unit_test" 14932 . 14941) (punctuation ":" 14941 . 14942) (punctuation ":" 14942 . 14943) (symbol "decorator" 14943 . 14952) (punctuation ":" 14952 . 14953) (punctuation ":" 14953 . 14954) (symbol "collector" 14954 . 14963) (CONST "const" 14964 . 14969) (punctuation "&" 14969 . 14970) (symbol "BOOST_JOIN" 14992 . 15002) (semantic-list "(decorator_collector,__LINE__)" 15002 . 15032) (punctuation "=" 15033 . 15034) (symbol "D" 15035 . 15036) (punctuation ";" 15036 . 15037)))
+          ("BOOST_AUTO_TC_INVOKER" (spp-arg-list ("test_name") 16106 . 16119) . ((symbol "BOOST_JOIN" 16125 . 16135) (semantic-list "( test_name, _invoker )" 16135 . 16158)))
+          ("BOOST_AUTO_TC_UNIQUE_ID" (spp-arg-list ("test_name") 16190 . 16203) . ((symbol "BOOST_JOIN" 16207 . 16217) (semantic-list "( test_name, _id )" 16217 . 16235)))
+          ("BOOST_AUTO_TEST_SUITE" (spp-arg-list ("suite_name") 3542 . 3556) . ((symbol "BOOST_AUTO_TEST_SUITE_NO_DECOR" 3591 . 3621) (semantic-list "( suite_name )" 3621 . 3635)))
+          ("BOOST_FIXTURE_TEST_SUITE_WITH_DECOR" (spp-arg-list ("suite_name" "F" "decorators") 3988 . 4015) . 
+              ((symbol "BOOST_AUTO_TEST_SUITE_WITH_DECOR" 4023 . 4055) (semantic-list "( suite_name, decorators )" 4055 . 4081) (TYPEDEF "typedef" 4093 . 4100) (symbol "F" 4101 . 4102) (symbol "BOOST_AUTO_TEST_CASE_FIXTURE" 4103 . 4131) (punctuation ";" 4131 . 4132)))
+          ("BOOST_AUTO_TEST_SUITE_END" (spp-arg-list nil 5299 . 5301) . 
+              ((symbol "BOOST_AUTO_TU_REGISTRAR" 5340 . 5363) (semantic-list "( BOOST_JOIN( end_suite, __LINE__ ) )" 5363 . 5400) (semantic-list "( 1 )" 5400 . 5405) (punctuation ";" 5405 . 5406) (close-paren "}" 5414 . 5415)))
+          ("BOOST_AUTO_TEST_CASE" (spp-arg-list ("test_name") 9742 . 9755) . ((symbol "BOOST_AUTO_TEST_CASE_NO_DECOR" 9792 . 9821) (semantic-list "( test_name )" 9821 . 9834)))
+          ("BOOST_TEST_CASE" (spp-arg-list ("test_function") 1158 . 1175) . 
+              ((symbol "boost" 1212 . 1217) (punctuation ":" 1217 . 1218) (punctuation ":" 1218 . 1219) (symbol "unit_test" 1219 . 1228) (punctuation ":" 1228 . 1229) (punctuation ":" 1229 . 1230) (symbol "make_test_case" 1230 . 1244) (semantic-list "( boost::function<void ()>(test_function), \\
+                                  BOOST_TEST_STRINGIZE( test_function ),   \\
+                                  __FILE__, __LINE__ )" 1244 . 1420)))
+          ("BOOST_AUTO_TEST_CASE_TEMPLATE" (spp-arg-list ("test_name" "type_name" "TL") 12283 . 12311) . ((symbol "BOOST_FIXTURE_TEST_CASE_TEMPLATE" 12320 . 12352) (semantic-list "( test_name, type_name, TL,             \\
+    BOOST_AUTO_TEST_CASE_FIXTURE )" 12352 . 12428)))
+          ("BOOST_GLOBAL_FIXTURE" (spp-arg-list ("F") 14504 . 14509) . 
+              ((STATIC "static" 14512 . 14518) (symbol "boost" 14519 . 14524) (punctuation ":" 14524 . 14525) (punctuation ":" 14525 . 14526) (symbol "unit_test" 14526 . 14535) (punctuation ":" 14535 . 14536) (punctuation ":" 14536 . 14537) (symbol "ut_detail" 14537 . 14546) (punctuation ":" 14546 . 14547) (punctuation ":" 14547 . 14548) (symbol "global_fixture_impl" 14548 . 14567) (punctuation "<" 14567 . 14568) (symbol "F" 14568 . 14569) (punctuation ">" 14569 . 14570) (symbol "BOOST_JOIN" 14571 . 14581) (semantic-list "( gf_, F )" 14581 . 14591)))
+          ("BOOST_TEST_SUITE" (spp-arg-list ("testsuite_name") 1989 . 2007) . ((semantic-list "( new boost::unit_test::test_suite( testsuite_name, __FILE__, __LINE__ ) )" 2010 . 2084)))
+          ("BOOST_AUTO_TEST_CASE_WITH_DECOR" (spp-arg-list ("test_name" "decorators") 9093 . 9118) . ((symbol "BOOST_FIXTURE_TEST_CASE_WITH_DECOR" 9132 . 9166) (semantic-list "( test_name,                      \\
+        BOOST_AUTO_TEST_CASE_FIXTURE, decorators )" 9166 . 9252)))
+          ("BOOST_TEST_CASE_TEMPLATE_FUNCTION" (spp-arg-list ("name" "type_name") 13231 . 13250) . 
+              ((TEMPLATE "template" 13264 . 13272) (punctuation "<" 13272 . 13273) (TYPENAME "typename" 13273 . 13281) (symbol "type_name" 13282 . 13291) (punctuation ">" 13291 . 13292) (VOID "void" 13338 . 13342) (symbol "BOOST_JOIN" 13343 . 13353) (semantic-list "( name, _impl )" 13353 . 13368) (semantic-list "( boost::type<type_name>* )" 13368 . 13395) (punctuation ";" 13395 . 13396) (STRUCT "struct" 13486 . 13492) (symbol "name" 13493 . 13497) (semantic-list "{                                                           \\
+    template<typename TestType>                                         \\
+    static void run( boost::type<TestType>* frwrd = 0 )                 \\
+    {                                                                   \\
+       BOOST_JOIN( name, _impl )( frwrd );                              \\
+    }                                                                   \\
+}" 13498 . 13931) (punctuation ";" 13931 . 13932) (TEMPLATE "template" 14078 . 14086) (punctuation "<" 14086 . 14087) (TYPENAME "typename" 14087 . 14095) (symbol "type_name" 14096 . 14105) (punctuation ">" 14105 . 14106) (VOID "void" 14152 . 14156) (symbol "BOOST_JOIN" 14157 . 14167) (semantic-list "( name, _impl )" 14167 . 14182) (semantic-list "( boost::type<type_name>* )" 14182 . 14209)))
+          ("BOOST_AUTO_TU_REGISTRAR" (spp-arg-list ("test_name") 15905 . 15918) . 
+              ((STATIC "static" 15940 . 15946) (symbol "boost" 15947 . 15952) (punctuation ":" 15952 . 15953) (punctuation ":" 15953 . 15954) (symbol "unit_test" 15954 . 15963) (punctuation ":" 15963 . 15964) (punctuation ":" 15964 . 15965) (symbol "ut_detail" 15965 . 15974) (punctuation ":" 15974 . 15975) (punctuation ":" 15975 . 15976) (symbol "auto_test_unit_registrar" 15976 . 16000) (symbol "BOOST_JOIN" 16006 . 16016) (semantic-list "( BOOST_JOIN( test_name, _registrar ), __LINE__ )" 16016 . 16065)))
+          ("BOOST_FIXTURE_TEST_SUITE_NO_DECOR" (spp-arg-list ("suite_name" "F") 4214 . 4231) . 
+              ((symbol "BOOST_AUTO_TEST_SUITE_NO_DECOR" 4251 . 4281) (semantic-list "( suite_name )" 4281 . 4295) (TYPEDEF "typedef" 4321 . 4328) (symbol "F" 4329 . 4330) (symbol "BOOST_AUTO_TEST_CASE_FIXTURE" 4331 . 4359) (punctuation ";" 4359 . 4360)))
+          ("BOOST_FIXTURE_TEST_SUITE" (spp-arg-list ("suite_name" "F") 4865 . 4883) . ((symbol "BOOST_FIXTURE_TEST_SUITE_NO_DECOR" 4910 . 4943) (semantic-list "( suite_name, F )" 4943 . 4960)))
+          ("BOOST_AUTO_TEST_CASE_EXPECTED_FAILURES" (spp-arg-list ("test_name" "n") 5822 . 5838) . ((symbol "BOOST_TEST_DECORATOR" 5850 . 5870) (semantic-list "( * boost::unit_test::expected_failures( n ) )" 5870 . 5916)))
+          ("BOOST_TEST_UNIT_TEST_SUITE_HPP_071894GER")
+          ("BOOST_FIXTURE_TEST_CASE" (spp-arg-list ("test_name" "F") 8425 . 8441) . ((symbol "BOOST_FIXTURE_TEST_CASE_NO_DECOR" 8473 . 8505) (semantic-list "(test_name, F)" 8505 . 8519)))
+          ("BOOST_FIXTURE_TEST_CASE_NO_DECOR" (spp-arg-list ("test_name" "F") 7774 . 7790) . ((symbol "BOOST_FIXTURE_TEST_CASE_WITH_DECOR" 7808 . 7842) (semantic-list "( test_name, F,                       \\
+    boost::unit_test::decorator::collector::instance() )" 7842 . 7938)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_TEST_FRAMEWORK_HPP_020805GER" variable (:constant-flag t) nil [541 575])
+            ("boost/test/detail/global_typedef.hpp" include (:system-flag t) nil [591 638])
+            ("boost/test/detail/fwd_decl.hpp" include (:system-flag t) nil [639 680])
+            ("boost/test/detail/throw_exception.hpp" include (:system-flag t) nil [681 729])
+            ("boost/test/utils/trivial_singleton.hpp" include (:system-flag t) nil [731 780])
+            ("boost/test/detail/suppress_warnings.hpp" include (:system-flag t) nil [782 832])
+            ("stdexcept" include (:system-flag t) nil [841 861])
+            ("boost" type
+               (:members 
+                  ( ("unit_test" type
+                       (:members 
+                          ( ("init_unit_test_func" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :function-pointer t
+                                :arguments 
+                                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1578 1582])
+                                    ("" variable
+                                       (:pointer 1
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [1583 1591]))                                  
+                                :type ("test_suite" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1542 1594])
+                            ("framework" type
+                               (:members 
+                                  ( ("init" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("init_func" variable (:type ("init_unit_test_func" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2345 2375])
+                                            ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2376 2385])
+                                            ("argv" variable
+                                               (:pointer 1
+                                                :dereference 1
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [2386 2400]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [2319 2401])
+                                    ("finalize_setup_phase" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("tu" variable
+                                               (:default-value "INV_TEST_UNIT_ID"
+                                                :type ("test_unit_id" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2796 2831]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [2754 2832])
+                                    ("test_in_progress" function
+                                       (:prototype-flag t
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [2930 2969])
+                                    ("shutdown" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [3124 3143])
+                                    ("current_auto_test_suite" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("ts" variable
+                                               (:pointer 1
+                                                :default-value "0"
+                                                :type ("test_suite" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4561 4580])
+                                            ("push_or_pop" variable
+                                               (:default-value "true "
+                                                :type "bool")
+                                                (reparse-symbol arg-sub-list) [4581 4606]))                                          
+                                        :type ("test_suite" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [4516 4607])
+                                    ("register_test_unit" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("tc" variable
+                                               (:pointer 1
+                                                :type ("test_case" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5035 5050]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [4995 5051])
+                                    ("register_test_unit" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("ts" variable
+                                               (:pointer 1
+                                                :type ("test_suite" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5482 5498]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [5442 5499])
+                                    ("deregister_test_unit" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("tu" variable
+                                               (:pointer 1
+                                                :type ("test_unit" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5945 5960]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [5903 5961])
+                                    ("clear" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [6151 6179])
+                                    ("register_observer" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("to" variable
+                                               (:reference 1
+                                                :type ("test_observer" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6497 6516]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [6458 6517])
+                                    ("deregister_observer" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("to" variable
+                                               (:reference 1
+                                                :type ("test_observer" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6704 6723]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [6663 6724])
+                                    ("context_generator" variable (:type ("BOOST_TEST_DECL" type
+                                         (:prototype t
+                                          :type "struct")
+                                          nil nil)) (reparse-symbol namespacesubparts) [6817 7125])
+                                    ("add_context" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("context_descr" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("lazy_ostream" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7517 7551])
+                                            ("sticky" variable (:type "bool") (reparse-symbol arg-sub-list) [7552 7565]))                                          
+                                        :type "int")
+                                        (reparse-symbol namespacesubparts) [7484 7566])
+                                    ("clear_context" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("context_id" variable
+                                               (:default-value "-1 "
+                                                :type "int")
+                                                (reparse-symbol arg-sub-list) [7804 7825]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [7769 7826])
+                                    ("get_context" function
+                                       (:prototype-flag t
+                                        :type ("context_generator" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [7943 7977])
+                                    ("master_test_suite" function
+                                       (:prototype-flag t
+                                        :type ("master_test_suite_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [8227 8268])
+                                    ("current_test_case" function
+                                       (:prototype-flag t
+                                        :type ("test_case" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [8458 8498])
+                                    ("current_test_case_id" function
+                                       (:prototype-flag t
+                                        :type ("test_unit_id" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [8736 8779])
+                                    ("get" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("tu_id" variable (:type ("test_unit_id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9105 9124])
+                                            ("tu_type" variable (:type ("test_unit_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9125 9149]))                                          
+                                        :type ("test_unit" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [9080 9150])
+                                    ("get" function
+                                       (:template 
+                                          ( ("UnitType" type (:type "class") nil nil))                                          
+                                        :type ("UnitType" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("id" variable (:type ("test_unit_id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9473 9490]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [9404 9587])
+                                    ("run" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("tu" variable
+                                               (:default-value "INV_TEST_UNIT_ID"
+                                                :type ("test_unit_id" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [10270 10305])
+                                            ("continue_test" variable
+                                               (:default-value "true "
+                                                :type "bool")
+                                                (reparse-symbol arg-sub-list) [10306 10333]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [10245 10334])
+                                    ("run" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("tu" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("test_unit" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [10429 10449])
+                                            ("continue_test" variable
+                                               (:default-value "true "
+                                                :type "bool")
+                                                (reparse-symbol arg-sub-list) [10450 10477]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [10404 10478])
+                                    ("assertion_result" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("ar" variable (:type ("unit_test::assertion_result" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10637 10669]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [10599 10670])
+                                    ("exception_caught" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("execution_exception" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [10778 10806]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [10740 10807])
+                                    ("test_unit_aborted" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("test_unit" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [10915 10933]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [10876 10934])
+                                    ("impl" type
+                                       (:members 
+                                          ( ("setup_for_execution" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("test_unit" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [11046 11064]))                                                  
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [11005 11065])
+                                            ("setup_loggers" function
+                                               (:prototype-flag t
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [11082 11119]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [10943 11121])
+                                    ("std::runtime_error" variable (:type "int") (reparse-symbol namespacesubparts) [11512 11634])
+                                    ("std::runtime_error" variable (:type "int") (reparse-symbol namespacesubparts) [11830 11949])
+                                    ("BOOST_TEST_SETUP_ASSERT" variable (:constant-flag t) (reparse-symbol namespacesubparts) [11959 11982])
+                                    ("nothing_to_test" type
+                                       (:members 
+                                          ( ("nothing_to_test" function
+                                               (:constructor-flag t
+                                                :typemodifiers ("explicit")
+                                                :arguments 
+                                                  ( ("rc" variable (:type "int") (reparse-symbol arg-sub-list) [12206 12214]))                                                  
+                                                :type ("nothing_to_test" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [12177 12239])
+                                            ("m_result_code" variable (:type "int") (reparse-symbol classsubparts) [12245 12271]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [12148 12274]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1899 12359]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1041 12384]))                  
+                :type "namespace")
+                nil [945 12399])
+            ("boost/test/detail/enable_warnings.hpp" include (:system-flag t) nil [12420 12468]))          
+      :file "framework.hpp"
+      :pointmax 12515
+      :fsize 12514
+      :lastmodtime '(22633 22282 0 0)
+      :unmatched-syntax '((PUBLIC 11823 . 11829) (punctuation 11821 . 11822) (symbol 11809 . 11820) (symbol 11793 . 11808) (STRUCT 11786 . 11792) (PUBLIC 11505 . 11511) (punctuation 11503 . 11504) (symbol 11488 . 11502) (symbol 11472 . 11487) (STRUCT 11465 . 11471) (symbol 11066 . 11081) (symbol 10989 . 11004) (symbol 10860 . 10875) (symbol 10724 . 10739) (symbol 10583 . 10598) (symbol 10388 . 10403) (symbol 10229 . 10244) (symbol 9064 . 9079) (symbol 8720 . 8735) (symbol 8442 . 8457) (symbol 8211 . 8226) (symbol 7927 . 7942) (symbol 7753 . 7768) (symbol 7468 . 7483) (symbol 6647 . 6662) (symbol 6442 . 6457) (symbol 6135 . 6150) (symbol 5887 . 5902) (symbol 5426 . 5441) (symbol 4979 . 4994) (symbol 4500 . 4515) (symbol 3108 . 3123) (symbol 2914 . 2929) (symbol 2738 . 2753) (symbol 2303 . 2318) (semantic-list 1589 . 1591) (TYPEDEF 1534 . 1541))
+      :lexical-table 
+        '(("BOOST_TEST_FRAMEWORK_HPP_020805GER")
+          ("BOOST_TEST_SETUP_ASSERT" (spp-arg-list ("cond" "msg") 11982 . 11995) . ((symbol "BOOST_TEST_I_ASSRT" 11996 . 12014) (semantic-list "( cond, unit_test::framework::setup_error( msg ) )" 12014 . 12064)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_TEST_TOOLS_HPP_111812GER" variable (:constant-flag t) nil [557 587])
+            ("boost/config.hpp" include (:system-flag t) nil [589 616])
+            ("boost/test/detail/config.hpp" include (:system-flag t) nil [680 719])
+            ("boost/preprocessor/config/config.hpp" include (:system-flag t) nil [721 768])
+            ("boost/test/tools/context.hpp" include (:system-flag t) nil [1304 1343])
+            ("boost/test/tools/old/interface.hpp" include (:system-flag t) nil [1377 1424])
+            ("boost/test/tools/old/impl.hpp" include (:system-flag t) nil [1425 1467])
+            ("boost/test/tools/detail/print_helper.hpp" include (:system-flag t) nil [1469 1522])
+            ("boost/test/tools/interface.hpp" include (:system-flag t) nil [1563 1606])
+            ("boost/test/tools/assertion.hpp" include (:system-flag t) nil [1607 1650])
+            ("boost/test/tools/fpc_op.hpp" include (:system-flag t) nil [1651 1691])
+            ("boost/test/tools/collection_comparison_op.hpp" include (:system-flag t) nil [1692 1750])
+            ("boost/test/tools/cstring_comparison_op.hpp" include (:system-flag t) nil [1751 1806])
+            ("boost/test/tools/detail/fwd.hpp" include (:system-flag t) nil [1808 1852])
+            ("boost/test/tools/detail/print_helper.hpp" include (:system-flag t) nil [1853 1906])
+            ("boost/test/tools/detail/it_pair.hpp" include (:system-flag t) nil [1907 1955])
+            ("boost/test/tools/detail/bitwise_manip.hpp" include (:system-flag t) nil [1957 2011])
+            ("boost/test/tools/detail/tolerance_manip.hpp" include (:system-flag t) nil [2012 2068])
+            ("boost/test/tools/detail/per_element_manip.hpp" include (:system-flag t) nil [2069 2127])
+            ("boost/test/tools/detail/lexicographic_manip.hpp" include (:system-flag t) nil [2128 2188]))          
+      :file "test_tools.hpp"
+      :pointmax 2238
+      :fsize 2237
+      :lastmodtime '(22633 22282 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_TEST_TOOLS_HPP_111812GER")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_TEST_UNIT_TEST_LOG_HPP_071894GER" variable (:constant-flag t) nil [603 641])
+            ("boost/test/tree/observer.hpp" include (:system-flag t) nil [657 696])
+            ("boost/test/detail/global_typedef.hpp" include (:system-flag t) nil [698 745])
+            ("boost/test/detail/log_level.hpp" include (:system-flag t) nil [746 788])
+            ("boost/test/detail/fwd_decl.hpp" include (:system-flag t) nil [789 830])
+            ("boost/test/utils/wrap_stringstream.hpp" include (:system-flag t) nil [832 881])
+            ("boost/test/utils/trivial_singleton.hpp" include (:system-flag t) nil [882 931])
+            ("boost/test/utils/lazy_ostream.hpp" include (:system-flag t) nil [932 976])
+            ("iosfwd" include (:system-flag t) nil [995 1012])
+            ("boost/test/detail/suppress_warnings.hpp" include (:system-flag t) nil [1037 1087])
+            ("boost" type
+               (:members 
+                  ( ("unit_test" type
+                       (:members 
+                          ( ("log" type
+                               (:members 
+                                  ( ("begin" variable (:type ("BOOST_TEST_DECL" type
+                                         (:prototype t
+                                          :type "struct")
+                                          nil nil)) (reparse-symbol namespacesubparts) [1473 1664])
+                                    ("end" type (:type "struct") (reparse-symbol namespacesubparts) [1666 1680]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1456 1683])
+                            ("ut_detail" type
+                               (:members 
+                                  ( ("entry_value_collector" variable (:type ("BOOST_TEST_DECL" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [1969 2454]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1946 2457])
+                            ("BOOST_TEST_LOG_ENTRY" variable (:constant-flag t) (reparse-symbol namespacesubparts) [4638 4658]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1189 4895]))                  
+                :type "namespace")
+                nil [1171 4920])
+            ("BOOST_TEST_MESSAGE" variable (:constant-flag t) nil [5193 5211])
+            ("BOOST_TEST_PASSPOINT" variable (:constant-flag t) nil [5479 5499])
+            ("BOOST_TEST_CHECKPOINT" variable (:constant-flag t) nil [5831 5852])
+            ("boost/test/detail/enable_warnings.hpp" include (:system-flag t) nil [6241 6289]))          
+      :file "unit_test_log.hpp"
+      :pointmax 6341
+      :fsize 11319
+      :lastmodtime '(22633 22282 0 0)
+      :unmatched-syntax '((semantic-list 4594 . 4611) (symbol 4569 . 4594) (punctuation 4547 . 4548) (semantic-list 2822 . 4547) (punctuation 2820 . 2821) (symbol 2805 . 2820) (punctuation 2804 . 2805) (symbol 2795 . 2804) (PUBLIC 2788 . 2794) (punctuation 2786 . 2787) (symbol 2773 . 2786) (PUBLIC 2766 . 2772) (punctuation 2764 . 2765) (symbol 2748 . 2763) (symbol 2732 . 2747) (CLASS 2726 . 2731))
+      :lexical-table 
+        '(("BOOST_TEST_CHECKPOINT" (spp-arg-list ("M") 5852 . 5857) . 
+              ((punctuation ":" 5893 . 5894) (punctuation ":" 5894 . 5895) (symbol "boost" 5895 . 5900) (punctuation ":" 5900 . 5901) (punctuation ":" 5901 . 5902) (symbol "unit_test" 5902 . 5911) (punctuation ":" 5911 . 5912) (punctuation ":" 5912 . 5913) (symbol "unit_test_log" 5913 . 5926) (punctuation "." 5926 . 5927) (symbol "set_checkpoint" 5927 . 5941) (semantic-list "(           \\
+        BOOST_TEST_L(__FILE__),                                 \\
+        static_cast<std::size_t>(__LINE__),                     \\
+        (::boost::wrap_stringstream().ref() << M).str() )" 5941 . 6144)))
+          ("BOOST_TEST_MESSAGE" (spp-arg-list ("M") 5211 . 5216) . 
+              ((symbol "BOOST_TEST_LOG_ENTRY" 5255 . 5275) (semantic-list "( ::boost::unit_test::log_messages )" 5275 . 5311) (punctuation "<" 5321 . 5322) (punctuation "<" 5322 . 5323) (symbol "BOOST_TEST_LAZY_MSG" 5324 . 5343) (semantic-list "( M )" 5343 . 5348)))
+          ("BOOST_TEST_UNIT_TEST_LOG_HPP_071894GER")
+          ("BOOST_TEST_PASSPOINT" (spp-arg-list nil 5499 . 5501) . 
+              ((punctuation ":" 5541 . 5542) (punctuation ":" 5542 . 5543) (symbol "boost" 5543 . 5548) (punctuation ":" 5548 . 5549) (punctuation ":" 5549 . 5550) (symbol "unit_test" 5550 . 5559) (punctuation ":" 5559 . 5560) (punctuation ":" 5560 . 5561) (symbol "unit_test_log" 5561 . 5574) (punctuation "." 5574 . 5575) (symbol "set_checkpoint" 5575 . 5589) (semantic-list "(           \\
+        BOOST_TEST_L(__FILE__),                                 \\
+        static_cast<std::size_t>(__LINE__) )" 5589 . 5713)))
+          ("BOOST_TEST_LOG_ENTRY" (spp-arg-list ("ll") 4658 . 4664) . ((semantic-list "(::boost::unit_test::unit_test_log                                              \\
+        << ::boost::unit_test::log::begin( BOOST_TEST_L(__FILE__), __LINE__ ))" 4720 . 4880) (semantic-list "(ll)" 4880 . 4884)))
+          )
+))
+  :file "!usr!include!boost!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

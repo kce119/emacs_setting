@@ -1,0 +1,1128 @@
+;; Object optional/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "optional/"
+  :tables
+  (list
+    (semanticdb-table "optional.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_OPTIONAL_OPTIONAL_FLC_19NOV2002_HPP" variable (:constant-flag t) nil [667 708])
+            ("new" include (:system-flag t) nil [710 724])
+            ("iosfwd" include (:system-flag t) nil [725 742])
+            ("boost/assert.hpp" include (:system-flag t) nil [744 771])
+            ("boost/core/addressof.hpp" include (:system-flag t) nil [772 807])
+            ("boost/core/enable_if.hpp" include (:system-flag t) nil [808 843])
+            ("boost/core/explicit_operator_bool.hpp" include (:system-flag t) nil [844 892])
+            ("boost/core/swap.hpp" include (:system-flag t) nil [893 923])
+            ("boost/optional/bad_optional_access.hpp" include (:system-flag t) nil [924 973])
+            ("boost/static_assert.hpp" include (:system-flag t) nil [974 1008])
+            ("boost/throw_exception.hpp" include (:system-flag t) nil [1009 1045])
+            ("boost/type.hpp" include (:system-flag t) nil [1046 1071])
+            ("boost/type_traits/alignment_of.hpp" include (:system-flag t) nil [1072 1117])
+            ("boost/type_traits/conditional.hpp" include (:system-flag t) nil [1118 1162])
+            ("boost/type_traits/has_nothrow_constructor.hpp" include (:system-flag t) nil [1163 1219])
+            ("boost/type_traits/type_with_alignment.hpp" include (:system-flag t) nil [1220 1272])
+            ("boost/type_traits/remove_const.hpp" include (:system-flag t) nil [1273 1318])
+            ("boost/type_traits/remove_reference.hpp" include (:system-flag t) nil [1319 1368])
+            ("boost/type_traits/decay.hpp" include (:system-flag t) nil [1369 1407])
+            ("boost/type_traits/is_base_of.hpp" include (:system-flag t) nil [1408 1451])
+            ("boost/type_traits/is_constructible.hpp" include (:system-flag t) nil [1452 1501])
+            ("boost/type_traits/is_lvalue_reference.hpp" include (:system-flag t) nil [1502 1554])
+            ("boost/type_traits/is_nothrow_move_assignable.hpp" include (:system-flag t) nil [1555 1614])
+            ("boost/type_traits/is_nothrow_move_constructible.hpp" include (:system-flag t) nil [1615 1677])
+            ("boost/type_traits/is_rvalue_reference.hpp" include (:system-flag t) nil [1678 1730])
+            ("boost/type_traits/is_same.hpp" include (:system-flag t) nil [1731 1771])
+            ("boost/move/utility.hpp" include (:system-flag t) nil [1772 1805])
+            ("boost/none.hpp" include (:system-flag t) nil [1806 1831])
+            ("boost/utility/compare_pointees.hpp" include (:system-flag t) nil [1832 1877])
+            ("boost/optional/optional_fwd.hpp" include (:system-flag t) nil [1879 1921])
+            ("boost/optional/detail/optional_config.hpp" include (:system-flag t) nil [1922 1974])
+            ("boost/optional/detail/optional_factory_support.hpp" include (:system-flag t) nil [1975 2036])
+            ("boost/optional/detail/optional_aligned_storage.hpp" include (:system-flag t) nil [2037 2098])
+            ("boost" type
+               (:members 
+                  ( ("optional_ns" type
+                       (:members 
+                          ( ("in_place_init_t" type
+                               (:members 
+                                  ( ("init_tag" type (:type "struct") (reparse-symbol classsubparts) [2366 2384])
+                                    ("in_place_init_t" function
+                                       (:constructor-flag t
+                                        :typemodifiers ("explicit")
+                                        :arguments 
+                                          ( ("" variable (:type ("init_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2412 2421]))                                          
+                                        :type ("in_place_init_t" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [2387 2423]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [2339 2426])
+                            ("in_place_init" function
+                               (:prototype-flag t
+                                :constant-flag t
+                                :type ("in_place_init_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2439 2507])
+                            ("in_place_init_if_t" type
+                               (:members 
+                                  ( ("init_tag" type (:type "struct") (reparse-symbol classsubparts) [2608 2626])
+                                    ("in_place_init_if_t" function
+                                       (:constructor-flag t
+                                        :typemodifiers ("explicit")
+                                        :arguments 
+                                          ( ("" variable (:type ("init_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2657 2666]))                                          
+                                        :type ("in_place_init_if_t" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [2629 2668]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [2578 2671])
+                            ("in_place_init_if" function
+                               (:prototype-flag t
+                                :constant-flag t
+                                :type ("in_place_init_if_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2672 2749]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2256 2754])
+                    ("optional_ns::in_place_init_t" using (:type ("optional_ns::in_place_init_t" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [2781 2816])
+                    ("optional_ns::in_place_init" using (:type ("optional_ns::in_place_init" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [2817 2850])
+                    ("optional_ns::in_place_init_if_t" using (:type ("optional_ns::in_place_init_if_t" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [2851 2889])
+                    ("optional_ns::in_place_init_if" using (:type ("optional_ns::in_place_init_if" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [2890 2926])
+                    ("optional_detail" type
+                       (:members 
+                          ( ("optional_tag" type (:type "struct") (reparse-symbol namespacesubparts) [2957 2981])
+                            ("optional_base" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("private" label nil (reparse-symbol classsubparts) [3048 3057])
+                                    ("storage_type" type
+                                       (:typedef ("aligned_storage" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3063 3104])
+                                    ("this_type" type
+                                       (:typedef ("optional_base" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3109 3145])
+                                    ("protected" label nil (reparse-symbol classsubparts) [3149 3160])
+                                    ("value_type" type
+                                       (:typedef ("T" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3166 3188])
+                                    ("protected" label nil (reparse-symbol classsubparts) [3192 3202])
+                                    ("reference_type" type
+                                       (:typedef ("T" type (:type "class") nil nil)
+                                        :reference 1
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3207 3241])
+                                    ("reference_const_type" type
+                                       (:typedef ("T" type (:type "class") nil nil)
+                                        :reference 1
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3246 3286])
+                                    ("rval_reference_type" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3351 3378])
+                                    ("reference_type_of_temporary_wrapper" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3391 3434])
+                                    ("pointer_type" type
+                                       (:typedef ("T" type (:type "class") nil nil)
+                                        :pointer 1
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3446 3480])
+                                    ("pointer_const_type" type
+                                       (:typedef ("T" type (:type "class") nil nil)
+                                        :pointer 1
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3485 3525])
+                                    ("argument_type" type
+                                       (:typedef ("T" type (:type "class") nil nil)
+                                        :reference 1
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3530 3565])
+                                    ("optional_base" function
+                                       (:constructor-flag t
+                                        :type ("optional_base" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3632 3685])
+                                    ("optional_base" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("none_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3768 3776]))                                          
+                                        :type ("optional_base" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3752 3814])
+                                    ("optional_base" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("val" variable (:type ("argument_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3930 3949]))                                          
+                                        :type ("optional_base" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3914 4020])
+                                    ("optional_base" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("val" variable (:type ("rval_reference_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4207 4232]))                                          
+                                        :type ("optional_base" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4191 4316])
+                                    ("optional_base" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("cond" variable (:type "bool") (reparse-symbol arg-sub-list) [4503 4513])
+                                            ("val" variable (:type ("argument_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4514 4533]))                                          
+                                        :type ("optional_base" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4487 4622])
+                                    ("optional_base" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("rhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("optional_base" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4734 4760]))                                          
+                                        :type ("optional_base" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4718 4876])
+                                    ("optional_base" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :type ("optional_base" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5035 5050])
+                                            ("" variable (:type ("rhs" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5051 5056]))                                          
+                                        :type ("optional_base" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5019 5187])
+                                    ("optional_base" function
+                                       (:template 
+                                          ( ("Expr" type (:type "class") nil nil)
+                                            ("PtrExpr" type (:type "class") nil nil))                                          
+                                        :type ("optional_base" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :type ("Expr" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5318 5324])
+                                            ("" variable (:type ("expr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5325 5330])
+                                            ("tag" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("PtrExpr" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5331 5351]))                                          
+                                        :typemodifiers ("explicit")
+                                        :constructor-flag t)
+                                        (reparse-symbol classsubparts) [5253 5447])
+                                    ("optional_base" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [5866 5898])
+                                    ("assign" function
+                                       (:arguments 
+                                          ( ("rhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("optional_base" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5986 6012]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [5972 6271])
+                                    ("assign" function
+                                       (:arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :type ("optional_base" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6413 6428])
+                                            ("" variable (:type ("rhs" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6429 6434]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [6399 6721])
+                                    ("assign" function
+                                       (:template 
+                                          ( ("U" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("rhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("optional" type
+                                                     (:template-specifier 
+                                                        ( ("U" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [6853 6877]))                                          )
+                                        (reparse-symbol classsubparts) [6817 7427])
+                                    ("assign" function
+                                       (:template 
+                                          ( ("U" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :type ("optional" type
+                                                     (:template-specifier 
+                                                        ( ("U" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [7611 7624])
+                                            ("" variable (:type ("rhs" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7625 7630]))                                          )
+                                        (reparse-symbol classsubparts) [7575 8007])
+                                    ("assign" function
+                                       (:arguments 
+                                          ( ("val" variable (:type ("argument_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8090 8109]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8076 8206])
+                                    ("assign" function
+                                       (:arguments 
+                                          ( ("val" variable (:type ("rval_reference_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8332 8357]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8318 8484])
+                                    ("assign_expr" function
+                                       (:template 
+                                          ( ("Expr" type (:type "class") nil nil)
+                                            ("ExprPtr" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :type ("Expr" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8852 8858])
+                                            ("" variable (:type ("expr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8859 8864])
+                                            ("tag" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("ExprPtr" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8865 8885]))                                          )
+                                        (reparse-symbol classsubparts) [8793 9047])
+                                    ("public" label nil (reparse-symbol classsubparts) [9274 9282])
+                                    ("reset" function
+                                       (:arguments 
+                                          ( ("val" variable (:type ("argument_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9548 9567]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [9535 9584])
+                                    ("get_ptr" function
+                                       (:methodconst-flag t
+                                        :type ("pointer_const_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [9700 9782])
+                                    ("get_ptr" function (:type ("pointer_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9787 9869])
+                                    ("is_initialized" function
+                                       (:methodconst-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [9875 9929])
+                                    ("protected" label nil (reparse-symbol classsubparts) [9933 9944])
+                                    ("construct" function
+                                       (:arguments 
+                                          ( ("val" variable (:type ("argument_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9967 9986]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [9950 10083])
+                                    ("construct" function
+                                       (:arguments 
+                                          ( ("val" variable (:type ("rval_reference_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10163 10188]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [10146 10300])
+                                    ("construct" function
+                                       (:arguments 
+                                          ( ("" variable (:type ("in_place_init_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10544 10560])
+                                            ("" variable
+                                               (:reference 1
+                                                :type ("Args" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [10561 10567])
+                                            ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10571 10577]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [10527 10698])
+                                    ("emplace_assign" function
+                                       (:arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :type ("Args" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [10754 10760])
+                                            ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10764 10770]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [10732 10862])
+                                    ("optional_base" function
+                                       (:constructor-flag t
+                                        :typemodifiers ("explicit")
+                                        :arguments 
+                                          ( ("" variable (:type ("in_place_init_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10926 10942])
+                                            ("" variable
+                                               (:reference 1
+                                                :type ("Args" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [10943 10949])
+                                            ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10953 10959]))                                          
+                                        :type ("optional_base" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [10901 11069])
+                                    ("optional_base" function
+                                       (:constructor-flag t
+                                        :typemodifiers ("explicit")
+                                        :arguments 
+                                          ( ("" variable (:type ("in_place_init_if_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11132 11151])
+                                            ("cond" variable (:type "bool") (reparse-symbol arg-sub-list) [11152 11162])
+                                            ("" variable
+                                               (:reference 1
+                                                :type ("Args" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [11163 11169])
+                                            ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11173 11179]))                                          
+                                        :type ("optional_base" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [11107 11309])
+                                    ("construct" function
+                                       (:template 
+                                          ( ("Arg" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("" variable (:type ("in_place_init_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11415 11431])
+                                            ("" variable
+                                               (:reference 1
+                                                :type ("Arg" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [11432 11437])
+                                            ("" variable (:type ("arg" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11438 11443]))                                          )
+                                        (reparse-symbol classsubparts) [11374 11562])
+                                    ("construct" function
+                                       (:arguments 
+                                          ( ("" variable (:type ("in_place_init_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11590 11607]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [11573 11700])
+                                    ("emplace_assign" function
+                                       (:template 
+                                          ( ("Arg" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :type ("Arg" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [11757 11762])
+                                            ("" variable (:type ("arg" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11763 11768]))                                          )
+                                        (reparse-symbol classsubparts) [11711 11860])
+                                    ("emplace_assign" function (:type "void") (reparse-symbol classsubparts) [11871 11959])
+                                    ("optional_base" function
+                                       (:template 
+                                          ( ("Arg" type (:type "class") nil nil))                                          
+                                        :type ("optional_base" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("" variable (:type ("in_place_init_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12019 12035])
+                                            ("" variable
+                                               (:reference 1
+                                                :type ("Arg" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [12036 12041])
+                                            ("" variable (:type ("arg" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12042 12047]))                                          
+                                        :typemodifiers ("explicit")
+                                        :constructor-flag t)
+                                        (reparse-symbol classsubparts) [11970 12152])
+                                    ("optional_base" function
+                                       (:constructor-flag t
+                                        :typemodifiers ("explicit")
+                                        :arguments 
+                                          ( ("" variable (:type ("in_place_init_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12187 12204]))                                          
+                                        :type ("optional_base" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [12162 12283])
+                                    ("optional_base" function
+                                       (:template 
+                                          ( ("Arg" type (:type "class") nil nil))                                          
+                                        :type ("optional_base" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("" variable (:type ("in_place_init_if_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12342 12361])
+                                            ("cond" variable (:type "bool") (reparse-symbol arg-sub-list) [12362 12372])
+                                            ("" variable
+                                               (:reference 1
+                                                :type ("Arg" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [12373 12378])
+                                            ("" variable (:type ("arg" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12379 12384]))                                          
+                                        :typemodifiers ("explicit")
+                                        :constructor-flag t)
+                                        (reparse-symbol classsubparts) [12293 12509])
+                                    ("optional_base" function
+                                       (:constructor-flag t
+                                        :typemodifiers ("explicit")
+                                        :arguments 
+                                          ( ("" variable (:type ("in_place_init_if_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12544 12563])
+                                            ("cond" variable (:type "bool") (reparse-symbol arg-sub-list) [12564 12575]))                                          
+                                        :type ("optional_base" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [12519 12674])
+                                    ("construct" function
+                                       (:template 
+                                          ( ("Expr" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :type ("Expr" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [14765 14771])
+                                            ("" variable (:type ("factory" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14772 14780])
+                                            ("" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("in_place_factory_base" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [14781 14811]))                                          )
+                                        (reparse-symbol classsubparts) [14723 14938])
+                                    ("construct" function
+                                       (:template 
+                                          ( ("Expr" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :type ("Expr" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [15043 15049])
+                                            ("" variable (:type ("factory" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15050 15058])
+                                            ("" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("typed_in_place_factory_base" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [15059 15095]))                                          )
+                                        (reparse-symbol classsubparts) [15001 15183])
+                                    ("assign_expr_to_initialized" function
+                                       (:template 
+                                          ( ("Expr" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :type ("Expr" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [15248 15254])
+                                            ("" variable (:type ("factory" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15255 15263])
+                                            ("tag" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("in_place_factory_base" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [15264 15298]))                                          )
+                                        (reparse-symbol classsubparts) [15189 15361])
+                                    ("assign_expr_to_initialized" function
+                                       (:template 
+                                          ( ("Expr" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :type ("Expr" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [15483 15489])
+                                            ("" variable (:type ("factory" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15490 15498])
+                                            ("tag" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("typed_in_place_factory_base" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [15499 15539]))                                          )
+                                        (reparse-symbol classsubparts) [15424 15602])
+                                    ("construct" function
+                                       (:template 
+                                          ( ("Expr" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :type ("Expr" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [16976 16982])
+                                            ("" variable (:type ("expr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16983 16988])
+                                            ("" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "void")
+                                                (reparse-symbol arg-sub-list) [16989 17002]))                                          )
+                                        (reparse-symbol classsubparts) [16934 17116])
+                                    ("assign_expr_to_initialized" function
+                                       (:template 
+                                          ( ("Expr" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :type ("Expr" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [17477 17483])
+                                            ("" variable (:type ("expr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17484 17489])
+                                            ("" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "void")
+                                                (reparse-symbol arg-sub-list) [17490 17503]))                                          )
+                                        (reparse-symbol classsubparts) [17418 17565])
+                                    ("assign_value" function
+                                       (:arguments 
+                                          ( ("val" variable (:type ("argument_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20290 20309]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [20270 20331])
+                                    ("assign_value" function
+                                       (:arguments 
+                                          ( ("val" variable (:type ("rval_reference_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20408 20433]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [20388 20489])
+                                    ("destroy" function (:type "void") (reparse-symbol classsubparts) [20502 20580])
+                                    ("get_impl" function
+                                       (:methodconst-flag t
+                                        :type ("reference_const_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [20586 20652])
+                                    ("get_impl" function (:type ("reference_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [20657 20723])
+                                    ("get_ptr_impl" function
+                                       (:methodconst-flag t
+                                        :type ("pointer_const_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [20729 20800])
+                                    ("get_ptr_impl" function (:type ("pointer_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [20805 20876])
+                                    ("private" label nil (reparse-symbol classsubparts) [20880 20889])
+                                    ("destroy_impl" function (:type "void") (reparse-symbol classsubparts) [21025 21100])
+                                    ("m_initialized" variable (:type "bool") (reparse-symbol classsubparts) [21113 21133])
+                                    ("m_storage" variable (:type ("storage_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21138 21162]))                                  
+                                :superclasses 
+                                  ( ("optional_tag" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [2984 21166])
+                            ("type" variable (:type "int") (reparse-symbol namespacesubparts) [21768 21776])
+                            ("type" variable (:type "int") (reparse-symbol namespacesubparts) [22373 22381])
+                            ("is_optional_constructible" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil)
+                                    ("U" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :superclasses 
+                                  ( ("boost::is_constructible" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [22383 22485])
+                            ("type" variable (:type "int") (reparse-symbol namespacesubparts) [22949 22957]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2928 22964])
+                    ("optional" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("base" type
+                               (:typedef ("optional_detail::optional_base" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [23077 23125])
+                            ("public" label nil (reparse-symbol classsubparts) [23129 23137])
+                            ("this_type" type
+                               (:typedef ("optional" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [23143 23174])
+                            ("value_type" variable (:type ("base::value_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23211 23250])
+                            ("reference_type" variable (:type ("base::reference_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23286 23329])
+                            ("reference_const_type" variable (:type ("base::reference_const_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23365 23414])
+                            ("rval_reference_type" variable (:type ("base::rval_reference_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23502 23550])
+                            ("reference_type_of_temporary_wrapper" variable (:type ("base::reference_type_of_temporary_wrapper" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23586 23665])
+                            ("pointer_type" variable (:type ("base::pointer_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23708 23749])
+                            ("pointer_const_type" variable (:type ("base::pointer_const_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23785 23832])
+                            ("argument_type" variable (:type ("base::argument_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23868 23910])
+                            ("base" function (:type "int") (reparse-symbol classsubparts) [24005 24014])
+                            ("base" function
+                               (:arguments 
+                                  ( ("" variable (:type ("none_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24128 24134]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [24123 24137])
+                            ("optional" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("val" variable (:type ("argument_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24248 24267]))                                  
+                                :type ("optional" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [24237 24282])
+                            ("optional" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("val" variable (:type ("rval_reference_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24447 24472]))                                  
+                                :type ("optional" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [24436 24515])
+                            ("optional" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("cond" variable (:type "bool") (reparse-symbol arg-sub-list) [24695 24705])
+                                    ("val" variable (:type ("argument_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24706 24725]))                                  
+                                :type ("optional" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [24684 24745])
+                            ("optional" function
+                               (:template 
+                                  ( ("U" type (:type "class") nil nil))                                  
+                                :type ("optional" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("optional" type
+                                             (:template-specifier 
+                                                ( ("U" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [24993 25103])
+                                    ("" variable
+                                       (:pointer 1
+                                        :typemodifiers ("typename")
+                                        :type ("boost::enable_if::type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [25103 25229]))                                  
+                                :typemodifiers ("explicit")
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [24951 25332])
+                            ("optional" function
+                               (:template 
+                                  ( ("U" type (:type "class") nil nil))                                  
+                                :type ("optional" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("optional" type
+                                             (:template-specifier 
+                                                ( ("U" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [25581 25595])
+                                    ("" variable (:type ("rhs" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25596 25687])
+                                    ("" variable
+                                       (:pointer 1
+                                        :typemodifiers ("typename")
+                                        :type ("boost::enable_if::type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [25687 25806]))                                  
+                                :typemodifiers ("explicit")
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [25539 25924])
+                            ("optional" function
+                               (:template 
+                                  ( ("Expr" type (:type "class") nil nil))                                  
+                                :type ("optional" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("Expr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [26671 26677])
+                                    ("" variable (:type ("expr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26678 26683])
+                                    ("boost::enable_if::type" variable (:type ("BOOST_DEDUCED_TYPENAME" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26707 26813]))                                  
+                                :typemodifiers ("explicit")
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [26628 26893])
+                            ("optional" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("optional" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [27237 27258]))                                  
+                                :type ("optional" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [27226 27301])
+                            ("BOOST_NOEXCEPT_IF" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("boost::is_nothrow_move_constructible::value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27488 27535]))                                  
+                                :type ("optional" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [27468 27570])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("Expr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [28193 28199])
+                                    ("" variable (:type ("expr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28200 28206]))                                  
+                                :type ("boost::enable_if::type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [28084 28323])
+                            ("=" function
+                               (:template 
+                                  ( ("U" type (:type "class") nil nil))                                  
+                                :type ("optional" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("optional" type
+                                             (:template-specifier 
+                                                ( ("U" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [28947 28971]))                                  
+                                :operator-flag t)
+                                (reparse-symbol classsubparts) [28903 29037])
+                            ("=" function
+                               (:template 
+                                  ( ("U" type (:type "class") nil nil))                                  
+                                :type ("optional" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("optional" type
+                                             (:template-specifier 
+                                                ( ("U" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [29364 29378])
+                                    ("" variable (:type ("rhs" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29379 29384]))                                  
+                                :operator-flag t)
+                                (reparse-symbol classsubparts) [29320 29463])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("optional" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [29753 29774]))                                  
+                                :type ("optional" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [29731 29869])
+                            ("BOOST_NOEXCEPT_IF" function
+                               (:arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("boost::is_nothrow_move_constructible::value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [30058 30107])
+                                    ("" variable (:type ("boost::is_nothrow_move_assignable::value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30110 30154]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [30038 30245])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("T_" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [30536 30540])
+                                    ("" variable (:type ("val" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30541 30546]))                                  
+                                :type ("boost::enable_if::type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [30420 30635])
+                            ("emplace" function
+                               (:arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("Args" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [31728 31734])
+                                    ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31738 31744]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [31713 31817])
+                            ("optional" function
+                               (:constructor-flag t
+                                :typemodifiers ("explicit")
+                                :arguments 
+                                  ( ("" variable (:type ("in_place_init_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31876 31892])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("Args" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [31893 31899])
+                                    ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31903 31909]))                                  
+                                :type ("optional" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [31856 31975])
+                            ("optional" function
+                               (:constructor-flag t
+                                :typemodifiers ("explicit")
+                                :arguments 
+                                  ( ("" variable (:type ("in_place_init_if_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32033 32052])
+                                    ("cond" variable (:type "bool") (reparse-symbol arg-sub-list) [32053 32063])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("Args" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [32064 32070])
+                                    ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32074 32080]))                                  
+                                :type ("optional" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [32013 32155])
+                            ("emplace" function
+                               (:template 
+                                  ( ("Arg" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("Arg" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [32264 32269])
+                                    ("" variable (:type ("arg" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32270 32275]))                                  )
+                                (reparse-symbol classsubparts) [32225 32346])
+                            ("emplace" function (:type "void") (reparse-symbol classsubparts) [32357 32417])
+                            ("optional" function
+                               (:template 
+                                  ( ("Args" type (:type "class") nil nil))                                  
+                                :type ("optional" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("" variable (:type ("in_place_init_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32473 32489])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("Args" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [32490 32496])
+                                    ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32497 32503]))                                  
+                                :typemodifiers ("explicit")
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [32428 32566])
+                            ("optional" function
+                               (:constructor-flag t
+                                :typemodifiers ("explicit")
+                                :arguments 
+                                  ( ("" variable (:type ("in_place_init_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32592 32609]))                                  
+                                :type ("optional" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [32572 32644])
+                            ("optional" function
+                               (:template 
+                                  ( ("Args" type (:type "class") nil nil))                                  
+                                :type ("optional" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("" variable (:type ("in_place_init_if_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32699 32718])
+                                    ("cond" variable (:type "bool") (reparse-symbol arg-sub-list) [32719 32729])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("Args" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [32730 32736])
+                                    ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32737 32743]))                                  
+                                :typemodifiers ("explicit")
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [32654 32815])
+                            ("optional" function
+                               (:constructor-flag t
+                                :typemodifiers ("explicit")
+                                :arguments 
+                                  ( ("" variable (:type ("in_place_init_if_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32845 32864])
+                                    ("cond" variable (:type "bool") (reparse-symbol arg-sub-list) [32865 32876]))                                  
+                                :type ("optional" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [32825 32920])
+                            ("BOOST_NOEXCEPT_IF" function
+                               (:arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("boost::is_nothrow_move_constructible::value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [34008 34057])
+                                    ("" variable (:type ("boost::is_nothrow_move_assignable::value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34060 34104]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [33988 34188])
+                            ("get" function
+                               (:methodconst-flag t
+                                :type ("reference_const_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [34320 34420])
+                            ("get" function (:type ("reference_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [34425 34525])
+                            ("get_value_or" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("v" variable (:type ("reference_const_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34640 34664]))                                  
+                                :type ("reference_const_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [34604 34718])
+                            ("get_value_or" function
+                               (:arguments 
+                                  ( ("v" variable (:type ("reference_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34759 34783]))                                  
+                                :type ("reference_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [34723 34837])
+                            ("->" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :type ("pointer_const_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [34966 35076])
+                            ("->" function
+                               (:operator-flag t
+                                :type ("pointer_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [35081 35191])
+                            ("value_or" function
+                               (:template 
+                                  ( ("U" type (:type "class") nil nil))                                  
+                                :type ("value_type" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("U" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [37470 37473])
+                                    ("" variable (:type ("v" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37474 37477]))                                  
+                                :methodconst-flag t)
+                                (reparse-symbol classsubparts) [37425 37612]))                          
+                        :superclasses 
+                          ( ("optional_detail::optional_base" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [22995 38734]))                  
+                :type "namespace")
+                nil [2235 38737])
+            ("boost" type (:type "namespace") nil [38826 39038])
+            ("boost/optional/detail/optional_reference_spec.hpp" include (:system-flag t) nil [39119 39180])
+            ("boost" type
+               (:members 
+                  ( ("make_optional" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("optional" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [39287 39300]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [39234 39329])
+                    ("make_optional" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("optional" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("cond" variable (:type "bool") (reparse-symbol arg-sub-list) [39415 39425])
+                            ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [39426 39438]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [39362 39472])
+                    ("get" function
+                       (:arguments 
+                          ( ("opt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("optional" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [39673 39697]))                          
+                        :type ("optional::reference_const_type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [39633 39722])
+                    ("get" function
+                       (:arguments 
+                          ( ("opt" variable
+                               (:reference 1
+                                :type ("optional" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [39806 39824]))                          
+                        :type ("optional::reference_type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [39772 39849])
+                    ("get" function
+                       (:arguments 
+                          ( ("opt" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("optional" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [40032 40056]))                          
+                        :type ("optional::pointer_const_type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [39994 40086])
+                    ("get" function
+                       (:arguments 
+                          ( ("opt" variable
+                               (:pointer 1
+                                :type ("optional" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [40168 40186]))                          
+                        :type ("optional::pointer_type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [40136 40216])
+                    ("get_optional_value_or" function
+                       (:arguments 
+                          ( ("opt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("optional" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [40435 40458])
+                            ("optional::reference_const_type" variable (:type ("BOOST_DEDUCED_TYPENAME" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40459 40517])
+                            ("" variable (:type ("v" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40516 40519]))                          
+                        :type ("optional::reference_const_type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [40377 40554])
+                    ("get_optional_value_or" function
+                       (:arguments 
+                          ( ("opt" variable
+                               (:reference 1
+                                :type ("optional" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [40656 40673])
+                            ("optional::reference_type" variable (:type ("BOOST_DEDUCED_TYPENAME" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40674 40726])
+                            ("" variable (:type ("v" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40725 40728]))                          
+                        :type ("optional::reference_type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [40604 40763])
+                    ("get_pointer" function
+                       (:arguments 
+                          ( ("opt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("optional" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [40954 40978]))                          
+                        :type ("optional::pointer_const_type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [40908 41007])
+                    ("get_pointer" function
+                       (:arguments 
+                          ( ("opt" variable
+                               (:reference 1
+                                :type ("optional" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [41097 41115]))                          
+                        :type ("optional::pointer_type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [41057 41144]))                  
+                :type "namespace")
+                nil [39189 41147])
+            ("boost" type
+               (:members 
+                  ( ("<<" function
+                       (:template 
+                          ( ("CharType" type (:type "class") nil nil)
+                            ("CharTrait" type (:type "class") nil nil))                          
+                        :type ("std::basic_ostream" type
+                             (:template-specifier 
+                                ( ("CharType" type nil nil nil)
+                                  ("CharTrait" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("os" variable
+                               (:reference 1
+                                :type ("std::basic_ostream" type
+                                     (:template-specifier 
+                                        ( ("CharType" type nil nil nil)
+                                          ("CharTrait" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [41420 41464])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("optional_detail::optional_tag" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [41465 41502]))                          
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [41326 41661]))                  
+                :type "namespace")
+                nil [41168 41664])
+            ("boost/optional/detail/optional_relops.hpp" include (:system-flag t) nil [41685 41737])
+            ("boost/optional/detail/optional_swap.hpp" include (:system-flag t) nil [41738 41788]))          
+      :file "optional.hpp"
+      :pointmax 41813
+      :fsize 41812
+      :lastmodtime '(22633 22283 0 0)
+      :unmatched-syntax '((symbol 41034 . 41056) (INLINE 41027 . 41033) (punctuation 41025 . 41026) (symbol 41024 . 41025) (CLASS 41018 . 41023) (punctuation 41017 . 41018) (TEMPLATE 41009 . 41017) (symbol 40885 . 40907) (INLINE 40878 . 40884) (punctuation 40876 . 40877) (symbol 40875 . 40876) (CLASS 40869 . 40874) (punctuation 40868 . 40869) (TEMPLATE 40860 . 40868) (symbol 40581 . 40603) (INLINE 40574 . 40580) (punctuation 40572 . 40573) (symbol 40571 . 40572) (CLASS 40565 . 40570) (punctuation 40564 . 40565) (TEMPLATE 40556 . 40564) (symbol 40354 . 40376) (INLINE 40347 . 40353) (punctuation 40345 . 40346) (symbol 40344 . 40345) (CLASS 40338 . 40343) (punctuation 40337 . 40338) (TEMPLATE 40329 . 40337) (symbol 40113 . 40135) (INLINE 40106 . 40112) (punctuation 40104 . 40105) (symbol 40103 . 40104) (CLASS 40097 . 40102) (punctuation 40096 . 40097) (TEMPLATE 40088 . 40096) (symbol 39971 . 39993) (INLINE 39964 . 39970) (punctuation 39962 . 39963) (symbol 39961 . 39962) (CLASS 39955 . 39960) (punctuation 39954 . 39955) (TEMPLATE 39946 . 39954) (symbol 39749 . 39771) (INLINE 39742 . 39748) (punctuation 39740 . 39741) (symbol 39739 . 39740) (CLASS 39733 . 39738) (punctuation 39732 . 39733) (TEMPLATE 39724 . 39732) (symbol 39610 . 39632) (INLINE 39603 . 39609) (punctuation 39601 . 39602) (symbol 39600 . 39601) (CLASS 39594 . 39599) (punctuation 39593 . 39594) (TEMPLATE 39585 . 39593) (punctuation 39027 . 39028) (semantic-list 38937 . 39026) (punctuation 38935 . 38936) (punctuation 38934 . 38935) (punctuation 38933 . 38934) (symbol 38932 . 38933) (punctuation 38931 . 38932) (symbol 38923 . 38931) (CLASS 38917 . 38922) (punctuation 38915 . 38916) (symbol 38914 . 38915) (CLASS 38908 . 38913) (punctuation 38907 . 38908) (TEMPLATE 38899 . 38907) (semantic-list 38728 . 38730) (symbol 38691 . 38728) (semantic-list 38645 . 38681) (symbol 38630 . 38644) (CONST 38624 . 38629) (semantic-list 38621 . 38623) (punctuation 38620 . 38621) (OPERATOR 38612 . 38620) (BOOL 38607 . 38611) (semantic-list 38285 . 38402) (punctuation 38277 . 38278) (punctuation 38276 . 38277) (semantic-list 38268 . 38275) (symbol 38254 . 38267) (symbol 38243 . 38253) (punctuation 38237 . 38238) (symbol 38236 . 38237) (TYPENAME 38227 . 38235) (punctuation 38226 . 38227) (TEMPLATE 38217 . 38225) (semantic-list 38101 . 38205) (punctuation 38093 . 38094) (CONST 38088 . 38093) (semantic-list 38080 . 38087) (symbol 38066 . 38079) (symbol 38055 . 38065) (punctuation 38049 . 38050) (symbol 38048 . 38049) (TYPENAME 38039 . 38047) (punctuation 38038 . 38039) (TEMPLATE 38029 . 38037) (punctuation 37472 . 37473) (semantic-list 37227 . 37362) (punctuation 37218 . 37219) (punctuation 37217 . 37218) (semantic-list 37207 . 37216) (symbol 37198 . 37206) (punctuation 37211 . 37212) (symbol 37187 . 37197) (punctuation 37211 . 37212) (punctuation 37181 . 37182) (symbol 37180 . 37181) (CLASS 37174 . 37179) (punctuation 37173 . 37174) (TEMPLATE 37164 . 37172) (punctuation 37211 . 37212) (semantic-list 37032 . 37154) (punctuation 37024 . 37025) (CONST 37019 . 37024) (semantic-list 37009 . 37018) (symbol 37000 . 37008) (punctuation 37013 . 37014) (symbol 36989 . 36999) (punctuation 37013 . 37014) (punctuation 36983 . 36984) (symbol 36982 . 36983) (CLASS 36976 . 36981) (punctuation 36975 . 36976) (TEMPLATE 36966 . 36974) (punctuation 37013 . 37014) (semantic-list 36386 . 36539) (punctuation 36378 . 36379) (punctuation 36377 . 36378) (semantic-list 36374 . 36376) (symbol 36369 . 36374) (symbol 36333 . 36368) (semantic-list 36181 . 36321) (punctuation 36173 . 36174) (semantic-list 36170 . 36172) (symbol 36165 . 36170) (symbol 36150 . 36164) (semantic-list 35998 . 36138) (punctuation 35990 . 35991) (CONST 35985 . 35990) (semantic-list 35982 . 35984) (symbol 35977 . 35982) (symbol 35956 . 35976) (semantic-list 35617 . 35654) (punctuation 35615 . 35616) (punctuation 35614 . 35615) (semantic-list 35611 . 35613) (punctuation 35610 . 35611) (OPERATOR 35601 . 35609) (symbol 35565 . 35600) (semantic-list 35536 . 35560) (punctuation 35529 . 35530) (semantic-list 35526 . 35528) (punctuation 35525 . 35526) (OPERATOR 35516 . 35524) (symbol 35495 . 35509) (semantic-list 35466 . 35490) (punctuation 35464 . 35465) (CONST 35459 . 35464) (semantic-list 35456 . 35458) (punctuation 35455 . 35456) (OPERATOR 35446 . 35454) (symbol 35425 . 35445) (punctuation 34059 . 34060) (punctuation 34058 . 34059) (punctuation 34056 . 34057) (punctuation 34007 . 34008) (punctuation 34006 . 34007) (semantic-list 33966 . 33984) (symbol 33962 . 33966) (VOID 33957 . 33961) (punctuation 32735 . 32736) (punctuation 32495 . 32496) (punctuation 32268 . 32269) (punctuation 32072 . 32073) (punctuation 32071 . 32072) (punctuation 32070 . 32071) (punctuation 32069 . 32070) (punctuation 32007 . 32008) (symbol 32003 . 32007) (punctuation 32001 . 32002) (punctuation 32000 . 32001) (punctuation 31999 . 32000) (CLASS 31994 . 31999) (punctuation 31993 . 31994) (TEMPLATE 31985 . 31993) (punctuation 31901 . 31902) (punctuation 31900 . 31901) (punctuation 31899 . 31900) (punctuation 31898 . 31899) (punctuation 31850 . 31851) (symbol 31846 . 31850) (punctuation 31844 . 31845) (punctuation 31843 . 31844) (punctuation 31842 . 31843) (CLASS 31837 . 31842) (punctuation 31836 . 31837) (TEMPLATE 31828 . 31836) (punctuation 31736 . 31737) (punctuation 31735 . 31736) (punctuation 31734 . 31735) (punctuation 31733 . 31734) (punctuation 31707 . 31708) (symbol 31703 . 31707) (punctuation 31701 . 31702) (punctuation 31700 . 31701) (punctuation 31699 . 31700) (CLASS 31694 . 31699) (punctuation 31693 . 31694) (TEMPLATE 31685 . 31693) (semantic-list 31424 . 31488) (symbol 31403 . 31417) (semantic-list 31386 . 31402) (punctuation 31384 . 31385) (OPERATOR 31376 . 31384) (punctuation 31374 . 31375) (symbol 31366 . 31374) (punctuation 30539 . 30540) (symbol 30397 . 30419) (punctuation 30391 . 30392) (symbol 30389 . 30391) (TYPENAME 30380 . 30388) (punctuation 30379 . 30380) (TEMPLATE 30370 . 30378) (punctuation 30109 . 30110) (punctuation 30108 . 30109) (punctuation 30106 . 30107) (punctuation 30057 . 30058) (punctuation 30056 . 30057) (semantic-list 30014 . 30033) (punctuation 30012 . 30013) (OPERATOR 30004 . 30012) (punctuation 30026 . 30027) (punctuation 30002 . 30003) (symbol 29994 . 30002) (punctuation 30026 . 30027) (punctuation 29377 . 29378) (punctuation 28198 . 28199) (symbol 28061 . 28083) (punctuation 28055 . 28056) (symbol 28051 . 28055) (CLASS 28045 . 28050) (punctuation 28044 . 28045) (TEMPLATE 28036 . 28044) (punctuation 27487 . 27488) (punctuation 27486 . 27487) (semantic-list 27444 . 27463) (symbol 27435 . 27443) (punctuation 27456 . 27457) (number 26816 . 26817) (punctuation 26814 . 26815) (punctuation 26812 . 26813) (punctuation 26676 . 26677) (punctuation 25594 . 25595) (punctuation 24121 . 24122) (symbol 24106 . 24120) (semantic-list 24089 . 24105) (symbol 24081 . 24089) (punctuation 24003 . 24004) (symbol 23988 . 24002) (semantic-list 23985 . 23987) (symbol 23977 . 23985) (symbol 23845 . 23867) (TYPEDEF 23837 . 23844) (symbol 23762 . 23784) (TYPEDEF 23754 . 23761) (symbol 23685 . 23707) (TYPEDEF 23677 . 23684) (symbol 23563 . 23585) (TYPEDEF 23555 . 23562) (symbol 23479 . 23501) (TYPEDEF 23471 . 23478) (symbol 23342 . 23364) (TYPEDEF 23334 . 23341) (symbol 23263 . 23285) (TYPEDEF 23255 . 23262) (symbol 23188 . 23210) (TYPEDEF 23180 . 23187) (punctuation 22948 . 22949) (punctuation 22947 . 22948) (punctuation 22946 . 22947) (symbol 22936 . 22946) (punctuation 22935 . 22936) (punctuation 22934 . 22935) (symbol 22929 . 22934) (punctuation 22927 . 22928) (symbol 22918 . 22927) (punctuation 22917 . 22918) (punctuation 22916 . 22917) (symbol 22911 . 22916) (punctuation 22909 . 22910) (symbol 22881 . 22886) (punctuation 22880 . 22881) (punctuation 22879 . 22880) (punctuation 22878 . 22879) (symbol 22877 . 22878) (punctuation 22875 . 22876) (symbol 22874 . 22875) (punctuation 22873 . 22874) (symbol 22843 . 22873) (punctuation 22841 . 22842) (punctuation 22840 . 22841) (symbol 22834 . 22839) (punctuation 22833 . 22834) (punctuation 22832 . 22833) (punctuation 22831 . 22832) (symbol 22830 . 22831) (punctuation 22829 . 22830) (symbol 22810 . 22829) (punctuation 22809 . 22810) (punctuation 22807 . 22808) (symbol 22796 . 22807) (punctuation 22795 . 22796) (punctuation 22794 . 22795) (symbol 22789 . 22794) (punctuation 22787 . 22788) (symbol 22754 . 22784) (STRUCT 22747 . 22753) (punctuation 22745 . 22746) (symbol 22744 . 22745) (TYPENAME 22735 . 22743) (punctuation 22733 . 22734) (symbol 22732 . 22733) (TYPENAME 22723 . 22731) (punctuation 22722 . 22723) (TEMPLATE 22713 . 22721) (punctuation 22372 . 22373) (punctuation 22371 . 22372) (punctuation 22370 . 22371) (symbol 22360 . 22370) (punctuation 22359 . 22360) (punctuation 22358 . 22359) (symbol 22353 . 22358) (punctuation 22351 . 22352) (symbol 22342 . 22351) (punctuation 22341 . 22342) (punctuation 22340 . 22341) (symbol 22335 . 22340) (punctuation 22333 . 22334) (semantic-list 22195 . 22310) (punctuation 22193 . 22194) (punctuation 22192 . 22193) (symbol 22165 . 22170) (punctuation 22164 . 22165) (punctuation 22163 . 22164) (punctuation 22162 . 22163) (symbol 22158 . 22162) (punctuation 22157 . 22158) (punctuation 22156 . 22157) (punctuation 22155 . 22156) (symbol 22154 . 22155) (punctuation 22153 . 22154) (symbol 22148 . 22153) (punctuation 22147 . 22148) (punctuation 22146 . 22147) (symbol 22141 . 22146) (symbol 22118 . 22140) (punctuation 22116 . 22117) (symbol 22089 . 22116) (punctuation 22088 . 22089) (punctuation 22087 . 22088) (symbol 22082 . 22087) (punctuation 22081 . 22082) (symbol 22071 . 22081) (punctuation 22070 . 22071) (punctuation 22069 . 22070) (symbol 22064 . 22069) (punctuation 22062 . 22063) (punctuation 22061 . 22062) (symbol 22034 . 22039) (punctuation 22033 . 22034) (punctuation 22032 . 22033) (punctuation 22031 . 22032) (symbol 22027 . 22031) (punctuation 22026 . 22027) (punctuation 22025 . 22026) (punctuation 22024 . 22025) (symbol 22023 . 22024) (punctuation 22022 . 22023) (symbol 22017 . 22022) (punctuation 22016 . 22017) (punctuation 22015 . 22016) (symbol 22010 . 22015) (symbol 21987 . 22009) (punctuation 21985 . 21986) (symbol 21964 . 21985) (punctuation 21963 . 21964) (punctuation 21962 . 21963) (symbol 21957 . 21962) (punctuation 21956 . 21957) (symbol 21946 . 21956) (punctuation 21945 . 21946) (punctuation 21944 . 21945) (symbol 21939 . 21944) (punctuation 21937 . 21938) (symbol 21926 . 21937) (punctuation 21925 . 21926) (punctuation 21924 . 21925) (symbol 21919 . 21924) (punctuation 21917 . 21918) (symbol 21884 . 21914) (STRUCT 21877 . 21883) (punctuation 21875 . 21876) (symbol 21874 . 21875) (TYPENAME 21865 . 21873) (punctuation 21863 . 21864) (symbol 21862 . 21863) (TYPENAME 21853 . 21861) (punctuation 21852 . 21853) (TEMPLATE 21843 . 21851) (punctuation 21767 . 21768) (punctuation 21766 . 21767) (punctuation 21765 . 21766) (symbol 21755 . 21765) (punctuation 21754 . 21755) (punctuation 21753 . 21754) (symbol 21748 . 21753) (punctuation 21746 . 21747) (symbol 21737 . 21746) (punctuation 21736 . 21737) (punctuation 21735 . 21736) (symbol 21730 . 21735) (punctuation 21724 . 21725) (symbol 21719 . 21724) (punctuation 21718 . 21719) (punctuation 21717 . 21718) (punctuation 21716 . 21717) (symbol 21698 . 21716) (punctuation 21696 . 21697) (symbol 21692 . 21696) (punctuation 21691 . 21692) (punctuation 21690 . 21691) (punctuation 21689 . 21690) (symbol 21688 . 21689) (punctuation 21687 . 21688) (symbol 21682 . 21687) (punctuation 21681 . 21682) (punctuation 21680 . 21681) (symbol 21675 . 21680) (symbol 21652 . 21674) (punctuation 21651 . 21652) (symbol 21644 . 21651) (punctuation 21643 . 21644) (punctuation 21642 . 21643) (symbol 21637 . 21642) (punctuation 21635 . 21636) (punctuation 21634 . 21635) (symbol 21607 . 21612) (punctuation 21606 . 21607) (punctuation 21605 . 21606) (punctuation 21604 . 21605) (symbol 21589 . 21604) (punctuation 21587 . 21588) (symbol 21583 . 21587) (punctuation 21582 . 21583) (punctuation 21581 . 21582) (punctuation 21580 . 21581) (symbol 21579 . 21580) (punctuation 21578 . 21579) (symbol 21573 . 21578) (punctuation 21572 . 21573) (punctuation 21571 . 21572) (symbol 21566 . 21571) (symbol 21543 . 21565) (punctuation 21542 . 21543) (symbol 21535 . 21542) (punctuation 21534 . 21535) (punctuation 21533 . 21534) (symbol 21528 . 21533) (punctuation 21526 . 21527) (punctuation 21525 . 21526) (symbol 21498 . 21503) (punctuation 21497 . 21498) (punctuation 21496 . 21497) (punctuation 21495 . 21496) (symbol 21489 . 21495) (punctuation 21487 . 21488) (symbol 21483 . 21487) (punctuation 21482 . 21483) (punctuation 21481 . 21482) (punctuation 21480 . 21481) (symbol 21479 . 21480) (punctuation 21478 . 21479) (symbol 21473 . 21478) (punctuation 21472 . 21473) (punctuation 21471 . 21472) (symbol 21466 . 21471) (symbol 21443 . 21465) (punctuation 21442 . 21443) (symbol 21435 . 21442) (punctuation 21434 . 21435) (punctuation 21433 . 21434) (symbol 21428 . 21433) (punctuation 21426 . 21427) (punctuation 21425 . 21426) (symbol 21398 . 21403) (punctuation 21397 . 21398) (punctuation 21396 . 21397) (punctuation 21395 . 21396) (symbol 21391 . 21395) (punctuation 21390 . 21391) (punctuation 21389 . 21390) (punctuation 21388 . 21389) (symbol 21387 . 21388) (punctuation 21386 . 21387) (symbol 21381 . 21386) (punctuation 21380 . 21381) (punctuation 21379 . 21380) (symbol 21374 . 21379) (symbol 21351 . 21373) (punctuation 21349 . 21350) (symbol 21337 . 21349) (punctuation 21336 . 21337) (punctuation 21335 . 21336) (symbol 21320 . 21335) (punctuation 21319 . 21320) (symbol 21309 . 21319) (punctuation 21308 . 21309) (punctuation 21307 . 21308) (symbol 21302 . 21307) (punctuation 21300 . 21301) (symbol 21289 . 21300) (punctuation 21288 . 21289) (punctuation 21287 . 21288) (symbol 21282 . 21287) (punctuation 21280 . 21281) (symbol 21258 . 21277) (STRUCT 21251 . 21257) (punctuation 21249 . 21250) (symbol 21248 . 21249) (TYPENAME 21239 . 21247) (punctuation 21238 . 21239) (TEMPLATE 21229 . 21237) (punctuation 17482 . 17483) (punctuation 16981 . 16982) (punctuation 15488 . 15489) (punctuation 15253 . 15254) (punctuation 15048 . 15049) (punctuation 14770 . 14771) (punctuation 12377 . 12378) (punctuation 12040 . 12041) (punctuation 11761 . 11762) (punctuation 11436 . 11437) (punctuation 11171 . 11172) (punctuation 11170 . 11171) (punctuation 11169 . 11170) (punctuation 11168 . 11169) (punctuation 11101 . 11102) (symbol 11097 . 11101) (punctuation 11095 . 11096) (punctuation 11094 . 11095) (punctuation 11093 . 11094) (CLASS 11088 . 11093) (punctuation 11087 . 11088) (TEMPLATE 11079 . 11087) (punctuation 10951 . 10952) (punctuation 10950 . 10951) (punctuation 10949 . 10950) (punctuation 10948 . 10949) (punctuation 10895 . 10896) (symbol 10891 . 10895) (punctuation 10889 . 10890) (punctuation 10888 . 10889) (punctuation 10887 . 10888) (CLASS 10882 . 10887) (punctuation 10881 . 10882) (TEMPLATE 10873 . 10881) (punctuation 10762 . 10763) (punctuation 10761 . 10762) (punctuation 10760 . 10761) (punctuation 10759 . 10760) (punctuation 10726 . 10727) (symbol 10722 . 10726) (punctuation 10720 . 10721) (punctuation 10719 . 10720) (punctuation 10718 . 10719) (CLASS 10713 . 10718) (punctuation 10712 . 10713) (TEMPLATE 10704 . 10712) (punctuation 10569 . 10570) (punctuation 10568 . 10569) (punctuation 10567 . 10568) (punctuation 10566 . 10567) (punctuation 10521 . 10522) (symbol 10517 . 10521) (punctuation 10515 . 10516) (punctuation 10514 . 10515) (punctuation 10513 . 10514) (CLASS 10508 . 10513) (punctuation 10507 . 10508) (TEMPLATE 10499 . 10507) (semantic-list 9445 . 9459) (symbol 9430 . 9444) (semantic-list 9427 . 9429) (symbol 9422 . 9427) (VOID 9417 . 9421) (punctuation 8857 . 8858) (semantic-list 8671 . 8685) (symbol 8656 . 8670) (semantic-list 8645 . 8655) (symbol 8638 . 8644) (VOID 8633 . 8637) (punctuation 7623 . 7624) (punctuation 6427 . 6428) (punctuation 5323 . 5324) (punctuation 5049 . 5050) (TYPEDEF 3383 . 3390) (TYPEDEF 3343 . 3350) (semantic-list 2715 . 2747) (semantic-list 2476 . 2505) (punctuation 22193 . 22194) (punctuation 22192 . 22193) (symbol 22165 . 22170) (punctuation 22164 . 22165) (punctuation 22163 . 22164) (punctuation 22162 . 22163) (symbol 22158 . 22162) (punctuation 22157 . 22158) (punctuation 22156 . 22157) (punctuation 22155 . 22156) (symbol 22154 . 22155) (punctuation 22153 . 22154) (symbol 22148 . 22153) (punctuation 22147 . 22148) (punctuation 22146 . 22147) (symbol 22141 . 22146) (symbol 22118 . 22140) (punctuation 22116 . 22117) (symbol 22089 . 22116) (punctuation 22088 . 22089) (punctuation 22087 . 22088) (symbol 22082 . 22087) (punctuation 22081 . 22082) (symbol 22071 . 22081) (punctuation 22070 . 22071) (punctuation 22069 . 22070) (symbol 22064 . 22069) (punctuation 22062 . 22063) (punctuation 22061 . 22062) (symbol 22034 . 22039) (punctuation 22033 . 22034) (punctuation 22032 . 22033) (punctuation 22031 . 22032) (symbol 22027 . 22031) (punctuation 22026 . 22027) (punctuation 22025 . 22026) (punctuation 22024 . 22025) (symbol 22023 . 22024) (punctuation 22022 . 22023) (symbol 22017 . 22022) (punctuation 22016 . 22017) (punctuation 22015 . 22016) (symbol 22010 . 22015) (symbol 21987 . 22009) (punctuation 21985 . 21986) (symbol 21964 . 21985) (punctuation 21963 . 21964) (punctuation 21962 . 21963) (symbol 21957 . 21962) (punctuation 21956 . 21957) (symbol 21946 . 21956) (punctuation 21945 . 21946) (punctuation 21944 . 21945) (symbol 21939 . 21944) (punctuation 21937 . 21938) (symbol 21926 . 21937) (punctuation 21925 . 21926) (punctuation 21924 . 21925) (symbol 21919 . 21924) (punctuation 21917 . 21918) (symbol 21884 . 21914) (STRUCT 21877 . 21883) (punctuation 21875 . 21876) (symbol 21874 . 21875) (TYPENAME 21865 . 21873) (punctuation 21863 . 21864) (symbol 21862 . 21863) (TYPENAME 21853 . 21861) (punctuation 21852 . 21853) (TEMPLATE 21843 . 21851) (punctuation 21767 . 21768) (punctuation 21766 . 21767) (punctuation 21765 . 21766) (symbol 21755 . 21765) (punctuation 21754 . 21755) (punctuation 21753 . 21754) (symbol 21748 . 21753) (punctuation 21746 . 21747) (symbol 21737 . 21746) (punctuation 21736 . 21737) (punctuation 21735 . 21736) (symbol 21730 . 21735) (punctuation 21724 . 21725) (symbol 21719 . 21724) (punctuation 21718 . 21719) (punctuation 21717 . 21718) (punctuation 21716 . 21717) (symbol 21698 . 21716) (punctuation 21696 . 21697) (symbol 21692 . 21696) (punctuation 21691 . 21692) (punctuation 21690 . 21691) (punctuation 21689 . 21690) (symbol 21688 . 21689) (punctuation 21687 . 21688) (symbol 21682 . 21687) (punctuation 21681 . 21682) (punctuation 21680 . 21681) (symbol 21675 . 21680) (symbol 21652 . 21674) (punctuation 21651 . 21652) (symbol 21644 . 21651) (punctuation 21643 . 21644) (punctuation 21642 . 21643) (symbol 21637 . 21642) (punctuation 21635 . 21636) (punctuation 21634 . 21635) (symbol 21607 . 21612) (punctuation 21606 . 21607) (punctuation 21605 . 21606) (punctuation 21604 . 21605) (symbol 21589 . 21604) (punctuation 21587 . 21588) (symbol 21583 . 21587) (punctuation 21582 . 21583) (punctuation 21581 . 21582) (punctuation 21580 . 21581) (symbol 21579 . 21580) (punctuation 21578 . 21579) (symbol 21573 . 21578) (punctuation 21572 . 21573) (punctuation 21571 . 21572) (symbol 21566 . 21571) (symbol 21543 . 21565) (punctuation 21542 . 21543) (symbol 21535 . 21542) (punctuation 21534 . 21535) (punctuation 21533 . 21534) (symbol 21528 . 21533) (punctuation 21526 . 21527) (punctuation 21525 . 21526) (symbol 21498 . 21503) (punctuation 21497 . 21498) (punctuation 21496 . 21497) (punctuation 21495 . 21496) (symbol 21489 . 21495) (punctuation 21487 . 21488) (symbol 21483 . 21487) (punctuation 21482 . 21483) (punctuation 21481 . 21482) (punctuation 21480 . 21481) (symbol 21479 . 21480) (punctuation 21478 . 21479) (symbol 21473 . 21478) (punctuation 21472 . 21473) (punctuation 21471 . 21472) (symbol 21466 . 21471) (symbol 21443 . 21465) (punctuation 21442 . 21443) (symbol 21435 . 21442) (punctuation 21434 . 21435) (punctuation 21433 . 21434) (symbol 21428 . 21433) (punctuation 21426 . 21427) (punctuation 21425 . 21426) (symbol 21398 . 21403) (punctuation 21397 . 21398) (punctuation 21396 . 21397) (punctuation 21395 . 21396) (symbol 21391 . 21395) (punctuation 21390 . 21391) (punctuation 21389 . 21390) (punctuation 21388 . 21389) (symbol 21387 . 21388) (punctuation 21386 . 21387) (symbol 21381 . 21386) (punctuation 21380 . 21381) (punctuation 21379 . 21380) (symbol 21374 . 21379) (symbol 21351 . 21373) (punctuation 21349 . 21350) (symbol 21337 . 21349) (punctuation 21336 . 21337) (punctuation 21335 . 21336) (symbol 21320 . 21335) (punctuation 21319 . 21320) (symbol 21309 . 21319) (punctuation 21308 . 21309) (punctuation 21307 . 21308) (symbol 21302 . 21307) (punctuation 21300 . 21301) (symbol 21289 . 21300) (punctuation 21288 . 21289) (punctuation 21287 . 21288) (symbol 21282 . 21287) (punctuation 21280 . 21281) (symbol 21258 . 21277) (STRUCT 21251 . 21257) (punctuation 21249 . 21250) (symbol 21248 . 21249) (TYPENAME 21239 . 21247) (punctuation 21238 . 21239) (TEMPLATE 21229 . 21237) (punctuation 17482 . 17483) (punctuation 16981 . 16982) (punctuation 15488 . 15489) (punctuation 15253 . 15254) (punctuation 15048 . 15049) (punctuation 14770 . 14771) (punctuation 12377 . 12378) (punctuation 12040 . 12041) (punctuation 11761 . 11762) (punctuation 11436 . 11437) (punctuation 11171 . 11172) (punctuation 11170 . 11171) (punctuation 11169 . 11170) (punctuation 11168 . 11169) (punctuation 11101 . 11102) (symbol 11097 . 11101) (punctuation 11095 . 11096) (punctuation 11094 . 11095) (punctuation 11093 . 11094) (CLASS 11088 . 11093) (punctuation 11087 . 11088) (TEMPLATE 11079 . 11087) (punctuation 10951 . 10952) (punctuation 10950 . 10951) (punctuation 10949 . 10950) (punctuation 10948 . 10949) (punctuation 10895 . 10896) (symbol 10891 . 10895) (punctuation 10889 . 10890) (punctuation 10888 . 10889) (punctuation 10887 . 10888) (CLASS 10882 . 10887) (punctuation 10881 . 10882) (TEMPLATE 10873 . 10881) (punctuation 10762 . 10763) (punctuation 10761 . 10762) (punctuation 10760 . 10761) (punctuation 10759 . 10760) (punctuation 10726 . 10727) (symbol 10722 . 10726) (punctuation 10720 . 10721) (punctuation 10719 . 10720) (punctuation 10718 . 10719) (CLASS 10713 . 10718) (punctuation 10712 . 10713) (TEMPLATE 10704 . 10712) (punctuation 10569 . 10570) (punctuation 10568 . 10569) (punctuation 10567 . 10568) (punctuation 10566 . 10567) (punctuation 10521 . 10522) (symbol 10517 . 10521) (punctuation 10515 . 10516) (punctuation 10514 . 10515) (punctuation 10513 . 10514) (CLASS 10508 . 10513) (punctuation 10507 . 10508) (TEMPLATE 10499 . 10507) (semantic-list 9445 . 9459) (symbol 9430 . 9444) (semantic-list 9427 . 9429) (symbol 9422 . 9427) (VOID 9417 . 9421) (punctuation 8857 . 8858) (semantic-list 8671 . 8685) (symbol 8656 . 8670) (semantic-list 8645 . 8655) (symbol 8638 . 8644) (VOID 8633 . 8637) (punctuation 7623 . 7624) (punctuation 6427 . 6428) (punctuation 5323 . 5324) (punctuation 5049 . 5050) (TYPEDEF 3383 . 3390) (TYPEDEF 3343 . 3350) (semantic-list 2715 . 2747) (semantic-list 2476 . 2505) (punctuation 22193 . 22194) (punctuation 22192 . 22193) (symbol 22165 . 22170) (punctuation 22164 . 22165) (punctuation 22163 . 22164) (punctuation 22162 . 22163) (symbol 22158 . 22162) (punctuation 22157 . 22158) (punctuation 22156 . 22157) (punctuation 22155 . 22156) (symbol 22154 . 22155) (punctuation 22153 . 22154) (symbol 22148 . 22153) (punctuation 22147 . 22148) (punctuation 22146 . 22147) (symbol 22141 . 22146) (symbol 22118 . 22140) (punctuation 22116 . 22117) (symbol 22089 . 22116) (punctuation 22088 . 22089) (punctuation 22087 . 22088) (symbol 22082 . 22087) (punctuation 22081 . 22082) (symbol 22071 . 22081) (punctuation 22070 . 22071) (punctuation 22069 . 22070) (symbol 22064 . 22069) (punctuation 22062 . 22063) (punctuation 22061 . 22062) (symbol 22034 . 22039) (punctuation 22033 . 22034) (punctuation 22032 . 22033) (punctuation 22031 . 22032) (symbol 22027 . 22031) (punctuation 22026 . 22027) (punctuation 22025 . 22026) (punctuation 22024 . 22025) (symbol 22023 . 22024) (punctuation 22022 . 22023) (symbol 22017 . 22022) (punctuation 22016 . 22017) (punctuation 22015 . 22016) (symbol 22010 . 22015) (symbol 21987 . 22009) (punctuation 21985 . 21986) (symbol 21964 . 21985) (punctuation 21963 . 21964) (punctuation 21962 . 21963) (symbol 21957 . 21962) (punctuation 21956 . 21957) (symbol 21946 . 21956) (punctuation 21945 . 21946) (punctuation 21944 . 21945) (symbol 21939 . 21944) (punctuation 21937 . 21938) (symbol 21926 . 21937) (punctuation 21925 . 21926) (punctuation 21924 . 21925) (symbol 21919 . 21924) (punctuation 21917 . 21918) (symbol 21884 . 21914) (STRUCT 21877 . 21883) (punctuation 21875 . 21876) (symbol 21874 . 21875) (TYPENAME 21865 . 21873) (punctuation 21863 . 21864) (symbol 21862 . 21863) (TYPENAME 21853 . 21861) (punctuation 21852 . 21853) (TEMPLATE 21843 . 21851) (punctuation 21767 . 21768) (punctuation 21766 . 21767) (punctuation 21765 . 21766) (symbol 21755 . 21765) (punctuation 21754 . 21755) (punctuation 21753 . 21754) (symbol 21748 . 21753) (punctuation 21746 . 21747) (symbol 21737 . 21746) (punctuation 21736 . 21737) (punctuation 21735 . 21736) (symbol 21730 . 21735) (punctuation 21724 . 21725) (symbol 21719 . 21724) (punctuation 21718 . 21719) (punctuation 21717 . 21718) (punctuation 21716 . 21717) (symbol 21698 . 21716) (punctuation 21696 . 21697) (symbol 21692 . 21696) (punctuation 21691 . 21692) (punctuation 21690 . 21691) (punctuation 21689 . 21690) (symbol 21688 . 21689) (punctuation 21687 . 21688) (symbol 21682 . 21687) (punctuation 21681 . 21682) (punctuation 21680 . 21681) (symbol 21675 . 21680) (symbol 21652 . 21674) (punctuation 21651 . 21652) (symbol 21644 . 21651) (punctuation 21643 . 21644) (punctuation 21642 . 21643) (symbol 21637 . 21642) (punctuation 21635 . 21636) (punctuation 21634 . 21635) (symbol 21607 . 21612) (punctuation 21606 . 21607) (punctuation 21605 . 21606) (punctuation 21604 . 21605) (symbol 21589 . 21604) (punctuation 21587 . 21588) (symbol 21583 . 21587) (punctuation 21582 . 21583) (punctuation 21581 . 21582) (punctuation 21580 . 21581) (symbol 21579 . 21580) (punctuation 21578 . 21579) (symbol 21573 . 21578) (punctuation 21572 . 21573) (punctuation 21571 . 21572) (symbol 21566 . 21571) (symbol 21543 . 21565) (punctuation 21542 . 21543) (symbol 21535 . 21542) (punctuation 21534 . 21535) (punctuation 21533 . 21534) (symbol 21528 . 21533) (punctuation 21526 . 21527) (punctuation 21525 . 21526) (symbol 21498 . 21503) (punctuation 21497 . 21498) (punctuation 21496 . 21497) (punctuation 21495 . 21496) (symbol 21489 . 21495) (punctuation 21487 . 21488) (symbol 21483 . 21487) (punctuation 21482 . 21483) (punctuation 21481 . 21482) (punctuation 21480 . 21481) (symbol 21479 . 21480) (punctuation 21478 . 21479) (symbol 21473 . 21478) (punctuation 21472 . 21473) (punctuation 21471 . 21472) (symbol 21466 . 21471) (symbol 21443 . 21465) (punctuation 21442 . 21443) (symbol 21435 . 21442) (punctuation 21434 . 21435) (punctuation 21433 . 21434) (symbol 21428 . 21433) (punctuation 21426 . 21427) (punctuation 21425 . 21426) (symbol 21398 . 21403) (punctuation 21397 . 21398) (punctuation 21396 . 21397) (punctuation 21395 . 21396) (symbol 21391 . 21395) (punctuation 21390 . 21391) (punctuation 21389 . 21390) (punctuation 21388 . 21389) (symbol 21387 . 21388) (punctuation 21386 . 21387) (symbol 21381 . 21386) (punctuation 21380 . 21381) (punctuation 21379 . 21380) (symbol 21374 . 21379) (symbol 21351 . 21373) (punctuation 21349 . 21350) (symbol 21337 . 21349) (punctuation 21336 . 21337) (punctuation 21335 . 21336) (symbol 21320 . 21335) (punctuation 21319 . 21320) (symbol 21309 . 21319) (punctuation 21308 . 21309) (punctuation 21307 . 21308) (symbol 21302 . 21307) (punctuation 21300 . 21301) (symbol 21289 . 21300) (punctuation 21288 . 21289) (punctuation 21287 . 21288) (symbol 21282 . 21287) (punctuation 21280 . 21281) (symbol 21258 . 21277) (STRUCT 21251 . 21257) (punctuation 21249 . 21250) (symbol 21248 . 21249) (TYPENAME 21239 . 21247) (punctuation 21238 . 21239) (TEMPLATE 21229 . 21237) (punctuation 17482 . 17483) (punctuation 16981 . 16982) (punctuation 15488 . 15489) (punctuation 15253 . 15254) (punctuation 15048 . 15049) (punctuation 14770 . 14771) (punctuation 12377 . 12378) (punctuation 12040 . 12041) (punctuation 11761 . 11762) (punctuation 11436 . 11437) (punctuation 11171 . 11172) (punctuation 11170 . 11171) (punctuation 11169 . 11170) (punctuation 11168 . 11169) (punctuation 11101 . 11102) (symbol 11097 . 11101) (punctuation 11095 . 11096) (punctuation 11094 . 11095) (punctuation 11093 . 11094) (CLASS 11088 . 11093) (punctuation 11087 . 11088) (TEMPLATE 11079 . 11087) (punctuation 10951 . 10952) (punctuation 10950 . 10951) (punctuation 10949 . 10950) (punctuation 10948 . 10949) (punctuation 10895 . 10896) (symbol 10891 . 10895) (punctuation 10889 . 10890) (punctuation 10888 . 10889) (punctuation 10887 . 10888) (CLASS 10882 . 10887) (punctuation 10881 . 10882) (TEMPLATE 10873 . 10881) (punctuation 10762 . 10763) (punctuation 10761 . 10762) (punctuation 10760 . 10761) (punctuation 10759 . 10760) (punctuation 10726 . 10727) (symbol 10722 . 10726) (punctuation 10720 . 10721) (punctuation 10719 . 10720) (punctuation 10718 . 10719) (CLASS 10713 . 10718) (punctuation 10712 . 10713) (TEMPLATE 10704 . 10712) (punctuation 10569 . 10570) (punctuation 10568 . 10569) (punctuation 10567 . 10568) (punctuation 10566 . 10567) (punctuation 10521 . 10522) (symbol 10517 . 10521) (punctuation 10515 . 10516) (punctuation 10514 . 10515) (punctuation 10513 . 10514) (CLASS 10508 . 10513) (punctuation 10507 . 10508) (TEMPLATE 10499 . 10507) (semantic-list 9445 . 9459) (symbol 9430 . 9444) (semantic-list 9427 . 9429) (symbol 9422 . 9427) (VOID 9417 . 9421) (punctuation 8857 . 8858) (semantic-list 8671 . 8685) (symbol 8656 . 8670) (semantic-list 8645 . 8655) (symbol 8638 . 8644) (VOID 8633 . 8637) (punctuation 7623 . 7624) (punctuation 6427 . 6428) (punctuation 5323 . 5324) (punctuation 5049 . 5050) (TYPEDEF 3383 . 3390) (TYPEDEF 3343 . 3350) (semantic-list 2715 . 2747) (semantic-list 2476 . 2505) (punctuation 21767 . 21768) (punctuation 21766 . 21767) (punctuation 21765 . 21766) (symbol 21755 . 21765) (punctuation 21754 . 21755) (punctuation 21753 . 21754) (symbol 21748 . 21753) (punctuation 21746 . 21747) (symbol 21737 . 21746) (punctuation 21736 . 21737) (punctuation 21735 . 21736) (symbol 21730 . 21735) (punctuation 21724 . 21725) (symbol 21719 . 21724) (punctuation 21718 . 21719) (punctuation 21717 . 21718) (punctuation 21716 . 21717) (symbol 21698 . 21716) (punctuation 21696 . 21697) (symbol 21692 . 21696) (punctuation 21691 . 21692) (punctuation 21690 . 21691) (punctuation 21689 . 21690) (symbol 21688 . 21689) (punctuation 21687 . 21688) (symbol 21682 . 21687) (punctuation 21681 . 21682) (punctuation 21680 . 21681) (symbol 21675 . 21680) (symbol 21652 . 21674) (punctuation 21651 . 21652) (symbol 21644 . 21651) (punctuation 21643 . 21644) (punctuation 21642 . 21643) (symbol 21637 . 21642) (punctuation 21635 . 21636) (punctuation 21634 . 21635) (symbol 21607 . 21612) (punctuation 21606 . 21607) (punctuation 21605 . 21606) (punctuation 21604 . 21605) (symbol 21589 . 21604) (punctuation 21587 . 21588) (symbol 21583 . 21587) (punctuation 21582 . 21583) (punctuation 21581 . 21582) (punctuation 21580 . 21581) (symbol 21579 . 21580) (punctuation 21578 . 21579) (symbol 21573 . 21578) (punctuation 21572 . 21573) (punctuation 21571 . 21572) (symbol 21566 . 21571) (symbol 21543 . 21565) (punctuation 21542 . 21543) (symbol 21535 . 21542) (punctuation 21534 . 21535) (punctuation 21533 . 21534) (symbol 21528 . 21533) (punctuation 21526 . 21527) (punctuation 21525 . 21526) (symbol 21498 . 21503) (punctuation 21497 . 21498) (punctuation 21496 . 21497) (punctuation 21495 . 21496) (symbol 21489 . 21495) (punctuation 21487 . 21488) (symbol 21483 . 21487) (punctuation 21482 . 21483) (punctuation 21481 . 21482) (punctuation 21480 . 21481) (symbol 21479 . 21480) (punctuation 21478 . 21479) (symbol 21473 . 21478) (punctuation 21472 . 21473) (punctuation 21471 . 21472) (symbol 21466 . 21471) (symbol 21443 . 21465) (punctuation 21442 . 21443) (symbol 21435 . 21442) (punctuation 21434 . 21435) (punctuation 21433 . 21434) (symbol 21428 . 21433) (punctuation 21426 . 21427) (punctuation 21425 . 21426) (symbol 21398 . 21403) (punctuation 21397 . 21398) (punctuation 21396 . 21397) (punctuation 21395 . 21396) (symbol 21391 . 21395) (punctuation 21390 . 21391) (punctuation 21389 . 21390) (punctuation 21388 . 21389) (symbol 21387 . 21388) (punctuation 21386 . 21387) (symbol 21381 . 21386) (punctuation 21380 . 21381) (punctuation 21379 . 21380) (symbol 21374 . 21379) (symbol 21351 . 21373) (punctuation 21349 . 21350) (symbol 21337 . 21349) (punctuation 21336 . 21337) (punctuation 21335 . 21336) (symbol 21320 . 21335) (punctuation 21319 . 21320) (symbol 21309 . 21319) (punctuation 21308 . 21309) (punctuation 21307 . 21308) (symbol 21302 . 21307) (punctuation 21300 . 21301) (symbol 21289 . 21300) (punctuation 21288 . 21289) (punctuation 21287 . 21288) (symbol 21282 . 21287) (punctuation 21280 . 21281) (symbol 21258 . 21277) (STRUCT 21251 . 21257) (punctuation 21249 . 21250) (symbol 21248 . 21249) (TYPENAME 21239 . 21247) (punctuation 21238 . 21239) (TEMPLATE 21229 . 21237) (punctuation 17482 . 17483) (punctuation 16981 . 16982) (punctuation 15488 . 15489) (punctuation 15253 . 15254) (punctuation 15048 . 15049) (punctuation 14770 . 14771) (punctuation 12377 . 12378) (punctuation 12040 . 12041) (punctuation 11761 . 11762) (punctuation 11436 . 11437) (punctuation 11171 . 11172) (punctuation 11170 . 11171) (punctuation 11169 . 11170) (punctuation 11168 . 11169) (punctuation 11101 . 11102) (symbol 11097 . 11101) (punctuation 11095 . 11096) (punctuation 11094 . 11095) (punctuation 11093 . 11094) (CLASS 11088 . 11093) (punctuation 11087 . 11088) (TEMPLATE 11079 . 11087) (punctuation 10951 . 10952) (punctuation 10950 . 10951) (punctuation 10949 . 10950) (punctuation 10948 . 10949) (punctuation 10895 . 10896) (symbol 10891 . 10895) (punctuation 10889 . 10890) (punctuation 10888 . 10889) (punctuation 10887 . 10888) (CLASS 10882 . 10887) (punctuation 10881 . 10882) (TEMPLATE 10873 . 10881) (punctuation 10762 . 10763) (punctuation 10761 . 10762) (punctuation 10760 . 10761) (punctuation 10759 . 10760) (punctuation 10726 . 10727) (symbol 10722 . 10726) (punctuation 10720 . 10721) (punctuation 10719 . 10720) (punctuation 10718 . 10719) (CLASS 10713 . 10718) (punctuation 10712 . 10713) (TEMPLATE 10704 . 10712) (punctuation 10569 . 10570) (punctuation 10568 . 10569) (punctuation 10567 . 10568) (punctuation 10566 . 10567) (punctuation 10521 . 10522) (symbol 10517 . 10521) (punctuation 10515 . 10516) (punctuation 10514 . 10515) (punctuation 10513 . 10514) (CLASS 10508 . 10513) (punctuation 10507 . 10508) (TEMPLATE 10499 . 10507) (semantic-list 9445 . 9459) (symbol 9430 . 9444) (semantic-list 9427 . 9429) (symbol 9422 . 9427) (VOID 9417 . 9421) (punctuation 8857 . 8858) (semantic-list 8671 . 8685) (symbol 8656 . 8670) (semantic-list 8645 . 8655) (symbol 8638 . 8644) (VOID 8633 . 8637) (punctuation 7623 . 7624) (punctuation 6427 . 6428) (punctuation 5323 . 5324) (punctuation 5049 . 5050) (TYPEDEF 3383 . 3390) (TYPEDEF 3343 . 3350) (semantic-list 2715 . 2747) (semantic-list 2476 . 2505))
+      :lexical-table 
+        '(("BOOST_OPTIONAL_OPTIONAL_FLC_19NOV2002_HPP")
+          )
+)
+    (semanticdb-table "bad_optional_access.hpp"
+      :file "bad_optional_access.hpp"
+      :fsize 841
+      :lastmodtime '(22633 22283 0 0))
+    (semanticdb-table "optional_fwd.hpp"
+      :file "optional_fwd.hpp"
+      :fsize 1157
+      :lastmodtime '(22633 22283 0 0)))
+  :file "!usr!include!boost!optional!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

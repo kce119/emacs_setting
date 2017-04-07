@@ -1,0 +1,532 @@
+;; Object detail/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "detail/"
+  :tables
+  (list
+    (semanticdb-table "shutdown_op.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ASIO_SSL_DETAIL_SHUTDOWN_OP_HPP" variable (:constant-flag t) nil [360 397])
+            ("boost/asio/detail/config.hpp" include (:system-flag t) nil [508 547])
+            ("boost/asio/ssl/detail/engine.hpp" include (:system-flag t) nil [589 633])
+            ("boost/asio/detail/push_options.hpp" include (:system-flag t) nil [681 726])
+            ("boost" type
+               (:members 
+                  ( ("asio" type
+                       (:members 
+                          ( ("ssl" type
+                               (:members 
+                                  ( ("detail" type
+                                       (:members 
+                                          ( ("shutdown_op" type
+                                               (:members 
+                                                  ( ("public" label nil (reparse-symbol classsubparts) [860 867])
+                                                    ("()" function
+                                                       (:methodconst-flag t
+                                                        :operator-flag t
+                                                        :arguments 
+                                                          ( ("eng" variable
+                                                               (:reference 1
+                                                                :type ("engine" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [894 906])
+                                                            ("ec" variable
+                                                               (:reference 1
+                                                                :type ("boost::system::error_code" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [913 943])
+                                                            ("bytes_transferred" variable
+                                                               (:reference 1
+                                                                :type ("std::size_t" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [950 981]))                                                          
+                                                        :type ("engine::want" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [870 1051])
+                                                    ("call_handler" function
+                                                       (:template 
+                                                          ( ("Handler" type (:type "class") nil nil))                                                          
+                                                        :type "void"
+                                                        :arguments 
+                                                          ( ("handler" variable
+                                                               (:reference 1
+                                                                :type ("Handler" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1103 1120])
+                                                            ("ec" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("boost::system::error_code" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1127 1163])
+                                                            ("" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("std::size_t" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1170 1189]))                                                          
+                                                        :methodconst-flag t)
+                                                        (reparse-symbol classsubparts) [1055 1220]))                                                  
+                                                :type "class")
+                                                (reparse-symbol namespacesubparts) [840 1223]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [779 1273]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [763 1295]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [746 1314]))                  
+                :type "namespace")
+                nil [728 1334])
+            ("boost/asio/detail/pop_options.hpp" include (:system-flag t) nil [1355 1399]))          
+      :file "shutdown_op.hpp"
+      :pointmax 1449
+      :fsize 1448
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ASIO_SSL_DETAIL_SHUTDOWN_OP_HPP")
+          )
+)
+    (semanticdb-table "engine.hpp"
+      :file "engine.hpp"
+      :fsize 5943
+      :lastmodtime '(22452 53218 0 0))
+    (semanticdb-table "io.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ASIO_SSL_DETAIL_IO_HPP" variable (:constant-flag t) nil [333 361])
+            ("boost/asio/detail/config.hpp" include (:system-flag t) nil [472 511])
+            ("boost/asio/ssl/detail/engine.hpp" include (:system-flag t) nil [553 597])
+            ("boost/asio/ssl/detail/stream_core.hpp" include (:system-flag t) nil [598 647])
+            ("boost/asio/write.hpp" include (:system-flag t) nil [648 680])
+            ("boost/asio/detail/push_options.hpp" include (:system-flag t) nil [728 773])
+            ("boost" type
+               (:members 
+                  ( ("asio" type
+                       (:members 
+                          ( ("ssl" type
+                               (:members 
+                                  ( ("detail" type
+                                       (:members 
+                                          ( ("io" function
+                                               (:template 
+                                                  ( ("Stream" type (:type "class") nil nil)
+                                                    ("Operation" type (:type "class") nil nil))                                                  
+                                                :type ("std::size_t" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("next_layer" variable
+                                                       (:reference 1
+                                                        :type ("Stream" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [949 968])
+                                                    ("core" variable
+                                                       (:reference 1
+                                                        :type ("stream_core" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [969 987])
+                                                    ("op" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Operation" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [992 1012])
+                                                    ("ec" variable
+                                                       (:reference 1
+                                                        :type ("boost::system::error_code" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1013 1043]))                                                  )
+                                                (reparse-symbol namespacesubparts) [887 2461])
+                                            ("io_op" type
+                                               (:template 
+                                                  ( ("Stream" type (:type "class") nil nil)
+                                                    ("Operation" type (:type "class") nil nil)
+                                                    ("Handler" type (:type "class") nil nil))                                                  
+                                                :type "class"
+                                                :members 
+                                                  ( ("public" label nil (reparse-symbol classsubparts) [2542 2549])
+                                                    ("io_op" function
+                                                       (:constructor-flag t
+                                                        :arguments 
+                                                          ( ("next_layer" variable
+                                                               (:reference 1
+                                                                :type ("Stream" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [2558 2577])
+                                                            ("core" variable
+                                                               (:reference 1
+                                                                :type ("stream_core" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [2578 2596])
+                                                            ("op" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("Operation" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [2603 2623])
+                                                            ("handler" variable
+                                                               (:reference 1
+                                                                :type ("Handler" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [2624 2641]))                                                          
+                                                        :type ("io_op" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [2552 2850])
+                                                    ("()" function
+                                                       (:operator-flag t
+                                                        :arguments 
+                                                          ( ("ec" variable (:type ("boost::system::error_code" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3532 3561])
+                                                            ("bytes_transferred" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3568 3599])
+                                                            ("" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3601 3615])
+                                                            ("start" variable
+                                                               (:default-value "0"
+                                                                :type "int")
+                                                                (reparse-symbol arg-sub-list) [3617 3631]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [3516 8809])
+                                                    ("next_layer_" variable (:type ("Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8824 8844])
+                                                    ("core_" variable (:type ("stream_core" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8847 8866])
+                                                    ("op_" variable (:type ("Operation" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8869 8883])
+                                                    ("start_" variable (:type "int") (reparse-symbol classsubparts) [8886 8897])
+                                                    ("want_" variable (:type ("engine::want" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8900 8919])
+                                                    ("ec_" variable (:type ("boost::system::error_code" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8922 8952])
+                                                    ("bytes_transferred_" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8955 8986])
+                                                    ("handler_" variable (:type ("Handler" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8989 9006]))                                                  )
+                                                (reparse-symbol namespacesubparts) [2463 9009])
+                                            ("asio_handler_allocate" function
+                                               (:template 
+                                                  ( ("Stream" type (:type "class") nil nil)
+                                                    ("Operation" type (:type "class") nil nil)
+                                                    ("Handler" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("size" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9112 9129])
+                                                    ("this_handler" variable
+                                                       (:pointer 1
+                                                        :type ("io_op" type
+                                                             (:template-specifier 
+                                                                ( ("Stream" type nil nil nil)
+                                                                  ("Operation" type nil nil nil)
+                                                                  ("Handler" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [9134 9182]))                                                  
+                                                :typemodifiers ("inline")
+                                                :pointer 1)
+                                                (reparse-symbol namespacesubparts) [9011 9276])
+                                            ("asio_handler_deallocate" function
+                                               (:template 
+                                                  ( ("Stream" type (:type "class") nil nil)
+                                                    ("Operation" type (:type "class") nil nil)
+                                                    ("Handler" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("pointer" variable
+                                                       (:pointer 1
+                                                        :type "void")
+                                                        (reparse-symbol arg-sub-list) [9379 9393])
+                                                    ("size" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9394 9411])
+                                                    ("this_handler" variable
+                                                       (:pointer 1
+                                                        :type ("io_op" type
+                                                             (:template-specifier 
+                                                                ( ("Stream" type nil nil nil)
+                                                                  ("Operation" type nil nil nil)
+                                                                  ("Handler" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [9416 9464]))                                                  
+                                                :typemodifiers ("inline"))
+                                                (reparse-symbol namespacesubparts) [9278 9562])
+                                            ("asio_handler_is_continuation" function
+                                               (:template 
+                                                  ( ("Stream" type (:type "class") nil nil)
+                                                    ("Operation" type (:type "class") nil nil)
+                                                    ("Handler" type (:type "class") nil nil))                                                  
+                                                :type "bool"
+                                                :arguments 
+                                                  ( ("this_handler" variable
+                                                       (:pointer 1
+                                                        :type ("io_op" type
+                                                             (:template-specifier 
+                                                                ( ("Stream" type nil nil nil)
+                                                                  ("Operation" type nil nil nil)
+                                                                  ("Handler" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [9675 9723]))                                                  
+                                                :typemodifiers ("inline"))
+                                                (reparse-symbol namespacesubparts) [9564 9849])
+                                            ("asio_handler_invoke" function
+                                               (:template 
+                                                  ( ("Function" type (:type "class") nil nil)
+                                                    ("Stream" type (:type "class") nil nil)
+                                                    ("Operation" type (:type "class") nil nil)
+                                                    ("Handler" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("function" variable
+                                                       (:reference 1
+                                                        :type ("Function" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [9971 9990])
+                                                    ("this_handler" variable
+                                                       (:pointer 1
+                                                        :type ("io_op" type
+                                                             (:template-specifier 
+                                                                ( ("Stream" type nil nil nil)
+                                                                  ("Operation" type nil nil nil)
+                                                                  ("Handler" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [9995 10043]))                                                  
+                                                :typemodifiers ("inline"))
+                                                (reparse-symbol namespacesubparts) [9851 10133])
+                                            ("asio_handler_invoke" function
+                                               (:template 
+                                                  ( ("Function" type (:type "class") nil nil)
+                                                    ("Stream" type (:type "class") nil nil)
+                                                    ("Operation" type (:type "class") nil nil)
+                                                    ("Handler" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("function" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Function" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [10255 10280])
+                                                    ("this_handler" variable
+                                                       (:pointer 1
+                                                        :type ("io_op" type
+                                                             (:template-specifier 
+                                                                ( ("Stream" type nil nil nil)
+                                                                  ("Operation" type nil nil nil)
+                                                                  ("Handler" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [10285 10333]))                                                  
+                                                :typemodifiers ("inline"))
+                                                (reparse-symbol namespacesubparts) [10135 10423])
+                                            ("async_io" function
+                                               (:template 
+                                                  ( ("Stream" type (:type "class") nil nil)
+                                                    ("Operation" type (:type "class") nil nil)
+                                                    ("Handler" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("next_layer" variable
+                                                       (:reference 1
+                                                        :type ("Stream" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [10511 10530])
+                                                    ("core" variable
+                                                       (:reference 1
+                                                        :type ("stream_core" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [10531 10549])
+                                                    ("op" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Operation" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [10554 10574])
+                                                    ("handler" variable
+                                                       (:reference 1
+                                                        :type ("Handler" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [10575 10592]))                                                  
+                                                :typemodifiers ("inline"))
+                                                (reparse-symbol namespacesubparts) [10425 10711]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [826 10761]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [810 10783]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [793 10802]))                  
+                :type "namespace")
+                nil [775 10822])
+            ("boost/asio/detail/pop_options.hpp" include (:system-flag t) nil [10843 10887]))          
+      :file "io.hpp"
+      :pointmax 10928
+      :fsize 10927
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax '((semantic-list 3612 . 3615) (punctuation 3600 . 3601) (punctuation 3598 . 3599))
+      :lexical-table 
+        '(("BOOST_ASIO_SSL_DETAIL_IO_HPP")
+          )
+)
+    (semanticdb-table "stream_core.hpp"
+      :file "stream_core.hpp"
+      :fsize 3938
+      :lastmodtime '(22452 53218 0 0))
+    (semanticdb-table "read_op.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ASIO_SSL_DETAIL_READ_OP_HPP" variable (:constant-flag t) nil [348 381])
+            ("boost/asio/detail/config.hpp" include (:system-flag t) nil [492 531])
+            ("boost/asio/detail/buffer_sequence_adapter.hpp" include (:system-flag t) nil [573 630])
+            ("boost/asio/ssl/detail/engine.hpp" include (:system-flag t) nil [631 675])
+            ("boost/asio/detail/push_options.hpp" include (:system-flag t) nil [723 768])
+            ("boost" type
+               (:members 
+                  ( ("asio" type
+                       (:members 
+                          ( ("ssl" type
+                               (:members 
+                                  ( ("detail" type
+                                       (:members 
+                                          ( ("read_op" type
+                                               (:template 
+                                                  ( ("MutableBufferSequence" type (:type "class") nil nil))                                                  
+                                                :type "class"
+                                                :members 
+                                                  ( ("public" label nil (reparse-symbol classsubparts) [940 947])
+                                                    ("read_op" function
+                                                       (:constructor-flag t
+                                                        :arguments 
+                                                          ( ("buffers" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("MutableBufferSequence" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [958 995]))                                                          
+                                                        :type ("read_op" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [950 1027])
+                                                    ("()" function
+                                                       (:methodconst-flag t
+                                                        :operator-flag t
+                                                        :arguments 
+                                                          ( ("eng" variable
+                                                               (:reference 1
+                                                                :type ("engine" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1055 1067])
+                                                            ("ec" variable
+                                                               (:reference 1
+                                                                :type ("boost::system::error_code" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1074 1104])
+                                                            ("bytes_transferred" variable
+                                                               (:reference 1
+                                                                :type ("std::size_t" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1111 1142]))                                                          
+                                                        :type ("engine::want" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1031 1379])
+                                                    ("call_handler" function
+                                                       (:template 
+                                                          ( ("Handler" type (:type "class") nil nil))                                                          
+                                                        :type "void"
+                                                        :arguments 
+                                                          ( ("handler" variable
+                                                               (:reference 1
+                                                                :type ("Handler" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1431 1448])
+                                                            ("ec" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("boost::system::error_code" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1455 1491])
+                                                            ("bytes_transferred" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("std::size_t" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1498 1535]))                                                          
+                                                        :methodconst-flag t)
+                                                        (reparse-symbol classsubparts) [1383 1585])
+                                                    ("private" label nil (reparse-symbol classsubparts) [1587 1595])
+                                                    ("buffers_" variable (:type ("MutableBufferSequence" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1598 1629]))                                                  )
+                                                (reparse-symbol namespacesubparts) [882 1632]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [821 1682]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [805 1704]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [788 1723]))                  
+                :type "namespace")
+                nil [770 1743])
+            ("boost/asio/detail/pop_options.hpp" include (:system-flag t) nil [1764 1808]))          
+      :file "read_op.hpp"
+      :pointmax 1854
+      :fsize 1853
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ASIO_SSL_DETAIL_READ_OP_HPP")
+          )
+)
+    (semanticdb-table "openssl_init.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ASIO_SSL_DETAIL_OPENSSL_INIT_HPP" variable (:constant-flag t) nil [363 401])
+            ("boost/asio/detail/config.hpp" include (:system-flag t) nil [512 551])
+            ("cstring" include (:system-flag t) nil [552 570])
+            ("boost/asio/detail/noncopyable.hpp" include (:system-flag t) nil [571 615])
+            ("boost/asio/detail/shared_ptr.hpp" include (:system-flag t) nil [616 659])
+            ("boost/asio/ssl/detail/openssl_types.hpp" include (:system-flag t) nil [660 710])
+            ("boost/asio/detail/push_options.hpp" include (:system-flag t) nil [712 757])
+            ("boost" type
+               (:members 
+                  ( ("asio" type
+                       (:members 
+                          ( ("ssl" type
+                               (:members 
+                                  ( ("detail" type
+                                       (:members 
+                                          ( ("openssl_init_base" type
+                                               (:superclasses 
+                                                  ( ("noncopyable" type
+                                                       (:protection "private"
+                                                        :type "class")
+                                                        nil nil))                                                  
+                                                :members 
+                                                  ( ("protected" label nil (reparse-symbol classsubparts) [880 890])
+                                                    ("do_init" type
+                                                       (:prototype t
+                                                        :type "class")
+                                                        (reparse-symbol classsubparts) [945 959])
+                                                    ("instance" function
+                                                       (:prototype-flag t
+                                                        :typemodifiers ("static")
+                                                        :type ("boost::asio::detail::shared_ptr" type
+                                                             (:template-specifier 
+                                                                ( ("do_init" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol classsubparts) [1346 1405]))                                                  
+                                                :type "class")
+                                                (reparse-symbol namespacesubparts) [830 1756])
+                                            ("openssl_init" type
+                                               (:template 
+                                                  ( ("bool" type (:typevar "Do_Init") nil nil))                                                  
+                                                :type "class"
+                                                :members 
+                                                  ( ("public" label nil (reparse-symbol classsubparts) [1838 1845])
+                                                    ("openssl_init" function
+                                                       (:constructor-flag t
+                                                        :type ("openssl_init" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1866 2089])
+                                                    ("openssl_init" function
+                                                       (:destructor-flag t
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [2110 2133])
+                                                    ("private" label nil (reparse-symbol classsubparts) [2371 2379])
+                                                    ("instance_" variable
+                                                       (:typemodifiers ("static")
+                                                        :type ("openssl_init" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [2448 2478])
+                                                    ("ref_" variable (:type ("boost::asio::detail::shared_ptr" type
+                                                         (:template-specifier 
+                                                            ( ("do_init" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [2619 2665]))                                                  
+                                                :superclasses 
+                                                  ( ("openssl_init_base" type
+                                                       (:protection "private"
+                                                        :type "class")
+                                                        nil nil))                                                  )
+                                                (reparse-symbol namespacesubparts) [1758 2668])
+                                            ("openssl_init::instance_" variable (:type ("openssl_init" type
+                                                 (:template-specifier 
+                                                    ( ("Do_Init" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol namespacesubparts) [2670 2749]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [810 2752]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [794 2774]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [777 2793]))                  
+                :type "namespace")
+                nil [759 2813])
+            ("boost/asio/detail/pop_options.hpp" include (:system-flag t) nil [2834 2878]))          
+      :file "openssl_init.hpp"
+      :pointmax 3064
+      :fsize 3063
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax '((symbol 1330 . 1345))
+      :lexical-table 
+        '(("BOOST_ASIO_SSL_DETAIL_OPENSSL_INIT_HPP")
+          )
+)
+    (semanticdb-table "openssl_types.hpp"
+      :file "openssl_types.hpp"
+      :fsize 855
+      :lastmodtime '(22452 53218 0 0)))
+  :file "!usr!include!boost!asio!ssl!detail!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

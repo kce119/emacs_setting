@@ -1,0 +1,70 @@
+;; Object query/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "query/"
+  :tables
+  (list
+    (semanticdb-table "find.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FUSION_FIND_05052005_1107" variable (:constant-flag t) nil [446 471])
+            ("boost/fusion/support/config.hpp" include (:system-flag t) nil [473 515])
+            ("boost/fusion/algorithm/query/find_if_fwd.hpp" include (:system-flag t) nil [516 571])
+            ("boost/fusion/algorithm/query/detail/find_if.hpp" include (:system-flag t) nil [572 630])
+            ("boost/fusion/algorithm/query/detail/segmented_find.hpp" include (:system-flag t) nil [631 696])
+            ("boost/fusion/iterator/key_of.hpp" include (:system-flag t) nil [697 740])
+            ("boost/fusion/iterator/value_of.hpp" include (:system-flag t) nil [741 786])
+            ("boost/fusion/support/category_of.hpp" include (:system-flag t) nil [787 834])
+            ("boost/fusion/support/is_segmented.hpp" include (:system-flag t) nil [835 883])
+            ("boost/mpl/if.hpp" include (:system-flag t) nil [884 911])
+            ("boost/mpl/placeholders.hpp" include (:system-flag t) nil [912 949])
+            ("boost/type_traits/is_same.hpp" include (:system-flag t) nil [950 990])
+            ("boost/type_traits/is_const.hpp" include (:system-flag t) nil [991 1032])
+            ("boost/utility/enable_if.hpp" include (:system-flag t) nil [1033 1071])
+            ("boost" type
+               (:members 
+                  ( ("fusion" type
+                       (:members 
+                          ( ("result_of" type
+                               (:members 
+                                  ( ("type" variable (:type "int") (reparse-symbol namespacesubparts) [1749 1765]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1114 1771])
+                            ("find" function
+                               (:typemodifiers ("inline" "typename")
+                                :arguments 
+                                  ( ("seq" variable
+                                       (:reference 1
+                                        :type ("Sequence" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2011 2025]))                                  
+                                :type ("lazy_disable_if::type" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1867 2141])
+                            ("find" function
+                               (:typemodifiers ("inline" "typename")
+                                :arguments 
+                                  ( ("seq" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Sequence" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2309 2329]))                                  
+                                :type ("result_of::find::type" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2237 2451]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1091 2453]))                  
+                :type "namespace")
+                nil [1073 2454]))          
+      :file "find.hpp"
+      :pointmax 2463
+      :fsize 2462
+      :lastmodtime '(22324 21864 0 0)
+      :unmatched-syntax '((symbol 2208 . 2232) (symbol 2192 . 2207) (punctuation 2186 . 2187) (symbol 2178 . 2186) (TYPENAME 2169 . 2177) (punctuation 2167 . 2168) (symbol 2166 . 2167) (TYPENAME 2157 . 2165) (punctuation 2156 . 2157) (TEMPLATE 2147 . 2155) (symbol 1838 . 1862) (symbol 1822 . 1837) (punctuation 1816 . 1817) (symbol 1808 . 1816) (TYPENAME 1799 . 1807) (punctuation 1797 . 1798) (symbol 1796 . 1797) (TYPENAME 1787 . 1795) (punctuation 1786 . 1787) (TEMPLATE 1777 . 1785) (punctuation 1748 . 1749) (punctuation 1747 . 1748) (punctuation 1746 . 1747) (punctuation 1732 . 1733) (punctuation 1714 . 1715) (symbol 1692 . 1693) (punctuation 1690 . 1691) (symbol 1663 . 1667) (punctuation 1662 . 1663) (punctuation 1661 . 1662) (punctuation 1660 . 1661) (punctuation 1634 . 1635) (symbol 1632 . 1634) (punctuation 1631 . 1632) (punctuation 1630 . 1631) (symbol 1627 . 1630) (punctuation 1626 . 1627) (symbol 1618 . 1626) (punctuation 1616 . 1617) (punctuation 1588 . 1589) (symbol 1586 . 1588) (punctuation 1585 . 1586) (punctuation 1584 . 1585) (symbol 1581 . 1584) (punctuation 1580 . 1581) (symbol 1574 . 1580) (punctuation 1572 . 1573) (punctuation 1544 . 1545) (symbol 1536 . 1544) (punctuation 1535 . 1536) (symbol 1521 . 1535) (punctuation 1520 . 1521) (punctuation 1519 . 1520) (symbol 1513 . 1519) (punctuation 1483 . 1484) (symbol 1480 . 1483) (punctuation 1479 . 1480) (punctuation 1478 . 1479) (symbol 1475 . 1478) (TYPENAME 1466 . 1474) (punctuation 1440 . 1441) (symbol 1433 . 1440) (punctuation 1411 . 1412) (symbol 1403 . 1411) (punctuation 1381 . 1382) (symbol 1364 . 1381) (punctuation 1363 . 1364) (punctuation 1362 . 1363) (symbol 1356 . 1362) (punctuation 1354 . 1355) (punctuation 1338 . 1339) (symbol 1337 . 1338) (punctuation 1335 . 1336) (symbol 1327 . 1335) (punctuation 1326 . 1327) (symbol 1302 . 1326) (punctuation 1301 . 1302) (punctuation 1300 . 1301) (symbol 1294 . 1300) (punctuation 1292 . 1293) (punctuation 1276 . 1277) (symbol 1268 . 1276) (punctuation 1267 . 1268) (symbol 1255 . 1267) (punctuation 1254 . 1255) (punctuation 1253 . 1254) (symbol 1247 . 1253) (punctuation 1229 . 1230) (symbol 1226 . 1229) (punctuation 1225 . 1226) (punctuation 1224 . 1225) (symbol 1221 . 1224) (punctuation 1219 . 1220) (symbol 1204 . 1208) (STRUCT 1197 . 1203) (punctuation 1187 . 1188) (symbol 1186 . 1187) (TYPENAME 1177 . 1185) (punctuation 1175 . 1176) (symbol 1167 . 1175) (TYPENAME 1158 . 1166) (punctuation 1157 . 1158) (TEMPLATE 1148 . 1156))
+      :lexical-table 
+        '(("FUSION_FIND_05052005_1107")
+          )
+)
+    (semanticdb-table "find_if_fwd.hpp"
+      :file "find_if_fwd.hpp"
+      :fsize 1244
+      :lastmodtime '(22324 21864 0 0)))
+  :file "!usr!include!boost!fusion!algorithm!query!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

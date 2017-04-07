@@ -1,0 +1,29 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BEAST_ERROR_HPP" variable (:constant-flag t) nil [272 287])
+            ("boost/system/error_code.hpp" include (:system-flag t) nil [289 327])
+            ("boost/system/system_error.hpp" include (:system-flag t) nil [328 368])
+            ("beast" type
+               (:members 
+                  ( ("boost::system::error_code" variable (:type "int") (reparse-symbol namespacesubparts) [455 481])
+                    ("boost::system::system_error" variable (:type "int") (reparse-symbol namespacesubparts) [555 583]))                  
+                :type "namespace")
+                nil [370 586]))          
+      :file "error.hpp"
+      :pointmax 604
+      :fsize 603
+      :lastmodtime '(22486 26367 776666 669000)
+      :unmatched-syntax '((punctuation 553 . 554) (symbol 540 . 552) (USING 534 . 539) (punctuation 453 . 454) (symbol 442 . 452) (USING 436 . 441))
+      :lexical-table 
+        '(("BEAST_ERROR_HPP")
+          )
+))
+  :file "!home!nakao!github!iotc_msgpub!external!Beast!include!beast!core!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

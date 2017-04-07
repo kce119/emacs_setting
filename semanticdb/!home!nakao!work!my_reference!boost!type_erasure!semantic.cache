@@ -1,0 +1,103 @@
+;; Object type_erasure/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "type_erasure/"
+  :tables
+  (list
+    (semanticdb-table "type_erasure.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("memory" include (:system-flag t) nil [1 18])
+            ("boost/type_erasure/any.hpp" include (:system-flag t) nil [19 56])
+            ("shared_any" type
+               (:template 
+                  ( ("Concept" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("ownership_" variable (:type ("std::shared_ptr" type
+                         (:template-specifier 
+                            ( ("void" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [285 318])
+                    ("public" label nil (reparse-symbol classsubparts) [319 326])
+                    ("shared_any" function
+                       (:template 
+                          ( ("U" type (:type "class") nil nil))                          
+                        :type ("shared_any" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("p" variable (:type ("std::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("U" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [365 386]))                          
+                        :constructor-flag t)
+                        (reparse-symbol classsubparts) [331 428])
+                    ("=" function
+                       (:template 
+                          ( ("U" type (:type "class") nil nil))                          
+                        :type ("shared_any" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("p" variable (:type ("std::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("U" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [479 500]))                          
+                        :operator-flag t)
+                        (reparse-symbol classsubparts) [434 582])
+                    ("get_address" function
+                       (:methodconst-flag t
+                        :pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [587 659]))                  
+                :superclasses 
+                  ( ("boost::type_erasure::any" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [76 662])
+            ("boost/type_erasure/member.hpp" include (:system-flag t) nil [664 704])
+            ("boost/type_erasure/operators.hpp" include (:system-flag t) nil [705 748])
+            ("boost/any.hpp" include (:system-flag t) nil [749 773])
+            ("string" include (:system-flag t) nil [774 791])
+            ("boost::type_erasure" using (:type ("boost::type_erasure" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [792 828])
+            ("mpl" type
+               (:kind alias
+                :members 
+                  ( ("boost::mpl" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [977 1004])
+            ("ns" type (:type "namespace") nil [1006 1301])
+            ("iostream" include (:system-flag t) nil [1303 1322])
+            ("my_type" type
+               (:members 
+                  ( ("foo" function
+                       (:arguments 
+                          ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [1369 1376])
+                            ("b" variable (:type "int") (reparse-symbol arg-sub-list) [1376 1382])
+                            ("c" variable (:type "int") (reparse-symbol arg-sub-list) [1383 1389]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1353 1435]))                  
+                :type "struct")
+                nil [1332 1438])
+            ("my_type2" type
+               (:members 
+                  ( ("foo" function
+                       (:arguments 
+                          ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [1486 1493])
+                            ("b" variable (:type "int") (reparse-symbol arg-sub-list) [1493 1499])
+                            ("c" variable (:type "int") (reparse-symbol arg-sub-list) [1500 1506]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1470 1600]))                  
+                :type "struct")
+                nil [1448 1603])
+            ("main" function (:type "int") nil [1606 1863]))          
+      :file "type_erasure.cpp"
+      :pointmax 1944
+      :fsize 2263
+      :lastmodtime '(22653 50628 143333 335000)
+      :unmatched-syntax '((punctuation 1298 . 1299) (punctuation 1297 . 1298) (punctuation 1295 . 1296) (punctuation 1199 . 1200) (semantic-list 1184 . 1199) (symbol 1178 . 1184) (punctuation 1177 . 1178) (punctuation 1176 . 1177) (symbol 1173 . 1176) (punctuation 1172 . 1173) (symbol 1165 . 1172) (punctuation 1139 . 1140) (punctuation 1138 . 1139) (punctuation 1137 . 1138) (symbol 1125 . 1137) (punctuation 1115 . 1116) (symbol 1109 . 1115) (punctuation 1108 . 1109) (punctuation 1107 . 1108) (symbol 1104 . 1107) (punctuation 1098 . 1099) (symbol 1088 . 1098) (punctuation 1086 . 1087) (symbol 1072 . 1085) (USING 1066 . 1071) (semantic-list 933 . 956) (symbol 908 . 933) (number 954 . 955) (semantic-list 938 . 947) (semantic-list 934 . 938) (punctuation 279 . 280) (punctuation 278 . 279) (punctuation 277 . 278) (symbol 272 . 277) (punctuation 271 . 272) (punctuation 270 . 271) (symbol 258 . 270) (punctuation 257 . 258) (punctuation 256 . 257) (symbol 251 . 256) (punctuation 249 . 250) (symbol 242 . 249) (punctuation 241 . 242) (symbol 238 . 241) (punctuation 237 . 238) (punctuation 236 . 237) (symbol 224 . 236) (punctuation 223 . 224) (punctuation 222 . 223) (symbol 217 . 222) (punctuation 215 . 216) (symbol 205 . 214) (USING 199 . 204) (punctuation 1298 . 1299) (punctuation 1297 . 1298) (punctuation 1295 . 1296) (punctuation 1199 . 1200) (semantic-list 1184 . 1199) (symbol 1178 . 1184) (punctuation 1177 . 1178) (punctuation 1176 . 1177) (symbol 1173 . 1176) (punctuation 1172 . 1173) (symbol 1165 . 1172) (punctuation 1139 . 1140) (punctuation 1138 . 1139) (punctuation 1137 . 1138) (symbol 1125 . 1137) (punctuation 1115 . 1116) (symbol 1109 . 1115) (punctuation 1108 . 1109) (punctuation 1107 . 1108) (symbol 1104 . 1107) (punctuation 1098 . 1099) (symbol 1088 . 1098) (punctuation 1086 . 1087) (symbol 1072 . 1085) (USING 1066 . 1071) (semantic-list 933 . 956) (symbol 908 . 933) (number 954 . 955) (semantic-list 938 . 947) (semantic-list 934 . 938) (punctuation 279 . 280) (punctuation 278 . 279) (punctuation 277 . 278) (symbol 272 . 277) (punctuation 271 . 272) (punctuation 270 . 271) (symbol 258 . 270) (punctuation 257 . 258) (punctuation 256 . 257) (symbol 251 . 256) (punctuation 249 . 250) (symbol 242 . 249) (punctuation 241 . 242) (symbol 238 . 241) (punctuation 237 . 238) (punctuation 236 . 237) (symbol 224 . 236) (punctuation 223 . 224) (punctuation 222 . 223) (symbol 217 . 222) (punctuation 215 . 216) (symbol 205 . 214) (USING 199 . 204))))
+  :file "!home!nakao!work!my_reference!boost!type_erasure!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

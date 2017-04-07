@@ -1,0 +1,67 @@
+;; Object move/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "move/"
+  :tables
+  (list
+    (semanticdb-table "utility.hpp"
+      :file "utility.hpp"
+      :fsize 5406
+      :lastmodtime '(22452 53217 0 0))
+    (semanticdb-table "core.hpp"
+      :file "core.hpp"
+      :fsize 15618
+      :lastmodtime '(22452 53217 0 0))
+    (semanticdb-table "utility_core.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MOVE_MOVE_UTILITY_CORE_HPP" variable (:constant-flag t) nil [637 669])
+            ("boost/config.hpp" include (:system-flag t) nil [696 725])
+            ("boost/move/detail/config_begin.hpp" include (:system-flag t) nil [793 838])
+            ("boost/move/detail/workaround.hpp" include (:system-flag t) nil [839 882])
+            ("boost/move/core.hpp" include (:system-flag t) nil [898 928])
+            ("boost/move/detail/meta_utils.hpp" include (:system-flag t) nil [929 972])
+            ("boost/static_assert.hpp" include (:system-flag t) nil [973 1007])
+            ("boost" type
+               (:members 
+                  ( ("enable_move_utility_emulation" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("value" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5771 5803]))                          )
+                        (reparse-symbol namespacesubparts) [5693 5812]))                  
+                :type "namespace")
+                nil [5221 10637])
+            ("boost" type
+               (:members 
+                  ( ("move_detail" type
+                       (:members 
+                          ( ("declval" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type ("boost::move_detail::add_rvalue_reference::type" type (:type "class") nil nil)
+                                :typemodifiers ("typename")
+                                :prototype-flag t)
+                                (reparse-symbol namespacesubparts) [10853 10944]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [10829 10947]))                  
+                :type "namespace")
+                nil [10812 10975])
+            ("boost/move/detail/config_end.hpp" include (:system-flag t) nil [11051 11094]))          
+      :file "utility_core.hpp"
+      :pointmax 11146
+      :fsize 11145
+      :lastmodtime '(22452 53217 0 0)
+      :unmatched-syntax '((semantic-list 10352 . 10583) (symbol 10328 . 10342) (semantic-list 10265 . 10327) (symbol 10237 . 10265) (punctuation 10323 . 10324) (punctuation 10276 . 10277) (punctuation 10275 . 10276) (TYPENAME 10266 . 10274) (punctuation 10235 . 10236) (punctuation 10234 . 10235) (symbol 10233 . 10234) (symbol 10210 . 10232) (punctuation 10199 . 10200) (symbol 10198 . 10199) (CLASS 10192 . 10197) (punctuation 10191 . 10192) (TEMPLATE 10182 . 10190) (semantic-list 10137 . 10171) (symbol 10113 . 10127) (semantic-list 10051 . 10112) (symbol 10023 . 10051) (punctuation 10062 . 10063) (punctuation 10061 . 10062) (TYPENAME 10052 . 10060) (punctuation 10021 . 10022) (punctuation 10020 . 10021) (symbol 10019 . 10020) (symbol 9996 . 10018) (punctuation 9985 . 9986) (symbol 9984 . 9985) (CLASS 9978 . 9983) (punctuation 9977 . 9978) (TEMPLATE 9968 . 9976) (semantic-list 8792 . 9023) (symbol 8768 . 8782) (semantic-list 8705 . 8767) (symbol 8698 . 8705) (punctuation 8763 . 8764) (punctuation 8716 . 8717) (punctuation 8715 . 8716) (TYPENAME 8706 . 8714) (punctuation 8696 . 8697) (punctuation 8695 . 8696) (symbol 8694 . 8695) (symbol 8671 . 8693) (punctuation 8660 . 8661) (symbol 8659 . 8660) (CLASS 8653 . 8658) (punctuation 8652 . 8653) (TEMPLATE 8643 . 8651) (semantic-list 8598 . 8632) (symbol 8574 . 8588) (semantic-list 8512 . 8573) (symbol 8505 . 8512) (punctuation 8523 . 8524) (punctuation 8522 . 8523) (TYPENAME 8513 . 8521) (punctuation 8503 . 8504) (punctuation 8502 . 8503) (symbol 8501 . 8502) (symbol 8478 . 8500) (punctuation 8467 . 8468) (symbol 8466 . 8467) (CLASS 8460 . 8465) (punctuation 8459 . 8460) (TEMPLATE 8450 . 8458) (semantic-list 7032 . 7119) (symbol 7008 . 7022) (semantic-list 7000 . 7007) (symbol 6996 . 7000) (punctuation 7003 . 7004) (punctuation 6994 . 6995) (punctuation 6993 . 6994) (symbol 6988 . 6992) (punctuation 6987 . 6988) (punctuation 6986 . 6987) (punctuation 6985 . 6986) (symbol 6984 . 6985) (punctuation 6983 . 6984) (symbol 6967 . 6983) (punctuation 6966 . 6967) (punctuation 6965 . 6966) (symbol 6954 . 6965) (punctuation 6953 . 6954) (punctuation 6952 . 6953) (symbol 6947 . 6952) (punctuation 6946 . 6947) (punctuation 6945 . 6946) (TYPENAME 6936 . 6944) (symbol 6913 . 6935) (punctuation 6902 . 6903) (symbol 6901 . 6902) (CLASS 6895 . 6900) (punctuation 6894 . 6895) (TEMPLATE 6885 . 6893) (punctuation 733 . 734))
+      :lexical-table 
+        '(("BOOST_MOVE_MOVE_UTILITY_CORE_HPP")
+          )
+))
+  :file "!usr!include!boost!move!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

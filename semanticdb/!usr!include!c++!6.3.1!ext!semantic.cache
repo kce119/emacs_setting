@@ -1,0 +1,275 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_NEW_ALLOCATOR_H" variable (:constant-flag t) nil [1221 1237])
+            ("bits/c++config.h" include (:system-flag t) nil [1241 1268])
+            ("new" include (:system-flag t) nil [1269 1283])
+            ("bits/functexcept.h" include (:system-flag t) nil [1284 1313])
+            ("bits/move.h" include (:system-flag t) nil [1314 1336])
+            ("__gnu_cxx" type
+               (:members 
+                  ( ("std::size_t" using (:type ("std::size_t" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [1482 1500])
+                    ("std::ptrdiff_t" using (:type ("std::ptrdiff_t" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [1503 1524])
+                    ("new_allocator" type
+                       (:template 
+                          ( ("_Tp" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1904 1911])
+                            ("size_type" type
+                               (:typedef ("size_t" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1918 1947])
+                            ("difference_type" type
+                               (:typedef ("ptrdiff_t" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1954 1989])
+                            ("pointer" type
+                               (:typedef ("_Tp" type (:type "class") nil nil)
+                                :pointer 1
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1996 2023])
+                            ("const_pointer" type
+                               (:typedef ("_Tp" type (:type "class") nil nil)
+                                :pointer 1
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2030 2063])
+                            ("reference" type
+                               (:typedef ("_Tp" type (:type "class") nil nil)
+                                :reference 1
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2070 2099])
+                            ("const_reference" type
+                               (:typedef ("_Tp" type (:type "class") nil nil)
+                                :reference 1
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2106 2141])
+                            ("value_type" type
+                               (:typedef ("_Tp" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2148 2178])
+                            ("rebind" type
+                               (:template 
+                                  ( ("_Tp1" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("other" type
+                                       (:typedef ("new_allocator" type
+                                             (:template-specifier 
+                                                ( ("_Tp1" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2242 2276]))                                  )
+                                (reparse-symbol classsubparts) [2186 2279])
+                            ("allocate" function
+                               (:arguments 
+                                  ( ("__n" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3134 3148])
+                                    ("" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [3149 3165]))                                  
+                                :type ("pointer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3111 3303])
+                            ("deallocate" function
+                               (:arguments 
+                                  ( ("__p" variable (:type ("pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3385 3397])
+                                    ("" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3398 3408]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3363 3442])
+                            ("construct" function
+                               (:arguments 
+                                  ( ("__p" variable (:type ("pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3971 3983])
+                                    ("__val" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("_Tp" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3984 4001]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3949 4043])
+                            ("destroy" function
+                               (:arguments 
+                                  ( ("__p" variable (:type ("pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4071 4083]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4051 4100]))                          )
+                        (reparse-symbol namespacesubparts) [1847 4114])
+                    ("==" function
+                       (:template 
+                          ( ("_Tp" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("new_allocator" type
+                                     (:template-specifier 
+                                        ( ("_Tp" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4172 4198])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("new_allocator" type
+                                     (:template-specifier 
+                                        ( ("_Tp" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4199 4225]))                          
+                        :typemodifiers ("inline")
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [4118 4246])
+                    ("!=" function
+                       (:template 
+                          ( ("_Tp" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("new_allocator" type
+                                     (:template-specifier 
+                                        ( ("_Tp" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4306 4332])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("new_allocator" type
+                                     (:template-specifier 
+                                        ( ("_Tp" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4333 4359]))                          
+                        :typemodifiers ("inline")
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [4252 4381]))                  
+                :type "namespace")
+                nil [1395 4415]))          
+      :file "new_allocator.h"
+      :pointmax 4437
+      :fsize 4436
+      :lastmodtime '(22643 8798 0 0)
+      :unmatched-syntax '((symbol 4405 . 4413) (semantic-list 3511 . 3547) (symbol 3483 . 3504) (CONST 3477 . 3482) (semantic-list 3474 . 3476) (symbol 3466 . 3474) (symbol 3450 . 3459) (semantic-list 2945 . 2978) (symbol 2921 . 2938) (CONST 2915 . 2920) (semantic-list 2893 . 2914) (symbol 2886 . 2893) (symbol 2866 . 2879) (semantic-list 2825 . 2858) (symbol 2801 . 2818) (CONST 2795 . 2800) (semantic-list 2779 . 2794) (symbol 2772 . 2779) (symbol 2758 . 2765) (semantic-list 2747 . 2750) (symbol 2725 . 2746) (semantic-list 2722 . 2724) (symbol 2709 . 2722) (punctuation 2708 . 2709) (semantic-list 2697 . 2700) (symbol 2675 . 2696) (semantic-list 2646 . 2674) (symbol 2633 . 2646) (punctuation 2623 . 2624) (symbol 2619 . 2623) (TYPENAME 2610 . 2618) (punctuation 2609 . 2610) (TEMPLATE 2601 . 2609) (semantic-list 2590 . 2593) (symbol 2568 . 2589) (semantic-list 2545 . 2567) (symbol 2532 . 2545) (semantic-list 2521 . 2524) (symbol 2499 . 2520) (semantic-list 2496 . 2498) (symbol 2483 . 2496) (symbol 1446 . 1478))
+      :lexical-table 
+        '(("_NEW_ALLOCATOR_H" . ((number "1" 1238 . 1239)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "numeric_traits.h"
+      :fsize 4575
+      :lastmodtime '(22643 8798 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "type_traits.h"
+      :fsize 5914
+      :lastmodtime '(22643 8799 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "alloc_traits.h"
+      :fsize 5658
+      :lastmodtime '(22643 8798 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_GLIBCXX_ATOMICITY_H" variable (:constant-flag t) nil [1217 1237])
+            ("bits/c++config.h" include (:system-flag t) nil [1268 1295])
+            ("bits/gthr.h" include (:system-flag t) nil [1296 1318])
+            ("bits/atomic_word.h" include (:system-flag t) nil [1319 1348])
+            ("__gnu_cxx" type
+               (:members 
+                  ( ("__exchange_and_add" function
+                       (:typemodifiers ("static" "inline")
+                        :arguments 
+                          ( ("__mem" variable
+                               (:pointer 1
+                                :typemodifiers ("volatile")
+                                :type ("_Atomic_word" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1690 1719])
+                            ("__val" variable (:type "int") (reparse-symbol arg-sub-list) [1720 1730]))                          
+                        :type ("_Atomic_word" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1641 1795])
+                    ("__atomic_add" function
+                       (:typemodifiers ("static" "inline")
+                        :arguments 
+                          ( ("__mem" variable
+                               (:pointer 1
+                                :typemodifiers ("volatile")
+                                :type ("_Atomic_word" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1833 1862])
+                            ("__val" variable (:type "int") (reparse-symbol arg-sub-list) [1863 1873]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1799 1931])
+                    ("__exchange_and_add_single" function
+                       (:typemodifiers ("static" "inline")
+                        :arguments 
+                          ( ("__mem" variable
+                               (:pointer 1
+                                :type ("_Atomic_word" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2202 2222])
+                            ("__val" variable (:type "int") (reparse-symbol arg-sub-list) [2223 2233]))                          
+                        :type ("_Atomic_word" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2147 2319])
+                    ("__atomic_add_single" function
+                       (:typemodifiers ("static" "inline")
+                        :arguments 
+                          ( ("__mem" variable
+                               (:pointer 1
+                                :type ("_Atomic_word" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2364 2384])
+                            ("__val" variable (:type "int") (reparse-symbol arg-sub-list) [2385 2395]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2323 2418])
+                    ("__exchange_and_add_dispatch" function
+                       (:typemodifiers ("static" "inline")
+                        :arguments 
+                          ( ("__mem" variable
+                               (:pointer 1
+                                :type ("_Atomic_word" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2510 2530])
+                            ("__val" variable (:type "int") (reparse-symbol arg-sub-list) [2531 2541]))                          
+                        :type ("_Atomic_word" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2422 2772])
+                    ("__atomic_add_dispatch" function
+                       (:typemodifiers ("static" "inline")
+                        :arguments 
+                          ( ("__mem" variable
+                               (:pointer 1
+                                :type ("_Atomic_word" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2850 2870])
+                            ("__val" variable (:type "int") (reparse-symbol arg-sub-list) [2871 2881]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2776 3073]))                  
+                :type "namespace")
+                nil [1350 3107])
+            ("_GLIBCXX_READ_MEM_BARRIER" variable (:constant-flag t) nil [3309 3334])
+            ("_GLIBCXX_WRITE_MEM_BARRIER" variable (:constant-flag t) nil [3426 3452]))          
+      :file "atomicity.h"
+      :pointmax 3510
+      :fsize 3509
+      :lastmodtime '(22643 8798 0 0)
+      :unmatched-syntax '((symbol 3097 . 3105) (symbol 1401 . 1433) (symbol 1253 . 1266) (symbol 1249 . 1252) (symbol 1242 . 1248) (punctuation 1241 . 1242))
+      :lexical-table 
+        '(("_GLIBCXX_WRITE_MEM_BARRIER" . ((symbol "__atomic_thread_fence" 3453 . 3474) (semantic-list "(__ATOMIC_RELEASE)" 3475 . 3493)))
+          ("_GLIBCXX_READ_MEM_BARRIER" . ((symbol "__atomic_thread_fence" 3335 . 3356) (semantic-list "(__ATOMIC_ACQUIRE)" 3357 . 3375)))
+          ("_GLIBCXX_ATOMICITY_H" . ((number "1" 1238 . 1239)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "aligned_buffer.h"
+      :fsize 3742
+      :lastmodtime '(22643 8798 0 0)))
+  :file "!usr!include!c++!6.3.1!ext!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

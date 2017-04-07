@@ -1,0 +1,162 @@
+;; Object windows/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "windows/"
+  :tables
+  (list
+    (semanticdb-table "basic_handle.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ASIO_WINDOWS_BASIC_HANDLE_HPP" variable (:constant-flag t) nil [354 389])
+            ("boost/asio/detail/config.hpp" include (:system-flag t) nil [500 539]))          
+      :file "basic_handle.hpp"
+      :pointmax 9167
+      :fsize 9166
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ASIO_WINDOWS_BASIC_HANDLE_HPP")
+          )
+)
+    (semanticdb-table "basic_object_handle.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ASIO_WINDOWS_BASIC_OBJECT_HANDLE_HPP" variable (:constant-flag t) nil [434 476])
+            ("boost/asio/detail/config.hpp" include (:system-flag t) nil [587 626]))          
+      :file "basic_object_handle.hpp"
+      :pointmax 6258
+      :fsize 6257
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ASIO_WINDOWS_BASIC_OBJECT_HANDLE_HPP")
+          )
+)
+    (semanticdb-table "basic_random_access_handle.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ASIO_WINDOWS_BASIC_RANDOM_ACCESS_HANDLE_HPP" variable (:constant-flag t) nil [396 445])
+            ("boost/asio/detail/config.hpp" include (:system-flag t) nil [556 595]))          
+      :file "basic_random_access_handle.hpp"
+      :pointmax 15086
+      :fsize 15085
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ASIO_WINDOWS_BASIC_RANDOM_ACCESS_HANDLE_HPP")
+          )
+)
+    (semanticdb-table "basic_stream_handle.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ASIO_WINDOWS_BASIC_STREAM_HANDLE_HPP" variable (:constant-flag t) nil [375 417])
+            ("boost/asio/detail/config.hpp" include (:system-flag t) nil [528 567]))          
+      :file "basic_stream_handle.hpp"
+      :pointmax 14072
+      :fsize 14071
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ASIO_WINDOWS_BASIC_STREAM_HANDLE_HPP")
+          )
+)
+    (semanticdb-table "object_handle.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ASIO_WINDOWS_OBJECT_HANDLE_HPP" variable (:constant-flag t) nil [416 452])
+            ("boost/asio/detail/config.hpp" include (:system-flag t) nil [563 602]))          
+      :file "object_handle.hpp"
+      :pointmax 1126
+      :fsize 1125
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ASIO_WINDOWS_OBJECT_HANDLE_HPP")
+          )
+)
+    (semanticdb-table "object_handle_service.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ASIO_WINDOWS_OBJECT_HANDLE_SERVICE_HPP" variable (:constant-flag t) nil [440 484])
+            ("boost/asio/detail/config.hpp" include (:system-flag t) nil [595 634]))          
+      :file "object_handle_service.hpp"
+      :pointmax 5220
+      :fsize 5219
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ASIO_WINDOWS_OBJECT_HANDLE_SERVICE_HPP")
+          )
+)
+    (semanticdb-table "overlapped_ptr.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ASIO_WINDOWS_OVERLAPPED_PTR_HPP" variable (:constant-flag t) nil [360 397])
+            ("boost/asio/detail/config.hpp" include (:system-flag t) nil [508 547]))          
+      :file "overlapped_ptr.hpp"
+      :pointmax 2960
+      :fsize 2959
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ASIO_WINDOWS_OVERLAPPED_PTR_HPP")
+          )
+)
+    (semanticdb-table "random_access_handle.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ASIO_WINDOWS_RANDOM_ACCESS_HANDLE_HPP" variable (:constant-flag t) nil [378 421])
+            ("boost/asio/detail/config.hpp" include (:system-flag t) nil [532 571]))          
+      :file "random_access_handle.hpp"
+      :pointmax 1143
+      :fsize 1142
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ASIO_WINDOWS_RANDOM_ACCESS_HANDLE_HPP")
+          )
+)
+    (semanticdb-table "random_access_handle_service.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ASIO_WINDOWS_RANDOM_ACCESS_HANDLE_SERVICE_HPP" variable (:constant-flag t) nil [402 453])
+            ("boost/asio/detail/config.hpp" include (:system-flag t) nil [564 603]))          
+      :file "random_access_handle_service.hpp"
+      :pointmax 7104
+      :fsize 7103
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ASIO_WINDOWS_RANDOM_ACCESS_HANDLE_SERVICE_HPP")
+          )
+)
+    (semanticdb-table "stream_handle.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ASIO_WINDOWS_STREAM_HANDLE_HPP" variable (:constant-flag t) nil [357 393])
+            ("boost/asio/detail/config.hpp" include (:system-flag t) nil [504 543]))          
+      :file "stream_handle.hpp"
+      :pointmax 1075
+      :fsize 1074
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ASIO_WINDOWS_STREAM_HANDLE_HPP")
+          )
+)
+    (semanticdb-table "stream_handle_service.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ASIO_WINDOWS_STREAM_HANDLE_SERVICE_HPP" variable (:constant-flag t) nil [381 425])
+            ("boost/asio/detail/config.hpp" include (:system-flag t) nil [536 575]))          
+      :file "stream_handle_service.hpp"
+      :pointmax 6715
+      :fsize 6714
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ASIO_WINDOWS_STREAM_HANDLE_SERVICE_HPP")
+          )
+))
+  :file "!usr!include!boost!asio!windows!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,1579 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_TEST_TOOLS_ASSERTION_HPP_100911GER" variable (:constant-flag t) nil [483 523])
+            ("boost/test/tools/assertion_result.hpp" include (:system-flag t) nil [539 587])
+            ("boost/test/tools/detail/print_helper.hpp" include (:system-flag t) nil [588 639])
+            ("boost/test/tools/detail/fwd.hpp" include (:system-flag t) nil [640 682])
+            ("boost/type.hpp" include (:system-flag t) nil [693 718])
+            ("boost/type_traits/decay.hpp" include (:system-flag t) nil [719 757])
+            ("boost/mpl/assert.hpp" include (:system-flag t) nil [758 789])
+            ("boost/utility/declval.hpp" include (:system-flag t) nil [790 826])
+            ("boost/type_traits/remove_reference.hpp" include (:system-flag t) nil [827 876])
+            ("boost/type_traits/remove_const.hpp" include (:system-flag t) nil [877 922])
+            ("utility" include (:system-flag t) nil [972 990])
+            ("boost/test/detail/suppress_warnings.hpp" include (:system-flag t) nil [999 1049])
+            ("boost" type
+               (:members 
+                  ( ("test_tools" type
+                       (:members 
+                          ( ("assertion" type
+                               (:members 
+                                  ( ("op" type
+                                       (:members 
+                                          ( ("BOOST_TEST_FOR_EACH_COMP_OP" variable (:constant-flag t) (reparse-symbol namespacesubparts) [1978 2005])
+                                            ("BOOST_TEST_FOR_EACH_CONST_OP" variable (:constant-flag t) (reparse-symbol namespacesubparts) [2421 2449])
+                                            ("BOOST_TEST_FOR_EACH_MUT_OP" variable (:constant-flag t) (reparse-symbol namespacesubparts) [3450 3476])
+                                            ("DEDUCE_RESULT_TYPE" variable (:constant-flag t) (reparse-symbol namespacesubparts) [4125 4143])
+                                            ("DEFINE_CONST_OPER" variable (:constant-flag t) (reparse-symbol namespacesubparts) [4406 4423]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1954 5994])
+                                    ("binary_expr" type
+                                       (:template 
+                                          ( ("Lhs" type (:type "class") nil nil)
+                                            ("Rhs" type (:type "class") nil nil)
+                                            ("OP" type (:type "class") nil nil))                                          
+                                        :type "class"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [6288 6356])
+                                    ("expression_base" type
+                                       (:template 
+                                          ( ("ExprType" type (:type "class") nil nil)
+                                            ("ValType" type (:type "class") nil nil))                                          
+                                        :type "class"
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [6427 6434])
+                                            ("ADD_OP_SUPPORT" variable (:constant-flag t) (reparse-symbol classsubparts) [6586 6600])
+                                            ("||" function
+                                               (:template 
+                                                  ( ("T" type (:type "class") nil nil))                                                  
+                                                :type ("ExprType" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("T" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8322 8340]))                                                  
+                                                :operator-flag t)
+                                                (reparse-symbol classsubparts) [8270 8496])
+                                            ("&&" function
+                                               (:template 
+                                                  ( ("T" type (:type "class") nil nil))                                                  
+                                                :type ("ExprType" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("T" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8554 8572]))                                                  
+                                                :operator-flag t)
+                                                (reparse-symbol classsubparts) [8502 8729]))                                          )
+                                        (reparse-symbol namespacesubparts) [6358 8889])
+                                    ("seed" type
+                                       (:members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [13365 13372])
+                                            ("->*" function
+                                               (:template 
+                                                  ( ("T" type (:type "class") nil nil))                                                  
+                                                :type ("value_expr" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :type ("T" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [13530 13533])
+                                                    ("" variable (:type ("v" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13534 13537]))                                                  
+                                                :operator-flag t
+                                                :methodconst-flag t)
+                                                (reparse-symbol classsubparts) [13433 13609]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [13352 13709]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1174 13749]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1151 13774]))                  
+                :type "namespace")
+                nil [1133 13800])
+            ("boost/test/detail/enable_warnings.hpp" include (:system-flag t) nil [13821 13869]))          
+      :file "assertion.hpp"
+      :pointmax 13922
+      :fsize 13921
+      :lastmodtime '(22633 22283 0 0)
+      :unmatched-syntax '((punctuation 13532 . 13533) (punctuation 13035 . 13036) (semantic-list 11608 . 13035) (punctuation 11606 . 11607) (symbol 11595 . 11606) (punctuation 11594 . 11595) (punctuation 11593 . 11594) (symbol 11591 . 11593) (TYPENAME 11582 . 11590) (punctuation 11581 . 11582) (punctuation 11580 . 11581) (symbol 11578 . 11580) (punctuation 11577 . 11578) (symbol 11574 . 11577) (punctuation 11573 . 11574) (symbol 11568 . 11573) (punctuation 11567 . 11568) (symbol 11556 . 11567) (punctuation 11555 . 11556) (symbol 11540 . 11555) (PUBLIC 11533 . 11539) (punctuation 11531 . 11532) (symbol 11519 . 11530) (CLASS 11513 . 11518) (punctuation 11511 . 11512) (symbol 11509 . 11511) (TYPENAME 11500 . 11508) (punctuation 11498 . 11499) (symbol 11495 . 11498) (TYPENAME 11486 . 11494) (punctuation 11484 . 11485) (symbol 11479 . 11484) (TYPENAME 11470 . 11478) (punctuation 11469 . 11470) (TEMPLATE 11461 . 11469) (punctuation 11193 . 11194) (semantic-list 9304 . 11193) (punctuation 9302 . 9303) (symbol 9298 . 9302) (punctuation 9297 . 9298) (punctuation 9296 . 9297) (punctuation 9295 . 9296) (symbol 9291 . 9295) (punctuation 9290 . 9291) (punctuation 9289 . 9290) (punctuation 9288 . 9289) (symbol 9287 . 9288) (punctuation 9286 . 9287) (symbol 9270 . 9286) (TYPENAME 9261 . 9269) (punctuation 9260 . 9261) (symbol 9248 . 9260) (TYPENAME 9239 . 9247) (punctuation 9238 . 9239) (punctuation 9237 . 9238) (symbol 9236 . 9237) (punctuation 9235 . 9236) (symbol 9225 . 9235) (punctuation 9224 . 9225) (symbol 9209 . 9224) (PUBLIC 9202 . 9208) (punctuation 9200 . 9201) (symbol 9189 . 9199) (CLASS 9183 . 9188) (punctuation 9181 . 9182) (symbol 9180 . 9181) (TYPENAME 9171 . 9179) (punctuation 9170 . 9171) (TEMPLATE 9162 . 9170) (semantic-list 8755 . 8879) (semantic-list 8748 . 8750) (BOOL 8744 . 8748) (OPERATOR 8735 . 8743) (semantic-list #("( | , BOR, | )" 0 1 (macros (("action" TEMPLATE "template" 8155 . 8170)))) 8125 . 8171) (TEMPLATE "template" 8125 . 8171) (semantic-list #("( ^ , XOR, ^ )" 0 1 (macros (("action" TEMPLATE "template" 8155 . 8170)))) 8125 . 8171) (TEMPLATE "template" 8125 . 8171) (semantic-list #("( & , BAND, & )" 0 1 (macros (("action" TEMPLATE "template" 8155 . 8170)))) 8125 . 8171) (TEMPLATE "template" 8125 . 8171) (semantic-list #("( !=, NE, == )" 0 1 (macros (("action")))) 8125 . 8171) (semantic-list #("( ==, EQ, != )" 0 1 (macros (("action")))) 8125 . 8171) (semantic-list #("( >=, GE, <  )" 0 1 (macros (("action")))) 8125 . 8171) (semantic-list #("( > , GT, <= )" 0 1 (macros (("action")))) 8125 . 8171) (semantic-list #("( <=, LE, >  )" 0 1 (macros (("action")))) 8125 . 8171) (semantic-list #("( < , LT, >= )" 0 1 (macros (("action")))) 8125 . 8171) (semantic-list #("( >>, RSH, >> )" 0 1 (macros (("action" TEMPLATE "template" 8155 . 8170)))) 8125 . 8171) (TEMPLATE "template" 8125 . 8171) (semantic-list #("( <<, LSH, << )" 0 1 (macros (("action" TEMPLATE "template" 8155 . 8170)))) 8125 . 8171) (TEMPLATE "template" 8125 . 8171) (semantic-list #("( - , SUB, - )" 0 1 (macros (("action" TEMPLATE "template" 8155 . 8170)))) 8125 . 8171) (TEMPLATE "template" 8125 . 8171) (semantic-list #("( + , ADD, + )" 0 1 (macros (("action" TEMPLATE "template" 8155 . 8170)))) 8125 . 8171) (TEMPLATE "template" 8125 . 8171) (semantic-list #("( % , MOD, % )" 0 1 (macros (("action" TEMPLATE "template" 8155 . 8170)))) 8125 . 8171) (TEMPLATE "template" 8125 . 8171) (semantic-list #("( / , DIV, / )" 0 1 (macros (("action" TEMPLATE "template" 8155 . 8170)))) 8125 . 8171) (TEMPLATE "template" 8125 . 8171) (semantic-list #("( * , MUL, * )" 0 1 (macros (("action" TEMPLATE "template" 8155 . 8170)))) 8125 . 8171) (TEMPLATE "template" 8125 . 8171) (semantic-list #("(->*, MEMP, ->* )" 0 1 (macros (("action" TEMPLATE "template" 8155 . 8170)))) 8125 . 8171) (TEMPLATE "template" 8125 . 8171) (punctuation 6571 . 6572) (semantic-list 6569 . 6571) (punctuation 6567 . 6568) (symbol 6563 . 6567) (punctuation 6562 . 6563) (punctuation 6561 . 6562) (punctuation 6560 . 6561) (symbol 6559 . 6560) (punctuation 6558 . 6559) (symbol 6542 . 6558) (TYPENAME 6533 . 6541) (punctuation 6532 . 6533) (symbol 6520 . 6532) (punctuation 6518 . 6519) (symbol 6513 . 6517) (STRUCT 6506 . 6512) (punctuation 6500 . 6501) (symbol 6499 . 6500) (TYPENAME 6490 . 6498) (punctuation 6489 . 6490) (TEMPLATE 6481 . 6489) (semantic-list #("( | , BOR, | )" 0 1 (macros (("action" TEMPLATE "template" 5838 . 5856)))) 5808 . 5857) (TEMPLATE "template" 5808 . 5857) (semantic-list #("( ^ , XOR, ^ )" 0 1 (macros (("action" TEMPLATE "template" 5838 . 5856)))) 5808 . 5857) (TEMPLATE "template" 5808 . 5857) (semantic-list #("( & , BAND, & )" 0 1 (macros (("action" TEMPLATE "template" 5838 . 5856)))) 5808 . 5857) (TEMPLATE "template" 5808 . 5857) (semantic-list #("( !=, NE, == )" 0 1 (macros (("action")))) 5808 . 5857) (semantic-list #("( ==, EQ, != )" 0 1 (macros (("action")))) 5808 . 5857) (semantic-list #("( >=, GE, <  )" 0 1 (macros (("action")))) 5808 . 5857) (semantic-list #("( > , GT, <= )" 0 1 (macros (("action")))) 5808 . 5857) (semantic-list #("( <=, LE, >  )" 0 1 (macros (("action")))) 5808 . 5857) (semantic-list #("( < , LT, >= )" 0 1 (macros (("action")))) 5808 . 5857) (semantic-list #("( >>, RSH, >> )" 0 1 (macros (("action" TEMPLATE "template" 5838 . 5856)))) 5808 . 5857) (TEMPLATE "template" 5808 . 5857) (semantic-list #("( <<, LSH, << )" 0 1 (macros (("action" TEMPLATE "template" 5838 . 5856)))) 5808 . 5857) (TEMPLATE "template" 5808 . 5857) (semantic-list #("( - , SUB, - )" 0 1 (macros (("action" TEMPLATE "template" 5838 . 5856)))) 5808 . 5857) (TEMPLATE "template" 5808 . 5857) (semantic-list #("( + , ADD, + )" 0 1 (macros (("action" TEMPLATE "template" 5838 . 5856)))) 5808 . 5857) (TEMPLATE "template" 5808 . 5857) (semantic-list #("( % , MOD, % )" 0 1 (macros (("action" TEMPLATE "template" 5838 . 5856)))) 5808 . 5857) (TEMPLATE "template" 5808 . 5857) (semantic-list #("( / , DIV, / )" 0 1 (macros (("action" TEMPLATE "template" 5838 . 5856)))) 5808 . 5857) (TEMPLATE "template" 5808 . 5857) (semantic-list #("( * , MUL, * )" 0 1 (macros (("action" TEMPLATE "template" 5838 . 5856)))) 5808 . 5857) (TEMPLATE "template" 5808 . 5857) (semantic-list #("(->*, MEMP, ->* )" 0 1 (macros (("action" TEMPLATE "template" 5838 . 5856)))) 5808 . 5857) (TEMPLATE "template" 5808 . 5857) (punctuation 11606 . 11607) (symbol 11595 . 11606) (punctuation 11594 . 11595) (punctuation 11593 . 11594) (symbol 11591 . 11593) (TYPENAME 11582 . 11590) (punctuation 11581 . 11582) (punctuation 11580 . 11581) (symbol 11578 . 11580) (punctuation 11577 . 11578) (symbol 11574 . 11577) (punctuation 11573 . 11574) (symbol 11568 . 11573) (punctuation 11567 . 11568) (symbol 11556 . 11567) (punctuation 11555 . 11556) (symbol 11540 . 11555) (PUBLIC 11533 . 11539) (punctuation 11531 . 11532) (symbol 11519 . 11530) (CLASS 11513 . 11518) (punctuation 11511 . 11512) (symbol 11509 . 11511) (TYPENAME 11500 . 11508) (punctuation 11498 . 11499) (symbol 11495 . 11498) (TYPENAME 11486 . 11494) (punctuation 11484 . 11485) (symbol 11479 . 11484) (TYPENAME 11470 . 11478) (punctuation 11469 . 11470) (TEMPLATE 11461 . 11469) (punctuation 11193 . 11194) (semantic-list 9304 . 11193) (punctuation 9302 . 9303) (symbol 9298 . 9302) (punctuation 9297 . 9298) (punctuation 9296 . 9297) (punctuation 9295 . 9296) (symbol 9291 . 9295) (punctuation 9290 . 9291) (punctuation 9289 . 9290) (punctuation 9288 . 9289) (symbol 9287 . 9288) (punctuation 9286 . 9287) (symbol 9270 . 9286) (TYPENAME 9261 . 9269) (punctuation 9260 . 9261) (symbol 9248 . 9260) (TYPENAME 9239 . 9247) (punctuation 9238 . 9239) (punctuation 9237 . 9238) (symbol 9236 . 9237) (punctuation 9235 . 9236) (symbol 9225 . 9235) (punctuation 9224 . 9225) (symbol 9209 . 9224) (PUBLIC 9202 . 9208) (punctuation 9200 . 9201) (symbol 9189 . 9199) (CLASS 9183 . 9188) (punctuation 9181 . 9182) (symbol 9180 . 9181) (TYPENAME 9171 . 9179) (punctuation 9170 . 9171) (TEMPLATE 9162 . 9170) (semantic-list 8755 . 8879) (semantic-list 8748 . 8750) (BOOL 8744 . 8748) (OPERATOR 8735 . 8743) (semantic-list #("( | , BOR, | )" 0 1 (macros (("action" TEMPLATE "template" 8155 . 8170)))) 8125 . 8171) (TEMPLATE "template" 8125 . 8171) (semantic-list #("( ^ , XOR, ^ )" 0 1 (macros (("action" TEMPLATE "template" 8155 . 8170)))) 8125 . 8171) (TEMPLATE "template" 8125 . 8171) (semantic-list #("( & , BAND, & )" 0 1 (macros (("action" TEMPLATE "template" 8155 . 8170)))) 8125 . 8171) (TEMPLATE "template" 8125 . 8171) (semantic-list #("( !=, NE, == )" 0 1 (macros (("action")))) 8125 . 8171) (semantic-list #("( ==, EQ, != )" 0 1 (macros (("action")))) 8125 . 8171) (semantic-list #("( >=, GE, <  )" 0 1 (macros (("action")))) 8125 . 8171) (semantic-list #("( > , GT, <= )" 0 1 (macros (("action")))) 8125 . 8171) (semantic-list #("( <=, LE, >  )" 0 1 (macros (("action")))) 8125 . 8171) (semantic-list #("( < , LT, >= )" 0 1 (macros (("action")))) 8125 . 8171) (semantic-list #("( >>, RSH, >> )" 0 1 (macros (("action" TEMPLATE "template" 8155 . 8170)))) 8125 . 8171) (TEMPLATE "template" 8125 . 8171) (semantic-list #("( <<, LSH, << )" 0 1 (macros (("action" TEMPLATE "template" 8155 . 8170)))) 8125 . 8171) (TEMPLATE "template" 8125 . 8171) (semantic-list #("( - , SUB, - )" 0 1 (macros (("action" TEMPLATE "template" 8155 . 8170)))) 8125 . 8171) (TEMPLATE "template" 8125 . 8171) (semantic-list #("( + , ADD, + )" 0 1 (macros (("action" TEMPLATE "template" 8155 . 8170)))) 8125 . 8171) (TEMPLATE "template" 8125 . 8171) (semantic-list #("( % , MOD, % )" 0 1 (macros (("action" TEMPLATE "template" 8155 . 8170)))) 8125 . 8171) (TEMPLATE "template" 8125 . 8171) (semantic-list #("( / , DIV, / )" 0 1 (macros (("action" TEMPLATE "template" 8155 . 8170)))) 8125 . 8171) (TEMPLATE "template" 8125 . 8171) (semantic-list #("( * , MUL, * )" 0 1 (macros (("action" TEMPLATE "template" 8155 . 8170)))) 8125 . 8171) (TEMPLATE "template" 8125 . 8171) (semantic-list #("(->*, MEMP, ->* )" 0 1 (macros (("action" TEMPLATE "template" 8155 . 8170)))) 8125 . 8171) (TEMPLATE "template" 8125 . 8171) (punctuation 6571 . 6572) (semantic-list 6569 . 6571) (punctuation 6567 . 6568) (symbol 6563 . 6567) (punctuation 6562 . 6563) (punctuation 6561 . 6562) (punctuation 6560 . 6561) (symbol 6559 . 6560) (punctuation 6558 . 6559) (symbol 6542 . 6558) (TYPENAME 6533 . 6541) (punctuation 6532 . 6533) (symbol 6520 . 6532) (punctuation 6518 . 6519) (symbol 6513 . 6517) (STRUCT 6506 . 6512) (punctuation 6500 . 6501) (symbol 6499 . 6500) (TYPENAME 6490 . 6498) (punctuation 6489 . 6490) (TEMPLATE 6481 . 6489) (semantic-list #("( | , BOR, | )" 0 1 (macros (("action" TEMPLATE "template" 5838 . 5856)))) 5808 . 5857) (TEMPLATE "template" 5808 . 5857) (semantic-list #("( ^ , XOR, ^ )" 0 1 (macros (("action" TEMPLATE "template" 5838 . 5856)))) 5808 . 5857) (TEMPLATE "template" 5808 . 5857) (semantic-list #("( & , BAND, & )" 0 1 (macros (("action" TEMPLATE "template" 5838 . 5856)))) 5808 . 5857) (TEMPLATE "template" 5808 . 5857) (semantic-list #("( !=, NE, == )" 0 1 (macros (("action")))) 5808 . 5857) (semantic-list #("( ==, EQ, != )" 0 1 (macros (("action")))) 5808 . 5857) (semantic-list #("( >=, GE, <  )" 0 1 (macros (("action")))) 5808 . 5857) (semantic-list #("( > , GT, <= )" 0 1 (macros (("action")))) 5808 . 5857) (semantic-list #("( <=, LE, >  )" 0 1 (macros (("action")))) 5808 . 5857) (semantic-list #("( < , LT, >= )" 0 1 (macros (("action")))) 5808 . 5857) (semantic-list #("( >>, RSH, >> )" 0 1 (macros (("action" TEMPLATE "template" 5838 . 5856)))) 5808 . 5857) (TEMPLATE "template" 5808 . 5857) (semantic-list #("( <<, LSH, << )" 0 1 (macros (("action" TEMPLATE "template" 5838 . 5856)))) 5808 . 5857) (TEMPLATE "template" 5808 . 5857) (semantic-list #("( - , SUB, - )" 0 1 (macros (("action" TEMPLATE "template" 5838 . 5856)))) 5808 . 5857) (TEMPLATE "template" 5808 . 5857) (semantic-list #("( + , ADD, + )" 0 1 (macros (("action" TEMPLATE "template" 5838 . 5856)))) 5808 . 5857) (TEMPLATE "template" 5808 . 5857) (semantic-list #("( % , MOD, % )" 0 1 (macros (("action" TEMPLATE "template" 5838 . 5856)))) 5808 . 5857) (TEMPLATE "template" 5808 . 5857) (semantic-list #("( / , DIV, / )" 0 1 (macros (("action" TEMPLATE "template" 5838 . 5856)))) 5808 . 5857) (TEMPLATE "template" 5808 . 5857) (semantic-list #("( * , MUL, * )" 0 1 (macros (("action" TEMPLATE "template" 5838 . 5856)))) 5808 . 5857) (TEMPLATE "template" 5808 . 5857) (semantic-list #("(->*, MEMP, ->* )" 0 1 (macros (("action" TEMPLATE "template" 5838 . 5856)))) 5808 . 5857) (TEMPLATE "template" 5808 . 5857))
+      :lexical-table 
+        '(("BOOST_TEST_FOR_EACH_MUT_OP" (spp-arg-list ("action") 3476 . 3484) . 
+              ((symbol "action" 3492 . 3498) (semantic-list "( = , SET , =  )" 3498 . 3514) (symbol "action" 3538 . 3544) (semantic-list "( +=, IADD, += )" 3544 . 3560) (symbol "action" 3584 . 3590) (semantic-list "( -=, ISUB, -= )" 3590 . 3606) (symbol "action" 3630 . 3636) (semantic-list "( *=, IMUL, *= )" 3636 . 3652) (symbol "action" 3676 . 3682) (semantic-list "( /=, IDIV, /= )" 3682 . 3698) (symbol "action" 3722 . 3728) (semantic-list "( %=, IMOD, %= )" 3728 . 3744) (symbol "action" 3768 . 3774) (semantic-list "(<<=, ILSH, <<=)" 3774 . 3790) (symbol "action" 3814 . 3820) (semantic-list "(>>=, IRSH, >>=)" 3820 . 3836) (symbol "action" 3860 . 3866) (semantic-list "( &=, IAND, &= )" 3866 . 3882) (symbol "action" 3906 . 3912) (semantic-list "( ^=, IXOR, ^= )" 3912 . 3928) (symbol "action" 3952 . 3958) (semantic-list "( |=, IOR , |= )" 3958 . 3974)))
+          ("BOOST_TEST_FOR_EACH_CONST_OP" (spp-arg-list ("action") 2449 . 2457) . 
+              ((symbol "action" 2463 . 2469) (semantic-list "(->*, MEMP, ->* )" 2469 . 2486) (symbol "action" 2555 . 2561) (semantic-list "( * , MUL, * )" 2561 . 2575) (symbol "action" 2601 . 2607) (semantic-list "( / , DIV, / )" 2607 . 2621) (symbol "action" 2647 . 2653) (semantic-list "( % , MOD, % )" 2653 . 2667) (symbol "action" 2739 . 2745) (semantic-list "( + , ADD, + )" 2745 . 2759) (symbol "action" 2785 . 2791) (semantic-list "( - , SUB, - )" 2791 . 2805) (symbol "action" 2877 . 2883) (semantic-list "( <<, LSH, << )" 2883 . 2898) (symbol "action" 2923 . 2929) (semantic-list "( >>, RSH, >> )" 2929 . 2944) (symbol "BOOST_TEST_FOR_EACH_COMP_OP" 3015 . 3042) (semantic-list "(action)" 3042 . 3050) (symbol "action" 3107 . 3113) (semantic-list "( & , BAND, & )" 3113 . 3128) (symbol "action" 3153 . 3159) (semantic-list "( ^ , XOR, ^ )" 3159 . 3173) (symbol "action" 3199 . 3205) (semantic-list "( | , BOR, | )" 3205 . 3219)))
+          ("BOOST_TEST_FOR_EACH_COMP_OP" (spp-arg-list ("action") 2005 . 2013) . 
+              ((symbol "action" 2020 . 2026) (semantic-list "( < , LT, >= )" 2026 . 2040) (symbol "action" 2066 . 2072) (semantic-list "( <=, LE, >  )" 2072 . 2086) (symbol "action" 2112 . 2118) (semantic-list "( > , GT, <= )" 2118 . 2132) (symbol "action" 2158 . 2164) (semantic-list "( >=, GE, <  )" 2164 . 2178) (symbol "action" 2204 . 2210) (semantic-list "( ==, EQ, != )" 2210 . 2224) (symbol "action" 2250 . 2256) (semantic-list "( !=, NE, == )" 2256 . 2270)))
+          ("BOOST_TEST_TOOLS_ASSERTION_HPP_100911GER")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_TEST_PREDICATE_RESULT_HPP_012705GER" variable (:constant-flag t) nil [499 540])
+            ("boost/test/utils/class_properties.hpp" include (:system-flag t) nil [556 604])
+            ("boost/test/utils/wrap_stringstream.hpp" include (:system-flag t) nil [605 654])
+            ("boost/test/utils/basic_cstring/basic_cstring.hpp" include (:system-flag t) nil [655 714])
+            ("boost/shared_ptr.hpp" include (:system-flag t) nil [725 756])
+            ("boost/detail/workaround.hpp" include (:system-flag t) nil [757 795])
+            ("cstddef" include (:system-flag t) nil [804 822])
+            ("boost/test/detail/suppress_warnings.hpp" include (:system-flag t) nil [852 902])
+            ("boost" type
+               (:members 
+                  ( ("test_tools" type
+                       (:members 
+                          ( ("assertion_result" variable (:type ("BOOST_TEST_DECL" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [1332 2645])
+                            ("predicate_result" type
+                               (:typedef ("assertion_result" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [2647 2689]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1004 2692]))                  
+                :type "namespace")
+                nil [986 2718])
+            ("boost/test/detail/enable_warnings.hpp" include (:system-flag t) nil [2739 2787]))          
+      :file "assertion_result.hpp"
+      :pointmax 2841
+      :fsize 2840
+      :lastmodtime '(22633 22283 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_TEST_PREDICATE_RESULT_HPP_012705GER")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_TEST_TOOLS_CONTEXT_HPP_111712GER" variable (:constant-flag t) nil [526 564])
+            ("boost/test/utils/lazy_ostream.hpp" include (:system-flag t) nil [580 624])
+            ("boost/test/detail/suppress_warnings.hpp" include (:system-flag t) nil [626 676])
+            ("boost" type
+               (:members 
+                  ( ("test_tools" type
+                       (:members 
+                          ( ("tt_detail" type
+                               (:members 
+                                  ( ("context_frame" variable (:type ("BOOST_TEST_DECL" type
+                                         (:prototype t
+                                          :type "struct")
+                                          nil nil)) (reparse-symbol namespacesubparts) [1068 1302])
+                                    ("BOOST_TEST_INFO" variable (:constant-flag t) (reparse-symbol namespacesubparts) [1394 1409])
+                                    ("BOOST_TEST_CONTEXT" variable (:constant-flag t) (reparse-symbol namespacesubparts) [1678 1696]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [801 2053]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [778 2078]))                  
+                :type "namespace")
+                nil [760 2104])
+            ("boost/test/detail/enable_warnings.hpp" include (:system-flag t) nil [2125 2173]))          
+      :file "context.hpp"
+      :pointmax 2224
+      :fsize 2223
+      :lastmodtime '(22633 22283 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_TEST_CONTEXT" (spp-arg-list ("context_descr") 1696 . 1713) . ((IF "if" 1772 . 1774) (semantic-list "( ::boost::test_tools::tt_detail::context_frame BOOST_JOIN( context_frame_, __LINE__ ) =  \\
+        ::boost::test_tools::tt_detail::context_frame( BOOST_TEST_LAZY_MSG( context_descr ) ) )" 1774 . 1961)))
+          ("BOOST_TEST_TOOLS_CONTEXT_HPP_111712GER")
+          ("BOOST_TEST_INFO" (spp-arg-list ("context_descr") 1409 . 1426) . 
+              ((punctuation ":" 1488 . 1489) (punctuation ":" 1489 . 1490) (symbol "boost" 1490 . 1495) (punctuation ":" 1495 . 1496) (punctuation ":" 1496 . 1497) (symbol "unit_test" 1497 . 1506) (punctuation ":" 1506 . 1507) (punctuation ":" 1507 . 1508) (symbol "framework" 1508 . 1517) (punctuation ":" 1517 . 1518) (punctuation ":" 1518 . 1519) (symbol "add_context" 1519 . 1530) (semantic-list "( BOOST_TEST_LAZY_MSG( context_descr ) , false )" 1530 . 1578)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_TEST_TOOLS_INTERFACE_HPP_111712GER" variable (:constant-flag t) nil [553 593])
+            ("boost/test/unit_test_log.hpp" include (:system-flag t) nil [609 648])
+            ("boost/test/detail/pp_variadic.hpp" include (:system-flag t) nil [828 872])
+            ("boost/test/detail/suppress_warnings.hpp" include (:system-flag t) nil [1008 1058])
+            ("BOOST_TEST_BUILD_ASSERTION" variable (:constant-flag t) nil [1394 1420])
+            ("BOOST_TEST_TOOL_DIRECT_IMPL" variable (:constant-flag t) nil [1645 1672])
+            ("BOOST_TEST_TOOL_ET_IMPL" variable (:constant-flag t) nil [2585 2608])
+            ("BOOST_TEST_TOOL_ET_IMPL_EX" variable (:constant-flag t) nil [3683 3709])
+            ("BOOST_TEST_TOOL_UNIV" variable (:constant-flag t) nil [6154 6174])
+            ("BOOST_TEST_TOOL_UNIV_EX" variable (:constant-flag t) nil [6316 6339])
+            ("BOOST_TEST_WARN" variable (:constant-flag t) nil [6568 6583])
+            ("BOOST_TEST_CHECK" variable (:constant-flag t) nil [6729 6745])
+            ("BOOST_TEST_REQUIRE" variable (:constant-flag t) nil [6890 6908])
+            ("BOOST_TEST" variable (:constant-flag t) nil [7052 7062])
+            ("BOOST_TEST_ERROR" variable (:constant-flag t) nil [7296 7312])
+            ("BOOST_TEST_FAIL" variable (:constant-flag t) nil [7372 7387])
+            ("BOOST_TEST_IS_DEFINED" variable (:constant-flag t) nil [7533 7554])
+            ("boost/test/detail/enable_warnings.hpp" include (:system-flag t) nil [18514 18562]))          
+      :file "interface.hpp"
+      :pointmax 18615
+      :fsize 18614
+      :lastmodtime '(22633 22283 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_TEST_TOOLS_INTERFACE_HPP_111712GER")
+          ("BOOST_TEST_ERROR" (spp-arg-list ("M") 7312 . 7317) . ((symbol "BOOST_CHECK_MESSAGE" 7332 . 7351) (semantic-list "( false, M )" 7351 . 7363)))
+          ("BOOST_TEST_TOOL_UNIV_EX" (spp-arg-list ("level" "P" "...") 6339 . 6356) . ((symbol "BOOST_TEST_TOOL_ET_IMPL_EX" 6390 . 6416) (semantic-list "( P, level, __VA_ARGS__ )" 6416 . 6441)))
+          ("BOOST_TEST_WARN" (spp-arg-list ("...") 6583 . 6590) . ((symbol "BOOST_TEST_INVOKE_IF_N_ARGS" 6604 . 6631) (semantic-list "(    \\
+    2, BOOST_TEST_TOOL_UNIV, BOOST_TEST_TOOL_UNIV_EX, WARN, __VA_ARGS__ )" 6631 . 6711)))
+          ("BOOST_TEST" (spp-arg-list ("...") 7062 . 7069) . ((symbol "BOOST_TEST_INVOKE_IF_N_ARGS" 7088 . 7115) (semantic-list "(    \\
+    2, BOOST_TEST_TOOL_UNIV, BOOST_TEST_TOOL_UNIV_EX, CHECK, __VA_ARGS__ )" 7115 . 7196)))
+          ("BOOST_TEST_TOOL_ET_IMPL" (spp-arg-list ("P" "level") 2608 . 2620) . 
+              ((DO "do" 2643 . 2645) (semantic-list "{                                                            \\
+    BOOST_TEST_PASSPOINT();                                     \\
+                                                                \\
+    ::boost::test_tools::tt_detail::                            \\
+    report_assertion(                                           \\
+      BOOST_TEST_BUILD_ASSERTION( P ).evaluate(),               \\
+      BOOST_TEST_LAZY_MSG( BOOST_TEST_STRINGIZE( P ) ),         \\
+      BOOST_TEST_L(__FILE__),                                   \\
+      static_cast<std::size_t>(__LINE__),                       \\
+      ::boost::test_tools::tt_detail::level,                    \\
+      ::boost::test_tools::tt_detail::CHECK_BUILT_ASSERTION,    \\
+      0 );                                                      \\
+}" 2646 . 3436) (WHILE "while" 3437 . 3442) (semantic-list "( ::boost::test_tools::tt_detail::dummy_cond() )" 3442 . 3490)))
+          ("BOOST_TEST_REQUIRE" (spp-arg-list ("...") 6908 . 6915) . ((symbol "BOOST_TEST_INVOKE_IF_N_ARGS" 6926 . 6953) (semantic-list "(    \\
+    2, BOOST_TEST_TOOL_UNIV, BOOST_TEST_TOOL_UNIV_EX, REQUIRE, __VA_ARGS__ )" 6953 . 7036)))
+          ("BOOST_TEST_CHECK" (spp-arg-list ("...") 6745 . 6752) . ((symbol "BOOST_TEST_INVOKE_IF_N_ARGS" 6765 . 6792) (semantic-list "(    \\
+    2, BOOST_TEST_TOOL_UNIV, BOOST_TEST_TOOL_UNIV_EX, CHECK, __VA_ARGS__ )" 6792 . 6873)))
+          ("BOOST_TEST_IS_DEFINED" (spp-arg-list ("symb") 7554 . 7562) . 
+              ((punctuation ":" 7563 . 7564) (punctuation ":" 7564 . 7565) (symbol "boost" 7565 . 7570) (punctuation ":" 7570 . 7571) (punctuation ":" 7571 . 7572) (symbol "test_tools" 7572 . 7582) (punctuation ":" 7582 . 7583) (punctuation ":" 7583 . 7584) (symbol "tt_detail" 7584 . 7593) (punctuation ":" 7593 . 7594) (punctuation ":" 7594 . 7595) (symbol "is_defined_impl" 7595 . 7610) (semantic-list "( symb, BOOST_STRINGIZE(= symb) )" 7610 . 7643)))
+          ("BOOST_TEST_BUILD_ASSERTION" (spp-arg-list ("P") 1420 . 1425) . ((semantic-list "(::boost::test_tools::assertion::seed()->*P)" 1444 . 1488)))
+          ("BOOST_TEST_TOOL_UNIV" (spp-arg-list ("level" "P") 6174 . 6186) . ((symbol "BOOST_TEST_TOOL_ET_IMPL" 6228 . 6251) (semantic-list "( P, level )" 6251 . 6263)))
+          ("BOOST_TEST_TOOL_ET_IMPL_EX" (spp-arg-list ("P" "level" "arg") 3709 . 3726) . 
+              ((DO "do" 3741 . 3743) (semantic-list "{                                                            \\
+    BOOST_TEST_PASSPOINT();                                     \\
+                                                                \\
+    ::boost::test_tools::tt_detail::                            \\
+    report_assertion(                                           \\
+      ::boost::test_tools::tt_detail::assertion_evaluate(       \\
+        BOOST_TEST_BUILD_ASSERTION( P ) )                       \\
+          << arg,                                               \\
+      ::boost::test_tools::tt_detail::assertion_text(           \\
+          BOOST_TEST_LAZY_MSG( BOOST_TEST_STRINGIZE(P) ),       \\
+          BOOST_TEST_LAZY_MSG( arg ) ),                         \\
+      BOOST_TEST_L(__FILE__),                                   \\
+      static_cast<std::size_t>(__LINE__),                       \\
+      ::boost::test_tools::tt_detail::level,                    \\
+      ::boost::test_tools::tt_detail::assertion_type()          \\
+          << arg,                                               \\
+      0 );                                                      \\
+}" 3744 . 4864) (WHILE "while" 4865 . 4870) (semantic-list "( ::boost::test_tools::tt_detail::dummy_cond() )" 4870 . 4918)))
+          ("BOOST_TEST_FAIL" (spp-arg-list ("M") 7387 . 7392) . ((symbol "BOOST_REQUIRE_MESSAGE" 7408 . 7429) (semantic-list "( false, M )" 7429 . 7441)))
+          ("BOOST_TEST_TOOL_DIRECT_IMPL" (spp-arg-list ("P" "level" "M") 1672 . 1687) . 
+              ((DO "do" 1703 . 1705) (semantic-list "{                                                            \\
+    ::boost::test_tools::assertion_result res = (P);            \\
+    report_assertion(                                           \\
+        res,                                                    \\
+        BOOST_TEST_LAZY_MSG( M ),                               \\
+        BOOST_TEST_L(__FILE__),                                 \\
+        static_cast<std::size_t>(__LINE__),                     \\
+        ::boost::test_tools::tt_detail::level,                  \\
+        ::boost::test_tools::tt_detail::CHECK_MSG,              \\
+        0 );                                                    \\
+}" 1706 . 2364) (WHILE "while" 2365 . 2370) (semantic-list "( ::boost::test_tools::tt_detail::dummy_cond() )" 2370 . 2418)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_TEST_TOOLS_FPC_OP_HPP_050915GER" variable (:constant-flag t) nil [475 512])
+            ("boost/test/tools/assertion.hpp" include (:system-flag t) nil [528 569])
+            ("boost/test/tools/floating_point_comparison.hpp" include (:system-flag t) nil [571 628])
+            ("boost/test/tools/fpc_tolerance.hpp" include (:system-flag t) nil [629 674])
+            ("boost/type_traits/common_type.hpp" include (:system-flag t) nil [685 729])
+            ("boost/utility/enable_if.hpp" include (:system-flag t) nil [730 768])
+            ("boost/test/detail/suppress_warnings.hpp" include (:system-flag t) nil [770 820])
+            ("boost" type
+               (:members 
+                  ( ("test_tools" type
+                       (:members 
+                          ( ("assertion" type
+                               (:members 
+                                  ( ("op" type
+                                       (:members 
+                                          ( ("fpctraits" type
+                                               (:template 
+                                                  ( ("OP" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("cmp_direct" variable
+                                                       (:typemodifiers ("static")
+                                                        :constant-flag t
+                                                        :default-value "true"
+                                                        :type "bool")
+                                                        (reparse-symbol classsubparts) [1333 1369]))                                                  )
+                                                (reparse-symbol namespacesubparts) [1288 1372])
+                                            ("fpctraits" type
+                                               (:template 
+                                                  ( ("Lhs" type (:type "class") nil nil)
+                                                    ("Rhs" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("cmp_direct" variable
+                                                       (:typemodifiers ("static")
+                                                        :constant-flag t
+                                                        :default-value "false"
+                                                        :type "bool")
+                                                        (reparse-symbol classsubparts) [1453 1490]))                                                  
+                                                :template-specifier 
+                                                  ( ("op::NE" type (:template-specifier 
+                                                      ( ("Lhs" type nil nil nil)
+                                                        ("Rhs" type nil nil nil))                                                      ) nil nil))                                                  )
+                                                (reparse-symbol namespacesubparts) [1374 1493])
+                                            ("fpctraits" type
+                                               (:template 
+                                                  ( ("Lhs" type (:type "class") nil nil)
+                                                    ("Rhs" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("cmp_direct" variable
+                                                       (:typemodifiers ("static")
+                                                        :constant-flag t
+                                                        :default-value "false"
+                                                        :type "bool")
+                                                        (reparse-symbol classsubparts) [1574 1611]))                                                  
+                                                :template-specifier 
+                                                  ( ("op::LT" type (:template-specifier 
+                                                      ( ("Lhs" type nil nil nil)
+                                                        ("Rhs" type nil nil nil))                                                      ) nil nil))                                                  )
+                                                (reparse-symbol namespacesubparts) [1495 1614])
+                                            ("fpctraits" type
+                                               (:template 
+                                                  ( ("Lhs" type (:type "class") nil nil)
+                                                    ("Rhs" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("cmp_direct" variable
+                                                       (:typemodifiers ("static")
+                                                        :constant-flag t
+                                                        :default-value "false"
+                                                        :type "bool")
+                                                        (reparse-symbol classsubparts) [1695 1732]))                                                  
+                                                :template-specifier 
+                                                  ( ("op::GT" type (:template-specifier 
+                                                      ( ("Lhs" type nil nil nil)
+                                                        ("Rhs" type nil nil nil))                                                      ) nil nil))                                                  )
+                                                (reparse-symbol namespacesubparts) [1616 1735])
+                                            ("compare_fpv" function
+                                               (:template 
+                                                  ( ("FPT" type (:type "class") nil nil)
+                                                    ("Lhs" type (:type "class") nil nil)
+                                                    ("Rhs" type (:type "class") nil nil)
+                                                    ("OP" type (:type "class") nil nil))                                                  
+                                                :type ("assertion_result" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("lhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Lhs" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2330 2345])
+                                                    ("rhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Rhs" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2346 2361])
+                                                    ("" variable
+                                                       (:pointer 1
+                                                        :type ("OP" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2362 2367]))                                                  
+                                                :typemodifiers ("inline"))
+                                                (reparse-symbol namespacesubparts) [2228 2673])
+                                            ("compare_fpv_near_zero" function
+                                               (:template 
+                                                  ( ("FPT" type (:type "class") nil nil)
+                                                    ("OP" type (:type "class") nil nil))                                                  
+                                                :type ("assertion_result" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("fpv" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("FPT" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2841 2856])
+                                                    ("" variable
+                                                       (:pointer 1
+                                                        :type ("OP" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2857 2862]))                                                  
+                                                :typemodifiers ("inline"))
+                                                (reparse-symbol namespacesubparts) [2757 3106])
+                                            ("compare_fpv" function
+                                               (:template 
+                                                  ( ("FPT" type (:type "class") nil nil)
+                                                    ("Lhs" type (:type "class") nil nil)
+                                                    ("Rhs" type (:type "class") nil nil))                                                  
+                                                :type ("assertion_result" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("lhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Lhs" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3279 3294])
+                                                    ("rhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Rhs" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3295 3310])
+                                                    ("" variable
+                                                       (:pointer 1
+                                                        :type ("op::NE" type
+                                                             (:template-specifier 
+                                                                ( ("Lhs" type nil nil nil)
+                                                                  ("Rhs" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [3311 3329]))                                                  
+                                                :typemodifiers ("inline"))
+                                                (reparse-symbol namespacesubparts) [3190 3635])
+                                            ("compare_fpv_near_zero" function
+                                               (:template 
+                                                  ( ("FPT" type (:type "class") nil nil)
+                                                    ("Lhs" type (:type "class") nil nil)
+                                                    ("Rhs" type (:type "class") nil nil))                                                  
+                                                :type ("assertion_result" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("fpv" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("FPT" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3818 3833])
+                                                    ("" variable
+                                                       (:pointer 1
+                                                        :type ("op::NE" type
+                                                             (:template-specifier 
+                                                                ( ("Lhs" type nil nil nil)
+                                                                  ("Rhs" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [3834 3852]))                                                  
+                                                :typemodifiers ("inline"))
+                                                (reparse-symbol namespacesubparts) [3719 4098])
+                                            ("compare_fpv" function
+                                               (:template 
+                                                  ( ("FPT" type (:type "class") nil nil)
+                                                    ("Lhs" type (:type "class") nil nil)
+                                                    ("Rhs" type (:type "class") nil nil))                                                  
+                                                :type ("assertion_result" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("lhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Lhs" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4271 4286])
+                                                    ("rhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Rhs" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4287 4302])
+                                                    ("" variable
+                                                       (:pointer 1
+                                                        :type ("op::LT" type
+                                                             (:template-specifier 
+                                                                ( ("Lhs" type nil nil nil)
+                                                                  ("Rhs" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [4303 4321]))                                                  
+                                                :typemodifiers ("inline"))
+                                                (reparse-symbol namespacesubparts) [4182 4428])
+                                            ("compare_fpv_near_zero" function
+                                               (:template 
+                                                  ( ("FPT" type (:type "class") nil nil)
+                                                    ("Lhs" type (:type "class") nil nil)
+                                                    ("Rhs" type (:type "class") nil nil))                                                  
+                                                :type ("assertion_result" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("fpv" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("FPT" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4529 4544])
+                                                    ("" variable
+                                                       (:pointer 1
+                                                        :type ("op::LT" type
+                                                             (:template-specifier 
+                                                                ( ("Lhs" type nil nil nil)
+                                                                  ("Rhs" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [4545 4563]))                                                  
+                                                :typemodifiers ("inline"))
+                                                (reparse-symbol namespacesubparts) [4430 4668])
+                                            ("compare_fpv" function
+                                               (:template 
+                                                  ( ("FPT" type (:type "class") nil nil)
+                                                    ("Lhs" type (:type "class") nil nil)
+                                                    ("Rhs" type (:type "class") nil nil))                                                  
+                                                :type ("assertion_result" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("lhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Lhs" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4841 4856])
+                                                    ("rhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Rhs" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4857 4872])
+                                                    ("" variable
+                                                       (:pointer 1
+                                                        :type ("op::GT" type
+                                                             (:template-specifier 
+                                                                ( ("Lhs" type nil nil nil)
+                                                                  ("Rhs" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [4873 4891]))                                                  
+                                                :typemodifiers ("inline"))
+                                                (reparse-symbol namespacesubparts) [4752 4998])
+                                            ("compare_fpv_near_zero" function
+                                               (:template 
+                                                  ( ("FPT" type (:type "class") nil nil)
+                                                    ("Lhs" type (:type "class") nil nil)
+                                                    ("Rhs" type (:type "class") nil nil))                                                  
+                                                :type ("assertion_result" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("fpv" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("FPT" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5099 5114])
+                                                    ("" variable
+                                                       (:pointer 1
+                                                        :type ("op::GT" type
+                                                             (:template-specifier 
+                                                                ( ("Lhs" type nil nil nil)
+                                                                  ("Rhs" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [5115 5133]))                                                  
+                                                :typemodifiers ("inline"))
+                                                (reparse-symbol namespacesubparts) [5000 5238])
+                                            ("DEFINE_FPV_COMPARISON" variable (:constant-flag t) (reparse-symbol namespacesubparts) [5331 5352]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [967 9565]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [945 9583]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [922 9608]))                  
+                :type "namespace")
+                nil [904 9634])
+            ("boost/test/detail/enable_warnings.hpp" include (:system-flag t) nil [9655 9703]))          
+      :file "fpc_op.hpp"
+      :pointmax 9754
+      :fsize 9753
+      :lastmodtime '(22633 22283 0 0)
+      :unmatched-syntax '((semantic-list 9426 . 9451) (symbol 9399 . 9426))
+      :lexical-table 
+        '(("BOOST_TEST_TOOLS_FPC_OP_HPP_050915GER")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_TEST_TOOLS_COLLECTION_COMPARISON_OP_HPP_050815GER" variable (:constant-flag t) nil [489 544])
+            ("boost/test/tools/assertion.hpp" include (:system-flag t) nil [560 601])
+            ("boost/test/utils/is_forward_iterable.hpp" include (:system-flag t) nil [603 654])
+            ("boost/test/utils/is_cstring.hpp" include (:system-flag t) nil [655 697])
+            ("boost/mpl/bool.hpp" include (:system-flag t) nil [708 737])
+            ("boost/utility/enable_if.hpp" include (:system-flag t) nil [738 776])
+            ("boost/type_traits/decay.hpp" include (:system-flag t) nil [777 815])
+            ("boost/test/detail/suppress_warnings.hpp" include (:system-flag t) nil [817 867])
+            ("boost" type
+               (:members 
+                  ( ("test_tools" type
+                       (:members 
+                          ( ("assertion" type
+                               (:members 
+                                  ( ("specialized_compare" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :superclasses 
+                                          ( ("mpl::false_" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [1259 1331])
+                                    ("BOOST_TEST_SPECIALIZED_COLLECTION_COMPARE" variable (:constant-flag t) (reparse-symbol namespacesubparts) [1341 1382])
+                                    ("op" type
+                                       (:members 
+                                          ( ("lexicographic_compare" function
+                                               (:arguments 
+                                                  ( ("lhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Lhs" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2211 2226])
+                                                    ("rhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Rhs" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2227 2243]))                                                  
+                                                :type ("type" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2183 3949])
+                                            ("lexicographic_compare" function
+                                               (:arguments 
+                                                  ( ("lhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Lhs" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4317 4332])
+                                                    ("rhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Rhs" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4333 4349]))                                                  
+                                                :type ("type" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [4289 4691])
+                                            ("element_compare" function
+                                               (:arguments 
+                                                  ( ("lhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Lhs" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5245 5260])
+                                                    ("rhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Rhs" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5261 5277]))                                                  
+                                                :type ("type" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [5223 6130])
+                                            ("element_compare" function
+                                               (:arguments 
+                                                  ( ("lhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Lhs" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6489 6504])
+                                                    ("rhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Rhs" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6505 6521]))                                                  
+                                                :type ("type" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [6467 6841])
+                                            ("non_equality_compare" function
+                                               (:template 
+                                                  ( ("OP" type (:type "class") nil nil)
+                                                    ("Lhs" type (:type "class") nil nil)
+                                                    ("Rhs" type (:type "class") nil nil))                                                  
+                                                :type ("assertion_result" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("lhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Lhs" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7266 7281])
+                                                    ("rhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Rhs" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7282 7298]))                                                  
+                                                :typemodifiers ("inline"))
+                                                (reparse-symbol namespacesubparts) [7169 7754])
+                                            ("cctraits" type
+                                               (:template 
+                                                  ( ("OP" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :prototype t)
+                                                (reparse-symbol namespacesubparts) [8139 8177])
+                                            ("cctraits" type
+                                               (:template 
+                                                  ( ("Lhs" type (:type "class") nil nil)
+                                                    ("Rhs" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("is_specialized" type
+                                                       (:typedef ("specialized_compare" type
+                                                             (:template-specifier 
+                                                                ( ("Lhs" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [8257 8305]))                                                  
+                                                :template-specifier 
+                                                  ( ("op::EQ" type (:template-specifier 
+                                                      ( ("Lhs" type nil nil nil)
+                                                        ("Rhs" type nil nil nil))                                                      ) nil nil))                                                  )
+                                                (reparse-symbol namespacesubparts) [8179 8308])
+                                            ("cctraits" type
+                                               (:template 
+                                                  ( ("Lhs" type (:type "class") nil nil)
+                                                    ("Rhs" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("is_specialized" type
+                                                       (:typedef ("specialized_compare" type
+                                                             (:template-specifier 
+                                                                ( ("Lhs" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [8388 8436]))                                                  
+                                                :template-specifier 
+                                                  ( ("op::NE" type (:template-specifier 
+                                                      ( ("Lhs" type nil nil nil)
+                                                        ("Rhs" type nil nil nil))                                                      ) nil nil))                                                  )
+                                                (reparse-symbol namespacesubparts) [8310 8439])
+                                            ("cctraits" type
+                                               (:template 
+                                                  ( ("Lhs" type (:type "class") nil nil)
+                                                    ("Rhs" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("can_be_equal" variable
+                                                       (:typemodifiers ("static")
+                                                        :constant-flag t
+                                                        :default-value "false"
+                                                        :type "bool")
+                                                        (reparse-symbol classsubparts) [8519 8558])
+                                                    ("prefer_short" variable
+                                                       (:typemodifiers ("static")
+                                                        :constant-flag t
+                                                        :default-value "true"
+                                                        :type "bool")
+                                                        (reparse-symbol classsubparts) [8563 8601])
+                                                    ("is_specialized" type
+                                                       (:typedef ("specialized_compare" type
+                                                             (:template-specifier 
+                                                                ( ("Lhs" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [8607 8655]))                                                  
+                                                :template-specifier 
+                                                  ( ("op::LT" type (:template-specifier 
+                                                      ( ("Lhs" type nil nil nil)
+                                                        ("Rhs" type nil nil nil))                                                      ) nil nil))                                                  )
+                                                (reparse-symbol namespacesubparts) [8441 8658])
+                                            ("cctraits" type
+                                               (:template 
+                                                  ( ("Lhs" type (:type "class") nil nil)
+                                                    ("Rhs" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("can_be_equal" variable
+                                                       (:typemodifiers ("static")
+                                                        :constant-flag t
+                                                        :default-value "true"
+                                                        :type "bool")
+                                                        (reparse-symbol classsubparts) [8738 8776])
+                                                    ("prefer_short" variable
+                                                       (:typemodifiers ("static")
+                                                        :constant-flag t
+                                                        :default-value "true"
+                                                        :type "bool")
+                                                        (reparse-symbol classsubparts) [8781 8819])
+                                                    ("is_specialized" type
+                                                       (:typedef ("specialized_compare" type
+                                                             (:template-specifier 
+                                                                ( ("Lhs" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [8825 8873]))                                                  
+                                                :template-specifier 
+                                                  ( ("op::LE" type (:template-specifier 
+                                                      ( ("Lhs" type nil nil nil)
+                                                        ("Rhs" type nil nil nil))                                                      ) nil nil))                                                  )
+                                                (reparse-symbol namespacesubparts) [8660 8876])
+                                            ("cctraits" type
+                                               (:template 
+                                                  ( ("Lhs" type (:type "class") nil nil)
+                                                    ("Rhs" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("can_be_equal" variable
+                                                       (:typemodifiers ("static")
+                                                        :constant-flag t
+                                                        :default-value "false"
+                                                        :type "bool")
+                                                        (reparse-symbol classsubparts) [8956 8995])
+                                                    ("prefer_short" variable
+                                                       (:typemodifiers ("static")
+                                                        :constant-flag t
+                                                        :default-value "false"
+                                                        :type "bool")
+                                                        (reparse-symbol classsubparts) [9000 9039])
+                                                    ("is_specialized" type
+                                                       (:typedef ("specialized_compare" type
+                                                             (:template-specifier 
+                                                                ( ("Lhs" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [9045 9093]))                                                  
+                                                :template-specifier 
+                                                  ( ("op::GT" type (:template-specifier 
+                                                      ( ("Lhs" type nil nil nil)
+                                                        ("Rhs" type nil nil nil))                                                      ) nil nil))                                                  )
+                                                (reparse-symbol namespacesubparts) [8878 9096])
+                                            ("cctraits" type
+                                               (:template 
+                                                  ( ("Lhs" type (:type "class") nil nil)
+                                                    ("Rhs" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("can_be_equal" variable
+                                                       (:typemodifiers ("static")
+                                                        :constant-flag t
+                                                        :default-value "true"
+                                                        :type "bool")
+                                                        (reparse-symbol classsubparts) [9176 9214])
+                                                    ("prefer_short" variable
+                                                       (:typemodifiers ("static")
+                                                        :constant-flag t
+                                                        :default-value "false"
+                                                        :type "bool")
+                                                        (reparse-symbol classsubparts) [9219 9258])
+                                                    ("is_specialized" type
+                                                       (:typedef ("specialized_compare" type
+                                                             (:template-specifier 
+                                                                ( ("Lhs" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [9264 9312]))                                                  
+                                                :template-specifier 
+                                                  ( ("op::GE" type (:template-specifier 
+                                                      ( ("Lhs" type nil nil nil)
+                                                        ("Rhs" type nil nil nil))                                                      ) nil nil))                                                  )
+                                                (reparse-symbol namespacesubparts) [9098 9315])
+                                            ("compare_collections" function
+                                               (:template 
+                                                  ( ("Lhs" type (:type "class") nil nil)
+                                                    ("Rhs" type (:type "class") nil nil)
+                                                    ("L" type (:type "class") nil nil)
+                                                    ("R" type (:type "class") nil nil))                                                  
+                                                :type ("assertion_result" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("lhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Lhs" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [9752 9767])
+                                                    ("rhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Rhs" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [9768 9783])
+                                                    ("" variable
+                                                       (:pointer 1
+                                                        :type ("boost::type" type
+                                                             (:template-specifier 
+                                                                ( ("op::EQ" type (:template-specifier 
+                                                                    ( ("L" type nil nil nil)
+                                                                      ("R" type nil nil nil))                                                                    ) nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [9784 9812])
+                                                    ("" variable (:type ("mpl::true_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9813 9825]))                                                  
+                                                :typemodifiers ("inline"))
+                                                (reparse-symbol namespacesubparts) [9645 9899])
+                                            ("compare_collections" function
+                                               (:template 
+                                                  ( ("Lhs" type (:type "class") nil nil)
+                                                    ("Rhs" type (:type "class") nil nil)
+                                                    ("L" type (:type "class") nil nil)
+                                                    ("R" type (:type "class") nil nil))                                                  
+                                                :type ("assertion_result" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("lhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Lhs" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [10090 10105])
+                                                    ("rhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Rhs" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [10106 10121])
+                                                    ("" variable
+                                                       (:pointer 1
+                                                        :type ("boost::type" type
+                                                             (:template-specifier 
+                                                                ( ("op::EQ" type (:template-specifier 
+                                                                    ( ("L" type nil nil nil)
+                                                                      ("R" type nil nil nil))                                                                    ) nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [10122 10150])
+                                                    ("" variable (:type ("mpl::false_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10151 10164]))                                                  
+                                                :typemodifiers ("inline"))
+                                                (reparse-symbol namespacesubparts) [9983 10191])
+                                            ("compare_collections" function
+                                               (:template 
+                                                  ( ("Lhs" type (:type "class") nil nil)
+                                                    ("Rhs" type (:type "class") nil nil)
+                                                    ("L" type (:type "class") nil nil)
+                                                    ("R" type (:type "class") nil nil))                                                  
+                                                :type ("assertion_result" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("lhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Lhs" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [10382 10397])
+                                                    ("rhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Rhs" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [10398 10413])
+                                                    ("" variable
+                                                       (:pointer 1
+                                                        :type ("boost::type" type
+                                                             (:template-specifier 
+                                                                ( ("op::NE" type (:template-specifier 
+                                                                    ( ("L" type nil nil nil)
+                                                                      ("R" type nil nil nil))                                                                    ) nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [10414 10442])
+                                                    ("" variable (:type ("mpl::true_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10443 10455]))                                                  
+                                                :typemodifiers ("inline"))
+                                                (reparse-symbol namespacesubparts) [10275 10534])
+                                            ("compare_collections" function
+                                               (:template 
+                                                  ( ("Lhs" type (:type "class") nil nil)
+                                                    ("Rhs" type (:type "class") nil nil)
+                                                    ("L" type (:type "class") nil nil)
+                                                    ("R" type (:type "class") nil nil))                                                  
+                                                :type ("assertion_result" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("lhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Lhs" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [10725 10740])
+                                                    ("rhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Rhs" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [10741 10756])
+                                                    ("" variable
+                                                       (:pointer 1
+                                                        :type ("boost::type" type
+                                                             (:template-specifier 
+                                                                ( ("op::NE" type (:template-specifier 
+                                                                    ( ("L" type nil nil nil)
+                                                                      ("R" type nil nil nil))                                                                    ) nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [10757 10785])
+                                                    ("" variable (:type ("mpl::false_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10786 10799]))                                                  
+                                                :typemodifiers ("inline"))
+                                                (reparse-symbol namespacesubparts) [10618 10826])
+                                            ("lexicographic_compare" function
+                                               (:template 
+                                                  ( ("OP" type (:type "class") nil nil)
+                                                    ("Lhs" type (:type "class") nil nil)
+                                                    ("Rhs" type (:type "class") nil nil))                                                  
+                                                :type ("assertion_result" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("lhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Lhs" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [11008 11023])
+                                                    ("rhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Rhs" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [11024 11040]))                                                  
+                                                :typemodifiers ("inline"))
+                                                (reparse-symbol namespacesubparts) [10910 11165])
+                                            ("compare_collections" function
+                                               (:template 
+                                                  ( ("Lhs" type (:type "class") nil nil)
+                                                    ("Rhs" type (:type "class") nil nil)
+                                                    ("OP" type (:type "class") nil nil))                                                  
+                                                :type ("assertion_result" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("lhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Lhs" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [11345 11360])
+                                                    ("rhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Rhs" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [11361 11376])
+                                                    ("" variable
+                                                       (:pointer 1
+                                                        :type ("boost::type" type
+                                                             (:template-specifier 
+                                                                ( ("OP" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [11377 11394])
+                                                    ("" variable (:type ("mpl::true_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11395 11407]))                                                  
+                                                :typemodifiers ("inline"))
+                                                (reparse-symbol namespacesubparts) [11249 11461])
+                                            ("compare_collections" function
+                                               (:template 
+                                                  ( ("Lhs" type (:type "class") nil nil)
+                                                    ("Rhs" type (:type "class") nil nil)
+                                                    ("L" type (:type "class") nil nil)
+                                                    ("R" type (:type "class") nil nil))                                                  
+                                                :type ("assertion_result" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("lhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Lhs" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [11652 11667])
+                                                    ("rhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Rhs" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [11668 11683])
+                                                    ("" variable
+                                                       (:pointer 1
+                                                        :type ("boost::type" type
+                                                             (:template-specifier 
+                                                                ( ("op::LT" type (:template-specifier 
+                                                                    ( ("L" type nil nil nil)
+                                                                      ("R" type nil nil nil))                                                                    ) nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [11684 11712])
+                                                    ("" variable (:type ("mpl::false_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11713 11726]))                                                  
+                                                :typemodifiers ("inline"))
+                                                (reparse-symbol namespacesubparts) [11545 11752])
+                                            ("compare_collections" function
+                                               (:template 
+                                                  ( ("Lhs" type (:type "class") nil nil)
+                                                    ("Rhs" type (:type "class") nil nil)
+                                                    ("L" type (:type "class") nil nil)
+                                                    ("R" type (:type "class") nil nil))                                                  
+                                                :type ("assertion_result" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("lhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Lhs" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [11943 11958])
+                                                    ("rhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Rhs" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [11959 11974])
+                                                    ("" variable
+                                                       (:pointer 1
+                                                        :type ("boost::type" type
+                                                             (:template-specifier 
+                                                                ( ("op::LE" type (:template-specifier 
+                                                                    ( ("L" type nil nil nil)
+                                                                      ("R" type nil nil nil))                                                                    ) nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [11975 12003])
+                                                    ("" variable (:type ("mpl::false_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12004 12017]))                                                  
+                                                :typemodifiers ("inline"))
+                                                (reparse-symbol namespacesubparts) [11836 12044])
+                                            ("compare_collections" function
+                                               (:template 
+                                                  ( ("Lhs" type (:type "class") nil nil)
+                                                    ("Rhs" type (:type "class") nil nil)
+                                                    ("L" type (:type "class") nil nil)
+                                                    ("R" type (:type "class") nil nil))                                                  
+                                                :type ("assertion_result" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("lhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Lhs" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [12235 12250])
+                                                    ("rhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Rhs" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [12251 12266])
+                                                    ("" variable
+                                                       (:pointer 1
+                                                        :type ("boost::type" type
+                                                             (:template-specifier 
+                                                                ( ("op::GT" type (:template-specifier 
+                                                                    ( ("L" type nil nil nil)
+                                                                      ("R" type nil nil nil))                                                                    ) nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [12267 12295])
+                                                    ("" variable (:type ("mpl::false_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12296 12309]))                                                  
+                                                :typemodifiers ("inline"))
+                                                (reparse-symbol namespacesubparts) [12128 12335])
+                                            ("compare_collections" function
+                                               (:template 
+                                                  ( ("Lhs" type (:type "class") nil nil)
+                                                    ("Rhs" type (:type "class") nil nil)
+                                                    ("L" type (:type "class") nil nil)
+                                                    ("R" type (:type "class") nil nil))                                                  
+                                                :type ("assertion_result" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("lhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Lhs" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [12526 12541])
+                                                    ("rhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Rhs" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [12542 12557])
+                                                    ("" variable
+                                                       (:pointer 1
+                                                        :type ("boost::type" type
+                                                             (:template-specifier 
+                                                                ( ("op::GE" type (:template-specifier 
+                                                                    ( ("L" type nil nil nil)
+                                                                      ("R" type nil nil nil))                                                                    ) nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [12558 12586])
+                                                    ("" variable (:type ("mpl::false_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12587 12600]))                                                  
+                                                :typemodifiers ("inline"))
+                                                (reparse-symbol namespacesubparts) [12419 12627])
+                                            ("DEFINE_COLLECTION_COMPARISON" variable (:constant-flag t) (reparse-symbol namespacesubparts) [12963 12991]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1913 15735]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [992 15753]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [969 15778]))                  
+                :type "namespace")
+                nil [951 15804])
+            ("boost/test/detail/enable_warnings.hpp" include (:system-flag t) nil [15825 15873]))          
+      :file "collection_comparison_op.hpp"
+      :pointmax 15941
+      :fsize 15940
+      :lastmodtime '(22633 22283 0 0)
+      :unmatched-syntax '((semantic-list 15582 . 15614) (symbol 15555 . 15582) (punctuation 6466 . 6467) (punctuation 6465 . 6466) (punctuation 6464 . 6465) (symbol 6448 . 6464) (punctuation 6442 . 6443) (semantic-list 6360 . 6442) (punctuation 6354 . 6355) (punctuation 6353 . 6354) (semantic-list 6270 . 6352) (punctuation 6264 . 6265) (symbol 6253 . 6264) (punctuation 6252 . 6253) (punctuation 6251 . 6252) (symbol 6246 . 6251) (TYPENAME 6237 . 6245) (INLINE 6230 . 6236) (punctuation 6228 . 6229) (symbol 6225 . 6228) (TYPENAME 6216 . 6224) (punctuation 6214 . 6215) (symbol 6211 . 6214) (TYPENAME 6202 . 6210) (punctuation 6200 . 6201) (symbol 6198 . 6200) (TYPENAME 6189 . 6197) (punctuation 6188 . 6189) (TEMPLATE 6179 . 6187) (punctuation 5222 . 5223) (punctuation 5221 . 5222) (punctuation 5220 . 5221) (symbol 5204 . 5220) (punctuation 5198 . 5199) (symbol 5193 . 5198) (punctuation 5192 . 5193) (punctuation 5191 . 5192) (punctuation 5190 . 5191) (symbol 5187 . 5190) (punctuation 5186 . 5187) (symbol 5167 . 5186) (punctuation 5166 . 5167) (punctuation 5165 . 5166) (symbol 5156 . 5165) (punctuation 5154 . 5155) (punctuation 5153 . 5154) (symbol 5147 . 5152) (punctuation 5146 . 5147) (punctuation 5145 . 5146) (punctuation 5144 . 5145) (symbol 5141 . 5144) (punctuation 5140 . 5141) (symbol 5121 . 5140) (punctuation 5120 . 5121) (punctuation 5119 . 5120) (symbol 5110 . 5119) (punctuation 5104 . 5105) (symbol 5093 . 5104) (punctuation 5092 . 5093) (punctuation 5091 . 5092) (symbol 5086 . 5091) (TYPENAME 5077 . 5085) (INLINE 5070 . 5076) (punctuation 5068 . 5069) (symbol 5065 . 5068) (TYPENAME 5056 . 5064) (punctuation 5054 . 5055) (symbol 5051 . 5054) (TYPENAME 5042 . 5050) (punctuation 5040 . 5041) (symbol 5038 . 5040) (TYPENAME 5029 . 5037) (punctuation 5028 . 5029) (TEMPLATE 5019 . 5027) (punctuation 4288 . 4289) (punctuation 4287 . 4288) (punctuation 4286 . 4287) (symbol 4270 . 4286) (punctuation 4264 . 4265) (semantic-list 4182 . 4264) (punctuation 4176 . 4177) (punctuation 4175 . 4176) (semantic-list 4092 . 4174) (punctuation 4086 . 4087) (symbol 4075 . 4086) (punctuation 4074 . 4075) (punctuation 4073 . 4074) (symbol 4068 . 4073) (TYPENAME 4059 . 4067) (INLINE 4052 . 4058) (punctuation 4050 . 4051) (symbol 4047 . 4050) (TYPENAME 4038 . 4046) (punctuation 4036 . 4037) (symbol 4033 . 4036) (TYPENAME 4024 . 4032) (punctuation 4012 . 4013) (symbol 3998 . 4012) (BOOL 3993 . 3997) (punctuation 3991 . 3992) (symbol 3979 . 3991) (BOOL 3974 . 3978) (punctuation 3972 . 3973) (symbol 3970 . 3972) (TYPENAME 3961 . 3969) (punctuation 3960 . 3961) (TEMPLATE 3951 . 3959) (punctuation 2182 . 2183) (punctuation 2181 . 2182) (punctuation 2180 . 2181) (symbol 2164 . 2180) (punctuation 2158 . 2159) (symbol 2153 . 2158) (punctuation 2152 . 2153) (punctuation 2151 . 2152) (punctuation 2150 . 2151) (symbol 2147 . 2150) (punctuation 2146 . 2147) (symbol 2127 . 2146) (punctuation 2126 . 2127) (punctuation 2125 . 2126) (symbol 2116 . 2125) (punctuation 2114 . 2115) (punctuation 2113 . 2114) (symbol 2107 . 2112) (punctuation 2106 . 2107) (punctuation 2105 . 2106) (punctuation 2104 . 2105) (symbol 2101 . 2104) (punctuation 2100 . 2101) (symbol 2081 . 2100) (punctuation 2080 . 2081) (punctuation 2079 . 2080) (symbol 2070 . 2079) (punctuation 2064 . 2065) (symbol 2053 . 2064) (punctuation 2052 . 2053) (punctuation 2051 . 2052) (symbol 2046 . 2051) (TYPENAME 2037 . 2045) (INLINE 2030 . 2036) (punctuation 2028 . 2029) (symbol 2025 . 2028) (TYPENAME 2016 . 2024) (punctuation 2014 . 2015) (symbol 2011 . 2014) (TYPENAME 2002 . 2010) (punctuation 1990 . 1991) (symbol 1976 . 1990) (BOOL 1971 . 1975) (punctuation 1969 . 1970) (symbol 1957 . 1969) (BOOL 1952 . 1956) (punctuation 1950 . 1951) (symbol 1948 . 1950) (TYPENAME 1939 . 1947) (punctuation 1938 . 1939) (TEMPLATE 1929 . 1937))
+      :lexical-table 
+        '(("BOOST_TEST_TOOLS_COLLECTION_COMPARISON_OP_HPP_050815GER")
+          ("BOOST_TEST_SPECIALIZED_COLLECTION_COMPARE" (spp-arg-list ("Col") 1382 . 1387) . 
+              ((NAMESPACE "namespace" 1399 . 1408) (symbol "boost" 1409 . 1414) (semantic-list "{ namespace test_tools { namespace assertion {  \\
+template<>                                                      \\
+struct specialized_compare<Col> : public mpl::true_ {};         \\
+}}}" 1415 . 1600)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_TEST_TOOLS_CSTRING_COMPARISON_OP_HPP_050815GER" variable (:constant-flag t) nil [484 536])
+            ("boost/test/tools/assertion.hpp" include (:system-flag t) nil [552 593])
+            ("boost/test/utils/is_cstring.hpp" include (:system-flag t) nil [595 637])
+            ("boost/test/utils/basic_cstring/compare.hpp" include (:system-flag t) nil [638 691])
+            ("boost/utility/enable_if.hpp" include (:system-flag t) nil [702 740])
+            ("boost/test/detail/suppress_warnings.hpp" include (:system-flag t) nil [742 792])
+            ("boost" type
+               (:members 
+                  ( ("test_tools" type
+                       (:members 
+                          ( ("assertion" type
+                               (:members 
+                                  ( ("op" type
+                                       (:members 
+                                          ( ("DEFINE_CSTRING_COMPARISON" variable (:constant-flag t) (reparse-symbol namespacesubparts) [1207 1232]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [939 3839]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [917 3857]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [894 3882]))                  
+                :type "namespace")
+                nil [876 3908])
+            ("boost/test/detail/enable_warnings.hpp" include (:system-flag t) nil [3929 3977]))          
+      :file "cstring_comparison_op.hpp"
+      :pointmax 4043
+      :fsize 4042
+      :lastmodtime '(22633 22283 0 0)
+      :unmatched-syntax '((semantic-list 3692 . 3721) (symbol 3665 . 3692))
+      :lexical-table 
+        '(("BOOST_TEST_TOOLS_CSTRING_COMPARISON_OP_HPP_050815GER")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_TEST_FLOATING_POINT_COMPARISON_HPP_071894GER" variable (:constant-flag t) nil [487 537])
+            ("boost/test/detail/global_typedef.hpp" include (:system-flag t) nil [553 600])
+            ("boost/test/tools/assertion_result.hpp" include (:system-flag t) nil [601 649])
+            ("boost/limits.hpp" include (:system-flag t) nil [660 687])
+            ("boost/static_assert.hpp" include (:system-flag t) nil [716 750])
+            ("boost/assert.hpp" include (:system-flag t) nil [751 778])
+            ("boost/mpl/bool.hpp" include (:system-flag t) nil [779 808])
+            ("boost/type_traits/is_floating_point.hpp" include (:system-flag t) nil [809 859])
+            ("boost/type_traits/is_array.hpp" include (:system-flag t) nil [860 901])
+            ("boost/type_traits/conditional.hpp" include (:system-flag t) nil [902 946])
+            ("boost/utility/enable_if.hpp" include (:system-flag t) nil [947 985])
+            ("iosfwd" include (:system-flag t) nil [994 1011])
+            ("boost/test/detail/suppress_warnings.hpp" include (:system-flag t) nil [1013 1063])
+            ("boost" type
+               (:members 
+                  ( ("math" type
+                       (:members 
+                          ( ("fpc" type
+                               (:members 
+                                  ( ("tolerance_based_delegate" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil)
+                                            ("bool" type (:typevar "enabled") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [1551 1619])
+                                    ("tolerance_based_delegate" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :superclasses 
+                                          ( ("mpl::false_" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :template-specifier 
+                                          ( ("T" type nil nil nil)
+                                            ("false" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [1621 1702])
+                                    ("type" variable (:type "int") (reparse-symbol namespacesubparts) [2419 2427])
+                                    ("strength" type
+                                       (:members 
+                                          ( ("FPC_STRONG" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2741 2752])
+                                            ("FPC_WEAK" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2812 2868]))                                          
+                                        :type "enum")
+                                        (reparse-symbol namespacesubparts) [2721 2869])
+                                    ("percent_tolerance_t" type
+                                       (:template 
+                                          ( ("FPT" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("percent_tolerance_t" function
+                                               (:constructor-flag t
+                                                :typemodifiers ("explicit")
+                                                :arguments 
+                                                  ( ("v" variable (:type ("FPT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3205 3212]))                                                  
+                                                :type ("percent_tolerance_t" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [3172 3230])
+                                            ("m_value" variable (:type ("FPT" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3236 3248]))                                          )
+                                        (reparse-symbol namespacesubparts) [3116 3251])
+                                    ("<<" function
+                                       (:template 
+                                          ( ("FPT" type (:type "class") nil nil))                                          
+                                        :type ("std::ostream" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("out" variable
+                                               (:reference 1
+                                                :type ("std::ostream" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3391 3409])
+                                            ("t" variable (:type ("percent_tolerance_t" type
+                                                 (:template-specifier 
+                                                    ( ("FPT" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol arg-sub-list) [3410 3438]))                                          
+                                        :typemodifiers ("inline")
+                                        :operator-flag t)
+                                        (reparse-symbol namespacesubparts) [3335 3471])
+                                    ("percent_tolerance" function
+                                       (:template 
+                                          ( ("FPT" type (:type "class") nil nil))                                          
+                                        :type ("percent_tolerance_t" type
+                                             (:template-specifier 
+                                                ( ("FPT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :arguments 
+                                          ( ("v" variable (:type ("FPT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3629 3636]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [3555 3682])
+                                    ("fpc_detail" type
+                                       (:members 
+                                          ( ("fpt_abs" function
+                                               (:template 
+                                                  ( ("FPT" type (:type "class") nil nil))                                                  
+                                                :type ("FPT" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("fpv" variable (:type ("FPT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4152 4161]))                                                  
+                                                :typemodifiers ("inline"))
+                                                (reparse-symbol namespacesubparts) [4109 4217])
+                                            ("fpt_specialized_limits" type
+                                               (:template 
+                                                  ( ("FPT" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("min_value" function
+                                                       (:typemodifiers ("static")
+                                                        :type ("FPT" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [4358 4429])
+                                                    ("max_value" function
+                                                       (:typemodifiers ("static")
+                                                        :type ("FPT" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [4432 4503]))                                                  )
+                                                (reparse-symbol namespacesubparts) [4301 4506])
+                                            ("fpt_non_specialized_limits" type
+                                               (:template 
+                                                  ( ("FPT" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("min_value" function
+                                                       (:typemodifiers ("static")
+                                                        :type ("FPT" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [4569 4626])
+                                                    ("max_value" function
+                                                       (:typemodifiers ("static")
+                                                        :type ("FPT" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [4629 4692]))                                                  )
+                                                (reparse-symbol namespacesubparts) [4508 4768])
+                                            ("fpt_limits" type
+                                               (:template 
+                                                  ( ("FPT" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :superclasses 
+                                                  ( ("boost::conditional::type" type
+                                                       (:protection "unspecified"
+                                                        :type "class")
+                                                        nil nil))                                                  )
+                                                (reparse-symbol namespacesubparts) [4770 5062])
+                                            ("safe_fpt_division" function
+                                               (:template 
+                                                  ( ("FPT" type (:type "class") nil nil))                                                  
+                                                :type ("FPT" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("f1" variable (:type ("FPT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5235 5242])
+                                                    ("f2" variable (:type ("FPT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5243 5251]))                                                  
+                                                :typemodifiers ("inline"))
+                                                (reparse-symbol namespacesubparts) [5182 5603])
+                                            ("fraction_tolerance" function
+                                               (:template 
+                                                  ( ("FPT" type (:type "class") nil nil)
+                                                    ("ToleranceType" type (:type "class") nil nil))                                                  
+                                                :type ("FPT" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("tolerance" variable (:type ("ToleranceType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5765 5790]))                                                  
+                                                :typemodifiers ("inline"))
+                                                (reparse-symbol namespacesubparts) [5687 5832])
+                                            ("fraction_tolerance" function
+                                               (:template 
+                                                  ( ("FPT2" type (:type "class") nil nil)
+                                                    ("FPT" type (:type "class") nil nil))                                                  
+                                                :type ("FPT2" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("tolerance" variable (:type ("percent_tolerance_t" type
+                                                         (:template-specifier 
+                                                            ( ("FPT" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol arg-sub-list) [5987 6023]))                                                  
+                                                :typemodifiers ("inline"))
+                                                (reparse-symbol namespacesubparts) [5917 6075]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [4010 6160])
+                                    ("close_at_tolerance" type
+                                       (:template 
+                                          ( ("FPT" type (:type "class") nil nil))                                          
+                                        :type "class"
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [6892 6899])
+                                            ("result_type" type
+                                               (:typedef ("bool")
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6927 6952])
+                                            ("close_at_tolerance" function
+                                               (:template 
+                                                  ( ("ToleranceType" type (:type "class") nil nil))                                                  
+                                                :type ("close_at_tolerance" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("tolerance" variable (:type ("ToleranceType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7046 7070])
+                                                    ("fpc_strength" variable
+                                                       (:default-value "FPC_STRONG "
+                                                        :type ("fpc::strength" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7071 7112]))                                                  
+                                                :typemodifiers ("explicit")
+                                                :constructor-flag t)
+                                                (reparse-symbol classsubparts) [6977 7403])
+                                            ("fraction_tolerance" function
+                                               (:methodconst-flag t
+                                                :type ("FPT" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [7461 7541])
+                                            ("strength" function
+                                               (:methodconst-flag t
+                                                :type ("fpc::strength" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [7585 7655])
+                                            ("tested_rel_diff" function
+                                               (:methodconst-flag t
+                                                :type ("FPT" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [7698 7775])
+                                            ("()" function
+                                               (:methodconst-flag t
+                                                :operator-flag t
+                                                :arguments 
+                                                  ( ("left" variable (:type ("FPT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8484 8493])
+                                                    ("right" variable (:type ("FPT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8494 8505]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [8452 9099])
+                                            ("private" label nil (reparse-symbol classsubparts) [9101 9109])
+                                            ("m_fraction_tolerance" variable (:type ("FPT" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9134 9175])
+                                            ("m_strength" variable (:type ("fpc::strength" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9180 9211])
+                                            ("m_tested_rel_diff" variable
+                                               (:typemodifiers ("mutable")
+                                                :type ("FPT" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [9216 9254]))                                          )
+                                        (reparse-symbol namespacesubparts) [6842 9257])
+                                    ("small_with_tolerance" type
+                                       (:template 
+                                          ( ("FPT" type (:type "class") nil nil))                                          
+                                        :type "class"
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [9744 9751])
+                                            ("result_type" type
+                                               (:typedef ("bool")
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [9779 9804])
+                                            ("small_with_tolerance" function
+                                               (:constructor-flag t
+                                                :typemodifiers ("explicit")
+                                                :arguments 
+                                                  ( ("tolerance" variable (:type ("FPT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9863 9878]))                                                  
+                                                :type ("small_with_tolerance" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [9829 10039])
+                                            ("()" function
+                                               (:methodconst-flag t
+                                                :operator-flag t
+                                                :arguments 
+                                                  ( ("fpv" variable (:type ("FPT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10090 10099]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [10066 10180])
+                                            ("private" label nil (reparse-symbol classsubparts) [10182 10190])
+                                            ("m_tolerance" variable (:type ("FPT" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10215 10239]))                                          )
+                                        (reparse-symbol namespacesubparts) [9692 10242])
+                                    ("is_small" function
+                                       (:template 
+                                          ( ("FPT" type (:type "class") nil nil))                                          
+                                        :type "bool"
+                                        :arguments 
+                                          ( ("fpv" variable (:type ("FPT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10533 10541])
+                                            ("tolerance" variable (:type ("FPT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10542 10557]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [10488 10619]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1182 10704]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1165 10723]))                  
+                :type "namespace")
+                nil [1147 10743])
+            ("boost/test/detail/enable_warnings.hpp" include (:system-flag t) nil [10764 10812]))          
+      :file "floating_point_comparison.hpp"
+      :pointmax 10871
+      :fsize 10870
+      :lastmodtime '(22633 22283 0 0)
+      :unmatched-syntax '((punctuation 2418 . 2419) (punctuation 2417 . 2418) (punctuation 2416 . 2417) (symbol 2410 . 2415) (punctuation 2409 . 2410) (punctuation 2408 . 2409) (punctuation 2407 . 2408) (symbol 2406 . 2407) (punctuation 2405 . 2406) (symbol 2397 . 2405) (punctuation 2396 . 2397) (punctuation 2394 . 2395) (symbol 2393 . 2394) (punctuation 2392 . 2393) (symbol 2368 . 2392) (punctuation 2366 . 2367) (symbol 2350 . 2365) (STRUCT 2343 . 2349) (punctuation 2341 . 2342) (symbol 2340 . 2341) (TYPENAME 2331 . 2339) (punctuation 2330 . 2331) (TEMPLATE 2321 . 2329) (punctuation 1940 . 1941) (semantic-list 1938 . 1940) (punctuation 1936 . 1937) (semantic-list 1820 . 1936) (punctuation 1814 . 1815) (punctuation 1813 . 1814) (symbol 1807 . 1812) (punctuation 1806 . 1807) (punctuation 1805 . 1806) (punctuation 1804 . 1805) (symbol 1803 . 1804) (punctuation 1802 . 1803) (symbol 1785 . 1802) (punctuation 1779 . 1780) (symbol 1774 . 1779) (punctuation 1773 . 1774) (punctuation 1772 . 1773) (symbol 1769 . 1772) (punctuation 1767 . 1768) (punctuation 1765 . 1766) (symbol 1761 . 1765) (punctuation 1759 . 1760) (symbol 1758 . 1759) (punctuation 1757 . 1758) (symbol 1733 . 1757) (STRUCT 1726 . 1732) (punctuation 1724 . 1725) (symbol 1723 . 1724) (TYPENAME 1714 . 1722) (punctuation 1713 . 1714) (TEMPLATE 1704 . 1712))
+      :lexical-table 
+        '(("BOOST_TEST_FLOATING_POINT_COMPARISON_HPP_071894GER")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_TEST_TOOLS_FPC_TOLERANCE_HPP_121612GER" variable (:constant-flag t) nil [529 573])
+            ("boost/test/tree/decorator.hpp" include (:system-flag t) nil [589 629])
+            ("boost/test/tools/floating_point_comparison.hpp" include (:system-flag t) nil [630 687])
+            ("boost/test/detail/suppress_warnings.hpp" include (:system-flag t) nil [689 739])
+            ("boost" type
+               (:members 
+                  ( ("test_tools" type
+                       (:members 
+                          ( ("fpc" type
+                               (:kind alias
+                                :members 
+                                  ( ("math::fpc" type (:type "namespace") nil nil))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [865 891])
+                            ("fpc_tolerance" function
+                               (:template 
+                                  ( ("FPT" type (:type "class") nil nil))                                  
+                                :type ("FPT" type (:type "class") nil nil)
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [1137 1239])
+                            ("local_fpc_tolerance" type
+                               (:template 
+                                  ( ("FPT" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("local_fpc_tolerance" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("fraction_tolerance" variable (:type ("FPT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1400 1424]))                                          
+                                        :type ("local_fpc_tolerance" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [1379 1529])
+                                    ("local_fpc_tolerance" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1535 1662])
+                                    ("private" label nil (reparse-symbol classsubparts) [1664 1672])
+                                    ("m_old_tolerance" variable (:type ("FPT" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1697 1725]))                                  )
+                                (reparse-symbol namespacesubparts) [1323 1728]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [841 1813])
+                    ("unit_test" type
+                       (:members 
+                          ( ("decorator" type
+                               (:members 
+                                  ( ("tolerance" function
+                                       (:template 
+                                          ( ("FPT" type (:type "class") nil nil))                                          
+                                        :type ("fixture_t" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("v" variable (:type ("FPT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2179 2186]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [2128 2330])
+                                    ("tolerance" function
+                                       (:template 
+                                          ( ("FPT" type (:type "class") nil nil))                                          
+                                        :type ("fixture_t" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("v" variable (:type ("test_tools::fpc::percent_tolerance_t" type
+                                                 (:template-specifier 
+                                                    ( ("FPT" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol arg-sub-list) [2465 2510]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [2414 2711]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [2105 2796])
+                            ("decorator::tolerance" using (:type ("decorator::tolerance" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [2821 2848]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2083 2851]))                  
+                :type "namespace")
+                nil [823 2876])
+            ("boost/test/detail/enable_warnings.hpp" include (:system-flag t) nil [2897 2945]))          
+      :file "fpc_tolerance.hpp"
+      :pointmax 3002
+      :fsize 3001
+      :lastmodtime '(22633 22283 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_TEST_TOOLS_FPC_TOLERANCE_HPP_121612GER")
+          )
+))
+  :file "!usr!include!boost!test!tools!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

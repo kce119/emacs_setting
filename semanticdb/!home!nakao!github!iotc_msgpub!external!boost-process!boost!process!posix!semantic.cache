@@ -1,0 +1,65 @@
+;; Object posix/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "posix/"
+  :tables
+  (list
+    (semanticdb-table "wait_for_exit.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_PROCESS_POSIX_WAIT_FOR_EXIT_HPP" variable (:constant-flag t) nil [460 497])
+            ("boost/process/config.hpp" include (:system-flag t) nil [499 534])
+            ("boost/system/error_code.hpp" include (:system-flag t) nil [535 573])
+            ("sys/types.h" include (:system-flag t) nil [574 596])
+            ("sys/wait.h" include (:system-flag t) nil [597 618])
+            ("boost" type
+               (:members 
+                  ( ("process" type
+                       (:members 
+                          ( ("posix" type
+                               (:members 
+                                  ( ("wait_for_exit" function
+                                       (:template 
+                                          ( ("Process" type (:type "class") nil nil))                                          
+                                        :type "int"
+                                        :arguments 
+                                          ( ("p" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Process" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [727 744]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [677 1024])
+                                    ("wait_for_exit" function
+                                       (:template 
+                                          ( ("Process" type (:type "class") nil nil))                                          
+                                        :type "int"
+                                        :arguments 
+                                          ( ("p" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Process" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1076 1093])
+                                            ("ec" variable
+                                               (:reference 1
+                                                :type ("boost::system::error_code" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1094 1124]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [1026 1417]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [658 1420]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [638 1421]))                  
+                :type "namespace")
+                nil [620 1422]))          
+      :file "wait_for_exit.hpp"
+      :pointmax 1431
+      :fsize 1430
+      :lastmodtime '(22486 26329 730000 2000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_PROCESS_POSIX_WAIT_FOR_EXIT_HPP")
+          )
+))
+  :file "!home!nakao!github!iotc_msgpub!external!boost-process!boost!process!posix!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,242 @@
+;; Object test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "test/"
+  :tables
+  (list
+    (semanticdb-table "connect.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("test_settings.hpp" include nil nil [195 223])
+            ("mqtt/client.hpp" include (:system-flag t) nil [225 251])
+            ("BOOST_AUTO_TEST_CASE" function
+               (:arguments 
+                  ( ("" variable (:type ("tls_connect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [339 352]))                  
+                :type "int")
+                nil [317 1210])
+            ("BOOST_AUTO_TEST_CASE" function
+               (:arguments 
+                  ( ("" variable (:type ("tls_connect_no_strand" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1234 1257]))                  
+                :type "int")
+                nil [1212 2125])
+            ("BOOST_AUTO_TEST_CASE" function
+               (:arguments 
+                  ( ("" variable (:type ("notls_connect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2182 2197]))                  
+                :type "int")
+                nil [2160 3007])
+            ("BOOST_AUTO_TEST_CASE" function
+               (:arguments 
+                  ( ("" variable (:type ("notls_connect_no_strand" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3031 3056]))                  
+                :type "int")
+                nil [3009 3876])
+            ("BOOST_AUTO_TEST_CASE" function
+               (:arguments 
+                  ( ("" variable (:type ("notls_keep_alive" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3900 3918]))                  
+                :type "int")
+                nil [3878 4892])
+            ("BOOST_AUTO_TEST_CASE" function
+               (:arguments 
+                  ( ("" variable (:type ("notls_connect_again" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4916 4937]))                  
+                :type "int")
+                nil [4894 6088])
+            ("BOOST_AUTO_TEST_CASE" function
+               (:arguments 
+                  ( ("" variable (:type ("notls_nocid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6112 6125]))                  
+                :type "int")
+                nil [6090 6905])
+            ("BOOST_AUTO_TEST_CASE" function
+               (:arguments 
+                  ( ("" variable (:type ("notls_nocid_noclean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6929 6950]))                  
+                :type "int")
+                nil [6907 7680])
+            ("BOOST_AUTO_TEST_CASE" function
+               (:arguments 
+                  ( ("" variable (:type ("notls_noclean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7704 7719]))                  
+                :type "int")
+                nil [7682 9622]))          
+      :file "connect.cpp"
+      :pointmax 9652
+      :fsize 9651
+      :lastmodtime '(22498 10111 766666 666000)
+      :unmatched-syntax '((semantic-list 9649 . 9651) (symbol 9624 . 9649) (semantic-list 274 . 288) (symbol 253 . 274)))
+    (semanticdb-table "test_settings.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("MQTT_TEST_SETTINGS_HPP" variable (:constant-flag t) nil [240 262])
+            ("string" include (:system-flag t) nil [264 281])
+            ("boost/test/unit_test.hpp" include (:system-flag t) nil [282 317])
+            ("boost/uuid/uuid.hpp" include (:system-flag t) nil [318 348])
+            ("boost/uuid/uuid_generators.hpp" include (:system-flag t) nil [349 390])
+            ("boost/uuid/uuid_io.hpp" include (:system-flag t) nil [391 424])
+            ("mqtt/client.hpp" include (:system-flag t) nil [425 451])
+            ("broker_url" variable
+               (:pointer 1
+                :typemodifiers ("constexpr")
+                :default-value "\"test.mosquitto.org\""
+                :type "char")
+                nil [453 509])
+            ("broker_notls_port" variable
+               (:typemodifiers ("constexpr")
+                :default-value "1883"
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [510 560])
+            ("broker_tls_port" variable
+               (:typemodifiers ("constexpr")
+                :default-value "8883"
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [561 609])
+            ("uuid" type
+               (:superclasses 
+                  ( ("boost::uuids::uuid" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [652 659])
+                    ("uuid" function
+                       (:constructor-flag t
+                        :type ("uuid" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [664 742])
+                    ("uuid" function
+                       (:constructor-flag t
+                        :typemodifiers ("explicit")
+                        :arguments 
+                          ( ("u" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("boost::uuids::uuid" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [762 790]))                          
+                        :type ("uuid" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [748 829]))                  
+                :type "class")
+                nil [611 832])
+            ("topic_base" function
+               (:typemodifiers ("inline")
+                :type ("std::string" type (:type "class") nil nil))
+                nil [834 968])
+            ("cid1" function
+               (:typemodifiers ("inline")
+                :type ("std::string" type (:type "class") nil nil))
+                nil [970 1094])
+            ("cid2" function
+               (:typemodifiers ("inline")
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1096 1220])
+            ("fixture_clear_retain" type
+               (:members 
+                  ( ("fixture_clear_retain" function
+                       (:constructor-flag t
+                        :type ("fixture_clear_retain" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [1256 3409]))                  
+                :type "struct")
+                nil [1222 3412]))          
+      :file "test_settings.hpp"
+      :pointmax 3447
+      :fsize 3458
+      :lastmodtime '(22498 10111 766666 666000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MQTT_TEST_SETTINGS_HPP")
+          )
+)
+    (semanticdb-table "multi_sub.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("test_settings.hpp" include nil nil [195 223])
+            ("mqtt/client.hpp" include (:system-flag t) nil [225 251])
+            ("BOOST_AUTO_TEST_CASE" function
+               (:arguments 
+                  ( ("" variable (:type ("multi_channel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [314 329]))                  
+                :type "int")
+                nil [292 3672])
+            ("BOOST_AUTO_TEST_CASE" function
+               (:arguments 
+                  ( ("" variable (:type ("multi_client_qos0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3696 3715]))                  
+                :type "int")
+                nil [3674 9316])
+            ("BOOST_AUTO_TEST_CASE" function
+               (:arguments 
+                  ( ("" variable (:type ("multi_client_qos1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9340 9359]))                  
+                :type "int")
+                nil [9318 16008]))          
+      :file "multi_sub.cpp"
+      :pointmax 16038
+      :fsize 16122
+      :lastmodtime '(22498 10111 766666 666000)
+      :unmatched-syntax '((semantic-list 16035 . 16037) (symbol 16010 . 16035) (semantic-list 274 . 290) (symbol 253 . 274)))
+    (semanticdb-table "pubsub.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("test_settings.hpp" include nil nil [195 223])
+            ("mqtt/client.hpp" include (:system-flag t) nil [225 251])
+            ("BOOST_AUTO_TEST_CASE" function
+               (:arguments 
+                  ( ("" variable (:type ("pub_qos0_sub_qos0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [311 330]))                  
+                :type "int")
+                nil [289 3065])
+            ("BOOST_AUTO_TEST_CASE" function
+               (:arguments 
+                  ( ("" variable (:type ("pub_qos1_sub_qos0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3089 3108]))                  
+                :type "int")
+                nil [3067 6479])
+            ("BOOST_AUTO_TEST_CASE" function
+               (:arguments 
+                  ( ("" variable (:type ("pub_qos2_sub_qos0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6503 6522]))                  
+                :type "int")
+                nil [6481 9819])
+            ("BOOST_AUTO_TEST_CASE" function
+               (:arguments 
+                  ( ("" variable (:type ("pub_qos0_sub_qos1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9843 9862]))                  
+                :type "int")
+                nil [9821 12599])
+            ("BOOST_AUTO_TEST_CASE" function
+               (:arguments 
+                  ( ("" variable (:type ("pub_qos1_sub_qos1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12623 12642]))                  
+                :type "int")
+                nil [12601 15871])
+            ("BOOST_AUTO_TEST_CASE" function
+               (:arguments 
+                  ( ("" variable (:type ("pub_qos2_sub_qos1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15895 15914]))                  
+                :type "int")
+                nil [15873 19268])
+            ("BOOST_AUTO_TEST_CASE" function
+               (:arguments 
+                  ( ("" variable (:type ("pub_qos0_sub_qos2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19292 19311]))                  
+                :type "int")
+                nil [19270 22046])
+            ("BOOST_AUTO_TEST_CASE" function
+               (:arguments 
+                  ( ("" variable (:type ("pub_qos1_sub_qos2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22070 22089]))                  
+                :type "int")
+                nil [22048 25316])
+            ("BOOST_AUTO_TEST_CASE" function
+               (:arguments 
+                  ( ("" variable (:type ("pub_qos2_sub_qos2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25340 25359]))                  
+                :type "int")
+                nil [25318 28710])
+            ("BOOST_AUTO_TEST_CASE" function
+               (:arguments 
+                  ( ("" variable (:type ("publish_function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28734 28752]))                  
+                :type "int")
+                nil [28712 31499]))          
+      :file "pubsub.cpp"
+      :pointmax 31530
+      :fsize 33709
+      :lastmodtime '(22513 50385 566666 669000)
+      :unmatched-syntax '((semantic-list 31527 . 31529) (symbol 31502 . 31527) (semantic-list 274 . 287) (symbol 253 . 274)))
+    (semanticdb-table "test_main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_TEST_MODULE" variable (:constant-flag t) nil [203 220])
+            ("boost/test/unit_test.hpp" include (:system-flag t) nil [242 277]))          
+      :file "test_main.cpp"
+      :pointmax 278
+      :fsize 277
+      :lastmodtime '(22486 26329 940000 2000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_TEST_MODULE" . ((symbol "mqtt_client_cpp_test" 221 . 241)))
+          )
+))
+  :file "!home!nakao!github!iotc_msgpub!external!mqtt_client_cpp!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,1559 @@
+;; Object front/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "front/"
+  :tables
+  (list
+    (semanticdb-table "state_machine_def.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MSM_FRONT_STATEMACHINE_DEF_H" variable (:constant-flag t) nil [531 565])
+            ("exception" include (:system-flag t) nil [567 587])
+            ("boost/assert.hpp" include (:system-flag t) nil [588 615])
+            ("boost/mpl/vector.hpp" include (:system-flag t) nil [617 648])
+            ("boost/msm/row_tags.hpp" include (:system-flag t) nil [650 683])
+            ("boost/msm/back/common_types.hpp" include (:system-flag t) nil [684 726])
+            ("boost/msm/front/states.hpp" include (:system-flag t) nil [727 764])
+            ("boost/msm/front/completion_event.hpp" include (:system-flag t) nil [765 812])
+            ("boost/msm/front/common_states.hpp" include (:system-flag t) nil [813 857])
+            ("boost" type
+               (:members 
+                  ( ("msm" type
+                       (:members 
+                          ( ("front" type
+                               (:members 
+                                  ( ("state_machine_def" type
+                                       (:template 
+                                          ( ("Derived" type (:type "class") nil nil)
+                                            ("BaseState" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("flag_list" variable (:type ("boost::mpl::vector0" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1109 1155])
+                                            ("internal_flag_list" variable (:type ("boost::mpl::vector0" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1170 1225])
+                                            ("deferred_events" variable (:type ("boost::mpl::vector0" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1274 1326])
+                                            ("configuration" variable (:type ("boost::mpl::vector0" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1390 1440])
+                                            ("BaseAllStates" type
+                                               (:typedef ("BaseState" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1446 1506])
+                                            ("a_row" type
+                                               (:template 
+                                                  ( ("T1" type (:type "class") nil nil)
+                                                    ("Event" type (:type "class") nil nil)
+                                                    ("T2" type (:type "class") nil nil)
+                                                    ("void" type nil nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("row_type_tag" type
+                                                       (:typedef ("a_row_tag" type (:type "class") nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [1670 1701])
+                                                    ("Source" type
+                                                       (:typedef ("T1" type (:type "class") nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [1710 1728])
+                                                    ("Target" type
+                                                       (:typedef ("T2" type (:type "class") nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [1737 1755])
+                                                    ("Evt" type
+                                                       (:typedef ("Event" type (:type "class") nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [1764 1782])
+                                                    ("action_call" function
+                                                       (:arguments 
+                                                          ( ("fsm" variable
+                                                               (:reference 1
+                                                                :type ("FSM" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1923 1932])
+                                                            ("evt" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("Event" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1932 1949])
+                                                            ("" variable
+                                                               (:reference 1
+                                                                :type ("SourceState" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1949 1962])
+                                                            ("" variable
+                                                               (:reference 1
+                                                                :type ("TargetState" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1962 1975])
+                                                            ("" variable
+                                                               (:reference 1
+                                                                :type ("AllStates" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1976 1987]))                                                          
+                                                        :type ("boost::msm::back::HandledEnum" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1881 2173]))                                                  )
+                                                (reparse-symbol classsubparts) [1511 2180])
+                                            ("_row" type
+                                               (:template 
+                                                  ( ("T1" type (:type "class") nil nil)
+                                                    ("Event" type (:type "class") nil nil)
+                                                    ("T2" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("row_type_tag" type
+                                                       (:typedef ("_row_tag" type (:type "class") nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [2296 2326])
+                                                    ("Source" type
+                                                       (:typedef ("T1" type (:type "class") nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [2335 2353])
+                                                    ("Target" type
+                                                       (:typedef ("T2" type (:type "class") nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [2362 2380])
+                                                    ("Evt" type
+                                                       (:typedef ("Event" type (:type "class") nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [2389 2407]))                                                  )
+                                                (reparse-symbol classsubparts) [2186 2414])
+                                            ("row" type
+                                               (:template 
+                                                  ( ("T1" type (:type "class") nil nil)
+                                                    ("Event" type (:type "class") nil nil)
+                                                    ("T2" type (:type "class") nil nil)
+                                                    ("void" type nil nil nil)
+                                                    ("bool" type nil nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("row_type_tag" type
+                                                       (:typedef ("row_tag" type (:type "class") nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [2625 2654])
+                                                    ("Source" type
+                                                       (:typedef ("T1" type (:type "class") nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [2663 2681])
+                                                    ("Target" type
+                                                       (:typedef ("T2" type (:type "class") nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [2690 2708])
+                                                    ("Evt" type
+                                                       (:typedef ("Event" type (:type "class") nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [2717 2735])
+                                                    ("action_call" function
+                                                       (:arguments 
+                                                          ( ("fsm" variable
+                                                               (:reference 1
+                                                                :type ("FSM" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [2877 2886])
+                                                            ("evt" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("Event" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [2886 2903])
+                                                            ("" variable
+                                                               (:reference 1
+                                                                :type ("SourceState" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [2903 2916])
+                                                            ("" variable
+                                                               (:reference 1
+                                                                :type ("TargetState" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [2916 2929])
+                                                            ("" variable
+                                                               (:reference 1
+                                                                :type ("AllStates" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [2929 2940]))                                                          
+                                                        :type ("boost::msm::back::HandledEnum" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [2835 3126])
+                                                    ("guard_call" function
+                                                       (:template 
+                                                          ( ("FSM" type (:type "class") nil nil)
+                                                            ("SourceState" type (:type "class") nil nil)
+                                                            ("TargetState" type (:type "class") nil nil)
+                                                            ("AllStates" type (:type "class") nil nil))                                                          
+                                                        :type "bool"
+                                                        :arguments 
+                                                          ( ("fsm" variable
+                                                               (:reference 1
+                                                                :type ("FSM" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [3239 3248])
+                                                            ("evt" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("Event" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [3248 3265])
+                                                            ("" variable
+                                                               (:reference 1
+                                                                :type ("SourceState" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [3265 3278])
+                                                            ("" variable
+                                                               (:reference 1
+                                                                :type ("TargetState" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [3278 3291])
+                                                            ("" variable
+                                                               (:reference 1
+                                                                :type ("AllStates" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [3291 3302]))                                                          
+                                                        :typemodifiers ("static"))
+                                                        (reparse-symbol classsubparts) [3135 3441]))                                                  )
+                                                (reparse-symbol classsubparts) [2420 3448])
+                                            ("g_row" type
+                                               (:template 
+                                                  ( ("T1" type (:type "class") nil nil)
+                                                    ("Event" type (:type "class") nil nil)
+                                                    ("T2" type (:type "class") nil nil)
+                                                    ("bool" type nil nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("row_type_tag" type
+                                                       (:typedef ("g_row_tag" type (:type "class") nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [3612 3643])
+                                                    ("Source" type
+                                                       (:typedef ("T1" type (:type "class") nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [3652 3670])
+                                                    ("Target" type
+                                                       (:typedef ("T2" type (:type "class") nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [3679 3697])
+                                                    ("Evt" type
+                                                       (:typedef ("Event" type (:type "class") nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [3706 3724])
+                                                    ("guard_call" function
+                                                       (:template 
+                                                          ( ("FSM" type (:type "class") nil nil)
+                                                            ("SourceState" type (:type "class") nil nil)
+                                                            ("TargetState" type (:type "class") nil nil)
+                                                            ("AllStates" type (:type "class") nil nil))                                                          
+                                                        :type "bool"
+                                                        :arguments 
+                                                          ( ("fsm" variable
+                                                               (:reference 1
+                                                                :type ("FSM" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [3837 3846])
+                                                            ("evt" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("Event" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [3846 3863])
+                                                            ("" variable
+                                                               (:reference 1
+                                                                :type ("SourceState" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [3863 3876])
+                                                            ("" variable
+                                                               (:reference 1
+                                                                :type ("TargetState" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [3876 3889])
+                                                            ("" variable
+                                                               (:reference 1
+                                                                :type ("AllStates" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [3889 3900]))                                                          
+                                                        :typemodifiers ("static"))
+                                                        (reparse-symbol classsubparts) [3733 4039]))                                                  )
+                                                (reparse-symbol classsubparts) [3453 4046])
+                                            ("a_irow" type
+                                               (:template 
+                                                  ( ("T1" type (:type "class") nil nil)
+                                                    ("Event" type (:type "class") nil nil)
+                                                    ("void" type nil nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("row_type_tag" type
+                                                       (:typedef ("a_irow_tag" type (:type "class") nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [4217 4249])
+                                                    ("Source" type
+                                                       (:typedef ("T1" type (:type "class") nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [4258 4276])
+                                                    ("Target" type
+                                                       (:typedef ("T1" type (:type "class") nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [4285 4303])
+                                                    ("Evt" type
+                                                       (:typedef ("Event" type (:type "class") nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [4312 4330])
+                                                    ("action_call" function
+                                                       (:arguments 
+                                                          ( ("fsm" variable
+                                                               (:reference 1
+                                                                :type ("FSM" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [4471 4480])
+                                                            ("evt" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("Event" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [4480 4497])
+                                                            ("" variable
+                                                               (:reference 1
+                                                                :type ("SourceState" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [4497 4510])
+                                                            ("" variable
+                                                               (:reference 1
+                                                                :type ("TargetState" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [4510 4523])
+                                                            ("" variable
+                                                               (:reference 1
+                                                                :type ("AllStates" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [4523 4534]))                                                          
+                                                        :type ("boost::msm::back::HandledEnum" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [4429 4720]))                                                  )
+                                                (reparse-symbol classsubparts) [4079 4727])
+                                            ("irow" type
+                                               (:template 
+                                                  ( ("T1" type (:type "class") nil nil)
+                                                    ("Event" type (:type "class") nil nil)
+                                                    ("void" type nil nil nil)
+                                                    ("bool" type nil nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("row_type_tag" type
+                                                       (:typedef ("irow_tag" type (:type "class") nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [4917 4947])
+                                                    ("Source" type
+                                                       (:typedef ("T1" type (:type "class") nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [4956 4974])
+                                                    ("Target" type
+                                                       (:typedef ("T1" type (:type "class") nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [4983 5001])
+                                                    ("Evt" type
+                                                       (:typedef ("Event" type (:type "class") nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [5010 5028])
+                                                    ("action_call" function
+                                                       (:arguments 
+                                                          ( ("fsm" variable
+                                                               (:reference 1
+                                                                :type ("FSM" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [5169 5178])
+                                                            ("evt" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("Event" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [5178 5195])
+                                                            ("" variable
+                                                               (:reference 1
+                                                                :type ("SourceState" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [5195 5208])
+                                                            ("" variable
+                                                               (:reference 1
+                                                                :type ("TargetState" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [5208 5221])
+                                                            ("" variable
+                                                               (:reference 1
+                                                                :type ("AllStates" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [5221 5232]))                                                          
+                                                        :type ("boost::msm::back::HandledEnum" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [5127 5418])
+                                                    ("guard_call" function
+                                                       (:template 
+                                                          ( ("FSM" type (:type "class") nil nil)
+                                                            ("SourceState" type (:type "class") nil nil)
+                                                            ("TargetState" type (:type "class") nil nil)
+                                                            ("AllStates" type (:type "class") nil nil))                                                          
+                                                        :type "bool"
+                                                        :arguments 
+                                                          ( ("fsm" variable
+                                                               (:reference 1
+                                                                :type ("FSM" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [5531 5540])
+                                                            ("evt" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("Event" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [5540 5557])
+                                                            ("" variable
+                                                               (:reference 1
+                                                                :type ("SourceState" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [5557 5570])
+                                                            ("" variable
+                                                               (:reference 1
+                                                                :type ("TargetState" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [5570 5583])
+                                                            ("" variable
+                                                               (:reference 1
+                                                                :type ("AllStates" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [5583 5594]))                                                          
+                                                        :typemodifiers ("static"))
+                                                        (reparse-symbol classsubparts) [5427 5733]))                                                  )
+                                                (reparse-symbol classsubparts) [4733 5740])
+                                            ("g_irow" type
+                                               (:template 
+                                                  ( ("T1" type (:type "class") nil nil)
+                                                    ("Event" type (:type "class") nil nil)
+                                                    ("bool" type nil nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("row_type_tag" type
+                                                       (:typedef ("g_irow_tag" type (:type "class") nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [5883 5915])
+                                                    ("Source" type
+                                                       (:typedef ("T1" type (:type "class") nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [5924 5942])
+                                                    ("Target" type
+                                                       (:typedef ("T1" type (:type "class") nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [5951 5969])
+                                                    ("Evt" type
+                                                       (:typedef ("Event" type (:type "class") nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [5978 5996])
+                                                    ("guard_call" function
+                                                       (:template 
+                                                          ( ("FSM" type (:type "class") nil nil)
+                                                            ("SourceState" type (:type "class") nil nil)
+                                                            ("TargetState" type (:type "class") nil nil)
+                                                            ("AllStates" type (:type "class") nil nil))                                                          
+                                                        :type "bool"
+                                                        :arguments 
+                                                          ( ("fsm" variable
+                                                               (:reference 1
+                                                                :type ("FSM" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [6109 6118])
+                                                            ("evt" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("Event" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [6118 6135])
+                                                            ("" variable
+                                                               (:reference 1
+                                                                :type ("SourceState" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [6135 6148])
+                                                            ("" variable
+                                                               (:reference 1
+                                                                :type ("TargetState" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [6148 6161])
+                                                            ("" variable
+                                                               (:reference 1
+                                                                :type ("AllStates" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [6161 6172]))                                                          
+                                                        :typemodifiers ("static"))
+                                                        (reparse-symbol classsubparts) [6005 6311]))                                                  )
+                                                (reparse-symbol classsubparts) [5745 6318])
+                                            ("_irow" type
+                                               (:template 
+                                                  ( ("T1" type (:type "class") nil nil)
+                                                    ("Event" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("row_type_tag" type
+                                                       (:typedef ("_irow_tag" type (:type "class") nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [6509 6540])
+                                                    ("Source" type
+                                                       (:typedef ("T1" type (:type "class") nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [6549 6567])
+                                                    ("Target" type
+                                                       (:typedef ("T1" type (:type "class") nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [6576 6594])
+                                                    ("Evt" type
+                                                       (:typedef ("Event" type (:type "class") nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [6603 6621]))                                                  )
+                                                (reparse-symbol classsubparts) [6420 6628])
+                                            ("protected" label nil (reparse-symbol classsubparts) [6629 6639])
+                                            ("no_transition" function
+                                               (:template 
+                                                  ( ("FSM" type (:type "class") nil nil)
+                                                    ("Event" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Event" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6779 6793])
+                                                    ("" variable
+                                                       (:reference 1
+                                                        :type ("FSM" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6793 6798])
+                                                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [6799 6804]))                                                  )
+                                                (reparse-symbol classsubparts) [6723 6845])
+                                            ("exception_caught" function
+                                               (:template 
+                                                  ( ("FSM" type (:type "class") nil nil)
+                                                    ("Event" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Event" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6985 6998])
+                                                    ("" variable
+                                                       (:reference 1
+                                                        :type ("FSM" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6998 7003])
+                                                    ("" variable
+                                                       (:reference 1
+                                                        :type ("std::exception" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7003 7020]))                                                  )
+                                                (reparse-symbol classsubparts) [6925 7061]))                                          
+                                        :superclasses 
+                                          ( ("boost::msm::front::detail::state_base" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [912 7064]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [893 7068]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [877 7070]))                  
+                :type "namespace")
+                nil [859 7072]))          
+      :file "state_machine_def.hpp"
+      :pointmax 7138
+      :fsize 7137
+      :lastmodtime '(22324 21863 0 0)
+      :unmatched-syntax '((punctuation 5126 . 5127) (punctuation 5125 . 5126) (STATIC 5118 . 5124) (punctuation 5108 . 5109) (symbol 5099 . 5108) (CLASS 5093 . 5098) (punctuation 5092 . 5093) (symbol 5081 . 5092) (CLASS 5075 . 5080) (punctuation 5074 . 5075) (symbol 5063 . 5074) (CLASS 5057 . 5062) (punctuation 5056 . 5057) (symbol 5053 . 5056) (CLASS 5047 . 5052) (punctuation 5046 . 5047) (TEMPLATE 5037 . 5045) (punctuation 4428 . 4429) (punctuation 4427 . 4428) (STATIC 4420 . 4426) (punctuation 4410 . 4411) (symbol 4401 . 4410) (CLASS 4395 . 4400) (punctuation 4394 . 4395) (symbol 4383 . 4394) (CLASS 4377 . 4382) (punctuation 4376 . 4377) (symbol 4365 . 4376) (CLASS 4359 . 4364) (punctuation 4358 . 4359) (symbol 4355 . 4358) (CLASS 4349 . 4354) (punctuation 4348 . 4349) (TEMPLATE 4339 . 4347) (punctuation 2834 . 2835) (punctuation 2833 . 2834) (STATIC 2826 . 2832) (punctuation 2816 . 2817) (symbol 2807 . 2816) (CLASS 2801 . 2806) (punctuation 2799 . 2800) (symbol 2788 . 2799) (CLASS 2782 . 2787) (punctuation 2781 . 2782) (symbol 2770 . 2781) (CLASS 2764 . 2769) (punctuation 2763 . 2764) (symbol 2760 . 2763) (CLASS 2754 . 2759) (punctuation 2753 . 2754) (TEMPLATE 2744 . 2752) (punctuation 1880 . 1881) (punctuation 1879 . 1880) (STATIC 1872 . 1878) (punctuation 1862 . 1863) (symbol 1853 . 1862) (CLASS 1847 . 1852) (punctuation 1846 . 1847) (symbol 1835 . 1846) (CLASS 1829 . 1834) (punctuation 1828 . 1829) (symbol 1817 . 1828) (CLASS 1811 . 1816) (punctuation 1810 . 1811) (symbol 1807 . 1810) (CLASS 1801 . 1806) (punctuation 1800 . 1801) (TEMPLATE 1791 . 1799) (punctuation 1389 . 1390) (punctuation 1388 . 1389) (TYPEDEF 1380 . 1387) (punctuation 1273 . 1274) (punctuation 1272 . 1273) (TYPEDEF 1264 . 1271) (punctuation 1169 . 1170) (punctuation 1168 . 1169) (TYPEDEF 1160 . 1167) (punctuation 1108 . 1109) (punctuation 1107 . 1108) (TYPEDEF 1099 . 1106))
+      :lexical-table 
+        '(("BOOST_MSM_FRONT_STATEMACHINE_DEF_H")
+          )
+)
+    (semanticdb-table "functor_row.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MSM_FRONT_FUNCTOR_ROW_H" variable (:constant-flag t) nil [526 555])
+            ("boost/mpl/set.hpp" include (:system-flag t) nil [557 585])
+            ("boost/mpl/for_each.hpp" include (:system-flag t) nil [586 619])
+            ("boost/mpl/has_xxx.hpp" include (:system-flag t) nil [620 652])
+            ("boost/mpl/count_if.hpp" include (:system-flag t) nil [653 686])
+            ("boost/typeof/typeof.hpp" include (:system-flag t) nil [688 722])
+            ("boost/msm/back/common_types.hpp" include (:system-flag t) nil [724 766])
+            ("boost/msm/row_tags.hpp" include (:system-flag t) nil [767 800])
+            ("boost/msm/common.hpp" include (:system-flag t) nil [801 832])
+            ("boost/msm/front/completion_event.hpp" include (:system-flag t) nil [833 880])
+            ("boost" type
+               (:members 
+                  ( ("msm" type
+                       (:members 
+                          ( ("front" type
+                               (:members 
+                                  ( ("get_functor_return_value" type
+                                       (:members 
+                                          ( ("boost::msm::back::HANDLED_TRUE" variable (:type "int") (reparse-symbol classsubparts) [1241 1272]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [1139 1279])
+                                    ("Row" type
+                                       (:template 
+                                          ( ("SOURCE" type (:type "class") nil nil)
+                                            ("EVENT" type (:type "class") nil nil)
+                                            ("TARGET" type (:type "class") nil nil)
+                                            ("ACTION" type (:type "class") nil nil)
+                                            ("GUARD" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("Source" type
+                                               (:typedef ("SOURCE" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2108 2131])
+                                            ("Evt" type
+                                               (:typedef ("EVENT" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2140 2160])
+                                            ("Target" type
+                                               (:typedef ("TARGET" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2169 2192])
+                                            ("Action" type
+                                               (:typedef ("ACTION" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2201 2224])
+                                            ("Guard" type
+                                               (:typedef ("GUARD" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2233 2255])
+                                            ("row_type_tag" type
+                                               (:typedef ("row_tag" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2293 2322])
+                                            ("action_call" function
+                                               (:arguments 
+                                                  ( ("fsm" variable
+                                                       (:reference 1
+                                                        :type ("FSM" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2473 2482])
+                                                    ("evt" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("EVT" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2482 2497])
+                                                    ("src" variable
+                                                       (:reference 1
+                                                        :type ("SourceState" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2497 2514])
+                                                    ("tgt" variable
+                                                       (:reference 1
+                                                        :type ("TargetState" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2514 2531])
+                                                    ("" variable
+                                                       (:reference 1
+                                                        :type ("AllStates" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2532 2543]))                                                  
+                                                :type ("boost::msm::back::HandledEnum" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2431 2701])
+                                            ("guard_call" function
+                                               (:template 
+                                                  ( ("EVT" type (:type "class") nil nil)
+                                                    ("FSM" type (:type "class") nil nil)
+                                                    ("SourceState" type (:type "class") nil nil)
+                                                    ("TargetState" type (:type "class") nil nil)
+                                                    ("AllStates" type (:type "class") nil nil))                                                  
+                                                :type "bool"
+                                                :arguments 
+                                                  ( ("fsm" variable
+                                                       (:reference 1
+                                                        :type ("FSM" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2824 2833])
+                                                    ("evt" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("EVT" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2833 2848])
+                                                    ("src" variable
+                                                       (:reference 1
+                                                        :type ("SourceState" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2848 2865])
+                                                    ("tgt" variable
+                                                       (:reference 1
+                                                        :type ("TargetState" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2865 2882])
+                                                    ("" variable
+                                                       (:reference 1
+                                                        :type ("AllStates" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2882 2893]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [2710 2997]))                                          )
+                                        (reparse-symbol namespacesubparts) [1995 3004])
+                                    ("Row" type
+                                       (:template 
+                                          ( ("SOURCE" type (:type "class") nil nil)
+                                            ("EVENT" type (:type "class") nil nil)
+                                            ("TARGET" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("Source" type
+                                               (:typedef ("SOURCE" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3118 3141])
+                                            ("Evt" type
+                                               (:typedef ("EVENT" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3150 3170])
+                                            ("Target" type
+                                               (:typedef ("TARGET" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3179 3202])
+                                            ("Action" type
+                                               (:typedef ("none" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3211 3234])
+                                            ("Guard" type
+                                               (:typedef ("none" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3243 3265])
+                                            ("row_type_tag" type
+                                               (:typedef ("_row_tag" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3305 3335]))                                          
+                                        :template-specifier 
+                                          ( ("SOURCE" type nil nil nil)
+                                            ("EVENT" type nil nil nil)
+                                            ("TARGET" type nil nil nil)
+                                            ("none" type nil nil nil)
+                                            ("none" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [3010 3342])
+                                    ("Row" type
+                                       (:template 
+                                          ( ("SOURCE" type (:type "class") nil nil)
+                                            ("EVENT" type (:type "class") nil nil)
+                                            ("TARGET" type (:type "class") nil nil)
+                                            ("ACTION" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("Source" type
+                                               (:typedef ("SOURCE" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3470 3493])
+                                            ("Evt" type
+                                               (:typedef ("EVENT" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3502 3522])
+                                            ("Target" type
+                                               (:typedef ("TARGET" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3531 3554])
+                                            ("Action" type
+                                               (:typedef ("ACTION" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3563 3586])
+                                            ("Guard" type
+                                               (:typedef ("none" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3595 3617])
+                                            ("row_type_tag" type
+                                               (:typedef ("a_row_tag" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3646 3677])
+                                            ("action_call" function
+                                               (:arguments 
+                                                  ( ("fsm" variable
+                                                       (:reference 1
+                                                        :type ("FSM" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3828 3837])
+                                                    ("evt" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("EVT" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3837 3852])
+                                                    ("src" variable
+                                                       (:reference 1
+                                                        :type ("SourceState" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3852 3869])
+                                                    ("tgt" variable
+                                                       (:reference 1
+                                                        :type ("TargetState" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3869 3886])
+                                                    ("" variable
+                                                       (:reference 1
+                                                        :type ("AllStates" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3887 3898]))                                                  
+                                                :type ("boost::msm::back::HandledEnum" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3786 4056]))                                          
+                                        :template-specifier 
+                                          ( ("SOURCE" type nil nil nil)
+                                            ("EVENT" type nil nil nil)
+                                            ("TARGET" type nil nil nil)
+                                            ("ACTION" type nil nil nil)
+                                            ("none" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [3347 4063])
+                                    ("Row" type
+                                       (:template 
+                                          ( ("SOURCE" type (:type "class") nil nil)
+                                            ("EVENT" type (:type "class") nil nil)
+                                            ("TARGET" type (:type "class") nil nil)
+                                            ("GUARD" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("Source" type
+                                               (:typedef ("SOURCE" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4189 4212])
+                                            ("Evt" type
+                                               (:typedef ("EVENT" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4221 4241])
+                                            ("Target" type
+                                               (:typedef ("TARGET" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4250 4273])
+                                            ("Action" type
+                                               (:typedef ("none" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4282 4305])
+                                            ("Guard" type
+                                               (:typedef ("GUARD" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4314 4336])
+                                            ("row_type_tag" type
+                                               (:typedef ("g_row_tag" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4366 4397])
+                                            ("guard_call" function
+                                               (:template 
+                                                  ( ("EVT" type (:type "class") nil nil)
+                                                    ("FSM" type (:type "class") nil nil)
+                                                    ("SourceState" type (:type "class") nil nil)
+                                                    ("TargetState" type (:type "class") nil nil)
+                                                    ("AllStates" type (:type "class") nil nil))                                                  
+                                                :type "bool"
+                                                :arguments 
+                                                  ( ("fsm" variable
+                                                       (:reference 1
+                                                        :type ("FSM" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4520 4529])
+                                                    ("evt" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("EVT" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4529 4544])
+                                                    ("src" variable
+                                                       (:reference 1
+                                                        :type ("SourceState" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4544 4561])
+                                                    ("tgt" variable
+                                                       (:reference 1
+                                                        :type ("TargetState" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4561 4578])
+                                                    ("" variable
+                                                       (:reference 1
+                                                        :type ("AllStates" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4579 4590]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [4406 4694]))                                          
+                                        :template-specifier 
+                                          ( ("SOURCE" type nil nil nil)
+                                            ("EVENT" type nil nil nil)
+                                            ("TARGET" type nil nil nil)
+                                            ("none" type nil nil nil)
+                                            ("GUARD" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [4068 4701])
+                                    ("Row" type
+                                       (:template 
+                                          ( ("SOURCE" type (:type "class") nil nil)
+                                            ("EVENT" type (:type "class") nil nil)
+                                            ("ACTION" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("Source" type
+                                               (:typedef ("SOURCE" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4842 4865])
+                                            ("Evt" type
+                                               (:typedef ("EVENT" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4874 4894])
+                                            ("Target" type
+                                               (:typedef ("Source" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4903 4926])
+                                            ("Action" type
+                                               (:typedef ("ACTION" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4935 4958])
+                                            ("Guard" type
+                                               (:typedef ("none" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4967 4989])
+                                            ("row_type_tag" type
+                                               (:typedef ("a_irow_tag" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5018 5050])
+                                            ("action_call" function
+                                               (:arguments 
+                                                  ( ("fsm" variable
+                                                       (:reference 1
+                                                        :type ("FSM" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5201 5210])
+                                                    ("evt" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("EVT" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5210 5225])
+                                                    ("src" variable
+                                                       (:reference 1
+                                                        :type ("SourceState" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5225 5242])
+                                                    ("tgt" variable
+                                                       (:reference 1
+                                                        :type ("TargetState" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5242 5259])
+                                                    ("" variable
+                                                       (:reference 1
+                                                        :type ("AllStates" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5260 5271]))                                                  
+                                                :type ("boost::msm::back::HandledEnum" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [5159 5429]))                                          
+                                        :template-specifier 
+                                          ( ("SOURCE" type nil nil nil)
+                                            ("EVENT" type nil nil nil)
+                                            ("none" type nil nil nil)
+                                            ("ACTION" type nil nil nil)
+                                            ("none" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [4734 5436])
+                                    ("Row" type
+                                       (:template 
+                                          ( ("SOURCE" type (:type "class") nil nil)
+                                            ("EVENT" type (:type "class") nil nil)
+                                            ("GUARD" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("Source" type
+                                               (:typedef ("SOURCE" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5547 5570])
+                                            ("Evt" type
+                                               (:typedef ("EVENT" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5579 5599])
+                                            ("Target" type
+                                               (:typedef ("Source" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5608 5631])
+                                            ("Action" type
+                                               (:typedef ("none" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5640 5663])
+                                            ("Guard" type
+                                               (:typedef ("GUARD" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5672 5694])
+                                            ("row_type_tag" type
+                                               (:typedef ("g_irow_tag" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5724 5756])
+                                            ("guard_call" function
+                                               (:template 
+                                                  ( ("EVT" type (:type "class") nil nil)
+                                                    ("FSM" type (:type "class") nil nil)
+                                                    ("SourceState" type (:type "class") nil nil)
+                                                    ("TargetState" type (:type "class") nil nil)
+                                                    ("AllStates" type (:type "class") nil nil))                                                  
+                                                :type "bool"
+                                                :arguments 
+                                                  ( ("fsm" variable
+                                                       (:reference 1
+                                                        :type ("FSM" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5879 5888])
+                                                    ("evt" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("EVT" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5888 5903])
+                                                    ("src" variable
+                                                       (:reference 1
+                                                        :type ("SourceState" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5903 5920])
+                                                    ("tgt" variable
+                                                       (:reference 1
+                                                        :type ("TargetState" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5920 5937])
+                                                    ("" variable
+                                                       (:reference 1
+                                                        :type ("AllStates" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5938 5949]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [5765 6053]))                                          
+                                        :template-specifier 
+                                          ( ("SOURCE" type nil nil nil)
+                                            ("EVENT" type nil nil nil)
+                                            ("none" type nil nil nil)
+                                            ("none" type nil nil nil)
+                                            ("GUARD" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [5441 6060])
+                                    ("Row" type
+                                       (:template 
+                                          ( ("SOURCE" type (:type "class") nil nil)
+                                            ("EVENT" type (:type "class") nil nil)
+                                            ("ACTION" type (:type "class") nil nil)
+                                            ("GUARD" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("Source" type
+                                               (:typedef ("SOURCE" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6186 6209])
+                                            ("Evt" type
+                                               (:typedef ("EVENT" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6218 6238])
+                                            ("Target" type
+                                               (:typedef ("Source" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6247 6270])
+                                            ("Action" type
+                                               (:typedef ("ACTION" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6279 6302])
+                                            ("Guard" type
+                                               (:typedef ("GUARD" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6311 6333])
+                                            ("row_type_tag" type
+                                               (:typedef ("irow_tag" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6368 6398])
+                                            ("action_call" function
+                                               (:arguments 
+                                                  ( ("fsm" variable
+                                                       (:reference 1
+                                                        :type ("FSM" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6549 6558])
+                                                    ("evt" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("EVT" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6558 6573])
+                                                    ("src" variable
+                                                       (:reference 1
+                                                        :type ("SourceState" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6573 6590])
+                                                    ("tgt" variable
+                                                       (:reference 1
+                                                        :type ("TargetState" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6590 6607])
+                                                    ("" variable
+                                                       (:reference 1
+                                                        :type ("AllStates" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6608 6619]))                                                  
+                                                :type ("boost::msm::back::HandledEnum" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [6507 6777])
+                                            ("guard_call" function
+                                               (:template 
+                                                  ( ("EVT" type (:type "class") nil nil)
+                                                    ("FSM" type (:type "class") nil nil)
+                                                    ("SourceState" type (:type "class") nil nil)
+                                                    ("TargetState" type (:type "class") nil nil)
+                                                    ("AllStates" type (:type "class") nil nil))                                                  
+                                                :type "bool"
+                                                :arguments 
+                                                  ( ("fsm" variable
+                                                       (:reference 1
+                                                        :type ("FSM" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6900 6909])
+                                                    ("evt" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("EVT" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6909 6924])
+                                                    ("src" variable
+                                                       (:reference 1
+                                                        :type ("SourceState" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6924 6941])
+                                                    ("tgt" variable
+                                                       (:reference 1
+                                                        :type ("TargetState" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6941 6958])
+                                                    ("" variable
+                                                       (:reference 1
+                                                        :type ("AllStates" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6959 6970]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [6786 7074]))                                          
+                                        :template-specifier 
+                                          ( ("SOURCE" type nil nil nil)
+                                            ("EVENT" type nil nil nil)
+                                            ("none" type nil nil nil)
+                                            ("ACTION" type nil nil nil)
+                                            ("GUARD" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [6065 7081])
+                                    ("Row" type
+                                       (:template 
+                                          ( ("SOURCE" type (:type "class") nil nil)
+                                            ("EVENT" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("Source" type
+                                               (:typedef ("SOURCE" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [7179 7202])
+                                            ("Evt" type
+                                               (:typedef ("EVENT" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [7211 7231])
+                                            ("Target" type
+                                               (:typedef ("Source" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [7240 7263])
+                                            ("Action" type
+                                               (:typedef ("none" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [7272 7295])
+                                            ("Guard" type
+                                               (:typedef ("none" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [7304 7326])
+                                            ("row_type_tag" type
+                                               (:typedef ("_irow_tag" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [7366 7397]))                                          
+                                        :template-specifier 
+                                          ( ("SOURCE" type nil nil nil)
+                                            ("EVENT" type nil nil nil)
+                                            ("none" type nil nil nil)
+                                            ("none" type nil nil nil)
+                                            ("none" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [7086 7404])
+                                    ("get_row_target" type
+                                       (:template 
+                                          ( ("TGT" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("TGT::Target" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [7469 7503]))                                          )
+                                        (reparse-symbol namespacesubparts) [7409 7510])
+                                    ("Internal" type
+                                       (:template 
+                                          ( ("EVENT" type (:type "class") nil nil)
+                                            ("ACTION" type (:type "class") nil nil)
+                                            ("GUARD" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("Evt" type
+                                               (:typedef ("EVENT" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [7608 7628])
+                                            ("Action" type
+                                               (:typedef ("ACTION" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [7637 7660])
+                                            ("Guard" type
+                                               (:typedef ("GUARD" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [7669 7691])
+                                            ("row_type_tag" type
+                                               (:typedef ("sm_i_row_tag" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [7729 7763])
+                                            ("action_call" function
+                                               (:arguments 
+                                                  ( ("fsm" variable
+                                                       (:reference 1
+                                                        :type ("FSM" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7914 7923])
+                                                    ("evt" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("EVT" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7923 7938])
+                                                    ("src" variable
+                                                       (:reference 1
+                                                        :type ("SourceState" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7938 7955])
+                                                    ("tgt" variable
+                                                       (:reference 1
+                                                        :type ("TargetState" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7955 7972])
+                                                    ("" variable
+                                                       (:reference 1
+                                                        :type ("AllStates" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7973 7984]))                                                  
+                                                :type ("boost::msm::back::HandledEnum" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [7872 8142])
+                                            ("guard_call" function
+                                               (:template 
+                                                  ( ("EVT" type (:type "class") nil nil)
+                                                    ("FSM" type (:type "class") nil nil)
+                                                    ("SourceState" type (:type "class") nil nil)
+                                                    ("TargetState" type (:type "class") nil nil)
+                                                    ("AllStates" type (:type "class") nil nil))                                                  
+                                                :type "bool"
+                                                :arguments 
+                                                  ( ("fsm" variable
+                                                       (:reference 1
+                                                        :type ("FSM" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8265 8274])
+                                                    ("evt" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("EVT" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8274 8289])
+                                                    ("src" variable
+                                                       (:reference 1
+                                                        :type ("SourceState" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8289 8306])
+                                                    ("tgt" variable
+                                                       (:reference 1
+                                                        :type ("TargetState" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8306 8323])
+                                                    ("" variable
+                                                       (:reference 1
+                                                        :type ("AllStates" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8324 8335]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [8151 8439]))                                          )
+                                        (reparse-symbol namespacesubparts) [7516 8446])
+                                    ("Internal" type
+                                       (:template 
+                                          ( ("EVENT" type (:type "class") nil nil)
+                                            ("ACTION" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("Evt" type
+                                               (:typedef ("EVENT" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [8540 8560])
+                                            ("Action" type
+                                               (:typedef ("ACTION" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [8569 8592])
+                                            ("Guard" type
+                                               (:typedef ("none" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [8601 8623])
+                                            ("row_type_tag" type
+                                               (:typedef ("sm_a_i_row_tag" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [8652 8688])
+                                            ("action_call" function
+                                               (:arguments 
+                                                  ( ("fsm" variable
+                                                       (:reference 1
+                                                        :type ("FSM" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8839 8848])
+                                                    ("evt" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("EVT" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8848 8863])
+                                                    ("src" variable
+                                                       (:reference 1
+                                                        :type ("SourceState" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8863 8880])
+                                                    ("tgt" variable
+                                                       (:reference 1
+                                                        :type ("TargetState" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8880 8897])
+                                                    ("" variable
+                                                       (:reference 1
+                                                        :type ("AllStates" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8898 8909]))                                                  
+                                                :type ("boost::msm::back::HandledEnum" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [8797 9067]))                                          
+                                        :template-specifier 
+                                          ( ("EVENT" type nil nil nil)
+                                            ("ACTION" type nil nil nil)
+                                            ("none" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [8452 9074])
+                                    ("Internal" type
+                                       (:template 
+                                          ( ("EVENT" type (:type "class") nil nil)
+                                            ("GUARD" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("Evt" type
+                                               (:typedef ("EVENT" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [9165 9185])
+                                            ("Action" type
+                                               (:typedef ("none" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [9194 9217])
+                                            ("Guard" type
+                                               (:typedef ("GUARD" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [9226 9248])
+                                            ("row_type_tag" type
+                                               (:typedef ("sm_g_i_row_tag" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [9278 9314])
+                                            ("guard_call" function
+                                               (:template 
+                                                  ( ("EVT" type (:type "class") nil nil)
+                                                    ("FSM" type (:type "class") nil nil)
+                                                    ("SourceState" type (:type "class") nil nil)
+                                                    ("TargetState" type (:type "class") nil nil)
+                                                    ("AllStates" type (:type "class") nil nil))                                                  
+                                                :type "bool"
+                                                :arguments 
+                                                  ( ("fsm" variable
+                                                       (:reference 1
+                                                        :type ("FSM" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [9437 9446])
+                                                    ("evt" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("EVT" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [9446 9461])
+                                                    ("src" variable
+                                                       (:reference 1
+                                                        :type ("SourceState" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [9461 9478])
+                                                    ("tgt" variable
+                                                       (:reference 1
+                                                        :type ("TargetState" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [9478 9495])
+                                                    ("" variable
+                                                       (:reference 1
+                                                        :type ("AllStates" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [9496 9507]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [9323 9611]))                                          
+                                        :template-specifier 
+                                          ( ("EVENT" type nil nil nil)
+                                            ("none" type nil nil nil)
+                                            ("GUARD" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [9079 9618])
+                                    ("Internal" type
+                                       (:template 
+                                          ( ("EVENT" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("Evt" type
+                                               (:typedef ("EVENT" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [9696 9716])
+                                            ("Action" type
+                                               (:typedef ("none" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [9725 9748])
+                                            ("Guard" type
+                                               (:typedef ("none" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [9757 9779])
+                                            ("row_type_tag" type
+                                               (:typedef ("sm__i_row_tag" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [9819 9854]))                                          
+                                        :template-specifier 
+                                          ( ("EVENT" type nil nil nil)
+                                            ("none" type nil nil nil)
+                                            ("none" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [9623 9861])
+                                    ("event_tag" type (:type "struct") (reparse-symbol namespacesubparts) [9866 9885])
+                                    ("action_tag" type (:type "struct") (reparse-symbol namespacesubparts) [9890 9910])
+                                    ("state_action_tag" type (:type "struct") (reparse-symbol namespacesubparts) [9915 9941])
+                                    ("flag_tag" type (:type "struct") (reparse-symbol namespacesubparts) [9946 9964])
+                                    ("config_tag" type (:type "struct") (reparse-symbol namespacesubparts) [9969 9989])
+                                    ("not_euml_tag" type (:type "struct") (reparse-symbol namespacesubparts) [9994 10016])
+                                    ("ActionSequence_" type
+                                       (:template 
+                                          ( ("Sequence" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("sequence" type
+                                               (:typedef ("Sequence" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [10089 10115])
+                                            ("some_deferring_actions" variable (:type "int") (reparse-symbol classsubparts) [10402 10425])
+                                            ("state_action_result" type
+                                               (:template 
+                                                  ( ("Event" type (:type "class") nil nil)
+                                                    ("FSM" type (:type "class") nil nil)
+                                                    ("STATE" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("type" type
+                                                       (:typedef ("void")
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [10539 10557]))                                                  )
+                                                (reparse-symbol classsubparts) [10435 10568])
+                                            ("Call" type
+                                               (:template 
+                                                  ( ("EVT" type (:type "class") nil nil)
+                                                    ("FSM" type (:type "class") nil nil)
+                                                    ("STATE" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("Call" function
+                                                       (:constructor-flag t
+                                                        :arguments 
+                                                          ( ("evt" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("EVT" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [10667 10682])
+                                                            ("fsm" variable
+                                                               (:reference 1
+                                                                :type ("FSM" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [10682 10691])
+                                                            ("state" variable
+                                                               (:reference 1
+                                                                :type ("STATE" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [10691 10704]))                                                          
+                                                        :type ("Call" type (:type "struct") nil nil))
+                                                        (reparse-symbol classsubparts) [10662 10749])
+                                                    ("()" function
+                                                       (:template 
+                                                          ( ("FCT" type (:type "class") nil nil))                                                          
+                                                        :type "void"
+                                                        :arguments 
+                                                          ( ("" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("boost::msm::wrap" type
+                                                                     (:template-specifier 
+                                                                        ( ("FCT" type nil nil nil))                                                                        
+                                                                      :type "class")
+                                                                      nil nil))
+                                                                (reparse-symbol arg-sub-list) [10805 10835]))                                                          
+                                                        :operator-flag t)
+                                                        (reparse-symbol classsubparts) [10758 10892])
+                                                    ("private" label nil (reparse-symbol classsubparts) [10901 10909])
+                                                    ("evt_" variable (:type ("EVT" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10922 10939])
+                                                    ("fsm_" variable (:type ("FSM" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10952 10969])
+                                                    ("state_" variable (:type ("STATE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10982 11001]))                                                  )
+                                                (reparse-symbol classsubparts) [10577 11012])
+                                            ("transition_action_result" type
+                                               (:template 
+                                                  ( ("EVT" type (:type "class") nil nil)
+                                                    ("FSM" type (:type "class") nil nil)
+                                                    ("SourceState" type (:type "class") nil nil)
+                                                    ("TargetState" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("type" type
+                                                       (:typedef ("void")
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [11151 11169]))                                                  )
+                                                (reparse-symbol classsubparts) [11021 11180])
+                                            ("Call2" type
+                                               (:template 
+                                                  ( ("EVT" type (:type "class") nil nil)
+                                                    ("FSM" type (:type "class") nil nil)
+                                                    ("SourceState" type (:type "class") nil nil)
+                                                    ("TargetState" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("Call2" function
+                                                       (:constructor-flag t
+                                                        :arguments 
+                                                          ( ("evt" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("EVT" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [11305 11320])
+                                                            ("fsm" variable
+                                                               (:reference 1
+                                                                :type ("FSM" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [11320 11329])
+                                                            ("src" variable
+                                                               (:reference 1
+                                                                :type ("SourceState" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [11329 11346])
+                                                            ("tgt" variable
+                                                               (:reference 1
+                                                                :type ("TargetState" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [11346 11363]))                                                          
+                                                        :type ("Call2" type (:type "struct") nil nil))
+                                                        (reparse-symbol classsubparts) [11299 11414])
+                                                    ("()" function
+                                                       (:template 
+                                                          ( ("FCT" type (:type "class") nil nil))                                                          
+                                                        :type "void"
+                                                        :arguments 
+                                                          ( ("" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("boost::msm::wrap" type
+                                                                     (:template-specifier 
+                                                                        ( ("FCT" type nil nil nil))                                                                        
+                                                                      :type "class")
+                                                                      nil nil))
+                                                                (reparse-symbol arg-sub-list) [11470 11500]))                                                          
+                                                        :operator-flag t)
+                                                        (reparse-symbol classsubparts) [11423 11560])
+                                                    ("private" label nil (reparse-symbol classsubparts) [11569 11577])
+                                                    ("evt_" variable (:type ("EVT" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11590 11607])
+                                                    ("fsm_" variable (:type ("FSM" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11620 11630])
+                                                    ("src_" variable (:type ("SourceState" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11643 11661])
+                                                    ("tgt_" variable (:type ("TargetState" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11674 11692]))                                                  )
+                                                (reparse-symbol classsubparts) [11189 11703])
+                                            ("tag_type" variable (:type ("boost::mpl::set" type
+                                                 (:template-specifier 
+                                                    ( ("state_action_tag" type nil nil nil)
+                                                      ("action_tag" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [11723 11777])
+                                            ("()" function
+                                               (:template 
+                                                  ( ("EVT" type (:type "class") nil nil)
+                                                    ("FSM" type (:type "class") nil nil)
+                                                    ("STATE" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("evt" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("EVT" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [11854 11869])
+                                                    ("fsm" variable
+                                                       (:reference 1
+                                                        :type ("FSM" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [11869 11878])
+                                                    ("state" variable
+                                                       (:reference 1
+                                                        :type ("STATE" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [11878 11891]))                                                  
+                                                :operator-flag t)
+                                                (reparse-symbol classsubparts) [11787 12052])
+                                            ("()" function
+                                               (:template 
+                                                  ( ("EVT" type (:type "class") nil nil)
+                                                    ("FSM" type (:type "class") nil nil)
+                                                    ("SourceState" type (:type "class") nil nil)
+                                                    ("TargetState" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("evt" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("EVT" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [12152 12167])
+                                                    ("fsm" variable
+                                                       (:reference 1
+                                                        :type ("FSM" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [12167 12176])
+                                                    ("src" variable
+                                                       (:reference 1
+                                                        :type ("SourceState" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [12176 12193])
+                                                    ("tgt" variable
+                                                       (:reference 1
+                                                        :type ("TargetState" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [12193 12210]))                                                  
+                                                :operator-flag t)
+                                                (reparse-symbol classsubparts) [12061 12392]))                                          )
+                                        (reparse-symbol namespacesubparts) [10022 12399])
+                                    ("Defer" type
+                                       (:members 
+                                          ( ("deferring_action" type
+                                               (:typedef ("int")
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [12560 12589])
+                                            ("()" function
+                                               (:template 
+                                                  ( ("EVT" type (:type "class") nil nil)
+                                                    ("FSM" type (:type "class") nil nil)
+                                                    ("SourceState" type (:type "class") nil nil)
+                                                    ("TargetState" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("evt" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("EVT" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [12689 12704])
+                                                    ("fsm" variable
+                                                       (:reference 1
+                                                        :type ("FSM" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [12704 12713])
+                                                    ("" variable
+                                                       (:reference 1
+                                                        :type ("SourceState" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [12713 12727])
+                                                    ("" variable
+                                                       (:reference 1
+                                                        :type ("TargetState" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [12727 12741]))                                                  
+                                                :operator-flag t
+                                                :methodconst-flag t)
+                                                (reparse-symbol classsubparts) [12598 12801]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [12456 12808]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1073 12810]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1057 12811]))                  
+                :type "namespace")
+                nil [1039 12812]))          
+      :file "functor_row.hpp"
+      :pointmax 12852
+      :fsize 12851
+      :lastmodtime '(22324 21863 0 0)
+      :unmatched-syntax '((punctuation 11722 . 11723) (punctuation 11721 . 11722) (TYPEDEF 11713 . 11720) (punctuation 11469 . 11470) (punctuation 11468 . 11469) (punctuation 10804 . 10805) (punctuation 10803 . 10804) (punctuation 10400 . 10401) (number 10399 . 10400) (punctuation 10397 . 10398) (punctuation 10396 . 10397) (symbol 10390 . 10395) (punctuation 10389 . 10390) (punctuation 10388 . 10389) (punctuation 10387 . 10388) (punctuation 10372 . 10373) (symbol 10369 . 10371) (punctuation 10368 . 10369) (punctuation 10367 . 10368) (symbol 10355 . 10367) (punctuation 10354 . 10355) (punctuation 10353 . 10354) (symbol 10350 . 10353) (punctuation 10349 . 10350) (punctuation 10348 . 10349) (symbol 10343 . 10348) (punctuation 10342 . 10343) (punctuation 10341 . 10342) (punctuation 10339 . 10340) (symbol 10319 . 10339) (punctuation 10281 . 10282) (symbol 10273 . 10281) (punctuation 10272 . 10273) (symbol 10264 . 10272) (punctuation 10263 . 10264) (punctuation 10262 . 10263) (symbol 10259 . 10262) (punctuation 10258 . 10259) (punctuation 10257 . 10258) (symbol 10252 . 10257) (punctuation 10251 . 10252) (punctuation 10250 . 10251) (punctuation 10235 . 10236) (symbol 10230 . 10235) (punctuation 10229 . 10230) (punctuation 10228 . 10229) (symbol 10225 . 10228) (punctuation 10224 . 10225) (punctuation 10223 . 10224) (symbol 10218 . 10223) (punctuation 10217 . 10218) (punctuation 10216 . 10217) (TYPEDEF 10208 . 10215) (punctuation 8796 . 8797) (punctuation 8795 . 8796) (STATIC 8788 . 8794) (punctuation 8778 . 8779) (symbol 8769 . 8778) (CLASS 8763 . 8768) (punctuation 8762 . 8763) (symbol 8751 . 8762) (CLASS 8745 . 8750) (punctuation 8744 . 8745) (symbol 8733 . 8744) (CLASS 8727 . 8732) (punctuation 8726 . 8727) (symbol 8723 . 8726) (CLASS 8717 . 8722) (punctuation 8716 . 8717) (symbol 8713 . 8716) (CLASS 8707 . 8712) (punctuation 8706 . 8707) (TEMPLATE 8697 . 8705) (punctuation 7871 . 7872) (punctuation 7870 . 7871) (STATIC 7863 . 7869) (punctuation 7853 . 7854) (symbol 7844 . 7853) (CLASS 7838 . 7843) (punctuation 7837 . 7838) (symbol 7826 . 7837) (CLASS 7820 . 7825) (punctuation 7819 . 7820) (symbol 7808 . 7819) (CLASS 7802 . 7807) (punctuation 7801 . 7802) (symbol 7798 . 7801) (CLASS 7792 . 7797) (punctuation 7791 . 7792) (symbol 7788 . 7791) (CLASS 7782 . 7787) (punctuation 7781 . 7782) (TEMPLATE 7772 . 7780) (punctuation 6506 . 6507) (punctuation 6505 . 6506) (STATIC 6498 . 6504) (punctuation 6488 . 6489) (symbol 6479 . 6488) (CLASS 6473 . 6478) (punctuation 6472 . 6473) (symbol 6461 . 6472) (CLASS 6455 . 6460) (punctuation 6454 . 6455) (symbol 6443 . 6454) (CLASS 6437 . 6442) (punctuation 6436 . 6437) (symbol 6433 . 6436) (CLASS 6427 . 6432) (punctuation 6426 . 6427) (symbol 6423 . 6426) (CLASS 6417 . 6422) (punctuation 6416 . 6417) (TEMPLATE 6407 . 6415) (punctuation 5158 . 5159) (punctuation 5157 . 5158) (STATIC 5150 . 5156) (punctuation 5140 . 5141) (symbol 5131 . 5140) (CLASS 5125 . 5130) (punctuation 5124 . 5125) (symbol 5113 . 5124) (CLASS 5107 . 5112) (punctuation 5106 . 5107) (symbol 5095 . 5106) (CLASS 5089 . 5094) (punctuation 5088 . 5089) (symbol 5085 . 5088) (CLASS 5079 . 5084) (punctuation 5078 . 5079) (symbol 5075 . 5078) (CLASS 5069 . 5074) (punctuation 5068 . 5069) (TEMPLATE 5059 . 5067) (punctuation 3785 . 3786) (punctuation 3784 . 3785) (STATIC 3777 . 3783) (punctuation 3767 . 3768) (symbol 3758 . 3767) (CLASS 3752 . 3757) (punctuation 3751 . 3752) (symbol 3740 . 3751) (CLASS 3734 . 3739) (punctuation 3733 . 3734) (symbol 3722 . 3733) (CLASS 3716 . 3721) (punctuation 3715 . 3716) (symbol 3712 . 3715) (CLASS 3706 . 3711) (punctuation 3705 . 3706) (symbol 3702 . 3705) (CLASS 3696 . 3701) (punctuation 3695 . 3696) (TEMPLATE 3686 . 3694) (punctuation 2430 . 2431) (punctuation 2429 . 2430) (STATIC 2422 . 2428) (punctuation 2412 . 2413) (symbol 2403 . 2412) (CLASS 2397 . 2402) (punctuation 2396 . 2397) (symbol 2385 . 2396) (CLASS 2379 . 2384) (punctuation 2378 . 2379) (symbol 2367 . 2378) (CLASS 2361 . 2366) (punctuation 2360 . 2361) (symbol 2357 . 2360) (CLASS 2351 . 2356) (punctuation 2350 . 2351) (symbol 2347 . 2350) (CLASS 2341 . 2346) (punctuation 2340 . 2341) (TEMPLATE 2331 . 2339) (punctuation 1989 . 1990) (semantic-list 1794 . 1989) (punctuation 1787 . 1788) (symbol 1778 . 1782) (punctuation 1777 . 1778) (punctuation 1776 . 1777) (punctuation 1775 . 1776) (symbol 1762 . 1766) (punctuation 1761 . 1762) (punctuation 1760 . 1761) (punctuation 1759 . 1760) (symbol 1755 . 1759) (punctuation 1754 . 1755) (symbol 1728 . 1754) (TYPENAME 1719 . 1727) (punctuation 1701 . 1702) (symbol 1692 . 1701) (punctuation 1691 . 1692) (punctuation 1690 . 1691) (symbol 1685 . 1690) (punctuation 1684 . 1685) (punctuation 1683 . 1684) (TYPENAME 1674 . 1682) (punctuation 1663 . 1664) (symbol 1659 . 1663) (punctuation 1658 . 1659) (symbol 1634 . 1658) (STRUCT 1627 . 1633) (punctuation 1621 . 1622) (symbol 1617 . 1621) (CLASS 1611 . 1616) (punctuation 1610 . 1611) (TEMPLATE 1601 . 1609) (punctuation 1574 . 1575) (semantic-list 1468 . 1574) (punctuation 1461 . 1462) (symbol 1452 . 1456) (punctuation 1451 . 1452) (punctuation 1450 . 1451) (punctuation 1449 . 1450) (symbol 1435 . 1439) (punctuation 1434 . 1435) (punctuation 1433 . 1434) (punctuation 1432 . 1433) (symbol 1428 . 1432) (punctuation 1427 . 1428) (symbol 1407 . 1427) (TYPENAME 1398 . 1406) (punctuation 1384 . 1385) (symbol 1375 . 1384) (punctuation 1374 . 1375) (punctuation 1373 . 1374) (symbol 1368 . 1373) (punctuation 1367 . 1368) (punctuation 1366 . 1367) (TYPENAME 1357 . 1365) (punctuation 1346 . 1347) (symbol 1342 . 1346) (punctuation 1341 . 1342) (symbol 1317 . 1341) (STRUCT 1310 . 1316) (punctuation 1304 . 1305) (symbol 1300 . 1304) (CLASS 1294 . 1299) (punctuation 1293 . 1294) (TEMPLATE 1284 . 1292) (punctuation 1240 . 1241) (punctuation 1239 . 1240) (punctuation 1237 . 1238) (symbol 1231 . 1236) (symbol 1219 . 1230) (punctuation 1218 . 1219) (punctuation 1217 . 1218) (symbol 1213 . 1217) (punctuation 1212 . 1213) (punctuation 1211 . 1212) (symbol 1208 . 1211) (punctuation 1207 . 1208) (punctuation 1206 . 1207) (symbol 1201 . 1206) (punctuation 1200 . 1201) (punctuation 1199 . 1200) (CONST 1193 . 1198) (STATIC 1186 . 1192) (punctuation 1133 . 1134) (VOID 1129 . 1133) (punctuation 1128 . 1129) (symbol 1122 . 1128) (CLASS 1116 . 1121) (punctuation 1115 . 1116) (symbol 1111 . 1115) (CLASS 1105 . 1110) (punctuation 1104 . 1105) (TEMPLATE 1095 . 1103) (semantic-list 1009 . 1033) (symbol 982 . 1009) (semantic-list 963 . 981) (symbol 936 . 963) (semantic-list 932 . 934) (symbol 891 . 932) (symbol 883 . 890) (punctuation 882 . 883))
+      :lexical-table 
+        '(("BOOST_MSM_FRONT_FUNCTOR_ROW_H")
+          )
+)
+    (semanticdb-table "states.hpp"
+      :file "states.hpp"
+      :fsize 4843
+      :lastmodtime '(22324 21863 0 0))
+    (semanticdb-table "completion_event.hpp"
+      :file "completion_event.hpp"
+      :fsize 956
+      :lastmodtime '(22324 21863 0 0))
+    (semanticdb-table "common_states.hpp"
+      :file "common_states.hpp"
+      :fsize 1163
+      :lastmodtime '(22324 21863 0 0)))
+  :file "!usr!include!boost!msm!front!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

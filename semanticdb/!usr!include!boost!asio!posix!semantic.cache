@@ -1,0 +1,78 @@
+;; Object posix/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "posix/"
+  :tables
+  (list
+    (semanticdb-table "basic_descriptor.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ASIO_POSIX_BASIC_DESCRIPTOR_HPP" variable (:constant-flag t) nil [360 397])
+            ("boost/asio/detail/config.hpp" include (:system-flag t) nil [508 547]))          
+      :file "basic_descriptor.hpp"
+      :pointmax 17280
+      :fsize 17279
+      :lastmodtime '(22452 53217 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ASIO_POSIX_BASIC_DESCRIPTOR_HPP")
+          )
+)
+    (semanticdb-table "basic_stream_descriptor.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ASIO_POSIX_BASIC_STREAM_DESCRIPTOR_HPP" variable (:constant-flag t) nil [381 425])
+            ("boost/asio/detail/config.hpp" include (:system-flag t) nil [536 575]))          
+      :file "basic_stream_descriptor.hpp"
+      :pointmax 14391
+      :fsize 14390
+      :lastmodtime '(22452 53217 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ASIO_POSIX_BASIC_STREAM_DESCRIPTOR_HPP")
+          )
+)
+    (semanticdb-table "descriptor_base.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ASIO_POSIX_DESCRIPTOR_BASE_HPP" variable (:constant-flag t) nil [357 393])
+            ("boost/asio/detail/config.hpp" include (:system-flag t) nil [504 543]))          
+      :file "descriptor_base.hpp"
+      :pointmax 2693
+      :fsize 2692
+      :lastmodtime '(22452 53217 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ASIO_POSIX_DESCRIPTOR_BASE_HPP")
+          )
+)
+    (semanticdb-table "stream_descriptor.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ASIO_POSIX_STREAM_DESCRIPTOR_HPP" variable (:constant-flag t) nil [363 401])
+            ("boost/asio/detail/config.hpp" include (:system-flag t) nil [512 551]))          
+      :file "stream_descriptor.hpp"
+      :pointmax 1099
+      :fsize 1098
+      :lastmodtime '(22452 53217 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ASIO_POSIX_STREAM_DESCRIPTOR_HPP")
+          )
+)
+    (semanticdb-table "stream_descriptor_service.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ASIO_POSIX_STREAM_DESCRIPTOR_SERVICE_HPP" variable (:constant-flag t) nil [387 433])
+            ("boost/asio/detail/config.hpp" include (:system-flag t) nil [544 583]))          
+      :file "stream_descriptor_service.hpp"
+      :pointmax 8176
+      :fsize 8175
+      :lastmodtime '(22452 53217 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ASIO_POSIX_STREAM_DESCRIPTOR_SERVICE_HPP")
+          )
+))
+  :file "!usr!include!boost!asio!posix!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

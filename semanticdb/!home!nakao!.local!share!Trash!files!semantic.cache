@@ -1,0 +1,114 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("INCLUDE_GUARD_CORE_HPP" variable (:constant-flag t) nil [40 62])
+            ("cstdlib" include (:system-flag t) nil [64 82])
+            ("iostream" include (:system-flag t) nil [83 102])
+            ("boost/asio.hpp" include (:system-flag t) nil [103 128])
+            ("boost/optional.hpp" include (:system-flag t) nil [129 158])
+            ("set" include (:system-flag t) nil [159 173])
+            ("type_erasure.hpp" include nil nil [174 201])
+            ("server_client_session.hpp" include nil nil [202 238])
+            ("server_client_session" type
+               (:prototype t
+                :type "class")
+                nil [240 268])
+            ("core" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [307 314])
+                    ("core" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("io_service" variable
+                               (:reference 1
+                                :type ("boost::asio::io_service" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [413 449])
+                            ("con_port" variable (:type ("std::uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [458 481]))                          
+                        :type ("core" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [399 740])
+                    ("core" function
+                       (:constructor-flag t
+                        :type ("core" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [746 765])
+                    ("set_server_list" function
+                       (:arguments 
+                          ( ("s_sp" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ns::abstract_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [792 822]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [771 862])
+                    ("set_server_client_list" function
+                       (:arguments 
+                          ( ("sc_sp" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ns::abstract_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [896 927]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [868 970])
+                    ("set_client_list" function
+                       (:arguments 
+                          ( ("c_sp" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ns::abstract_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [997 1027]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [976 1067])
+                    ("handle_add_client_list_c" function (:type "void") (reparse-symbol classsubparts) [1073 1731])
+                    ("handle_add_client_list_b" function
+                       (:arguments 
+                          ( ("sp" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ns::abstract_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1767 1795]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1737 2382])
+                    ("public" label nil (reparse-symbol classsubparts) [2384 2391])
+                    ("client_count_" variable
+                       (:default-value "0"
+                        :type ("std::uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2396 2428])
+                    ("private" label nil (reparse-symbol classsubparts) [2430 2438])
+                    ("s_sp_set_" variable (:type ("std::set" type
+                         (:template-specifier 
+                            ( ("ns::abstract_type" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2443 2481])
+                    ("s_c_sp_set_" variable (:type ("std::set" type
+                         (:template-specifier 
+                            ( ("ns::abstract_type" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2495 2535])
+                    ("c_sp_set_" variable (:type ("std::set" type
+                         (:template-specifier 
+                            ( ("ns::abstract_type" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2556 2594])
+                    ("cport_" variable (:type ("boost::optional" type
+                         (:template-specifier 
+                            ( ("std::uint16_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2609 2647]))                  
+                :type "class")
+                nil [294 2650]))          
+      :file "core.2.hpp"
+      :pointmax 2685
+      :fsize 2684
+      :lastmodtime '(22693 27215 411253 191000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("INCLUDE_GUARD_CORE_HPP")
+          )
+))
+  :file "!home!nakao!.local!share!Trash!files!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

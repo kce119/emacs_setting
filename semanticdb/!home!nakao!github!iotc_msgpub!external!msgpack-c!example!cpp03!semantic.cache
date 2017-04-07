@@ -1,0 +1,104 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("msgpack.hpp" include (:system-flag t) nil [273 295])
+            ("string" include (:system-flag t) nil [296 313])
+            ("iostream" include (:system-flag t) nil [314 333])
+            ("sstream" include (:system-flag t) nil [334 352])
+            ("myprotocol" type
+               (:members 
+                  ( ("msgpack::type" using (:type ("msgpack::type" type
+                         (:prototype t
+                          :type "namespace")
+                          nil nil)) (reparse-symbol namespacesubparts) [440 470])
+                    ("msgpack::define" using (:type ("msgpack::define" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [475 497])
+                    ("Get" type
+                       (:superclasses 
+                          ( ("define" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("Get" function
+                               (:constructor-flag t
+                                :type ("Get" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [565 574])
+                            ("Get" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("f" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [587 598])
+                                    ("k" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [599 620]))                                  
+                                :type ("Get" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [583 670])
+                            ("flags" function (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [679 740])
+                            ("key" function (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [749 810]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [503 817])
+                    ("Put" type
+                       (:superclasses 
+                          ( ("define" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("Put" function
+                               (:constructor-flag t
+                                :type ("Put" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [894 903])
+                            ("Put" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("f" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [916 927])
+                                    ("k" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [928 949])
+                                    ("valref" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [950 969])
+                                    ("vallen" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [970 986]))                                  
+                                :type ("Put" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [912 1062])
+                            ("flags" function (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1071 1132])
+                            ("key" function (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1141 1202])
+                            ("value" function (:type ("raw_ref" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1211 1272]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [823 1279])
+                    ("MultiGet" type
+                       (:superclasses 
+                          ( ("define" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1285 1338]))                  
+                :type "namespace")
+                nil [413 1340])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1352 1357]))                  
+                :type "int")
+                nil [1343 2542]))          
+      :file "protocol.cpp"
+      :pointmax 2543
+      :fsize 2542
+      :lastmodtime '(22486 26330 6666 669000)
+      :unmatched-syntax nil))
+  :file "!home!nakao!github!iotc_msgpub!external!msgpack-c!example!cpp03!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

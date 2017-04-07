@@ -1,0 +1,213 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BEAST_TEST_FAIL_STREAM_HPP" variable (:constant-flag t) nil [283 309])
+            ("beast/core/async_completion.hpp" include (:system-flag t) nil [311 353])
+            ("beast/core/bind_handler.hpp" include (:system-flag t) nil [354 392])
+            ("beast/core/error.hpp" include (:system-flag t) nil [393 424])
+            ("beast/core/detail/get_lowest_layer.hpp" include (:system-flag t) nil [425 474])
+            ("beast/websocket/teardown.hpp" include (:system-flag t) nil [475 514])
+            ("beast/test/fail_counter.hpp" include (:system-flag t) nil [515 553])
+            ("boost/optional.hpp" include (:system-flag t) nil [554 583])
+            ("beast" type
+               (:members 
+                  ( ("test" type
+                       (:members 
+                          ( ("fail_stream" type
+                               (:template 
+                                  ( ("NextLayer" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("fc_" variable (:type ("boost::optional" type
+                                         (:template-specifier 
+                                            ( ("fail_counter" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [837 871])
+                                    ("pfc_" variable
+                                       (:pointer 1
+                                        :type ("fail_counter" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [876 895])
+                                    ("next_layer_" variable (:type ("NextLayer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [900 922])
+                                    ("public" label nil (reparse-symbol classsubparts) [924 931])
+                                    ("std::remove_reference::type" variable
+                                       (:typemodifiers ("typename")
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [968 1016])
+                                    ("beast::detail::get_lowest_layer::type" variable
+                                       (:typemodifiers ("typename")
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1056 1133])
+                                    ("fail_stream" function
+                                       (:constructor-flag t
+                                        :typemodifiers ("explicit")
+                                        :arguments 
+                                          ( ("n" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1389 1403])
+                                            ("" variable
+                                               (:reference 1
+                                                :type ("Args" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1404 1410])
+                                            ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1414 1419]))                                          
+                                        :type ("fail_stream" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1364 1521])
+                                    ("fail_stream" function
+                                       (:constructor-flag t
+                                        :typemodifiers ("explicit")
+                                        :arguments 
+                                          ( ("fc" variable
+                                               (:reference 1
+                                                :type ("fail_counter" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1580 1597])
+                                            ("" variable
+                                               (:reference 1
+                                                :type ("Args" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1598 1604])
+                                            ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1608 1613]))                                          
+                                        :type ("fail_stream" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1555 1696])
+                                    ("next_layer" function (:type ("next_layer_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1702 1775])
+                                    ("lowest_layer" function (:type ("lowest_layer_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1781 1873])
+                                    ("lowest_layer" function
+                                       (:methodconst-flag t
+                                        :type ("lowest_layer_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1879 1983])
+                                    ("get_io_service" function (:type ("boost::asio::io_service" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1989 2091])
+                                    ("read_some" function
+                                       (:template 
+                                          ( ("MutableBufferSequence" type (:type "class") nil nil))                                          
+                                        :type ("std::size_t" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("buffers" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("MutableBufferSequence" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2165 2202]))                                          )
+                                        (reparse-symbol classsubparts) [2097 2283])
+                                    ("read_some" function
+                                       (:template 
+                                          ( ("MutableBufferSequence" type (:type "class") nil nil))                                          
+                                        :type ("std::size_t" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("buffers" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("MutableBufferSequence" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2357 2394])
+                                            ("ec" variable
+                                               (:reference 1
+                                                :type ("error_code" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2395 2410]))                                          )
+                                        (reparse-symbol classsubparts) [2289 2522])
+                                    ("async_read_some" function
+                                       (:arguments 
+                                          ( ("buffers" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("MutableBufferSequence" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2688 2725])
+                                            ("" variable
+                                               (:reference 1
+                                                :type ("ReadHandler" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2734 2747])
+                                            ("" variable (:type ("handler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2748 2756]))                                          
+                                        :type ("result_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2656 3220])
+                                    ("write_some" function
+                                       (:template 
+                                          ( ("ConstBufferSequence" type (:type "class") nil nil))                                          
+                                        :type ("std::size_t" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("buffers" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ConstBufferSequence" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3293 3328]))                                          )
+                                        (reparse-symbol classsubparts) [3226 3410])
+                                    ("write_some" function
+                                       (:template 
+                                          ( ("ConstBufferSequence" type (:type "class") nil nil))                                          
+                                        :type ("std::size_t" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("buffers" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ConstBufferSequence" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3483 3518])
+                                            ("ec" variable
+                                               (:reference 1
+                                                :type ("error_code" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3519 3534]))                                          )
+                                        (reparse-symbol classsubparts) [3416 3647])
+                                    ("async_write_some" function
+                                       (:arguments 
+                                          ( ("buffers" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ConstBufferSequence" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3814 3849])
+                                            ("" variable
+                                               (:reference 1
+                                                :type ("WriteHandler" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3858 3872])
+                                            ("" variable (:type ("handler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3873 3881]))                                          
+                                        :type ("result_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3781 4348])
+                                    ("teardown" function
+                                       (:typemodifiers ("friend")
+                                        :arguments 
+                                          ( ("" variable (:type ("websocket::teardown_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4383 4407])
+                                            ("stream" variable
+                                               (:reference 1
+                                                :type ("fail_stream" type
+                                                     (:template-specifier 
+                                                        ( ("NextLayer" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [4416 4447])
+                                            ("ec" variable
+                                               (:reference 1
+                                                :type ("boost::system::error_code" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4460 4490]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4354 4630])
+                                    ("async_teardown" function
+                                       (:template 
+                                          ( ("TeardownHandler" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("" variable (:type ("websocket::teardown_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4707 4731])
+                                            ("stream" variable
+                                               (:reference 1
+                                                :type ("fail_stream" type
+                                                     (:template-specifier 
+                                                        ( ("NextLayer" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [4740 4771])
+                                            ("" variable
+                                               (:reference 1
+                                                :type ("TeardownHandler" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4784 4801])
+                                            ("" variable (:type ("handler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4802 4810]))                                          )
+                                        (reparse-symbol classsubparts) [4636 5145]))                                  )
+                                (reparse-symbol namespacesubparts) [787 5148]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [603 5151]))                  
+                :type "namespace")
+                nil [585 5161]))          
+      :file "fail_stream.hpp"
+      :pointmax 5179
+      :fsize 5178
+      :lastmodtime '(22486 26367 776666 669000)
+      :unmatched-syntax '((punctuation 4800 . 4801) (punctuation 3871 . 3872) (punctuation 3780 . 3781) (punctuation 3779 . 3780) (punctuation 3778 . 3779) (semantic-list 3766 . 3778) (VOID 3762 . 3766) (punctuation 3760 . 3761) (symbol 3748 . 3760) (punctuation 3738 . 3739) (symbol 3722 . 3738) (TYPENAME 3713 . 3721) (punctuation 3707 . 3708) (symbol 3695 . 3707) (CLASS 3689 . 3694) (punctuation 3687 . 3688) (symbol 3668 . 3687) (CLASS 3662 . 3667) (punctuation 3661 . 3662) (TEMPLATE 3653 . 3661) (punctuation 2746 . 2747) (punctuation 2655 . 2656) (punctuation 2654 . 2655) (punctuation 2653 . 2654) (semantic-list 2641 . 2653) (VOID 2637 . 2641) (punctuation 2635 . 2636) (symbol 2624 . 2635) (punctuation 2614 . 2615) (symbol 2598 . 2614) (TYPENAME 2589 . 2597) (punctuation 2583 . 2584) (symbol 2572 . 2583) (CLASS 2566 . 2571) (punctuation 2564 . 2565) (symbol 2543 . 2564) (CLASS 2537 . 2542) (punctuation 2536 . 2537) (TEMPLATE 2528 . 2536) (punctuation 1606 . 1607) (punctuation 1605 . 1606) (punctuation 1604 . 1605) (punctuation 1603 . 1604) (punctuation 1549 . 1550) (symbol 1545 . 1549) (punctuation 1543 . 1544) (punctuation 1542 . 1543) (punctuation 1541 . 1542) (CLASS 1536 . 1541) (punctuation 1535 . 1536) (TEMPLATE 1527 . 1535) (punctuation 1412 . 1413) (punctuation 1411 . 1412) (punctuation 1410 . 1411) (punctuation 1409 . 1410) (punctuation 1358 . 1359) (symbol 1354 . 1358) (punctuation 1352 . 1353) (punctuation 1351 . 1352) (punctuation 1350 . 1351) (CLASS 1345 . 1350) (punctuation 1344 . 1345) (TEMPLATE 1336 . 1344) (punctuation 1329 . 1330) (DELETE 1323 . 1329) (punctuation 1321 . 1322) (semantic-list 1300 . 1320) (punctuation 1299 . 1300) (OPERATOR 1291 . 1299) (punctuation 1289 . 1290) (symbol 1278 . 1289) (punctuation 1272 . 1273) (DELETE 1266 . 1272) (punctuation 1264 . 1265) (semantic-list 1248 . 1263) (punctuation 1247 . 1248) (OPERATOR 1239 . 1247) (punctuation 1261 . 1262) (punctuation 1237 . 1238) (symbol 1226 . 1237) (punctuation 1261 . 1262) (punctuation 1220 . 1221) (DELETE 1214 . 1220) (punctuation 1212 . 1213) (semantic-list 1191 . 1211) (symbol 1180 . 1191) (punctuation 1174 . 1175) (DELETE 1168 . 1174) (punctuation 1166 . 1167) (semantic-list 1150 . 1165) (symbol 1139 . 1150) (punctuation 1163 . 1164) (punctuation 1046 . 1047) (symbol 1028 . 1045) (USING 1022 . 1027) (punctuation 958 . 959) (symbol 942 . 957) (USING 936 . 941))
+      :lexical-table 
+        '(("BEAST_TEST_FAIL_STREAM_HPP")
+          )
+))
+  :file "!home!nakao!github!iotc_msgpub!external!Beast!extras!beast!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

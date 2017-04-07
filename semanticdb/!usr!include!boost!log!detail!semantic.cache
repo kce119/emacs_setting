@@ -1,0 +1,554 @@
+;; Object detail/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "detail/"
+  :tables
+  (list
+    (semanticdb-table "locks.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_LOG_DETAIL_LOCKS_HPP_INCLUDED_" variable (:constant-flag t) nil [538 574])
+            ("boost/log/detail/config.hpp" include (:system-flag t) nil [576 614])
+            ("boost/log/detail/header.hpp" include (:system-flag t) nil [615 653])
+            ("boost" type
+               (:members 
+                  ( ("lock_guard" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [959 976])
+                    ("shared_lock" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [998 1016])
+                    ("upgrade_lock" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1038 1057])
+                    ("unique_lock" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1079 1097])
+                    ("is_mutex_type" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1120 1141])
+                    ("no_lock" type
+                       (:template 
+                          ( ("MutexT" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1328 1335])
+                            ("no_lock" function
+                               (:constructor-flag t
+                                :typemodifiers ("explicit")
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("MutexT" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1459 1467]))                                  
+                                :type ("no_lock" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1442 1470])
+                            ("private" label nil (reparse-symbol classsubparts) [1472 1480])
+                            ("no_lock" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("no_lock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1493 1508]))                                  
+                                :type ("no_lock" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1485 1509])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("no_lock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1534 1549]))                                  
+                                :type ("no_lock" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1514 1550]))                          )
+                        (reparse-symbol namespacesubparts) [1284 1553])
+                    ("aux" type
+                       (:members 
+                          ( ("is_exclusively_lockable" type
+                               (:template 
+                                  ( ("MutexT" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("true_type" type
+                                       (:typedef ("char")
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1729 1752])
+                                    ("false_type" type
+                                       (:members 
+                                          ( ("t" variable
+                                               (:dereference 1
+                                                :type "char")
+                                                (reparse-symbol classsubparts) [1777 1787]))                                          
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [1757 1790])
+                                    ("check_lockable" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type ("true_type" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("" variable
+                                               (:pointer 1
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1855 1858])
+                                            (nil variable (:suffix ":ݓݕ" :type "void") (reparse-symbol arg-sub-list) [1859 1878])
+                                            ("" variable (:type ("lock" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1879 1884])
+                                            (nil variable (:suffix ":ݭݯ" :type "void") (reparse-symbol arg-sub-list) [1885 1904])
+                                            ("" variable (:type ("unlock" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1905 1912]))                                          
+                                        :typemodifiers ("static")
+                                        :prototype-flag t)
+                                        (reparse-symbol classsubparts) [1796 1913])
+                                    ("check_lockable" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("" variable
+                                               (:pointer 1
+                                                :type "void")
+                                                (reparse-symbol arg-sub-list) [1951 1957]))                                          
+                                        :type ("false_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1918 1958])
+                                    ("value_t" type
+                                       (:members 
+                                          ( ("value" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [1979 1986]))                                          
+                                        :type "enum")
+                                        (reparse-symbol classsubparts) [1964 2048]))                                  )
+                                (reparse-symbol namespacesubparts) [1664 2051])
+                            ("is_shared_lockable" type
+                               (:template 
+                                  ( ("MutexT" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("true_type" type
+                                       (:typedef ("char")
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2172 2195])
+                                    ("false_type" type
+                                       (:members 
+                                          ( ("t" variable
+                                               (:dereference 1
+                                                :type "char")
+                                                (reparse-symbol classsubparts) [2220 2230]))                                          
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [2200 2233])
+                                    ("check_shared_lockable" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type ("true_type" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("" variable
+                                               (:pointer 1
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2305 2308])
+                                            (nil variable (:suffix ":कग" :type "void") (reparse-symbol arg-sub-list) [2309 2328])
+                                            ("" variable (:type ("lock_shared" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2329 2341])
+                                            (nil variable (:suffix ":शस" :type "void") (reparse-symbol arg-sub-list) [2342 2361])
+                                            ("" variable (:type ("unlock_shared" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2362 2376]))                                          
+                                        :typemodifiers ("static")
+                                        :prototype-flag t)
+                                        (reparse-symbol classsubparts) [2239 2377])
+                                    ("check_shared_lockable" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("" variable
+                                               (:pointer 1
+                                                :type "void")
+                                                (reparse-symbol arg-sub-list) [2422 2428]))                                          
+                                        :type ("false_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2382 2429])
+                                    ("value_t" type
+                                       (:members 
+                                          ( ("value" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2450 2457]))                                          
+                                        :type "enum")
+                                        (reparse-symbol classsubparts) [2435 2526]))                                  )
+                                (reparse-symbol namespacesubparts) [2112 2529])
+                            ("exclusive_lock_guard" type
+                               (:template 
+                                  ( ("MutexT" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("exclusive_lock_guard" function
+                                       (:constructor-flag t
+                                        :typemodifiers ("explicit")
+                                        :arguments 
+                                          ( ("m" variable
+                                               (:reference 1
+                                                :type ("MutexT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2729 2739]))                                          
+                                        :type ("exclusive_lock_guard" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [2699 2782])
+                                    ("exclusive_lock_guard" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2787 2848])
+                                    ("private" label nil (reparse-symbol classsubparts) [2850 2858])
+                                    ("exclusive_lock_guard" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("exclusive_lock_guard" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2884 2912]))                                          
+                                        :type ("exclusive_lock_guard" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [2863 2913])
+                                    ("=" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("exclusive_lock_guard" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2951 2979]))                                          
+                                        :type ("exclusive_lock_guard" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2918 2980])
+                                    ("private" label nil (reparse-symbol classsubparts) [2982 2990])
+                                    ("m_Mutex" variable (:type ("MutexT" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2995 3011]))                                  )
+                                (reparse-symbol namespacesubparts) [2637 3014])
+                            ("shared_lock_guard" type
+                               (:template 
+                                  ( ("MutexT" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("shared_lock_guard" function
+                                       (:constructor-flag t
+                                        :typemodifiers ("explicit")
+                                        :arguments 
+                                          ( ("m" variable
+                                               (:reference 1
+                                                :type ("MutexT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3211 3221]))                                          
+                                        :type ("shared_lock_guard" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [3184 3271])
+                                    ("shared_lock_guard" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3276 3341])
+                                    ("private" label nil (reparse-symbol classsubparts) [3343 3351])
+                                    ("shared_lock_guard" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("shared_lock_guard" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3374 3399]))                                          
+                                        :type ("shared_lock_guard" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [3356 3400])
+                                    ("=" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("shared_lock_guard" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3435 3460]))                                          
+                                        :type ("shared_lock_guard" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3405 3461])
+                                    ("private" label nil (reparse-symbol classsubparts) [3463 3471])
+                                    ("m_Mutex" variable (:type ("MutexT" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3476 3492]))                                  )
+                                (reparse-symbol namespacesubparts) [3125 3495])
+                            ("multiple_unique_lock2" type
+                               (:template 
+                                  ( ("MutexT1" type (:type "class") nil nil)
+                                    ("MutexT2" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [3639 3646])
+                                    ("multiple_unique_lock2" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("m1" variable
+                                               (:reference 1
+                                                :type ("MutexT1" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3673 3685])
+                                            ("m2" variable
+                                               (:reference 1
+                                                :type ("MutexT2" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3686 3698]))                                          
+                                        :type ("multiple_unique_lock2" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3651 4084])
+                                    ("multiple_unique_lock2" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4089 4173])
+                                    ("private" label nil (reparse-symbol classsubparts) [4175 4183])
+                                    ("m_p1" variable
+                                       (:pointer 1
+                                        :type ("MutexT1" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4188 4202])
+                                    ("m_p2" variable
+                                       (:pointer 1
+                                        :type ("MutexT2" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4207 4221]))                                  )
+                                (reparse-symbol namespacesubparts) [3562 4224]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1555 4259]))                  
+                :type "namespace")
+                nil [705 4323])
+            ("boost/log/detail/footer.hpp" include (:system-flag t) nil [4344 4382]))          
+      :file "locks.hpp"
+      :pointmax 4431
+      :fsize 4430
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax '((symbol 4278 . 4303) (semantic-list 2512 . 2523) (SIZEOF 2506 . 2512) (punctuation 2504 . 2505) (punctuation 2503 . 2504) (semantic-list 2464 . 2502) (SIZEOF 2458 . 2464) (punctuation 2456 . 2457) (semantic-list 2512 . 2523) (SIZEOF 2506 . 2512) (punctuation 2504 . 2505) (punctuation 2503 . 2504) (semantic-list 2464 . 2502) (SIZEOF 2458 . 2464) (punctuation 2456 . 2457) (punctuation 2361 . 2362) (punctuation 2360 . 2361) (punctuation 2328 . 2329) (punctuation 2327 . 2328) (semantic-list 2034 . 2045) (SIZEOF 2028 . 2034) (punctuation 2026 . 2027) (punctuation 2025 . 2026) (semantic-list 1993 . 2024) (SIZEOF 1987 . 1993) (punctuation 1985 . 1986) (semantic-list 2034 . 2045) (SIZEOF 2028 . 2034) (punctuation 2026 . 2027) (punctuation 2025 . 2026) (semantic-list 1993 . 2024) (SIZEOF 1987 . 1993) (punctuation 1985 . 1986) (punctuation 1904 . 1905) (punctuation 1903 . 1904) (punctuation 1878 . 1879) (punctuation 1877 . 1878) (symbol 1175 . 1199) (punctuation 1118 . 1119) (TYPENAME 1109 . 1117) (punctuation 1107 . 1108) (TEMPLATE 1099 . 1107) (punctuation 1077 . 1078) (TYPENAME 1068 . 1076) (punctuation 1066 . 1067) (TEMPLATE 1058 . 1066) (punctuation 1036 . 1037) (TYPENAME 1027 . 1035) (punctuation 1025 . 1026) (TEMPLATE 1017 . 1025) (punctuation 996 . 997) (TYPENAME 987 . 995) (punctuation 985 . 986) (TEMPLATE 977 . 985) (punctuation 957 . 958) (TYPENAME 948 . 956) (punctuation 946 . 947) (TEMPLATE 938 . 946))
+      :lexical-table 
+        '(("BOOST_LOG_DETAIL_LOCKS_HPP_INCLUDED_")
+          )
+)
+    (semanticdb-table "light_rw_mutex.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_LOG_DETAIL_LIGHT_RW_MUTEX_HPP_INCLUDED_" variable (:constant-flag t) nil [556 601])
+            ("boost/log/detail/config.hpp" include (:system-flag t) nil [603 641])
+            ("boost/log/detail/header.hpp" include (:system-flag t) nil [723 761])
+            ("boost" type
+               (:members 
+                  ( ("aux" type
+                       (:members 
+                          ( ("light_rw_mutex" type
+                               (:members 
+                                  ( ("m_Mutex" variable (:type "int") (reparse-symbol classsubparts) [3287 3295])
+                                    ("public" label nil (reparse-symbol classsubparts) [3297 3304])
+                                    ("light_rw_mutex" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :type ("BOOST_LOG_API" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3309 3340])
+                                    ("light_rw_mutex" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :type ("BOOST_LOG_API" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3345 3377])
+                                    ("lock_shared" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3396 3415])
+                                    ("unlock_shared" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3434 3455])
+                                    ("lock" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3474 3486])
+                                    ("unlock" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3505 3519]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3208 3686]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [3162 3689]))                  
+                :type "namespace")
+                nil [3117 3753])
+            ("boost/log/detail/footer.hpp" include (:system-flag t) nil [3782 3820]))          
+      :file "light_rw_mutex.hpp"
+      :pointmax 3910
+      :fsize 3909
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax '((symbol 3708 . 3733) (semantic-list 3632 . 3683) (symbol 3610 . 3632) (semantic-list 3659 . 3682) (punctuation 3657 . 3658) (OPERATOR 3649 . 3657) (semantic-list 3566 . 3605) (symbol 3544 . 3566) (semantic-list 3581 . 3604) (symbol 3491 . 3504) (symbol 3460 . 3473) (symbol 3420 . 3433) (symbol 3382 . 3395) (semantic-list 3274 . 3286) (symbol 3262 . 3273) (symbol 3242 . 3261) (STRUCT 3235 . 3241) (symbol 3136 . 3160))
+      :lexical-table 
+        '(("BOOST_LOG_DETAIL_LIGHT_RW_MUTEX_HPP_INCLUDED_")
+          )
+)
+    (semanticdb-table "config.hpp"
+      :file "config.hpp"
+      :fsize 13240
+      :lastmodtime '(22452 53218 0 0))
+    (semanticdb-table "parameter_tools.hpp"
+      :file "parameter_tools.hpp"
+      :fsize 4154
+      :lastmodtime '(22452 53218 0 0))
+    (semanticdb-table "header.hpp"
+      :file "header.hpp"
+      :fsize 2493
+      :lastmodtime '(22452 53218 0 0))
+    (semanticdb-table "footer.hpp"
+      :file "footer.hpp"
+      :fsize 504
+      :lastmodtime '(22452 53218 0 0))
+    (semanticdb-table "default_attribute_names.hpp"
+      :file "default_attribute_names.hpp"
+      :fsize 1428
+      :lastmodtime '(22452 53218 0 0))
+    (semanticdb-table "native_typeof.hpp"
+      :file "native_typeof.hpp"
+      :fsize 1471
+      :lastmodtime '(22452 53218 0 0))
+    (semanticdb-table "unhandled_exception_count.hpp"
+      :file "unhandled_exception_count.hpp"
+      :fsize 1067
+      :lastmodtime '(22452 53218 0 0))
+    (semanticdb-table "attachable_sstream_buf.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_LOG_ATTACHABLE_SSTREAM_BUF_HPP_INCLUDED_" variable (:constant-flag t) nil [565 611])
+            ("memory" include (:system-flag t) nil [613 630])
+            ("string" include (:system-flag t) nil [631 648])
+            ("streambuf" include (:system-flag t) nil [649 669])
+            ("boost/assert.hpp" include (:system-flag t) nil [670 697])
+            ("boost/utility/addressof.hpp" include (:system-flag t) nil [698 736])
+            ("boost/log/detail/config.hpp" include (:system-flag t) nil [737 775])
+            ("boost/log/detail/header.hpp" include (:system-flag t) nil [776 814])
+            ("boost" type
+               (:members 
+                  ( ("aux" type
+                       (:members 
+                          ( ("basic_ostringstreambuf" type
+                               (:superclasses 
+                                  ( ("std::basic_streambuf" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("this_type" type
+                                       (:typedef ("basic_ostringstreambuf" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil)
+                                                  ("TraitsT" type nil nil nil)
+                                                  ("AllocatorT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1232 1303])
+                                    ("base_type" type
+                                       (:typedef ("std::basic_streambuf" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil)
+                                                  ("TraitsT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1326 1383])
+                                    ("" type
+                                       (:members 
+                                          ( ("buffer_size" variable
+                                               (:constant-flag t
+                                                :default-value (1430 1433)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [1416 1434]))                                          
+                                        :type "enum")
+                                        (reparse-symbol classsubparts) [1409 1435])
+                                    ("public" label nil (reparse-symbol classsubparts) [1437 1444])
+                                    ("char_type" type
+                                       (:typedef ("base_type::char_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1472 1520])
+                                    ("traits_type" type
+                                       (:typedef ("base_type::traits_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1545 1597])
+                                    ("string_type" type
+                                       (:typedef ("std::basic_string" type
+                                             (:template-specifier 
+                                                ( ("char_type" type nil nil nil)
+                                                  ("traits_type" type nil nil nil)
+                                                  ("AllocatorT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1622 1698])
+                                    ("int_type" type
+                                       (:typedef ("base_type::int_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1720 1766])
+                                    ("private" label nil (reparse-symbol classsubparts) [1768 1776])
+                                    ("m_Storage" variable
+                                       (:pointer 1
+                                        :type ("string_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1835 1858])
+                                    ("m_Buffer" variable
+                                       (:dereference 1
+                                        :type ("char_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1913 1945])
+                                    ("public" label nil (reparse-symbol classsubparts) [1947 1954])
+                                    ("basic_ostringstreambuf" function
+                                       (:constructor-flag t
+                                        :typemodifiers ("explicit")
+                                        :type ("basic_ostringstreambuf" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1979 2125])
+                                    ("basic_ostringstreambuf" function
+                                       (:constructor-flag t
+                                        :typemodifiers ("explicit")
+                                        :arguments 
+                                          ( ("storage" variable
+                                               (:reference 1
+                                                :type ("string_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2182 2203]))                                          
+                                        :type ("basic_ostringstreambuf" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2150 2340])
+                                    ("clear" function (:type "void") (reparse-symbol classsubparts) [2393 2585])
+                                    ("detach" function (:type "void") (reparse-symbol classsubparts) [2635 2761])
+                                    ("attach" function
+                                       (:arguments 
+                                          ( ("storage" variable
+                                               (:reference 1
+                                                :type ("string_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2825 2846]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2813 2923])
+                                    ("storage" function
+                                       (:methodconst-flag t
+                                        :pointer 1
+                                        :type ("string_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2978 3028])
+                                    ("protected" label nil (reparse-symbol classsubparts) [3030 3040])
+                                    ("sync" function (:type "int") (reparse-symbol classsubparts) [3090 3400])
+                                    ("overflow" function
+                                       (:arguments 
+                                          ( ("c" variable (:type ("int_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3474 3485]))                                          
+                                        :type ("int_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3456 3800])
+                                    ("xsputn" function
+                                       (:arguments 
+                                          ( ("s" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("char_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3876 3895])
+                                            ("n" variable (:type ("std::streamsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3896 3914]))                                          
+                                        :type ("std::streamsize" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3853 4508]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1127 4760]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [911 4763]))                  
+                :type "namespace")
+                nil [866 4827])
+            ("boost/log/detail/footer.hpp" include (:system-flag t) nil [4848 4886]))          
+      :file "attachable_sstream_buf.hpp"
+      :pointmax 4945
+      :fsize 4944
+      :lastmodtime '(22452 53218 0 0)
+      :unmatched-syntax '((symbol 4782 . 4807) (semantic-list 4685 . 4757) (symbol 4663 . 4685) (semantic-list 4720 . 4756) (punctuation 4718 . 4719) (OPERATOR 4710 . 4718) (semantic-list 4570 . 4630) (symbol 4548 . 4570) (semantic-list 4593 . 4629) (punctuation 1125 . 1126) (punctuation 1123 . 1124) (symbol 1117 . 1122) (punctuation 1115 . 1116) (symbol 1106 . 1115) (punctuation 1105 . 1106) (punctuation 1104 . 1105) (symbol 1101 . 1104) (punctuation 1099 . 1100) (symbol 1088 . 1098) (TYPENAME 1079 . 1087) (punctuation 1073 . 1074) (punctuation 1072 . 1073) (symbol 1066 . 1071) (punctuation 1064 . 1065) (symbol 1053 . 1064) (punctuation 1052 . 1053) (punctuation 1051 . 1052) (symbol 1048 . 1051) (punctuation 1046 . 1047) (symbol 1038 . 1045) (TYPENAME 1029 . 1037) (punctuation 1023 . 1024) (symbol 1018 . 1023) (TYPENAME 1009 . 1017) (punctuation 1003 . 1004) (TEMPLATE 995 . 1003) (symbol 885 . 909) (punctuation 1125 . 1126) (punctuation 1123 . 1124) (symbol 1117 . 1122) (punctuation 1115 . 1116) (symbol 1106 . 1115) (punctuation 1105 . 1106) (punctuation 1104 . 1105) (symbol 1101 . 1104) (punctuation 1099 . 1100) (symbol 1088 . 1098) (TYPENAME 1079 . 1087) (punctuation 1073 . 1074) (punctuation 1072 . 1073) (symbol 1066 . 1071) (punctuation 1064 . 1065) (symbol 1053 . 1064) (punctuation 1052 . 1053) (punctuation 1051 . 1052) (symbol 1048 . 1051) (punctuation 1046 . 1047) (symbol 1038 . 1045) (TYPENAME 1029 . 1037) (punctuation 1023 . 1024) (symbol 1018 . 1023) (TYPENAME 1009 . 1017) (punctuation 1003 . 1004) (TEMPLATE 995 . 1003) (symbol 885 . 909))
+      :lexical-table 
+        '(("BOOST_LOG_ATTACHABLE_SSTREAM_BUF_HPP_INCLUDED_")
+          )
+)
+    (semanticdb-table "code_conversion.hpp"
+      :file "code_conversion.hpp"
+      :fsize 7642
+      :lastmodtime '(22452 53218 0 0)))
+  :file "!usr!include!boost!log!detail!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

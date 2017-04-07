@@ -1,0 +1,31 @@
+;; Object bench/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bench/"
+  :tables
+  (list
+    (semanticdb-table "channel_setup.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("msgpub/admin_block.hpp" include (:system-flag t) nil [1 34])
+            ("msgpub/log.hpp" include (:system-flag t) nil [35 60])
+            ("sstream" include (:system-flag t) nil [61 79])
+            ("iomanip" include (:system-flag t) nil [80 98])
+            ("iostream" include (:system-flag t) nil [99 118])
+            ("boost/lexical_cast.hpp" include (:system-flag t) nil [119 152])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [163 172])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [173 185]))                  
+                :type "int")
+                nil [154 3444]))          
+      :file "channel_setup.cpp"
+      :pointmax 3445
+      :fsize 3444
+      :lastmodtime '(22442 25901 256666 669000)
+      :unmatched-syntax nil))
+  :file "!home!nakao!github!iotc_msgpub_bak2!bench!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

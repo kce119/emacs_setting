@@ -1,0 +1,30 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("memory" include (:system-flag t) nil [21 38])
+            ("aaa" type
+               (:superclasses 
+                  ( ("std::enable_shared_from_this" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [95 102])
+                    ("func" function (:type "void") (reparse-symbol classsubparts) [107 299]))                  
+                :type "class")
+                nil [40 302])
+            ("main" function (:type "int") nil [304 389]))          
+      :file "enable_shared_from_this.cpp"
+      :pointmax 390
+      :fsize 389
+      :lastmodtime '(22645 62824 276666 669000)
+      :unmatched-syntax nil))
+  :file "!home!nakao!work!my_reference!boost!enable_shared_from_this!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

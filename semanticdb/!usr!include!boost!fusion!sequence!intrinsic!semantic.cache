@@ -1,0 +1,424 @@
+;; Object intrinsic/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "intrinsic/"
+  :tables
+  (list
+    (semanticdb-table "at_key.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_FUSION_AT_KEY_20060304_1755" variable (:constant-flag t) nil [453 486])
+            ("boost/fusion/support/config.hpp" include (:system-flag t) nil [488 530])
+            ("boost/type_traits/is_const.hpp" include (:system-flag t) nil [531 572])
+            ("boost/fusion/sequence/intrinsic_fwd.hpp" include (:system-flag t) nil [573 623])
+            ("boost/fusion/sequence/intrinsic/has_key.hpp" include (:system-flag t) nil [624 678])
+            ("boost/fusion/algorithm/query/find.hpp" include (:system-flag t) nil [679 727])
+            ("boost/fusion/iterator/deref_data.hpp" include (:system-flag t) nil [728 775])
+            ("boost/fusion/support/tag_of.hpp" include (:system-flag t) nil [776 818])
+            ("boost/fusion/support/category_of.hpp" include (:system-flag t) nil [819 866])
+            ("boost/fusion/support/detail/access.hpp" include (:system-flag t) nil [867 916])
+            ("boost/mpl/empty_base.hpp" include (:system-flag t) nil [917 952])
+            ("boost/mpl/if.hpp" include (:system-flag t) nil [953 980])
+            ("boost/mpl/or.hpp" include (:system-flag t) nil [981 1008])
+            ("boost" type
+               (:members 
+                  ( ("fusion" type
+                       (:members 
+                          ( ("sequence_facade_tag" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1072 1099])
+                            ("boost_array_tag" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1104 1127])
+                            ("mpl_sequence_tag" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1152 1176])
+                            ("std_pair_tag" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1201 1221])
+                            ("extension" type
+                               (:members 
+                                  ( ("at_key_impl" type
+                                       (:template 
+                                          ( ("Tag" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("apply" type
+                                               (:template 
+                                                  ( ("Seq" type (:type "class") nil nil)
+                                                    ("Key" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1592 1618])
+                                                    ("call" function
+                                                       (:typemodifiers ("static")
+                                                        :arguments 
+                                                          ( ("seq" variable
+                                                               (:reference 1
+                                                                :type ("Seq" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1726 1735]))                                                          
+                                                        :type ("type" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1693 1842]))                                                  )
+                                                (reparse-symbol classsubparts) [1351 1857]))                                          )
+                                        (reparse-symbol namespacesubparts) [1278 1868])
+                                    ("at_key_impl" type
+                                       (:type "struct"
+                                        :template-specifier 
+                                          ( ("sequence_facade_tag" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [1878 2090])
+                                    ("at_key_impl" type
+                                       (:type "struct"
+                                        :template-specifier 
+                                          ( ("boost_array_tag" type nil nil nil))                                          
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [2100 2156])
+                                    ("at_key_impl" type
+                                       (:type "struct"
+                                        :template-specifier 
+                                          ( ("mpl_sequence_tag" type nil nil nil))                                          
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [2166 2223])
+                                    ("at_key_impl" type
+                                       (:type "struct"
+                                        :template-specifier 
+                                          ( ("std_pair_tag" type nil nil nil))                                          
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [2233 2286]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1244 2292])
+                            ("detail" type
+                               (:members 
+                                  ( ("type" variable (:type "int") (reparse-symbol namespacesubparts) [2766 2782]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [2298 2788])
+                            ("result_of" type (:type "namespace") (reparse-symbol namespacesubparts) [2794 3000])
+                            ("at_key" function
+                               (:typemodifiers ("inline" "typename")
+                                :arguments 
+                                  ( ("seq" variable
+                                       (:reference 1
+                                        :type ("Sequence" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3243 3257]))                                  
+                                :type ("lazy_disable_if::type" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3098 3329])
+                            ("at_key" function
+                               (:typemodifiers ("inline" "typename")
+                                :arguments 
+                                  ( ("seq" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Sequence" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3499 3519]))                                  
+                                :type ("result_of::at_key::type" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3427 3597]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1028 3599]))                  
+                :type "namespace")
+                nil [1010 3600]))          
+      :file "at_key.hpp"
+      :pointmax 3609
+      :fsize 3608
+      :lastmodtime '(22324 21864 0 0)
+      :unmatched-syntax '((symbol 3398 . 3422) (symbol 3382 . 3397) (punctuation 3376 . 3377) (symbol 3368 . 3376) (TYPENAME 3359 . 3367) (punctuation 3357 . 3358) (symbol 3354 . 3357) (TYPENAME 3345 . 3353) (punctuation 3344 . 3345) (TEMPLATE 3335 . 3343) (symbol 3069 . 3093) (symbol 3053 . 3068) (punctuation 3047 . 3048) (symbol 3039 . 3047) (TYPENAME 3030 . 3038) (punctuation 3028 . 3029) (symbol 3025 . 3028) (TYPENAME 3016 . 3024) (punctuation 3015 . 3016) (TEMPLATE 3006 . 3014) (punctuation 2993 . 2994) (semantic-list 2991 . 2993) (punctuation 2981 . 2982) (symbol 2977 . 2981) (punctuation 2976 . 2977) (punctuation 2975 . 2976) (punctuation 2974 . 2975) (symbol 2966 . 2974) (punctuation 2965 . 2966) (symbol 2959 . 2965) (punctuation 2958 . 2959) (punctuation 2957 . 2958) (symbol 2951 . 2957) (TYPENAME 2942 . 2950) (punctuation 2940 . 2941) (symbol 2937 . 2940) (punctuation 2935 . 2936) (symbol 2927 . 2935) (punctuation 2926 . 2927) (symbol 2915 . 2926) (punctuation 2914 . 2915) (punctuation 2913 . 2914) (symbol 2907 . 2913) (punctuation 2905 . 2906) (symbol 2886 . 2892) (STRUCT 2879 . 2885) (punctuation 2869 . 2870) (symbol 2866 . 2869) (TYPENAME 2857 . 2865) (punctuation 2855 . 2856) (symbol 2847 . 2855) (TYPENAME 2838 . 2846) (punctuation 2837 . 2838) (TEMPLATE 2828 . 2836) (punctuation 2765 . 2766) (punctuation 2764 . 2765) (punctuation 2763 . 2764) (symbol 2738 . 2748) (punctuation 2737 . 2738) (punctuation 2736 . 2737) (symbol 2733 . 2736) (punctuation 2731 . 2732) (punctuation 2713 . 2714) (symbol 2710 . 2713) (punctuation 2708 . 2709) (symbol 2700 . 2708) (punctuation 2699 . 2700) (symbol 2694 . 2699) (TEMPLATE 2685 . 2693) (punctuation 2684 . 2685) (punctuation 2683 . 2684) (punctuation 2682 . 2683) (symbol 2679 . 2682) (punctuation 2678 . 2679) (symbol 2667 . 2678) (punctuation 2666 . 2667) (punctuation 2665 . 2666) (symbol 2656 . 2665) (TYPENAME 2647 . 2655) (punctuation 2645 . 2646) (punctuation 2627 . 2628) (punctuation 2607 . 2608) (symbol 2599 . 2607) (punctuation 2598 . 2599) (symbol 2586 . 2598) (punctuation 2585 . 2586) (punctuation 2584 . 2585) (symbol 2578 . 2584) (punctuation 2576 . 2577) (punctuation 2554 . 2555) (symbol 2551 . 2554) (punctuation 2549 . 2550) (symbol 2541 . 2549) (punctuation 2540 . 2541) (symbol 2535 . 2540) (TEMPLATE 2526 . 2534) (punctuation 2525 . 2526) (punctuation 2524 . 2525) (punctuation 2523 . 2524) (symbol 2520 . 2523) (punctuation 2519 . 2520) (symbol 2507 . 2519) (punctuation 2506 . 2507) (punctuation 2505 . 2506) (symbol 2496 . 2505) (TYPENAME 2487 . 2495) (punctuation 2463 . 2464) (symbol 2460 . 2463) (punctuation 2459 . 2460) (punctuation 2458 . 2459) (symbol 2455 . 2458) (punctuation 2435 . 2436) (symbol 2432 . 2435) (punctuation 2431 . 2432) (punctuation 2430 . 2431) (symbol 2427 . 2430) (punctuation 2425 . 2426) (symbol 2401 . 2412) (STRUCT 2394 . 2400) (punctuation 2384 . 2385) (symbol 2381 . 2384) (TYPENAME 2372 . 2380) (punctuation 2370 . 2371) (symbol 2367 . 2370) (TYPENAME 2358 . 2366) (punctuation 2356 . 2357) (symbol 2348 . 2356) (TYPENAME 2339 . 2347) (punctuation 2338 . 2339) (TEMPLATE 2329 . 2337) (punctuation 2078 . 2079) (semantic-list 2076 . 2078) (punctuation 2074 . 2075) (symbol 2071 . 2074) (punctuation 2069 . 2070) (symbol 2061 . 2069) (punctuation 2060 . 2061) (symbol 2049 . 2060) (TEMPLATE 2040 . 2048) (punctuation 2039 . 2040) (punctuation 2038 . 2039) (symbol 2030 . 2038) (punctuation 2028 . 2029) (symbol 2022 . 2027) (STRUCT 2015 . 2021) (punctuation 2001 . 2002) (symbol 1998 . 2001) (TYPENAME 1989 . 1997) (punctuation 1987 . 1988) (symbol 1979 . 1987) (TYPENAME 1970 . 1978) (punctuation 1969 . 1970) (TEMPLATE 1960 . 1968) (symbol 1652 . 1676) (symbol 1636 . 1651) (punctuation 1591 . 1592) (punctuation 1590 . 1591) (punctuation 1589 . 1590) (symbol 1564 . 1568) (punctuation 1563 . 1564) (punctuation 1562 . 1563) (punctuation 1561 . 1562) (symbol 1558 . 1561) (punctuation 1556 . 1557) (symbol 1553 . 1556) (punctuation 1552 . 1553) (symbol 1548 . 1552) (punctuation 1547 . 1548) (punctuation 1546 . 1547) (symbol 1537 . 1546) (TYPENAME 1528 . 1536) (punctuation 1502 . 1503) (symbol 1492 . 1502) (punctuation 1491 . 1492) (punctuation 1490 . 1491) (symbol 1481 . 1490) (TYPENAME 1452 . 1460) (TYPEDEF 1444 . 1451))
+      :lexical-table 
+        '(("BOOST_FUSION_AT_KEY_20060304_1755")
+          )
+)
+    (semanticdb-table "has_key.hpp"
+      :file "has_key.hpp"
+      :fsize 2442
+      :lastmodtime '(22324 21864 0 0))
+    (semanticdb-table "begin.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FUSION_BEGIN_04052005_1132" variable (:constant-flag t) nil [411 437])
+            ("boost/fusion/support/config.hpp" include (:system-flag t) nil [439 481])
+            ("boost/utility/enable_if.hpp" include (:system-flag t) nil [482 520])
+            ("boost/mpl/empty_base.hpp" include (:system-flag t) nil [521 556])
+            ("boost/mpl/if.hpp" include (:system-flag t) nil [557 584])
+            ("boost/fusion/sequence/intrinsic_fwd.hpp" include (:system-flag t) nil [585 635])
+            ("boost/fusion/support/tag_of.hpp" include (:system-flag t) nil [636 678])
+            ("boost/fusion/support/is_sequence.hpp" include (:system-flag t) nil [679 726])
+            ("boost/fusion/support/is_segmented.hpp" include (:system-flag t) nil [727 775])
+            ("boost/fusion/sequence/intrinsic/detail/segmented_begin.hpp" include (:system-flag t) nil [776 845])
+            ("boost" type
+               (:members 
+                  ( ("fusion" type
+                       (:members 
+                          ( ("sequence_facade_tag" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [909 936])
+                            ("boost_tuple_tag" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [964 987])
+                            ("boost_array_tag" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1020 1043])
+                            ("mpl_sequence_tag" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1068 1092])
+                            ("std_pair_tag" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1117 1137])
+                            ("extension" type
+                               (:members 
+                                  ( ("begin_impl" type
+                                       (:template 
+                                          ( ("Tag" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("apply" type
+                                               (:template 
+                                                  ( ("Sequence" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :superclasses 
+                                                  ( ("mpl::if_::type" type
+                                                       (:protection "unspecified"
+                                                        :type "class")
+                                                        nil nil))                                                  )
+                                                (reparse-symbol classsubparts) [1266 1526]))                                          )
+                                        (reparse-symbol namespacesubparts) [1194 1537])
+                                    ("begin_impl" type
+                                       (:type "struct"
+                                        :template-specifier 
+                                          ( ("sequence_facade_tag" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [1547 1733])
+                                    ("begin_impl" type
+                                       (:type "struct"
+                                        :template-specifier 
+                                          ( ("boost_tuple_tag" type nil nil nil))                                          
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [1743 1798])
+                                    ("begin_impl" type
+                                       (:type "struct"
+                                        :template-specifier 
+                                          ( ("boost_array_tag" type nil nil nil))                                          
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [1808 1863])
+                                    ("begin_impl" type
+                                       (:type "struct"
+                                        :template-specifier 
+                                          ( ("mpl_sequence_tag" type nil nil nil))                                          
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [1873 1929])
+                                    ("begin_impl" type
+                                       (:type "struct"
+                                        :template-specifier 
+                                          ( ("std_pair_tag" type nil nil nil))                                          
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [1939 1991]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1160 1997])
+                            ("result_of" type (:type "namespace") (reparse-symbol namespacesubparts) [2003 2224])
+                            ("begin" function
+                               (:typemodifiers ("inline" "typename")
+                                :arguments 
+                                  ( ("seq" variable
+                                       (:reference 1
+                                        :type ("Sequence" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2461 2475]))                                  
+                                :type ("lazy_enable_if::type" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2308 2541])
+                            ("begin" function
+                               (:typemodifiers ("inline" "typename")
+                                :arguments 
+                                  ( ("seq" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Sequence" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2784 2804]))                                  
+                                :type ("lazy_enable_if::type" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2625 2876]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [865 2878]))                  
+                :type "namespace")
+                nil [847 2879]))          
+      :file "begin.hpp"
+      :pointmax 2888
+      :fsize 2887
+      :lastmodtime '(22324 21864 0 0)
+      :unmatched-syntax '((symbol 2596 . 2620) (symbol 2580 . 2595) (punctuation 2574 . 2575) (symbol 2566 . 2574) (TYPENAME 2557 . 2565) (punctuation 2556 . 2557) (TEMPLATE 2547 . 2555) (symbol 2279 . 2303) (symbol 2263 . 2278) (punctuation 2257 . 2258) (symbol 2249 . 2257) (TYPENAME 2240 . 2248) (punctuation 2239 . 2240) (TEMPLATE 2230 . 2238) (punctuation 2217 . 2218) (semantic-list 2215 . 2217) (punctuation 2205 . 2206) (symbol 2197 . 2205) (punctuation 2196 . 2197) (symbol 2191 . 2196) (TEMPLATE 2182 . 2190) (punctuation 2164 . 2165) (punctuation 2163 . 2164) (punctuation 2162 . 2163) (symbol 2158 . 2162) (punctuation 2157 . 2158) (punctuation 2156 . 2157) (punctuation 2155 . 2156) (symbol 2147 . 2155) (punctuation 2146 . 2147) (symbol 2140 . 2146) (punctuation 2139 . 2140) (punctuation 2138 . 2139) (symbol 2132 . 2138) (TYPENAME 2123 . 2131) (punctuation 2122 . 2123) (symbol 2112 . 2122) (punctuation 2111 . 2112) (punctuation 2110 . 2111) (symbol 2101 . 2110) (punctuation 2099 . 2100) (symbol 2081 . 2086) (STRUCT 2074 . 2080) (punctuation 2064 . 2065) (symbol 2056 . 2064) (TYPENAME 2047 . 2055) (punctuation 2046 . 2047) (TEMPLATE 2037 . 2045) (punctuation 1721 . 1722) (semantic-list 1719 . 1721) (punctuation 1717 . 1718) (symbol 1709 . 1717) (punctuation 1708 . 1709) (symbol 1703 . 1708) (TEMPLATE 1694 . 1702) (punctuation 1693 . 1694) (punctuation 1692 . 1693) (symbol 1684 . 1692) (punctuation 1682 . 1683) (symbol 1676 . 1681) (STRUCT 1669 . 1675) (punctuation 1655 . 1656) (symbol 1647 . 1655) (TYPENAME 1638 . 1646) (punctuation 1637 . 1638) (TEMPLATE 1628 . 1636))
+      :lexical-table 
+        '(("FUSION_BEGIN_04052005_1132")
+          )
+)
+    (semanticdb-table "end.hpp"
+      :file "end.hpp"
+      :fsize 2826
+      :lastmodtime '(22324 21864 0 0))
+    (semanticdb-table "at.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FUSION_AT_05042005_0722" variable (:constant-flag t) nil [407 430])
+            ("boost/fusion/support/config.hpp" include (:system-flag t) nil [432 474])
+            ("boost/mpl/int.hpp" include (:system-flag t) nil [475 503])
+            ("boost/mpl/if.hpp" include (:system-flag t) nil [504 531])
+            ("boost/mpl/or.hpp" include (:system-flag t) nil [532 559])
+            ("boost/mpl/less.hpp" include (:system-flag t) nil [560 589])
+            ("boost/mpl/empty_base.hpp" include (:system-flag t) nil [590 625])
+            ("boost/type_traits/is_const.hpp" include (:system-flag t) nil [626 667])
+            ("boost/fusion/sequence/intrinsic_fwd.hpp" include (:system-flag t) nil [668 718])
+            ("boost/fusion/support/tag_of.hpp" include (:system-flag t) nil [719 761])
+            ("boost/fusion/support/category_of.hpp" include (:system-flag t) nil [762 809])
+            ("boost" type
+               (:members 
+                  ( ("fusion" type
+                       (:members 
+                          ( ("sequence_facade_tag" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [873 900])
+                            ("boost_tuple_tag" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [905 928])
+                            ("boost_array_tag" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [961 984])
+                            ("mpl_sequence_tag" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1009 1033])
+                            ("std_pair_tag" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1058 1078])
+                            ("std_tuple_tag" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1100 1121])
+                            ("extension" type
+                               (:members 
+                                  ( ("at_impl" type
+                                       (:template 
+                                          ( ("Tag" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("apply" type
+                                               (:template 
+                                                  ( ("Sequence" type (:type "class") nil nil)
+                                                    ("N" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :prototype t)
+                                                (reparse-symbol classsubparts) [1248 1314]))                                          )
+                                        (reparse-symbol namespacesubparts) [1179 1325])
+                                    ("at_impl" type
+                                       (:type "struct"
+                                        :template-specifier 
+                                          ( ("sequence_facade_tag" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [1335 1530])
+                                    ("at_impl" type
+                                       (:type "struct"
+                                        :template-specifier 
+                                          ( ("boost_tuple_tag" type nil nil nil))                                          
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [1540 1592])
+                                    ("at_impl" type
+                                       (:type "struct"
+                                        :template-specifier 
+                                          ( ("boost_array_tag" type nil nil nil))                                          
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [1602 1654])
+                                    ("at_impl" type
+                                       (:type "struct"
+                                        :template-specifier 
+                                          ( ("mpl_sequence_tag" type nil nil nil))                                          
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [1664 1717])
+                                    ("at_impl" type
+                                       (:type "struct"
+                                        :template-specifier 
+                                          ( ("std_pair_tag" type nil nil nil))                                          
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [1727 1776])
+                                    ("at_impl" type
+                                       (:type "struct"
+                                        :template-specifier 
+                                          ( ("std_tuple_tag" type nil nil nil))                                          
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [1786 1836]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1145 1842])
+                            ("detail" type
+                               (:members 
+                                  ( ("type" variable (:type "int") (reparse-symbol namespacesubparts) [2316 2332]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1848 2338])
+                            ("result_of" type
+                               (:members 
+                                  ( ("at_c" type
+                                       (:template 
+                                          ( ("Sequence" type (:type "class") nil nil)
+                                            ("int" type (:typevar "N") nil nil))                                          
+                                        :type "struct"
+                                        :superclasses 
+                                          ( ("at" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [2542 2651]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [2344 2657])
+                            ("at" function
+                               (:typemodifiers ("inline" "typename")
+                                :arguments 
+                                  ( ("seq" variable
+                                       (:reference 1
+                                        :type ("Sequence" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2888 2902]))                                  
+                                :type ("lazy_disable_if::type" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2754 2968])
+                            ("at" function
+                               (:typemodifiers ("inline" "typename")
+                                :arguments 
+                                  ( ("seq" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Sequence" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3126 3146]))                                  
+                                :type ("result_of::at::type" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3064 3218])
+                            ("at_c" function
+                               (:typemodifiers ("inline" "typename")
+                                :arguments 
+                                  ( ("seq" variable
+                                       (:reference 1
+                                        :type ("Sequence" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3447 3461]))                                  
+                                :type ("lazy_disable_if::type" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3309 3520])
+                            ("at_c" function
+                               (:typemodifiers ("inline" "typename")
+                                :arguments 
+                                  ( ("seq" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Sequence" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3677 3697]))                                  
+                                :type ("result_of::at_c::type" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3611 3756]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [829 3758]))                  
+                :type "namespace")
+                nil [811 3759]))          
+      :file "at.hpp"
+      :pointmax 3769
+      :fsize 3768
+      :lastmodtime '(22324 21864 0 0)
+      :unmatched-syntax '((symbol 3582 . 3606) (symbol 3566 . 3581) (punctuation 3560 . 3561) (symbol 3552 . 3560) (TYPENAME 3543 . 3551) (punctuation 3541 . 3542) (symbol 3540 . 3541) (INT 3536 . 3539) (punctuation 3535 . 3536) (TEMPLATE 3526 . 3534) (symbol 3280 . 3304) (symbol 3264 . 3279) (punctuation 3258 . 3259) (symbol 3250 . 3258) (TYPENAME 3241 . 3249) (punctuation 3239 . 3240) (symbol 3238 . 3239) (INT 3234 . 3237) (punctuation 3233 . 3234) (TEMPLATE 3224 . 3232) (symbol 3035 . 3059) (symbol 3019 . 3034) (punctuation 3013 . 3014) (symbol 3005 . 3013) (TYPENAME 2996 . 3004) (punctuation 2994 . 2995) (symbol 2993 . 2994) (TYPENAME 2984 . 2992) (punctuation 2983 . 2984) (TEMPLATE 2974 . 2982) (symbol 2725 . 2749) (symbol 2709 . 2724) (punctuation 2703 . 2704) (symbol 2695 . 2703) (TYPENAME 2686 . 2694) (punctuation 2684 . 2685) (symbol 2683 . 2684) (TYPENAME 2674 . 2682) (punctuation 2673 . 2674) (TEMPLATE 2664 . 2672) (punctuation 2531 . 2532) (semantic-list 2529 . 2531) (punctuation 2519 . 2520) (symbol 2515 . 2519) (punctuation 2514 . 2515) (punctuation 2513 . 2514) (punctuation 2512 . 2513) (symbol 2504 . 2512) (punctuation 2503 . 2504) (symbol 2497 . 2503) (punctuation 2496 . 2497) (punctuation 2495 . 2496) (symbol 2489 . 2495) (TYPENAME 2480 . 2488) (punctuation 2478 . 2479) (symbol 2477 . 2478) (punctuation 2475 . 2476) (symbol 2467 . 2475) (punctuation 2466 . 2467) (symbol 2459 . 2466) (punctuation 2458 . 2459) (punctuation 2457 . 2458) (symbol 2451 . 2457) (punctuation 2449 . 2450) (symbol 2434 . 2436) (STRUCT 2427 . 2433) (punctuation 2417 . 2418) (symbol 2416 . 2417) (TYPENAME 2407 . 2415) (punctuation 2405 . 2406) (symbol 2397 . 2405) (TYPENAME 2388 . 2396) (punctuation 2387 . 2388) (TEMPLATE 2378 . 2386) (punctuation 2315 . 2316) (punctuation 2314 . 2315) (punctuation 2313 . 2314) (symbol 2288 . 2298) (punctuation 2287 . 2288) (punctuation 2286 . 2287) (symbol 2283 . 2286) (punctuation 2281 . 2282) (punctuation 2263 . 2264) (symbol 2262 . 2263) (punctuation 2260 . 2261) (symbol 2252 . 2260) (punctuation 2251 . 2252) (symbol 2246 . 2251) (TEMPLATE 2237 . 2245) (punctuation 2236 . 2237) (punctuation 2235 . 2236) (punctuation 2234 . 2235) (symbol 2231 . 2234) (punctuation 2230 . 2231) (symbol 2223 . 2230) (punctuation 2222 . 2223) (punctuation 2221 . 2222) (symbol 2212 . 2221) (TYPENAME 2203 . 2211) (punctuation 2201 . 2202) (punctuation 2183 . 2184) (punctuation 2163 . 2164) (symbol 2155 . 2163) (punctuation 2154 . 2155) (symbol 2142 . 2154) (punctuation 2141 . 2142) (punctuation 2140 . 2141) (symbol 2134 . 2140) (punctuation 2132 . 2133) (punctuation 2110 . 2111) (symbol 2106 . 2110) (punctuation 2105 . 2106) (punctuation 2104 . 2105) (punctuation 2103 . 2104) (symbol 2095 . 2103) (punctuation 2094 . 2095) (symbol 2089 . 2094) (TEMPLATE 2080 . 2088) (punctuation 2079 . 2080) (punctuation 2078 . 2079) (punctuation 2077 . 2078) (symbol 2074 . 2077) (punctuation 2073 . 2074) (symbol 2064 . 2073) (punctuation 2063 . 2064) (punctuation 2062 . 2063) (symbol 2053 . 2062) (TYPENAME 2044 . 2052) (punctuation 2042 . 2043) (symbol 2041 . 2042) (punctuation 2040 . 2041) (symbol 2036 . 2040) (punctuation 2035 . 2036) (punctuation 2034 . 2035) (symbol 2031 . 2034) (punctuation 2007 . 2008) (symbol 2004 . 2007) (punctuation 2003 . 2004) (punctuation 2002 . 2003) (symbol 1999 . 2002) (punctuation 1979 . 1980) (symbol 1976 . 1979) (punctuation 1975 . 1976) (punctuation 1974 . 1975) (symbol 1971 . 1974) (punctuation 1969 . 1970) (symbol 1949 . 1956) (STRUCT 1942 . 1948) (punctuation 1932 . 1933) (symbol 1929 . 1932) (TYPENAME 1920 . 1928) (punctuation 1918 . 1919) (symbol 1917 . 1918) (TYPENAME 1908 . 1916) (punctuation 1906 . 1907) (symbol 1898 . 1906) (TYPENAME 1889 . 1897) (punctuation 1888 . 1889) (TEMPLATE 1879 . 1887) (punctuation 1518 . 1519) (semantic-list 1516 . 1518) (punctuation 1514 . 1515) (symbol 1513 . 1514) (punctuation 1511 . 1512) (symbol 1503 . 1511) (punctuation 1502 . 1503) (symbol 1500 . 1502) (TEMPLATE 1491 . 1499) (punctuation 1490 . 1491) (punctuation 1489 . 1490) (symbol 1481 . 1489) (punctuation 1479 . 1480) (symbol 1473 . 1478) (STRUCT 1466 . 1472) (punctuation 1452 . 1453) (symbol 1451 . 1452) (TYPENAME 1442 . 1450) (punctuation 1440 . 1441) (symbol 1432 . 1440) (TYPENAME 1423 . 1431) (punctuation 1422 . 1423) (TEMPLATE 1413 . 1421))
+      :lexical-table 
+        '(("FUSION_AT_05042005_0722")
+          )
+))
+  :file "!usr!include!boost!fusion!sequence!intrinsic!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

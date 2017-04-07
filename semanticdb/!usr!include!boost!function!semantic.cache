@@ -1,0 +1,1719 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_FUNCTION_BASE_HEADER" variable (:constant-flag t) nil [387 413])
+            ("stdexcept" include (:system-flag t) nil [415 435])
+            ("string" include (:system-flag t) nil [436 453])
+            ("memory" include (:system-flag t) nil [454 471])
+            ("new" include (:system-flag t) nil [472 486])
+            ("boost/config.hpp" include (:system-flag t) nil [487 514])
+            ("boost/detail/sp_typeinfo.hpp" include (:system-flag t) nil [515 554])
+            ("boost/assert.hpp" include (:system-flag t) nil [555 582])
+            ("boost/integer.hpp" include (:system-flag t) nil [583 611])
+            ("boost/type_traits/has_trivial_copy.hpp" include (:system-flag t) nil [612 661])
+            ("boost/type_traits/has_trivial_destructor.hpp" include (:system-flag t) nil [662 717])
+            ("boost/type_traits/is_const.hpp" include (:system-flag t) nil [718 759])
+            ("boost/type_traits/is_integral.hpp" include (:system-flag t) nil [760 804])
+            ("boost/type_traits/is_volatile.hpp" include (:system-flag t) nil [805 849])
+            ("boost/type_traits/composite_traits.hpp" include (:system-flag t) nil [850 899])
+            ("boost/ref.hpp" include (:system-flag t) nil [900 924])
+            ("boost/mpl/if.hpp" include (:system-flag t) nil [925 952])
+            ("boost/detail/workaround.hpp" include (:system-flag t) nil [953 991])
+            ("boost/type_traits/alignment_of.hpp" include (:system-flag t) nil [992 1037])
+            ("boost/utility/enable_if.hpp" include nil nil [1062 1102])
+            ("boost/function_equal.hpp" include (:system-flag t) nil [1148 1183])
+            ("boost/function/function_fwd.hpp" include (:system-flag t) nil [1184 1226])
+            ("BOOST_FUNCTION_STD_NS" variable (:constant-flag t) nil [1659 1680])
+            ("cstring" include (:system-flag t) nil [2014 2034])
+            ("BOOST_FUNCTION_COMPARE_TYPE_ID" variable (:constant-flag t) nil [2045 2075])
+            ("BOOST_FUNCTION_TARGET_FIX" variable (:constant-flag t) nil [2373 2398])
+            ("BOOST_FUNCTION_ENABLE_IF_NOT_INTEGRAL" variable (:constant-flag t) nil [2433 2470])
+            ("boost" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("function" type
+                               (:members 
+                                  ( ("X" type
+                                       (:prototype t
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [2728 2736])
+                                    ("function_buffer" type
+                                       (:members 
+                                          ( ("obj_ptr" variable
+                                               (:pointer 1
+                                                :typemodifiers ("mutable")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3073 3095])
+                                            ("type" variable (:type ("type_t" type
+                                                 (:prototype t
+                                                  :type "struct")
+                                                  nil nil)) (reparse-symbol classsubparts) [3155 3461])
+                                            ("type_t" type
+                                               (:members 
+                                                  ( ("type" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type ("detail::sp_typeinfo" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [3242 3274])
+                                                    ("const_qualified" variable (:type "bool") (reparse-symbol classsubparts) [3336 3357])
+                                                    ("volatile_qualified" variable (:type "bool") (reparse-symbol classsubparts) [3421 3445]))                                                  
+                                                :type "struct")
+                                                (reparse-symbol classsubparts) [3155 3461])
+                                            ("func_ptr" function
+                                               (:prototype-flag t
+                                                :function-pointer t
+                                                :typemodifiers ("mutable")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3517 3544])
+                                            ("bound_memfunc_ptr" variable (:type ("bound_memfunc_ptr_t" type
+                                                 (:prototype t
+                                                  :type "struct")
+                                                  nil nil)) (reparse-symbol classsubparts) [3591 3712])
+                                            ("bound_memfunc_ptr_t" type
+                                               (:members 
+                                                  ( ("obj_ptr" variable
+                                                       (:pointer 1
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [3669 3683]))                                                  
+                                                :type "struct")
+                                                (reparse-symbol classsubparts) [3591 3712])
+                                            ("obj_ref" variable (:type ("obj_ref_t" type
+                                                 (:prototype t
+                                                  :type "struct")
+                                                  nil nil)) (reparse-symbol classsubparts) [3852 3995])
+                                            ("obj_ref_t" type
+                                               (:members 
+                                                  ( ("obj_ptr" variable
+                                                       (:pointer 1
+                                                        :typemodifiers ("mutable")
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [3881 3903])
+                                                    ("is_const_qualified" variable (:type "bool") (reparse-symbol classsubparts) [3914 3938])
+                                                    ("is_volatile_qualified" variable (:type "bool") (reparse-symbol classsubparts) [3949 3976]))                                                  
+                                                :type "struct")
+                                                (reparse-symbol classsubparts) [3852 3995])
+                                            ("data" variable
+                                               (:typemodifiers ("mutable")
+                                                :type "char")
+                                                (reparse-symbol classsubparts) [4046 4064]))                                          
+                                        :type "union")
+                                        (reparse-symbol namespacesubparts) [2991 4073])
+                                    ("unusable" type
+                                       (:members 
+                                          ( ("unusable" function
+                                               (:constructor-flag t
+                                                :type ("unusable" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [4411 4424])
+                                            ("unusable" function
+                                               (:template 
+                                                  ( ("T" type (:type "class") nil nil))                                                  
+                                                :type ("unusable" type (:type "struct") nil nil)
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("T" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4463 4472]))                                                  
+                                                :constructor-flag t)
+                                                (reparse-symbol classsubparts) [4433 4475]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [4379 4484])
+                                    ("function_return_type" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("T" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4742 4757]))                                          )
+                                        (reparse-symbol namespacesubparts) [4691 4760])
+                                    ("function_return_type" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("unusable" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4835 4857]))                                          
+                                        :template-specifier 
+                                          ( ("void" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [4768 4866])
+                                    ("functor_manager_operation_type" type
+                                       (:members 
+                                          ( ("clone_functor_tag" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [4997 5015])
+                                            ("move_functor_tag" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [5024 5041])
+                                            ("destroy_functor_tag" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [5050 5070])
+                                            ("check_functor_type_tag" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [5079 5102])
+                                            ("get_functor_type_tag" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [5111 5139]))                                          
+                                        :type "enum")
+                                        (reparse-symbol namespacesubparts) [4951 5140])
+                                    ("function_ptr_tag" type (:type "struct") (reparse-symbol namespacesubparts) [5214 5241])
+                                    ("function_obj_tag" type (:type "struct") (reparse-symbol namespacesubparts) [5248 5275])
+                                    ("member_ptr_tag" type (:type "struct") (reparse-symbol namespacesubparts) [5282 5307])
+                                    ("function_obj_ref_tag" type (:type "struct") (reparse-symbol namespacesubparts) [5314 5345])
+                                    ("get_function_tag" type
+                                       (:template 
+                                          ( ("F" type (:type "class") nil nil))                                          
+                                        :type "class"
+                                        :members 
+                                          ( ("ptr_or_obj_tag" type
+                                               (:typedef ("mpl::if_c::type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5419 5597])
+                                            ("ptr_or_obj_or_mem_tag" type
+                                               (:typedef ("mpl::if_c::type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5607 5795])
+                                            ("or_ref_tag" type
+                                               (:typedef ("mpl::if_c::type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5805 5998])
+                                            ("public" label nil (reparse-symbol classsubparts) [6006 6013])
+                                            ("type" type
+                                               (:typedef ("or_ref_tag" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6022 6046]))                                          )
+                                        (reparse-symbol namespacesubparts) [5353 6055])
+                                    ("reference_manager" type
+                                       (:template 
+                                          ( ("F" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("manage" function
+                                               (:typemodifiers ("static" "inline")
+                                                :arguments 
+                                                  ( ("in_buffer" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6313 6346])
+                                                    ("out_buffer" variable
+                                                       (:reference 1
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6347 6375])
+                                                    ("op" variable (:type ("functor_manager_operation_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6392 6426]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [6279 7884]))                                          )
+                                        (reparse-symbol namespacesubparts) [6211 7893])
+                                    ("function_allows_small_object_optimization" type
+                                       (:template 
+                                          ( ("F" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("BOOST_STATIC_CONSTANT" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [8164 8169])
+                                                    ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8182 8347]))                                                  
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [8131 8348]))                                          )
+                                        (reparse-symbol namespacesubparts) [8039 8357])
+                                    ("functor_wrapper" type
+                                       (:template 
+                                          ( ("F" type (:type "class") nil nil)
+                                            ("A" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("functor_wrapper" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("f" variable (:type ("F" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8480 8484])
+                                                    ("a" variable (:type ("A" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8485 8490]))                                                  
+                                                :type ("functor_wrapper" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [8463 8542])
+                                            ("functor_wrapper" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("f" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("functor_wrapper" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8576 8601]))                                                  
+                                                :type ("functor_wrapper" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [8560 8700]))                                          
+                                        :superclasses 
+                                          ( ("F" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil)
+                                            ("A" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [8365 8709])
+                                    ("functor_manager_common" type
+                                       (:template 
+                                          ( ("Functor" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("functor_type" type
+                                               (:typedef ("Functor" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [8967 8996])
+                                            ("manage_ptr" function
+                                               (:typemodifiers ("static" "inline")
+                                                :arguments 
+                                                  ( ("in_buffer" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [9073 9106])
+                                                    ("out_buffer" variable
+                                                       (:reference 1
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [9107 9135])
+                                                    ("op" variable (:type ("functor_manager_operation_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9153 9187]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [9035 10099])
+                                            ("manage_small" function
+                                               (:typemodifiers ("static" "inline")
+                                                :arguments 
+                                                  ( ("in_buffer" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [10214 10247])
+                                                    ("out_buffer" variable
+                                                       (:reference 1
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [10248 10276])
+                                                    ("op" variable (:type ("functor_manager_operation_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10294 10328]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [10174 11782]))                                          )
+                                        (reparse-symbol namespacesubparts) [8888 11791])
+                                    ("functor_manager" type
+                                       (:template 
+                                          ( ("Functor" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("private" label nil (reparse-symbol classsubparts) [11869 11877])
+                                            ("functor_type" type
+                                               (:typedef ("Functor" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [11886 11915])
+                                            ("manager" function
+                                               (:typemodifiers ("static" "inline")
+                                                :arguments 
+                                                  ( ("in_buffer" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [11989 12022])
+                                                    ("out_buffer" variable
+                                                       (:reference 1
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [12023 12051])
+                                                    ("op" variable (:type ("functor_manager_operation_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12069 12103])
+                                                    ("" variable (:type ("function_ptr_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12104 12121]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [11954 12221])
+                                            ("manager" function
+                                               (:typemodifiers ("static" "inline")
+                                                :arguments 
+                                                  ( ("in_buffer" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [12331 12364])
+                                                    ("out_buffer" variable
+                                                       (:reference 1
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [12365 12393])
+                                                    ("op" variable (:type ("functor_manager_operation_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12411 12445])
+                                                    ("" variable (:type ("mpl::true_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12446 12457]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [12296 12559])
+                                            ("manager" function
+                                               (:typemodifiers ("static" "inline")
+                                                :arguments 
+                                                  ( ("in_buffer" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [12669 12702])
+                                                    ("out_buffer" variable
+                                                       (:reference 1
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [12703 12731])
+                                                    ("op" variable (:type ("functor_manager_operation_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12749 12783])
+                                                    ("" variable (:type ("mpl::false_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12784 12796]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [12634 14295])
+                                            ("manager" function
+                                               (:typemodifiers ("static" "inline")
+                                                :arguments 
+                                                  ( ("in_buffer" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [14528 14561])
+                                                    ("out_buffer" variable
+                                                       (:reference 1
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [14562 14590])
+                                                    ("op" variable (:type ("functor_manager_operation_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14608 14642])
+                                                    ("" variable (:type ("function_obj_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14643 14660]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [14493 14824])
+                                            ("manager" function
+                                               (:typemodifiers ("static" "inline")
+                                                :arguments 
+                                                  ( ("in_buffer" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [14946 14979])
+                                                    ("out_buffer" variable
+                                                       (:reference 1
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [14980 15008])
+                                                    ("op" variable (:type ("functor_manager_operation_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15026 15060])
+                                                    ("" variable (:type ("member_ptr_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15061 15076]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [14911 15156])
+                                            ("public" label nil (reparse-symbol classsubparts) [15164 15171])
+                                            ("manage" function
+                                               (:typemodifiers ("static" "inline")
+                                                :arguments 
+                                                  ( ("in_buffer" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [15348 15381])
+                                                    ("out_buffer" variable
+                                                       (:reference 1
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [15382 15410])
+                                                    ("op" variable (:type ("functor_manager_operation_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15427 15461]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [15314 15924]))                                          )
+                                        (reparse-symbol namespacesubparts) [11799 15933])
+                                    ("functor_manager_a" type
+                                       (:template 
+                                          ( ("Functor" type (:type "class") nil nil)
+                                            ("Allocator" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("private" label nil (reparse-symbol classsubparts) [16033 16041])
+                                            ("functor_type" type
+                                               (:typedef ("Functor" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [16050 16079])
+                                            ("manager" function
+                                               (:typemodifiers ("static" "inline")
+                                                :arguments 
+                                                  ( ("in_buffer" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [16153 16186])
+                                                    ("out_buffer" variable
+                                                       (:reference 1
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [16187 16215])
+                                                    ("op" variable (:type ("functor_manager_operation_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16233 16267])
+                                                    ("" variable (:type ("function_ptr_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16268 16285]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [16118 16385])
+                                            ("manager" function
+                                               (:typemodifiers ("static" "inline")
+                                                :arguments 
+                                                  ( ("in_buffer" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [16495 16528])
+                                                    ("out_buffer" variable
+                                                       (:reference 1
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [16529 16557])
+                                                    ("op" variable (:type ("functor_manager_operation_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16575 16609])
+                                                    ("" variable (:type ("mpl::true_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16610 16621]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [16460 16723])
+                                            ("manager" function
+                                               (:typemodifiers ("static" "inline")
+                                                :arguments 
+                                                  ( ("in_buffer" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [16833 16866])
+                                                    ("out_buffer" variable
+                                                       (:reference 1
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [16867 16895])
+                                                    ("op" variable (:type ("functor_manager_operation_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16913 16947])
+                                                    ("" variable (:type ("mpl::false_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16948 16960]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [16798 19157])
+                                            ("manager" function
+                                               (:typemodifiers ("static" "inline")
+                                                :arguments 
+                                                  ( ("in_buffer" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [19390 19423])
+                                                    ("out_buffer" variable
+                                                       (:reference 1
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [19424 19452])
+                                                    ("op" variable (:type ("functor_manager_operation_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19470 19504])
+                                                    ("" variable (:type ("function_obj_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19505 19522]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [19355 19686])
+                                            ("public" label nil (reparse-symbol classsubparts) [19694 19701])
+                                            ("manage" function
+                                               (:typemodifiers ("static" "inline")
+                                                :arguments 
+                                                  ( ("in_buffer" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [19878 19911])
+                                                    ("out_buffer" variable
+                                                       (:reference 1
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [19912 19940])
+                                                    ("op" variable (:type ("functor_manager_operation_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19957 19991]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [19844 20454]))                                          )
+                                        (reparse-symbol namespacesubparts) [15941 20463])
+                                    ("useless_clear_type" type (:type "struct") (reparse-symbol namespacesubparts) [20534 20563])
+                                    ("vtable_base" type
+                                       (:members 
+                                          ( ("manager" function
+                                               (:prototype-flag t
+                                                :function-pointer t
+                                                :arguments 
+                                                  ( ("in_buffer" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [22872 22905])
+                                                    ("out_buffer" variable
+                                                       (:reference 1
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [22931 22959])
+                                                    ("op" variable (:type ("functor_manager_operation_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22985 23019]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [22856 23020]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [22821 23029]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [2701 23035]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2678 23065])
+                    ("function_base" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [23352 23359])
+                            ("function_base" function
+                               (:constructor-flag t
+                                :type ("function_base" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [23362 23393])
+                            ("empty" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [23464 23502])
+                            ("target_type" function
+                               (:methodconst-flag t
+                                :constant-flag t
+                                :type ("detail::sp_typeinfo" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [23613 23869])
+                            ("target" function
+                               (:template 
+                                  ( ("Functor" type (:type "class") nil nil))                                  
+                                :type ("Functor" type (:type "class") nil nil)
+                                :pointer 1)
+                                (reparse-symbol classsubparts) [23873 24386])
+                            ("target" function
+                               (:template 
+                                  ( ("Functor" type (:type "class") nil nil))                                  
+                                :type ("Functor" type (:type "class") nil nil)
+                                :constant-flag t
+                                :pointer 1
+                                :methodconst-flag t)
+                                (reparse-symbol classsubparts) [24390 25015])
+                            ("contains" function
+                               (:template 
+                                  ( ("F" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("f" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("F" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [25058 25069]))                                  
+                                :methodconst-flag t)
+                                (reparse-symbol classsubparts) [25019 25231])
+                            ("public" label nil (reparse-symbol classsubparts) [25985 25992])
+                            ("get_vtable" function
+                               (:methodconst-flag t
+                                :pointer 1
+                                :type ("detail::function::vtable_base" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [26060 26263])
+                            ("has_trivial_copy_and_destroy" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [26267 26371])
+                            ("vtable" variable
+                               (:pointer 1
+                                :type ("detail::function::vtable_base" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [26375 26413])
+                            ("functor" variable
+                               (:typemodifiers ("mutable")
+                                :type ("detail::function::function_buffer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [26416 26466]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [23330 26469])
+                    ("bad_function_call" type
+                       (:superclasses 
+                          ( ("std::runtime_error" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [26628 26635])
+                            ("bad_function_call" function
+                               (:constructor-flag t
+                                :type ("bad_function_call" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [26638 26714]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [26574 26717])
+                    ("==" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("f" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("function_base" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [26766 26789])
+                            ("" variable
+                               (:pointer 1
+                                :type ("detail::function::useless_clear_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [26813 26851]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [26743 26875])
+                    ("!=" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("f" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("function_base" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [26900 26923])
+                            ("" variable
+                               (:pointer 1
+                                :type ("detail::function::useless_clear_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [26947 26985]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [26877 27010])
+                    ("==" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("detail::function::useless_clear_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [27035 27073])
+                            ("f" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("function_base" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [27097 27120]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [27012 27144])
+                    ("!=" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("detail::function::useless_clear_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [27169 27207])
+                            ("f" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("function_base" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [27231 27254]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [27146 27279])
+                    ("==" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("f" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("function_base" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [28623 28646])
+                            ("g" variable (:type ("Functor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28647 28657]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [28612 28783])
+                    ("==" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("g" variable (:type ("Functor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28880 28890])
+                            ("f" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("function_base" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [28891 28914]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [28869 29040])
+                    ("!=" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("f" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("function_base" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [29137 29160])
+                            ("g" variable (:type ("Functor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29161 29171]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [29126 29297])
+                    ("!=" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("g" variable (:type ("Functor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29394 29404])
+                            ("f" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("function_base" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [29405 29428]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [29383 29554])
+                    ("==" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("f" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("function_base" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [29660 29683])
+                            ("g" variable (:type ("reference_wrapper" type
+                                 (:template-specifier 
+                                    ( ("Functor" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [29684 29713]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [29649 29838])
+                    ("==" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("g" variable (:type ("reference_wrapper" type
+                                 (:template-specifier 
+                                    ( ("Functor" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [29935 29964])
+                            ("f" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("function_base" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [29965 29988]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [29924 30113])
+                    ("!=" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("f" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("function_base" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [30210 30233])
+                            ("g" variable (:type ("reference_wrapper" type
+                                 (:template-specifier 
+                                    ( ("Functor" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [30234 30263]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [30199 30387])
+                    ("!=" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("g" variable (:type ("reference_wrapper" type
+                                 (:template-specifier 
+                                    ( ("Functor" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [30484 30513])
+                            ("f" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("function_base" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [30514 30537]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [30473 30661])
+                    ("detail" type
+                       (:members 
+                          ( ("function" type
+                               (:members 
+                                  ( ("has_empty_target" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("f" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("function_base" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [30776 30799]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [30747 30836])
+                                    ("has_empty_target" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [30997 31001]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [30968 31033]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [30722 31044]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [30701 31072]))                  
+                :type "namespace")
+                nil [2658 31098]))          
+      :file "function_base.hpp"
+      :pointmax 31309
+      :fsize 31087
+      :lastmodtime '(22633 22283 0 0)
+      :unmatched-syntax '((semantic-list 30455 . 30470) (symbol 30418 . 30455) (punctuation 30414 . 30415) (symbol 30407 . 30414) (TYPENAME 30398 . 30406) (punctuation 30397 . 30398) (TEMPLATE 30389 . 30397) (semantic-list 30181 . 30196) (symbol 30144 . 30181) (punctuation 30140 . 30141) (symbol 30133 . 30140) (TYPENAME 30124 . 30132) (punctuation 30123 . 30124) (TEMPLATE 30115 . 30123) (semantic-list 29906 . 29921) (symbol 29869 . 29906) (punctuation 29865 . 29866) (symbol 29858 . 29865) (TYPENAME 29849 . 29857) (punctuation 29848 . 29849) (TEMPLATE 29840 . 29848) (semantic-list 29631 . 29646) (symbol 29594 . 29631) (punctuation 29590 . 29591) (symbol 29583 . 29590) (TYPENAME 29574 . 29582) (punctuation 29573 . 29574) (TEMPLATE 29565 . 29573) (semantic-list 29365 . 29380) (symbol 29328 . 29365) (punctuation 29324 . 29325) (symbol 29317 . 29324) (TYPENAME 29308 . 29316) (punctuation 29307 . 29308) (TEMPLATE 29299 . 29307) (semantic-list 29108 . 29123) (symbol 29071 . 29108) (punctuation 29067 . 29068) (symbol 29060 . 29067) (TYPENAME 29051 . 29059) (punctuation 29050 . 29051) (TEMPLATE 29042 . 29050) (semantic-list 28851 . 28866) (symbol 28814 . 28851) (punctuation 28810 . 28811) (symbol 28803 . 28810) (TYPENAME 28794 . 28802) (punctuation 28793 . 28794) (TEMPLATE 28785 . 28793) (semantic-list 28594 . 28609) (symbol 28557 . 28594) (punctuation 28553 . 28554) (symbol 28546 . 28553) (TYPENAME 28537 . 28545) (punctuation 28536 . 28537) (TEMPLATE 28528 . 28536) (punctuation 3657 . 3658) (semantic-list 3652 . 3657) (semantic-list 3635 . 3652) (VOID 3630 . 3634) (semantic-list 1970 . 2013) (punctuation 1968 . 1969) (punctuation 1967 . 1968) (semantic-list 1957 . 1963) (symbol 1950 . 1957) (punctuation 1948 . 1949) (punctuation 1947 . 1948))
+      :lexical-table 
+        '(("BOOST_FUNCTION_BASE_HEADER")
+          ("BOOST_FUNCTION_TARGET_FIX" (spp-arg-list ("x") 2398 . 2401))
+          ("BOOST_FUNCTION_STD_NS" . ((symbol "std" 1681 . 1684)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_FUNCTION_FWD_HPP" variable (:constant-flag t) nil [351 373])
+            ("boost/config.hpp" include (:system-flag t) nil [374 401])
+            ("boost" type
+               (:members 
+                  ( ("bad_function_call" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [981 1005])
+                    ("function" type
+                       (:template 
+                          ( ("Signature" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [1084 1128])
+                    ("swap" function
+                       (:template 
+                          ( ("Signature" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("f1" variable
+                               (:reference 1
+                                :type ("function" type
+                                     (:template-specifier 
+                                        ( ("Signature" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1180 1204])
+                            ("f2" variable
+                               (:reference 1
+                                :type ("function" type
+                                     (:template-specifier 
+                                        ( ("Signature" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1205 1229]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [1132 1254])
+                    ("function0" type
+                       (:template 
+                          ( ("R" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [1317 1354])
+                    ("function1" type
+                       (:template 
+                          ( ("R" type (:type "class") nil nil)
+                            ("T1" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [1357 1407])
+                    ("function2" type
+                       (:template 
+                          ( ("R" type (:type "class") nil nil)
+                            ("T1" type (:type "class") nil nil)
+                            ("T2" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [1410 1473])
+                    ("function3" type
+                       (:template 
+                          ( ("R" type (:type "class") nil nil)
+                            ("T1" type (:type "class") nil nil)
+                            ("T2" type (:type "class") nil nil)
+                            ("T3" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [1476 1552])
+                    ("function4" type
+                       (:template 
+                          ( ("R" type (:type "class") nil nil)
+                            ("T1" type (:type "class") nil nil)
+                            ("T2" type (:type "class") nil nil)
+                            ("T3" type (:type "class") nil nil)
+                            ("T4" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [1555 1649])
+                    ("function5" type
+                       (:template 
+                          ( ("R" type (:type "class") nil nil)
+                            ("T1" type (:type "class") nil nil)
+                            ("T2" type (:type "class") nil nil)
+                            ("T3" type (:type "class") nil nil)
+                            ("T4" type (:type "class") nil nil)
+                            ("T5" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [1652 1770])
+                    ("function6" type
+                       (:template 
+                          ( ("R" type (:type "class") nil nil)
+                            ("T1" type (:type "class") nil nil)
+                            ("T2" type (:type "class") nil nil)
+                            ("T3" type (:type "class") nil nil)
+                            ("T4" type (:type "class") nil nil)
+                            ("T5" type (:type "class") nil nil)
+                            ("T6" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [1773 1904])
+                    ("function7" type
+                       (:template 
+                          ( ("R" type (:type "class") nil nil)
+                            ("T1" type (:type "class") nil nil)
+                            ("T2" type (:type "class") nil nil)
+                            ("T3" type (:type "class") nil nil)
+                            ("T4" type (:type "class") nil nil)
+                            ("T5" type (:type "class") nil nil)
+                            ("T6" type (:type "class") nil nil)
+                            ("T7" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [1907 2051])
+                    ("function8" type
+                       (:template 
+                          ( ("R" type (:type "class") nil nil)
+                            ("T1" type (:type "class") nil nil)
+                            ("T2" type (:type "class") nil nil)
+                            ("T3" type (:type "class") nil nil)
+                            ("T4" type (:type "class") nil nil)
+                            ("T5" type (:type "class") nil nil)
+                            ("T6" type (:type "class") nil nil)
+                            ("T7" type (:type "class") nil nil)
+                            ("T8" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [2054 2211])
+                    ("function9" type
+                       (:template 
+                          ( ("R" type (:type "class") nil nil)
+                            ("T1" type (:type "class") nil nil)
+                            ("T2" type (:type "class") nil nil)
+                            ("T3" type (:type "class") nil nil)
+                            ("T4" type (:type "class") nil nil)
+                            ("T5" type (:type "class") nil nil)
+                            ("T6" type (:type "class") nil nil)
+                            ("T7" type (:type "class") nil nil)
+                            ("T8" type (:type "class") nil nil)
+                            ("T9" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [2214 2384])
+                    ("function10" type
+                       (:template 
+                          ( ("R" type (:type "class") nil nil)
+                            ("T1" type (:type "class") nil nil)
+                            ("T2" type (:type "class") nil nil)
+                            ("T3" type (:type "class") nil nil)
+                            ("T4" type (:type "class") nil nil)
+                            ("T5" type (:type "class") nil nil)
+                            ("T6" type (:type "class") nil nil)
+                            ("T7" type (:type "class") nil nil)
+                            ("T8" type (:type "class") nil nil)
+                            ("T9" type (:type "class") nil nil)
+                            ("T10" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [2387 2583]))                  
+                :type "namespace")
+                nil [961 2585]))          
+      :file "function_fwd.hpp"
+      :pointmax 2594
+      :fsize 2593
+      :lastmodtime '(22633 22283 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_FUNCTION_FWD_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("boost/function/detail/prologue.hpp" include (:system-flag t) nil [438 483])
+            ("boost/detail/no_exceptions_support.hpp" include (:system-flag t) nil [484 533])
+            ("BOOST_FUNCTION_TEMPLATE_PARMS" variable (:constant-flag t) nil [679 708])
+            ("BOOST_FUNCTION_TEMPLATE_ARGS" variable (:constant-flag t) nil [776 804])
+            ("BOOST_FUNCTION_PARM" variable (:constant-flag t) nil [863 882])
+            ("BOOST_FUNCTION_PARMS" variable (:constant-flag t) nil [935 955])
+            ("boost/move/utility_core.hpp" include (:system-flag t) nil [1157 1198])
+            ("BOOST_FUNCTION_ARG" variable (:constant-flag t) nil [1210 1228])
+            ("BOOST_FUNCTION_ARGS" variable (:constant-flag t) nil [1304 1323])
+            ("BOOST_FUNCTION_ARG_TYPE" variable (:constant-flag t) nil [1413 1436])
+            ("BOOST_FUNCTION_ARG_TYPES" variable (:constant-flag t) nil [1539 1563])
+            ("BOOST_FUNCTION_COMMA" variable (:constant-flag t) nil [1765 1785])
+            ("BOOST_FUNCTION_FUNCTION" variable (:constant-flag t) nil [1883 1906])
+            ("BOOST_FUNCTION_FUNCTION_INVOKER" variable (:constant-flag t) nil [1960 1991])
+            ("BOOST_FUNCTION_VOID_FUNCTION_INVOKER" variable (:constant-flag t) nil [2057 2093])
+            ("BOOST_FUNCTION_FUNCTION_OBJ_INVOKER" variable (:constant-flag t) nil [2164 2199])
+            ("BOOST_FUNCTION_VOID_FUNCTION_OBJ_INVOKER" variable (:constant-flag t) nil [2269 2309])
+            ("BOOST_FUNCTION_FUNCTION_REF_INVOKER" variable (:constant-flag t) nil [2384 2419])
+            ("BOOST_FUNCTION_VOID_FUNCTION_REF_INVOKER" variable (:constant-flag t) nil [2489 2529])
+            ("BOOST_FUNCTION_MEMBER_INVOKER" variable (:constant-flag t) nil [2604 2633])
+            ("BOOST_FUNCTION_VOID_MEMBER_INVOKER" variable (:constant-flag t) nil [2703 2737])
+            ("BOOST_FUNCTION_GET_FUNCTION_INVOKER" variable (:constant-flag t) nil [2812 2847])
+            ("BOOST_FUNCTION_GET_FUNCTION_OBJ_INVOKER" variable (:constant-flag t) nil [2917 2956])
+            ("BOOST_FUNCTION_GET_FUNCTION_REF_INVOKER" variable (:constant-flag t) nil [3030 3069])
+            ("BOOST_FUNCTION_GET_MEMBER_INVOKER" variable (:constant-flag t) nil [3143 3176])
+            ("BOOST_FUNCTION_GET_INVOKER" variable (:constant-flag t) nil [3244 3270])
+            ("BOOST_FUNCTION_VTABLE" variable (:constant-flag t) nil [3331 3352])
+            ("BOOST_FUNCTION_VOID_RETURN_TYPE" variable (:constant-flag t) nil [3443 3474])
+            ("BOOST_FUNCTION_RETURN" variable (:constant-flag t) nil [3490 3511])
+            ("boost" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("function" type
+                               (:members 
+                                  ( ("BOOST_FUNCTION_FUNCTION_INVOKER" type
+                                       (:members 
+                                          ( ("invoke" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("function_ptr" variable
+                                                       (:reference 1
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3962 4012])
+                                                    ("BOOST_FUNCTION_PARMS" variable (:type ("BOOST_FUNCTION_COMMA" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3992 4058]))                                                  
+                                                :type ("R" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3946 4207]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [3891 4216])
+                                    ("BOOST_FUNCTION_VOID_FUNCTION_INVOKER" type
+                                       (:members 
+                                          ( ("invoke" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("function_ptr" variable
+                                                       (:reference 1
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4472 4522])
+                                                    ("BOOST_FUNCTION_PARMS" variable (:type ("BOOST_FUNCTION_COMMA" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4502 4559]))                                                  
+                                                :type ("BOOST_FUNCTION_VOID_RETURN_TYPE" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [4418 4725]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [4358 4734])
+                                    ("BOOST_FUNCTION_FUNCTION_OBJ_INVOKER" type
+                                       (:members 
+                                          ( ("invoke" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("function_obj_ptr" variable
+                                                       (:reference 1
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4949 5003])
+                                                    ("BOOST_FUNCTION_PARMS" variable (:type ("BOOST_FUNCTION_COMMA" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4983 5049]))                                                  
+                                                :type ("R" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [4933 5385]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [4874 5394])
+                                    ("BOOST_FUNCTION_VOID_FUNCTION_OBJ_INVOKER" type
+                                       (:members 
+                                          ( ("invoke" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("function_obj_ptr" variable
+                                                       (:reference 1
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5652 5706])
+                                                    ("BOOST_FUNCTION_PARMS" variable (:type ("BOOST_FUNCTION_COMMA" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5686 5743]))                                                  
+                                                :type ("BOOST_FUNCTION_VOID_RETURN_TYPE" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [5598 6095]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [5534 6104])
+                                    ("BOOST_FUNCTION_FUNCTION_REF_INVOKER" type
+                                       (:members 
+                                          ( ("invoke" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("function_obj_ptr" variable
+                                                       (:reference 1
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6319 6373])
+                                                    ("BOOST_FUNCTION_PARMS" variable (:type ("BOOST_FUNCTION_COMMA" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6353 6419]))                                                  
+                                                :type ("R" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [6303 6589]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [6244 6598])
+                                    ("BOOST_FUNCTION_VOID_FUNCTION_REF_INVOKER" type
+                                       (:members 
+                                          ( ("invoke" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("function_obj_ptr" variable
+                                                       (:reference 1
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6856 6910])
+                                                    ("BOOST_FUNCTION_PARMS" variable (:type ("BOOST_FUNCTION_COMMA" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6890 6947]))                                                  
+                                                :type ("BOOST_FUNCTION_VOID_RETURN_TYPE" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [6802 7133]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [6738 7142])
+                                    ("BOOST_FUNCTION_GET_FUNCTION_INVOKER" type
+                                       (:members 
+                                          ( ("type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9002 9012]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [8389 9021])
+                                    ("BOOST_FUNCTION_GET_FUNCTION_OBJ_INVOKER" type
+                                       (:members 
+                                          ( ("type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9787 9797]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [9162 9806])
+                                    ("BOOST_FUNCTION_GET_FUNCTION_REF_INVOKER" type
+                                       (:members 
+                                          ( ("type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10572 10582]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [9947 10591])
+                                    ("BOOST_FUNCTION_GET_INVOKER" type
+                                       (:template 
+                                          ( ("Tag" type (:type "class") nil nil))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [11950 12017])
+                                    ("BOOST_FUNCTION_GET_INVOKER" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("apply" type
+                                               (:members 
+                                                  ( ("invoker_type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12555 12585])
+                                                    ("manager_type" type
+                                                       (:typedef ("functor_manager" type
+                                                             (:template-specifier 
+                                                                ( ("FunctionPtr" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [12597 12647]))                                                  
+                                                :type "struct")
+                                                (reparse-symbol classsubparts) [12286 12658])
+                                            ("apply_a" type
+                                               (:members 
+                                                  ( ("invoker_type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13095 13125])
+                                                    ("manager_type" type
+                                                       (:typedef ("functor_manager" type
+                                                             (:template-specifier 
+                                                                ( ("FunctionPtr" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [13137 13187]))                                                  
+                                                :type "struct")
+                                                (reparse-symbol classsubparts) [12824 13198]))                                          
+                                        :template-specifier 
+                                          ( ("function_ptr_tag" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [12082 13207])
+                                    ("BOOST_FUNCTION_GET_INVOKER" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("apply" type
+                                               (:members 
+                                                  ( ("invoker_type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14957 14987])
+                                                    ("manager_type" type
+                                                       (:typedef ("functor_manager" type
+                                                             (:template-specifier 
+                                                                ( ("FunctionObj" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [14999 15049]))                                                  
+                                                :type "struct")
+                                                (reparse-symbol classsubparts) [14684 15060])
+                                            ("apply_a" type
+                                               (:members 
+                                                  ( ("invoker_type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15501 15531])
+                                                    ("manager_type" type
+                                                       (:typedef ("functor_manager_a" type
+                                                             (:template-specifier 
+                                                                ( ("FunctionObj" type nil nil nil)
+                                                                  ("Allocator" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [15543 15606]))                                                  
+                                                :type "struct")
+                                                (reparse-symbol classsubparts) [15226 15617]))                                          
+                                        :template-specifier 
+                                          ( ("function_obj_tag" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [14480 15626])
+                                    ("BOOST_FUNCTION_GET_INVOKER" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("apply" type
+                                               (:members 
+                                                  ( ("invoker_type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16199 16229])
+                                                    ("manager_type" variable (:type "int") (reparse-symbol classsubparts) [16294 16307]))                                                  
+                                                :type "struct")
+                                                (reparse-symbol classsubparts) [15912 16318])
+                                            ("apply_a" type
+                                               (:members 
+                                                  ( ("invoker_type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16772 16802])
+                                                    ("manager_type" variable (:type "int") (reparse-symbol classsubparts) [16867 16880]))                                                  
+                                                :type "struct")
+                                                (reparse-symbol classsubparts) [16483 16891]))                                          
+                                        :template-specifier 
+                                          ( ("function_obj_ref_tag" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [15705 16900])
+                                    ("BOOST_FUNCTION_VTABLE" type
+                                       (:members 
+                                          ( ("result_type" type
+                                               (:typedef ("R" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [17383 17413])
+                                            ("invoker_type" function
+                                               (:prototype-flag t
+                                                :function-pointer t
+                                                :arguments 
+                                                  ( ("BOOST_FUNCTION_COMMA" variable
+                                                       (:reference 1
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [17565 17719])
+                                                    ("" variable (:type ("BOOST_FUNCTION_TEMPLATE_ARGS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17691 17720]))                                                  
+                                                :type ("result_type" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [17537 17721])
+                                            ("assign_to" function
+                                               (:template 
+                                                  ( ("F" type (:type "class") nil nil))                                                  
+                                                :type "bool"
+                                                :arguments 
+                                                  ( ("f" variable (:type ("F" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17775 17779])
+                                                    ("functor" variable
+                                                       (:reference 1
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [17780 17805]))                                                  
+                                                :methodconst-flag t)
+                                                (reparse-symbol classsubparts) [17731 17936])
+                                            ("assign_to_a" function
+                                               (:template 
+                                                  ( ("F" type (:type "class") nil nil)
+                                                    ("Allocator" type (:type "class") nil nil))                                                  
+                                                :type "bool"
+                                                :arguments 
+                                                  ( ("f" variable (:type ("F" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18010 18014])
+                                                    ("functor" variable
+                                                       (:reference 1
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [18015 18040])
+                                                    ("a" variable (:type ("Allocator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18041 18053]))                                                  
+                                                :methodconst-flag t)
+                                                (reparse-symbol classsubparts) [17945 18189])
+                                            ("clear" function
+                                               (:methodconst-flag t
+                                                :arguments 
+                                                  ( ("functor" variable
+                                                       (:reference 1
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [18210 18235]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [18199 18354])
+                                            ("private" label nil (reparse-symbol classsubparts) [18362 18370])
+                                            ("assign_to" function
+                                               (:template 
+                                                  ( ("FunctionPtr" type (:type "class") nil nil))                                                  
+                                                :type "bool"
+                                                :arguments 
+                                                  ( ("f" variable (:type ("FunctionPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18470 18484])
+                                                    ("functor" variable
+                                                       (:reference 1
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [18485 18510])
+                                                    ("" variable (:type ("function_ptr_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18511 18528]))                                                  
+                                                :methodconst-flag t)
+                                                (reparse-symbol classsubparts) [18408 18887])
+                                            ("assign_to_a" function
+                                               (:template 
+                                                  ( ("FunctionPtr" type (:type "class") nil nil)
+                                                    ("Allocator" type (:type "class") nil nil))                                                  
+                                                :type "bool"
+                                                :arguments 
+                                                  ( ("f" variable (:type ("FunctionPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18979 18993])
+                                                    ("functor" variable
+                                                       (:reference 1
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [18994 19019])
+                                                    ("" variable (:type ("Allocator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19020 19030])
+                                                    ("" variable (:type ("function_ptr_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19031 19048]))                                                  
+                                                :methodconst-flag t)
+                                                (reparse-symbol classsubparts) [18896 19132])
+                                            ("assign_functor" function
+                                               (:template 
+                                                  ( ("FunctionObj" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("f" variable (:type ("FunctionObj" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20393 20407])
+                                                    ("functor" variable
+                                                       (:reference 1
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [20408 20433])
+                                                    ("" variable (:type ("mpl::true_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20434 20445]))                                                  
+                                                :methodconst-flag t)
+                                                (reparse-symbol classsubparts) [20326 20541])
+                                            ("assign_functor_a" function
+                                               (:template 
+                                                  ( ("FunctionObj" type (:type "class") nil nil)
+                                                    ("Allocator" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("f" variable (:type ("FunctionObj" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20638 20652])
+                                                    ("functor" variable
+                                                       (:reference 1
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [20653 20678])
+                                                    ("" variable (:type ("Allocator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20679 20689])
+                                                    ("" variable (:type ("mpl::true_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20690 20701]))                                                  
+                                                :methodconst-flag t)
+                                                (reparse-symbol classsubparts) [20550 20777])
+                                            ("assign_functor" function
+                                               (:template 
+                                                  ( ("FunctionObj" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("f" variable (:type ("FunctionObj" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20916 20930])
+                                                    ("functor" variable
+                                                       (:reference 1
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [20931 20956])
+                                                    ("" variable (:type ("mpl::false_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20957 20969]))                                                  
+                                                :methodconst-flag t)
+                                                (reparse-symbol classsubparts) [20849 21051])
+                                            ("assign_functor_a" function
+                                               (:template 
+                                                  ( ("FunctionObj" type (:type "class") nil nil)
+                                                    ("Allocator" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("f" variable (:type ("FunctionObj" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21148 21162])
+                                                    ("functor" variable
+                                                       (:reference 1
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [21163 21188])
+                                                    ("a" variable (:type ("Allocator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21189 21201])
+                                                    ("" variable (:type ("mpl::false_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21202 21214]))                                                  
+                                                :methodconst-flag t)
+                                                (reparse-symbol classsubparts) [21060 21860])
+                                            ("assign_to" function
+                                               (:template 
+                                                  ( ("FunctionObj" type (:type "class") nil nil))                                                  
+                                                :type "bool"
+                                                :arguments 
+                                                  ( ("f" variable (:type ("FunctionObj" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21932 21946])
+                                                    ("functor" variable
+                                                       (:reference 1
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [21947 21972])
+                                                    ("" variable (:type ("function_obj_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21973 21990]))                                                  
+                                                :methodconst-flag t)
+                                                (reparse-symbol classsubparts) [21870 22325])
+                                            ("assign_to_a" function
+                                               (:template 
+                                                  ( ("FunctionObj" type (:type "class") nil nil)
+                                                    ("Allocator" type (:type "class") nil nil))                                                  
+                                                :type "bool"
+                                                :arguments 
+                                                  ( ("f" variable (:type ("FunctionObj" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22417 22431])
+                                                    ("functor" variable
+                                                       (:reference 1
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [22432 22457])
+                                                    ("a" variable (:type ("Allocator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22458 22470])
+                                                    ("" variable (:type ("function_obj_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22471 22488]))                                                  
+                                                :methodconst-flag t)
+                                                (reparse-symbol classsubparts) [22334 22828])
+                                            ("assign_to" function
+                                               (:template 
+                                                  ( ("FunctionObj" type (:type "class") nil nil))                                                  
+                                                :type "bool"
+                                                :arguments 
+                                                  ( ("f" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("reference_wrapper" type
+                                                             (:template-specifier 
+                                                                ( ("FunctionObj" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [22942 22982])
+                                                    ("functor" variable
+                                                       (:reference 1
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [23001 23026])
+                                                    ("" variable (:type ("function_obj_ref_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23027 23048]))                                                  
+                                                :methodconst-flag t)
+                                                (reparse-symbol classsubparts) [22880 23344])
+                                            ("assign_to_a" function
+                                               (:template 
+                                                  ( ("FunctionObj" type (:type "class") nil nil)
+                                                    ("Allocator" type (:type "class") nil nil))                                                  
+                                                :type "bool"
+                                                :arguments 
+                                                  ( ("f" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("reference_wrapper" type
+                                                             (:template-specifier 
+                                                                ( ("FunctionObj" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [23436 23476])
+                                                    ("functor" variable
+                                                       (:reference 1
+                                                        :type ("function_buffer" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [23495 23520])
+                                                    ("" variable (:type ("Allocator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23521 23531])
+                                                    ("" variable (:type ("function_obj_ref_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23532 23553]))                                                  
+                                                :methodconst-flag t)
+                                                (reparse-symbol classsubparts) [23353 23641])
+                                            ("public" label nil (reparse-symbol classsubparts) [23649 23656])
+                                            ("base" variable (:type ("vtable_base" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23665 23682])
+                                            ("invoker" variable (:type ("invoker_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23691 23712]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [17308 23721]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [3730 23727]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [3707 23757])
+                    ("BOOST_FUNCTION_FUNCTION" type
+                       (:superclasses 
+                          ( ("function_base" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [24093 24100])
+                            ("result_type" type
+                               (:typedef ("R" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [24135 24165])
+                            ("private" label nil (reparse-symbol classsubparts) [24303 24311])
+                            ("vtable_type" variable (:type "int") (reparse-symbol classsubparts) [24445 24457])
+                            ("get_vtable" function
+                               (:methodconst-flag t
+                                :pointer 1
+                                :type ("vtable_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [24463 24636])
+                            ("clear_type" type (:type "struct") (reparse-symbol classsubparts) [24642 24663])
+                            ("public" label nil (reparse-symbol classsubparts) [24667 24674])
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [24701 24705])
+                                    ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24706 24737]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [24679 24738])
+                            ("sig" type
+                               (:template 
+                                  ( ("Args" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("result_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [24834 24859]))                                  )
+                                (reparse-symbol classsubparts) [24783 24866])
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [25073 25077])
+                                    ("" variable (:type ("arity" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25078 25110]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [25051 25111])
+                            ("self_type" type
+                               (:typedef ("BOOST_FUNCTION_FUNCTION" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [25146 25188])
+                            ("BOOST_FUNCTION_FUNCTION" function
+                               (:constructor-flag t
+                                :type ("BOOST_FUNCTION_FUNCTION" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [25194 25241])
+                            ("BOOST_FUNCTION_FUNCTION" function
+                               (:template 
+                                  ( ("Functor" type (:type "class") nil nil))                                  
+                                :type ("BOOST_FUNCTION_FUNCTION" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("BOOST_FUNCTION_TARGET_FIX" variable (:type ("Functor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25411 25453])
+                                    ("" variable (:type ("f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25454 25509])
+                                    ("" variable
+                                       (:typemodifiers ("typename")
+                                        :type ("boost::enable_if_c" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [25509 25537])
+                                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [25639 25643])
+                                    ("" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25645 25709]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [25356 25771])
+                            ("BOOST_FUNCTION_FUNCTION" function
+                               (:template 
+                                  ( ("Functor" type (:type "class") nil nil)
+                                    ("Allocator" type (:type "class") nil nil))                                  
+                                :type ("BOOST_FUNCTION_FUNCTION" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("BOOST_FUNCTION_TARGET_FIX" variable (:type ("Functor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25850 25892])
+                                    ("" variable (:type ("f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25893 25895])
+                                    ("a" variable (:type ("Allocator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25896 25961])
+                                    ("" variable
+                                       (:typemodifiers ("typename")
+                                        :type ("boost::enable_if_c" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [25961 25989])
+                                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [26092 26096])
+                                    ("" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26098 26162]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [25776 26228])
+                            ("BOOST_FUNCTION_FUNCTION" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:pointer 1
+                                        :type ("clear_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [26282 26294]))                                  
+                                :type ("BOOST_FUNCTION_FUNCTION" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [26258 26316])
+                            ("BOOST_FUNCTION_FUNCTION" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("f" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("BOOST_FUNCTION_FUNCTION" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [26458 26491]))                                  
+                                :type ("BOOST_FUNCTION_FUNCTION" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [26434 26551])
+                            ("BOOST_FUNCTION_FUNCTION" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("BOOST_FUNCTION_FUNCTION" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [26622 26647])
+                                    ("" variable (:type ("f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26648 26650]))                                  
+                                :type ("BOOST_FUNCTION_FUNCTION" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [26598 26708])
+                            ("BOOST_FUNCTION_FUNCTION" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [26721 26760])
+                            ("()" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("BOOST_FUNCTION_PARMS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26789 26810]))                                  
+                                :type ("result_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [26766 27015])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("BOOST_FUNCTION_TARGET_FIX" variable (:type ("Functor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27569 27611])
+                                    ("" variable (:type ("f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27612 27614]))                                  
+                                :type ("type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [27508 27815])
+                            ("assign" function
+                               (:template 
+                                  ( ("Functor" type (:type "class") nil nil)
+                                    ("Allocator" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("BOOST_FUNCTION_TARGET_FIX" variable (:type ("Functor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27882 27924])
+                                    ("" variable (:type ("f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27925 27927])
+                                    ("a" variable (:type ("Allocator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27928 27940]))                                  )
+                                (reparse-symbol classsubparts) [27820 28123])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:pointer 1
+                                        :type ("clear_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [28188 28200]))                                  
+                                :type ("BOOST_FUNCTION_FUNCTION" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [28153 28253])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("f" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("BOOST_FUNCTION_FUNCTION" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [28495 28528]))                                  
+                                :type ("BOOST_FUNCTION_FUNCTION" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [28460 28777])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("BOOST_FUNCTION_FUNCTION" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [28919 28944])
+                                    ("" variable (:type ("f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28945 28947]))                                  
+                                :type ("BOOST_FUNCTION_FUNCTION" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [28884 29194])
+                            ("swap" function
+                               (:arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :type ("BOOST_FUNCTION_FUNCTION" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [29217 29248]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [29207 29430])
+                            ("clear" function (:type "void") (reparse-symbol classsubparts) [29479 29648])
+                            ("private" label nil (reparse-symbol classsubparts) [29872 29880])
+                            ("dummy" type
+                               (:members 
+                                  ( ("nonnull" function (:type "void") (reparse-symbol classsubparts) [29906 29923]))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [29885 29930])
+                            ("public" label nil (reparse-symbol classsubparts) [29975 29982])
+                            ("safe_bool" function
+                               (:methodconst-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [29996 30069])
+                            ("!" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [30075 30129])
+                            ("private" label nil (reparse-symbol classsubparts) [30140 30148])
+                            ("assign_to_own" function
+                               (:arguments 
+                                  ( ("f" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("BOOST_FUNCTION_FUNCTION" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [30172 30205]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [30153 30527])
+                            ("assign_to" function
+                               (:template 
+                                  ( ("Functor" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("f" variable (:type ("Functor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30579 30589]))                                  )
+                                (reparse-symbol classsubparts) [30533 32112])
+                            ("assign_to_a" function
+                               (:template 
+                                  ( ("Functor" type (:type "class") nil nil)
+                                    ("Allocator" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("f" variable (:type ("Functor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32185 32195])
+                                    ("a" variable (:type ("Allocator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32195 32207]))                                  )
+                                (reparse-symbol classsubparts) [32118 33774])
+                            ("move_assign" function
+                               (:arguments 
+                                  ( ("f" variable
+                                       (:reference 1
+                                        :type ("BOOST_FUNCTION_FUNCTION" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [34025 34052]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [34008 34605]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [23871 34610])
+                    ("swap" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("" variable (:type ("BOOST_FUNCTION_FUNCTION" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34705 34729])
+                            ("BOOST_FUNCTION_COMMA" variable (:type ("R" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34751 34823])
+                            ("" variable (:type ("BOOST_FUNCTION_TEMPLATE_ARGS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34795 34844])
+                            ("" variable (:type ("f1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34846 34849])
+                            ("" variable (:type ("BOOST_FUNCTION_FUNCTION" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34869 34893])
+                            ("BOOST_FUNCTION_COMMA" variable (:type ("R" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34915 34987])
+                            ("" variable (:type ("BOOST_FUNCTION_TEMPLATE_ARGS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34959 35008])
+                            ("" variable (:type ("f2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35010 35013]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [34688 35038])
+                    ("==" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:constant-flag t
+                                :type ("BOOST_FUNCTION_FUNCTION" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [35202 35232])
+                            ("BOOST_FUNCTION_COMMA" variable (:type ("R" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35259 35336])
+                            ("" variable (:type ("BOOST_FUNCTION_TEMPLATE_ARGS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35308 35337])
+                            ("" variable
+                               (:constant-flag t
+                                :type ("BOOST_FUNCTION_FUNCTION" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [35358 35388])
+                            ("BOOST_FUNCTION_COMMA" variable (:type ("R" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35415 35492])
+                            ("" variable (:type ("BOOST_FUNCTION_TEMPLATE_ARGS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35464 35493]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [35186 35496])
+                    ("!=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:constant-flag t
+                                :type ("BOOST_FUNCTION_FUNCTION" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [35587 35617])
+                            ("BOOST_FUNCTION_COMMA" variable (:type ("R" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35644 35721])
+                            ("" variable (:type ("BOOST_FUNCTION_TEMPLATE_ARGS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35693 35722])
+                            ("" variable
+                               (:constant-flag t
+                                :type ("BOOST_FUNCTION_FUNCTION" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [35743 35773])
+                            ("BOOST_FUNCTION_COMMA" variable (:type ("R" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35800 35877])
+                            ("" variable (:type ("BOOST_FUNCTION_TEMPLATE_ARGS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35849 35878]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [35571 35882]))                  
+                :type "namespace")
+                nil [3687 38536]))          
+      :file "function_template.hpp"
+      :pointmax 39647
+      :fsize 39646
+      :lastmodtime '(22633 22283 0 0)
+      :unmatched-syntax '((punctuation 35878 . 35879) (punctuation 35877 . 35878) (punctuation 35772 . 35773) (punctuation 35722 . 35723) (punctuation 35721 . 35722) (punctuation 35616 . 35617) (punctuation 35567 . 35568) (symbol 35538 . 35567) (symbol 35517 . 35537) (symbol 35515 . 35516) (TYPENAME 35506 . 35514) (punctuation 35505 . 35506) (TEMPLATE 35497 . 35505) (punctuation 35493 . 35494) (punctuation 35492 . 35493) (punctuation 35387 . 35388) (punctuation 35337 . 35338) (punctuation 35336 . 35337) (punctuation 35231 . 35232) (punctuation 35182 . 35183) (symbol 35153 . 35182) (symbol 35132 . 35152) (symbol 35130 . 35131) (TYPENAME 35121 . 35129) (punctuation 35120 . 35121) (TEMPLATE 35112 . 35120) (punctuation 35008 . 35009) (punctuation 35007 . 35008) (punctuation 34892 . 34893) (punctuation 34844 . 34845) (punctuation 34843 . 34844) (punctuation 34728 . 34729) (punctuation 34684 . 34685) (symbol 34655 . 34684) (symbol 34634 . 34654) (symbol 34632 . 34633) (TYPENAME 34623 . 34631) (punctuation 34622 . 34623) (TEMPLATE 34614 . 34622) (OPERATOR 29987 . 29995) (punctuation 29970 . 29971) (semantic-list 29968 . 29970) (semantic-list 29949 . 29968) (VOID 29944 . 29948) (TYPEDEF 29936 . 29943) (punctuation 28943 . 28944) (semantic-list 27915 . 27924) (semantic-list 27602 . 27611) (punctuation 27507 . 27508) (punctuation 27506 . 27507) (punctuation 27505 . 27506) (punctuation 27504 . 27505) (symbol 27481 . 27504) (punctuation 27464 . 27465) (semantic-list 27435 . 27464) (punctuation 27434 . 27435) (punctuation 27414 . 27415) (symbol 27403 . 27414) (punctuation 27402 . 27403) (punctuation 27401 . 27402) (symbol 27396 . 27401) (TYPENAME 27387 . 27395) (punctuation 27357 . 27358) (symbol 27350 . 27357) (TYPENAME 27341 . 27349) (punctuation 27340 . 27341) (TEMPLATE 27332 . 27340) (punctuation 26646 . 26647) (punctuation 26097 . 26098) (punctuation 26096 . 26097) (punctuation 26095 . 26096) (semantic-list 26021 . 26050) (punctuation 26020 . 26021) (punctuation 25988 . 25989) (semantic-list 25883 . 25892) (punctuation 25644 . 25645) (punctuation 25643 . 25644) (punctuation 25642 . 25643) (semantic-list 25568 . 25597) (punctuation 25567 . 25568) (punctuation 25536 . 25537) (semantic-list 25444 . 25453) (symbol 25116 . 25140) (punctuation 24437 . 24438) (symbol 24409 . 24437) (symbol 24388 . 24408) (symbol 24386 . 24387) (punctuation 24370 . 24371) (symbol 24349 . 24370) (punctuation 24348 . 24349) (punctuation 24347 . 24348) (symbol 24339 . 24347) (punctuation 24338 . 24339) (punctuation 24337 . 24338) (symbol 24331 . 24337) (punctuation 24330 . 24331) (punctuation 24329 . 24330) (symbol 24324 . 24329) (TYPEDEF 24316 . 24323) (punctuation 23867 . 23868) (symbol 23835 . 23864) (symbol 23810 . 23830) (symbol 23808 . 23809) (TYPENAME 23799 . 23807) (punctuation 23793 . 23794) (TEMPLATE 23785 . 23793) (TYPEDEF 17529 . 17536) (punctuation 17300 . 17301) (symbol 17271 . 17300) (symbol 17250 . 17270) (symbol 17248 . 17249) (TYPENAME 17239 . 17247) (punctuation 17238 . 17239) (TEMPLATE 17230 . 17238) (punctuation 16865 . 16866) (symbol 16861 . 16865) (punctuation 16860 . 16861) (punctuation 16859 . 16860) (symbol 16849 . 16859) (TYPENAME 16840 . 16848) (punctuation 16839 . 16840) (symbol 16822 . 16839) (TYPEDEF 16814 . 16821) (punctuation 16771 . 16772) (punctuation 16770 . 16771) (punctuation 16769 . 16770) (symbol 16713 . 16741) (symbol 16663 . 16683) (symbol 16661 . 16662) (punctuation 16630 . 16631) (symbol 16626 . 16630) (punctuation 16625 . 16626) (punctuation 16624 . 16625) (symbol 16614 . 16624) (TYPENAME 16605 . 16613) (punctuation 16574 . 16575) (symbol 16535 . 16574) (TYPENAME 16526 . 16534) (TYPEDEF 16518 . 16525) (punctuation 16865 . 16866) (symbol 16861 . 16865) (punctuation 16860 . 16861) (punctuation 16859 . 16860) (symbol 16849 . 16859) (TYPENAME 16840 . 16848) (punctuation 16839 . 16840) (symbol 16822 . 16839) (TYPEDEF 16814 . 16821) (punctuation 16771 . 16772) (punctuation 16770 . 16771) (punctuation 16769 . 16770) (symbol 16713 . 16741) (symbol 16663 . 16683) (symbol 16661 . 16662) (punctuation 16630 . 16631) (symbol 16626 . 16630) (punctuation 16625 . 16626) (punctuation 16624 . 16625) (symbol 16614 . 16624) (TYPENAME 16605 . 16613) (punctuation 16574 . 16575) (symbol 16535 . 16574) (TYPENAME 16526 . 16534) (TYPEDEF 16518 . 16525) (punctuation 16473 . 16474) (symbol 16464 . 16473) (TYPENAME 16455 . 16463) (punctuation 16436 . 16437) (symbol 16407 . 16436) (symbol 16386 . 16406) (symbol 16384 . 16385) (TYPENAME 16375 . 16383) (punctuation 16356 . 16357) (symbol 16346 . 16356) (TYPENAME 16337 . 16345) (punctuation 16336 . 16337) (TEMPLATE 16328 . 16336) (punctuation 16292 . 16293) (symbol 16288 . 16292) (punctuation 16287 . 16288) (punctuation 16286 . 16287) (symbol 16276 . 16286) (TYPENAME 16267 . 16275) (punctuation 16266 . 16267) (symbol 16249 . 16266) (TYPEDEF 16241 . 16248) (punctuation 16198 . 16199) (punctuation 16197 . 16198) (punctuation 16196 . 16197) (symbol 16140 . 16168) (symbol 16090 . 16110) (symbol 16088 . 16089) (punctuation 16057 . 16058) (symbol 16053 . 16057) (punctuation 16052 . 16053) (punctuation 16051 . 16052) (symbol 16041 . 16051) (TYPENAME 16032 . 16040) (punctuation 16001 . 16002) (symbol 15962 . 16001) (TYPENAME 15953 . 15961) (TYPEDEF 15945 . 15952) (punctuation 16292 . 16293) (symbol 16288 . 16292) (punctuation 16287 . 16288) (punctuation 16286 . 16287) (symbol 16276 . 16286) (TYPENAME 16267 . 16275) (punctuation 16266 . 16267) (symbol 16249 . 16266) (TYPEDEF 16241 . 16248) (punctuation 16198 . 16199) (punctuation 16197 . 16198) (punctuation 16196 . 16197) (symbol 16140 . 16168) (symbol 16090 . 16110) (symbol 16088 . 16089) (punctuation 16057 . 16058) (symbol 16053 . 16057) (punctuation 16052 . 16053) (punctuation 16051 . 16052) (symbol 16041 . 16051) (TYPENAME 16032 . 16040) (punctuation 16001 . 16002) (symbol 15962 . 16001) (TYPENAME 15953 . 15961) (TYPEDEF 15945 . 15952) (punctuation 15902 . 15903) (symbol 15873 . 15902) (symbol 15852 . 15872) (symbol 15850 . 15851) (TYPENAME 15841 . 15849) (punctuation 15822 . 15823) (symbol 15812 . 15822) (TYPENAME 15803 . 15811) (punctuation 15802 . 15803) (TEMPLATE 15794 . 15802) (punctuation 15500 . 15501) (punctuation 15499 . 15500) (punctuation 15498 . 15499) (symbol 15442 . 15470) (symbol 15392 . 15412) (symbol 15390 . 15391) (punctuation 15359 . 15360) (symbol 15348 . 15359) (punctuation 15317 . 15318) (symbol 15278 . 15317) (TYPENAME 15269 . 15277) (TYPEDEF 15261 . 15268) (punctuation 15500 . 15501) (punctuation 15499 . 15500) (punctuation 15498 . 15499) (symbol 15442 . 15470) (symbol 15392 . 15412) (symbol 15390 . 15391) (punctuation 15359 . 15360) (symbol 15348 . 15359) (punctuation 15317 . 15318) (symbol 15278 . 15317) (TYPENAME 15269 . 15277) (TYPEDEF 15261 . 15268) (punctuation 15216 . 15217) (symbol 15207 . 15216) (TYPENAME 15198 . 15206) (punctuation 15179 . 15180) (symbol 15150 . 15179) (symbol 15129 . 15149) (symbol 15127 . 15128) (TYPENAME 15118 . 15126) (punctuation 15099 . 15100) (symbol 15088 . 15099) (TYPENAME 15079 . 15087) (punctuation 15078 . 15079) (TEMPLATE 15070 . 15078) (punctuation 14956 . 14957) (punctuation 14955 . 14956) (punctuation 14954 . 14955) (symbol 14898 . 14926) (symbol 14848 . 14868) (symbol 14846 . 14847) (punctuation 14815 . 14816) (symbol 14804 . 14815) (punctuation 14773 . 14774) (symbol 14734 . 14773) (TYPENAME 14725 . 14733) (TYPEDEF 14717 . 14724) (punctuation 14956 . 14957) (punctuation 14955 . 14956) (punctuation 14954 . 14955) (symbol 14898 . 14926) (symbol 14848 . 14868) (symbol 14846 . 14847) (punctuation 14815 . 14816) (symbol 14804 . 14815) (punctuation 14773 . 14774) (symbol 14734 . 14773) (TYPENAME 14725 . 14733) (TYPEDEF 14717 . 14724) (punctuation 14674 . 14675) (symbol 14645 . 14674) (symbol 14624 . 14644) (symbol 14622 . 14623) (TYPENAME 14613 . 14621) (punctuation 14594 . 14595) (symbol 14583 . 14594) (TYPENAME 14574 . 14582) (punctuation 14573 . 14574) (TEMPLATE 14565 . 14573) (punctuation 13094 . 13095) (punctuation 13093 . 13094) (punctuation 13092 . 13093) (symbol 13036 . 13064) (symbol 12986 . 13006) (symbol 12984 . 12985) (punctuation 12953 . 12954) (symbol 12942 . 12953) (punctuation 12911 . 12912) (symbol 12876 . 12911) (TYPENAME 12867 . 12875) (TYPEDEF 12859 . 12866) (punctuation 13094 . 13095) (punctuation 13093 . 13094) (punctuation 13092 . 13093) (symbol 13036 . 13064) (symbol 12986 . 13006) (symbol 12984 . 12985) (punctuation 12953 . 12954) (symbol 12942 . 12953) (punctuation 12911 . 12912) (symbol 12876 . 12911) (TYPENAME 12867 . 12875) (TYPEDEF 12859 . 12866) (punctuation 12814 . 12815) (symbol 12805 . 12814) (TYPENAME 12796 . 12804) (punctuation 12777 . 12778) (symbol 12748 . 12777) (symbol 12727 . 12747) (symbol 12725 . 12726) (TYPENAME 12716 . 12724) (punctuation 12697 . 12698) (symbol 12686 . 12697) (TYPENAME 12677 . 12685) (punctuation 12676 . 12677) (TEMPLATE 12668 . 12676) (punctuation 12554 . 12555) (punctuation 12553 . 12554) (punctuation 12552 . 12553) (symbol 12496 . 12524) (symbol 12446 . 12466) (symbol 12444 . 12445) (punctuation 12413 . 12414) (symbol 12402 . 12413) (punctuation 12371 . 12372) (symbol 12336 . 12371) (TYPENAME 12327 . 12335) (TYPEDEF 12319 . 12326) (punctuation 12554 . 12555) (punctuation 12553 . 12554) (punctuation 12552 . 12553) (symbol 12496 . 12524) (symbol 12446 . 12466) (symbol 12444 . 12445) (punctuation 12413 . 12414) (symbol 12402 . 12413) (punctuation 12371 . 12372) (symbol 12336 . 12371) (TYPENAME 12327 . 12335) (TYPEDEF 12319 . 12326) (punctuation 12276 . 12277) (symbol 12247 . 12276) (symbol 12226 . 12246) (symbol 12224 . 12225) (TYPENAME 12215 . 12223) (punctuation 12196 . 12197) (symbol 12185 . 12196) (TYPENAME 12176 . 12184) (punctuation 12175 . 12176) (TEMPLATE 12167 . 12175) (punctuation 10571 . 10572) (punctuation 10570 . 10571) (punctuation 10569 . 10570) (punctuation 10544 . 10545) (symbol 10489 . 10517) (symbol 10440 . 10460) (symbol 10438 . 10439) (punctuation 10408 . 10409) (symbol 10397 . 10408) (punctuation 10367 . 10368) (symbol 10332 . 10367) (punctuation 10304 . 10305) (punctuation 10303 . 10304) (symbol 10248 . 10276) (symbol 10199 . 10219) (symbol 10197 . 10198) (punctuation 10167 . 10168) (symbol 10156 . 10167) (punctuation 10126 . 10127) (symbol 10086 . 10126) (punctuation 10056 . 10057) (semantic-list 10037 . 10056) (punctuation 10036 . 10037) (symbol 10032 . 10036) (punctuation 10031 . 10032) (punctuation 10030 . 10031) (symbol 10027 . 10030) (TYPENAME 10018 . 10026) (TYPEDEF 10010 . 10017) (punctuation 9939 . 9940) (symbol 9902 . 9931) (symbol 9873 . 9893) (symbol 9871 . 9872) (TYPENAME 9862 . 9870) (punctuation 9852 . 9853) (symbol 9841 . 9852) (TYPENAME 9832 . 9840) (punctuation 9822 . 9823) (TEMPLATE 9814 . 9822) (punctuation 9786 . 9787) (punctuation 9785 . 9786) (punctuation 9784 . 9785) (punctuation 9759 . 9760) (symbol 9704 . 9732) (symbol 9655 . 9675) (symbol 9653 . 9654) (punctuation 9623 . 9624) (symbol 9612 . 9623) (punctuation 9582 . 9583) (symbol 9547 . 9582) (punctuation 9519 . 9520) (punctuation 9518 . 9519) (symbol 9463 . 9491) (symbol 9414 . 9434) (symbol 9412 . 9413) (punctuation 9382 . 9383) (symbol 9371 . 9382) (punctuation 9341 . 9342) (symbol 9301 . 9341) (punctuation 9271 . 9272) (semantic-list 9252 . 9271) (punctuation 9251 . 9252) (symbol 9247 . 9251) (punctuation 9246 . 9247) (punctuation 9245 . 9246) (symbol 9242 . 9245) (TYPENAME 9233 . 9241) (TYPEDEF 9225 . 9232) (punctuation 9154 . 9155) (symbol 9117 . 9146) (symbol 9088 . 9108) (symbol 9086 . 9087) (TYPENAME 9077 . 9085) (punctuation 9067 . 9068) (symbol 9056 . 9067) (TYPENAME 9047 . 9055) (punctuation 9037 . 9038) (TEMPLATE 9029 . 9037) (punctuation 9001 . 9002) (punctuation 9000 . 9001) (punctuation 8999 . 9000) (punctuation 8974 . 8975) (symbol 8919 . 8947) (symbol 8870 . 8890) (symbol 8868 . 8869) (punctuation 8838 . 8839) (symbol 8827 . 8838) (punctuation 8797 . 8798) (symbol 8766 . 8797) (punctuation 8738 . 8739) (punctuation 8737 . 8738) (symbol 8682 . 8710) (symbol 8633 . 8653) (symbol 8631 . 8632) (punctuation 8601 . 8602) (symbol 8590 . 8601) (punctuation 8560 . 8561) (symbol 8524 . 8560) (punctuation 8494 . 8495) (semantic-list 8475 . 8494) (punctuation 8474 . 8475) (symbol 8470 . 8474) (punctuation 8469 . 8470) (punctuation 8468 . 8469) (symbol 8465 . 8468) (TYPENAME 8456 . 8464) (TYPEDEF 8448 . 8455) (punctuation 8381 . 8382) (symbol 8345 . 8374) (symbol 8316 . 8336) (symbol 8314 . 8315) (TYPENAME 8305 . 8313) (punctuation 8295 . 8296) (symbol 8284 . 8295) (TYPENAME 8275 . 8283) (punctuation 8265 . 8266) (TEMPLATE 8257 . 8265) (punctuation 6730 . 6731) (symbol 6694 . 6723) (symbol 6665 . 6685) (symbol 6663 . 6664) (TYPENAME 6654 . 6662) (punctuation 6644 . 6645) (symbol 6633 . 6644) (TYPENAME 6624 . 6632) (punctuation 6614 . 6615) (TEMPLATE 6606 . 6614) (punctuation 6236 . 6237) (symbol 6200 . 6229) (symbol 6171 . 6191) (symbol 6169 . 6170) (TYPENAME 6160 . 6168) (punctuation 6150 . 6151) (symbol 6139 . 6150) (TYPENAME 6130 . 6138) (punctuation 6120 . 6121) (TEMPLATE 6112 . 6120) (punctuation 5526 . 5527) (symbol 5490 . 5519) (symbol 5461 . 5481) (symbol 5459 . 5460) (TYPENAME 5450 . 5458) (punctuation 5440 . 5441) (symbol 5429 . 5440) (TYPENAME 5420 . 5428) (punctuation 5410 . 5411) (TEMPLATE 5402 . 5410) (punctuation 4866 . 4867) (symbol 4830 . 4859) (symbol 4801 . 4821) (symbol 4799 . 4800) (TYPENAME 4790 . 4798) (punctuation 4780 . 4781) (symbol 4769 . 4780) (TYPENAME 4760 . 4768) (punctuation 4750 . 4751) (TEMPLATE 4742 . 4750) (punctuation 4350 . 4351) (symbol 4312 . 4341) (symbol 4283 . 4303) (symbol 4281 . 4282) (TYPENAME 4272 . 4280) (punctuation 4262 . 4263) (symbol 4251 . 4262) (TYPENAME 4242 . 4250) (punctuation 4232 . 4233) (TEMPLATE 4224 . 4232) (punctuation 3883 . 3884) (symbol 3845 . 3874) (symbol 3816 . 3836) (symbol 3814 . 3815) (TYPENAME 3805 . 3813) (punctuation 3795 . 3796) (symbol 3784 . 3795) (TYPENAME 3775 . 3783) (punctuation 3765 . 3766) (TEMPLATE 3757 . 3765))
+      :lexical-table 
+        '(("BOOST_FUNCTION_GET_MEMBER_INVOKER" . ((symbol "BOOST_JOIN" 3181 . 3191) (semantic-list "(get_member_invoker,BOOST_FUNCTION_NUM_ARGS)" 3191 . 3235)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "function0.hpp"
+      :fsize 425
+      :lastmodtime '(22633 22283 0 0)))
+  :file "!usr!include!boost!function!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
